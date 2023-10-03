@@ -2,19 +2,19 @@
 palette = "catppuccin_mocha"
 
 [character]
-# Note the use of Catppuccin color 'maroon'
-# success_symbol = "[[♥](green) ❯](maroon)"
 success_symbol = "[❯](yellow)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](green)"
 
 [directory]
 truncation_length = 4
-# Catppuccin 'lavender'
 style = "bold lavender"
 
-# Catppuccin themes config
-# palette tables should be last in the config ⚓️
+
+# ------------
+# -- CATPPUCCIN
+# -- palette tables should be last in the config ⚓️
+# ------------
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"
 flamingo = "#f0c6c6"
