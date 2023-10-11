@@ -1,0 +1,168 @@
+local overrides = require "custom.configs.overrides"
+
+---@type NvPluginSpec[]
+local plugins = {
+
+  -- {
+  --   "hrsh7th/nvim-cmp",
+  --   opts = overrides.cmp
+  -- },
+
+  {
+    "neovim/nvim-lspconfig",
+    dependencies = {
+      -- format & linting
+      {
+        "jose-elias-alvarez/null-ls.nvim",
+        config = function()
+          require "custom.configs.null-ls"
+        end,
+      },
+    },
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.configs.lspconfig"
+    end, -- Override to setup mason-lspconfig
+  },
+
+  -- override plugin configs
+  {
+    "williamboman/mason.nvim",
+    opts = overrides.mason,
+  },
+
+  {
+    "nvim-treesitter/nvim-treesitter",
+    dependencies = {
+      {
+        "JoosepAlviste/nvim-ts-context-commentstring",
+        config = function()
+          require("Comment").setup {
+            pre_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook(),
+          }
+        end,
+      },
+      {
+        "windwp/nvim-ts-autotag",
+        config = function()
+          vim.lsp.handlers["textDocument/publishDiagnostics"] =
+            vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+              underline = true,
+              virtual_text = {
+                spacing = 5,
+                severity_limit = "Warning",
+              },
+              update_in_insert = true,
+            })
+        end,
+      },
+      {
+        "RRethy/vim-illuminate",
+        config = function()
+          require("illuminate").configure(overrides.illuminate)
+          -- vim.api.nvim_set_hl(0, "IlluminatedWord", { bg = "pink" })
+          -- vim.api.nvim_set_hl(0, "IlluminatedCurWord", { bg = "#313131" })
+          -- vim.api.nvim_set_hl(0, "IlluminatedWordText", { bg = "#313131" })
+          -- vim.api.nvim_set_hl(0, "IlluminatedWordRead", { bg = "green" })
+          -- vim.api.nvim_set_hl(0, "IlluminatedWordWrite", { bg = "#313131" })
+        end,
+      },
+    },
+    opts = overrides.treesitter,
+  },
+
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = overrides.nvimtree,
+  },
+
+  -- Install a plugin
+  {
+    "max397574/better-escape.nvim",
+    event = "InsertEnter",
+    config = function()
+      require("better_escape").setup()
+    end,
+  },
+
+  -- To make a plugin not be loaded
+  -- {
+  --   "NvChad/nvim-colorizer.lua",
+  --   enabled = false
+  -- },
+
+  -- All NvChad plugins are lazy-loaded by default
+  -- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`
+  -- If you want a plugin to load on startup, add `lazy = false` to a plugin spec, for example
+  -- {
+  --   "mg979/vim-visual-multi",
+  --   lazy = false,
+  -- }
+
+  {
+    "folke/trouble.nvim",
+    cmd = "Trouble",
+    opts = overrides.trouble,
+  },
+
+  {
+    "folke/flash.nvim",
+    opts = overrides.flash,
+    keys = {
+      {
+        "s",
+        mode = { "n", "x", "o" },
+        function()
+          require("flash").jump()
+        end,
+        desc = "Flash",
+      },
+      {
+        "S",
+        mode = { "n", "x", "o" },
+        function()
+          require("flash").treesitter()
+        end,
+        desc = "Flash Treesitter",
+      },
+    },
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    cmd = { "TodoTrouble", "TodoTelescope" },
+    opts = overrides.todocomments,
+  },
+
+  {
+    "mfussenegger/nvim-dap",
+    config = function()
+      local config = require "custom.configs.dap"
+      config()
+    end,
+
+    dependencies = {
+      "rcarriga/nvim-dap-ui",
+      config = function()
+        require("dapui").setup()
+      end,
+    },
+  },
+
+  {
+    "kdheepak/lazygit.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    cmd = { "LazyGit", "LazyGitConfig", "LazyGitCurrentFile", "LazyGitFilter", "LazyGitFilterCurrentFile" },
+    config = function()
+      vim.g.lazygit_floating_window_winblend = 0 -- transparency of floating window
+      vim.g.lazygit_floating_window_scaling_factor = 0.9 -- scaling factor for floating window
+      vim.g.lazygit_floating_window_border_chars = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" } -- customize lazygit popup window border characters
+      vim.g.lazygit_floating_window_use_plenary = 0 -- use plenary.nvim to manage floating window if available
+      vim.g.lazygit_use_neovim_remote = 1 -- fallback to 0 if neovim-remote is not installed
+      vim.g.lazygit_use_custom_config_file_path = 0 -- config file path is evaluated if this value is 1
+      vim.g.lazygit_config_file_path = "" -- custom config file path
+    end,
+  },
+}
+
+return plugins
