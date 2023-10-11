@@ -71,7 +71,6 @@ M.tabufline = {
 }
 
 M.trouble = {
-  -- TODO: find where i can add my custom plugins to M prototype
   -- plugin = true,
 
   n = {

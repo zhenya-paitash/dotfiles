@@ -17,6 +17,7 @@ local plugins = {
         config = function()
           require "custom.configs.null-ls"
         end,
+        lazy = false
       },
     },
     config = function()
