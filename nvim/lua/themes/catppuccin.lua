@@ -40,6 +40,7 @@ require("catppuccin").setup({
     gitsigns = true,
     treesitter = true,
     neotree = true,
+    nvimtree = true,
     mason = true,
     telescope = { enabled = true },
     flash = true,

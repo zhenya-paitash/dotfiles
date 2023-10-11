@@ -11,7 +11,6 @@ require("core.configs")
 -- PLUGINS
 ------------
 require("plugins.noice")
-require("plugins.alpha")
 require("plugins.neotree")
 require("plugins.treesitter")
 require("plugins.lsp")

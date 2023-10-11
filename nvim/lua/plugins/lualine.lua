@@ -24,9 +24,9 @@ require("lualine").setup {
   extensions = {}
 }
 
--- vim.cmd([[
--- augroup lualine_augroup
---   autocmd!
---   autocmd User LspProgressStatusUpdated lua require("lualine").refresh()
--- augroup END
--- ]])
+vim.cmd([[
+augroup lualine_augroup
+  autocmd!
+  autocmd User LspProgressStatusUpdated lua require("lualine").refresh()
+augroup END
+]])

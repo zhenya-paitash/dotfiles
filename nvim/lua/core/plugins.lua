@@ -22,11 +22,12 @@ require("lazy").setup({
   { "neovim/nvim-lspconfig" },
 
   -- Mason
-  { "williamboman/mason.nvim" },
+  { "williamboman/mason.nvim",          VeryLazy = true },
   { "williamboman/mason-lspconfig.nvim" },
 
   -- CMP autocomplete
   { "neovim/nvim-lspconfig" },
+  { "hrsh7th/cmp-nvim-lua" },
   { "hrsh7th/cmp-nvim-lsp" },
   { "hrsh7th/cmp-buffer" },
   { "hrsh7th/cmp-path" },
@@ -106,26 +107,21 @@ require("lazy").setup({
   },
 
 
-
-  ------------
-  -- VISUAL
   ------------
   -- UI
+  ------------
   {
     "folke/noice.nvim",
     event = "VeryLazy",
     dependencies = {
       "MunifTanjim/nui.nvim",
-      "rcarriga/nvim-notify",
+      -- "rcarriga/nvim-notify",
     }
   },
 
-  -- Notification
-  -- { "rcarriga/nvim-notify" },  -- in /noice.nvim
-
-  -- Dashbaord
-  { "goolord/alpha-nvim" },
-
+  ------------
+  -- VISUAL
+  ------------
   -- buffer line top
   {
     "akinsho/bufferline.nvim",
@@ -161,7 +157,7 @@ require("lazy").setup({
     event = "VeryLazy",
     init = function()
       vim.o.timeout = true
-      vim.o.timeoutlen = 1000
+      vim.o.timeoutlen = 300
     end,
   },
 
@@ -170,6 +166,9 @@ require("lazy").setup({
 
   -- adds indentation guides
   { "lukas-reineke/indent-blankline.nvim", main = "ibl" },
+
+  -- show arguments functions
+  { "folke/neodev.nvim" },
 
 
   ------------

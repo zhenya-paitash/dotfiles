@@ -1,5 +1,3 @@
---local color = require("catppuccin.palettes").get_palette "mocha"
-
 require("todo-comments").setup({
   signs = true, -- show icons in the signs column
   sign_priority = 8, -- sign priority

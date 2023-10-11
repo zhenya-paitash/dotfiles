@@ -41,9 +41,11 @@ cmp.setup({
   }),
   sources = cmp.config.sources({
     { name = "nvim_lsp" },
-    { name = "luasnip" }
+    { name = "nvim_lua" },
+    { name = "luasnip" },
   }, {
     { name = "buffer" },
+    { name = "path" },
     { name = "nvim_lsp_signature_help" }
   }),
 
@@ -87,4 +89,3 @@ cmp.setup.cmdline(":", {
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 require("lspconfig")["tsserver"].setup { capabilities = capabilities }
 require("lspconfig")["html"].setup { capabilities = capabilities }
--- require("lspconfig")["css"].setup { capabilities = capabilities }

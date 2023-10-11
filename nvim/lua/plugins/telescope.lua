@@ -11,7 +11,9 @@ require("telescope").setup {
   },
 }
 
-require("telescope").load_extension("notify")
+-- WARN: Notify plugin
+-- require("telescope").load_extension("notify")
+-- vim.keymap.set("n", "<leader>fn", ":Telescope notify<CR>")
 
 local telescope_builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader><leader>", telescope_builtin.find_files, {})
@@ -19,7 +21,6 @@ vim.keymap.set("n", "<leader>ff", telescope_builtin.find_files, {})
 vim.keymap.set("n", "<leader>fg", telescope_builtin.live_grep, {})
 vim.keymap.set("n", "<leader>fb", telescope_builtin.buffers, {})
 vim.keymap.set("n", "<leader>fh", telescope_builtin.help_tags, {})
-vim.keymap.set("n", "<leader>fn", ":Telescope notify<CR>")
 vim.keymap.set("n", "<leader>*", telescope_builtin.grep_string, {})
 vim.keymap.set("n", "<leader>gb", telescope_builtin.git_branches, {})
 vim.keymap.set("n", "<leader>gc", telescope_builtin.git_commits, {})
