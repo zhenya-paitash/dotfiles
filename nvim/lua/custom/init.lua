@@ -16,6 +16,11 @@ autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
   pattern = { "*" },
 })
 
+-- autocmd({ "TextChanged", "TextChangedI" }, {
+--   command = ":write",
+--   pattern = { "*.js", "*.ts", "*.jsx", "*.tsx" },
+-- })
+
 -- Auto resize panes when resizing nvim window
 -- autocmd("VimResized", {
 --   pattern = "*",

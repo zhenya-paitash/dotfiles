@@ -33,9 +33,6 @@ M.telescope = {
   n = {
     ["<leader><leader>"] = { "<cmd> Telescope find_files <CR>", "Find files" },
     ["<leader>gb"] = { "<cmd> Telescope git_branches <CR>", "Git branch" },
-    -- ["<leader>gr"] = { function() require("telescope.builtin").lsp_references() end, "Find references" },
-    ["gr"] = { function() require("telescope.builtin").lsp_references() end, "Find references" },
-    -- ["<leader>gd"] = { function() require("telescope.builtin").lsp_definitions() end, "Find definitions" },
     ["<leader>ft"] = { "<cmd> Telescope terms <CR>", "Find terms" },
     ["<leader>*"] = {
       function()
@@ -43,6 +40,21 @@ M.telescope = {
       end,
       "Grep string",
     },
+
+    ["gr"] = {
+      function()
+        require("telescope.builtin").lsp_references()
+      end,
+      "Find references",
+    },
+    -- ["<leader>gr"] = { function() require("telescope.builtin").lsp_references() end, "Find references" },
+    ["gd"] = {
+      function()
+        require("telescope.builtin").lsp_definitions()
+      end,
+      "Find definitions",
+    },
+    -- ["<leader>gd"] = { function() require("telescope.builtin").lsp_definitions() end, "Find definitions" },
   },
   v = {
     ["<leader>*"] = {
@@ -251,6 +263,33 @@ M.lazygit = {
   -- plugin = true,
   n = {
     ["<leader>gl"] = { "<cmd> LazyGit <CR>", "LazyGit" },
+  },
+}
+
+M.persistence = {
+  -- plugin = ture,
+  n = {
+    ["<leader>qs"] = {
+      function()
+        require("persistence").load()
+        print "💾 Session restored!"
+      end,
+      "Restore session for current dir",
+    },
+    ["<leader>ql"] = {
+      function()
+        require("persistence").load { last = true }
+        print "🌍 Global Session restored!"
+      end,
+      "Restore last session",
+    },
+    ["<leader>qd"] = {
+      function()
+        require("persistence").stop()
+        print "❌ Session won't be saved!"
+      end,
+      "Stop session",
+    },
   },
 }
 

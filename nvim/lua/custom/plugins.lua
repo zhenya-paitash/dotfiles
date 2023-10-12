@@ -17,7 +17,7 @@ local plugins = {
         config = function()
           require "custom.configs.null-ls"
         end,
-        lazy = false
+        lazy = false,
       },
     },
     config = function()
@@ -163,6 +163,44 @@ local plugins = {
       vim.g.lazygit_use_custom_config_file_path = 0 -- config file path is evaluated if this value is 1
       vim.g.lazygit_config_file_path = "" -- custom config file path
     end,
+  },
+
+  {
+    "mg979/vim-visual-multi",
+    branch = "master",
+    keys = { "<F2>" },
+    init = function()
+      vim.g.VM_maps = {
+        ["Find Under"] = "<F2>",
+      }
+    end,
+  },
+
+  {
+    "sindrets/diffview.nvim",
+    cmd = {
+      "DiffviewOpen",
+      "DiffviewFileHistory",
+      "DiffviewClose",
+      "DiffviewToggleFiles",
+      "DiffviewFocusFiles",
+      "DiffviewRefresh",
+    },
+  },
+
+  {
+    "folke/persistence.nvim",
+    event = "BufReadPre", -- this will only start session saving when an actual file was opened
+    opts = {
+      dir = vim.fn.expand(vim.fn.stdpath "state" .. "/sessions/"), -- directory where session files are saved
+      options = { "buffers", "curdir", "tabpages", "winsize" }, -- sessionoptions used for saving
+      pre_save = nil, -- a function to call before saving the session
+    },
+  },
+
+  {
+    "nvim-pack/nvim-spectre",
+    lazy = false,
   },
 }
 
