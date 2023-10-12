@@ -1,0 +1,31 @@
+# starship
+eval "$(starship init bash)"
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+# lazygit
+alias lg="lazygit"
+
+# lazydocker
+alias lazydocker="~/.local/bin/lazydocker"
+
+# nvim
+alias vim="nvim"
+
+# Neovim config switcher
+alias nvimc="NVIM_APPNAME=nvim.nvchad nvim"
+alias nvim-nvchad="NVIM_APPNAME=nvim.nvchad nvim"
+alias nvim-astronvim="NVIM_APPNAME=nvim.astronvim nvim"
+alias nvim-lazyvim="NVIM_APPNAME=nvim.lazyvim nvim"
+nvims() {
+  items=("default" "nvim.nvchad" "nvim.astronvim" "nvim.lazyvim")
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config" --height=50% --layout=reverse --border=rounded --exit-0)
+  if [[ -z $config ]]; then
+    echo "Nothing selected"
+    return 0
+  # elif [[ $config == "default" ]]; then
+  elif [[ $config == "nvim-chad" ]]; then
+    config=""
+  fi
+  NVIM_APPNAME=$config nvim $@
+}
+bind -x '"\C-a": nvims'
