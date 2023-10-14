@@ -1,6 +1,10 @@
 local autocmd = vim.api.nvim_create_autocmd
 
+-- swap files
+-- vim.opt.directory="./"
+-- vim.opt.swapfile = false
 
+-- custom config
 vim.opt.relativenumber = true
 vim.opt.wrap = false
 
@@ -16,6 +20,7 @@ autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
   pattern = { "*" },
 })
 
+-- autosave file (alpha v)
 -- autocmd({ "TextChanged", "TextChangedI" }, {
 --   command = ":write",
 --   pattern = { "*.js", "*.ts", "*.jsx", "*.tsx" },

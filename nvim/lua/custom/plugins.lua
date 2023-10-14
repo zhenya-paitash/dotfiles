@@ -17,7 +17,7 @@ local plugins = {
         config = function()
           require "custom.configs.null-ls"
         end,
-        lazy = false,
+        -- lazy = false,
       },
     },
     config = function()
@@ -200,7 +200,7 @@ local plugins = {
 
   {
     "nvim-pack/nvim-spectre",
-    lazy = false,
+    cmd = { "Spectre" },
   },
 }
 
