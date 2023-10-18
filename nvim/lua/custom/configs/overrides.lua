@@ -39,7 +39,7 @@ M.treesitter = {
     enable = true,
     enable_rename = true,
     enable_close = true,
-    enable_close_on_slash = true,
+    enable_close_on_slash = false,
     filetypes = { "html", "xml", "javascriptreact", "typescriptreact", "jsx", "tsx", "astro", "vue" },
   },
 }
@@ -66,10 +66,6 @@ M.mason = {
     -- formatters & linters
     "prettierd",
     "eslint_d",
-
-    -- C/C++
-    -- "clangd",
-    -- "clang-format",
   },
 }
 

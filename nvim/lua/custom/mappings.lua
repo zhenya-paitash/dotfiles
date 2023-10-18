@@ -8,7 +8,12 @@ M.general = {
 
     -- WARN: comment lua/mappings ["<leader>s"]
     ["<leader>w"] = { "<cmd> w <CR>", "Save file" },
-    ["<F1>"] = { function() vim.lsp.buf.signature_help() end, "Show signature help" },
+    ["<F1>"] = {
+      function()
+        vim.lsp.buf.signature_help()
+      end,
+      "Show signature help",
+    },
 
     -- resize panels
     ["<C-w>H"] = { "<cmd> :vertical resize -10% <CR>", opts = { noremap = true, silent = true }, "Resize left" },
@@ -24,7 +29,12 @@ M.general = {
   i = {
     -- ["<C-j>"] = { "<ESC> <cmd> m .+1 <CR> == gi" },
     -- ["<C-k>"] = { "<ESC> <cmd> m .-2 <CR> == gi" },
-    ["<F1>"] = { function() vim.lsp.buf.signature_help() end, "Show signature help" }
+    ["<F1>"] = {
+      function()
+        vim.lsp.buf.signature_help()
+      end,
+      "Show signature help",
+    },
   },
 
   x = {
@@ -297,6 +307,27 @@ M.persistence = {
         print "❌ Session won't be saved!"
       end,
       "Stop session",
+    },
+  },
+}
+
+M.diffview = {
+  -- plugin = true,
+  n = {
+    ["<leader>gd"] = { "<cmd> DiffviewOpen <CR>", "Git Diffview Open" },
+    ["<leader>gc"] = { "<cmd> DiffviewClose <CR>", "Git Diffview Close" },
+  },
+}
+
+M.markdown_preview = {
+  -- plugin = true,
+  n = {
+    ["<leader>mp"] = {
+      function()
+        vim.cmd "MarkdownPreviewToggle"
+        print "📑 Markdown Preview start."
+      end,
+      "Markdown preview toggle",
     },
   },
 }

@@ -61,11 +61,8 @@ local plugins = {
         "RRethy/vim-illuminate",
         config = function()
           require("illuminate").configure(overrides.illuminate)
-          -- vim.api.nvim_set_hl(0, "IlluminatedWord", { bg = "pink" })
-          -- vim.api.nvim_set_hl(0, "IlluminatedCurWord", { bg = "#313131" })
-          -- vim.api.nvim_set_hl(0, "IlluminatedWordText", { bg = "#313131" })
-          -- vim.api.nvim_set_hl(0, "IlluminatedWordRead", { bg = "green" })
-          -- vim.api.nvim_set_hl(0, "IlluminatedWordWrite", { bg = "#313131" })
+          local bg = vim.api.nvim_exec("highlight Visual", true):match "guibg=(#[%x]+)"
+          vim.api.nvim_set_hl(0, "IlluminatedWordRead", { bg = bg })
         end,
       },
     },
@@ -168,7 +165,7 @@ local plugins = {
   {
     "mg979/vim-visual-multi",
     branch = "master",
-    keys = { "<F2>" },
+    keys = { "<F2>", "\\\\\\" },
     init = function()
       vim.g.VM_maps = {
         ["Find Under"] = "<F2>",
@@ -201,6 +198,15 @@ local plugins = {
   {
     "nvim-pack/nvim-spectre",
     cmd = { "Spectre" },
+  },
+
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = { "markdown" },
+    build = function()
+      vim.fn["mkdp#util#install"]()
+    end,
   },
 }
 

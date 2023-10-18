@@ -13,12 +13,23 @@ vim.opt.wrap = false
 -- vim.g.netrw_liststyle = 3 -- Tree plain view
 -- vim.g.netrw_browse_split = 3 -- Open in previous window
 
+------------
+-- AUTOCOMMAND
+------------
 -- autoread buffer
 vim.o.autoread = true
 autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
   command = "if mode() != 'c' | checktime | endif",
   pattern = { "*" },
 })
+
+-- autochange color after chande colorscheme
+-- autocmd({ "ColorScheme" }, {
+--   pattern = "*",
+--   callback = function()
+--     vim.api.nvim_set_hl(0, "CursorLineNr", { cterm = "bold", bold = true })
+--   end,
+-- })
 
 -- autosave file (alpha v)
 -- autocmd({ "TextChanged", "TextChangedI" }, {
