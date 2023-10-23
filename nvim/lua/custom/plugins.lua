@@ -63,6 +63,7 @@ local plugins = {
           require("illuminate").configure(overrides.illuminate)
           local bg = vim.api.nvim_exec("highlight Visual", true):match "guibg=(#[%x]+)"
           vim.api.nvim_set_hl(0, "IlluminatedWordRead", { bg = bg })
+          vim.api.nvim_set_hl(0, "IlluminatedWordText", { bg = bg })
         end,
       },
     },
@@ -158,7 +159,7 @@ local plugins = {
       vim.g.lazygit_floating_window_use_plenary = 0 -- use plenary.nvim to manage floating window if available
       vim.g.lazygit_use_neovim_remote = 1 -- fallback to 0 if neovim-remote is not installed
       vim.g.lazygit_use_custom_config_file_path = 0 -- config file path is evaluated if this value is 1
-      vim.g.lazygit_config_file_path = "" -- custom config file path
+      vim.g.lazygit_config_file_path = "/home/mi/.config/lazygit/config.neovim.yml" -- custom config file path
     end,
   },
 

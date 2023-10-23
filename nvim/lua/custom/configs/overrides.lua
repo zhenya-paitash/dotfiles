@@ -330,7 +330,7 @@ M.flash = {
     search = {
       -- when `true`, flash will be activated during regular search by default.
       -- You can always toggle when searching with `require("flash").toggle()`
-      enabled = true,
+      enabled = false,
       highlight = { backdrop = false },
       jump = { history = true, register = true, nohlsearch = true },
       search = {
@@ -342,7 +342,7 @@ M.flash = {
     -- options used when flash is activated through
     -- `f`, `F`, `t`, `T`, `;` and `,` motions
     char = {
-      enabled = true,
+      enabled = false,
       -- dynamic configuration for ftFT motions
       config = function(opts)
         -- autohide flash when in operator-pending mode

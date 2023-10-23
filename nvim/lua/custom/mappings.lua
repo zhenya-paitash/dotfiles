@@ -4,10 +4,7 @@ local M = {}
 M.general = {
   n = {
     -- [";"] = { ":", "enter command mode", opts = { nowait = true } },
-    ["<leader>a"] = { "ggVGo", opts = { noremap = true, silent = true }, "Select all" },
-
-    -- WARN: comment lua/mappings ["<leader>s"]
-    ["<leader>w"] = { "<cmd> w <CR>", "Save file" },
+    ["<leader>a"] = { "ggVGo", "Select all", opts = { noremap = true, silent = true } },
     ["<F1>"] = {
       function()
         vim.lsp.buf.signature_help()
@@ -15,11 +12,14 @@ M.general = {
       "Show signature help",
     },
 
+    -- WARN: comment lua/mappings ["<leader>s"]
+    ["<leader>w"] = { "<cmd> w <CR>", "Save file" },
+
     -- resize panels
-    ["<C-w>H"] = { "<cmd> :vertical resize -10% <CR>", opts = { noremap = true, silent = true }, "Resize left" },
-    ["<C-w>L"] = { "<cmd> :vertical resize +10% <CR>", opts = { noremap = true, silent = true }, "Resize right" },
-    ["<C-w>J"] = { "<cmd> :resize +10% <CR>", opts = { noremap = true, silent = true }, "Resize down" },
-    ["<C-w>K"] = { "<cmd> :resize -10% <CR>", opts = { noremap = true, silent = true }, "Resize up" },
+    ["<C-w>H"] = { "<cmd> :vertical resize -10% <CR>", "Resize left", opts = { noremap = true, silent = true } },
+    ["<C-w>L"] = { "<cmd> :vertical resize +10% <CR>", "Resize right", opts = { noremap = true, silent = true } },
+    ["<C-w>J"] = { "<cmd> :resize +10% <CR>", "Resize down", opts = { noremap = true, silent = true } },
+    ["<C-w>K"] = { "<cmd> :resize -10% <CR>", "Resize up", opts = { noremap = true, silent = true } },
   },
 
   v = {
@@ -224,8 +224,8 @@ M.trouble = {
 M.todocomments = {
   -- plugin = true,
   n = {
-    ["<leader>to"] = { "<cmd> TodoTrouble <CR>", opts = { noremap = true, silent = true }, "Todo Trouble" },
-    ["<leader>fo"] = { "<cmd> TodoTelescope <CR>", opts = { noremap = true, silent = true }, "Todo Telescope" },
+    ["<leader>to"] = { "<cmd> TodoTrouble <CR>", "Todo Trouble", opts = { noremap = true, silent = true } },
+    ["<leader>fo"] = { "<cmd> TodoTelescope <CR>", "Todo Telescope", opts = { noremap = true, silent = true } },
   },
 }
 
@@ -251,8 +251,8 @@ M.dap = {
       function()
         require("dapui").toggle()
       end,
-      opts = { noremap = true, silent = true },
       "UI toggle",
+      opts = { noremap = true, silent = true },
     },
     ["<leader>dK"] = {
       function()
