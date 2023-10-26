@@ -46,15 +46,14 @@ local plugins = {
       {
         "windwp/nvim-ts-autotag",
         config = function()
-          vim.lsp.handlers["textDocument/publishDiagnostics"] =
-            vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-              underline = true,
-              virtual_text = {
-                spacing = 5,
-                severity_limit = "Warning",
-              },
-              update_in_insert = true,
-            })
+          vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+            underline = true,
+            virtual_text = {
+              spacing = 5,
+              severity_limit = "Warning",
+            },
+            update_in_insert = true,
+          })
         end,
       },
       {
@@ -207,6 +206,29 @@ local plugins = {
     ft = { "markdown" },
     build = function()
       vim.fn["mkdp#util#install"]()
+    end,
+  },
+
+  {
+    "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup {
+        keymaps = {
+          insert = "<C-g>s",
+          insert_line = "<C-g>S",
+          normal = "ys",
+          normal_cur = "yss",
+          normal_line = "yS",
+          normal_cur_line = "ySS",
+          visual = "<leader>s",
+          visual_line = "<leader>S",
+          delete = "ds",
+          change = "cs",
+          change_line = "cS",
+        },
+      }
     end,
   },
 }

@@ -7,6 +7,7 @@ alias lg="lazygit"
 
 # lazydocker
 alias lazydocker="~/.local/bin/lazydocker"
+alias ld="lazydocker"
 
 # nvim
 alias vim="nvim"

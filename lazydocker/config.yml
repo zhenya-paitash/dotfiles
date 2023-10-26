@@ -1,19 +1,19 @@
 gui:
   theme:
     activeBorderColor:
-      - '#a6e3a1'
+      - white
       - bold
     inactiveBorderColor:
-      - '#a6adc8'
+      - blue
     selectedLineBgColor:
-      - '#313244'
+      - black
     optionsTextColor:
-      - '#89b4fa'
+      - green
 stats:
   graphs:
     - caption: CPU (%)
       statPath: DerivedStats.CPUPercentage
-      color: '#89b4fa'
+      color: blue
     - caption: Memory (%)
       statPath: DerivedStats.MemoryPercentage
-      color: '#a6e3a1'
+      color: green
