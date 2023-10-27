@@ -5,8 +5,8 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "catppuccin",
-  theme_toggle = { "catppuccin", "one_light" },
+  theme = "ayu_dark",
+  theme_toggle = { "ayu_dark", "one_light" },
   transparency = false,
   lsp_semantic_tokens = true,
 
@@ -14,8 +14,10 @@ M.ui = {
   hl_add = highlights.add,
 
   statusline = {
-    theme = "minimal", -- default/vscode/vscode_colored/minimal
-    separator_style = "round", -- default/round/block/arrow separators work only for default statusline theme
+    -- theme = "minimal", -- default/vscode/vscode_colored/minimal
+    -- separator_style = "round", -- default/round/block/arrow separators work only for default statusline theme
+    theme = "vscode_colored",
+    separator_style = "block",
   },
 }
 

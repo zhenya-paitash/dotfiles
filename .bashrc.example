@@ -11,6 +11,7 @@ alias ld="lazydocker"
 
 # nvim
 alias vim="nvim"
+alias v="nvim"
 
 # Neovim config switcher
 alias nvimc="NVIM_APPNAME=nvim.nvchad nvim"
