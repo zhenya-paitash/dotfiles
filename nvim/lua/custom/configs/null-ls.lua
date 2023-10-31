@@ -10,6 +10,11 @@ local sources = {
   -- js/ts
   b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
 
+  -- golang
+  null_ls.builtins.formatting.gofmt,
+  null_ls.builtins.formatting.goimports,
+  null_ls.builtins.formatting.gofumpt,
+
   -- LINTERS
   -- pprettier
   b.formatting.prettierd.with {

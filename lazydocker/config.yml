@@ -1,4 +1,5 @@
 gui:
+  showAllContainers: true
   theme:
     activeBorderColor:
       - white
@@ -6,9 +7,11 @@ gui:
     inactiveBorderColor:
       - blue
     selectedLineBgColor:
-      - black
+      - blue
     optionsTextColor:
       - green
+logs:
+  timestamps: true
 stats:
   graphs:
     - caption: CPU (%)

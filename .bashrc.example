@@ -31,3 +31,6 @@ nvims() {
   NVIM_APPNAME=$config nvim $@
 }
 bind -x '"\C-a": nvims'
+
+# windows WSL cmds
+alias e="explorer.exe"
