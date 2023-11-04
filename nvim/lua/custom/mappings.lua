@@ -24,9 +24,12 @@ M.general = {
 
   v = {
     [">"] = { ">gv", "indent" },
+    ["<leader>y"] = { '"+y', "Copy sys", opts = { noremap = true } },
+    ["<C-c>"] = { '"+y', "Copy sys", opts = { noremap = true } },
   },
 
   i = {
+    ["<C-c>"] = { '"+y', "Copy sys", opts = { noremap = true } },
     -- ["<C-j>"] = { "<ESC> <cmd> m .+1 <CR> == gi" },
     -- ["<C-k>"] = { "<ESC> <cmd> m .-2 <CR> == gi" },
     ["<F1>"] = {

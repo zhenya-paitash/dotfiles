@@ -9,6 +9,18 @@ vim.opt.relativenumber = true
 vim.opt.wrap = false
 vim.opt.whichwrap = "[,]"
 
+-- clipboard
+vim.cmd 'set clipboard="unnamedplus"'
+local in_wsl = os.getenv "WSL_DISTRO_NAME" ~= nil
+if in_wsl then
+  vim.g.clipboard = {
+    name = "wsl clipboard",
+    copy = { ["+"] = { "clip.exe" }, ["*"] = { "clip.exe" } },
+    paste = { ["+"] = { "nvim_paste" }, ["*"] = { "nvim_paste" } },
+    cache_enabled = true,
+  }
+end
+
 -- Netrw File Explorer config
 -- vim.g.netrw_banner = 0 -- Hide banner
 -- vim.g.netrw_liststyle = 3 -- Tree plain view

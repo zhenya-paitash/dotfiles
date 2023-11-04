@@ -11,9 +11,12 @@ local sources = {
   b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
 
   -- golang
-  null_ls.builtins.formatting.gofmt,
-  null_ls.builtins.formatting.goimports,
-  null_ls.builtins.formatting.gofumpt,
+  b.formatting.gofmt,
+  -- b.formatting.goimports,
+  -- b.formatting.gofumpt,
+  -- b.diagnostics.golint,
+  -- b.diagnostics.govet,
+  -- b.diagnostics.gosec,
 
   -- LINTERS
   -- pprettier

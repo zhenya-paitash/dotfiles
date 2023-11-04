@@ -5,8 +5,8 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "tomorrow_night",
-  theme_toggle = { "tomorrow_night", "one_light" },
+  theme = "ayu_dark",
+  theme_toggle = { "ayu_dark", "ayu_light" },
   transparency = false,
   lsp_semantic_tokens = true,
 
