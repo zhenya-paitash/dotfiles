@@ -335,4 +335,20 @@ M.markdown_preview = {
   },
 }
 
+M.neorg = {
+  -- plugin = true,
+  n = {
+    ["<leader>nc"] = {
+      function()
+        local cwd = vim.fn.getcwd()
+        local project = vim.fn.getcwd():match "^.+/(.+)$"
+        vim.cmd("!cp ~/notes/home/projects/demo.norg ~/notes/home/projects/" .. project .. ".norg")
+        vim.cmd("!ln -sf ~/notes/home/projects/" .. project .. ".norg " .. cwd .. "/info.norg")
+      end,
+      "Create project info.norg",
+    },
+    ["<leader>nt"] = { "<cmd> Neorg toggle-concealer <CR>", "Neorg highlight toggle" },
+  },
+}
+
 return M

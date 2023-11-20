@@ -28,6 +28,8 @@ M.treesitter = {
     "markdown_inline",
     "norg",
     "go",
+    "gomod",
+    "gosum",
   },
   indent = {
     enable = true,
@@ -57,10 +59,15 @@ M.mason = {
     "css-lsp",
     "tailwindcss-language-server",
     "typescript-language-server",
-    "deno", -- TODO: need only for null-ls formatting
+    "deno",
+
+    -- GO
+    "gopls",
+    "goimports",
 
     -- DEBUG
     "js-debug-adapter",
+    "delve",
 
     -- DB
     "prisma-language-server",
@@ -98,6 +105,7 @@ M.nvimtree = {
   view = {
     adaptive_size = true,
     side = "left",
+    -- width = 40
   },
 
   renderer = {

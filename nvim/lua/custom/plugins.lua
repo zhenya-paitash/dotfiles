@@ -239,23 +239,23 @@ local plugins = {
     cmd = { "Neorg" },
     ft = { "norg" },
     config = function()
-      require("neorg").setup {
-        load = {
-          ["core.defaults"] = {}, -- Loads default behaviour
-          ["core.concealer"] = {}, -- Adds pretty icons to your documents
-          ["core.dirman"] = { -- Manages Neorg workspaces
-            config = {
-              workspaces = {
-                home = "~/notes/home",
-                work = "~/notes/work",
-              },
-              default_workspace = "home",
-            },
-          },
-        },
-      }
+      require "custom.configs.neorg"
     end,
   },
+
+  -- ------------ GOLANG ------------
+  -- {
+  --   "ray-x/go.nvim",
+  --   dependencies = { -- optional packages
+  --     "ray-x/guihua.lua",
+  --   },
+  --   config = function()
+  --     require("go").setup()
+  --   end,
+  --   event = { "CmdlineEnter" },
+  --   ft = { "go", "gomod" },
+  --   build = ':lua require("go.install").update_all_sync()', -- if you need to install/update all binaries
+  -- },
 }
 
 return plugins
