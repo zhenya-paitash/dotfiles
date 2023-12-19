@@ -45,6 +45,7 @@ lspconfig.gopls.setup {
     local opts = { noremap = true, silent = true }
     buf_set_keymap("n", "K", "<Cmd>lua vim.lsp.buf.hover()<CR>", opts)
     buf_set_keymap("n", "<leader>ca", "<Cmd>lua vim.lsp.buf.code_action()<CR>", opts)
+    buf_set_keymap("n", "<leader>ra", "<Cmd>lua require('nvchad.renamer').open()<CR>", opts)
   end,
 }
 
