@@ -30,6 +30,7 @@ M.treesitter = {
     "go",
     "gomod",
     "gosum",
+    "templ",
   },
   indent = {
     enable = true,
@@ -64,6 +65,7 @@ M.mason = {
     -- GO
     "gopls",
     "goimports",
+    "templ",
 
     -- DEBUG
     "js-debug-adapter",

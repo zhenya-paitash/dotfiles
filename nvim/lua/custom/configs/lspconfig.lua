@@ -12,6 +12,7 @@ local servers = {
   "prismals",
   "tailwindcss",
   "gopls",
+  "templ",
 }
 
 for _, lsp in ipairs(servers) do
@@ -25,7 +26,7 @@ end
 -- Настройка gopls
 lspconfig.gopls.setup {
   cmd = { "gopls" },
-  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+  filetypes = { "go", "gomod", "gosum", "gowork", "gotmpl", "gotempl", "templ" },
   root_dir = require("lspconfig/util").root_pattern("go.work", "go.mod", ".git"),
   settings = {
     gopls = {
@@ -51,53 +52,15 @@ lspconfig.gopls.setup {
 
 lspconfig.tailwindcss.setup {
   filetypes = {
-    "astro",
-    -- "aspnetcorerazor",
-    -- "astro-markdown",
-    -- "blade",
-    -- "clojure",
-    -- "django-html",
-    -- "htmldjango",
-    -- "edge",
-    -- "eelixir",
-    -- "elixir",
-    -- "ejs",
-    -- "erb",
-    -- "eruby",
-    -- "gohtml",
-    -- "gohtmltmpl",
-    -- "haml",
-    -- "handlebars",
-    -- "hbs",
     "html",
-    -- "html-eex",
-    -- "heex",
-    -- "jade",
-    -- "leaf",
-    -- "liquid",
-    -- "markdown",
-    -- "mdx",
-    -- "mustache",
-    -- "njk",
-    -- "nunjucks",
-    -- "php",
-    -- "razor",
-    -- "slim",
-    -- "twig",
-    -- "css",
-    -- "less",
-    -- "postcss",
-    -- "sass",
-    -- "scss",
-    -- "stylus",
-    -- "sugarss",
-    -- "javascript",
     "javascriptreact",
-    -- "reason",
-    -- "rescript",
-    -- "typescript",
     "typescriptreact",
-    -- "vue",
-    -- "svelte",
   },
+}
+
+lspconfig.templ.setup {
+  cmd = { "templ", "lsp", "-http=localhost:7474", "-log=~/templ/templ.log" },
+  filetypes = { "templ" },
+  root_dir = require("lspconfig/util").root_pattern("go.mod", ".git"),
+  settings = {},
 }

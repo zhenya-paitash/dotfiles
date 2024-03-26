@@ -30,6 +30,12 @@ end
 vim.cmd "highlight link CurSearch IncSearch"
 
 ------------
+-- FILETYPES
+------------
+-- go.templ
+vim.filetype.add { extension = { templ = "templ" } }
+
+------------
 -- AUTOCOMMAND
 ------------
 -- autoread buffer
