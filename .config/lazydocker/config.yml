@@ -1,0 +1,22 @@
+gui:
+  showAllContainers: true
+  theme:
+    activeBorderColor:
+      - white
+      - bold
+    inactiveBorderColor:
+      - blue
+    selectedLineBgColor:
+      - blue
+    optionsTextColor:
+      - green
+logs:
+  timestamps: true
+stats:
+  graphs:
+    - caption: CPU (%)
+      statPath: DerivedStats.CPUPercentage
+      color: blue
+    - caption: Memory (%)
+      statPath: DerivedStats.MemoryPercentage
+      color: green
