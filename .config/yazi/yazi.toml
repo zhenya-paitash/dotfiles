@@ -1,0 +1,32 @@
+# A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
+# If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
+"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+
+[manager]
+ratio = [1, 3, 5]
+sort_dir_first = true
+show_hidden    = true
+
+[preview]
+min_width = 4
+
+[opener]
+open = [
+  { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
+	{ run = 'kitty .', desc = "Open Terminal here" },
+  { run = 'tar -xf "$@" --one-top-level', desct = "Custom tar extract", for = "unix" },
+  { run = 'swww img "$@" --transition-type center --transition-step 200 --transition-fps 60', desc = "Set wallpaper" },
+  { run = '$HOME/scripts/ags/ags_get_colorscheme_from_image_custom "$@" & swww img "$@" --transition-type center --transition-step 200 --transition-fps 60', desc = "Set wallpaper with colorscheme custom" },
+  { run = '$HOME/scripts/ags/ags_get_colorscheme_from_image_matugen "$@" & swww img "$@" --transition-type center --transition-step 200 --transition-fps 60', desc = "Set wallpaper with colorscheme matugen" },
+]
+edit = [
+	{ run = 'nvim "$@"', desc = "Neovim", block = true },
+]
+extract = [
+  { run = 'tar -xf "$@" --one-top-level', desct = "Custom tar extract", for = "unix" },
+	{ run = 'unar "$1"', desc = "Extract here", for = "unix" },
+]
+play = [
+	{ run = 'mpv "$@"', orphan = true, for = "unix" },
+	{ run = '''mediainfo "$1"; echo "Press enter to exit"; read _''', block = true, desc = "Show media info", for = "unix" },
+]
