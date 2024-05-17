@@ -1,0 +1,3 @@
+map f LinkHints.activateModeToOpenInNewForegroundTab
+map F LinkHints.activateMode
+
