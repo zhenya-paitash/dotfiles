@@ -1,0 +1,15 @@
+/* COLORS */
+@import url("./colors.css");
+@import url("./theme.css");
+
+/* CORE */
+@import url("./core.css");
+
+/* WIDGETS */
+@import url("./widgets/bar.css");
+@import url("./widgets/notifications.css");
+@import url("./widgets/volume-overlay.css");
+@import url("./widgets/brightness-overlay.css");
+@import url("./widgets/app-launcher.css");
+@import url("./widgets/player.css");
+

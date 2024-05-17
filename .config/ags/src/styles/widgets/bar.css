@@ -1,0 +1,160 @@
+/* //////////////////////////////////////
+                  BAR  
+////////////////////////////////////// */
+.bar {
+  font-size: 9px;
+  font-family: "Noto Font";
+}
+
+.bar button {
+  border-radius: 10rem;
+}
+
+.bar button .icon {
+  opacity: 0.9;
+  transition: all .3s ease-in-out;
+}
+
+.bar button:hover .icon {
+  opacity: 1;
+}
+
+.bar-container {
+  /* padding: 4px 16px; */
+  padding: 4px 10px 2px 10px;
+}
+
+.section {
+  margin: 0 1px;
+  min-width: 0;
+  min-height: 24px;
+  border-radius: 10rem;
+  color: @fg-color;
+  background-color: @bg-color;
+  box-shadow: 2px 0 2px 2px rgba(31, 31, 31, .1);
+}
+
+/* //////////////////////////////////////
+                  LEFT 
+////////////////////////////////////// */
+.media {
+  padding: 0 10px;
+  min-width: 0px;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  /* transition-delay: .3s; */
+}
+
+.media-active {
+  min-width: 1px;
+  opacity: 1;
+}
+
+/* //////////////////////////////////////
+                 CENTER
+////////////////////////////////////// */
+.workspace {
+  padding: 2px;
+  margin: 2px;
+  border-radius: 10rem;
+  opacity: 0;
+  background-color: @primary-color;
+  transition: all .3s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.workspace-active {
+  opacity: 1;
+}
+
+.workspace button {
+  min-width: 14px;
+}
+
+.workspace button.current {
+  min-width: 28px;
+  background-color: @secondary-color;
+}
+
+.clock {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/* //////////////////////////////////////
+                  RIGHT 
+////////////////////////////////////// */
+.section.section-right {
+  padding: 0 10px;
+}
+
+.section-right button {
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.section-right .icon {
+  min-width: 16px;
+  min-height: 16px;
+  border-radius: 10rem;
+  /* background-color: black; */
+}
+
+.sys-mng {
+  margin: 2px;
+  border-radius: 10rem;
+  transition: all .3s ease-in-out;
+}
+
+.sys-mng .sys-mng-data {
+  min-width: 20px;
+  margin: 2px 10px;
+  border-radius: 10rem;
+}
+
+.sys-mng .sys-mng-data.volume-data {
+  /* margin-right: 10px; */
+  margin-left: 2px;
+  min-width: 104px;
+}
+
+.sys-mng-active {
+  /* padding-right: 8px; */
+  /* margin-right: 4px; */
+  background-color: @secondary-color;
+  /* TODO: add @secondary-alt-color and USE IT for bg current active button on system manager bar element */
+  background-color: @bg-alt-color;
+}
+
+.volume-controller {
+  opacity: 0;
+  min-width: 100px;
+  border-radius: 10rem;
+  background-color: @primary-color;
+  transition: opacity .6s ease-in-out;
+}
+
+.sys-mng-active .volume-controller {
+  opacity: 1;
+}
+.sys-mng-active.volume-disabled .volume-controller {
+  opacity: 0.25;
+}
+
+.bluetooth.bluetooth-disabled .icon,
+.volume.volume-disabled .icon,
+.battery.battery-disabled .icon,
+.battery.battery-disabled label.battery-percent {
+  opacity: 0.4;
+  transition: opacity .1s ease-in-out;
+}
+
+/* .bluetooth.bluetooth-disabled.sys-mng-active { */
+/*   color: @text; */
+/*   background-color: @surface2; */
+/* } */
+.bluetooth:not(.bluetooth-disabled).sys-mng-active {
+  color: @base;
+  background-color: @blue;
+}
+

@@ -1,0 +1,42 @@
+window.volume {
+  font-size: 8px;
+  font-weight: bold;
+  border-radius: 3.2em;
+  color: @fg-color;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.volume-overlay .title {
+  font-size: 1.6em;
+  padding-top: .4em;
+}
+
+.volume-overlay .value {
+  font-size: 3.2em;
+}
+
+.volume-overlay .noise-overlay,
+.volume-overlay .container {
+  opacity: .5;
+  padding: 1em;
+  margin: .4em;
+  min-width: 18em;
+  min-height: 18em;
+  border-radius: 3.0em;
+  background-color: @bg-color;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.volume-overlay .volume-bar {
+  margin: 3.8em;
+  border-radius: 50%;
+  background-color: @bg-color;
+  box-shadow: 0 4px 6px 0 rgba(31, 31, 31, 0.5);
+}
+
+.volume-overlay .volume-bar-progress {
+  margin: 8.2em;
+  font-size: 1.2em;
+  color: @primary-color;
+}
+

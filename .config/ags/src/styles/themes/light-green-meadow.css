@@ -1,0 +1,12 @@
+/* https://colorhunt.co/palette/f5dad2fcffe0bacd9275a47f */
+/* #F5DAD2 */
+/* #FCFFE0 */
+/* #BACD92 */
+/* #75A47F */
+
+@define-color bg-color #FCFFE0;
+@define-color bg-alt-color #F9FFC7;
+@define-color fg-color #75A47F;
+@define-color primary-color #A1C398;
+@define-color secondary-color #F5DAD2;
+@define-color accent-color #FA7070;

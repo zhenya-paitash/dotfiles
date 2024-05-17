@@ -1,0 +1,123 @@
+window.notification-popups {
+  font-size: 11px;
+  border-radius: 28px;
+  transition: all .1s ease-in-out;
+}
+
+window.notification-popups box.notifications {
+  opacity: 0;
+  border-radius: 28px;
+  background-color: rgba(255, 255, 255, .1);
+  transition: all .3s ease-in-out;
+}
+
+window.notification-popups box.notifications-active {
+  opacity: 1;
+}
+
+.notifications .noise-overlay {
+  padding: 10px;
+  margin: 4px;
+  border-radius: 24px;
+}
+
+.notification {
+  opacity: 0.98;
+  min-height: 60px;
+  min-width: 300px;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 24px;
+  background-color: @bg-color;
+  /* background-color: @primary-color; */
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transition: all .1s ease-in-out;
+}
+
+.notification-icon {
+  min-width: 64px;
+  min-height: 64px;
+  margin-right: 12px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, .1);
+  box-shadow: 0 4px 4px 0 rgba(31, 31, 31, 0.1);
+}
+
+/* .notification-icon box { */
+/*   min-width: 64px; */
+/*   min-height: 64px; */
+/*   border-radius: 16px; */
+/* } */
+
+.notification-icon .icon {
+  font-size: 52px;
+  margin: 6px;
+  color: @primary-color;
+}
+
+.notification-icon .image {
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  min-width: 64px;
+  min-height: 64px;
+}
+
+.notification-data {}
+
+.notification-data .title {
+  /* font-size: 1.2em; */
+  font-weight: bold;
+  color: @fg-color;
+}
+
+.notification-data .body {
+  /* font-size: 1.2em; */
+  opacity: 0.8;
+  color: @fg-color;
+}
+
+.notification-actions {}
+
+.notification-actions .action-button {
+  opacity: 0.9;
+  padding: 8px 12px;
+  margin: 20px 4px 0 4px;
+  font-weight: bold;
+  border-radius: 14px;
+  color: @fg-color;
+  background-color: rgba(255, 255, 255, .1);
+  box-shadow: 0 2px 2px 0 rgba(31, 31, 31, .1);
+  transition: all .3s ease-in-out;
+}
+
+.notification-actions .action-button:hover {
+  /* opacity: 0.96; */
+  /* background-color: rgba(255, 255, 255, .2); */
+  background-color: @secondary-color;
+  box-shadow: 0 2px 2px 0 rgba(31, 31, 31, .2);
+}
+
+.notification-actions .action-button:first-child {
+  margin-left: 0;
+}
+
+.notification-actions .action-button:last-child {
+  margin-right: 0;
+}
+
+
+/* //////////////////////////////////////
+                URGENCY
+////////////////////////////////////// */
+/* .notification.normal .notification-icon { */
+/*   background-color: rgba(245,91,59, .8); */
+/*   box-shadow: 0 4px 4px 0 rgba(245,91,59, .4); */
+/* } */
+/* .notification.normal .notification-icon image { */
+/* color: white; */
+/* color: rgba(245,91,59, .8); */
+/* } */
+
