@@ -1,0 +1,60 @@
+*
+
+# /////////////////////////
+#           $HOME/         
+# /////////////////////////
+!README.md
+!.bashrc
+!.bash_profile
+!.gtkrc-2.0
+
+# packages
+# sudo pacman -Q | tee ~/pacman.md && yay -Qm | tee ~/yay.md
+!pacman.md
+!yay.md
+
+
+# /////////////////////////
+#      $HOME/scripts         
+# /////////////////////////
+!/scripts
+!/scripts/**
+
+
+# /////////////////////////
+#      $HOME/.config         
+# /////////////////////////
+!/.config
+
+!.config/ags**
+.config/ags/src/assets/app-launcher/bg.jpg
+!.config/btop**
+.config/btop.log
+!.config/firefox**
+!.config/fish
+!.config/fish/config.fish
+!.config/fish/fish_plugins
+!.config/fish/fish_variables
+!.config/gtk-3.0**
+!.config/htop**
+!.config/hypr**
+!.config/kitty**
+!.config/lazydocker**
+!.config/lazygit**
+!.config/mpv**
+!.config/nvim**
+!.config/nwg-look**
+!.config/tmux**
+.config/tmux/plugins
+!.config/yazi**
+
+!starship.toml
+
+
+# /////////////////////////
+#      $HOME/.icons          
+# /////////////////////////
+!/.icons
+!/.icons/default**
+!/.icons/dot-white-14**
+
