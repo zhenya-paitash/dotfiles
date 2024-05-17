@@ -1,7 +1,7 @@
 import Gtk from "types/@girs/gtk-3.0/gtk-3.0";
 import Overlay, { OverlayProps } from "types/widgets/overlay";
 
-import options, { OptionsStyleNoiseVariant } from "@/options";
+import options, { OptionsStyleNoiseVariant } from "@options";
 
 export enum NoiseVariant {
   DEFAULT = 'default',
@@ -22,7 +22,13 @@ export default function NoiseBox(props: NoiseProps | NoiseVariant, ...children: 
     variant: props,
   } as NoiseProps;
 
-  const noise: OptionsStyleNoiseVariant = options.style.noise[props.variant];
+  // TODO: resplace
+  // const noise: OptionsStyleNoiseVariant = options.style.noise[props.variant];
+  const noise: OptionsStyleNoiseVariant = {
+    bg: `${App.configDir}/src/assets/noise/texture-noise-gradient2-min.png`,
+    opacity: 0.1,
+  };
+
   const css = ""
     + `background-image: url("${noise.bg}");`
     + `opacity: ${props.opacity || noise.opacity || 0.4};`;

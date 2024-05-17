@@ -1,0 +1,110 @@
+window {
+  &.app-launcher {
+    font-size: 11px;
+    min-width: 500px;
+    min-height: 300px;
+    border-radius: 28px;
+    background-color: rgba(255, 255, 255, .1);
+  }
+}
+
+.app-launcher {
+  .container {
+    margin: 4px;
+    border-radius: 24px;
+    color: $fg-color;
+    background-color: $bg-color;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .mask {
+    opacity: 0.25;
+    background-color: $primary-color;
+  }
+
+  .overlay {
+    &.left-overlay {
+      background-image: none;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 4px 0 2px 0 rgba(0, 0, 0, 0.2);
+      transition: all 1s ease-in-out;
+    }
+  }
+
+  .search {
+    opacity: 0;
+    font-weight: bold;
+    min-width: 40px;
+    padding: 8px 16px;
+    margin: 20px;
+    border-radius: 10rem;
+    caret-color: transparent;
+    color: $fg-color;
+    background-color: $bg-color;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    transition: all .3s ease-in-out;
+  }
+
+  .search-active {
+    opacity: 1;
+  }
+
+  .applications-scroll {
+    padding: 10px 20px 0 20px;
+    min-height: 300px;
+  }
+}
+
+.app-launcher .overlay,
+.app-launcher .mask,
+.app-launcher .noise-overlay,
+.app-launcher .applications {
+  min-width: 320px;
+  min-height: 320px;
+  margin: 6px;
+  border-radius: 20px;
+}
+
+
+.applications-list {
+  .application {
+    margin: 4px 0;
+    padding: 4px;
+    border-radius: 14px;
+  }
+}
+
+.application {
+  .application-title {
+    font-weight: bold;
+  }
+}
+
+
+.applications-list {
+  .application {
+    &:first-child {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+.application {
+  .application-icon {
+    min-width: 52px;
+    min-height: 52px;
+    padding: 0px;
+    margin-right: 12px;
+    border-radius: 16px;
+  }
+
+  .application-description {
+    opacity: 0.75;
+  }
+
+  .application-executable {
+    opacity: 0.5;
+  }
+}

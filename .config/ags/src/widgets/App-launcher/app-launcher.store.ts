@@ -4,7 +4,7 @@ import { Application } from "types/service/applications";
 const { query } = await Service.import('applications');
 
 import { AppLauncherStoreInterface } from "./app-launcher.interface";
-import options from "@/options";
+import options from "@/options/old";
 
 export class AppLauncherStore implements AppLauncherStoreInterface {
   search = Variable("");

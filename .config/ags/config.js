@@ -1,5 +1,7 @@
-const entry = App.configDir + '/src/main.ts'
-const outdir = '/tmp/ags/build'
+// (async () => {
+const { GLib } = imports.gi;
+const entry = `${App.configDir}/src/main.ts`;
+const outdir = GLib.build_filenamev([GLib.get_user_cache_dir(), "ags", "user"]);
 
 try {
   await Utils.execAsync(['bun', 'build', entry, '--outdir', outdir, '--external', 'resource://*', '--external', 'gi://*']);
@@ -7,3 +9,4 @@ try {
 } catch (err) {
   console.error(err);
 }
+// })();

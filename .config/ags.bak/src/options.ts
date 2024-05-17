@@ -1,11 +1,18 @@
+import GLib from "types/@girs/glib-2.0/glib-2.0";
+
+
 // ////////////////////////////////////////////////////////////////////
 //                            INTERFACES
 // ////////////////////////////////////////////////////////////////////
-// @export
-export interface AppOptions {
+interface AppOptions {
+  variables: OptionsVariables;
   style: OptionsStyle;
   assets: OptionsAssets;
   widget: OptionsWidget;
+}
+
+interface OptionsVariables {
+  AGS_COMPILE_STYLE_DIR: string;
 }
 
 interface OptionsStyle {
@@ -14,8 +21,7 @@ interface OptionsStyle {
   noise: OptionsStyleNoise;
 }
 
-// @export
-export interface OptionsStyleSrc {
+interface OptionsStyleSrc {
   folder: string;
   main: string;
   files: string[];
@@ -38,8 +44,7 @@ interface OptionsStyleNoise {
   linegradient: OptionsStyleNoiseVariant;
 }
 
-// @export
-export interface OptionsStyleNoiseVariant {
+interface OptionsStyleNoiseVariant {
   bg: string;
   opacity?: number;
 }
@@ -84,23 +89,29 @@ const folders = {
   noise: `${App.configDir}/src/assets/noise`,
 }
 
+const VARIABLES = {
+  AGS_COMPILE_STYLE_DIR: `${GLib.get_user_cache_dir()}/ags/user/generated`,
+}
+
 const options: AppOptions = {
+  variables: VARIABLES,
+
   style: {
     src: {
       folder: folders.styles,
       main: folders.styles + '/main.css',
       files: [
-        '/main.css',
-        '/colors.css',
+        // '/main.css',
+        // '/colors.css',
         '/theme.css',
-        '/core.css',
-        '/themes/_generated.css',
-        '/widgets/bar.css',
-        '/widgets/notifications.css',
-        '/widgets/brightness-overlay.css',
-        '/widgets/volume-overlay.css',
-        '/widgets/app-launcher.css',
-        '/widgets/player.css',
+        // '/core.css',
+        // '/themes/_generated.css',
+        // '/widgets/bar.css',
+        // '/widgets/notifications.css',
+        // '/widgets/brightness-overlay.css',
+        // '/widgets/volume-overlay.css',
+        // '/widgets/app-launcher.css',
+        // '/widgets/player.css',
       ],
     },
 
@@ -157,6 +168,12 @@ const options: AppOptions = {
 // ////////////////////////////////////////////////////////////////////
 //                              EXPORTS    
 // ////////////////////////////////////////////////////////////////////
+export {
+  AppOptions,
+  OptionsStyleSrc,
+  OptionsStyleNoiseVariant,
+}
+
 globalThis.options = options;
 export default options;
 

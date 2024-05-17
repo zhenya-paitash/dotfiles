@@ -28,6 +28,7 @@
 
 !.config/ags**
 .config/ags/src/assets/app-launcher/bg.jpg
+.config/ags/src/styles/themes/_generated.css
 !.config/btop**
 .config/btop.log
 !.config/firefox**
