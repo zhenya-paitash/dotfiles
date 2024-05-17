@@ -1,0 +1,41 @@
+#!/usr/bin/env sh
+
+WALLPAPER_DIR=~/Downloads/wallpapers
+
+Get_Current_Wallpaper() {
+  get_current_path=$(swww query | grep -oP 'image: \K.*')
+  get_current_name=$(basename "$get_current_path")
+  echo $get_current_name
+}
+
+Get_Next_Wallpaper() {
+  current_wallpaper=$(Get_Current_Wallpaper)
+  array_wallpapers=($(ls -1 $WALLPAPER_DIR | sort))
+  for (( i=0; i<${#array_wallpapers[@]}; i++ )); do
+    current_item=${array_wallpapers[$i]}
+    if [ "$current_item" = "$current_wallpaper" ]; then
+      next_wallpaper=${array_wallpapers[$i + 1]}
+      if [ $i -eq $(( ${#array_wallpapers[@]} - 1 )) ]; then
+        echo ${array_wallpapers[0]}
+        break
+      fi
+
+      echo $next_wallpaper
+      break
+    fi
+  done
+}
+
+Print_Wallpapers() {
+  files=($(ls -1 $WALLPAPER_DIR | sort))
+  for file in "${files[@]}"; do 
+    echo $file
+  done
+}
+
+Set_Next_Wallpaper() {
+  # swww img "$WALLPAPER_DIR/$(Get_Next_Wallpaper)" --transition-step $((1 + RANDOM % 255)) --transition-fps $((1 + RANDOM % 255)) --transition-type outer
+  swww img "$WALLPAPER_DIR/$(Get_Next_Wallpaper)"
+}
+
+Set_Next_Wallpaper

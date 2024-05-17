@@ -1,0 +1,11 @@
+#!/bin/bash
+
+animations=$(hyprctl -j getoption animations:enabled | jq --raw-output '.int')
+
+if [[ $animations -eq 1 ]]; then
+    hyprctl keyword animations:enabled 0
+    notify-send -u low -t 2000 "animations" "OFF"
+else
+    hyprctl keyword animations:enabled 1
+    notify-send -u low -t 2000 "animations" "ON"
+fi

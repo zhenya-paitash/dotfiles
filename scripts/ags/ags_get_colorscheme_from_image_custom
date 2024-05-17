@@ -1,0 +1,49 @@
+#!/bin/bash
+
+output_file="$HOME/.config/ags/src/styles/themes/_generated.css"
+
+# Функция для вывода сообщений об ошибках
+error_exit() {
+    echo "$1" >&2
+    exit 1
+}
+
+# Проверка, был ли передан аргумент
+if [ "$#" -ne 1 ]; then
+    error_exit "USAGE: $0 <image_file.png | jpg | jpeg>"
+fi
+
+image="$1"
+
+# Проверка, существует ли файл
+if [ ! -f "$image" ]; then
+    error_exit "NOT FOUND: $image"
+fi
+
+# Проверка, является ли файл изображением
+if file "$image" | grep -qE 'image|bitmap'; then
+
+  # use imagemagick
+  output=$(convert "$image" -resize 256x256^ +dither -colors 6 -format "%c" histogram:info:- | sort -n -r | head -n 5 | grep -o '#[0-9a-fA-F]\{6\}')
+
+  # Преобразование строки вывода в массив
+  IFS=$'\n' read -rd '' -a array <<< "$output"
+
+  # Создание ассоциативного массива с цветами
+  declare -A colors
+  colors[bg-color]=${array[0]}
+  colors[bg-alt-color]=${array[1]}
+  colors[fg-color]=${array[2]}
+  colors[primary-color]=${array[3]}
+  colors[secondary-color]=${array[4]}
+
+  # Вывод цветов
+  echo '/* -- generated from image '$image' with custom script "$HOME/scripts/ags/ags_get_colorscheme_from_image_custom" -- */' > $output_file
+  for color in "${!colors[@]}"; do
+      echo "@define-color $color ${colors[$color]};" >> $output_file
+  done
+
+else
+    error_exit "NOT IMAGE: $image"
+fi
+

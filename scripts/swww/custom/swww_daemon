@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+swww query
+if [ $? -ne 0 ] ; then
+[ -e $XDG_RUNTIME_DIR/swww.socket ] && rm  $XDG_RUNTIME_DIR/swww.socket
+    swww-daemon --format xrgb &
+fi

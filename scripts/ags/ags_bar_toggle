@@ -1,0 +1,4 @@
+#!/bin/bash
+# ags -r "App.toggleWindow('bar-0'); App.toggleWindow('bar-1');"
+ags -r "App.toggleWindow('bar-0');"
+

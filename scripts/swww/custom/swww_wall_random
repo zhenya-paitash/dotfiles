@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+# Путь к папке с обоями
+WALLPAPER_DIR=~/Downloads/wallpapers
+
+# Получаем список файлов в папке
+files=($WALLPAPER_DIR/*)
+
+# Выбираем случайный файл
+random_file=${files[$RANDOM % ${#files[@]}]}
+
+# Случайные параметры
+transition_step=$((1 + RANDOM % 255))
+transition_fps=$((1 + RANDOM % 255))
+
+# Запускаем команду
+swww img "$random_file" --transition-step $transition_step --transition-fps $transition_fps --transition-type outer

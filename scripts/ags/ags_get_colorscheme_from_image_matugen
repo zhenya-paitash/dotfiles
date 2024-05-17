@@ -1,0 +1,47 @@
+#!/bin/bash
+
+output_file="$HOME/.config/ags/src/styles/themes/_generated.css"
+
+# Функция для вывода сообщений об ошибках
+error_exit() {
+    echo "$1" >&2
+    exit 1
+}
+
+# Проверка, был ли передан аргумент
+if [ "$#" -ne 1 ]; then
+    error_exit "USAGE: $0 <image_file.png | jpg | jpeg>"
+fi
+
+image="$1"
+
+# Проверка, существует ли файл
+if [ ! -f "$image" ]; then
+    error_exit "NOT FOUND: $image"
+fi
+
+# Проверка, является ли файл изображением
+if file "$image" | grep -qE 'image|bitmap'; then
+
+  # use matugen
+  output=$($HOME/scripts/ags/matugen/matugen image "$image" --json "hex")
+  # echo $output | tee test.json
+
+  # Создание ассоциативного массива с цветами
+  declare -A colors
+  colors[bg-color]=$(echo $output | jq -r '.colors.dark.background')
+  colors[bg-alt-color]=$(echo $output | jq -r '.colors.dark.shadow')
+  colors[fg-color]=$(echo $output | jq -r '.colors.dark.on_background')
+  colors[primary-color]=$(echo $output | jq -r '.colors.dark.primary')
+  colors[secondary-color]=$(echo $output | jq -r '.colors.dark.tertiary')
+
+  # Вывод цветов
+  echo '/* -- generated from image '$image' with custom script "$HOME/scripts/ags/ags_get_colorscheme_from_image_custom" -- */' > $output_file
+  for color in "${!colors[@]}"; do
+      echo "@define-color $color ${colors[$color]};" >> $output_file
+  done
+
+else
+    error_exit "NOT IMAGE: $image"
+fi
+
