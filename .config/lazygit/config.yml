@@ -1,0 +1,44 @@
+quitOnTopLevelReturn: false
+
+gui:
+  # sidePanelWidth: 0.3333 # number from 0 to 1
+
+  nerdFontsVersion: "3" # nerd fonts version to use ("2" or "3"); empty means don't show nerd font icons
+  border: 'rounded' # one of 'single' | 'double' | 'rounded' | 'hidden'
+
+  # WARN: this theme dont work if you terminal have transparent. Work only in neovim without transparent background
+  theme:
+    activeBorderColor:
+      - '#a6e3a1'
+      - bold
+    inactiveBorderColor:
+      - '#a6adc8'
+    searchingActiveBorderColor:
+      - '#f9e2af'
+    optionsTextColor:
+      - '#89b4fa'
+    selectedLineBgColor:
+      - '#313244'
+    selectedRangeBgColor:
+      - '#313244'
+    cherryPickedCommitBgColor:
+      - '#45475a'
+    cherryPickedCommitFgColor:
+      - '#a6e3a1'
+    unstagedChangesColor:
+      - '#f38ba8'
+    defaultFgColor:
+      - '#cdd6f4'
+
+# # link: https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Pagers.md
+# git:
+#   paging:
+#     colorArg: never # 'always' | 'never'
+#     pager: python3 /home/mi/bin/ydiff/ydiff -p cat -s --wrap --width={{columnWidth}}
+
+# git:
+#   paging:
+#     colorArg: always # 'always' | 'never'
+#     useConfig: true
+#     pager: difftastic --color=always --display=inline --syntax-highlight=off
+#     externalDiffCommand: difftastic --color=always --display=inline --syntax-highlight=off
