@@ -33,20 +33,11 @@ export function SectionRight() {
     className: 'section section-right',
     hpack: 'end',
     children: [
-      // NetworkWidget(),
-      // BluetoothWidget(),
-      // VolumeWidget(),
-      // BatteryWidget(),
-      // PowerWidget(),
-
-      MediaWidget(),
-      WorkspaceWidget(),
       NetworkWidget(),
       BluetoothWidget(),
       VolumeWidget(),
       BatteryWidget(),
       PowerWidget(),
-      ClockWidget(),
     ],
   });
 }

@@ -233,3 +233,10 @@ end, { desc = "Markdown preview toggle" })
 ---------------------------------------
 map(MODE.normal, "<leader>jb", ":%!jq '.'<CR>")
 
+
+---------------------------------------
+-- REST.NVIM
+---------------------------------------
+map(MODE.normal, "<leader>rr", "<cmd> Rest run <CR>", { desc = "Run request under the cursor" })
+map(MODE.normal, "<leader>rl", "<cmd> Rest run last <CR>", { desc = "Run last request" })
+

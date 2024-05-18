@@ -28,9 +28,9 @@ bash 5.2.026-2
 bat 0.24.0-2
 binutils 2.42+r91+g6224493e457-1
 bison 3.8.2-6
-bluez 5.75-1
-bluez-libs 5.75-1
-bluez-utils 5.75-1
+bluez 5.76-1
+bluez-libs 5.76-1
+bluez-utils 5.76-1
 brightnessctl 0.5.1-2
 brotli 1.1.0-2
 btop 1.3.2-1
@@ -254,6 +254,7 @@ librsvg 2:2.58.0-1
 librsync 1:2.3.4-1
 libsamplerate 0.2.2-2
 libsasl 2.1.28-4
+libsass 3.6.6-1
 libseccomp 2.5.5-3
 libsecret 0.21.4-1
 libsigc++ 2.12.1-1
@@ -330,8 +331,8 @@ lilv 0.24.24-2
 linux-api-headers 6.8-1
 linux-firmware 20240510.b9d2bf23-1
 linux-firmware-whence 20240510.b9d2bf23-1
-linux-lts 6.6.30-2
-linux-zen 6.8.9.zen1-2
+linux-lts 6.6.31-1
+linux-zen 6.9.1.zen1-1
 llvm-libs 17.0.6-4
 lm_sensors 1:3.6.0.r41.g31d1f125-2
 lua 5.4.6-3
@@ -415,6 +416,7 @@ rofi-lbonn-wayland-git 1.7.5.wayland3.r3.g47ae31eb-1
 rofi-lbonn-wayland-git-debug 1.7.5.wayland3.r3.g47ae31eb-1
 rubberband 3.3.0-1
 rustup 1.27.1-1
+sassc 3.6.2-4
 sbc 2.0-1
 sdl2 2.30.3-1
 seatd 0.8.0-1
@@ -513,7 +515,7 @@ xorg-xkbcomp 1.4.7-1
 xorg-xprop 1.2.7-1
 xorg-xrandr 1.5.2-1
 xorg-xset 1.2.5-1
-xorg-xwayland 23.2.7-1
+xorg-xwayland 24.1.0-1
 xorgproto 2024.1-2
 xvidcore 1.3.7-2
 xxhash 0.8.2-1

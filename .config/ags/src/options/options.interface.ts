@@ -10,23 +10,59 @@ interface AppOptions {
   // widget: OptionsWidget;
 }
 
+
 // //////////////////////////////
 //   options
 //     ├── variables
 //     ...
 // //////////////////////////////
 interface OptionsVariables {
+  /**
+   * @const
+   * @type string
+   * @files $HOME/.cache/ags/user
+   */
   AGS_COMPILE_DIR: string;
+
+  /**
+   * @const
+   * @type string
+   * @files $HOME/.cache/ags/user/generated
+   */
   AGS_COMPILE_GEN_DIR: string;
+
+  /**
+   * @const
+   * @type string
+   * @file $HOME/.cache/ags/user/generated/style.css
+   */
+  AGS_COMPILE_GEN_CSS: string;
+
+  /**
+   * @const
+   * @type string
+   * @files $HOME/.cache/ags/user/generated/src
+   */
+  AGS_COMPILE_SRC_DIR: string;
+
+  /**
+   * @const
+   * @type string
+   * @file $HOME/.cache/ags/user/generated/src/\_bg.jpg
+   */
+  AGS_COMPILE_SRC_APPLAUNCHER_BG: string;
 }
+
 
 // //////////////////////////////
 //   options
 //     ...
 //     ╰── style
 // //////////////////////////////
-// type OptionsStyleThemeVariant = 'light' | 'dark';
-export enum OptionsStyleThemeVariant { LIGHT, DARK }
+/* 
+ * @enum
+ * */
+enum OptionsStyleThemeVariant { LIGHT, DARK }
 
 interface OptionsStyle {
   theme_variant: OptionsStyleThemeVariant;
@@ -100,5 +136,7 @@ interface OptionsStyleNoiseVariant {
 
 export {
   AppOptions,
+  OptionsVariables,
   OptionsStyleNoiseVariant,
+  OptionsStyleThemeVariant,
 };

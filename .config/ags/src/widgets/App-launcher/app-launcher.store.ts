@@ -4,7 +4,7 @@ import { Application } from "types/service/applications";
 const { query } = await Service.import('applications');
 
 import { AppLauncherStoreInterface } from "./app-launcher.interface";
-import options from "@/options/old";
+import options from "@options";
 
 export class AppLauncherStore implements AppLauncherStoreInterface {
   search = Variable("");
@@ -12,7 +12,7 @@ export class AppLauncherStore implements AppLauncherStoreInterface {
   show = Variable<boolean>(false);
   show_apps = Variable<boolean>(false);
   bg_image = Variable<string>("");
-  use_bg_image: string = options.widget.applauncher.bg_image;
+  use_bg_image: string = options.variables.AGS_COMPILE_SRC_APPLAUNCHER_BG;
   #lock = Variable<boolean>(false);
   #timeout: GLib.Source | null = null;
   #timeout_duration: number = 300;

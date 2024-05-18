@@ -163,4 +163,19 @@ return {
     dependencies = "kevinhwang91/promise-async",
     config = require("plugins.setup.nvim-ufo").config,
   },
+
+  -- replacement for POSTMAN | INSOMNIA
+  {
+    "rest-nvim/rest.nvim",
+    ft = { "http" },
+    dependencies = {
+      {
+        "vhyrro/luarocks.nvim",
+        priority = 1000,
+        config = true,
+        opts = { rocks = { "lua-curl", "nvim-nio", "mimetypes", "xml2lua" } },
+      },
+    },
+    config = require("plugins.setup.rest-nvim").config,
+  },
 }

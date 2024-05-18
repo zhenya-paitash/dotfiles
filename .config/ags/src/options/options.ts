@@ -11,6 +11,11 @@ const options: AppOptions = {
 
     // $HOME/.cache/ags/user/generated
     AGS_COMPILE_GEN_DIR: `${AGS_COMPILE_DIR}/generated`,
+    AGS_COMPILE_GEN_CSS: `${AGS_COMPILE_DIR}/generated/style.css`,
+
+    // $HOME/.cache/ags/user/generated/src
+    AGS_COMPILE_SRC_DIR: `${AGS_COMPILE_DIR}/generated/src`,
+    AGS_COMPILE_SRC_APPLAUNCHER_BG: `${AGS_COMPILE_DIR}/generated/src/_bg.jpg`,
   },
 
   style: {

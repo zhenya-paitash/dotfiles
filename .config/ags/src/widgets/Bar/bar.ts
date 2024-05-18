@@ -16,11 +16,9 @@ export function Bar(monitor: number = 0) {
     child: Widget.CenterBox({
       className: 'bar-container',
       vertical: false,
-      // startWidget: SectionLeft(),
-      // centerWidget: SectionCenter(),
+      startWidget: SectionLeft(),
+      centerWidget: SectionCenter(),
       endWidget: SectionRight(),
-
-      // centerWidget: SectionRight(),
     }),
   })
 }

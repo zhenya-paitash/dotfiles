@@ -25,8 +25,7 @@ export default function NoiseBox(props: NoiseProps | NoiseVariant, ...children: 
   // TODO: resplace
   // const noise: OptionsStyleNoiseVariant = options.style.noise[props.variant];
   const noise: OptionsStyleNoiseVariant = {
-    bg: `${App.configDir}/src/assets/noise/texture-noise-gradient2-min.png`,
-    opacity: 0.1,
+    bg: `${options.variables.AGS_COMPILE_SRC_DIR}/texture-noise-default-min.png`,
   };
 
   const css = ""

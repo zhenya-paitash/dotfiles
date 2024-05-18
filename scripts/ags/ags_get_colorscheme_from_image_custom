@@ -31,10 +31,10 @@ if file "$image" | grep -qE 'image|bitmap'; then
 
   # Создание ассоциативного массива с цветами
   declare -A colors
-  colors[bg-color]=${array[0]}
+  colors[primary-color]=${array[0]}
   colors[bg-alt-color]=${array[1]}
   colors[fg-color]=${array[2]}
-  colors[primary-color]=${array[3]}
+  colors[bg-color]=${array[3]}
   colors[secondary-color]=${array[4]}
 
   # Вывод цветов

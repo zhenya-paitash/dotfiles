@@ -7,21 +7,18 @@ return {
 
     vim.keymap.set("n", "zR", require("ufo").openAllFolds)
     vim.keymap.set("n", "zM", require("ufo").closeAllFolds)
+    vim.keymap.set("n", "zK", function()
+      local winid = require("ufo").peekFoldedLinesUnderCursor()
+      if not winid then
+        vim.lsp.buf.hover()
+      end
+    end, { desc = "Peek Fold" })
 
     require("ufo").setup {
       provider_selector = function(bufnr, filetype, buftype)
-        return { "treesitter", "indent" }
+        -- return { "treesitter", "indent" }
+        return { "lsp", "indent" }
       end,
     }
-
-    -- local cmd = vim.cmd
-    -- cmd "hi default UfoFoldedFg guifg=Normal.foreground"
-    -- cmd "hi default UfoFoldedBg guibg=Folded.background"
-    -- cmd "hi default link UfoPreviewSbar PmenuSbar"
-    -- cmd "hi default link UfoPreviewThumb PmenuThumb"
-    -- cmd "hi default link UfoPreviewWinBar UfoFoldedBg"
-    -- cmd "hi default link UfoPreviewCursorLine Visual"
-    -- cmd "hi default link UfoFoldedEllipsis Comment"
-    -- cmd "hi default link UfoCursorFoldedLine CursorLine"
   end,
 }

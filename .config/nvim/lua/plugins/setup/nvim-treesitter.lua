@@ -5,6 +5,7 @@ return {
       "lua",
       "vimdoc",
       "html",
+      "http",
       "css",
       "javascript",
       "typescript",
