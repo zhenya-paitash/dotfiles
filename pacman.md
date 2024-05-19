@@ -155,7 +155,7 @@ kmod 32-1
 krb5 1.21.2-2
 l-smash 2.14.5-3
 lame 3.100-4
-lazygit 0.41.0-1
+lazygit 0.42.0-1
 lcms2 2.16-1
 less 1:643-2
 libarchive 3.7.4-1
@@ -196,7 +196,7 @@ libfontenc 1.1.8-1
 libfreeaptx 0.1.1-1
 libgcrypt 1.10.3-1
 libgirepository 1.80.1-3
-libgit2 1:1.8.0-2
+libgit2 1:1.8.1-1
 libglvnd 1.7.0-1
 libgpg-error 1.49-1
 libgudev 238-1
