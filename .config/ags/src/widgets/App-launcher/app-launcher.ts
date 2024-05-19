@@ -1,7 +1,8 @@
 import { Application } from "types/service/applications";
 import Box from "types/widgets/box";
 
-import store from "./app-launcher.store"
+// import store from "./app-launcher.store"
+import { appLauncherStore as store } from "@store"
 import NoiseBox, { NoiseVariant } from "@/components/noisebox";
 
 function Content() {
@@ -13,7 +14,7 @@ function Content() {
       transition: "slide_right",
       transitionDuration: 200,
       child: ContentRight(),
-      setup: self => self.bind('reveal_child', store.show_apps),
+      setup: self => self.bind('reveal_child', store.isVisibleContent),
     }),
   });
 }
@@ -63,8 +64,8 @@ export function ContentLeft(): Box<any, unknown> {
       )
     }),
 
-    setup: self => self.hook(store.show_apps, () => {
-      if (!store.show_apps.value) return;
+    setup: self => self.hook(store.isVisibleContent, () => {
+      if (!store.visible_content) return;
       searchInput.grab_focus();
     }),
   });
@@ -180,9 +181,10 @@ export function AppLauncher(monitor: number = 0) {
     keymode: 'exclusive',
     exclusivity: 'exclusive',
     layer: 'overlay',
+    visible: true,
     child: Content(),
     setup: self => self
-      .bind('visible', store.show)
+      .bind('visible', store.isVisible)
       .keybind('Escape', () => store.close())
       .keybind(['CONTROL'], 'w', () => store.search.setValue(""))
   });

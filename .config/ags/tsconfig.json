@@ -15,7 +15,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@options*": ["./src/options/options.ts"],
+      "@options": ["./src/options/options.ts"],
+      "@store": ["./src/store/store.ts"],
       "@widgets": ["./src/widgets/index"]
     },
     "skipLibCheck": true,

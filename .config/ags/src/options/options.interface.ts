@@ -1,13 +1,11 @@
 // //////////////////////////////
 //   options
 //     ├── variables
-//     ╰── style
+//     ╰── styles
 // //////////////////////////////
-interface AppOptions {
-  variables: OptionsVariables;
-  style: OptionsStyle;
-  // assets: OptionsAssets;
-  // widget: OptionsWidget;
+interface Opts {
+  variables: OptsVariables;
+  styles: OptsStyles;
 }
 
 
@@ -16,7 +14,7 @@ interface AppOptions {
 //     ├── variables
 //     ...
 // //////////////////////////////
-interface OptionsVariables {
+interface OptsVariables {
   /**
    * @const
    * @type string
@@ -57,86 +55,31 @@ interface OptionsVariables {
 // //////////////////////////////
 //   options
 //     ...
-//     ╰── style
+//     ╰── styles
 // //////////////////////////////
-/* 
- * @enum
- * */
-enum OptionsStyleThemeVariant { LIGHT, DARK }
+  /* 
+   * @enum
+   * */
+enum OptsStylesThemeVariant { LIGHT, DARK }
 
-interface OptionsStyle {
-  theme_variant: OptionsStyleThemeVariant;
+interface OptsStyles {
+  /* 
+   * @type {OptsStylesThemeVariant} 
+   * */
+  theme_variant: OptsStylesThemeVariant;
+  files: string[];
 }
 
 
-// interface OptionsStyle {
-//   src: OptionsStyleSrc;
-//   theme: OptionsStyleTheme;
-//   noise: OptionsStyleNoise;
-// }
-//
-// interface OptionsStyleSrc {
-//   folder: string;
-//   main: string;
-//   files: string[];
-// }
-//
-// interface OptionsStyleTheme {
-//   light: Record<string, unknown>;
-//   dark: Record<string, unknown>;
-// }
-//
-// interface OptionsStyleNoise {
-//   src: {
-//     folder: string;
-//   }
-//
-//   none: OptionsStyleNoiseVariant;
-//   default: OptionsStyleNoiseVariant;
-//   gradient: OptionsStyleNoiseVariant;
-//   gradient2: OptionsStyleNoiseVariant;
-//   linegradient: OptionsStyleNoiseVariant;
-// }
-//
-interface OptionsStyleNoiseVariant {
+interface OptsStylesNoiseVariant {
   bg: string;
   opacity?: number;
 }
-//
-// interface OptionsAssets {
-//   src: {
-//     folder: string;
-//   }
-// }
-//
-// interface OptionsWidget {
-//   applauncher: OptionsWidgetApplauncher;
-//   bar: OptionsWidgetBar;
-//   player: OptionsWidgetPlayer;
-//   notifications: OptionsWidgetNotifications;
-//   brightnessoverlay: OptionsWidgetBrightnessOverlay;
-//   volumeoverlay: OptionsWidgetVolumeOverlay;
-// }
-//
-// interface OptionsWidgetApplauncher {
-//   asserts: string;
-//   bg_image: string;
-// }
-//
-// interface OptionsWidgetBar { }
-//
-// interface OptionsWidgetPlayer { }
-//
-// interface OptionsWidgetNotifications { }
-//
-// interface OptionsWidgetBrightnessOverlay { }
-//
-// interface OptionsWidgetVolumeOverlay { }
 
 
 export {
-  AppOptions,
-  OptionsVariables,
-  OptionsStyleNoiseVariant,
-  OptionsStyleThemeVariant,
+  Opts,
+  OptsVariables,
+  OptsStylesThemeVariant,
+  OptsStylesNoiseVariant,
 };

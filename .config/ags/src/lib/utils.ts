@@ -5,6 +5,7 @@ interface AppUtilsInterface {
   prebuild(): AppUtils;
   watchStyles(): AppUtils;
   buildStyles(): Promise<void>;
+  sleep(ms: number): Promise<void>;
 }
 
 class AppUtils implements AppUtilsInterface {
@@ -12,7 +13,7 @@ class AppUtils implements AppUtilsInterface {
     Utils.exec(`mkdir -p ${options.variables.AGS_COMPILE_GEN_DIR}`);
     Utils.exec(`mkdir -p ${options.variables.AGS_COMPILE_SRC_DIR}`);
     Utils.exec(`touch ${options.variables.AGS_COMPILE_GEN_CSS}`);
-    Utils.exec(`touch ${options.variables.AGS_COMPILE_SRC_APPLAUNCHER_BG}`);
+    // Utils.exec(`touch ${options.variables.AGS_COMPILE_SRC_APPLAUNCHER_BG}`);
     Utils.execAsync(`bash -c "cp ${App.configDir}/src/assets/texture/* ${options.variables.AGS_COMPILE_SRC_DIR}"`);
     console.log(`[UTILS] Directories and files created!`);
 
@@ -20,22 +21,7 @@ class AppUtils implements AppUtilsInterface {
   }
 
   watchStyles(): AppUtils {
-    const files: string[] = [
-      '/home/zh/.config/ags/src/styles/main.scss',
-      '/home/zh/.config/ags/src/styles/colors.scss',
-      '/home/zh/.config/ags/src/styles/theme.scss',
-      '/home/zh/.config/ags/src/styles/core.scss',
-      '/home/zh/.config/ags/src/styles/themes/_generated.scss',
-      '/home/zh/.config/ags/src/styles/widgets/bar.scss',
-      '/home/zh/.config/ags/src/styles/widgets/notifications.scss',
-      '/home/zh/.config/ags/src/styles/widgets/brightness-overlay.scss',
-      '/home/zh/.config/ags/src/styles/widgets/volume-overlay.scss',
-      '/home/zh/.config/ags/src/styles/widgets/app-launcher.scss',
-      '/home/zh/.config/ags/src/styles/widgets/player.scss',
-    ];
-
-    for (const file of files) Utils.monitorFile(file, this.buildStyles.bind(this));
-
+    for (const file of options.styles.files) Utils.monitorFile(file, this.buildStyles.bind(this));
     return this;
   }
 
@@ -50,6 +36,10 @@ class AppUtils implements AppUtilsInterface {
   private resetStyles(): void {
     App.resetCss();
     App.applyCss(options.variables.AGS_COMPILE_GEN_CSS);
+  }
+
+  async sleep(ms: number): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve, ms));
   }
 }
 

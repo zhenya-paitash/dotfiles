@@ -1,7 +1,7 @@
 import Gtk from "types/@girs/gtk-3.0/gtk-3.0";
 import Overlay, { OverlayProps } from "types/widgets/overlay";
 
-import options, { OptionsStyleNoiseVariant } from "@options";
+import options, { OptsStylesNoiseVariant } from "@options";
 
 export enum NoiseVariant {
   DEFAULT = 'default',
@@ -24,7 +24,7 @@ export default function NoiseBox(props: NoiseProps | NoiseVariant, ...children: 
 
   // TODO: resplace
   // const noise: OptionsStyleNoiseVariant = options.style.noise[props.variant];
-  const noise: OptionsStyleNoiseVariant = {
+  const noise: OptsStylesNoiseVariant = {
     bg: `${options.variables.AGS_COMPILE_SRC_DIR}/texture-noise-default-min.png`,
   };
 

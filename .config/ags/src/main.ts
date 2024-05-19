@@ -29,3 +29,4 @@ App.config({
   onConfigParsed() { print("[MAIN]: “It’s alive!” © AGS Frankenstein's monster"); },
   onWindowToggled(windowName: string, visible: boolean): void { },
 });
+

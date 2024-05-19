@@ -1,7 +1,7 @@
 import { MprisPlayer } from "types/service/mpris";
 import Button from "types/widgets/button";
 import Label from "types/widgets/label";
-import { PlayerStore } from "@widgets";
+import { playerStore } from "@store"
 
 const mpris = await Service.import('mpris');
 
@@ -21,7 +21,7 @@ function getMediaButtons(players: MprisPlayer[]): Button<any, unknown>[] {
   const mediaButtons: Button<any, unknown>[] = [];
   // TODO: switch to players[0] if this line not fix error media notification
   // for (const player of players) mediaButtons.push(createMediaButton(player));
-  if (players.length) mediaButtons.push(createMediaButton(players[0])); 
+  if (players.length) mediaButtons.push(createMediaButton(players[0]));
   return mediaButtons;
 }
 
@@ -38,7 +38,7 @@ function createMediaButton(player: MprisPlayer): Button<any, unknown> {
   }
 
   const onPrimaryClick = () => player.playPause().catch(onError);
-  const onSecondaryClick = () => PlayerStore.default.toggle();
+  const onSecondaryClick = () => playerStore.toggle();
   const onMiddleClick = () => player.close();
   const onScrollUp = () => { if (player.can_go_prev) player.previous().catch(onError); }
   const onScrollDown = () => { if (player.can_go_next) player.next().catch(onError); }

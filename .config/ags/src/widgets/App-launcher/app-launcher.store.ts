@@ -19,7 +19,6 @@ export class AppLauncherStore implements AppLauncherStoreInterface {
 
   constructor() {
     this.getApplications();
-    this.asyncCheckNewBgImage()
   }
 
   open(): void {
@@ -72,7 +71,6 @@ export class AppLauncherStore implements AppLauncherStoreInterface {
   }
 
   private getApplications() {
-    // this.search.setValue("");
     this.applications.setValue(query(""));
   }
 

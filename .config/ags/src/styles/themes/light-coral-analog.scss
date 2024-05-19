@@ -12,10 +12,10 @@
 /* Он будет хорошо контрастировать с этими светлыми оттенками и обеспечит хорошую читаемость текста. */
 /* Если вы хотите более мягкий вариант, то темно-серый цвет, например **#595959**, также будет хорошо смотреться. */
 
-@define-color bg-color #F7DED0;
-@define-color bg-alt-color #F3CFBA;
-@define-color fg-color #595959;
-@define-color primary-color #FEECE2;
-@define-color secondary-color #E2BFB3;
-@define-color accent-color #FFBE98;
+$bg-color: #F7DED0;
+$bg-alt-color: #F3CFBA;
+$fg-color: #595959;
+$primary-color: #FEECE2;
+$secondary-color: #E2BFB3;
+$accent-color: #FFBE98;
 

@@ -1,23 +1,9 @@
 class BrightnessService extends Service {
-  // every subclass of GObject.Object has to register itself
   static {
-    // takes three arguments
-    // the class itself
-    // an object defining the signals
-    // an object defining its properties
     Service.register(
       this,
-      {
-        // 'name-of-signal': [type as a string from GObject.TYPE_<type>],
-        'screen-changed': ['float'],
-      },
-      {
-        // 'kebab-cased-name': [type as a string from GObject.TYPE_<type>, 'r' | 'w' | 'rw']
-        // 'r' means readable
-        // 'w' means writable
-        // guess what 'rw' means
-        'screen-value': ['float', 'rw'],
-      },
+      { 'screen-changed': ['float'] },
+      { 'screen-value': ['float', 'rw'] },
     );
   }
 
@@ -77,9 +63,6 @@ class BrightnessService extends Service {
   }
 }
 
-// the singleton instance
 const service = new BrightnessService;
-
-// export to use in other modules
 export default service;
 
