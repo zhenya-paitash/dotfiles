@@ -120,7 +120,7 @@ gtk3 1:3.24.42-1
 gtkmm3 3.24.9-1
 guile 3.0.9-1
 gzip 1.13-2
-harfbuzz 8.4.0-2
+harfbuzz 8.5.0-1
 hicolor-icon-theme 0.17-3
 hidapi 0.14.0-2
 highway 1.1.0-1
@@ -132,7 +132,7 @@ hyprlang 0.5.1-1
 hyprpicker 0.2.0-2
 hyprpicker-debug 0.2.0-2
 iana-etc 20240412-1
-icu 74.2-2
+icu 75.1-1
 imagemagick 7.1.1.32-1
 imath 3.1.11-2
 iproute2 6.9.0-1
@@ -312,7 +312,7 @@ libxinerama 1.1.5-1
 libxkbcommon 1.7.0-2
 libxkbcommon-x11 1.7.0-2
 libxkbfile 1.1.3-1
-libxml2 2.12.6-2
+libxml2 2.12.7-1
 libxmu 1.2.1-1
 libxpresent 1.0.1-1
 libxrandr 1.5.4-1
@@ -336,6 +336,8 @@ linux-zen 6.9.1.zen1-1
 llvm-libs 17.0.6-4
 lm_sensors 1:3.6.0.r41.g31d1f125-2
 lua 5.4.6-3
+lua51 5.1.5-11
+lua51-lpeg 1.1.0-1
 luajit 2.1.1713773202-1
 lv2 1.18.10-1
 lz4 1:1.9.4-3
@@ -357,7 +359,7 @@ msgpack-c 5.0.0-2
 mtdev 1.1.6-2
 mujs 1.3.4-1
 ncurses 6.4_20230520-3
-neovim 0.9.5-6
+neovim 0.10.0-2
 nettle 3.9.1-1
 networkmanager 1.46.0-2
 noto-fonts 1:24.5.1-1
@@ -453,7 +455,7 @@ texinfo 7.1-2
 tmux 3.4-7
 tomlplusplus 3.4.0-1
 tpm2-tss 4.0.1-1
-tracker3 3.7.3-1
+tracker3 3.7.3-2
 tree-sitter 0.22.6-1
 tree-sitter-bash 0.21.0-2
 tree-sitter-c 0.21.1-1

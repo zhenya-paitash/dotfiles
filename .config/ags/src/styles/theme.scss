@@ -1,5 +1,5 @@
 /* CMD: $HOME/scripts/ags/ags_get_colorscheme_from_image_custom <image_path> */
-@import "./themes/_generated.scss"; 
+// @import "./themes/_generated.scss"; 
 
 // @import "./themes/light-mint.scss";
 // @import "./themes/light-coffee.scss";
@@ -12,6 +12,8 @@
 // @import "./themes/light-yellow-sky.scss";
 // @import "./themes/light-orange-pink.scss";
 // @import "./themes/light-brown-orange-sky.scss"
+@import "./themes/light-bord-red.scss";
+// @import "./themes/light-yellow-brown.scss";
 
 // @import "./themes/dark-black-white.scss";
 // @import "./themes/dark-green.scss";
