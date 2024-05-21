@@ -142,10 +142,23 @@ return {
     config = require("plugins.setup.nvim-highlight-colors").config,
     event = "BufReadPost",
     dependencies = {
-      -- disable NvChad colorize plugin
-      "NvChad/nvim-colorizer.lua",
-      enabled = false,
+      {
+        -- disable NvChad colorize plugin
+        "NvChad/nvim-colorizer.lua",
+        enabled = false,
+      },
+
+      -- {
+      --   "uga-rosa/ccc.nvim",
+      --   config = require("plugins.setup.ccc").config,
+      -- },
     },
+  },
+
+  {
+    "uga-rosa/ccc.nvim",
+    cmd = { "CccConvert", "CccPick" },
+    config = require("plugins.setup.ccc").config,
   },
 
   {

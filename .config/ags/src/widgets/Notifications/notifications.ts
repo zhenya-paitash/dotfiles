@@ -57,11 +57,13 @@ export function Notifications(monitor: number = 0) {
     monitor,
     name: `notifications-${monitor}`,
     className: 'notification-popups',
-    // anchor: ['top'],
-    // margins: [0, 0, 0, 0],
+    anchor: ['top'],
+    margins: [0, 0, 0, 0],
+
     // margins: [-34, 0, 0, 0],
-    anchor: ['top', 'right'],
-    margins: [0, 8, 0, 0],
+
+    // anchor: ['top', 'right'],
+    // margins: [0, 8, 0, 0],
     layer: 'overlay',
 
     child: Widget.Box({
