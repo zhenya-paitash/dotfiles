@@ -2,7 +2,6 @@ import NoiseBox, { NoiseVariant } from "@/components/noisebox";
 import { Notification } from "types/service/notifications";
 import Box from "types/widgets/box";
 
-// function Content(notif: Notification): Box<any, unknown> {
 function Content(notif: Notification) {
   const children = [
     Widget.Box({

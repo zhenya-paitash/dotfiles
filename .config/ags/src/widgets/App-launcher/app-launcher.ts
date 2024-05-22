@@ -1,7 +1,6 @@
 import { Application } from "types/service/applications";
 import Box from "types/widgets/box";
 
-// import store from "./app-launcher.store"
 import { appLauncherStore as store } from "@store"
 import NoiseBox, { NoiseVariant } from "@/components/noisebox";
 

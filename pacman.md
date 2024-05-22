@@ -222,7 +222,7 @@ libimobiledevice-glue 1.2.0-1
 libinih 58-1
 libinput 1.25.0-1
 libisl 0.26-2
-libjpeg-turbo 3.0.2-2
+libjpeg-turbo 3.0.3-1
 libjxl 0.10.2-1
 libksba 1.6.6-1
 liblc3 1.1.1-1
@@ -243,7 +243,7 @@ libnetfilter_conntrack 1.0.9-2
 libnewt 0.52.24-2
 libnfnetlink 1.0.2-2
 libnftnl 1.2.6-1
-libnghttp2 1.62.0-1
+libnghttp2 1.62.1-1
 libnghttp3 1.3.0-1
 libnl 3.9.0-1
 libnm 1.46.0-2
@@ -350,7 +350,7 @@ linux-firmware 20240510.b9d2bf23-1
 linux-firmware-whence 20240510.b9d2bf23-1
 linux-lts 6.6.31-1
 linux-zen 6.9.1.zen1-1
-llvm-libs 17.0.6-4
+llvm-libs 17.0.6-5
 lm_sensors 1:3.6.0.r41.g31d1f125-2
 lua 5.4.6-3
 lua51 5.1.5-11
@@ -429,7 +429,12 @@ procps-ng 4.0.4-3
 protobuf 25.3-4
 psmisc 23.7-1
 python 3.12.3-1
+python-certifi 2024.02.02-2
+python-charset-normalizer 3.3.2-2
 python-gobject 3.48.2-1
+python-idna 3.6-2
+python-requests 2.32.2-1
+python-urllib3 1.26.18-3
 qt6-base 6.7.0-7
 qt6-declarative 6.7.0-1
 qt6-imageformats 6.7.0-1
@@ -474,9 +479,9 @@ sudo 1.9.15.p5-1
 svt-av1 2.1.0-1
 swww 0.9.5-1
 swww-debug 0.9.5-1
-systemd 255.6-1
-systemd-libs 255.6-1
-systemd-sysvcompat 255.6-1
+systemd 255.6-2
+systemd-libs 255.6-2
+systemd-sysvcompat 255.6-2
 tar 1.35-2
 tdb 1.4.10-3
 telegram-desktop 5.0.1-1
@@ -559,6 +564,7 @@ yadm 3.2.2-1
 yay 12.3.5-1
 yay-debug 12.3.5-1
 yazi 0.2.5-2
+yt-dlp 2024.04.09-2
 z 1.12-1
 zeromq 4.3.5-2
 zimg 3.0.5-1

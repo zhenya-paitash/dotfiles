@@ -1,7 +1,4 @@
-
-
 import { playerStore as store } from "@store"
-// import store from './player.store'
 import NoiseBox, { NoiseVariant } from "@/components/noisebox";
 
 function Content() {

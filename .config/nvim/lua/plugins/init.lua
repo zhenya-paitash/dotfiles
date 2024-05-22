@@ -75,6 +75,7 @@ return {
 
   {
     "mg979/vim-visual-multi",
+    -- event = "BufReadPost",
     branch = "master",
     init = require("plugins.setup.vim-visual-multi").init,
     keys = require("plugins.setup.vim-visual-multi").keys,
@@ -139,31 +140,25 @@ return {
 
   {
     "brenoprata10/nvim-highlight-colors",
+    -- event = "BufReadPost",
+    cmd = { "HighlightColors" },
     config = require("plugins.setup.nvim-highlight-colors").config,
-    event = "BufReadPost",
-    dependencies = {
-      {
-        -- disable NvChad colorize plugin
-        "NvChad/nvim-colorizer.lua",
-        enabled = false,
-      },
-
-      -- {
-      --   "uga-rosa/ccc.nvim",
-      --   config = require("plugins.setup.ccc").config,
-      -- },
-    },
   },
 
   {
     "uga-rosa/ccc.nvim",
-    cmd = { "CccConvert", "CccPick" },
+    event = "BufReadPost",
+    -- cmd = { "CccConvert", "CccPick" },
     config = require("plugins.setup.ccc").config,
+    dependencies = {
+      -- INFO: disable NvChad colorize plugin
+      "NvChad/nvim-colorizer.lua",
+      enabled = false,
+    },
   },
 
   {
     "utilyre/barbecue.nvim",
-    -- cmd = { "Barbecue" },
     event = "BufReadPost",
     dependencies = { "SmiteshP/nvim-navic" },
     config = require("plugins.setup.barbecue").config,
@@ -171,13 +166,11 @@ return {
 
   {
     "kevinhwang91/nvim-ufo",
-    -- cmd = { "Ufo" },
     event = "BufReadPost",
     dependencies = "kevinhwang91/promise-async",
     config = require("plugins.setup.nvim-ufo").config,
   },
 
-  -- replacement for POSTMAN | INSOMNIA
   {
     "rest-nvim/rest.nvim",
     ft = { "http" },

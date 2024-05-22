@@ -1,27 +1,24 @@
 import Box from "types/widgets/box";
 
 import { NotificationWidget } from "./components/notification";
-
-const notifications = await Service.import("notifications")
-
-// const NOTIFICATIONS_WIDGET_IS_SHOW = Variable<boolean>(false);
+import { notificationsStore as store } from "@store"
 
 function Content(): Box<any, unknown> {
-  const onNotified = (widget: Box<any, unknown>) => (_, id: number) => {
-    const notif = notifications.getNotification(id);
+  const onNotified = (widget: Box<any, unknown>) => (_: Box<any, unknown>, id: number) => {
+    const notif = store.notifications.getNotification(id);
     if (notif) widget.children = [NotificationWidget(notif), ...widget.children];
   }
 
-  const onDismissed = (widget: Box<any, unknown>) => (_, id: number) => {
+  const onDismissed = (widget: Box<any, unknown>) => (_: Box<any, unknown>, id: number) => {
     widget.children.find(notif => notif.attribute.id === id)?.destroy();
   }
 
   return Widget.Box({
     vertical: true,
-    children: notifications.popups.map(NotificationWidget),
+    children: store.notifications.popups.map(NotificationWidget),
     setup: self => self
-      .hook(notifications, onNotified(self), "notified")
-      .hook(notifications, onDismissed(self), "dismissed"),
+      .hook(store.notifications, onNotified(self), "notified")
+      .hook(store.notifications, onDismissed(self), "dismissed"),
   });
 }
 
@@ -29,29 +26,6 @@ function Content(): Box<any, unknown> {
 // ------------------------------ //
 //         NOTIFICATIONS          //
 // ------------------------------ //
-// window .notification-popups
-//   box .notifications [  ~  add 'revealer'
-//
-//     eventbox
-//       box .notification ${notification.urgency}
-//         box [
-//
-//           box .notification-icon
-//             box || box icon .icon
-//
-//           box .notification-data [
-//             label .title
-//             label .body
-//           ]
-//
-//           box .notification-actions [
-//             button .action-button
-//               label
-//           ]
-//
-//         ]
-//
-//     ]
 export function Notifications(monitor: number = 0) {
   return Widget.Window({
     monitor,
@@ -59,9 +33,6 @@ export function Notifications(monitor: number = 0) {
     className: 'notification-popups',
     anchor: ['top'],
     margins: [0, 0, 0, 0],
-
-    // margins: [-34, 0, 0, 0],
-
     // anchor: ['top', 'right'],
     // margins: [0, 8, 0, 0],
     layer: 'overlay',
@@ -75,10 +46,10 @@ export function Notifications(monitor: number = 0) {
         transition: 'slide_down',
         transition_duration: 300,
         child: Content(),
-        setup: self => self.bind('reveal_child', notifications, 'popups', popups => popups.length > 0),
+        setup: self => self.bind('reveal_child', store.notifications, 'popups', popups => popups.length > 0),
       }),
       setup: self => self
-        .bind('class_name', notifications, 'popups', popups => {
+        .bind('class_name', store.notifications, 'popups', popups => {
           return popups.length > 0 ? 'notifications notifications-active' : 'notifications';
         })
     }),

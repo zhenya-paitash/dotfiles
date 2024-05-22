@@ -10,11 +10,14 @@ import {
   BrightnessOverlayStoreInterface,
   PlayerStoreInterface,
   AppLauncherStoreInterface,
+  NotificationsStoreInterface,
+  BarBatteryStoreInterface,
 } from "./store.interface";
 
 import brightness from '@/services/brightness.service'
 const audio = await Service.import('audio');
 const { query } = await Service.import('applications');
+const notifications = await Service.import('notifications');
 
 
 class AppStore implements AppStoreInterface {
@@ -22,12 +25,14 @@ class AppStore implements AppStoreInterface {
   brightnessOverlayStore: BrightnessOverlayStoreInterface;
   playerStore: PlayerStoreInterface;
   appLauncherStore: AppLauncherStore;
+  notificationsStore: NotificationsStoreInterface;
 
   constructor() {
     this.volumeOverlayStore = new VolumeOverlayStore();
     this.brightnessOverlayStore = new BrightnessOverlayStore();
     this.playerStore = new PlayerStore();
     this.appLauncherStore = new AppLauncherStore();
+    this.notificationsStore = new NotificationsStore();
   }
 }
 
@@ -202,12 +207,27 @@ class AppLauncherStore extends BaseToggleStore implements AppLauncherStoreInterf
   }
 }
 
+class NotificationsStore implements NotificationsStoreInterface {
+  notifications: NotificationsStoreInterface["notifications"] = notifications;
+}
+
+class BarBatteryStore extends BaseToggleStore implements BarBatteryStoreInterface {
+  constructor(config: BaseToggleStoreConfig = {}) {
+    super(config);
+  }
+}
+
+
+export {
+  BarBatteryStore,
+}
 
 const store = new AppStore();
 export const volumeOverlayStore = store.volumeOverlayStore;
 export const brightnessOverlayStore = store.brightnessOverlayStore;
 export const playerStore = store.playerStore;
 export const appLauncherStore = store.appLauncherStore;
+export const notificationsStore = store.notificationsStore;
 
 export default store;
 globalThis.store = store;

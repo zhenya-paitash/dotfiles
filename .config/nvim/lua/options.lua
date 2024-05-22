@@ -10,9 +10,10 @@ o.wrap = false
 o.whichwrap = "[,]"
 o.cursorlineopt = "both"
 o.termguicolors = true
-o.scrolloff = 6
+o.scrolloff = 5
 o.clipboard = ""
 -- o.clipboard = "unnamedplus"
+o.inccommand = "split"
 
 -- colors
 cmd "highlight link CurSearch IncSearch"

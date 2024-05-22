@@ -1,5 +1,6 @@
 import GLib from "types/@girs/glib-2.0/glib-2.0";
 import { Application } from "types/service/applications";
+import { Notifications } from "types/service/notifications";
 import { Variable as TypeVariable } from "types/variable";
 
 interface AppStoreInterface {
@@ -7,6 +8,7 @@ interface AppStoreInterface {
   brightnessOverlayStore: BrightnessOverlayStoreInterface;
   playerStore: PlayerStoreInterface;
   appLauncherStore: AppLauncherStoreInterface;
+  notificationsStore: NotificationsStoreInterface;
 }
 
 interface BaseStoreInterface {
@@ -56,6 +58,21 @@ interface AppLauncherStoreInterface extends BaseToggleStoreInterface {
   use_bg_image: string;
 }
 
+interface NotificationsStoreInterface {
+  notifications: Notifications;
+}
+
+interface BarStoreInterface extends BaseToggleStoreInterface {
+
+}
+
+interface BarBatteryStoreInterface extends BarStoreInterface {}
+interface BarBluetoothStoreInterface extends BarStoreInterface {}
+interface BarNetworkStoreInterface extends BarStoreInterface {}
+interface BarPowerStoreInterface extends BarStoreInterface {}
+interface BarvolumeStoreInterface extends BarStoreInterface {}
+
+
 export {
   AppStoreInterface,
   BaseStoreInterface,
@@ -66,4 +83,12 @@ export {
   BrightnessOverlayStoreInterface,
   PlayerStoreInterface,
   AppLauncherStoreInterface,
+  NotificationsStoreInterface,
+
+  BarStoreInterface,
+  BarBatteryStoreInterface,
+  BarBluetoothStoreInterface,
+  BarNetworkStoreInterface,
+  BarPowerStoreInterface,
+  BarvolumeStoreInterface
 }
