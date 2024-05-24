@@ -184,4 +184,14 @@ return {
     },
     config = require("plugins.setup.rest-nvim").config,
   },
+
+  {
+    "folke/zen-mode.nvim",
+    cmd = { "ZenMode" },
+    opts = require("plugins.setup.zen-mode").opts,
+    dependencies = {
+      "folke/twilight.nvim",
+      opts = require("plugins.setup.zen-mode").twilight_opts,
+    },
+  },
 }

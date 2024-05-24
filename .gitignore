@@ -48,7 +48,8 @@
 .config/tmux/plugins
 !.config/yazi**
 
-!starship.toml
+!.config/starship.toml
+!.config/electron-flags.conf
 
 
 # /////////////////////////

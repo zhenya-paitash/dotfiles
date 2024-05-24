@@ -1,0 +1,28 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+  echo "USAGE: $0 \"#FA3F3A\"" 
+  exit 1
+fi
+
+color_hex="$1"
+color="0x${color_hex//\#/}"
+
+r=$(( ($color >> 16) & 0xFF ))
+g=$(( ($color >> 8) & 0xFF ))
+b=$(( $color & 0xFF ))
+
+# Calculate the brightness of the color
+brightness=$(( (r*299 + g*587 + b*114) / 1000 ))
+
+# If the color is bright, use black. Otherwise, use white.
+if [ $brightness -gt 155 ]; then
+  bright="#000000"  # Black text
+else
+  bright="#FFFFFF"  # White text
+fi
+
+# inverted_color="#$(printf '%06X\n' $((0xFFFFFF - $color)))"
+# echo $inverted_color
+
+echo $bright
