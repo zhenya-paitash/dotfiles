@@ -17,9 +17,9 @@ brightness=$(( (r*299 + g*587 + b*114) / 1000 ))
 
 # If the color is bright, use black. Otherwise, use white.
 if [ $brightness -gt 155 ]; then
-  bright="#000000"  # Black text
+  bright="#212121"  # Black text
 else
-  bright="#FFFFFF"  # White text
+  bright="#FAFAFA"  # White text
 fi
 
 # inverted_color="#$(printf '%06X\n' $((0xFFFFFF - $color)))"

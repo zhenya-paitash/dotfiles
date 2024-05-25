@@ -231,7 +231,7 @@ end, { desc = "Markdown preview toggle" })
 ---------------------------------------
 -- JSON
 ---------------------------------------
-map(MODE.normal, "<leader>jb", ":%!jq '.'<CR>")
+map(MODE.normal, "<leader>jq", ":%!jq '.'<CR>")
 
 
 ---------------------------------------
