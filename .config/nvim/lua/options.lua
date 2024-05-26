@@ -16,7 +16,7 @@ o.clipboard = ""
 o.inccommand = "split"
 
 -- colors
-cmd "highlight link CurSearch IncSearch"
+-- cmd "highlight link CurSearch IncSearch"
 -- cmd "hi CursorLineNr guifg=#ED9455"
 
 ---- autoread buffer

@@ -62,10 +62,7 @@ interface NotificationsStoreInterface {
   notifications: Notifications;
 }
 
-interface BarStoreInterface extends BaseToggleStoreInterface {
-
-}
-
+interface BarStoreInterface extends BaseToggleStoreInterface {}
 interface BarBatteryStoreInterface extends BarStoreInterface {}
 interface BarBluetoothStoreInterface extends BarStoreInterface {}
 interface BarNetworkStoreInterface extends BarStoreInterface {}

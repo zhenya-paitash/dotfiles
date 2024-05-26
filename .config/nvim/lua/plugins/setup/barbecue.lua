@@ -5,7 +5,7 @@ return {
     local fg_icons = "#ED9455"
     local fg_symbols = "#FFEC9E"
 
-    vim.cmd("hi CursorLineNr guifg=" .. fg_icons)
+    -- vim.cmd("hi CursorLineNr guifg=" .. fg_icons)
 
     require("barbecue").setup {
       theme = {

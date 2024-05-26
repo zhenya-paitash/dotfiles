@@ -1,5 +1,5 @@
 return {
-  {
+  { -- FORMATTERS
     "stevearc/conform.nvim",
     -- event = "BufWritePre", -- uncomment for format on save
     config = function()
@@ -7,7 +7,7 @@ return {
     end,
   },
 
-  {
+  { -- LSP
     "neovim/nvim-lspconfig",
     config = function()
       require("nvchad.configs.lspconfig").defaults()
@@ -15,32 +15,32 @@ return {
     end,
   },
 
-  {
+  { -- LSP INSTALLER
     "williamboman/mason.nvim",
     opts = require("plugins.setup.mason").opts,
   },
 
-  {
+  { -- TREESITTER
     "nvim-treesitter/nvim-treesitter",
+    opts = require("plugins.setup.nvim-treesitter").opts,
     dependencies = {
-      {
+      { -- CONTEXT COMMENT
         "JoosepAlviste/nvim-ts-context-commentstring",
         config = require("plugins.setup.nvim-ts-context-commentstring").config,
       },
-      {
+      { -- AUTOCLOSE & AUTORENAME HTML TAGS
         "windwp/nvim-ts-autotag",
         config = require("plugins.setup.nvim-ts-autotag").config,
       },
-      {
+      { -- HIGHLIGHT VARS UNDER CURSOR
         "RRethy/vim-illuminate",
         config = require("plugins.setup.vim-illuminate").config,
       },
-      -- {
+      -- { -- SYNTAX AWARE TEXT-OBJECTS
       --   "nvim-treesitter/nvim-treesitter-textobjects",
       --   config = require("plugins.setup.nvim-ts-textobjects").config,
       -- },
     },
-    opts = require("plugins.setup.nvim-treesitter").opts,
   },
 
   { -- FILE EXPLORER
@@ -68,9 +68,9 @@ return {
 
   { -- GIT
     "kdheepak/lazygit.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
     cmd = { "LazyGit", "LazyGitConfig", "LazyGitCurrentFile", "LazyGitFilter", "LazyGitFilterCurrentFile" },
     config = require("plugins.setup.lazygit").config(),
+    dependencies = { "nvim-lua/plenary.nvim" },
   },
 
   { -- MULTI-CURSOR
@@ -104,7 +104,7 @@ return {
     cmd = { "Spectre" },
   },
 
-  { -- PREVIE .md
+  { -- PREVIEW .md
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     ft = { "markdown" },
@@ -127,7 +127,7 @@ return {
   { -- DEBUG
     "mfussenegger/nvim-dap",
     config = require("plugins.setup.nvim-dap").config,
-    dependencies = {
+    dependencies = { -- DEBUG UI
       "rcarriga/nvim-dap-ui",
       config = require("plugins.setup.nvim-dap-ui").config,
     },
@@ -145,51 +145,48 @@ return {
     config = require("plugins.setup.nvim-highlight-colors").config,
   },
 
-  { -- COLOR PICKER & HIGHLIGHT COLORS
+  { -- HIGHLIGHT COLORS & COLOR PICKER
     "uga-rosa/ccc.nvim",
     event = "BufReadPost",
     -- cmd = { "CccConvert", "CccPick" },
     config = require("plugins.setup.ccc").config,
     dependencies = {
       -- INFO: disable NvChad colorize plugin
-      "NvChad/nvim-colorizer.lua",
-      enabled = false,
+      { "NvChad/nvim-colorizer.lua", enabled = false },
     },
   },
 
-  { -- lua > plugins > init.lua > []return
+  { -- LSP CONTEXT: lua > plugins > init.lua > []return
     "utilyre/barbecue.nvim",
     event = "BufReadPost",
-    dependencies = { "SmiteshP/nvim-navic" },
     config = require("plugins.setup.barbecue").config,
+    dependencies = { "SmiteshP/nvim-navic" },
   },
 
   { -- FOLDERS
     "kevinhwang91/nvim-ufo",
     event = "BufReadPost",
-    dependencies = "kevinhwang91/promise-async",
     config = require("plugins.setup.nvim-ufo").config,
+    dependencies = "kevinhwang91/promise-async",
   },
 
-  { -- NVIM "POSTMAN"
+  { -- HTTP CLIENT
     "rest-nvim/rest.nvim",
     ft = { "http" },
-    dependencies = {
-      {
-        "vhyrro/luarocks.nvim",
-        priority = 1000,
-        config = true,
-        opts = { rocks = { "lua-curl", "nvim-nio", "mimetypes", "xml2lua" } },
-      },
-    },
     config = require("plugins.setup.rest-nvim").config,
+    dependencies = {
+      "vhyrro/luarocks.nvim",
+      priority = 1000,
+      config = true,
+      opts = { rocks = { "lua-curl", "nvim-nio", "mimetypes", "xml2lua" } },
+    },
   },
 
   { -- ZEN MODE
     "folke/zen-mode.nvim",
     cmd = { "ZenMode" },
     opts = require("plugins.setup.zen-mode").opts,
-    dependencies = {
+    dependencies = { -- DIMMING INACTIVE CODE
       "folke/twilight.nvim",
       opts = require("plugins.setup.zen-mode").twilight_opts,
     },

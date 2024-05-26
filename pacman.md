@@ -49,7 +49,7 @@ cliphist 1:0.5.0-1
 coreutils 9.5-1
 cryptsetup 2.7.2-1
 curl 8.8.0-1
-dav1d 1.4.1-1
+dav1d 1.4.2-1
 db5.3 5.3.28-5
 dbus 1.14.10-2
 dbus-broker 36-2
@@ -151,7 +151,7 @@ hyprpicker 0.2.0-2
 hyprpicker-debug 0.2.0-2
 iana-etc 20240412-1
 icu 75.1-1
-imagemagick 7.1.1.32-1
+imagemagick 7.1.1.33-1
 imath 3.1.11-2
 iproute2 6.9.0-1
 iptables 1:1.8.10-1
@@ -173,7 +173,7 @@ kitty 0.33.1-4
 kitty-shell-integration 0.33.1-4
 kitty-terminfo 0.33.1-4
 kmod 32-1
-kpipewire 6.0.4-1
+kpipewire 6.0.5-1
 krb5 1.21.2-2
 kstatusnotifieritem 6.2.0-1
 kwindowsystem 6.2.0-1
@@ -361,8 +361,8 @@ lilv 0.24.24-2
 linux-api-headers 6.8-1
 linux-firmware 20240510.b9d2bf23-1
 linux-firmware-whence 20240510.b9d2bf23-1
-linux-lts 6.6.31-2
-linux-zen 6.9.1.zen1-2
+linux-lts 6.6.32-1
+linux-zen 6.9.2.zen1-1
 llvm-libs 17.0.6-5
 lm_sensors 1:3.6.0.r41.g31d1f125-2
 lua 5.4.6-3
@@ -390,7 +390,7 @@ msgpack-c 5.0.0-2
 mtdev 1.1.6-2
 mujs 1.3.4-1
 ncurses 6.5-2
-neovim 0.10.0-2
+neovim 0.10.0-3
 nettle 3.9.1-1
 networkmanager 1.46.0-2
 noto-fonts 1:24.5.1-1
@@ -423,7 +423,7 @@ pavucontrol 1:6.0-1
 pciutils 3.12.0-1
 pcre 8.45-4
 pcre2 10.43-4
-pcsclite 2.2.2-1
+pcsclite 2.2.3-1
 perl 5.38.2-1
 perl-error 0.17029-5
 perl-mailtools 2.21-7
@@ -451,12 +451,12 @@ python-gobject 3.48.2-1
 python-idna 3.6-2
 python-requests 2.32.2-1
 python-urllib3 1.26.18-3
-qt6-base 6.7.0-7
-qt6-declarative 6.7.0-1
-qt6-imageformats 6.7.0-1
-qt6-svg 6.7.0-1
-qt6-translations 6.7.0-1
-qt6-wayland 6.7.0-1
+qt6-base 6.7.1-2
+qt6-declarative 6.7.1-1
+qt6-imageformats 6.7.1-1
+qt6-svg 6.7.1-1
+qt6-translations 6.7.1-1
+qt6-wayland 6.7.1-1
 rav1e 0.7.1-1
 readline 8.2.010-1
 ripgrep 14.1.0-1
@@ -500,7 +500,7 @@ systemd-libs 255.6-2
 systemd-sysvcompat 255.6-2
 tar 1.35-2
 tdb 1.4.10-3
-telegram-desktop 5.0.2-1
+telegram-desktop 5.0.2-2
 texinfo 7.1-2
 tmux 3.4-8
 tomlplusplus 3.4.0-1
@@ -508,7 +508,7 @@ tpm2-tss 4.0.1-1
 tracker3 3.7.3-2
 tree-sitter 0.22.6-1
 tree-sitter-bash 0.21.0-2
-tree-sitter-c 0.21.1-1
+tree-sitter-c 0.21.3-1
 tree-sitter-lua 0.1.0-2
 tree-sitter-markdown 0.2.3-2
 tree-sitter-python 0.21.0-2
