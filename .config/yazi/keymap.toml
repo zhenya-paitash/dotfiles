@@ -151,7 +151,8 @@ keymap = [
 	{ on = [ "g", "<Space>" ], run = "cd --interactive", desc = "Go to a directory interactively" },
 	{ on = [ "g", "w" ],       run = "cd ~/wallpapers",  desc = "Go to the wallpapers directory" },
 
-	{ on = [ "<S-W>" ], run = "shell --confirm 'swww img $1 --transition-type grow --transition-step 200 --transition-fps 60' --transition-angle 30 --transition-duration 1", desc = "Set current file as wallpaper" },
+	# { on = [ "<S-W>" ], run = "shell --confirm 'swww img \"$@\" --transition-type grow --transition-step 200 --transition-fps 60' --transition-angle 30 --transition-duration 1", desc = "Set current file as wallpaper" },
+	{ on = [ "<S-W>" ], run = "shell --confirm '$HOME/scripts/ags/ags_get_colorscheme_from_image_custom \"$@\" & swww img \"$@\" --transition-type center --transition-step 200 --transition-fps 60' --transition-angle 30 --transition-duration 1", desc = "Set current file as wallpaper" },
 
 	# Help
 	{ on = [ "~" ], run = "help", desc = "Open help" },

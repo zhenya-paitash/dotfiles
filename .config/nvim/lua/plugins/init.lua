@@ -199,4 +199,14 @@ return {
     -- keys = require("plugins.setup.codesnap").keys,
     opts = require("plugins.setup.codesnap").opts,
   },
+
+  { -- NOTES
+    "epwalsh/obsidian.nvim",
+    event = {
+      "BufReadPre /home/zh/obsidian/**.md",
+      "BufNewFile /home/zh/obsidian/**.md",
+    },
+    config = require("plugins.setup.obsidian").config,
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
 }

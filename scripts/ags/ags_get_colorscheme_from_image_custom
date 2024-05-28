@@ -24,26 +24,29 @@ fi
 if file "$image" | grep -qE 'image|bitmap'; then
 
   # use imagemagick
-  output=$(convert "$image" -resize 256x256^ +dither -colors 6 -format "%c" histogram:info:- | sort -n -r | head -n 5 | grep -o '#[0-9a-fA-F]\{6\}')
+  # output=$(convert "$image" -resize 256x256^ +dither -colors 6 -format "%c" histogram:info:- | sort -n -r | head -n 5 | grep -o '#[0-9a-fA-F]\{6\}')
+  output=$(magick "$image" -resize 256x256^ +dither -colors 6 -format "%c" histogram:info:- | sort -n -r | head -n 5 | grep -o '#[0-9a-fA-F]\{6\}')
 
   # Преобразование строки вывода в массив
   IFS=$'\n' read -rd '' -a array <<< "$output"
 
   # Создание ассоциативного массива с цветами
   declare -A colors
-  # colors[primary-color]=${array[0]}
-  # colors[bg-alt-color]=${array[1]}
-  # colors[fg-color]=$($HOME/scripts/ags/ags_get_inverse_color ${array[3]})
-  # colors[bg-color]=${array[3]}
-  # colors[secondary-color]=${array[4]}
   colors[primary-color]=${array[0]}
   colors[fg-color]=$($HOME/scripts/ags/ags_get_inverse_color ${array[1]})
   colors[bg-color]=${array[1]}
   colors[bg-alt-color]=${array[2]}
   colors[secondary-color]=${array[3]}
 
+  # colors[primary-color]=${array[2]}
+  # colors[fg-color]=$($HOME/scripts/ags/ags_get_inverse_color ${array[0]})
+  # colors[bg-color]=${array[0]}
+  # colors[bg-alt-color]=${array[1]}
+  # colors[secondary-color]=${array[4]}
+
   # Вывод цветов
   echo '// generated from image '$image' with custom script "$HOME/scripts/ags/ags_get_colorscheme_from_image_custom"' > $output_file
+  echo '// '$output'' >> $output_file
   for color in "${!colors[@]}"; do
       echo "\$${color}: ${colors[$color]};" >> $output_file
   done
