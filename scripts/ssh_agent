@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Файл для хранения информации об агенте
+SSH_ENV="$HOME/.ssh/environment"
+
+# Функция для запуска ssh-agent
+function start_agent {
+    echo "Initialising new SSH agent..."
+    ssh-agent | sed 's/^echo/#echo/' > "$SSH_ENV"
+    echo "succeeded"
+    chmod 600 "$SSH_ENV"
+    . "$SSH_ENV" > /dev/null
+    ssh-add ~/.ssh/id_ed25519 < /dev/null
+}
+
+# Если файл не существует, запускаем новый агент
+if [ ! -f "$SSH_ENV" ]; then
+    start_agent
+else
+    . "$SSH_ENV" > /dev/null
+    # Проверяем, работает ли агент
+    if ! kill -0 $SSH_AGENT_PID 2>/dev/null; then
+        start_agent
+    fi
+fi
+

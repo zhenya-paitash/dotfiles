@@ -203,10 +203,8 @@ return {
   { -- NOTES
     "epwalsh/obsidian.nvim",
     event = {
-      -- "BufReadPre /home/zh/obsidian/**.md",
-      -- "BufNewFile /home/zh/obsidian/**.md",
-      "BufReadPre obsidian/**.md",
-      "BufNewFile obsidian/**.md",
+      "BufReadPre /home/zh/obsidian/**.md",
+      "BufNewFile /home/zh/obsidian/**.md",
     },
     keys = require("plugins.setup.obsidian").keys,
     config = require("plugins.setup.obsidian").config,

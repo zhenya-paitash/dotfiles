@@ -450,7 +450,7 @@ python-certifi 2024.02.02-2
 python-charset-normalizer 3.3.2-2
 python-gobject 3.48.2-1
 python-idna 3.6-2
-python-requests 2.32.2-1
+python-requests 2.32.3-1
 python-urllib3 1.26.18-3
 qt6-base 6.7.1-3
 qt6-declarative 6.7.1-1
