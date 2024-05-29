@@ -76,7 +76,7 @@ fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
 findutils 4.9.0-3
-firefox 126.0-1
+firefox 126.0.1-1
 fish 3.7.1-2
 fisher 4.4.4-1
 flac 1.4.3-1
@@ -501,7 +501,7 @@ systemd-libs 255.7-1
 systemd-sysvcompat 255.7-1
 tar 1.35-2
 tdb 1.4.10-3
-telegram-desktop 5.0.2-2
+telegram-desktop 5.0.4-1
 texinfo 7.1-2
 tmux 3.4-8
 tomlplusplus 3.4.0-1

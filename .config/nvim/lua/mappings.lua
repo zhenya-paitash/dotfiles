@@ -68,7 +68,7 @@ map(MODE.visual_block, "K", ":m '<-2 <CR> gv-gv", { desc = "Move block up", nore
 -- MODE: normal
 map(MODE.normal, "<leader><leader>", "<cmd> Telescope find_files <CR>", { desc = "Find files" })
 map(MODE.normal, "<leader>gb", "<cmd> Telescope git_branches <CR>", { desc = "Git branch" })
-map(MODE.normal, "<leader>ft", "<cmd> Telescope terms <CR>", { desc = "Find terms" })
+-- map(MODE.normal, "<leader>ft", "<cmd> Telescope terms <CR>", { desc = "Find terms" })
 map(MODE.normal, "<leader>*", "<cmd> Telescope grep_string <CR>", { desc = "Grep string" })
 
 -- TODO: check how good it is
@@ -145,8 +145,8 @@ end, { desc = "Trouble previous" })
 -- TODOCOMMENTS
 ---------------------------------------
 --MODE: normal
-map(MODE.normal, "<leader>to", "<cmd> TodoTrouble <CR>", { desc = "Todo Trouble", noremap = true, silent = true })
-map(MODE.normal, "<leader>fo", "<cmd> TodoTelescope <CR>", { desc = "Todo Telescope", noremap = true, silent = true })
+map(MODE.normal, "<leader>tt", "<cmd> TodoTrouble <CR>", { desc = "Todo Trouble", noremap = true, silent = true })
+map(MODE.normal, "<leader>ft", "<cmd> TodoTelescope <CR>", { desc = "Todo Telescope", noremap = true, silent = true })
 
 ---------------------------------------
 -- LAZYGIT
@@ -238,3 +238,4 @@ map(MODE.normal, "<leader>jq", ":%!jq '.'<CR>")
 ---------------------------------------
 map(MODE.normal, "<leader>rr", "<cmd> Rest run <CR>", { desc = "Run request under the cursor" })
 map(MODE.normal, "<leader>rl", "<cmd> Rest run last <CR>", { desc = "Run last request" })
+

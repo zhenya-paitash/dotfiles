@@ -1,24 +1,52 @@
 return {
+  keys = {
+    -- Obsidian Find with Telescope
+    { "<leader>ofd", "<cmd> ObsidianDailies <cr>", mode = "n", desc = "Obsidian Dailies" },
+    { "<leader>ofa", "<cmd> ObsidianSearch <cr>", mode = "n", desc = "Obsidian Search" },
+    { "<leader>oft", "<cmd> ObsidianTags <cr>", mode = "n", desc = "Obsidian Tags" },
+    { "<leader>ofe", "<cmd> ObsidianTemplate <cr>", mode = "n", desc = "Obsidian Template" },
+    { "<leader>ofw", "<cmd> ObsidianWorkspace <cr>", mode = "n", desc = "Obsidian Workspace" },
+
+    { "<leader>oy", "<cmd> ObsidianYesterday <cr>", mode = "n", desc = "Obsidian daily Yesterday" },
+    { "<leader>od", "<cmd> ObsidianToday <cr>", mode = "n", desc = "Obsidian daily Today" },
+    { "<leader>ot", "<cmd> ObsidianTomorrow <cr>", mode = "n", desc = "Obsidian daily Tomorrow" },
+
+    -- { "gf", "<cmd> ObsidianFollowLink <cr>", mode = "n", desc = "Obsidian Follow Link" },
+    -- { "gf", "<cmd> ObsidianLink <cr>", mode = "v", desc = "Obsidian Link" },
+    { "<leader>ol", "<cmd> ObsidianLinkNew <cr>", mode = "x", desc = "Obsidian Link New" },
+    { "<leader>ol", "<cmd> ObsidianLinks <cr>", mode = "n", desc = "Obsidian Links" },
+
+    { "<leader>on", "<cmd> ObsidianNew <cr>", mode = "n", desc = "Obsidian New" },
+    { "<leader>oa", "<cmd> ObsidianOpen <cr>", mode = "n", desc = "Obsidian Run Application" },
+
+    { "<leader>oi", "<cmd> ObsidianPasteImg <cr>", mode = "n", desc = "Obsidian Paste Image" },
+    { "<leader>or", "<cmd> ObsidianRename <cr>", mode = "n", desc = "Obsidian Rename" },
+    { "<leader>oc", "<cmd> ObsidianToggleCheckbox <cr>", mode = "n", desc = "Obsidian Toggle Checkbox" },
+
+    -- { "<leader>oqs", "<cmd> ObsidianQuickSwitch <cr>", mode = "n", desc = "Obsidian Quick Switch" },
+  },
+
   config = function()
-    -- Concealer for "Obsidian"
+    -- сокрытие разметки
     vim.opt.conceallevel = 2
 
     require("obsidian").setup {
       workspaces = {
-        { name = "PRIME", path = "~/obsidian/PRIME" },
+        { name = "personal", path = "~/obsidian/personal" },
       },
       completion = {
         nvim_cmp = true,
-        min_chars = 2,
+        min_chars = 1,
       },
-      new_notes_location = "current_dir",
       log_level = vim.log.levels.INFO,
 
       daily_notes = {
-        folder = "notes/dailies",
+        folder = "notes/daily",
         date_format = "%Y-%m-%d",
         alias_format = "%B %-d, %Y",
         template = nil,
+        tags = { "notes/daily" },
+        cssclasses = { "daily" },
       },
 
       -- Optional, configure key mappings. These are the defaults. If you don't want to set any keymappings this
@@ -51,6 +79,7 @@ return {
       --  * "current_dir" - put new notes in same directory as the current buffer.
       --  * "notes_subdir" - put new notes in the default notes subdirectory.
       new_notes_location = "notes_subdir",
+      -- new_notes_location = "current_dir",
 
       -- Optional, customize how note IDs are generated given an optional title.
       ---@param title string|?
@@ -59,17 +88,21 @@ return {
         -- Create note IDs in a Zettelkasten format with a timestamp and a suffix.
         -- In this case a note with the title 'My new note' will be given an ID that looks
         -- like '1657296016-my-new-note', and therefore the file name '1657296016-my-new-note.md'
-        local suffix = ""
-        if title ~= nil then
-          -- If title is given, transform it into valid file name.
-          suffix = title:gsub(" ", "-"):gsub("[^A-Za-z0-9-]", ""):lower()
-        else
-          -- If title is nil, just add 4 random uppercase letters to the suffix.
-          for _ = 1, 4 do
-            suffix = suffix .. string.char(math.random(65, 90))
-          end
-        end
-        return tostring(os.time()) .. "-" .. suffix
+        -- TODO: TRY THIS IMPLEMENTATION LATER
+        -- local suffix = ""
+        -- if title ~= nil then
+        --   -- If title is given, transform it into valid file name.
+        --   suffix = title:gsub(" ", "-"):gsub("[^A-Za-z0-9-]", ""):lower()
+        -- else
+        --   -- If title is nil, just add 4 random uppercase letters to the suffix.
+        --   for _ = 1, 4 do
+        --     suffix = suffix .. string.char(math.random(65, 90))
+        --   end
+        -- end
+        -- return tostring(os.time()) .. "-" .. suffix
+
+        -- DEFAULT
+        return tostring(title)
       end,
 
       -- Optional, customize how note file names are generated given the ID, target directory, and title.
@@ -118,7 +151,12 @@ return {
           note:add_alias(note.title)
         end
 
-        local out = { id = note.id, aliases = note.aliases, tags = note.tags }
+        local out = {
+          id = note.id,
+          aliases = note.aliases,
+          tags = note.tags,
+          cssclasses = note.cssclasses or {},
+        }
 
         -- `note.metadata` contains any manually added fields in the frontmatter.
         -- So here we just make sure those fields are kept in the frontmatter.
