@@ -1,6 +1,7 @@
 # Sets user-defined palette
 # palette = "catppuccin_macchiato"
-palette = "orange_coffee"
+# palette = "orange_coffee"
+palette = "catppuccin_latte"
 
 [character]
 success_symbol = "[❯](yellow)"

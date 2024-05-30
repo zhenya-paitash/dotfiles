@@ -11,6 +11,7 @@ return {
     { "<leader>od", "<cmd> ObsidianToday <cr>", mode = "n", desc = "Obsidian daily Today" },
     { "<leader>ot", "<cmd> ObsidianTomorrow <cr>", mode = "n", desc = "Obsidian daily Tomorrow" },
 
+    { "<leader>ob", "<cmd> ObsidianBacklinks <cr>", mode = "n", desc = "Obsidian Back Links" },
     -- { "gf", "<cmd> ObsidianFollowLink <cr>", mode = "n", desc = "Obsidian Follow Link" },
     -- { "gf", "<cmd> ObsidianLink <cr>", mode = "v", desc = "Obsidian Link" },
     { "<leader>ol", "<cmd> ObsidianLinkNew <cr>", mode = "x", desc = "Obsidian Link New" },
@@ -24,11 +25,21 @@ return {
     { "<leader>oc", "<cmd> ObsidianToggleCheckbox <cr>", mode = "n", desc = "Obsidian Toggle Checkbox" },
 
     -- { "<leader>oqs", "<cmd> ObsidianQuickSwitch <cr>", mode = "n", desc = "Obsidian Quick Switch" },
+
+    {
+      "<leader>oe",
+      function()
+        vim.cmd "cd ~/obsidian/personal"
+        require("nvim-tree.api").tree.open()
+      end,
+      mode = "n",
+      desc = "Obsidian Explorer",
+    },
   },
 
   config = function()
     -- сокрытие разметки
-    vim.opt.conceallevel = 2
+    -- vim.opt.conceallevel = 2
 
     require("obsidian").setup {
       workspaces = {

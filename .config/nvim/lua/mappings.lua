@@ -15,7 +15,7 @@ local MODE = {
 ---------------------------------------
 -- GENERAL
 ---------------------------------------
--- unbind save on <C-s> for TMUX
+-- unbind <C-s> [reason: i'm using <C-s> as a leader for TMUX]
 map({ MODE.normal, MODE.insert, MODE.visual }, "<C-s>", "", {})
 
 -- MODE: normal
@@ -80,15 +80,66 @@ map(MODE.normal, "<leader>gd", "<cmd> Telescope lsp_definitions <CR>", { desc = 
 -- MODE: visual
 map(MODE.visual, "<leader>*", "<cmd> Telescope grep_string <CR>", { desc = "Grep string" })
 
-local trouble = require "trouble.providers.telescope"
+---------------------------------------
+-- TROUBLE
+---------------------------------------
+-- TELESCOPE + TROUBLE
+local trouble_open = require("trouble.sources.telescope").open
 require("telescope").setup {
   defaults = {
     mappings = {
-      i = { ["<c-t>"] = trouble.open_with_trouble },
-      n = { ["<c-t>"] = trouble.open_with_trouble },
+      i = { ["<c-t>"] = trouble_open },
+      n = { ["<c-t>"] = trouble_open },
     },
   },
 }
+
+-- -- MODE: normal
+-- map(MODE.normal, "<leader>t]", function()
+--   require("trouble").next { skip_groups = true, jump = true }
+-- end, { desc = "Trouble next" })
+-- map(MODE.normal, "<leader>t[", function()
+--   require("trouble").previous { skip_groups = true, jump = true }
+-- end, { desc = "Trouble previous" })
+map(MODE.normal, "<leader>t", "<cmd> Trouble <CR>", { desc = "Trouble" })
+-- 1: Diagnostics (diagnostics)
+map(MODE.normal, "<leader>td", "<cmd> Trouble diagnostics toggle <CR>", { desc = "diagnostics (Trouble)" })
+map(MODE.normal, "<leader>tD", "<cmd> Trouble diagnostics toggle filter.buf=0 <CR>", { desc = "diagnostics buffer (Trouble)" })
+-- 2: Location List (loclist)
+map(MODE.normal, "<leader>tl", "<cmd> Trouble loclist toggle <CR>", { desc = "loclist (Trouble)" })
+-- 3: LSP definitions, references, implementations, type definitions, and declarations (lsp)
+map(
+  MODE.normal,
+  "<leader>tl",
+  "<cmd> Trouble lsp toggle focus=false win.position=right <CR>",
+  { desc = "lsp def/ref/... (Trouble)" }
+)
+-- 4: Declarations (lsp_declarations)
+-- 5: Definitions (lsp_definitions)
+-- 6: Document symbols (lsp_document_symbols)
+map(
+  MODE.normal,
+  "<leader>ts",
+  "<cmd> Trouble lsp_document_symbols toggle focus=false win.position=right <CR>",
+  { desc = "lps symbols (Trouble)" }
+)
+-- 7: Implementations (lsp_implementations)
+-- 8: Incoming Calls (lsp_incoming_calls)
+-- 9: Outgoing Calls (lsp_outgoing_calls)
+-- 10: References (lsp_references)
+-- 11: Type definitions (lsp_type_definitions)
+-- 12: Quickfix List (qflist)
+map(MODE.normal, "<leader>tQ", "<cmd> Trouble qflist toggle <CR>", { desc = "qflist (Trouble)" })
+-- 13: Quickfix List (quickfix)
+map(MODE.normal, "<leader>tq", "<cmd> Trouble quickfix toggle <CR>", { desc = "quickfix (Trouble)" })
+-- 14: Document symbols (symbols)
+map(
+  MODE.normal,
+  "<leader>tS",
+  "<cmd> Trouble symbols toggle focus=false win.position=right <CR>",
+  { desc = "symbols (Trouble)" }
+)
+-- 15: Telescope results previously opened with `require('trouble Sources Telescope') Open()`  (telescope)
 
 ---------------------------------------
 -- TABUFLINE
@@ -98,36 +149,6 @@ map(MODE.normal, "<leader>X", function()
   require("nvchad.tabufline").closeAllBufs()
   vim.cmd "NvimTreeFocus"
 end, { desc = "Close other buffers", noremap = true, silent = true })
-
----------------------------------------
--- TROUBLE
----------------------------------------
--- INFO: syntax function() end start plugin
--- MODE: normal
-map(MODE.normal, "<leader>t", function()
-  require("trouble").open()
-end, { desc = "Toggle trouble" })
-map(MODE.normal, "<leader>td", function()
-  require("trouble").open "document_diagnostics"
-end, { desc = "Trouble document_diagnostics" })
-map(MODE.normal, "<leader>tw", function()
-  require("trouble").open "workspace_diagnostics"
-end, { desc = "Trouble workspace_diagnostics" })
-map(MODE.normal, "<leader>tq", function()
-  require("trouble").open "quickfix"
-end, { desc = "Trouble quickfix" })
-map(MODE.normal, "<leader>tl", function()
-  require("trouble").open "loclist"
-end, { desc = "Trouble loclist" })
-map(MODE.normal, "<leader>tr", function()
-  require("trouble").open "lsp_references"
-end, { desc = "Trouble lsp_references" })
-map(MODE.normal, "<leader>t]", function()
-  require("trouble").next { skip_groups = true, jump = true }
-end, { desc = "Trouble next" })
-map(MODE.normal, "<leader>t[", function()
-  require("trouble").previous { skip_groups = true, jump = true }
-end, { desc = "Trouble previous" })
 
 ---------------------------------------
 -- FLASH
@@ -145,8 +166,8 @@ end, { desc = "Trouble previous" })
 -- TODOCOMMENTS
 ---------------------------------------
 --MODE: normal
-map(MODE.normal, "<leader>tt", "<cmd> TodoTrouble <CR>", { desc = "Todo Trouble", noremap = true, silent = true })
-map(MODE.normal, "<leader>ft", "<cmd> TodoTelescope <CR>", { desc = "Todo Telescope", noremap = true, silent = true })
+map(MODE.normal, "<leader>tt", "<cmd> TodoTrouble <CR>", { desc = "todo (Trouble)", noremap = true, silent = true })
+map(MODE.normal, "<leader>ft", "<cmd> TodoTelescope <CR>", { desc = "todo (Telescope)", noremap = true, silent = true })
 
 ---------------------------------------
 -- LAZYGIT
@@ -238,4 +259,3 @@ map(MODE.normal, "<leader>jq", ":%!jq '.'<CR>")
 ---------------------------------------
 map(MODE.normal, "<leader>rr", "<cmd> Rest run <CR>", { desc = "Run request under the cursor" })
 map(MODE.normal, "<leader>rl", "<cmd> Rest run last <CR>", { desc = "Run last request" })
-

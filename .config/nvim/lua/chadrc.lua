@@ -5,8 +5,8 @@
 local M = {}
 
 M.ui = {
-  theme = "wombat",
-  theme_toggle = { "wombat", "wombat" },
+  theme = "tundra",
+  theme_toggle = { "tundra", "tundra" },
   transparency = false,
   lsp_semantic_tokens = true,
   statusline = {
@@ -24,7 +24,7 @@ M.ui = {
   },
 
   -- changed_themes = {
-  --   wombat = {
+  --   tundra = {
   --     base_30 = {
   --       white = "#ebdbb2",
   --       darker_black = "#141617",

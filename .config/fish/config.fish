@@ -9,6 +9,9 @@ if status is-interactive
   zoxide   init fish | source
 end
 
+# choose theme
+fish_config theme choose Catppuccin\ Latte
+
 # SSH agent (without echo) [remove] -> add autorun script ~/scripts/ssh_agent
 # if not pgrep -u $USER ssh-agent > /dev/null  # Запуск ssh-agent, если он еще не запущен
 #     eval (ssh-agent -c | sed 's/^echo/#echo/')

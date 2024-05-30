@@ -1,7 +1,7 @@
 require "nvchad.options"
 
 local o = vim.o
-local cmd = vim.cmd
+-- local cmd = vim.cmd
 local autocmd = vim.api.nvim_create_autocmd
 
 -- options
@@ -11,9 +11,9 @@ o.whichwrap = "[,]"
 o.cursorlineopt = "both"
 o.termguicolors = true
 o.scrolloff = 5
-o.clipboard = ""
--- o.clipboard = "unnamedplus"
+o.clipboard = "" -- "unnamedplus"
 o.inccommand = "split"
+o.conceallevel = 2 -- Obsidian markdown syntax
 
 -- colors
 -- cmd "highlight link CurSearch IncSearch"
@@ -34,4 +34,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     vim.highlight.on_yank()
   end,
 })
-

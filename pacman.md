@@ -378,9 +378,9 @@ mailcap 2.1.54-1
 make 4.4.1-2
 man-db 2.12.1-1
 md4c 0.5.2-1
-mesa 1:24.0.8-1
+mesa 1:24.1.0-1
 minizip 1:1.3.1-2
-mkinitcpio 39.2-1
+mkinitcpio 39.2-2
 mkinitcpio-busybox 1.36.1-1
 mobile-broadband-provider-info 20240407-1
 mpdecimal 4.0.0-2

@@ -39,6 +39,6 @@ confirm_os_window_close 0
 
 
 # BEGIN_KITTY_THEME
-# duckbones
+# Wombat
 include current-theme.conf
 # END_KITTY_THEME
