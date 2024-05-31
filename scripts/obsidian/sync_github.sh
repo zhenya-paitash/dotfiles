@@ -1,0 +1,39 @@
+#!/bin/bash
+
+OBSIDIAN_PATH="/home/zh/obsidian"
+
+cd "$OBSIDIAN_PATH" || exit
+
+# WARN: not tested ->
+# Проверка на наличие изменений на удаленном репозитории
+git fetch
+# Проверяем наличие неотслеживаемых изменений
+LOCAL=$(git rev-parse @)
+REMOTE=$(git rev-parse @{u})
+BASE=$(git merge-base @ @{u})
+
+if [ "$LOCAL" = "$REMOTE" ]; then
+    echo "Up-to-date"
+elif [ "$LOCAL" = "$BASE" ]; then
+    echo "Need to pull"
+    # git pull --rebase
+    exit 1
+elif [ "$REMOTE" = "$BASE" ]; then
+    echo "Need to push"
+else
+    echo "Diverged"
+    exit 1
+fi
+
+# Добавляем все изменения
+git add -A
+
+# # Создаем коммит с текущей датой и временем
+COMMIT_MESSAGE="Update notes: $(date +'%Y-%m-%d %H:%M:%S')"
+git commit -m "$COMMIT_MESSAGE"
+
+# # Пушим изменения на удаленный репозиторий
+git push origin master
+
+echo "Changes have been pushed successfully."
+

@@ -35,6 +35,17 @@ return {
       mode = "n",
       desc = "Obsidian Explorer",
     },
+
+    {
+      "<leader>ogs",
+      function()
+        local script_path = "$HOME/scripts/obsidian/sync_github.sh"
+        local cmd = "!bash " .. script_path
+        vim.api.nvim_command(cmd)
+      end,
+      mode = "n",
+      desc = "Obsidian Github Sync",
+    },
   },
 
   config = function()
