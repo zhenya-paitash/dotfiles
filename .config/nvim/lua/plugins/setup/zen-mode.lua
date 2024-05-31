@@ -1,3 +1,5 @@
+-- local default_scrolloff = vim.o.scrolloff
+
 return {
   opts = {
     window = {
@@ -11,9 +13,9 @@ return {
       -- by default, no options are changed for the Zen window
       -- uncomment any of the options below, or add other vim.wo options you want to apply
       options = {
-        -- signcolumn = "no", -- disable signcolumn
-        -- number = false, -- disable number column
-        -- relativenumber = false, -- disable relative numbers
+        signcolumn = "no", -- disable signcolumn
+        number = false, -- disable number column
+        relativenumber = false, -- disable relative numbers
         -- cursorline = false, -- disable cursorline
         -- cursorcolumn = false, -- disable cursor column
         -- foldcolumn = "0", -- disable fold column
@@ -40,13 +42,18 @@ return {
       -- - listen_on unix:/tmp/kitty
       kitty = {
         enabled = false,
-        font = "+4", -- font size increment
+        font = "+10", -- font size increment
       },
     },
     -- callback where you can add custom code when the Zen window opens
-    on_open = function(win) end,
+    on_open = function(win)
+      vim.wo.scrolloff = 999
+      -- vim.wo.smoothscroll = true
+    end,
     -- callback where you can add custom code when the Zen window closes
-    on_close = function() end,
+    on_close = function()
+      -- vim.wo.scrolloff = 5
+    end,
   },
 
   twilight_opts = {

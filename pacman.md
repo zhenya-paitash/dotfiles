@@ -215,7 +215,7 @@ libedit 20230828_3.1-1
 libei 1.2.1-1
 libelf 0.191-3
 libepoxy 1.5.10-2
-libevdev 1.13.1-1
+libevdev 1.13.2-1
 libevent 2.1.12-4
 libfdk-aac 2.0.3-1
 libffi 3.4.6-1

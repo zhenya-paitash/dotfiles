@@ -5,8 +5,8 @@
 local M = {}
 
 M.ui = {
-  theme = "tundra",
-  theme_toggle = { "tundra", "tundra" },
+  theme = "tokyodark",
+  theme_toggle = { "tokyodark", "tokyodark" },
   transparency = false,
   lsp_semantic_tokens = true,
   statusline = {
@@ -24,7 +24,7 @@ M.ui = {
   },
 
   -- changed_themes = {
-  --   tundra = {
+  --   tokyodark = {
   --     base_30 = {
   --       white = "#ebdbb2",
   --       darker_black = "#141617",

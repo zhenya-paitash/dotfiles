@@ -36,10 +36,10 @@ return {
         "RRethy/vim-illuminate",
         config = require("plugins.setup.vim-illuminate").config,
       },
-      -- { -- SYNTAX AWARE TEXT-OBJECTS
-      --   "nvim-treesitter/nvim-treesitter-textobjects",
-      --   config = require("plugins.setup.nvim-ts-textobjects").config,
-      -- },
+      { -- SYNTAX AWARE TEXT-OBJECTS
+        "nvim-treesitter/nvim-treesitter-textobjects",
+        config = require("plugins.setup.nvim-ts-textobjects").config,
+      },
     },
   },
 
@@ -133,10 +133,10 @@ return {
     },
   },
 
-  -- { -- FILE MANAGER
-  --   "DreamMaoMao/yazi.nvim",
-  --   keys = { { "<leader>gy", "<cmd>Yazi<CR>", desc = "Toggle Yazi" } },
-  -- },
+  { -- FILE MANAGER
+    "DreamMaoMao/yazi.nvim",
+    keys = { { "<leader>gy", "<cmd>Yazi<CR>", desc = "Toggle Yazi" } },
+  },
 
   { -- HIGHLIGHT COLORS
     "brenoprata10/nvim-highlight-colors",
@@ -216,11 +216,7 @@ return {
     event = "VeryLazy",
     config = require("plugins.setup.ui").config,
     dependencies = {
-      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
       "MunifTanjim/nui.nvim",
-      -- OPTIONAL:
-      --   `nvim-notify` is only needed, if you want to use the notification view.
-      --   If not available, we use `mini` as the fallback
       -- "rcarriga/nvim-notify",
     },
   },
@@ -228,7 +224,9 @@ return {
   { -- BEST PRACTICE
     "m4xshen/hardtime.nvim",
     event = "VeryLazy",
-    -- cmd = { "Hardtime" },
-    opts = {},
+    opts = {
+      -- WARN: by default this plugin disable mousescroll
+      -- disable_mouse = false,
+    },
   },
 }

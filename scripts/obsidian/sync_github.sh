@@ -4,9 +4,9 @@ OBSIDIAN_PATH="/home/zh/obsidian"
 
 cd "$OBSIDIAN_PATH" || exit
 
-# WARN: not tested ->
 # Проверка на наличие изменений на удаленном репозитории
 git fetch
+
 # Проверяем наличие неотслеживаемых изменений
 LOCAL=$(git rev-parse @)
 REMOTE=$(git rev-parse @{u})
@@ -16,8 +16,9 @@ if [ "$LOCAL" = "$REMOTE" ]; then
     echo "Up-to-date"
 elif [ "$LOCAL" = "$BASE" ]; then
     echo "Need to pull"
-    # git pull --rebase
-    exit 1
+    git stash push -m "Auto stash before pull"
+    git pull --rebase
+    git stash pop
 elif [ "$REMOTE" = "$BASE" ]; then
     echo "Need to push"
 else
