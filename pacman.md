@@ -141,7 +141,7 @@ gzip 1.13-2
 harfbuzz 8.5.0-1
 hicolor-icon-theme 0.18-1
 hidapi 0.14.0-2
-highway 1.1.0-1
+highway 1.2.0-1
 http-parser 2.9.4-2
 hunspell 1.7.2-1
 hwdata 0.382-1
@@ -170,9 +170,9 @@ kbd 2.6.4-1
 kcoreaddons 6.2.0-1
 keyutils 1.6.3-2
 ki18n 6.2.0-1
-kitty 0.35.0-2
-kitty-shell-integration 0.35.0-2
-kitty-terminfo 0.35.0-2
+kitty 0.35.1-1
+kitty-shell-integration 0.35.1-1
+kitty-terminfo 0.35.1-1
 kmod 32-1
 kpipewire 6.0.5-1
 krb5 1.21.2-2
@@ -190,7 +190,7 @@ libasyncns 1:0.8+r3+g68cd5af-2
 libavc1394 0.5.4-6
 libb2 0.98.1-2
 libbluray 1.3.4-1
-libbpf 1.3.0-1
+libbpf 1.4.2-1
 libbs2b 3.1.0-8
 libcamera 0.3.0-1
 libcamera-ipa 0.3.0-1
@@ -211,7 +211,7 @@ libdovi 3.3.0-2
 libdrm 2.4.120-1
 libdvdnav 6.1.1-2
 libdvdread 6.1.3-2
-libedit 20230828_3.1-1
+libedit 20240517_3.1-1
 libei 1.2.1-1
 libelf 0.191-3
 libepoxy 1.5.10-2
@@ -363,7 +363,7 @@ linux-api-headers 6.8-1
 linux-firmware 20240510.b9d2bf23-1
 linux-firmware-whence 20240510.b9d2bf23-1
 linux-lts 6.6.32-1
-linux-zen 6.9.2.zen1-1
+linux-zen 6.9.3.zen1-1
 llvm-libs 17.0.6-5
 lm_sensors 1:3.6.0.r41.g31d1f125-2
 lua 5.4.6-3
@@ -452,7 +452,7 @@ python-gobject 3.48.2-1
 python-idna 3.6-2
 python-requests 2.32.3-1
 python-urllib3 1.26.18-3
-qt6-base 6.7.1-3
+qt6-base 6.7.1-4
 qt6-declarative 6.7.1-1
 qt6-imageformats 6.7.1-1
 qt6-svg 6.7.1-1
@@ -501,7 +501,7 @@ systemd-libs 255.7-1
 systemd-sysvcompat 255.7-1
 tar 1.35-2
 tdb 1.4.10-3
-telegram-desktop 5.0.4-1
+telegram-desktop 5.1.0-1
 texinfo 7.1-2
 tmux 3.4-8
 tomlplusplus 3.4.0-1
@@ -509,7 +509,7 @@ tpm2-tss 4.0.1-1
 tracker3 3.7.3-2
 tree-sitter 0.22.6-1
 tree-sitter-bash 0.21.0-2
-tree-sitter-c 0.21.3-1
+tree-sitter-c 0.21.4-1
 tree-sitter-lua 0.1.0-2
 tree-sitter-markdown 0.2.3-2
 tree-sitter-python 0.21.0-2
@@ -536,7 +536,7 @@ vmaf 3.0.0-1
 vulkan-headers 1:1.3.285-1
 vulkan-icd-loader 1.3.285-1
 vulkan-validation-layers 1.3.275-1
-wayland 1.22.0-1
+wayland 1.23.0-1
 wayland-protocols 1.36-1
 webrtc-audio-processing-1 1.3-2
 wget 1.24.5-2

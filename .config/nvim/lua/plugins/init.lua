@@ -25,8 +25,10 @@ return {
     opts = require("plugins.setup.nvim-treesitter").opts,
     dependencies = {
       { -- CONTEXT COMMENT
-        "JoosepAlviste/nvim-ts-context-commentstring",
-        config = require("plugins.setup.nvim-ts-context-commentstring").config,
+        "folke/ts-comments.nvim",
+        enabled = vim.fn.has "nvim-0.10.0" == 1,
+        -- event = "VeryLazy",
+        opts = {},
       },
       { -- AUTOCLOSE & AUTORENAME HTML TAGS
         "windwp/nvim-ts-autotag",
@@ -77,8 +79,8 @@ return {
     "mg979/vim-visual-multi",
     -- event = "BufReadPost",
     branch = "master",
-    init = require("plugins.setup.vim-visual-multi").init,
     keys = require("plugins.setup.vim-visual-multi").keys,
+    init = require("plugins.setup.vim-visual-multi").init,
   },
 
   { -- DIFF VIEW
@@ -229,4 +231,11 @@ return {
       -- disable_mouse = false,
     },
   },
+
+  -- { -- BUFFER NAVIGATION
+  --   "ThePrimeagen/harpoon",
+  --   event = "VeryLazy",
+  --   setup = {},
+  --   config = require("plugins.setup.harpoon").config,
+  -- },
 }

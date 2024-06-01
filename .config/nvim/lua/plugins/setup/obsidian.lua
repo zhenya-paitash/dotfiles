@@ -29,7 +29,7 @@ return {
     {
       "<leader>oe",
       function()
-        vim.cmd "cd ~/obsidian/personal"
+        vim.cmd "cd ~/obsidian"
         require("nvim-tree.api").tree.open()
       end,
       mode = "n",
@@ -54,7 +54,7 @@ return {
 
     require("obsidian").setup {
       workspaces = {
-        { name = "personal", path = "~/obsidian/personal" },
+        { name = "personal", path = "~/obsidian" },
       },
       completion = {
         nvim_cmp = true,

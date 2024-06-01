@@ -13,6 +13,10 @@ M.ui = {
     theme = "minimal",
     separator_style = "round",
   },
+  tabufline = {
+    enabled = false,
+    -- lazyload = true,
+  },
 
   hl_override = {
     Comment = { italic = true },

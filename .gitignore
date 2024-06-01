@@ -26,7 +26,7 @@
 # /////////////////////////
 !/.config
 
-!.config/ags/**
+!.config/ags**
 .config/ags/src/styles/themes/_generated.scss
 !.config/btop**
 .config/btop.log

@@ -14,10 +14,10 @@ use = ""
 # : Manager {{{
 
 [manager]
-cwd = { fg = "#f5e0dc" }
+cwd = { fg = "#94e2d5" }
 
 # Hovered
-hovered         = { fg = "#1e1e2e", bg = "#a6e3a1" }
+hovered         = { fg = "#1e1e2e", bg = "#89b4fa" }
 preview_hovered = { underline = true }
 
 # Find
@@ -27,7 +27,7 @@ find_position = { fg = "#f5c2e7", bg = "reset", italic = true }
 # Marker
 marker_copied   = { fg = "#a6e3a1", bg = "#a6e3a1" }
 marker_cut      = { fg = "#f38ba8", bg = "#f38ba8" }
-marker_selected = { fg = "#a6e3a1", bg = "#a6e3a1" }
+marker_selected = { fg = "#89b4fa", bg = "#89b4fa" }
 
 # Tab
 tab_active   = { fg = "#1e1e2e", bg = "#cdd6f4" }
@@ -37,60 +37,56 @@ tab_width    = 1
 # Count
 count_copied   = { fg = "#1e1e2e", bg = "#a6e3a1" }
 count_cut      = { fg = "#1e1e2e", bg = "#f38ba8" }
-count_selected = { fg = "#1e1e2e", bg = "#a6e3a1" }
+count_selected = { fg = "#1e1e2e", bg = "#89b4fa" }
 
 # Border
-border_symbol = "⏽"
-# border_symbol = ""
-# border_symbol = ""
-border_style  = { fg = "#a6e3a1" }
+border_symbol = "░"
+border_style  = { fg = "#89b4fa" }
 
 # Highlighting
 syntect_theme = "~/.config/yazi/themes/catppuccin-mocha.tmTheme"
 
 [status]
-# separator_open  = ""
-# separator_close = ""
-separator_open  = ""
-separator_close = ""
+separator_open  = ""
+separator_close = ""
 separator_style = { fg = "#45475a", bg = "#45475a" }
 
 # Mode
-mode_normal = { fg = "#1e1e2e", bg = "#a6e3a1", bold = true }
+mode_normal = { fg = "#1e1e2e", bg = "#89b4fa", bold = true }
 mode_select = { fg = "#1e1e2e", bg = "#a6e3a1", bold = true }
 mode_unset  = { fg = "#1e1e2e", bg = "#f2cdcd", bold = true }
 
 # Progress
 progress_label  = { fg = "#ffffff", bold = true }
-progress_normal = { fg = "#a6e3a1", bg = "#45475a" }
+progress_normal = { fg = "#89b4fa", bg = "#45475a" }
 progress_error  = { fg = "#f38ba8", bg = "#45475a" }
 
 # Permissions
-permissions_t = { fg = "#a6e3a1" }
+permissions_t = { fg = "#89b4fa" }
 permissions_r = { fg = "#f9e2af" }
 permissions_w = { fg = "#f38ba8" }
 permissions_x = { fg = "#a6e3a1" }
 permissions_s = { fg = "#7f849c" }
 
 [input]
-border   = { fg = "#a6e3a1" }
+border   = { fg = "#89b4fa" }
 title    = {}
 value    = {}
 selected = { reversed = true }
 
 [select]
-border   = { fg = "#a6e3a1" }
+border   = { fg = "#89b4fa" }
 active   = { fg = "#f5c2e7" }
 inactive = {}
 
 [tasks]
-border  = { fg = "#a6e3a1" }
+border  = { fg = "#89b4fa" }
 title   = {}
 hovered = { underline = true }
 
 [which]
 mask            = { bg = "#313244" }
-cand            = { fg = "#f5e0dc" }
+cand            = { fg = "#94e2d5" }
 rest            = { fg = "#9399b2" }
 desc            = { fg = "#f5c2e7" }
 separator       = "  "
@@ -98,7 +94,7 @@ separator_style = { fg = "#585b70" }
 
 [help]
 on      = { fg = "#f5c2e7" }
-exec    = { fg = "#f5e0dc" }
+exec    = { fg = "#94e2d5" }
 desc    = { fg = "#9399b2" }
 hovered = { bg = "#585b70", bold = true }
 footer  = { fg = "#45475a", bg = "#cdd6f4" }
@@ -106,7 +102,7 @@ footer  = { fg = "#45475a", bg = "#cdd6f4" }
 [filetype]
 rules = [
 	# Images
-	{ mime = "image/*", fg = "#f5e0dc" },
+	{ mime = "image/*", fg = "#94e2d5" },
 
 	# Videos
 	{ mime = "video/*", fg = "#f9e2af" },
@@ -123,5 +119,5 @@ rules = [
 
 	# Fallback
 	{ name = "*", fg = "#cdd6f4" },
-	{ name = "*/", fg = "#a6e3a1" }
+	{ name = "*/", fg = "#89b4fa" }
 ]

@@ -1,31 +1,40 @@
 # ///////////////////////////////////
 #              Fonts
 # ///////////////////////////////////
-font_size 11.0
+font_size 9.0
 
 # Iosevka
-font_family      IosevkaTerm NF
-bold_font        IosevkaTerm NF Bold
-italic_font      IosevkaTerm NF Italic
-bold_italic_font IosevkaTerm NF Bold Italic
+# font_family      IosevkaTerm NF
+# bold_font        IosevkaTerm NF Bold
+# italic_font      IosevkaTerm NF Italic
+# bold_italic_font IosevkaTerm NF Bold Italic
 
-# Caskadia Code
-# font_family      CaskaydiaCove NF Regular
-# bold_font        CaskaydiaCove NF Bold
-# italic_font      CaskaydiaCove NF Italic
-# bold_italic_font CaskaydiaCove NF Bold Italic
-
-# Zed Mono
+# Zed
 # font_family      ZedMono NFM
 # bold_font        ZedMono NFM Bold
 # italic_font      ZedMono NFM Itali
 # bold_italic_font ZedMono NFM Light
     
-# JetBrains Mono
+# JetBrains
 # font_family      JetBrainsMono NF Regular
 # bold_font        JetBrainsMono NF Bold
 # italic_font      JetBrainsMono NF Italic
 # bold_italic_font JetBrainsMono NF Bold Italic
+
+# Geist
+font_family      GeistMono NF
+bold_font        GeistMono NF Bold
+italic_font      GeistMono NF UltraLight
+bold_italic_font GeistMono NF UltraBlack
+# GeistMono NF
+# GeistMono NF Black
+# GeistMono NF Bold
+# GeistMono NF Light
+# GeistMono NF Medium
+# GeistMono NF SemiBold
+# GeistMono NF Thin
+# GeistMono NF UltraBlack
+# GeistMono NF UltraLight
 
 
 # ///////////////////////////////////
@@ -33,12 +42,16 @@ bold_italic_font IosevkaTerm NF Bold Italic
 # ///////////////////////////////////
 disable_ligatures never
 background_opacity 0.9
-placement_strategy center
-single_window_padding_width -1
 confirm_os_window_close 0
 
+# positioning
+window_padding_width 0
+single_window_padding_width -1
+placement_strategy top
+hide_window_decorations yes
+window_logo_path none
 
 # BEGIN_KITTY_THEME
-# Wombat
+# duckbones
 include current-theme.conf
 # END_KITTY_THEME
