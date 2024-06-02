@@ -14,7 +14,7 @@ M.ui = {
     separator_style = "round",
   },
   tabufline = {
-    enabled = false,
+    -- enabled = false,
     -- lazyload = true,
   },
 

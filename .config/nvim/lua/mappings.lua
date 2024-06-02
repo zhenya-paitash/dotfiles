@@ -79,34 +79,21 @@ map(MODE.normal, "<leader>gr", "<cmd> Telescope lsp_references <CR>", { desc = "
 map(MODE.normal, "<leader>gd", "<cmd> Telescope lsp_definitions <CR>", { desc = "find definitions (Telescope)" })
 map(MODE.normal, "<leader><Tab>", function()
   local actions = require "telescope.actions"
-  -- local actions_state = require "telescope.actions.state"
 
   require("telescope.builtin").buffers {
     prompt_title = "Buffers",
-    previewer = false, -- отключаем предварительный просмотр
-    -- sort_lastused = true, -- сортируем по последнему использованию
+    previewer = false,
     sorter = require("telescope.config").values.generic_sorter {},
     layout_config = { width = 0.3, height = 0.25 },
-    -- finder = require("telescope.finders").new_table {
-    --   results = vim.fn.getbufinfo { buflisted = 1 },
-    --   entry_maker = function(entry)
-    --     if entry.bufnr == vim.api.nvim_get_current_buf() then
-    --       return nil -- пропускаем текущий буфер
-    --     end
-    --     return {
-    --       value = entry,
-    --       display = entry.name,
-    --       ordinal = entry.bufnr .. " " .. entry.name,
-    --     }
-    --   end,
-    -- },
-
+    sort_lastused = true,
+    ignore_current_buffer = true, -- пропускаем текущий буфер
     attach_mappings = function(prompt_bufnr, buf_map)
       buf_map("i", "<esc>", actions.close)
       buf_map("i", "<Tab>", actions.move_selection_next)
       buf_map("i", "<S-Tab>", actions.move_selection_previous)
       buf_map("n", "<Tab>", actions.move_selection_next)
       buf_map("n", "<S-Tab>", actions.move_selection_previous)
+      buf_map("i", "<C-d>", actions.delete_buffer)
       return true
     end,
   }
@@ -185,55 +172,55 @@ map(
 -- TABUFLINE
 ---------------------------------------
 -- MODE: normal
--- map(MODE.normal, "<leader>X", function()
---   -- require("nvchad.tabufline").closeAllBufs()
---   vim.api.nvim_command "bufdo bd"
---   vim.cmd "NvimTreeFocus"
--- end, { desc = "Close other buffers", noremap = true, silent = true })
-
-local function check_and_save_buffer(bufnr)
-  local buf_modified = vim.bo[bufnr].modified
-  if buf_modified then
-    local choice = vim.fn.confirm(
-      "Buffer " .. vim.api.nvim_buf_get_name(bufnr) .. " has unsaved changes. Save?",
-      "&Yes\n&No\n&Cancel"
-    )
-    if choice == 1 then
-      -- Save the buffer
-      vim.api.nvim_buf_call(bufnr, function()
-        vim.cmd "w"
-      end)
-    elseif choice == 2 then
-      -- Discard the changes
-      vim.api.nvim_buf_call(bufnr, function()
-        vim.cmd "e!"
-      end)
-    elseif choice == 3 then
-      -- Cancel the operation
-      return false
-    end
-  end
-  return true
-end
-
-map(MODE.normal, "<leader>x", function()
-  -- Get the current buffer number
-  local bufnr = vim.api.nvim_get_current_buf()
-  if check_and_save_buffer(bufnr) then
-    vim.api.nvim_buf_delete(bufnr, {})
-  end
-end, { desc = "Close current buffer", noremap = true, silent = true })
 map(MODE.normal, "<leader>X", function()
-  -- Iterate over all buffers and close them after checking for unsaved changes
-  for _, bufnr in ipairs(vim.api.nvim_list_bufs()) do
-    if not check_and_save_buffer(bufnr) then
-      return
-    end
-    -- Close the buffer
-    vim.api.nvim_buf_delete(bufnr, {})
-  end
+  require("nvchad.tabufline").closeAllBufs()
+  -- vim.api.nvim_command "bufdo bd"
   vim.cmd "NvimTreeFocus"
-end, { desc = "Close all buffers", noremap = true, silent = true })
+end, { desc = "Close other buffers", noremap = true, silent = true })
+
+-- local function check_and_save_buffer(bufnr)
+--   local buf_modified = vim.bo[bufnr].modified
+--   if buf_modified then
+--     local choice = vim.fn.confirm(
+--       "Buffer " .. vim.api.nvim_buf_get_name(bufnr) .. " has unsaved changes. Save?",
+--       "&Yes\n&No\n&Cancel"
+--     )
+--     if choice == 1 then
+--       -- Save the buffer
+--       vim.api.nvim_buf_call(bufnr, function()
+--         vim.cmd "w"
+--       end)
+--     elseif choice == 2 then
+--       -- Discard the changes
+--       vim.api.nvim_buf_call(bufnr, function()
+--         vim.cmd "e!"
+--       end)
+--     elseif choice == 3 then
+--       -- Cancel the operation
+--       return false
+--     end
+--   end
+--   return true
+-- end
+--
+-- map(MODE.normal, "<leader>x", function()
+--   -- Get the current buffer number
+--   local bufnr = vim.api.nvim_get_current_buf()
+--   if check_and_save_buffer(bufnr) then
+--     vim.api.nvim_buf_delete(bufnr, {})
+--   end
+-- end, { desc = "Close current buffer", noremap = true, silent = true })
+-- map(MODE.normal, "<leader>X", function()
+--   -- Iterate over all buffers and close them after checking for unsaved changes
+--   for _, bufnr in ipairs(vim.api.nvim_list_bufs()) do
+--     if not check_and_save_buffer(bufnr) then
+--       return
+--     end
+--     -- Close the buffer
+--     vim.api.nvim_buf_delete(bufnr, {})
+--   end
+--   vim.cmd "NvimTreeFocus"
+-- end, { desc = "Close all buffers", noremap = true, silent = true })
 
 ---------------------------------------
 -- FLASH

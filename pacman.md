@@ -323,7 +323,7 @@ libvpx 1.14.0-1
 libvterm 0.3.3-1
 libwacom 2.11.0-1
 libwebp 1.4.0-1
-libwireplumber 0.5.2-2
+libwireplumber 0.5.3-1
 libx11 1.8.9-1
 libxau 1.0.11-2
 libxcb 1.17.0-1
@@ -391,10 +391,10 @@ msgpack-c 5.0.0-2
 mtdev 1.1.6-2
 mujs 1.3.4-1
 ncurses 6.5-3
-neovim 0.10.0-3
+neovim 0.10.0-4
 nettle 3.9.1-1
 networkmanager 1.46.0-2
-noto-fonts 1:24.5.1-1
+noto-fonts 1:24.6.1-1
 noto-fonts-emoji 1:2.042-1
 npth 1.7-1
 nspr 4.35-2
@@ -501,7 +501,7 @@ systemd-libs 255.7-1
 systemd-sysvcompat 255.7-1
 tar 1.35-2
 tdb 1.4.10-3
-telegram-desktop 5.1.0-1
+telegram-desktop 5.1.1-1
 texinfo 7.1-2
 tmux 3.4-8
 tomlplusplus 3.4.0-1
@@ -541,7 +541,7 @@ wayland-protocols 1.36-1
 webrtc-audio-processing-1 1.3-2
 wget 1.24.5-2
 which 2.21-6
-wireplumber 0.5.2-2
+wireplumber 0.5.3-1
 wl-clipboard 1:2.2.1-1
 wlroots 0.17.3-1
 wpa_supplicant 2:2.10-8

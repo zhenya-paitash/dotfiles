@@ -232,7 +232,7 @@ return {
     },
   },
 
-  -- { -- BUFFER NAVIGATION
+  -- { -- MARKS BETTER ?
   --   "ThePrimeagen/harpoon",
   --   event = "VeryLazy",
   --   setup = {},

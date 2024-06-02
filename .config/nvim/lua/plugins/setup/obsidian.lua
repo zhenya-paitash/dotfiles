@@ -39,7 +39,7 @@ return {
     {
       "<leader>ogs",
       function()
-        local script_path = "$HOME/scripts/obsidian/sync_github.sh"
+        local script_path = "$HOME/scripts/obsidian/sync_github"
         local cmd = "!bash " .. script_path
         vim.api.nvim_command(cmd)
       end,

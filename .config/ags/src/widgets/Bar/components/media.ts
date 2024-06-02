@@ -70,7 +70,12 @@ function hookMediaButtonLabel(player: MprisPlayer, widget: Label<any>): void {
   widget.label = currentMedia;
 
   if (player.track_album) Utils.timeout(1_000, () => {
-    if (player.track_title === MEMO_CURRENT_MEDIA) return;
+    // console.log({
+    //   player,
+    //   MEMO_CURRENT_MEDIA,
+    //   MEMO_CURRENT_MEDIA_COVER,
+    // });
+    if (player.track_title !== MEMO_CURRENT_MEDIA) return;
     // if (player.play_back_status !== "Playing") return;
     // if (!player.cover_path || player.cover_path === MEMO_CURRENT_MEDIA_COVER) return;
     if (!player.cover_path) return;
