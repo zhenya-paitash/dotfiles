@@ -4,5 +4,6 @@ export { VolumeOverlay } from "./Volume-overlay/volume-overlay"
 export { BrightnessOverlay } from "./Brightness-overlay/brightness-overlay"
 export { AppLauncher } from "./App-launcher/app-launcher"
 export { Player } from "./Player/player"
-export * as PlayerStore from "./Player/player.store"
+// export * as PlayerStore from "./Player/player.store"
+export { WidgetClock } from "./Widget-clock/widget-clock"
 

@@ -188,7 +188,7 @@ class AppLauncherStore extends BaseToggleStore implements AppLauncherStoreInterf
       const currentWallpaper = await Utils.execAsync(`sh -c "swww query | head -1 | awk -F 'image: ' '{print $2}'"`);
       if (this.bg_image.value === currentWallpaper) return;
 
-      await Utils.execAsync(`convert ${currentWallpaper} -resize 256x256^ -gravity center -extent 256x256 -quality 80 ${this.use_bg_image}`);
+      await Utils.execAsync(`magick ${currentWallpaper} -resize 256x256^ -gravity center -extent 256x256 -quality 80 ${this.use_bg_image}`);
       this.bg_image.setValue(currentWallpaper);
     } catch (err) {
       Utils.notify({

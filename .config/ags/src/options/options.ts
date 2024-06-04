@@ -28,6 +28,7 @@ const options: Opts = {
       `${_STYLES_DIR}/widgets/volume-overlay.scss`,
       `${_STYLES_DIR}/widgets/app-launcher.scss`,
       `${_STYLES_DIR}/widgets/player.scss`,
+      `${_STYLES_DIR}/widgets/widgets.scss`,
     ],
   },
 };

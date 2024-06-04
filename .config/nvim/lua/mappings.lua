@@ -18,7 +18,7 @@ local MODE = {
 -- restore default <C-i> mapping
 -- map(MODE.normal, "<C-i>", "<C-i>", { noremap = true, silent = true })
 map(MODE.normal, "<Tab>", "<C-i>", { noremap = true, silent = true })
-map(MODE.normal, "<S-Tab>", ":bnext<CR>", { noremap = true, silent = true })
+map(MODE.normal, "<S-Tab>", "<cmd> bnext <CR>", { noremap = true, silent = true })
 
 -- unbind <C-s> [reason: i'm using <C-s> as a leader for TMUX]
 map({ MODE.normal, MODE.insert, MODE.visual }, "<C-s>", "", {})
@@ -35,20 +35,25 @@ map(
   { desc = "Show signature help", noremap = true, silent = true }
 )
 map(MODE.normal, "<leader>w", "<cmd> w <CR>", { desc = "Save file", noremap = true, silent = true })
--- resize panels
+-- RESIZE PANELS
 map(
   MODE.normal,
   "<A-right>",
   "<cmd> :vertical resize +10 <CR>",
   { desc = "Resize right", noremap = true, silent = true }
 )
-map(MODE.normal, "<A-left>", "<cmd> :vertical resize -10 <CR>", { desc = "Resize left", noremap = true, silent = true })
-map(MODE.normal, "<A-up>", "<cmd> :resize +10% <CR>", { desc = "Resize up", noremap = true, silent = true })
-map(MODE.normal, "<A-down>", "<cmd> :resize -10% <CR>", { desc = "Resize down", noremap = true, silent = true })
-map(MODE.normal, "<C-w>l", "<cmd> :vertical resize +15 <CR>", { desc = "Resize right", noremap = true, silent = true })
-map(MODE.normal, "<C-w>h", "<cmd> :vertical resize -15 <CR>", { desc = "Resize left", noremap = true, silent = true })
-map(MODE.normal, "<C-w>k", "<cmd> :resize +15% <CR>", { desc = "Resize up", noremap = true, silent = true })
-map(MODE.normal, "<C-w>j", "<cmd> :resize -15% <CR>", { desc = "Resize down", noremap = true, silent = true })
+map(MODE.normal, "<A-left>", "<cmd> vertical resize -10 <CR>", { desc = "Resize left", noremap = true, silent = true })
+map(MODE.normal, "<A-up>", "<cmd> resize +10% <CR>", { desc = "Resize up", noremap = true, silent = true })
+map(MODE.normal, "<A-down>", "<cmd> resize -10% <CR>", { desc = "Resize down", noremap = true, silent = true })
+map(MODE.normal, "<C-w>l", "<cmd> vertical resize +15 <CR>", { desc = "Resize right", noremap = true, silent = true })
+map(MODE.normal, "<C-w>h", "<cmd> vertical resize -15 <CR>", { desc = "Resize left", noremap = true, silent = true })
+map(MODE.normal, "<C-w>k", "<cmd> resize +15% <CR>", { desc = "Resize up", noremap = true, silent = true })
+map(MODE.normal, "<C-w>j", "<cmd> resize -15% <CR>", { desc = "Resize down", noremap = true, silent = true })
+-- TABS
+map(MODE.normal, "<leader>tn", "<cmd> tabnew <CR>", { desc = "New tab", noremap = true, silent = true })
+map(MODE.normal, "<leader>tc", "<cmd> tabclose <CR>", { desc = "Close tab", noremap = true, silent = true })
+map(MODE.normal, "<leader>t>", "<cmd> tabn <CR>", { desc = "Next tab", noremap = true, silent = true })
+map(MODE.normal, "<leader>t<", "<cmd> tabp <CR>", { desc = "Prev tab", noremap = true, silent = true })
 
 -- MODE: visual
 map(MODE.visual, ">", ">gv", { desc = "Indent left", noremap = true, silent = true })
@@ -73,6 +78,7 @@ map(MODE.visual_block, "K", ":m '<-2 <CR> gv-gv", { desc = "Move block up", nore
 -- MODE: normal
 map(MODE.normal, "<leader><leader>", "<cmd> Telescope find_files <CR>", { desc = "find files (Telescope)" })
 map(MODE.normal, "<leader>fs", "<cmd> Telescope lsp_document_symbols <CR>", { desc = "document symbols (Telescope)" })
+map(MODE.normal, "<leader>fr", "<cmd> Telescope resume <CR>", { desc = "resume last search (Telescope)" })
 map(MODE.normal, "<leader>gb", "<cmd> Telescope git_branches <CR>", { desc = "git branch (Telescope)" })
 map(MODE.normal, "<leader>*", "<cmd> Telescope grep_string <CR>", { desc = "grep string (Telescope)" })
 map(MODE.normal, "<leader>gr", "<cmd> Telescope lsp_references <CR>", { desc = "find references (Telescope)" })

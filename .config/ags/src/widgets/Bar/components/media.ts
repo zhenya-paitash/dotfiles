@@ -69,19 +69,28 @@ function hookMediaButtonLabel(player: MprisPlayer, widget: Label<any>): void {
   const currentMedia = getPlayerLabel(player);
   widget.label = currentMedia;
 
+  // REFACTOR: fix media notification
   if (player.track_album) Utils.timeout(1_000, () => {
-    // console.log({
-    //   player,
-    //   MEMO_CURRENT_MEDIA,
-    //   MEMO_CURRENT_MEDIA_COVER,
-    // });
-    if (player.track_title !== MEMO_CURRENT_MEDIA) return;
-    // if (player.play_back_status !== "Playing") return;
-    // if (!player.cover_path || player.cover_path === MEMO_CURRENT_MEDIA_COVER) return;
+    // console.log(player);
+
+    if (!player.track_title) return;
+    // console.log(`track-title: ${player.track_title}`);
+
+    // if (player.track_title !== MEMO_CURRENT_MEDIA) return;
+    if (!player.track_album) return;  // for youtube, twitch and other i think?
+    // console.log(`track-album: ${player.track_album}`);
+
     if (!player.cover_path) return;
-    // if (player.cover_path === MEMO_CURRENT_MEDIA_COVER) return;
+    // console.log(`cover-path: ${player.cover_path}`);
+
+    if (MEMO_CURRENT_MEDIA_COVER === player.cover_path && player.track_title === MEMO_CURRENT_MEDIA) return;
+    // console.log(`MEMO_CURRENT_MEDIA_COVER === player.cover_path`);
+
+    // console.log(`MEDIA_COVER\nMEMO_CURRENT_MEDIA_COVER: ${MEMO_CURRENT_MEDIA_COVER}\nplayer.cover_path: ${player.cover_path}`);
     MEMO_CURRENT_MEDIA_COVER = player.cover_path;
-    if (player.track_title === MEMO_CURRENT_MEDIA_COVER) return;
+
+    // if (player.track_title === MEMO_CURRENT_MEDIA_COVER) return;  // wtf ???
+    // console.log(`WTF?: ${player.track_title}`);
 
     Utils.notify({
       summary: 'Media',

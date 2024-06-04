@@ -17,9 +17,9 @@ export function Bar(monitor: number = 0) {
       className: 'bar-container',
       vertical: false,
       startWidget: SectionLeft(),
-      // centerWidget: SectionCenter(),
-      // endWidget: SectionRight(),
-      centerWidget: SectionRight(),
+      centerWidget: SectionCenter(),
+      endWidget: SectionRight(),
+      // centerWidget: SectionRight(),
     }),
   })
 }

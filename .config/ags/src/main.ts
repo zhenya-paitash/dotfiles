@@ -7,6 +7,7 @@ import {
   BrightnessOverlay,
   AppLauncher,
   Player,
+  WidgetClock,
 } from "@widgets";
 
 AppUtils
@@ -24,6 +25,7 @@ App.config({
     BrightnessOverlay(),
     AppLauncher(),
     Player(),
+    WidgetClock(),
   ],
   closeWindowDelay: {},
   onConfigParsed() { print("[MAIN]: “It’s alive!” © AGS Frankenstein's monster"); },

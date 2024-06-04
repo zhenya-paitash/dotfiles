@@ -7,25 +7,17 @@ class BrightnessService extends Service {
     );
   }
 
-  // this Service assumes only one device with backlight
   #interface = Utils.exec("sh -c 'ls -w1 /sys/class/backlight | head -1'");
-
-  // # prefix means private in JS
   #screenValue = 0;
   #max = Number(Utils.exec('brightnessctl max'));
 
-  // the getter has to be in snake_case
-  get screen_value() {
+  get screen_value(): number {
     return this.#screenValue;
   }
 
-  // the setter has to be in snake_case too
   set screen_value(percent) {
-    if (percent < 0)
-      percent = 0;
-
-    if (percent > 1)
-      percent = 1;
+    if (percent < 0) percent = 0;
+    if (percent > 1) percent = 1;
 
     Utils.execAsync(`brightnessctl set ${percent * 100}% -q`);
     // the file monitor will handle the rest

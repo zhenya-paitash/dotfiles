@@ -1,0 +1,24 @@
+.widgets {
+  font-size: 11px;
+
+  .widget-clock {
+    min-width: 400px;
+    min-height: 240px;
+
+    label {
+      font-family: 'Flawless', serif;
+      font-size: 16em;
+      padding: 8px;
+      border-radius: 0.1em;
+      color: $bg-color;
+      text-shadow: 4px 0 $fg-color, -4px 0 $fg-color, 0 4px $fg-color, 0 -4px $fg-color,
+        3px 3px $fg-color, -3px -3px $fg-color, 3px -3px $fg-color, -3px 3px $fg-color;
+
+      // background-image: url("/home/zh/.config/ags/src/assets/texture/texture-noise-default-min.png");
+      // background-size: cover;
+      // background-position: center;
+      // background-repeat: no-repeat;
+      transition: all .3s ease-in-out;
+    }
+  }
+}

@@ -75,7 +75,7 @@ ffmpeg 2:6.1.1-7
 fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
-findutils 4.9.0-3
+findutils 4.10.0-1
 firefox 126.0.1-1
 fish 3.7.1-2
 fisher 4.4.4-1
@@ -88,7 +88,7 @@ fribidi 1.0.14-1
 fuse-common 3.16.2-1
 fuse2 2.9.9-4
 fuse3 3.16.2-1
-fzf 0.52.0-1
+fzf 0.52.1-1
 gawk 5.3.0-1
 gc 8.2.6-1
 gcc 14.1.1+r58+gfc9fb69ad62-1
@@ -98,7 +98,7 @@ gdk-pixbuf2 2.42.12-1
 geoclue 2.7.1-3
 gettext 0.22.5-1
 giflib 5.2.2-1
-git 2.45.1-1
+git 2.45.2-1
 gjs 2:1.80.2-2
 glib-networking 1:2.80.0-1
 glib2 2.80.2-2
@@ -118,7 +118,7 @@ gpm 1.20.7.r38.ge82d1a6-5
 graphene 1.10.8-1
 graphite 1:1.3.14-3
 grep 3.11-1
-groff 1.23.0-5
+groff 1.23.0-6
 grub 2:2.12-2
 gsettings-desktop-schemas 46.0-1
 gsm 1.0.22-1
@@ -201,7 +201,7 @@ libcdio 2.1.0-3
 libcdio-paranoia 10.2+2.0.2-1
 libcloudproviders 0.3.6-1
 libcolord 1.4.7-2
-libcups 2:2.4.8-1
+libcups 2:2.4.8-2
 libdaemon 0.14-5
 libdatrie 0.2.13-4
 libdeflate 1.20-2
@@ -241,7 +241,7 @@ libksba 1.6.6-1
 liblc3 1.1.1-1
 libldac 2.0.2.3-1
 libldap 2.6.7-2
-libliftoff 0.4.1-1
+libliftoff 0.5.0-1
 liblqr 0.4.2-3
 libluv 1.48.0_2-1
 libmm-glib 1.22.0-1
@@ -446,7 +446,7 @@ procps-ng 4.0.4-3
 protobuf 25.3-4
 psmisc 23.7-1
 python 3.12.3-1
-python-certifi 2024.02.02-2
+python-certifi 2024.06.02-1
 python-charset-normalizer 3.3.2-2
 python-gobject 3.48.2-1
 python-idna 3.6-2
@@ -501,7 +501,7 @@ systemd-libs 255.7-1
 systemd-sysvcompat 255.7-1
 tar 1.35-2
 tdb 1.4.10-3
-telegram-desktop 5.1.1-1
+telegram-desktop 5.1.2-1
 texinfo 7.1-2
 tmux 3.4-8
 tomlplusplus 3.4.0-1
@@ -576,7 +576,7 @@ xorgproto 2024.1-2
 xvidcore 1.3.7-2
 xwaylandvideobridge 0.4.0-2
 xxhash 0.8.2-1
-xz 5.6.1-3
+xz 5.6.2-1
 yadm 3.2.2-1
 yay 12.3.5-1
 yay-debug 12.3.5-1

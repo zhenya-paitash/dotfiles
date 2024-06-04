@@ -1,6 +1,6 @@
 import GLib from "types/@girs/glib-2.0/glib-2.0";
 
-import { DATE_HMa, DATE_dbY } from "@/services/date";
+import dateService from "@/services/date.service";
 
 let TIMEOUT: GLib.Source;
 const TIMEOUT_DELAY = 10_000;
@@ -19,9 +19,10 @@ function Content() {
     child: Widget.CenterBox({
       centerWidget: Widget.Stack({
         children: {
-          clock: Widget.Label({ label: DATE_HMa }),
-          date: Widget.Label({ label: DATE_dbY })
-            // .bind('visible', MODE, 'value', mode => mode === 'date'),
+          clock: Widget.Label()
+            .bind('label', dateService, 'date', ({ hour, minute, weekday }) => `${weekday} ${hour}:${minute}`),
+          date: Widget.Label()
+            .bind('label', dateService, 'date', ({ day, month_number, year }) => `${day}.${month_number},${year}`),
         },
         shown: MODE.bind(),
       }),

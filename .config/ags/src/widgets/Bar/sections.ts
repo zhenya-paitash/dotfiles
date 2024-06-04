@@ -13,7 +13,6 @@ export function SectionLeft() {
     hpack: 'start',
     children: [
       MediaWidget(),
-      WorkspaceWidget(),
     ],
   });
 }
@@ -34,18 +33,11 @@ export function SectionRight() {
     className: 'section section-right',
     hpack: 'end',
     children: [
-      // NetworkWidget(),
-      // BluetoothWidget(),
-      // VolumeWidget(),
-      // BatteryWidget(),
-      // PowerWidget(),
-
       NetworkWidget(),
       BluetoothWidget(),
       VolumeWidget(),
       BatteryWidget(),
       PowerWidget(),
-      ClockWidget(),
     ],
   });
 }
