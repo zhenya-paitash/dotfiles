@@ -5,8 +5,8 @@
 local M = {}
 
 M.ui = {
-  theme = "tokyodark",
-  theme_toggle = { "tokyodark", "tokyodark" },
+  theme = "ayu_light",
+  theme_toggle = { "ayu_light", "ayu_light" },
   transparency = false,
   lsp_semantic_tokens = true,
   statusline = {
@@ -28,7 +28,7 @@ M.ui = {
   },
 
   -- changed_themes = {
-  --   tokyodark = {
+  --   ayu_light = {
   --     base_30 = {
   --       white = "#ebdbb2",
   --       darker_black = "#141617",

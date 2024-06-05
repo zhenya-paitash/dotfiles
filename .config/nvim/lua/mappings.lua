@@ -337,3 +337,10 @@ map(MODE.normal, "<leader>jq", ":%!jq '.'<CR>")
 ---------------------------------------
 map(MODE.normal, "<leader>rr", "<cmd> Rest run <CR>", { desc = "Run request under the cursor" })
 map(MODE.normal, "<leader>rl", "<cmd> Rest run last <CR>", { desc = "Run last request" })
+
+
+---------------------------------------
+-- GRUG-FAR.NVIM
+---------------------------------------
+map(MODE.normal, "<leader>fg", "<cmd> lua require('grug-far').grug_far() <CR>", { desc = "Search & Replace (Grug)" })
+map(MODE.normal, "<leader>fc", "<cmd> lua require('grug-far').grug_far({ prefills = { search = vim.fn.expand('<cword>') } }) <CR>", { desc = "Search & Replace under cursor (Grug)" })

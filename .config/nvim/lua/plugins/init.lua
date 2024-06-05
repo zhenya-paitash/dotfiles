@@ -101,9 +101,14 @@ return {
     opts = require("plugins.setup.presistence").opts,
   },
 
-  { -- SEARCH & REPLACE
-    "nvim-pack/nvim-spectre",
-    cmd = { "Spectre" },
+  -- { -- SEARCH & REPLACE
+  --   "nvim-pack/nvim-spectre",
+  --   cmd = { "Spectre" },
+  -- },
+
+  { -- SEARCH & REPLACE (NEW)
+    'MagicDuck/grug-far.nvim',
+    config = require("plugins.setup.grug-far").config,
   },
 
   { -- PREVIEW .md
@@ -226,10 +231,7 @@ return {
   { -- BEST PRACTICE
     "m4xshen/hardtime.nvim",
     event = "VeryLazy",
-    opts = {
-      -- WARN: by default this plugin disable mousescroll
-      -- disable_mouse = false,
-    },
+    opts = require("plugins.setup.hardtime").opts,
   },
 
   -- { -- MARKS BETTER ?
@@ -238,4 +240,9 @@ return {
   --   setup = {},
   --   config = require("plugins.setup.harpoon").config,
   -- },
+
+  {
+    "ThePrimeagen/vim-be-good",
+    cmd = { "VimBeGood" },
+  },
 }

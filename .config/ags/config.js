@@ -1,4 +1,3 @@
-// (async () => {
 const { GLib } = imports.gi;
 const entry = `${App.configDir}/src/main.ts`;
 const outdir = GLib.build_filenamev([GLib.get_user_cache_dir(), "ags", "user"]);
@@ -9,4 +8,4 @@ try {
 } catch (err) {
   console.error(err);
 }
-// })();
+

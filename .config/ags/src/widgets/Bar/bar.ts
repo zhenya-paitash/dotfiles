@@ -9,6 +9,7 @@ export function Bar(monitor: number = 0) {
     monitor,
     name: `bar-${monitor}`,
     anchor: ['top', 'left', 'right'],
+    margins: [2, 440, 0, 440],
     className: 'bar',
     exclusivity: 'exclusive',
     layer: 'top',

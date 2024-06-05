@@ -144,7 +144,7 @@ hidapi 0.14.0-2
 highway 1.2.0-1
 http-parser 2.9.4-2
 hunspell 1.7.2-1
-hwdata 0.382-1
+hwdata 0.383-1
 hyprcursor 0.1.9-1
 hyprland 0.40.0-1
 hyprlang 0.5.2-1
@@ -408,7 +408,7 @@ opencore-amr 0.1.6-1
 openexr 3.2.4-1
 openjpeg2 2.5.2-1
 openssh 9.7p1-2
-openssl 3.3.0-1
+openssl 3.3.1-1
 opus 1.5.2-1
 orc 0.4.38-1
 p11-kit 0.25.3-1
@@ -421,7 +421,7 @@ pangomm 2.46.4-1
 pangomm-2.48 2.52.0-1
 patch 2.7.6-10
 pavucontrol 1:6.0-1
-pciutils 3.12.0-1
+pciutils 3.13.0-1
 pcre 8.45-4
 pcre2 10.43-4
 pcsclite 2.2.3-1
