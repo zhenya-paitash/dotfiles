@@ -18,7 +18,7 @@ local MODE = {
 -- restore default <C-i> mapping
 -- map(MODE.normal, "<C-i>", "<C-i>", { noremap = true, silent = true })
 map(MODE.normal, "<Tab>", "<C-i>", { noremap = true, silent = true })
-map(MODE.normal, "<S-Tab>", "<cmd> bnext <CR>", { noremap = true, silent = true })
+-- map(MODE.normal, "<S-Tab>", "<cmd> bnext <CR>", { noremap = true, silent = true })
 
 -- unbind <C-s> [reason: i'm using <C-s> as a leader for TMUX]
 map({ MODE.normal, MODE.insert, MODE.visual }, "<C-s>", "", {})
@@ -104,6 +104,44 @@ map(MODE.normal, "<leader><Tab>", function()
     end,
   }
 end, { desc = "buffers (Telescope)" })
+-- TODO: next map is auto choice if you have only 1 option after search in telescope
+-- map(MODE.normal, "<leader><tab>", function()
+--   local actions = require "telescope.actions"
+--   local action_state = require "telescope.actions.state"
+--   local action_set = require "telescope.actions.set"
+--
+--   require("telescope.builtin").buffers {
+--     prompt_title = "buffers",
+--     previewer = false,
+--     sorter = require("telescope.config").values.generic_sorter {},
+--     layout_config = { width = 0.3, height = 0.25 },
+--     sort_lastused = true,
+--     ignore_current_buffer = true, -- пропускаем текущий буфер
+--     attach_mappings = function(prompt_bufnr, buf_map)
+--       local function check_for_single_result()
+--         local picker = action_state.get_current_picker(prompt_bufnr)
+--         local num_results = picker.manager:num_results()
+--
+--         if num_results == 1 then
+--           action_set.select(prompt_bufnr, "default")
+--         end
+--       end
+--
+--       buf_map("i", "<esc>", actions.close)
+--       buf_map("i", "<tab>", actions.move_selection_next)
+--       buf_map("i", "<s-tab>", actions.move_selection_previous)
+--       buf_map("n", "<tab>", actions.move_selection_next)
+--       buf_map("n", "<s-tab>", actions.move_selection_previous)
+--       buf_map("i", "<c-d>", actions.delete_buffer)
+--
+--       -- register an event to check results count on every complete search
+--       local picker = action_state.get_current_picker(prompt_bufnr)
+--       picker:register_completion_callback(check_for_single_result)
+--
+--       return true
+--     end,
+--   }
+-- end, { desc = "buffers (telescope)" })
 
 -- MODE: visual
 map(MODE.visual, "<leader>*", "<cmd> Telescope grep_string <CR>", { desc = "grep string (Telescope)" })
@@ -123,6 +161,18 @@ require("telescope").setup {
 }
 
 -- -- MODE: normal
+-- map(
+--   MODE.normal,
+--   "]t",
+--   "<cmd>lua require('trouble').next({ skip_groups = true, jump = true }) <CR>",
+--   { desc = "jump next (Trouble)", silent = true, noremap = true }
+-- )
+-- map(
+--   MODE.normal,
+--   "[t",
+--   "<cmd>lua require('trouble').previous({ skip_groups = true, jump = true }) <CR>",
+--   { desc = "jump prev (Trouble)", silent = true, noremap = true }
+-- )
 -- map(MODE.normal, "<leader>t]", function()
 --   require("trouble").next { skip_groups = true, jump = true }
 -- end, { desc = "Trouble next" })
@@ -314,8 +364,8 @@ end, { desc = "Stop session" })
 -- DIFFVIEW
 ---------------------------------------
 -- MODE: normal
-map(MODE.normal, "<leader>gd", "<cmd> DiffviewOpen <CR>", { desc = "Git Diffview Open" })
-map(MODE.normal, "<leader>gc", "<cmd> DiffviewClose <CR>", { desc = "Git Diffview Close" })
+map(MODE.normal, "<leader>gd", "<cmd> DiffviewOpen <CR>", { desc = "git Diffview Open" })
+map(MODE.normal, "<leader>gc", "<cmd> DiffviewClose <CR>", { desc = "git Diffview Close" })
 
 ---------------------------------------
 -- MARKDOWN PREVIEW
@@ -335,12 +385,17 @@ map(MODE.normal, "<leader>jq", ":%!jq '.'<CR>")
 ---------------------------------------
 -- REST.NVIM
 ---------------------------------------
-map(MODE.normal, "<leader>rr", "<cmd> Rest run <CR>", { desc = "Run request under the cursor" })
-map(MODE.normal, "<leader>rl", "<cmd> Rest run last <CR>", { desc = "Run last request" })
-
+map(MODE.normal, "<leader>rr", "<cmd> Rest run <CR>", { desc = "run request under the cursor (Rest)" })
+map(MODE.normal, "<leader>rl", "<cmd> Rest run last <CR>", { desc = "run last request (Rest)" })
+map(MODE.normal, "<leader>re", "<cmd> Telescope rest select_env <CR>", { desc = "select env (Rest)" })
 
 ---------------------------------------
 -- GRUG-FAR.NVIM
 ---------------------------------------
-map(MODE.normal, "<leader>fg", "<cmd> lua require('grug-far').grug_far() <CR>", { desc = "Search & Replace (Grug)" })
-map(MODE.normal, "<leader>fc", "<cmd> lua require('grug-far').grug_far({ prefills = { search = vim.fn.expand('<cword>') } }) <CR>", { desc = "Search & Replace under cursor (Grug)" })
+map(MODE.normal, "<leader>fg", "<cmd> lua require('grug-far').grug_far() <CR>", { desc = "search & replace (Grug)" })
+map(
+  MODE.normal,
+  "<leader>f*",
+  "<cmd> lua require('grug-far').grug_far({ prefills = { search = vim.fn.expand('<cword>') } }) <CR>",
+  { desc = "search & replace under cursor (Grug)" }
+)

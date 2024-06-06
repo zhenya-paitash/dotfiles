@@ -1,5 +1,7 @@
 return {
   config = function()
+    require("telescope").load_extension "rest"
+
     require("rest-nvim").setup {
       client = "curl",
       env_file = ".env",

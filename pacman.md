@@ -68,7 +68,7 @@ efibootmgr 18-3
 efivar 39-1
 electron28 28.3.3-2
 expat 2.6.2-1
-eza 0.18.16-1
+eza 0.18.17-1
 fakeroot 1.34-1
 fd 10.1.0-1
 ffmpeg 2:6.1.1-7
@@ -208,7 +208,7 @@ libdeflate 1.20-2
 libdispatch 5.10-1
 libdisplay-info 0.1.1-3
 libdovi 3.3.0-2
-libdrm 2.4.120-1
+libdrm 2.4.121-1
 libdvdnav 6.1.1-2
 libdvdread 6.1.3-2
 libedit 20240517_3.1-1
@@ -260,7 +260,7 @@ libnghttp2 1.62.1-1
 libnghttp3 1.3.0-1
 libnice 0.1.22-1
 libnl 3.9.0-1
-libnm 1.46.0-2
+libnm 1.48.0-1
 libnotify 0.8.3-1
 libnsl 2.0.1-1
 libogg 1.3.5-1
@@ -321,7 +321,7 @@ libvorbis 1.3.7-3
 libvpl 2.11.0-1
 libvpx 1.14.0-1
 libvterm 0.3.3-1
-libwacom 2.11.0-1
+libwacom 2.12.0-1
 libwebp 1.4.0-1
 libwireplumber 0.5.3-1
 libx11 1.8.9-1
@@ -378,7 +378,7 @@ mailcap 2.1.54-1
 make 4.4.1-2
 man-db 2.12.1-1
 md4c 0.5.2-1
-mesa 1:24.1.0-1
+mesa 1:24.1.1-1
 minizip 1:1.3.1-2
 mkinitcpio 39.2-2
 mkinitcpio-busybox 1.36.1-1
@@ -393,7 +393,7 @@ mujs 1.3.4-1
 ncurses 6.5-3
 neovim 0.10.0-4
 nettle 3.9.1-1
-networkmanager 1.46.0-2
+networkmanager 1.48.0-1
 noto-fonts 1:24.6.1-1
 noto-fonts-emoji 1:2.042-1
 npth 1.7-1

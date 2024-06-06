@@ -26,17 +26,20 @@ return {
 
     -- { "<leader>oqs", "<cmd> ObsidianQuickSwitch <cr>", mode = "n", desc = "Obsidian Quick Switch" },
 
-    {
+    { -- run obsidian & open new tab & open `obsidian` directory
       "<leader>oe",
       function()
-        vim.cmd "cd ~/obsidian"
+        -- TODO: check if `obsidian plugin run`
+        require("obsidian")
+        vim.cmd "tabnew"
+        vim.cmd "tcd ~/obsidian"
         require("nvim-tree.api").tree.open()
       end,
       mode = "n",
       desc = "Obsidian Explorer",
     },
 
-    {
+    { -- sync obsidian with github repository
       "<leader>ogs",
       function()
         local script_path = "$HOME/scripts/obsidian/sync_github"

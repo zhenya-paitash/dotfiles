@@ -107,7 +107,7 @@ return {
   -- },
 
   { -- SEARCH & REPLACE (NEW)
-    'MagicDuck/grug-far.nvim',
+    "MagicDuck/grug-far.nvim",
     config = require("plugins.setup.grug-far").config,
   },
 
@@ -179,7 +179,11 @@ return {
 
   { -- HTTP CLIENT
     "rest-nvim/rest.nvim",
-    ft = { "http" },
+    -- ft = { "http" },
+    event = {
+      "BufReadPre **.http",
+      "BufNewFile **.http",
+    },
     config = require("plugins.setup.rest-nvim").config,
     dependencies = {
       "vhyrro/luarocks.nvim",
@@ -209,10 +213,10 @@ return {
 
   { -- NOTES
     "epwalsh/obsidian.nvim",
-    event = {
-      "BufReadPre /home/zh/obsidian/**.md",
-      "BufNewFile /home/zh/obsidian/**.md",
-    },
+    -- event = {
+    --   "BufReadPre /home/zh/obsidian/**.md",
+    --   "BufNewFile /home/zh/obsidian/**.md",
+    -- },
     keys = require("plugins.setup.obsidian").keys,
     config = require("plugins.setup.obsidian").config,
     -- dependencies = { "nvim-lua/plenary.nvim" },
@@ -241,8 +245,14 @@ return {
   --   config = require("plugins.setup.harpoon").config,
   -- },
 
-  {
+  { -- GAME PRACTICE
     "ThePrimeagen/vim-be-good",
     cmd = { "VimBeGood" },
+  },
+
+  { -- TYPING PRACTICE
+    "kwakzalver/duckytype.nvim",
+    cmd = { "DuckyType" },
+    config = require("plugins.setup.duckytype").config,
   },
 }

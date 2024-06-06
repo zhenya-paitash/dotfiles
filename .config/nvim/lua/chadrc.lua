@@ -5,8 +5,8 @@
 local M = {}
 
 M.ui = {
-  theme = "ayu_light",
-  theme_toggle = { "ayu_light", "ayu_light" },
+  theme = "rosepine-dawn",
+  theme_toggle = { "rosepine-dawn", "rosepine-dawn" },
   transparency = false,
   lsp_semantic_tokens = true,
   statusline = {
@@ -28,7 +28,7 @@ M.ui = {
   },
 
   -- changed_themes = {
-  --   ayu_light = {
+  --   rosepine-dawn = {
   --     base_30 = {
   --       white = "#ebdbb2",
   --       darker_black = "#141617",
