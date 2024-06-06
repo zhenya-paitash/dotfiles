@@ -126,6 +126,7 @@ return {
   },
 
   { -- AI
+    -- WANR: last update break plugin. Need revert to v1.8.37 289eb72
     "Exafunction/codeium.vim",
     event = "BufEnter",
     config = require("plugins.setup.codeium").config,
@@ -254,5 +255,15 @@ return {
     "kwakzalver/duckytype.nvim",
     cmd = { "DuckyType" },
     config = require("plugins.setup.duckytype").config,
+  },
+
+  { -- FZF
+    -- init: `:Telescope load_extension fzf` OR go to `$HOME/.local/share/nvim/lazy/telescope-fzf-native.nvim` and run `make`
+    "nvim-telescope/telescope-fzf-native.nvim",
+    event = "VeryLazy",
+    run = "make",
+    config = function()
+      require("telescope").load_extension "fzf"
+    end,
   },
 }

@@ -92,7 +92,7 @@ map(MODE.normal, "<leader><Tab>", function()
     sorter = require("telescope.config").values.generic_sorter {},
     layout_config = { width = 0.3, height = 0.25 },
     sort_lastused = true,
-    ignore_current_buffer = true, -- пропускаем текущий буфер
+    ignore_current_buffer = true,
     attach_mappings = function(prompt_bufnr, buf_map)
       buf_map("i", "<esc>", actions.close)
       buf_map("i", "<Tab>", actions.move_selection_next)
@@ -161,26 +161,19 @@ require("telescope").setup {
 }
 
 -- -- MODE: normal
--- map(
---   MODE.normal,
---   "]t",
---   "<cmd>lua require('trouble').next({ skip_groups = true, jump = true }) <CR>",
---   { desc = "jump next (Trouble)", silent = true, noremap = true }
--- )
--- map(
---   MODE.normal,
---   "[t",
---   "<cmd>lua require('trouble').previous({ skip_groups = true, jump = true }) <CR>",
---   { desc = "jump prev (Trouble)", silent = true, noremap = true }
--- )
--- map(MODE.normal, "<leader>t]", function()
---   require("trouble").next { skip_groups = true, jump = true }
--- end, { desc = "Trouble next" })
--- map(MODE.normal, "<leader>t[", function()
---   require("trouble").previous { skip_groups = true, jump = true }
--- end, { desc = "Trouble previous" })
+map(
+  MODE.normal,
+  "]t",
+  "<cmd> lua require('trouble').next { skip_groups = true, jump = true } <CR>",
+  { desc = "go to next (Trouble)" }
+)
+map(
+  MODE.normal,
+  "[t",
+  "<cmd> lua require('trouble').prev { skip_groups = true, jump = true } <CR>",
+  { desc = "go to previous (Trouble)" }
+)
 map(MODE.normal, "<leader>t", "<cmd> Trouble <CR>", { desc = "Trouble" })
--- 1: Diagnostics (diagnostics)
 map(MODE.normal, "<leader>td", "<cmd> Trouble diagnostics toggle <CR>", { desc = "diagnostics (Trouble)" })
 map(
   MODE.normal,
@@ -188,41 +181,27 @@ map(
   "<cmd> Trouble diagnostics toggle filter.buf=0 <CR>",
   { desc = "diagnostics buffer (Trouble)" }
 )
--- 2: Location List (loclist)
 map(MODE.normal, "<leader>tl", "<cmd> Trouble loclist toggle <CR>", { desc = "loclist (Trouble)" })
--- 3: LSP definitions, references, implementations, type definitions, and declarations (lsp)
 map(
   MODE.normal,
   "<leader>tl",
   "<cmd> Trouble lsp toggle focus=false win.position=right <CR>",
   { desc = "lsp def/ref/... (Trouble)" }
 )
--- 4: Declarations (lsp_declarations)
--- 5: Definitions (lsp_definitions)
--- 6: Document symbols (lsp_document_symbols)
 map(
   MODE.normal,
   "<leader>ts",
   "<cmd> Trouble lsp_document_symbols toggle focus=false win.position=right <CR>",
   { desc = "lps symbols (Trouble)" }
 )
--- 7: Implementations (lsp_implementations)
--- 8: Incoming Calls (lsp_incoming_calls)
--- 9: Outgoing Calls (lsp_outgoing_calls)
--- 10: References (lsp_references)
--- 11: Type definitions (lsp_type_definitions)
--- 12: Quickfix List (qflist)
 map(MODE.normal, "<leader>tQ", "<cmd> Trouble qflist toggle <CR>", { desc = "qflist (Trouble)" })
--- 13: Quickfix List (quickfix)
 map(MODE.normal, "<leader>tq", "<cmd> Trouble quickfix toggle <CR>", { desc = "quickfix (Trouble)" })
--- 14: Document symbols (symbols)
 map(
   MODE.normal,
   "<leader>tS",
   "<cmd> Trouble symbols toggle focus=false win.position=right <CR>",
   { desc = "symbols (Trouble)" }
 )
--- 15: Telescope results previously opened with `require('trouble Sources Telescope') Open()`  (telescope)
 
 ---------------------------------------
 -- TABUFLINE
