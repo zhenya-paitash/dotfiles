@@ -24,52 +24,52 @@ map(MODE.normal, "<Tab>", "<C-i>", { noremap = true, silent = true })
 map({ MODE.normal, MODE.insert, MODE.visual }, "<C-s>", "", {})
 
 -- MODE: normal
-map(MODE.normal, "<leader>a", "ggVGo", { desc = "Select all", noremap = true, silent = true })
-map(MODE.normal, "<leader>z", "zfS", { desc = "Create folder from ...", noremap = true, silent = true })
-map(MODE.normal, "n", "nzzzv", { desc = "Next search", noremap = true, silent = true })
-map(MODE.normal, "N", "Nzzzv", { desc = "Prev search", noremap = true, silent = true })
+map(MODE.normal, "<leader>a", "ggVGo", { desc = "select all", noremap = true, silent = true })
+-- map(MODE.normal, "<leader>z", "zfS", { desc = "create folder from ...", noremap = true, silent = true })
+map(MODE.normal, "n", "nzzzv", { desc = "next search", noremap = true, silent = true })
+map(MODE.normal, "N", "Nzzzv", { desc = "prev search", noremap = true, silent = true })
 map(
   MODE.normal,
   "<F1",
   "<cmd>lua vim.lsp.buf.signature_help()<CR>",
   { desc = "Show signature help", noremap = true, silent = true }
 )
-map(MODE.normal, "<leader>w", "<cmd> w <CR>", { desc = "Save file", noremap = true, silent = true })
+map(MODE.normal, "<leader>w", "<cmd> w <CR>", { desc = "save current file", noremap = true, silent = true })
 -- RESIZE PANELS
 map(
   MODE.normal,
   "<A-right>",
   "<cmd> :vertical resize +10 <CR>",
-  { desc = "Resize right", noremap = true, silent = true }
+  { desc = "resize right", noremap = true, silent = true }
 )
-map(MODE.normal, "<A-left>", "<cmd> vertical resize -10 <CR>", { desc = "Resize left", noremap = true, silent = true })
-map(MODE.normal, "<A-up>", "<cmd> resize +10% <CR>", { desc = "Resize up", noremap = true, silent = true })
-map(MODE.normal, "<A-down>", "<cmd> resize -10% <CR>", { desc = "Resize down", noremap = true, silent = true })
-map(MODE.normal, "<C-w>l", "<cmd> vertical resize +15 <CR>", { desc = "Resize right", noremap = true, silent = true })
-map(MODE.normal, "<C-w>h", "<cmd> vertical resize -15 <CR>", { desc = "Resize left", noremap = true, silent = true })
-map(MODE.normal, "<C-w>k", "<cmd> resize +15% <CR>", { desc = "Resize up", noremap = true, silent = true })
-map(MODE.normal, "<C-w>j", "<cmd> resize -15% <CR>", { desc = "Resize down", noremap = true, silent = true })
+map(MODE.normal, "<A-left>", "<cmd> vertical resize -10 <CR>", { desc = "resize left", noremap = true, silent = true })
+map(MODE.normal, "<A-up>", "<cmd> resize +10% <CR>", { desc = "resize up", noremap = true, silent = true })
+map(MODE.normal, "<A-down>", "<cmd> resize -10% <CR>", { desc = "resize down", noremap = true, silent = true })
+map(MODE.normal, "<C-w>l", "<cmd> vertical resize +15 <CR>", { desc = "resize right", noremap = true, silent = true })
+map(MODE.normal, "<C-w>h", "<cmd> vertical resize -15 <CR>", { desc = "resize left", noremap = true, silent = true })
+map(MODE.normal, "<C-w>k", "<cmd> resize +15% <CR>", { desc = "resize up", noremap = true, silent = true })
+map(MODE.normal, "<C-w>j", "<cmd> resize -15% <CR>", { desc = "resize down", noremap = true, silent = true })
 -- TABS
-map(MODE.normal, "<leader>tn", "<cmd> tabnew <CR>", { desc = "New tab", noremap = true, silent = true })
-map(MODE.normal, "<leader>tc", "<cmd> tabclose <CR>", { desc = "Close tab", noremap = true, silent = true })
-map(MODE.normal, "<leader>t>", "<cmd> tabn <CR>", { desc = "Next tab", noremap = true, silent = true })
-map(MODE.normal, "<leader>t<", "<cmd> tabp <CR>", { desc = "Prev tab", noremap = true, silent = true })
+map(MODE.normal, "<leader>tn", "<cmd> tabnew <CR>", { desc = "tab new", noremap = true, silent = true })
+map(MODE.normal, "<leader>tc", "<cmd> tabclose <CR>", { desc = "tab close", noremap = true, silent = true })
+map(MODE.normal, "<leader>t>", "<cmd> tabn <CR>", { desc = "tab next", noremap = true, silent = true })
+map(MODE.normal, "<leader>t<", "<cmd> tabp <CR>", { desc = "tab prev", noremap = true, silent = true })
 
 -- MODE: visual
-map(MODE.visual, ">", ">gv", { desc = "Indent left", noremap = true, silent = true })
-map(MODE.visual, "<", "<gv", { desc = "Indent right", noremap = true, silent = true })
-map(MODE.visual, "<leader>y", '"+y', { desc = "Copy sys", noremap = true, silent = true })
-map(MODE.visual, "<C-c>", '"+y gv-gv', { desc = "Copy sys", noremap = true, silent = true })
+map(MODE.visual, ">", ">gv", { desc = "indent left", noremap = true, silent = true })
+map(MODE.visual, "<", "<gv", { desc = "indent right", noremap = true, silent = true })
+map(MODE.visual, "<leader>y", '"+y', { desc = "copy system", noremap = true, silent = true })
+map(MODE.visual, "<C-c>", '"+y gv-gv', { desc = "copy system", noremap = true, silent = true })
 
 -- MODE: insert
 -- map(MODE.insert, "<C-c>", '"+y', { desc = "Copy sys", noremap = true, silent = true })
 -- map(MODE.insert, "<C-j>", "<ESC> <cmd> m .+1 <CR> == gi", { desc = "Move line up", noremap = true, silent = true })
 -- map(MODE.insert, "<C-k>", "<ESC> <cmd> m .-2 <CR> == gi", { desc = "Move line down", noremap = true, silent = true })
-map(MODE.insert, "<F1>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { desc = "Show signature help" })
+map(MODE.insert, "<F1>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { desc = "help signature" })
 
 -- MODE: visual_block
-map(MODE.visual_block, "J", ":m '>+1 <CR> gv-gv", { desc = "Move block down", noremap = true, silent = true })
-map(MODE.visual_block, "K", ":m '<-2 <CR> gv-gv", { desc = "Move block up", noremap = true, silent = true })
+map(MODE.visual_block, "J", ":m '>+1 <CR> gv-gv", { desc = "block move down", noremap = true, silent = true })
+map(MODE.visual_block, "K", ":m '<-2 <cr> gv-gv", { desc = "block move up", noremap = true, silent = true })
 -- map(MODE.visual_block, "<C-c>", "'+y gv", { desc = "Copy sys", noremap = true, silent = true })
 
 ---------------------------------------
@@ -97,51 +97,11 @@ map(MODE.normal, "<leader><Tab>", function()
       buf_map("i", "<esc>", actions.close)
       buf_map("i", "<Tab>", actions.move_selection_next)
       buf_map("i", "<S-Tab>", actions.move_selection_previous)
-      buf_map("n", "<Tab>", actions.move_selection_next)
-      buf_map("n", "<S-Tab>", actions.move_selection_previous)
       buf_map("i", "<C-d>", actions.delete_buffer)
       return true
     end,
   }
 end, { desc = "buffers (Telescope)" })
--- TODO: next map is auto choice if you have only 1 option after search in telescope
--- map(MODE.normal, "<leader><tab>", function()
---   local actions = require "telescope.actions"
---   local action_state = require "telescope.actions.state"
---   local action_set = require "telescope.actions.set"
---
---   require("telescope.builtin").buffers {
---     prompt_title = "buffers",
---     previewer = false,
---     sorter = require("telescope.config").values.generic_sorter {},
---     layout_config = { width = 0.3, height = 0.25 },
---     sort_lastused = true,
---     ignore_current_buffer = true, -- пропускаем текущий буфер
---     attach_mappings = function(prompt_bufnr, buf_map)
---       local function check_for_single_result()
---         local picker = action_state.get_current_picker(prompt_bufnr)
---         local num_results = picker.manager:num_results()
---
---         if num_results == 1 then
---           action_set.select(prompt_bufnr, "default")
---         end
---       end
---
---       buf_map("i", "<esc>", actions.close)
---       buf_map("i", "<tab>", actions.move_selection_next)
---       buf_map("i", "<s-tab>", actions.move_selection_previous)
---       buf_map("n", "<tab>", actions.move_selection_next)
---       buf_map("n", "<s-tab>", actions.move_selection_previous)
---       buf_map("i", "<c-d>", actions.delete_buffer)
---
---       -- register an event to check results count on every complete search
---       local picker = action_state.get_current_picker(prompt_bufnr)
---       picker:register_completion_callback(check_for_single_result)
---
---       return true
---     end,
---   }
--- end, { desc = "buffers (telescope)" })
 
 -- MODE: visual
 map(MODE.visual, "<leader>*", "<cmd> Telescope grep_string <CR>", { desc = "grep string (Telescope)" })
@@ -286,38 +246,40 @@ map(MODE.normal, "<leader>gl", "<cmd> LazyGit <CR>", { desc = "LazyGit" })
 -- DAP
 ---------------------------------------
 -- MODE: normal
-map(MODE.normal, "<leader>ds", "<cmd>lua require('dap').continue()<CR>", { desc = "Start/Continue" })
-map(MODE.normal, "<leader>dr", "<cmd>lua require('dap').repl.toggle()<CR>", { desc = "Toggle REPL" })
-map(MODE.normal, "<leader>dR", "<cmd>lua require('dap').restart_frame()<CR>", { desc = "Restart" })
-map(MODE.normal, "<leader>dq", "<cmd>lua require('dap').close()<CR>", { desc = "Close Session" })
-map(MODE.normal, "<leader>dQ", "<cmd>lua require('dap').terminate()<CR>", { desc = "Terminate Session" })
-map(MODE.normal, "<leader>db", "<cmd>lua require('dap').toggle_breakpoint()<CR>", { desc = "Toggle breakpoint" })
-map(MODE.normal, "<leader>dB", "<cmd>lua require('dap').clear_breakpoints()<CR>", { desc = "Clear Breakpoints" })
-map(MODE.normal, "<leader>di", "<cmd>lua require('dap').step_into()<CR>", { desc = "Step Into" })
-map(MODE.normal, "<leader>do", "<cmd>lua require('dap').step_over()<CR>", { desc = "Step Over" })
-map(MODE.normal, "<leader>dO", "<cmd>lua require('dap').step_out()<CR>", { desc = "Step Out" })
-map(MODE.normal, "<leader>dp", "<cmd>lua require('dap').pause()<CR>", { desc = "Pause" })
-map(MODE.normal, "<leader>dc", "<cmd>lua require('dap').run_to_cursor()<CR>", { desc = "Run to cursor" })
-
--- MODE: visual
-map(MODE.visual, "<leader>dk", "<cmd>lua require('dapui').eval()<CR>", { desc = "Evaluate Input" })
+map(MODE.normal, "<leader>ds", "<cmd>lua require('dap').continue()<CR>", { desc = "start/continue (Dap)" })
+map(MODE.normal, "<leader>dr", "<cmd>lua require('dap').repl.toggle()<CR>", { desc = "repl toggle (Dap)" })
+map(MODE.normal, "<leader>dR", "<cmd>lua require('dap').restart_frame()<CR>", { desc = "restart (Dap)" })
+map(MODE.normal, "<leader>dq", "<cmd>lua require('dap').close()<CR>", { desc = "close (Dap)" })
+map(MODE.normal, "<leader>dQ", "<cmd>lua require('dap').terminate()<CR>", { desc = "terminate (Dap)" })
+map(MODE.normal, "<leader>db", "<cmd>lua require('dap').toggle_breakpoint()<CR>", { desc = "breakpoint toggle (Dap)" })
+map(
+  MODE.normal,
+  "<leader>dB",
+  "<cmd>lua require('dap').clear_breakpoints()<CR>",
+  { desc = "breakpoint clear all (Dap)" }
+)
+map(MODE.normal, "<leader>di", "<cmd>lua require('dap').step_into()<CR>", { desc = "step into (Dap)" })
+map(MODE.normal, "<leader>do", "<cmd>lua require('dap').step_over()<CR>", { desc = "step over (Dap)" })
+map(MODE.normal, "<leader>dO", "<cmd>lua require('dap').step_out()<CR>", { desc = "step out (Dap)" })
+map(MODE.normal, "<leader>dp", "<cmd>lua require('dap').pause()<CR>", { desc = "pause (Dap)" })
+map(MODE.normal, "<leader>dc", "<cmd>lua require('dap').run_to_cursor()<CR>", { desc = "run to cursor (Dap)" })
 
 ---------------------------------------
 -- DAP UI
 ---------------------------------------
 -- MODE: normal
-map(MODE.normal, "<leader>du", function()
-  require("dapui").toggle()
-end, { desc = "UI toggle", noremap = true, silent = true })
-map(MODE.normal, "<leader>dK", function()
+map(MODE.normal, "<leader>du", "<cmd> require('dapui').toggle() <CR>", { desc = "UI toggle (Dap UI)" })
+map(MODE.normal, "<leader>dk", function()
   vim.ui.input({ prompt = "Expression: " }, function(expr)
     if expr then
       require("dapui").eval(expr, { enter = true })
     end
   end)
-end, { desc = "Evaluate Input", noremap = true, silent = true })
--- maps.n["<leader>du"] = { function() require("dapui").toggle() end, desc = "Toggle Debugger UI" }
+end, { desc = "evaluate input (Dap UI)", noremap = true, silent = true })
 -- maps.n["<leader>dh"] = { function() require("dap.ui.widgets").hover() end, desc = "Debugger Hover" }
+
+-- MODE: visual
+map(MODE.visual, "<leader>dk", "<cmd>lua require('dapui').eval()<CR>", { desc = "evaluate input (Dau UI)" })
 
 ---------------------------------------
 -- PERSISTENCE
@@ -325,26 +287,23 @@ end, { desc = "Evaluate Input", noremap = true, silent = true })
 -- MODE: normal
 map(MODE.normal, "<leader>qs", function()
   require("persistence").load()
-  print "💾 session-load"
-  -- TODO: notification
-end, { desc = "Restore session for current dir" })
+  print "  session loaded!"
+end, { desc = "restore session (Persistence)" })
 map(MODE.normal, "<leader>ql", function()
   require("persistence").load { last = true }
-  print "🌍 session-load-last"
-  -- TODO: notification
+  print "  session loaded! (last session)"
 end, { desc = "Restore last session" })
 map(MODE.normal, "<leader>qd", function()
   require("persistence").stop()
-  print "❌ session-not-save"
-  -- TODO: notification
+  print "󱙄 session won't be saved!"
 end, { desc = "Stop session" })
 
 ---------------------------------------
 -- DIFFVIEW
 ---------------------------------------
 -- MODE: normal
-map(MODE.normal, "<leader>gd", "<cmd> DiffviewOpen <CR>", { desc = "git Diffview Open" })
-map(MODE.normal, "<leader>gc", "<cmd> DiffviewClose <CR>", { desc = "git Diffview Close" })
+map(MODE.normal, "<leader>gd", "<cmd> DiffviewOpen <CR>", { desc = "git open (Diffview)" })
+map(MODE.normal, "<leader>gc", "<cmd> DiffviewClose <CR>", { desc = "git close (Diffview)" })
 
 ---------------------------------------
 -- MARKDOWN PREVIEW
@@ -352,9 +311,8 @@ map(MODE.normal, "<leader>gc", "<cmd> DiffviewClose <CR>", { desc = "git Diffvie
 -- MODE: normal
 map(MODE.normal, "<leader>mp", function()
   vim.cmd "MarkdownPreviewToggle"
-  print "📑 Markdown Preview start."
-  -- TODO: notification
-end, { desc = "Markdown preview toggle" })
+  print " markdown preview current file enabled!"
+end, { desc = ".md preview (Markdown Preview)" })
 
 ---------------------------------------
 -- JSON
@@ -378,3 +336,10 @@ map(
   "<cmd> lua require('grug-far').grug_far({ prefills = { search = vim.fn.expand('<cword>') } }) <CR>",
   { desc = "search & replace under cursor (Grug)" }
 )
+
+---------------------------------------
+-- UI
+---------------------------------------
+-- MODE: normal
+map(MODE.normal, "<leader>n", "<cmd> NoiceAll <CR>", { desc = "messages (Noice)" })
+

@@ -27,7 +27,6 @@ return {
       { -- CONTEXT COMMENT
         "folke/ts-comments.nvim",
         enabled = vim.fn.has "nvim-0.10.0" == 1,
-        -- event = "VeryLazy",
         opts = {},
       },
       { -- AUTOCLOSE & AUTORENAME HTML TAGS
@@ -38,9 +37,15 @@ return {
         "RRethy/vim-illuminate",
         config = require("plugins.setup.vim-illuminate").config,
       },
-      { -- SYNTAX AWARE TEXT-OBJECTS
+      { -- TS TEXT-OBJECTS MANIPULATE
         "nvim-treesitter/nvim-treesitter-textobjects",
+        event = "BufReadPost",
         config = require("plugins.setup.nvim-ts-textobjects").config,
+        dependencies = { -- REGULAR MANIPULATE
+          "echasnovski/mini.nvim",
+          version = false,
+          config = require("plugins.setup.mini-nvim").config,
+        },
       },
     },
   },
@@ -126,10 +131,13 @@ return {
   },
 
   { -- AI
-    -- WANR: last update break plugin. Need revert to v1.8.37 289eb72
     "Exafunction/codeium.vim",
     event = "BufEnter",
     config = require("plugins.setup.codeium").config,
+
+    -- FIX: the latest update breaks the plugin. Need revert to v1.8.37 289eb72
+    version = "1.8.37",
+    -- commit = "289eb72",
   },
 
   { -- DEBUG
@@ -137,6 +145,7 @@ return {
     config = require("plugins.setup.nvim-dap").config,
     dependencies = { -- DEBUG UI
       "rcarriga/nvim-dap-ui",
+      dependencies = { "nvim-neotest/nvim-nio" },
       config = require("plugins.setup.nvim-dap-ui").config,
     },
   },
@@ -180,11 +189,7 @@ return {
 
   { -- HTTP CLIENT
     "rest-nvim/rest.nvim",
-    -- ft = { "http" },
-    event = {
-      "BufReadPre **.http",
-      "BufNewFile **.http",
-    },
+    ft = { "http" },
     config = require("plugins.setup.rest-nvim").config,
     dependencies = {
       "vhyrro/luarocks.nvim",
