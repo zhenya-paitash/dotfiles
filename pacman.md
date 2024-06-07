@@ -88,7 +88,7 @@ fribidi 1.0.14-1
 fuse-common 3.16.2-1
 fuse2 2.9.9-4
 fuse3 3.16.2-1
-fzf 0.52.1-1
+fzf 0.53.0-1
 gawk 5.3.0-1
 gc 8.2.6-1
 gcc 14.1.1+r58+gfc9fb69ad62-1
@@ -110,7 +110,7 @@ glu 9.0.3-1
 gmp 6.3.0-2
 gnupg 2.4.5-1
 gnutls 3.8.5-1
-go 2:1.22.3-1
+go 2:1.22.4-1
 gobject-introspection-runtime 1.80.1-3
 gperftools 2.15-1
 gpgme 1.23.2-4
