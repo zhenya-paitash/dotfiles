@@ -10,9 +10,9 @@ if status is-interactive
 end
 
 # choose theme
-#fish_config theme choose fish\ default
-# fish_config theme choose Catppuccin\ Latte
-fish_config theme choose ayu\ Light
+#fish_config theme choose Catppuccin\ Latte
+#fish_config theme choose ayu\ Light
+fish_config theme choose fish\ default
 
 # SSH agent (without echo) [remove] -> add autorun script ~/scripts/ssh_agent
 # if not pgrep -u $USER ssh-agent > /dev/null  # Запуск ssh-agent, если он еще не запущен

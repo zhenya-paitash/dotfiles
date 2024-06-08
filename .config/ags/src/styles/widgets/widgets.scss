@@ -2,23 +2,26 @@
   font-size: 11px;
 
   .widget-clock {
-    min-width: 400px;
-    min-height: 240px;
+    min-width: 2px;
+    min-height: 2px;
 
     label {
       font-family: 'Flawless', serif;
-      font-size: 16em;
+      font-size: 14em;
       padding: 8px;
-      border-radius: 0.1em;
+      padding-left: 0.4em;
       color: $bg-color;
-      text-shadow: 4px 0 $fg-color, -4px 0 $fg-color, 0 4px $fg-color, 0 -4px $fg-color,
-        3px 3px $fg-color, -3px -3px $fg-color, 3px -3px $fg-color, -3px 3px $fg-color;
+      text-shadow: 2px 0 $fg-color, -2px 0 $fg-color, 0 2px $fg-color, 0 -2px $fg-color,
+        2px 2px $fg-color, -2px -2px $fg-color, 2px -2px $fg-color, -2px 2px $fg-color;
 
-      // background-image: url("/home/zh/.config/ags/src/assets/texture/texture-noise-default-min.png");
+      transition: all .1s ease-in-out;
+
+      // background-image: linear-gradient($bg-color, $bg-alt-color),
+      //   url("/home/zh/.config/ags/src/assets/texture/texture-noise-default-min.png");
+      // background-blend-mode: screen;
       // background-size: cover;
       // background-position: center;
       // background-repeat: no-repeat;
-      transition: all .3s ease-in-out;
     }
   }
 }

@@ -256,11 +256,11 @@ return {
     cmd = { "VimBeGood" },
   },
 
-  { -- TYPING PRACTICE
-    "kwakzalver/duckytype.nvim",
-    cmd = { "DuckyType" },
-    config = require("plugins.setup.duckytype").config,
-  },
+  -- { -- TYPING PRACTICE
+  --   "kwakzalver/duckytype.nvim",
+  --   cmd = { "DuckyType" },
+  --   config = require("plugins.setup.duckytype").config,
+  -- },
 
   { -- FZF
     -- init: `:Telescope load_extension fzf` OR go to `$HOME/.local/share/nvim/lazy/telescope-fzf-native.nvim` and run `make`

@@ -84,7 +84,7 @@ flex 2.6.4-5
 fontconfig 2:2.15.0-2
 freeglut 3.4.0-1
 freetype2 2.13.2-1
-fribidi 1.0.14-1
+fribidi 1.0.15-1
 fuse-common 3.16.2-1
 fuse2 2.9.9-4
 fuse3 3.16.2-1
@@ -148,8 +148,8 @@ hwdata 0.383-1
 hyprcursor 0.1.9-1
 hyprland 0.40.0-1
 hyprlang 0.5.2-1
-hyprpicker 0.2.0-2
-hyprpicker-debug 0.2.0-2
+hyprpicker 0.3.0-1
+hyprpicker-debug 0.3.0-1
 iana-etc 20240412-1
 icu 75.1-1
 imagemagick 7.1.1.33-1
@@ -233,7 +233,7 @@ libiec61883 1.2.0-7
 libimobiledevice 1.3.0-13
 libimobiledevice-glue 1.2.0-1
 libinih 58-1
-libinput 1.25.0-1
+libinput 1.26.0-1
 libisl 0.26-2
 libjpeg-turbo 3.0.3-1
 libjxl 0.10.2-1
@@ -562,7 +562,7 @@ xdg-desktop-portal-hyprland 1.3.1-6
 xdg-utils 1.2.1-1
 xf86-video-amdgpu 23.0.0-2
 xh 0.22.0-1
-xkeyboard-config 2.41-1
+xkeyboard-config 2.42-1
 xorg-fonts-encodings 1.1.0-1
 xorg-server-common 21.1.13-1
 xorg-setxkbmap 1.3.4-1

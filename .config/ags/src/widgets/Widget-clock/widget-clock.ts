@@ -17,7 +17,7 @@ export function WidgetClock(monitor: number = 0) {
     name: `widget-clock-${monitor}`,
     className: 'widgets',
     anchor: ['left', 'bottom'],
-    margins: [0, 0, 20, 20],
+    margins: [0, 0, 20, 0],
     layer: "background",
     canFocus: false,
     focus_on_click: false,
