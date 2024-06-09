@@ -271,4 +271,11 @@ return {
       require("telescope").load_extension "fzf"
     end,
   },
+
+  -- { -- CODE ANNOTATION
+  --   "danymat/neogen",
+  --   version = "*", -- only `stable` version plugin
+  --   keys = require("plugins.setup.neogen").keys,
+  --   config = require("plugins.setup.neogen").config,
+  -- },
 }

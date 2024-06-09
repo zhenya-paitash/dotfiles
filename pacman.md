@@ -35,11 +35,11 @@ bluez-utils 5.76-1
 brightnessctl 0.5.1-2
 brotli 1.1.0-2
 btop 1.3.2-1
-btrfs-progs 6.8.1-1
+btrfs-progs 6.9-1
 bzip2 1.0.8-6
 c-ares 1.29.0-1
 ca-certificates 20220905-1
-ca-certificates-mozilla 3.100-1
+ca-certificates-mozilla 3.101-1
 ca-certificates-utils 20220905-1
 cairo 1.18.0-2
 cairomm 1.14.5-1
@@ -162,7 +162,7 @@ jansson 2.14-4
 jasper 4.2.4-1
 jbigkit 2.1-8
 jless 0.9.0-1
-jq 1.7.1-1
+jq 1.7.1-2
 js115 115.11.0-1
 json-c 0.17-1
 json-glib 1.8.0-1
@@ -263,7 +263,7 @@ libnl 3.9.0-1
 libnm 1.48.0-1
 libnotify 0.8.3-1
 libnsl 2.0.1-1
-libogg 1.3.5-1
+libogg 1.3.5-2
 libomxil-bellagio 0.9.3-4
 libopenmpt 0.7.7-1
 libp11-kit 0.25.3-1
@@ -397,10 +397,10 @@ networkmanager 1.48.0-1
 noto-fonts 1:24.6.1-1
 noto-fonts-emoji 1:2.042-1
 npth 1.7-1
-nspr 4.35-2
-nss 3.100-1
+nspr 4.35-3
+nss 3.101-1
 nwg-look 0.2.7-1
-obsidian 1.5.12-1
+obsidian 1.6.3-1
 ocl-icd 2.3.2-1
 oniguruma 6.9.9-1
 openal 1.23.1-1
@@ -501,7 +501,7 @@ systemd-libs 255.7-1
 systemd-sysvcompat 255.7-1
 tar 1.35-2
 tdb 1.4.10-3
-telegram-desktop 5.1.2-1
+telegram-desktop 5.1.5-1
 texinfo 7.1-2
 tmux 3.4-8
 tomlplusplus 3.4.0-1
@@ -525,7 +525,7 @@ tzdata 2024a-2
 uchardet 0.0.8-2
 unibilium 2.1.1-2
 unrar 1:7.0.9-1
-unzip 6.0-20
+unzip 6.0-21
 upower 1.90.4-1
 util-linux 2.40.1-1
 util-linux-libs 2.40.1-1
@@ -545,7 +545,7 @@ wireplumber 0.5.3-1
 wl-clipboard 1:2.2.1-1
 wlroots 0.17.3-1
 wpa_supplicant 2:2.10-8
-x264 3:0.164.r3108.31e19f9-1
+x264 3:0.164.r3108.31e19f9-2
 x265 3.5-3
 xcb-proto 1.17.0-2
 xcb-util 0.4.1-1

@@ -28,7 +28,7 @@ App.config({
     WidgetClock(),
   ],
   closeWindowDelay: {},
-  onConfigParsed() { print("[MAIN]: “It’s alive!” © AGS Frankenstein's monster"); },
-  onWindowToggled(windowName: string, visible: boolean): void { },
+  // onConfigParsed() { print("[MAIN]: “It’s alive!” © AGS Frankenstein's monster"); },
+  // onWindowToggled(windowName: string, visible: boolean): void { },
 });
 
