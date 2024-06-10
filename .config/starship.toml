@@ -1,7 +1,5 @@
 # Sets user-defined palette
 # palette = "catppuccin_macchiato"
-# palette = "orange_coffee"
-# palette = "catppuccin_latte"
 
 [character]
 success_symbol = "[❯](yellow)"
@@ -13,6 +11,9 @@ truncation_length = 4
 style = "bold lavender"
 
 
+# ------------
+# -- CUSTOM
+# ------------
 [palettes.orange_coffee]
 rosewater = "#f4dbd6"
 flamingo = "#f0c6c6"

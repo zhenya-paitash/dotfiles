@@ -32,6 +32,7 @@ export function SectionRight() {
   return Widget.Box({
     className: 'section section-right',
     hpack: 'end',
+    // spacing: 8,
     children: [
       NetworkWidget(),
       BluetoothWidget(),

@@ -1,7 +1,3 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
 set -g fish_greeting
 
 if status is-interactive
@@ -57,12 +53,22 @@ abbr rm 'rm -rf'
 # Fixes "Error opening terminal: xterm-kitty" when using the default kitty term to open some programs through ssh
 alias ssh='kitten ssh'
 
+# fzf
+alias fzf='fzf --preview "bat --color=always {}"'
+
+# tmux
+alias t='tmux'
+alias ta='tmux a || tmux attach -t'
+alias ts='tmux new-session -s'
+alias tl='tmux list-sessions'
+alias tk='tmux kill-session -t'
+
 # neovim
 set -U EDITOR nvim
 alias vim='nvim'
 alias lg='lazygit'
 alias ld='lazydocker'
-alias vf='nvim $(fzf --preview "bat --color=always {}")'
+alias vf='nvim $(fzf)'
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
