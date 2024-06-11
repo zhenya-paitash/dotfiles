@@ -133,7 +133,7 @@ map(
   "<cmd> lua require('trouble').prev { skip_groups = true, jump = true } <CR>",
   { desc = "go to previous (Trouble)" }
 )
-map(MODE.normal, "<leader>t", "<cmd> Trouble <CR>", { desc = "Trouble" })
+-- map(MODE.normal, "<leader>t", "<cmd> Trouble <CR>", { desc = "Trouble" })
 map(MODE.normal, "<leader>td", "<cmd> Trouble diagnostics toggle <CR>", { desc = "diagnostics (Trouble)" })
 map(
   MODE.normal,

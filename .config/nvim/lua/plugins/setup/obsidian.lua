@@ -2,7 +2,7 @@ return {
   keys = {
     -- Obsidian Find with Telescope
     { "<leader>ofd", "<cmd> ObsidianDailies <cr>", mode = "n", desc = "Obsidian Dailies" },
-    { "<leader>ofa", "<cmd> ObsidianSearch <cr>", mode = "n", desc = "Obsidian Search" },
+    { "<leader>ofs", "<cmd> ObsidianSearch <cr>", mode = "n", desc = "Obsidian Search" },
     { "<leader>oft", "<cmd> ObsidianTags <cr>", mode = "n", desc = "Obsidian Tags" },
     { "<leader>ofe", "<cmd> ObsidianTemplate <cr>", mode = "n", desc = "Obsidian Template" },
     { "<leader>ofw", "<cmd> ObsidianWorkspace <cr>", mode = "n", desc = "Obsidian Workspace" },
@@ -64,7 +64,6 @@ return {
         min_chars = 1,
       },
       log_level = vim.log.levels.INFO,
-
       daily_notes = {
         folder = "notes/daily",
         date_format = "%Y-%m-%d",
@@ -73,9 +72,6 @@ return {
         tags = { "notes/daily" },
         cssclasses = { "daily" },
       },
-
-      -- Optional, configure key mappings. These are the defaults. If you don't want to set any keymappings this
-      -- way then set 'mappings = {}'.
       mappings = {
         -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
         ["gf"] = {

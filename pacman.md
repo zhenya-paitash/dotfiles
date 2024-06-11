@@ -12,7 +12,7 @@ alsa-ucm-conf 1.2.11-1
 alsa-utils 1.2.11-1
 amd-ucode 20240510.b9d2bf23-1
 aom 3.9.0-1
-archlinux-keyring 20240520-1
+archlinux-keyring 20240609-1
 argon2 20190702-5
 at-spi2-core 2.52.0-1
 atkmm 2.28.4-1
@@ -146,7 +146,7 @@ http-parser 2.9.4-2
 hunspell 1.7.2-1
 hwdata 0.383-1
 hyprcursor 0.1.9-1
-hyprland 0.40.0-1
+hyprland 0.41.0-1
 hyprlang 0.5.2-1
 hyprpicker 0.3.0-1
 hyprpicker-debug 0.3.0-1
@@ -201,7 +201,7 @@ libcdio 2.1.0-3
 libcdio-paranoia 10.2+2.0.2-1
 libcloudproviders 0.3.6-1
 libcolord 1.4.7-2
-libcups 2:2.4.8-2
+libcups 2:2.4.9-1
 libdaemon 0.14-5
 libdatrie 0.2.13-4
 libdeflate 1.20-2
