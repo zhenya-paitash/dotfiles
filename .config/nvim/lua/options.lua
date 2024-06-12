@@ -13,7 +13,10 @@ o.termguicolors = true
 o.scrolloff = 5
 o.clipboard = "" -- "unnamedplus"
 o.inccommand = "split"
+
+-- `NOTE` options
 o.conceallevel = 2 -- Obsidian markdown syntax
+o.spelllang = "en,ru"
 
 -- colors
 -- cmd "highlight link CurSearch IncSearch"

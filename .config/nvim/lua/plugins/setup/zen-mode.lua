@@ -1,4 +1,6 @@
--- local default_scrolloff = vim.o.scrolloff
+-- local function toggle_spell_check()
+--     vim.opt.spell = not(vim.opt.spell:get())
+-- end
 
 return {
   opts = {
@@ -14,9 +16,9 @@ return {
       -- uncomment any of the options below, or add other vim.wo options you want to apply
       options = {
         signcolumn = "no", -- disable signcolumn
-        number = false, -- disable number column
-        relativenumber = false, -- disable relative numbers
-        -- cursorline = false, -- disable cursorline
+        -- number = false, -- disable number column
+        -- relativenumber = false, -- disable relative numbers
+        cursorline = true, -- disable cursorline
         -- cursorcolumn = false, -- disable cursor column
         -- foldcolumn = "0", -- disable fold column
         -- list = false, -- disable whitespace characters
@@ -48,11 +50,18 @@ return {
     -- callback where you can add custom code when the Zen window opens
     on_open = function(win)
       vim.wo.scrolloff = 999
-      -- vim.wo.smoothscroll = true
+      vim.wo.spell = true
+      -- TODO: automaticaly stop this plugins
+      vim.cmd "Barbecue hide"
+      vim.cmd "Hardtime disable"
     end,
     -- callback where you can add custom code when the Zen window closes
     on_close = function()
       -- vim.wo.scrolloff = 5
+      vim.wo.spell = false
+      -- TODO: automaticaly rerun this plugins
+      vim.cmd "Barbecue show"
+      vim.cmd "Hardtime enable"
     end,
   },
 

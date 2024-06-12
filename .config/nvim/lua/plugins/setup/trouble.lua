@@ -130,9 +130,9 @@ return {
       indent = {
         top           = "│ ",
         middle        = "├╴",
-        last          = "└╴",
+        last          = "╰╴",
+        -- last          = "└╴",
         -- last          = "-╴",
-        -- last       = "╰╴", -- rounded
         fold_open     = " ",
         fold_closed   = " ",
         ws            = "  ",

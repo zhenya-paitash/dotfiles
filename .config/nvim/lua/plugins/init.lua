@@ -70,6 +70,7 @@ return {
   { -- TODO
     "folke/todo-comments.nvim",
     cmd = { "TodoTrouble", "TodoTelescope" },
+    event = "BufReadPost",
     opts = require("plugins.setup.todo-comments").opts,
   },
 
@@ -119,7 +120,7 @@ return {
   { -- PREVIEW .md
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    ft = { "markdown" },
+    -- ft = { "markdown" },
     build = require("plugins.setup.markdown-preview").build,
   },
 
@@ -134,7 +135,7 @@ return {
     "Exafunction/codeium.vim",
     event = "BufEnter",
     config = require("plugins.setup.codeium").config,
-
+    -- FIX(issue): https://github.com/Exafunction/codeium.vim/issues/376#issuecomment-2159643405
     -- FIX: the latest update breaks the plugin. Need revert to v1.8.37 289eb72
     version = "1.8.37",
     -- commit = "289eb72",
@@ -223,6 +224,7 @@ return {
     --   "BufReadPre /home/zh/obsidian/**.md",
     --   "BufNewFile /home/zh/obsidian/**.md",
     -- },
+    -- ft = { "markdown" },
     keys = require("plugins.setup.obsidian").keys,
     config = require("plugins.setup.obsidian").config,
     -- dependencies = { "nvim-lua/plenary.nvim" },
@@ -277,5 +279,29 @@ return {
   --   version = "*", -- only `stable` version plugin
   --   keys = require("plugins.setup.neogen").keys,
   --   config = require("plugins.setup.neogen").config,
+  -- },
+
+  { -- DATABASE
+    "tpope/vim-dadbod",
+    cmd = {
+      "DB",
+      "DBUI",
+      "DBUIToggle",
+      "DBUIAddConnection",
+      "DBUIFindBuffer",
+    },
+    dependencies = {
+      { -- DATABASE UI
+        "kristijanhusak/vim-dadbod-ui",
+        init = require("plugins.setup.dadbod").UI.init,
+      },
+      { -- DATABASE AUTOCOMPLETION
+        "kristijanhusak/vim-dadbod-completion",
+        ft = { "sql", "mysql", "plsql" },
+      },
+    },
+  },
+
+  -- { -- NEW PLUGIN
   -- },
 }
