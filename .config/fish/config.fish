@@ -63,6 +63,9 @@ alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tk='tmux kill-session -t'
 
+# docker
+alias lazydocker='~/go/bin/lazydocker'
+
 # neovim
 set -U EDITOR nvim
 alias vim='nvim'

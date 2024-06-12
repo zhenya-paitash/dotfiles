@@ -10,8 +10,8 @@ alsa-plugins 1:1.2.7.1-2
 alsa-topology-conf 1.2.5.1-3
 alsa-ucm-conf 1.2.11-1
 alsa-utils 1.2.11-1
-amd-ucode 20240510.b9d2bf23-1
-aom 3.9.0-1
+amd-ucode 20240610.9c10a208-1
+aom 3.9.1-1
 archlinux-keyring 20240609-1
 argon2 20190702-5
 at-spi2-core 2.52.0-1
@@ -32,6 +32,7 @@ bison 3.8.2-6
 bluez 5.76-1
 bluez-libs 5.76-1
 bluez-utils 5.76-1
+bridge-utils 1.7.1-2
 brightnessctl 0.5.1-2
 brotli 1.1.0-2
 btop 1.3.2-1
@@ -47,6 +48,7 @@ cairomm-1.16 1.18.0-1
 cantarell-fonts 1:0.303.1-1
 check 0.15.2-2
 cliphist 1:0.5.0-1
+containerd 1.7.18-1
 coreutils 9.5-1
 cryptsetup 2.7.2-1
 curl 8.8.0-1
@@ -61,6 +63,8 @@ default-cursors 2-1
 desktop-file-utils 0.27-1
 device-mapper 2.03.24-1
 diffutils 3.10-1
+docker 1:26.1.4-1
+docker-compose 2.27.1-1
 double-conversion 3.3.0-1
 duktape 2.7.0-6
 e2fsprogs 1.47.1-4
@@ -76,7 +80,7 @@ fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
 findutils 4.10.0-1
-firefox 126.0.1-1
+firefox 127.0-1
 fish 3.7.1-2
 fisher 4.4.4-1
 flac 1.4.3-1
@@ -360,8 +364,8 @@ libzip 1.10.1-1
 licenses 20240206-1
 lilv 0.24.24-2
 linux-api-headers 6.8-1
-linux-firmware 20240510.b9d2bf23-1
-linux-firmware-whence 20240510.b9d2bf23-1
+linux-firmware 20240610.9c10a208-1
+linux-firmware-whence 20240610.9c10a208-1
 linux-lts 6.6.32-1
 linux-zen 6.9.3.zen1-1
 llvm-libs 17.0.6-5
@@ -416,14 +420,14 @@ pacman 6.1.0-3
 pacman-mirrorlist 20231001-1
 pam 1.6.1-2
 pambase 20230918-1
-pango 1:1.52.2-1
+pango 1:1.54.0-1
 pangomm 2.46.4-1
 pangomm-2.48 2.52.0-1
 patch 2.7.6-10
 pavucontrol 1:6.0-1
 pciutils 3.13.0-1
 pcre 8.45-4
-pcre2 10.43-4
+pcre2 10.44-1
 pcsclite 2.2.3-1
 perl 5.38.2-1
 perl-error 0.17029-5
@@ -466,6 +470,7 @@ rofi-lbonn-wayland-git 1.7.5.wayland3.r3.g47ae31eb-1
 rofi-lbonn-wayland-git-debug 1.7.5.wayland3.r3.g47ae31eb-1
 rtkit 0.13-2
 rubberband 3.3.0-1
+runc 1.1.12-1
 rustup 1.27.1-1
 sassc 3.6.2-4
 sbc 2.0-1
