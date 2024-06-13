@@ -54,7 +54,8 @@ abbr rm 'rm -rf'
 alias ssh='kitten ssh'
 
 # fzf
-alias fzf='fzf --preview "bat --color=always {}"'
+#alias fzf='fzf --preview "bat --color=always {}" --height 60% --inline-info --layout reverse --bind ctrl-u:preview-page-up,ctrl-d:preview-page-down,"ctrl-y:execute-silent(echo -n {+} | wl-copy)+abort"'
+alias fzf='fzf --preview "bat --color=always {}" --height 60% --inline-info --layout reverse --bind ctrl-u:preview-page-up,ctrl-d:preview-page-down,"ctrl-y:execute-silent(readlink -f {} | wl-copy -n)+abort"'
 
 # tmux
 alias t='tmux'

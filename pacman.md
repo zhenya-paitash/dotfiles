@@ -8,7 +8,7 @@ alsa-card-profiles 1:1.0.7-2
 alsa-lib 1.2.11-1
 alsa-plugins 1:1.2.7.1-2
 alsa-topology-conf 1.2.5.1-3
-alsa-ucm-conf 1.2.11-1
+alsa-ucm-conf 1.2.12-1
 alsa-utils 1.2.11-1
 amd-ucode 20240610.9c10a208-1
 aom 3.9.1-1
@@ -72,7 +72,7 @@ efibootmgr 18-3
 efivar 39-1
 electron28 28.3.3-2
 expat 2.6.2-1
-eza 0.18.17-1
+eza 0.18.18-1
 fakeroot 1.35-1
 fd 10.1.0-1
 ffmpeg 2:6.1.1-7
@@ -105,7 +105,7 @@ giflib 5.2.2-1
 git 2.45.2-1
 gjs 2:1.80.2-2
 glib-networking 1:2.80.0-1
-glib2 2.80.2-2
+glib2 2.80.3-2
 glibc 2.39+r52+gf8e4623421-1
 glibmm 2.66.7-1
 glibmm-2.68 2.80.0-1
@@ -269,7 +269,7 @@ libnotify 0.8.3-1
 libnsl 2.0.1-1
 libogg 1.3.5-2
 libomxil-bellagio 0.9.3-4
-libopenmpt 0.7.7-1
+libopenmpt 0.7.8-1
 libp11-kit 0.25.3-1
 libpcap 1.10.4-1
 libpciaccess 0.18.1-2
@@ -325,7 +325,7 @@ libvorbis 1.3.7-3
 libvpl 2.11.0-1
 libvpx 1.14.0-1
 libvterm 0.3.3-1
-libwacom 2.12.0-1
+libwacom 2.12.1-1
 libwebp 1.4.0-1
 libwireplumber 0.5.3-1
 libx11 1.8.9-1
@@ -347,13 +347,13 @@ libxinerama 1.1.5-1
 libxkbcommon 1.7.0-2
 libxkbcommon-x11 1.7.0-2
 libxkbfile 1.1.3-1
-libxml2 2.12.7-1
+libxml2 2.13.0-1
 libxmu 1.2.1-1
 libxpresent 1.0.1-1
 libxrandr 1.5.4-1
 libxrender 0.9.11-1
 libxshmfence 1.3.2-1
-libxslt 1.1.39-2
+libxslt 1.1.40-1
 libxss 1.2.4-1
 libxt 1.3.0-1
 libxtst 1.2.4-1
@@ -367,7 +367,7 @@ linux-api-headers 6.8-1
 linux-firmware 20240610.9c10a208-1
 linux-firmware-whence 20240610.9c10a208-1
 linux-lts 6.6.32-1
-linux-zen 6.9.3.zen1-1
+linux-zen 6.9.4.zen1-1
 llvm-libs 17.0.6-5
 lm_sensors 1:3.6.0.r41.g31d1f125-2
 lua 5.4.6-3
@@ -444,6 +444,8 @@ pkgconf 2.1.1-1
 polkit 124-2
 popt 1.19-1
 portaudio 1:19.7.0-2
+postgresql 16.2-4
+postgresql-libs 16.2-4
 power-profiles-daemon 0.21-1
 powertop 2.15-1
 procps-ng 4.0.4-3

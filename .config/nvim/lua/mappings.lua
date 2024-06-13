@@ -50,10 +50,10 @@ map(MODE.normal, "<C-w>h", "<cmd> vertical resize -15 <CR>", { desc = "resize le
 map(MODE.normal, "<C-w>k", "<cmd> resize +15% <CR>", { desc = "resize up", noremap = true, silent = true })
 map(MODE.normal, "<C-w>j", "<cmd> resize -15% <CR>", { desc = "resize down", noremap = true, silent = true })
 -- TABS
-map(MODE.normal, "<leader>tn", "<cmd> tabnew <CR>", { desc = "tab new", noremap = true, silent = true })
-map(MODE.normal, "<leader>tc", "<cmd> tabclose <CR>", { desc = "tab close", noremap = true, silent = true })
-map(MODE.normal, "<leader>t>", "<cmd> tabn <CR>", { desc = "tab next", noremap = true, silent = true })
-map(MODE.normal, "<leader>t<", "<cmd> tabp <CR>", { desc = "tab prev", noremap = true, silent = true })
+map(MODE.normal, "<leader>tc", "<cmd> tabnew <CR>", { desc = "tab new", noremap = true, silent = true })
+map(MODE.normal, "<leader>tx", "<cmd> tabclose <CR>", { desc = "tab close", noremap = true, silent = true })
+map(MODE.normal, "<leader>tn", "<cmd> tabn <CR>", { desc = "tab next", noremap = true, silent = true })
+map(MODE.normal, "<leader>tp", "<cmd> tabp <CR>", { desc = "tab prev", noremap = true, silent = true })
 
 -- MODE: visual
 map(MODE.visual, ">", ">gv", { desc = "indent left", noremap = true, silent = true })

@@ -1,6 +1,7 @@
 return {
   config = function()
-    local fg_left = "#3E3232"
+    -- local fg_left = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("Comment")), "fg")
+    local fg_left = "#AF8260"
     local fg_right = "#AF8260"
     local fg_icons = "#ED9455"
     local fg_symbols = "#FFEC9E"

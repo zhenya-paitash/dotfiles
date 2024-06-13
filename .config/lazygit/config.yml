@@ -40,5 +40,6 @@ gui:
 #   paging:
 #     colorArg: always # 'always' | 'never'
 #     useConfig: true
-#     pager: difftastic --color=always --display=inline --syntax-highlight=off
-#     externalDiffCommand: difftastic --color=always --display=inline --syntax-highlight=off
+#     # pager: difftastic --color=always --display=inline --syntax-highlight=off
+#     # externalDiffCommand: difftastic --color=always --display=inline --syntax-highlight=off
+
