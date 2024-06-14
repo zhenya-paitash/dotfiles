@@ -25,7 +25,7 @@ App.config({
     BrightnessOverlay(),
     AppLauncher(),
     Player(),
-    WidgetClock(),
+    // WidgetClock(),
   ],
   closeWindowDelay: {},
   // onConfigParsed() { print("[MAIN]: “It’s alive!” © AGS Frankenstein's monster"); },

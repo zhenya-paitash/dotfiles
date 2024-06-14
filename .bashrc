@@ -13,4 +13,4 @@ PS1='[\u@\h \W]\$ '
 # eval "$(starship init bash)"
 
 # node from nvm.fish
-export PATH=$PATH:$HOME/.local/share/nvm/v21.7.3/bin
+export PATH=$PATH:$HOME/.local/share/nvm/v22.3.0/bin

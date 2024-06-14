@@ -21,8 +21,8 @@ audit 4.0.1-3
 autoconf 2.72-1
 automake 1.16.5-2
 avahi 1:0.8+r194+g3f79789-2
-aylurs-gtk-shell 1.8.2-1
-aylurs-gtk-shell-debug 1.8.2-1
+aylurs-gtk-shell 1.8.2-2
+aylurs-gtk-shell-debug 1.8.2-2
 base 3-2
 base-devel 1-1
 bash 5.2.026-2
@@ -106,6 +106,7 @@ git 2.45.2-1
 gjs 2:1.80.2-2
 glib-networking 1:2.80.0-1
 glib2 2.80.3-2
+glib2-devel 2.80.3-2
 glibc 2.39+r52+gf8e4623421-1
 glibmm 2.66.7-1
 glibmm-2.68 2.80.0-1
@@ -366,7 +367,7 @@ lilv 0.24.24-2
 linux-api-headers 6.8-1
 linux-firmware 20240610.9c10a208-1
 linux-firmware-whence 20240610.9c10a208-1
-linux-lts 6.6.32-1
+linux-lts 6.6.33-1
 linux-zen 6.9.4.zen1-1
 llvm-libs 17.0.6-5
 lm_sensors 1:3.6.0.r41.g31d1f125-2
@@ -456,6 +457,7 @@ python-certifi 2024.06.02-1
 python-charset-normalizer 3.3.2-2
 python-gobject 3.48.2-1
 python-idna 3.6-2
+python-packaging 24.0-1
 python-requests 2.32.3-1
 python-urllib3 1.26.18-3
 qt6-base 6.7.1-4
@@ -565,7 +567,7 @@ xcb-util-wm 0.4.2-1
 xcb-util-xrm 1.3-2
 xcur2png 0.7.1-8
 xdg-desktop-portal 1.18.4-1
-xdg-desktop-portal-hyprland 1.3.1-6
+xdg-desktop-portal-hyprland 1.3.2-1
 xdg-utils 1.2.1-1
 xf86-video-amdgpu 23.0.0-2
 xh 0.22.0-1

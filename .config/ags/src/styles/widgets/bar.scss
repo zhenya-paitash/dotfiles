@@ -4,7 +4,8 @@
 
   // border-radius: 0 0 1rem 1rem;
   border-radius: 0.5rem;
-  background-color: $bg-color;
+  // background-color: rgba($bg-color, 0.94);
+  background-image: linear-gradient(rgba($bg-color, .75), rgba($bg-color, .9)), url("/home/zh/.config/ags/src/assets/texture/texture-noise-default-min.png");
 
   button {
     border-radius: 10rem;
@@ -36,6 +37,11 @@
   color: $fg-color;
   // background-color: $bg-color;
   // box-shadow: 2px 0 2px 2px rgba(31, 31, 31, .1);
+
+  &.section-left {
+    background-color: $fg-color;
+    color: $bg-color;
+  }
 
   &.section-right {
     padding: 0 10px;
@@ -70,7 +76,7 @@
     background-color: $primary-color;
 
     &.current {
-      min-width: 24px;
+      // min-width: 24px;
       background-color: $secondary-color;
     }
   }

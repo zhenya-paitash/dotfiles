@@ -8,8 +8,10 @@ export function Bar(monitor: number = 0) {
   return Widget.Window({
     monitor,
     name: `bar-${monitor}`,
-    anchor: ['top', 'left', 'right'],
-    margins: [2, 440, 0, 440],
+    // anchor: ['top', 'left', 'right'],
+    // margins: [2, 560, 0, 560],
+    anchor: ['bottom', 'left', 'right'],
+    margins: [0, 560, 4, 560],
     className: 'bar',
     exclusivity: 'exclusive',
     layer: 'top',
@@ -20,7 +22,6 @@ export function Bar(monitor: number = 0) {
       startWidget: SectionLeft(),
       centerWidget: SectionCenter(),
       endWidget: SectionRight(),
-      // centerWidget: SectionRight(),
     }),
   })
 }

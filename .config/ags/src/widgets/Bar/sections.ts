@@ -39,7 +39,6 @@ export function SectionRight() {
       VolumeWidget(),
       BatteryWidget(),
       PowerWidget(),
-
       ClockWidget(),
     ],
   });

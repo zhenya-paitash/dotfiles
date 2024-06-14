@@ -6,21 +6,9 @@ if status is-interactive
 end
 
 # choose theme
+fish_config theme choose fish\ default
 #fish_config theme choose Catppuccin\ Latte
 #fish_config theme choose ayu\ Light
-fish_config theme choose fish\ default
-
-# SSH agent (without echo) [remove] -> add autorun script ~/scripts/ssh_agent
-# if not pgrep -u $USER ssh-agent > /dev/null  # Запуск ssh-agent, если он еще не запущен
-#     eval (ssh-agent -c | sed 's/^echo/#echo/')
-# end
-# if test -z "$SSH_AUTH_SOCK"  # Добавление SSH-ключа, если переменная SSH_AUTH_SOCK не установлена
-#     eval (ssh-agent -c | sed 's/^echo/#echo/')
-#     ssh-add ~/.ssh/id_ed25519 > /dev/null 2>&1
-# else
-#     ssh-add ~/.ssh/id_ed25519 > /dev/null 2>&1
-# end
-
 
 # List Directory
 alias ls="eza --color=always --icons=always --long"
@@ -70,6 +58,7 @@ alias lazydocker='~/go/bin/lazydocker'
 # neovim
 set -U EDITOR nvim
 alias vim='nvim'
+alias viml='nvim leetcode.nvim'
 alias lg='lazygit'
 alias ld='lazydocker'
 alias vf='nvim $(fzf)'

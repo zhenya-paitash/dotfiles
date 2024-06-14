@@ -39,6 +39,7 @@
 !.config/htop**
 !.config/hypr**
 !.config/kitty**
+.config/kitty/*.bak
 !.config/lazydocker**
 !.config/lazygit**
 !.config/mpv**
