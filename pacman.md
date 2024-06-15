@@ -5,11 +5,11 @@ adwaita-cursors 46.2-1
 adwaita-icon-theme 46.2-1
 adwaita-icon-theme-legacy 46.2-1
 alsa-card-profiles 1:1.0.7-2
-alsa-lib 1.2.11-1
-alsa-plugins 1:1.2.7.1-2
+alsa-lib 1.2.12-1
+alsa-plugins 1:1.2.12-1
 alsa-topology-conf 1.2.5.1-3
 alsa-ucm-conf 1.2.12-1
-alsa-utils 1.2.11-1
+alsa-utils 1.2.12-1
 amd-ucode 20240610.9c10a208-1
 aom 3.9.1-1
 archlinux-keyring 20240609-1
@@ -86,7 +86,7 @@ fisher 4.4.4-1
 flac 1.4.3-1
 flex 2.6.4-5
 fontconfig 2:2.15.0-2
-freeglut 3.4.0-1
+freeglut 3.6.0-1
 freetype2 2.13.2-1
 fribidi 1.0.15-1
 fuse-common 3.16.2-1
@@ -151,10 +151,11 @@ http-parser 2.9.4-2
 hunspell 1.7.2-1
 hwdata 0.383-1
 hyprcursor 0.1.9-1
-hyprland 0.41.0-1
+hyprland 0.41.1-1
 hyprlang 0.5.2-1
 hyprpicker 0.3.0-1
 hyprpicker-debug 0.3.0-1
+hyprutils 0.1.2-2
 iana-etc 20240412-1
 icu 75.1-1
 imagemagick 7.1.1.33-1
@@ -168,7 +169,7 @@ jasper 4.2.4-1
 jbigkit 2.1-8
 jless 0.9.0-1
 jq 1.7.1-2
-js115 115.11.0-1
+js115 115.12.0-1
 json-c 0.17-1
 json-glib 1.8.0-1
 kbd 2.6.4-1
@@ -405,7 +406,7 @@ npth 1.7-1
 nspr 4.35-3
 nss 3.101-1
 nwg-look 0.2.7-1
-obsidian 1.6.3-1
+obsidian 1.6.3-2
 ocl-icd 2.3.2-1
 oniguruma 6.9.9-1
 openal 1.23.1-1

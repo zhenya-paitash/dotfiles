@@ -119,9 +119,10 @@ return {
 
   { -- PREVIEW .md
     "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-    -- ft = { "markdown" },
+    cmd = { "MarkdownPreview", "MarkdownPreviewStop", "MarkdownPreviewToggle"  },
+    ft = { "markdown" },
     build = require("plugins.setup.markdown-preview").build,
+    init = require("plugins.setup.markdown-preview").init,
   },
 
   { -- PRO REDEFINITION
@@ -305,6 +306,7 @@ return {
   { -- LEETCODE
     "kawre/leetcode.nvim",
     lazy = "leetcode.nvim" ~= vim.fn.argv()[1],
-    opts = { arg = "leetcode.nvim" },
+    -- opts = { arg = "leetcode.nvim" },
+    opts = require("plugins.setup.leetcode").opts,
   },
 }

@@ -17,7 +17,7 @@ use = ""
 cwd = { fg = "#f5e0dc" }
 
 # Hovered
-hovered         = { fg = "#1e1e2e", bg = "#a6e3a1" }
+hovered         = { fg = "#1e1e2e", bg = "#578C6C" }
 preview_hovered = { underline = true }
 
 # Find
@@ -25,9 +25,9 @@ find_keyword  = { fg = "#f9e2af", italic = true }
 find_position = { fg = "#f5c2e7", bg = "reset", italic = true }
 
 # Marker
-marker_copied   = { fg = "#a6e3a1", bg = "#a6e3a1" }
+marker_copied   = { fg = "#578C6C", bg = "#578C6C" }
 marker_cut      = { fg = "#f38ba8", bg = "#f38ba8" }
-marker_selected = { fg = "#a6e3a1", bg = "#a6e3a1" }
+marker_selected = { fg = "#578C6C", bg = "#578C6C" }
 
 # Tab
 tab_active   = { fg = "#1e1e2e", bg = "#cdd6f4" }
@@ -35,15 +35,15 @@ tab_inactive = { fg = "#cdd6f4", bg = "#45475a" }
 tab_width    = 1
 
 # Count
-count_copied   = { fg = "#1e1e2e", bg = "#a6e3a1" }
+count_copied   = { fg = "#1e1e2e", bg = "#578C6C" }
 count_cut      = { fg = "#1e1e2e", bg = "#f38ba8" }
-count_selected = { fg = "#1e1e2e", bg = "#a6e3a1" }
+count_selected = { fg = "#1e1e2e", bg = "#578C6C" }
 
 # Border
 border_symbol = "⏽"
 # border_symbol = ""
 # border_symbol = ""
-border_style  = { fg = "#a6e3a1" }
+border_style  = { fg = "#578C6C" }
 
 # Highlighting
 syntect_theme = "~/.config/yazi/themes/catppuccin-mocha.tmTheme"
@@ -56,35 +56,35 @@ separator_close = ""
 separator_style = { fg = "#45475a", bg = "#45475a" }
 
 # Mode
-mode_normal = { fg = "#1e1e2e", bg = "#a6e3a1", bold = true }
-mode_select = { fg = "#1e1e2e", bg = "#a6e3a1", bold = true }
+mode_normal = { fg = "#1e1e2e", bg = "#578C6C", bold = true }
+mode_select = { fg = "#1e1e2e", bg = "#578C6C", bold = true }
 mode_unset  = { fg = "#1e1e2e", bg = "#f2cdcd", bold = true }
 
 # Progress
 progress_label  = { fg = "#ffffff", bold = true }
-progress_normal = { fg = "#a6e3a1", bg = "#45475a" }
+progress_normal = { fg = "#578C6C", bg = "#45475a" }
 progress_error  = { fg = "#f38ba8", bg = "#45475a" }
 
 # Permissions
-permissions_t = { fg = "#a6e3a1" }
+permissions_t = { fg = "#578C6C" }
 permissions_r = { fg = "#f9e2af" }
 permissions_w = { fg = "#f38ba8" }
-permissions_x = { fg = "#a6e3a1" }
+permissions_x = { fg = "#578C6C" }
 permissions_s = { fg = "#7f849c" }
 
 [input]
-border   = { fg = "#a6e3a1" }
+border   = { fg = "#578C6C" }
 title    = {}
 value    = {}
 selected = { reversed = true }
 
 [select]
-border   = { fg = "#a6e3a1" }
+border   = { fg = "#578C6C" }
 active   = { fg = "#f5c2e7" }
 inactive = {}
 
 [tasks]
-border  = { fg = "#a6e3a1" }
+border  = { fg = "#578C6C" }
 title   = {}
 hovered = { underline = true }
 
@@ -123,5 +123,5 @@ rules = [
 
 	# Fallback
 	{ name = "*", fg = "#cdd6f4" },
-	{ name = "*/", fg = "#a6e3a1" }
+	{ name = "*/", fg = "#578C6C" }
 ]

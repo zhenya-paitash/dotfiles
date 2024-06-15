@@ -2,7 +2,8 @@ return {
   keys = {
     -- Obsidian Find with Telescope
     { "<leader>ofd", "<cmd> ObsidianDailies <cr>", mode = "n", desc = "Obsidian Dailies" },
-    { "<leader>ofs", "<cmd> ObsidianSearch <cr>", mode = "n", desc = "Obsidian Search" },
+    { "<leader>ofs", "<cmd> ObsidianQuickSwitch <cr>", mode = "n", desc = "Obsidian Quick Switch" },
+    { "<leader>ofa", "<cmd> ObsidianSearch <cr>", mode = "n", desc = "Obsidian Search" },
     { "<leader>oft", "<cmd> ObsidianTags <cr>", mode = "n", desc = "Obsidian Tags" },
     { "<leader>ofe", "<cmd> ObsidianTemplate <cr>", mode = "n", desc = "Obsidian Template" },
     { "<leader>ofw", "<cmd> ObsidianWorkspace <cr>", mode = "n", desc = "Obsidian Workspace" },
@@ -23,8 +24,6 @@ return {
     { "<leader>oi", "<cmd> ObsidianPasteImg <cr>", mode = "n", desc = "Obsidian Paste Image" },
     { "<leader>or", "<cmd> ObsidianRename <cr>", mode = "n", desc = "Obsidian Rename" },
     { "<leader>oc", "<cmd> ObsidianToggleCheckbox <cr>", mode = "n", desc = "Obsidian Toggle Checkbox" },
-
-    -- { "<leader>oqs", "<cmd> ObsidianQuickSwitch <cr>", mode = "n", desc = "Obsidian Quick Switch" },
 
     { -- run obsidian & open new tab & open `obsidian` directory
       "<leader>oe",
@@ -296,16 +295,16 @@ return {
         block_ids = { hl_group = "ObsidianBlockID" },
         hl_groups = {
           -- The options are passed directly to `vim.api.nvim_set_hl()`. See `:help nvim_set_hl`.
-          ObsidianTodo = { bold = true, fg = "#f78c6c" },
-          ObsidianDone = { bold = true, fg = "#89ddff" },
-          ObsidianRightArrow = { bold = true, fg = "#f78c6c" },
-          ObsidianTilde = { bold = true, fg = "#ff5370" },
-          ObsidianBullet = { bold = true, fg = "#89ddff" },
-          ObsidianRefText = { underline = true, fg = "#c792ea" },
-          ObsidianExtLinkIcon = { fg = "#c792ea" },
-          ObsidianTag = { italic = true, fg = "#89ddff" },
-          ObsidianBlockID = { italic = true, fg = "#89ddff" },
-          ObsidianHighlightText = { bg = "#75662e" },
+          ObsidianTodo = { bold = true, fg = "#D2C399" },
+          ObsidianDone = { bold = true, fg = "#F9C767" },
+          ObsidianRightArrow = { bold = true, fg = "#D2C399" },
+          ObsidianTilde = { bold = true, fg = "#85B2EE" },
+          ObsidianBullet = { bold = true, fg = "#F9C767" },
+          ObsidianRefText = { underline = true, fg = "#9BCA6B" },
+          ObsidianExtLinkIcon = { fg = "#9BCA6B" },
+          ObsidianTag = { italic = true, fg = "#F9C767" },
+          ObsidianBlockID = { italic = true, fg = "#F9C767" },
+          ObsidianHighlightText = { bg = "#D588F7" },
         },
       },
 

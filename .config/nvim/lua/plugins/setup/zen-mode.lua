@@ -49,16 +49,16 @@ return {
     },
     -- callback where you can add custom code when the Zen window opens
     on_open = function(win)
+      -- INFO: `wo` options only this window
       vim.wo.scrolloff = 999
       vim.wo.spell = true
+      vim.wo.wrap = true
       -- TODO: automaticaly stop this plugins
       vim.cmd "Barbecue hide"
       vim.cmd "Hardtime disable"
     end,
     -- callback where you can add custom code when the Zen window closes
     on_close = function()
-      -- vim.wo.scrolloff = 5
-      vim.wo.spell = false
       -- TODO: automaticaly rerun this plugins
       vim.cmd "Barbecue show"
       vim.cmd "Hardtime enable"

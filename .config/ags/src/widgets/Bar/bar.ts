@@ -11,7 +11,7 @@ export function Bar(monitor: number = 0) {
     // anchor: ['top', 'left', 'right'],
     // margins: [2, 560, 0, 560],
     anchor: ['bottom', 'left', 'right'],
-    margins: [0, 560, 4, 560],
+    margins: [0, 560, 5, 560],
     className: 'bar',
     exclusivity: 'exclusive',
     layer: 'top',
