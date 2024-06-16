@@ -5,8 +5,8 @@
 local M = {}
 
 M.ui = {
-  theme = "wombat",
-  theme_toggle = { "wombat", "wombat" },
+  theme = "material-lighter",
+  theme_toggle = { "material-lighter", "material-lighter" },
   transparency = false,
   lsp_semantic_tokens = true,
   statusline = {

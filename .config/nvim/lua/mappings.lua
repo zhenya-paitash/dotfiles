@@ -287,16 +287,16 @@ map(MODE.visual, "<leader>dk", "<cmd>lua require('dapui').eval()<CR>", { desc = 
 -- MODE: normal
 map(MODE.normal, "<leader>qs", function()
   require("persistence").load()
-  print "  session loaded!"
-end, { desc = "restore session (Persistence)" })
+  vim.notify_once("  session loaded!", vim.log.levels.INFO, { title = "Persistence" })
+end, { desc = "load (Persistence)" })
 map(MODE.normal, "<leader>ql", function()
   require("persistence").load { last = true }
-  print "  session loaded! (last session)"
-end, { desc = "Restore last session" })
+  vim.notify_once("  session loaded! (last session)", vim.log.levels.INFO, { title = "Persistence" })
+end, { desc = "load last (Persistence)" })
 map(MODE.normal, "<leader>qd", function()
   require("persistence").stop()
-  print "󱙄 session won't be saved!"
-end, { desc = "Stop session" })
+  vim.notify_once("󱙄 session won't be saved!", vim.log.levels.WARN, { title = "Persistence" })
+end, { desc = "don't save (Persistence)" })
 
 ---------------------------------------
 -- DIFFVIEW

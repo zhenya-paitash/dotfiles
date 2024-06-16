@@ -237,7 +237,7 @@ libice 1.1.1-2
 libidn2 2.3.7-1
 libiec61883 1.2.0-7
 libimobiledevice 1.3.0-13
-libimobiledevice-glue 1.2.0-1
+libimobiledevice-glue 1.3.0-1
 libinih 58-1
 libinput 1.26.0-1
 libisl 0.26-2
@@ -349,13 +349,13 @@ libxinerama 1.1.5-1
 libxkbcommon 1.7.0-2
 libxkbcommon-x11 1.7.0-2
 libxkbfile 1.1.3-1
-libxml2 2.13.0-1
+libxml2 2.13.0-3
 libxmu 1.2.1-1
 libxpresent 1.0.1-1
 libxrandr 1.5.4-1
 libxrender 0.9.11-1
 libxshmfence 1.3.2-1
-libxslt 1.1.40-1
+libxslt 1.1.40-2
 libxss 1.2.4-1
 libxt 1.3.0-1
 libxtst 1.2.4-1

@@ -92,6 +92,8 @@ function hookMediaButtonLabel(player: MprisPlayer, widget: Label<any>): void {
     // if (player.track_title === MEMO_CURRENT_MEDIA_COVER) return;  // wtf ???
     // console.log(`WTF?: ${player.track_title}`);
 
+    if (player.play_back_status !== "Playing")  return;
+
     Utils.notify({
       summary: 'Media',
       body: currentMedia,

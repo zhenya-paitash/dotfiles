@@ -119,7 +119,7 @@ return {
 
   { -- PREVIEW .md
     "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreview", "MarkdownPreviewStop", "MarkdownPreviewToggle"  },
+    cmd = { "MarkdownPreview", "MarkdownPreviewStop", "MarkdownPreviewToggle" },
     ft = { "markdown" },
     build = require("plugins.setup.markdown-preview").build,
     init = require("plugins.setup.markdown-preview").init,
@@ -138,7 +138,7 @@ return {
     config = require("plugins.setup.codeium").config,
     -- FIX(issue): https://github.com/Exafunction/codeium.vim/issues/376#issuecomment-2159643405
     -- FIX: the latest update breaks the plugin. Need revert to v1.8.37 289eb72
-    version = "1.8.37",
+    -- version = "1.8.37",
     -- commit = "289eb72",
   },
 
@@ -309,4 +309,13 @@ return {
     -- opts = { arg = "leetcode.nvim" },
     opts = require("plugins.setup.leetcode").opts,
   },
+
+  -- { -- NOTE ALTERNATIVE
+  --   "nvim-neorg/neorg",
+  --   run = ":Neorg sync-parsers",
+  --   dependencies = { "luarocks.nvim" },
+  --   lazy = false,
+  --   version = "*",
+  --   config = require("plugins.setup.neorg").config,
+  -- },
 }

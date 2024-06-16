@@ -8,9 +8,11 @@ return {
     { "<leader>ofe", "<cmd> ObsidianTemplate <cr>", mode = "n", desc = "Obsidian Template" },
     { "<leader>ofw", "<cmd> ObsidianWorkspace <cr>", mode = "n", desc = "Obsidian Workspace" },
 
-    { "<leader>oy", "<cmd> ObsidianYesterday <cr>", mode = "n", desc = "Obsidian daily Yesterday" },
+    -- { "<leader>oy", "<cmd> ObsidianYesterday <cr>", mode = "n", desc = "Obsidian daily Yesterday" },
+    { "<leader>oy", "<cmd> ObsidianToday -1 <cr>", mode = "n", desc = "Obsidian daily Yesterday" },
     { "<leader>od", "<cmd> ObsidianToday <cr>", mode = "n", desc = "Obsidian daily Today" },
-    { "<leader>ot", "<cmd> ObsidianTomorrow <cr>", mode = "n", desc = "Obsidian daily Tomorrow" },
+    { "<leader>ot", "<cmd> ObsidianToday +1 <cr>", mode = "n", desc = "Obsidian daily Tomorrow" },
+    -- { "<leader>ot", "<cmd> ObsidianTomorrow <cr>", mode = "n", desc = "Obsidian daily Tomorrow" },
 
     { "<leader>ob", "<cmd> ObsidianBacklinks <cr>", mode = "n", desc = "Obsidian Back Links" },
     -- { "gf", "<cmd> ObsidianFollowLink <cr>", mode = "n", desc = "Obsidian Follow Link" },
@@ -68,8 +70,8 @@ return {
         date_format = "%Y-%m-%d",
         alias_format = "%B %-d, %Y",
         template = nil,
-        tags = { "notes/daily" },
-        cssclasses = { "daily" },
+        -- tags = { "notes/daily" },
+        -- cssclasses = { "daily" },
       },
       mappings = {
         -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
@@ -274,13 +276,13 @@ return {
         -- Define how various check-boxes are displayed
         checkboxes = {
           -- NOTE: the 'char' value has to be a single character, and the highlight groups are defined below.
-          [" "] = { char = "󰄱", hl_group = "ObsidianTodo" },
-          ["x"] = { char = "", hl_group = "ObsidianDone" },
-          [">"] = { char = "", hl_group = "ObsidianRightArrow" },
-          ["~"] = { char = "󰰱", hl_group = "ObsidianTilde" },
+          -- [" "] = { char = "󰄱", hl_group = "ObsidianTodo" },
+          -- ["x"] = { char = "", hl_group = "ObsidianDone" },
+          -- [">"] = { char = "", hl_group = "ObsidianRightArrow" },
+          -- ["~"] = { char = "󰰱", hl_group = "ObsidianTilde" },
           -- Replace the above with this if you don't have a patched font:
-          -- [" "] = { char = "☐", hl_group = "ObsidianTodo" },
-          -- ["x"] = { char = "✔", hl_group = "ObsidianDone" },
+          [" "] = { char = "☐", hl_group = "ObsidianTodo" },
+          ["x"] = { char = "✔", hl_group = "ObsidianDone" },
 
           -- You can also add more custom ones...
         },
