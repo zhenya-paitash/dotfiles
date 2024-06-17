@@ -39,6 +39,8 @@ return {
     --
     --   -- CUSTOM
     --   "VimBeGood",  -- DOESN'T WORK ???
+    --   "DB",
+    --   "DBUI",
     -- },
 
     -- CUSTOM OPTIONS

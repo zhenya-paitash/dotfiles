@@ -263,7 +263,7 @@ libnewt 0.52.24-2
 libnfnetlink 1.0.2-2
 libnftnl 1.2.6-1
 libnghttp2 1.62.1-1
-libnghttp3 1.3.0-1
+libnghttp3 1.4.0-1
 libnice 0.1.22-1
 libnl 3.9.0-1
 libnm 1.48.0-1
@@ -368,8 +368,8 @@ lilv 0.24.24-2
 linux-api-headers 6.8-1
 linux-firmware 20240610.9c10a208-1
 linux-firmware-whence 20240610.9c10a208-1
-linux-lts 6.6.33-1
-linux-zen 6.9.4.zen1-1
+linux-lts 6.6.34-1
+linux-zen 6.9.5.zen1-1
 llvm-libs 17.0.6-5
 lm_sensors 1:3.6.0.r41.g31d1f125-2
 lua 5.4.6-3

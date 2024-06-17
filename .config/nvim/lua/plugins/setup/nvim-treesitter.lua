@@ -20,9 +20,16 @@ return {
 
     indent = {
       enable = true,
-      -- disable = {
-      --   "python"
-      -- },
+      -- disable = { "python" },
+    },
+
+    incremental_selection = {
+      enable = true,
+      keymaps = {
+        -- init_selection = "<CR>",
+        node_incremental = "<CR>",
+        node_decremental = "<BS>",
+      },
     },
 
     -- windwp/nvim-ts-autotag

@@ -5,8 +5,8 @@
 local M = {}
 
 M.ui = {
-  theme = "material-lighter",
-  theme_toggle = { "material-lighter", "material-lighter" },
+  theme = "rosepine",
+  theme_toggle = { "rosepine", "rosepine" },
   transparency = false,
   lsp_semantic_tokens = true,
   statusline = {
@@ -21,7 +21,7 @@ M.ui = {
   hl_override = {
     Comment = { italic = true },
     ["@comment"] = { italic = true },
-    CursorLineNr = { fg = "#ED9455" },
+    CursorLineNr = { fg = "#E46C8F" },
   },
   hl_add = {
     NvimTreeOpenedFolderName = { fg = "green", bold = true },
