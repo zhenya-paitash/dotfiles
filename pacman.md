@@ -50,7 +50,7 @@ check 0.15.2-2
 cliphist 1:0.5.0-1
 containerd 1.7.18-1
 coreutils 9.5-1
-cryptsetup 2.7.2-1
+cryptsetup 2.7.3-1
 curl 8.8.0-1
 dav1d 1.4.2-1
 db5.3 5.3.28-5
@@ -257,7 +257,7 @@ libmodplug 0.8.9.0-5
 libmpc 1.3.1-1
 libmtp 1.1.21-1
 libmysofa 1.3.2-1
-libndp 1.8-1
+libndp 1.8-2
 libnetfilter_conntrack 1.0.9-2
 libnewt 0.52.24-2
 libnfnetlink 1.0.2-2
@@ -349,7 +349,7 @@ libxinerama 1.1.5-1
 libxkbcommon 1.7.0-2
 libxkbcommon-x11 1.7.0-2
 libxkbfile 1.1.3-1
-libxml2 2.13.0-3
+libxml2 2.13.0-4
 libxmu 1.2.1-1
 libxpresent 1.0.1-1
 libxrandr 1.5.4-1
@@ -453,7 +453,7 @@ powertop 2.15-1
 procps-ng 4.0.4-3
 protobuf 25.3-4
 psmisc 23.7-1
-python 3.12.3-1
+python 3.12.4-1
 python-certifi 2024.06.02-1
 python-charset-normalizer 3.3.2-2
 python-gobject 3.48.2-1
@@ -475,7 +475,7 @@ rofi-lbonn-wayland-git 1.7.5.wayland3.r3.g47ae31eb-1
 rofi-lbonn-wayland-git-debug 1.7.5.wayland3.r3.g47ae31eb-1
 rtkit 0.13-2
 rubberband 3.3.0-1
-runc 1.1.12-1
+runc 1.1.13-1
 rustup 1.27.1-1
 sassc 3.6.2-4
 sbc 2.0-1
@@ -506,9 +506,9 @@ sudo 1.9.15.p5-1
 svt-av1 2.1.0-1
 swww 0.9.5-1
 swww-debug 0.9.5-1
-systemd 255.7-1
-systemd-libs 255.7-1
-systemd-sysvcompat 255.7-1
+systemd 256-3
+systemd-libs 256-3
+systemd-sysvcompat 256-3
 tar 1.35-2
 tdb 1.4.10-3
 telegram-desktop 5.1.5-1
