@@ -2,7 +2,7 @@ return {
   keys = {
     -- Obsidian Find with Telescope
     { "<leader>ofd", "<cmd> ObsidianDailies <cr>", mode = "n", desc = "Obsidian Dailies" },
-    { "<leader>ofs", "<cmd> ObsidianQuickSwitch <cr>", mode = "n", desc = "Obsidian Quick Switch" },
+    { "<leader>off", "<cmd> ObsidianQuickSwitch <cr>", mode = "n", desc = "Obsidian Quick Switch" },
     { "<leader>ofa", "<cmd> ObsidianSearch <cr>", mode = "n", desc = "Obsidian Search" },
     { "<leader>oft", "<cmd> ObsidianTags <cr>", mode = "n", desc = "Obsidian Tags" },
     { "<leader>ofe", "<cmd> ObsidianTemplate <cr>", mode = "n", desc = "Obsidian Template" },

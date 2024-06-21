@@ -30,24 +30,22 @@ M.ui = {
 
 -- M.plugins = {
 --   options = {},
---   default_plugin_config_replace = {
---     ["nvim-telescope/telescope.nvim"] = function()
---       local telescope = require "telescope"
---       telescope.setup {
---         extensions = {
---           fzf = {
---             fuzzy = true, -- false will only do exact matching
---             override_generic_sorter = true, -- override the generic sorter
---             override_file_sorter = true, -- override the file sorter
---             case_mode = "smart_case", -- or "ignore_case" or "respect_case"
---           },
+--   ["nvim-telescope/telescope.nvim"] = function()
+--     local telescope = require "telescope"
+--     telescope.setup {
+--       extensions = {
+--         fzf = {
+--           fuzzy = true, -- false will only do exact matching
+--           override_generic_sorter = true, -- override the generic sorter
+--           override_file_sorter = true, -- override the file sorter
+--           case_mode = "smart_case", -- or "ignore_case" or "respect_case"
 --         },
---       }
+--       },
+--     }
 --
---       -- telescope.load_extension "fzf"
---       -- print "Telescope fzf extension loaded"
---     end,
---   },
+--     -- telescope.load_extension "fzf"
+--     -- print "Telescope fzf extension loaded"
+--   end,
 -- }
 
 return M

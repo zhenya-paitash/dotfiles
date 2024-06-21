@@ -48,6 +48,7 @@
 !.config/tmux**
 .config/tmux/plugins
 !.config/yazi**
+!.config/qBittorrent/themes**
 
 !.config/starship.toml
 !.config/electron-flags.conf
