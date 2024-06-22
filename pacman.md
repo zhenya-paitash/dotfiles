@@ -6,7 +6,7 @@ adwaita-icon-theme 46.2-1
 adwaita-icon-theme-legacy 46.2-1
 alsa-card-profiles 1:1.0.7-2
 alsa-lib 1.2.12-1
-alsa-plugins 1:1.2.12-1
+alsa-plugins 1:1.2.12-2
 alsa-topology-conf 1.2.5.1-3
 alsa-ucm-conf 1.2.12-1
 alsa-utils 1.2.12-1
@@ -73,10 +73,10 @@ efibootmgr 18-3
 efivar 39-1
 electron28 28.3.3-2
 expat 2.6.2-1
-eza 0.18.18-1
+eza 0.18.19-1
 fakeroot 1.35-1
 fd 10.1.0-1
-ffmpeg 2:6.1.1-7
+ffmpeg 2:7.0.1-1
 fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
@@ -130,9 +130,9 @@ gsettings-desktop-schemas 46.0-1
 gsm 1.0.22-1
 gssdp 1.6.3-1
 gst-plugin-pipewire 1:1.0.7-2
-gst-plugins-bad-libs 1.24.3-1
-gst-plugins-base-libs 1.24.3-1
-gstreamer 1.24.3-1
+gst-plugins-bad-libs 1.24.5-2
+gst-plugins-base-libs 1.24.5-2
+gstreamer 1.24.5-2
 gtest 1.14.0-1
 gtk-layer-shell 0.8.2-1
 gtk-update-icon-cache 1:4.14.4-1
@@ -152,7 +152,7 @@ http-parser 2.9.4-2
 hunspell 1.7.2-1
 hwdata 0.383-1
 hyprcursor 0.1.9-1
-hyprland 0.41.1-1
+hyprland 0.41.1-2
 hyprlang 0.5.2-1
 hyprpicker 0.3.0-1
 hyprpicker-debug 0.3.0-1
@@ -177,11 +177,11 @@ kbd 2.6.4-1
 kcoreaddons 6.3.0-1
 keyutils 1.6.3-2
 ki18n 6.3.0-1
-kitty 0.35.1-1
-kitty-shell-integration 0.35.1-1
-kitty-terminfo 0.35.1-1
+kitty 0.35.2-1
+kitty-shell-integration 0.35.2-1
+kitty-terminfo 0.35.2-1
 kmod 32-1
-kpipewire 6.1.0-2
+kpipewire 6.1.0-3
 krb5 1.21.2-2
 kstatusnotifieritem 6.3.0-1
 kwindowsystem 6.3.0-1
@@ -213,7 +213,7 @@ libdaemon 0.14-5
 libdatrie 0.2.13-4
 libdeflate 1.20-2
 libdispatch 5.10-1
-libdisplay-info 0.1.1-3
+libdisplay-info 0.2.0-1
 libdovi 3.3.0-2
 libdrm 2.4.121-1
 libdvdnav 6.1.1-2
@@ -329,7 +329,7 @@ libvorbis 1.3.7-3
 libvpl 2.11.0-1
 libvpx 1.14.0-1
 libvterm 0.3.3-1
-libwacom 2.12.1-1
+libwacom 2.12.2-1
 libwebp 1.4.0-1
 libwireplumber 0.5.3-1
 libx11 1.8.9-1
@@ -385,6 +385,7 @@ m4 1.4.19-3
 mailcap 2.1.54-1
 make 4.4.1-2
 man-db 2.12.1-1
+mbedtls2 2.28.8-3
 md4c 0.5.2-1
 mesa 1:24.1.1-1
 minizip 1:1.3.1-2
@@ -394,7 +395,7 @@ mobile-broadband-provider-info 20240407-1
 mpdecimal 4.0.0-2
 mpfr 4.2.1-3
 mpg123 1.32.6-1
-mpv 1:0.38.0-4
+mpv 1:0.38.0-5
 msgpack-c 5.0.0-2
 mtdev 1.1.6-2
 mujs 1.3.4-1
@@ -411,7 +412,7 @@ nwg-look 0.2.7-1
 obsidian 1.6.3-2
 ocl-icd 2.3.2-1
 oniguruma 6.9.9-1
-openal 1.23.1-1
+openal 1.23.1-2
 opencore-amr 0.1.6-1
 openexr 3.2.4-1
 openjpeg2 2.5.2-1
@@ -453,7 +454,7 @@ postgresql-libs 16.2-4
 power-profiles-daemon 0.21-1
 powertop 2.15-1
 procps-ng 4.0.4-3
-protobuf 25.3-4
+protobuf 27.1-2
 psmisc 23.7-1
 python 3.12.4-1
 python-certifi 2024.06.02-1
@@ -514,7 +515,7 @@ systemd-libs 256.1-1
 systemd-sysvcompat 256.1-1
 tar 1.35-2
 tdb 1.4.10-3
-telegram-desktop 5.1.5-1
+telegram-desktop 5.1.7-2
 texinfo 7.1-2
 tmux 3.4-8
 tomlplusplus 3.4.0-1
@@ -556,10 +557,10 @@ wget 1.24.5-2
 which 2.21-6
 wireplumber 0.5.3-1
 wl-clipboard 1:2.2.1-1
-wlroots 0.17.3-1
+wlroots 0.17.3-2
 wpa_supplicant 2:2.10-8
 x264 3:0.164.r3108.31e19f9-2
-x265 3.5-3
+x265 3.6-1
 xcb-proto 1.17.0-2
 xcb-util 0.4.1-1
 xcb-util-cursor 0.1.5-1
