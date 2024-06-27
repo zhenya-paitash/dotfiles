@@ -5,7 +5,7 @@ return {
     -- local fg_right = "#AF8260"
     -- local fg_icons = "#ED9455"
     -- local fg_symbols = "#FFEC9E"
-    local fg_left = "#E5B5B5"
+    local fg_left = "#87B7C1"
     local fg_right = "#E46C8F"
     local fg_icons = "#BC9EDB"
     local fg_symbols = "#E46C8F"

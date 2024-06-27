@@ -157,12 +157,12 @@ return {
     keys = { { "<leader>gy", "<cmd>Yazi<CR>", desc = "Toggle Yazi" } },
   },
 
-  { -- HIGHLIGHT COLORS
-    "brenoprata10/nvim-highlight-colors",
-    -- event = "BufReadPost",
-    cmd = { "HighlightColors" },
-    config = require("plugins.setup.nvim-highlight-colors").config,
-  },
+  -- { -- HIGHLIGHT COLORS (support `tailwindcss` colors)
+  --   "brenoprata10/nvim-highlight-colors",
+  --   -- event = "BufReadPost",
+  --   cmd = { "HighlightColors" },
+  --   config = require("plugins.setup.nvim-highlight-colors").config,
+  -- },
 
   { -- HIGHLIGHT COLORS & COLOR PICKER
     "uga-rosa/ccc.nvim",
@@ -189,17 +189,17 @@ return {
     dependencies = "kevinhwang91/promise-async",
   },
 
-  { -- HTTP CLIENT
-    "rest-nvim/rest.nvim",
-    ft = { "http" },
-    config = require("plugins.setup.rest-nvim").config,
-    dependencies = {
-      "vhyrro/luarocks.nvim",
-      priority = 1000,
-      config = true,
-      opts = { rocks = { "lua-curl", "nvim-nio", "mimetypes", "xml2lua" } },
-    },
-  },
+  -- { -- HTTP CLIENT
+  --   "rest-nvim/rest.nvim",
+  --   ft = { "http" },
+  --   config = require("plugins.setup.rest-nvim").config,
+  --   dependencies = {
+  --     "vhyrro/luarocks.nvim",
+  --     priority = 1000,
+  --     config = true,
+  --     opts = { rocks = { "lua-curl", "nvim-nio", "mimetypes", "xml2lua" } },
+  --   },
+  -- },
 
   { -- ZEN MODE
     "folke/zen-mode.nvim",
@@ -254,10 +254,10 @@ return {
   --   config = require("plugins.setup.harpoon").config,
   -- },
 
-  { -- GAME PRACTICE
-    "ThePrimeagen/vim-be-good",
-    cmd = { "VimBeGood" },
-  },
+  -- { -- GAME PRACTICE
+  --   "ThePrimeagen/vim-be-good",
+  --   cmd = { "VimBeGood" },
+  -- },
 
   -- { -- TYPING PRACTICE
   --   "kwakzalver/duckytype.nvim",

@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# if hyprctl monitors -j | jq '.[] | select(.name=="eDP-1")' | grep -q '.';then
+#   hyprctl keyword monitor "eDP-1 , disable"
+#   notify-send -u normal -t 3000 "Laptop monitor" "OFF"
+# else
+#   hyprctl keyword monitor "eDP-1 , 1920x1200@120.00 , 0x0 , 1"
+#   notify-send -u normal -t 3000 "Laptop monitor" "enable"
+# fi
+
 string=$(hyprctl -j monitors | jq --raw-output '.[] | .name')
 
 if echo $string | grep -q "eDP-1"; then
@@ -7,13 +15,14 @@ if echo $string | grep -q "eDP-1"; then
   length=${#arr[@]}
 
   if (( length > 1 )); then
-    hyprctl keyword monitor "eDP-1,disable"
-    notify-send -u normal -t 3000 "monitors" "Laptop eDP-1 monitor was OFF"
+    hyprctl keyword monitor "eDP-1 , disable"
+    notify-send -u normal -t 3000 "Laptop monitor" "OFF"
   else
-    notify-send -u critical -t 3000 "animations" "Operation is blocked! You don't have another monitors!"
+    notify-send -u critical -t 3000 "Laptop monitor" "Operation is blocked! You don't have another monitors!"
   fi
 else 
   # hyprctl keyword monitor "eDP-1 , 2560x1600@120.00 , 0x0 , 1.67"
   hyprctl keyword monitor "eDP-1 , 1920x1200@120.00 , 0x0 , 1"
-  notify-send -u normal -t 3000 "monitors" "Laptop eDP-1 monitor now is ON"
+  notify-send -u normal -t 3000 "Laptop monitor" "enable"
 fi
+
