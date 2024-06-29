@@ -37,7 +37,7 @@ bridge-utils 1.7.1-2
 brightnessctl 0.5.1-2
 brotli 1.1.0-2
 btop 1.3.2-1
-btrfs-progs 6.9-1
+btrfs-progs 6.9.2-1
 bzip2 1.0.8-6
 c-ares 1.29.0-1
 ca-certificates 20240618-1
@@ -229,7 +229,7 @@ libfdk-aac 2.0.3-1
 libffi 3.4.6-1
 libfontenc 1.1.8-1
 libfreeaptx 0.1.1-1
-libgcrypt 1.11.0-1
+libgcrypt 1.11.0-2
 libgirepository 1.80.1-3
 libgit2 1:1.8.1-1
 libglvnd 1.7.0-1
@@ -244,7 +244,7 @@ libinih 58-1
 libinput 1.26.1-1
 libisl 0.26-2
 libjpeg-turbo 3.0.3-1
-libjxl 0.10.2-1
+libjxl 0.10.3-1
 libksba 1.6.7-1
 liblc3 1.1.1-1
 libldac 2.0.2.3-1
@@ -375,7 +375,7 @@ linux-lts 6.6.35-2
 linux-zen 6.9.6.zen1-1
 llvm-libs 17.0.6-5
 lm_sensors 1:3.6.0.r41.g31d1f125-2
-lua 5.4.6-3
+lua 5.4.7-1
 lua51 5.1.5-11
 lua51-lpeg 1.1.0-2
 luajit 2.1.1716656478-1
@@ -455,7 +455,7 @@ postgresql-libs 16.2-4
 power-profiles-daemon 0.21-1
 powertop 2.15-1
 procps-ng 4.0.4-3
-protobuf 27.1-2
+protobuf 27.2-1
 psmisc 23.7-1
 python 3.12.4-1
 python-certifi 2024.06.02-1
@@ -558,7 +558,7 @@ wget 1.24.5-3
 which 2.21-6
 wireplumber 0.5.3-1
 wl-clipboard 1:2.2.1-1
-wlroots 0.17.3-2
+wlroots 0.17.4-1
 wpa_supplicant 2:2.10-8
 x264 3:0.164.r3108.31e19f9-2
 x265 3.6-1
