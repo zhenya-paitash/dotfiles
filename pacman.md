@@ -4,7 +4,7 @@ adobe-source-code-pro-fonts 2.042u+1.062i+1.026vf-1
 adwaita-cursors 46.2-1
 adwaita-icon-theme 46.2-1
 adwaita-icon-theme-legacy 46.2-1
-alsa-card-profiles 1:1.0.7-2
+alsa-card-profiles 1:1.2.0-2
 alsa-lib 1.2.12-1
 alsa-plugins 1:1.2.12-2
 alsa-topology-conf 1.2.5.1-3
@@ -53,7 +53,7 @@ containerd 1.7.18-1
 coreutils 9.5-1
 cryptsetup 2.7.3-1
 curl 8.8.0-1
-dav1d 1.4.2-1
+dav1d 1.4.3-1
 db5.3 5.3.28-5
 dbus 1.14.10-2
 dbus-broker 36-2
@@ -74,7 +74,7 @@ efivar 39-1
 electron28 28.3.3-2
 electron30 30.1.2-1
 expat 2.6.2-1
-eza 0.18.20-1
+eza 0.18.20-3
 fakeroot 1.35-1
 fd 10.1.0-1
 ffmpeg 2:7.0.1-1
@@ -130,7 +130,7 @@ grub 2:2.12-2
 gsettings-desktop-schemas 46.0-1
 gsm 1.0.22-1
 gssdp 1.6.3-1
-gst-plugin-pipewire 1:1.0.7-2
+gst-plugin-pipewire 1:1.2.0-2
 gst-plugins-bad-libs 1.24.5-2
 gst-plugins-base-libs 1.24.5-2
 gstreamer 1.24.5-2
@@ -145,7 +145,7 @@ guile 3.0.10-1
 gupnp 1:1.6.6-1
 gupnp-igd 1.6.0-1
 gzip 1.13-2
-harfbuzz 8.5.0-1
+harfbuzz 9.0.0-1
 hicolor-icon-theme 0.18-1
 hidapi 0.14.0-2
 highway 1.2.0-1
@@ -248,7 +248,7 @@ libjxl 0.10.3-1
 libksba 1.6.7-1
 liblc3 1.1.1-1
 libldac 2.0.2.3-1
-libldap 2.6.7-2
+libldap 2.6.8-1
 libliftoff 0.5.0-1
 liblqr 0.4.2-3
 libluv 1.48.0_2-1
@@ -279,7 +279,7 @@ libpcap 1.10.4-1
 libpciaccess 0.18.1-2
 libpgm 5.3.128-3
 libpipeline 1.5.7-2
-libpipewire 1:1.0.7-2
+libpipewire 1:1.2.0-2
 libplacebo 6.338.2-7
 libplist 2.6.0-1
 libpng 1.6.43-1
@@ -332,7 +332,7 @@ libvpx 1.14.0-1
 libvterm 0.3.3-1
 libwacom 2.12.2-1
 libwebp 1.4.0-1
-libwireplumber 0.5.3-1
+libwireplumber 0.5.5-1
 libx11 1.8.9-1
 libxau 1.0.11-2
 libxcb 1.17.0-1
@@ -371,8 +371,8 @@ lilv 0.24.24-2
 linux-api-headers 6.8-1
 linux-firmware 20240610.9c10a208-1
 linux-firmware-whence 20240610.9c10a208-1
-linux-lts 6.6.35-2
-linux-zen 6.9.6.zen1-1
+linux-lts 6.6.36-1
+linux-zen 6.9.7.zen1-1
 llvm-libs 17.0.6-5
 lm_sensors 1:3.6.0.r41.g31d1f125-2
 lua 5.4.7-1
@@ -440,11 +440,11 @@ perl-error 0.17029-5
 perl-mailtools 2.21-7
 perl-timedate 2.33-5
 pinentry 1.3.0-1
-pipewire 1:1.0.7-2
-pipewire-alsa 1:1.0.7-2
-pipewire-audio 1:1.0.7-2
-pipewire-jack 1:1.0.7-2
-pipewire-pulse 1:1.0.7-2
+pipewire 1:1.2.0-2
+pipewire-alsa 1:1.2.0-2
+pipewire-audio 1:1.2.0-2
+pipewire-jack 1:1.2.0-2
+pipewire-pulse 1:1.2.0-2
 pixman 0.43.4-1
 pkgconf 2.1.1-1
 polkit 124-2
@@ -556,7 +556,7 @@ wayland-protocols 1.36-1
 webrtc-audio-processing-1 1.3-2
 wget 1.24.5-3
 which 2.21-6
-wireplumber 0.5.3-1
+wireplumber 0.5.5-1
 wl-clipboard 1:2.2.1-1
 wlroots 0.17.4-1
 wpa_supplicant 2:2.10-8
