@@ -64,7 +64,7 @@ default-cursors 2-1
 desktop-file-utils 0.27-1
 device-mapper 2.03.24-1
 diffutils 3.10-1
-docker 1:26.1.4-1
+docker 1:27.0.2-1
 docker-compose 2.28.1-1
 double-conversion 3.3.0-1
 duktape 2.7.0-6
@@ -74,7 +74,7 @@ efivar 39-1
 electron28 28.3.3-2
 electron30 30.1.2-1
 expat 2.6.2-1
-eza 0.18.20-3
+eza 0.18.21-1
 fakeroot 1.35-1
 fd 10.1.0-1
 ffmpeg 2:7.0.1-1
@@ -89,7 +89,7 @@ flac 1.4.3-1
 flex 2.6.4-5
 fontconfig 2:2.15.0-2
 freeglut 3.6.0-1
-freetype2 2.13.2-1
+freetype2 2.13.2-2
 fribidi 1.0.15-1
 fuse-common 3.16.2-1
 fuse2 2.9.9-4
@@ -173,7 +173,7 @@ jless 0.9.0-1
 jq 1.7.1-2
 js115 115.12.0-1
 json-c 0.17-1
-json-glib 1.8.0-1
+json-glib 1.8.0-2
 kbd 2.6.4-1
 kcoreaddons 6.3.0-1
 keyutils 1.6.3-2
@@ -287,7 +287,7 @@ libproxy 0.5.7-1
 libpsl 0.21.5-2
 libpulse 17.0-3
 libraqm 0.10.1-1
-libraw1394 2.1.2-3
+libraw1394 2.1.2-4
 librsvg 2:2.58.1-1
 librsync 1:2.3.4-1
 libsamplerate 0.2.2-2
@@ -404,7 +404,7 @@ ncurses 6.5-3
 neovim 0.10.0-5
 nettle 3.10-1
 networkmanager 1.48.2-1
-noto-fonts 1:24.6.1-1
+noto-fonts 1:24.7.1-1
 noto-fonts-emoji 1:2.042-1
 npth 1.7-1
 nspr 4.35-3
@@ -417,7 +417,7 @@ openal 1.23.1-2
 opencore-amr 0.1.6-1
 openexr 3.2.4-1
 openjpeg2 2.5.2-1
-openssh 9.7p1-2
+openssh 9.8p1-1
 openssl 3.3.1-1
 opus 1.5.2-1
 orc 0.4.38-1
@@ -450,8 +450,8 @@ pkgconf 2.1.1-1
 polkit 124-2
 popt 1.19-1
 portaudio 1:19.7.0-2
-postgresql 16.2-4
-postgresql-libs 16.2-4
+postgresql 16.3-1
+postgresql-libs 16.3-1
 power-profiles-daemon 0.21-1
 powertop 2.15-1
 procps-ng 4.0.4-3
