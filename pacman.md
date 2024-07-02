@@ -41,7 +41,7 @@ btrfs-progs 6.9.2-1
 bzip2 1.0.8-6
 c-ares 1.29.0-1
 ca-certificates 20240618-1
-ca-certificates-mozilla 3.101-1
+ca-certificates-mozilla 3.101.1-1
 ca-certificates-utils 20240618-1
 cairo 1.18.0-2
 cairomm 1.14.5-1
@@ -64,9 +64,9 @@ default-cursors 2-1
 desktop-file-utils 0.27-1
 device-mapper 2.03.24-1
 diffutils 3.10-1
-docker 1:27.0.2-1
+docker 1:27.0.3-1
 docker-compose 2.28.1-1
-double-conversion 3.3.0-1
+double-conversion 3.3.0-2
 duktape 2.7.0-6
 e2fsprogs 1.47.1-4
 efibootmgr 18-3
@@ -127,7 +127,7 @@ graphite 1:1.3.14-3
 grep 3.11-1
 groff 1.23.0-6
 grub 2:2.12-2
-gsettings-desktop-schemas 46.0-1
+gsettings-desktop-schemas 46.0-2
 gsm 1.0.22-1
 gssdp 1.6.3-1
 gst-plugin-pipewire 1:1.2.0-2
@@ -327,7 +327,7 @@ libva 2.21.0-1
 libvdpau 1.5-2
 libverto 0.3.2-5
 libvorbis 1.3.7-3
-libvpl 2.11.0-1
+libvpl 2.12.0-1
 libvpx 1.14.0-1
 libvterm 0.3.3-1
 libwacom 2.12.2-1
@@ -408,7 +408,7 @@ noto-fonts 1:24.7.1-1
 noto-fonts-emoji 1:2.042-1
 npth 1.7-1
 nspr 4.35-3
-nss 3.101-1
+nss 3.101.1-1
 nwg-look 0.2.7-1
 obsidian 1.6.5-1
 ocl-icd 2.3.2-1
@@ -461,7 +461,7 @@ python 3.12.4-1
 python-certifi 2024.06.02-1
 python-charset-normalizer 3.3.2-2
 python-gobject 3.48.2-1
-python-idna 3.6-2
+python-idna 3.7-1
 python-packaging 24.0-1
 python-requests 2.32.3-1
 python-urllib3 1.26.18-3
@@ -516,7 +516,7 @@ systemd-libs 256.1-1
 systemd-sysvcompat 256.1-1
 tar 1.35-2
 tdb 1.4.10-3
-telegram-desktop 5.1.7-3
+telegram-desktop 5.2.1-1
 texinfo 7.1-2
 tmux 3.4-8
 tomlplusplus 3.4.0-1
@@ -596,7 +596,7 @@ yadm 3.2.2-1
 yay 12.3.5-1
 yay-debug 12.3.5-1
 yazi 0.2.5-2
-yt-dlp 2024.05.27-1
+yt-dlp 2024.07.01-1
 z 1.12-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
