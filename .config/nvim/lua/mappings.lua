@@ -169,7 +169,6 @@ map(
 -- MODE: normal
 map(MODE.normal, "<leader>X", function()
   require("nvchad.tabufline").closeAllBufs()
-  -- vim.api.nvim_command "bufdo bd"
   vim.cmd "NvimTreeFocus"
 end, { desc = "Close other buffers", noremap = true, silent = true })
 

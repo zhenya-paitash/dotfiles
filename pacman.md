@@ -210,7 +210,7 @@ libcdio-paranoia 10.2+2.0.2-1
 libcloudproviders 0.3.6-1
 libcolord 1.4.7-2
 libcups 2:2.4.10-1
-libdaemon 0.14-5
+libdaemon 0.14-6
 libdatrie 0.2.13-4
 libdeflate 1.20-2
 libdispatch 5.10-1
