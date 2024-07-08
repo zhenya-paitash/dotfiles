@@ -157,7 +157,7 @@ hyprland 0.41.2-1
 hyprlang 0.5.2-1
 hyprpicker 0.3.0-1
 hyprpicker-debug 0.3.0-1
-hyprutils 0.1.5-1
+hyprutils 0.1.5-2
 iana-etc 20240612-1
 icu 75.1-1
 imagemagick 7.1.1.34-1
@@ -172,7 +172,7 @@ jbigkit 2.1-8
 jless 0.9.0-1
 jq 1.7.1-2
 js115 115.12.0-1
-json-c 0.17-1
+json-c 0.17-2
 json-glib 1.8.0-2
 kbd 2.6.4-1
 kcoreaddons 6.3.0-1
@@ -274,7 +274,7 @@ libnsl 2.0.1-1
 libogg 1.3.5-2
 libomxil-bellagio 0.9.3-4
 libopenmpt 0.7.8-1
-libp11-kit 0.25.3-1
+libp11-kit 0.25.5-1
 libpcap 1.10.4-1
 libpciaccess 0.18.1-2
 libpgm 5.3.128-3
@@ -352,13 +352,13 @@ libxinerama 1.1.5-2
 libxkbcommon 1.7.0-2
 libxkbcommon-x11 1.7.0-2
 libxkbfile 1.1.3-1
-libxml2 2.13.1-1
+libxml2 2.13.2-1
 libxmu 1.2.1-1
 libxpresent 1.0.1-2
 libxrandr 1.5.4-1
 libxrender 0.9.11-2
 libxshmfence 1.3.2-2
-libxslt 1.1.41-1
+libxslt 1.1.42-1
 libxss 1.2.4-2
 libxt 1.3.0-2
 libxtst 1.2.4-2
@@ -372,7 +372,7 @@ linux-api-headers 6.8-1
 linux-firmware 20240610.9c10a208-1
 linux-firmware-whence 20240610.9c10a208-1
 linux-lts 6.6.37-1
-linux-zen 6.9.7.zen1-1
+linux-zen 6.9.8.zen1-1
 llvm-libs 18.1.8-3
 lm_sensors 1:3.6.0.r41.g31d1f125-2
 lua 5.4.7-1
@@ -421,7 +421,7 @@ openssh 9.8p1-1
 openssl 3.3.1-1
 opus 1.5.2-1
 orc 0.4.38-1
-p11-kit 0.25.3-1
+p11-kit 0.25.5-1
 pacman 6.1.0-3
 pacman-mirrorlist 20231001-1
 pam 1.6.1-2
@@ -516,7 +516,7 @@ systemd-libs 256.2-1
 systemd-sysvcompat 256.2-1
 tar 1.35-2
 tdb 1.4.10-3
-telegram-desktop 5.2.2-1
+telegram-desktop 5.2.3-1
 texinfo 7.1-2
 tmux 3.4-8
 tomlplusplus 3.4.0-1
@@ -596,7 +596,7 @@ yadm 3.2.2-1
 yay 12.3.5-1
 yay-debug 12.3.5-1
 yazi 0.2.5-2
-yt-dlp 2024.07.02-1
+yt-dlp 2024.07.07-1
 z 1.12-1
 zeromq 4.3.5-2
 zimg 3.0.5-1

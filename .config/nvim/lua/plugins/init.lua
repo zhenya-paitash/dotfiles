@@ -201,6 +201,11 @@ return {
   --   },
   -- },
 
+  -- { -- HTTP CLIENT
+  --   'mistweaverco/kulala.nvim',
+  --   config = require("plugins.setup.rest-kulala").config,
+  -- },
+
   { -- ZEN MODE
     "folke/zen-mode.nvim",
     cmd = { "ZenMode" },
