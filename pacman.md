@@ -94,7 +94,7 @@ fribidi 1.0.15-1
 fuse-common 3.16.2-1
 fuse2 2.9.9-5
 fuse3 3.16.2-1
-fzf 0.53.0-1
+fzf 0.54.0-1
 gawk 5.3.0-1
 gc 8.2.6-1
 gcc 14.1.1+r58+gfc9fb69ad62-1
