@@ -323,4 +323,13 @@ return {
   --   version = "*",
   --   config = require("plugins.setup.neorg").config,
   -- },
+
+  -- { -- TESTS
+  --   "nvim-neotest/neotest",
+  --   dependencies = {
+  --     "nvim-neotest/nvim-nio",
+  --     "nvim-lua/plenary.nvim",
+  --     -- "antoinemadec/FixCursorHold.nvim",  -- WARN:  This plugin is not needed after neovim/neovim#20198
+  --   },
+  -- },
 }
