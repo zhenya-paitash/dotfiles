@@ -312,8 +312,9 @@ map(MODE.normal, "<leader>gc", "<cmd> DiffviewClose <CR>", { desc = "git close (
 --   vim.cmd "MarkdownPreviewToggle"
 --   print " markdown preview current file enabled!"
 -- end, { desc = ".md preview (Markdown Preview)" })
-map(MODE.normal, "<leader>mpc", "<cmd> MarkdownPreview <CR>", { desc = "create (Markdown Preview)" })
-map(MODE.normal, "<leader>mpx", "<cmd> MarkdownPreviewStop <CR>", { desc = "close (Markdown Preview)" })
+-- map(MODE.normal, "<leader>mpc", "<cmd> MarkdownPreview <CR>", { desc = "create (Markdown Preview)" })
+-- map(MODE.normal, "<leader>mpx", "<cmd> MarkdownPreviewStop <CR>", { desc = "close (Markdown Preview)" })
+map(MODE.normal, "<leader>mp", "<cmd> Markview toggle <CR>", { desc = "md preview toggle (Markview)" })
 
 ---------------------------------------
 -- JSON

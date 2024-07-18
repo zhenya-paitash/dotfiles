@@ -117,12 +117,18 @@ return {
     config = require("plugins.setup.grug-far").config,
   },
 
-  { -- PREVIEW .md
-    "iamcco/markdown-preview.nvim",
-    cmd = { "MarkdownPreview", "MarkdownPreviewStop", "MarkdownPreviewToggle" },
-    ft = { "markdown" },
-    build = require("plugins.setup.markdown-preview").build,
-    init = require("plugins.setup.markdown-preview").init,
+  -- { -- MARKDOWN PREVIEW
+  --   "iamcco/markdown-preview.nvim",
+  --   cmd = { "MarkdownPreview", "MarkdownPreviewStop", "MarkdownPreviewToggle" },
+  --   ft = { "markdown" },
+  --   build = require("plugins.setup.markdown-preview").build,
+  --   init = require("plugins.setup.markdown-preview").init,
+  -- },
+
+  { -- MARKDOWN PREVIEW in neovim
+    "OXY2DEV/markview.nvim",
+    ft = "markdown",
+    -- setup = require("plugins.setup.markview").config,
   },
 
   { -- PRO REDEFINITION

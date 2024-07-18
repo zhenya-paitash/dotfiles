@@ -49,7 +49,7 @@ cairomm-1.16 1.18.0-1
 cantarell-fonts 1:0.303.1-2
 check 0.15.2-2
 cliphist 1:0.5.0-1
-containerd 1.7.19-1
+containerd 1.7.20-1
 coreutils 9.5-1
 cryptsetup 2.7.3-1
 curl 8.8.0-1
@@ -65,7 +65,7 @@ desktop-file-utils 0.27-1
 device-mapper 2.03.25-2
 diffutils 3.10-1
 docker 1:27.0.3-1
-docker-compose 2.28.1-1
+docker-compose 2.29.0-1
 double-conversion 3.3.0-2
 duktape 2.7.0-7
 e2fsprogs 1.47.1-4
@@ -74,7 +74,7 @@ efivar 39-1
 electron28 28.3.3-2
 electron30 30.2.0-1
 expat 2.6.2-1
-eza 0.18.21-1
+eza 0.18.22-1
 fakeroot 1.35-1
 fd 10.1.0-1
 ffmpeg 2:7.0.1-2
@@ -162,7 +162,7 @@ iana-etc 20240612-1
 icu 75.1-1
 imagemagick 7.1.1.35-1
 imath 3.1.11-2
-iproute2 6.9.0-2
+iproute2 6.10.0-1
 iptables 1:1.8.10-2
 iputils 20240117-1
 iso-codes 4.16.0-1
@@ -263,7 +263,7 @@ libndp 1.9-1
 libnetfilter_conntrack 1.0.9-2
 libnewt 0.52.24-2
 libnfnetlink 1.0.2-2
-libnftnl 1.2.6-1
+libnftnl 1.2.7-1
 libnghttp2 1.62.1-1
 libnghttp3 1.4.0-1
 libnice 0.1.22-1
@@ -373,7 +373,7 @@ linux-firmware 20240703.e94a2a3b-1
 linux-firmware-whence 20240703.e94a2a3b-1
 linux-lts 6.6.40-1
 linux-zen 6.9.9.zen1-1
-llvm-libs 18.1.8-3
+llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.32-1
 lua 5.4.7-1
@@ -424,7 +424,7 @@ opus 1.5.2-1
 orc 0.4.38-1
 p11-kit 0.25.5-1
 pacman 6.1.0-3
-pacman-mirrorlist 20231001-1
+pacman-mirrorlist 20240717-1
 pam 1.6.1-2
 pambase 20230918-1
 pango 1:1.54.0-1
@@ -436,7 +436,7 @@ pciutils 3.13.0-1
 pcre 8.45-4
 pcre2 10.44-1
 pcsclite 2.2.3-1
-perl 5.38.2-1
+perl 5.38.2-2
 perl-error 0.17029-6
 perl-mailtools 2.21-8
 perl-timedate 2.33-6
@@ -598,7 +598,7 @@ yadm 3.2.2-2
 yay 12.3.5-1
 yay-debug 12.3.5-1
 yazi 0.2.5-2
-yt-dlp 2024.07.09-1
+yt-dlp 2024.07.16-1
 z 1.12-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
