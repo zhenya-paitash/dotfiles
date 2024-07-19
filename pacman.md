@@ -82,7 +82,7 @@ fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
 findutils 4.10.0-1
-firefox 128.0-1
+firefox 128.0-2
 fish 3.7.1-2
 fisher 4.4.4-2
 flac 1.4.3-2
@@ -182,7 +182,7 @@ kitty 0.35.2-1
 kitty-shell-integration 0.35.2-1
 kitty-terminfo 0.35.2-1
 kmod 32-1
-kpipewire 6.1.2-2
+kpipewire 6.1.3-1
 krb5 1.21.3-1
 kstatusnotifieritem 6.4.0-1
 kwindowsystem 6.4.0-1
@@ -372,7 +372,7 @@ linux-api-headers 6.8-1
 linux-firmware 20240703.e94a2a3b-1
 linux-firmware-whence 20240703.e94a2a3b-1
 linux-lts 6.6.40-1
-linux-zen 6.9.9.zen1-1
+linux-zen 6.9.10.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.32-1
@@ -411,7 +411,7 @@ npth 1.7-1
 nspr 4.35-3
 nss 3.102-1
 nwg-look 0.2.7-1
-obsidian 1.6.5-1
+obsidian 1.6.7-1
 ocl-icd 2.3.2-2
 oniguruma 6.9.9-1
 openal 1.23.1-2
@@ -497,7 +497,7 @@ simple-mtpfs 0.4.0-1
 simple-mtpfs-debug 0.4.0-1
 slang 2.3.3-3
 snappy 1.1.10-1
-sof-firmware 2024.03-1
+sof-firmware 2024.06-1
 sord 0.16.16-1
 sound-theme-freedesktop 0.8-6
 speex 1.2.1-2
