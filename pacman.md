@@ -72,7 +72,7 @@ e2fsprogs 1.47.1-4
 efibootmgr 18-3
 efivar 39-1
 electron28 28.3.3-2
-electron30 30.2.0-1
+electron30 30.3.0-1
 expat 2.6.2-1
 eza 0.18.22-1
 fakeroot 1.35-1
@@ -283,7 +283,7 @@ libpipewire 1:1.2.1-1
 libplacebo 7.349.0-1
 libplist 2.6.0-1
 libpng 1.6.43-1
-libproxy 0.5.7-1
+libproxy 0.5.8-1
 libpsl 0.21.5-2
 libpulse 17.0-3
 libraqm 0.10.1-2
@@ -352,7 +352,7 @@ libxinerama 1.1.5-2
 libxkbcommon 1.7.0-2
 libxkbcommon-x11 1.7.0-2
 libxkbfile 1.1.3-1
-libxml2 2.13.2-1
+libxml2 2.13.2-2
 libxmu 1.2.1-1
 libxpresent 1.0.1-2
 libxrandr 1.5.4-1
@@ -389,7 +389,7 @@ make 4.4.1-2
 man-db 2.12.1-1
 mbedtls2 2.28.8-3
 md4c 0.5.2-1
-mesa 1:24.1.3-1
+mesa 1:24.1.4-2
 minizip 1:1.3.1-2
 mkinitcpio 39.2-2
 mkinitcpio-busybox 1.36.1-1
