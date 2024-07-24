@@ -13,7 +13,7 @@ alsa-utils 1.2.12-1
 amd-ucode 20240703.e94a2a3b-1
 aom 3.9.1-1
 archlinux-keyring 20240709-1
-argon2 20190702-5
+argon2 20190702-6
 at-spi2-core 2.52.0-1
 atkmm 2.28.4-1
 attr 2.5.2-1
@@ -27,7 +27,7 @@ base 3-2
 base-devel 1-1
 bash 5.2.026-5
 bat 0.24.0-2
-binutils 2.42+r91+g6224493e457-1
+binutils 2.42+r195+g29ae8b8ea71-1
 bison 3.8.2-6
 bluez 5.77-1
 bluez-libs 5.77-1
@@ -56,8 +56,8 @@ curl 8.8.0-1
 dav1d 1.4.3-1
 db5.3 5.3.28-5
 dbus 1.14.10-2
-dbus-broker 36-2
-dbus-broker-units 36-2
+dbus-broker 36-4
+dbus-broker-units 36-4
 dconf 0.40.0-3
 debugedit 5.0-6
 default-cursors 2-2
@@ -65,7 +65,7 @@ desktop-file-utils 0.27-1
 device-mapper 2.03.25-2
 diffutils 3.10-1
 docker 1:27.0.3-1
-docker-compose 2.29.0-1
+docker-compose 2.29.1-1
 double-conversion 3.3.0-2
 duktape 2.7.0-7
 e2fsprogs 1.47.1-4
@@ -82,7 +82,7 @@ fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
 findutils 4.10.0-1
-firefox 128.0-2
+firefox 128.0.2-1
 fish 3.7.1-2
 fisher 4.4.4-2
 flac 1.4.3-2
@@ -97,8 +97,8 @@ fuse3 3.16.2-1
 fzf 0.54.0-1
 gawk 5.3.0-1
 gc 8.2.6-1
-gcc 14.1.1+r58+gfc9fb69ad62-1
-gcc-libs 14.1.1+r58+gfc9fb69ad62-1
+gcc 14.1.1+r309+gbb34b7eda1f-1
+gcc-libs 14.1.1+r309+gbb34b7eda1f-1
 gdbm 1.24-1
 gdk-pixbuf2 2.42.12-1
 geoclue 2.7.1-3
@@ -109,7 +109,7 @@ gjs 2:1.80.2-2
 glib-networking 1:2.80.0-2
 glib2 2.80.4-1
 glib2-devel 2.80.4-1
-glibc 2.39+r52+gf8e4623421-1
+glibc 2.40-1
 glibmm 2.66.7-1
 glibmm-2.68 2.80.0-1
 glslang 14.2.0-1
@@ -121,7 +121,7 @@ go 2:1.22.5-1
 gobject-introspection-runtime 1.80.1-3
 gperftools 2.15-1
 gpgme 1.23.2-6
-gpm 1.20.7.r38.ge82d1a6-5
+gpm 1.20.7.r38.ge82d1a6-6
 graphene 1.10.8-1
 graphite 1:1.3.14-4
 grep 3.11-1
@@ -144,10 +144,10 @@ gtkmm3 3.24.9-1
 guile 3.0.10-1
 gupnp 1:1.6.6-1
 gupnp-igd 1.6.0-1
-gzip 1.13-2
+gzip 1.13-4
 harfbuzz 9.0.0-1
 hicolor-icon-theme 0.18-1
-hidapi 0.14.0-2
+hidapi 0.14.0-3
 highway 1.2.0-1
 http-parser 2.9.4-2
 hunspell 1.7.2-2
@@ -162,7 +162,7 @@ iana-etc 20240612-1
 icu 75.1-1
 imagemagick 7.1.1.35-1
 imath 3.1.11-2
-iproute2 6.10.0-1
+iproute2 6.10.0-2
 iptables 1:1.8.10-2
 iputils 20240117-1
 iso-codes 4.16.0-1
@@ -176,7 +176,7 @@ json-c 0.17-2
 json-glib 1.8.0-2
 kbd 2.6.4-1
 kcoreaddons 6.4.0-1
-keyutils 1.6.3-2
+keyutils 1.6.3-3
 ki18n 6.4.0-1
 kitty 0.35.2-1
 kitty-shell-integration 0.35.2-1
@@ -221,7 +221,7 @@ libdvdnav 6.1.1-2
 libdvdread 6.1.3-2
 libedit 20240517_3.1-1
 libei 1.2.1-1
-libelf 0.191-3
+libelf 0.191-4
 libepoxy 1.5.10-3
 libevdev 1.13.2-1
 libevent 2.1.12-4
@@ -273,7 +273,7 @@ libnotify 0.8.3-1
 libnsl 2.0.1-1
 libogg 1.3.5-2
 libomxil-bellagio 0.9.3-5
-libopenmpt 0.7.8-1
+libopenmpt 0.7.9-1
 libp11-kit 0.25.5-1
 libpcap 1.10.4-1
 libpciaccess 0.18.1-2
@@ -306,7 +306,7 @@ libsoxr 0.1.3-4
 libssh 0.10.6-2
 libssh2 1.11.0-1
 libstemmer 2.2.0-2
-libsysprof-capture 46.0-3
+libsysprof-capture 46.0-4
 libtasn1 4.19.0-2
 libteam 1.32-2
 libtermkey 0.22-3
@@ -314,7 +314,7 @@ libthai 0.1.29-3
 libtheora 1.1.1-6
 libtiff 4.6.0-5
 libtirpc 1.3.4-1
-libtool 2.5.0+14+g9a4a0261-1
+libtool 2.5.0+14+g9a4a0261-2
 libtorrent-rasterbar 1:2.0.10-2
 libunibreak 6.1-1
 libunistring 1.2-1
@@ -322,6 +322,7 @@ libunwind 1.8.1-3
 libusb 1.0.27-1
 libusbmuxd 2.1.0-1
 libutempter 1.2.1-4
+libutf8proc 2.9.0-1
 libuv 1.48.0-2
 libva 2.21.0-1
 libvdpau 1.5-3
@@ -337,7 +338,7 @@ libx11 1.8.9-1
 libxau 1.0.11-3
 libxcb 1.17.0-1
 libxcomposite 0.4.6-2
-libxcrypt 4.4.36-1
+libxcrypt 4.4.36-2
 libxcursor 1.2.2-1
 libxcvt 0.1.2-2
 libxdamage 1.1.6-2
@@ -371,8 +372,8 @@ lilv 0.24.24-2
 linux-api-headers 6.10-1
 linux-firmware 20240703.e94a2a3b-1
 linux-firmware-whence 20240703.e94a2a3b-1
-linux-lts 6.6.40-1
-linux-zen 6.9.10.zen1-1
+linux-lts 6.6.40-2
+linux-zen 6.10.zen1-2
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.32-1
@@ -395,14 +396,14 @@ mkinitcpio 39.2-2
 mkinitcpio-busybox 1.36.1-1
 mobile-broadband-provider-info 20240407-1
 mpdecimal 4.0.0-2
-mpfr 4.2.1-3
+mpfr 4.2.1-4
 mpg123 1.32.6-1
 mpv 1:0.38.0-6
 msgpack-c 5.0.0-2
 mtdev 1.1.7-1
 mujs 1.3.5-1
 ncurses 6.5-3
-neovim 0.10.0-5
+neovim 0.10.1-2
 nettle 3.10-1
 networkmanager 1.48.4-1
 noto-fonts 1:24.7.1-1
@@ -451,8 +452,8 @@ pkgconf 2.1.1-1
 polkit 124-2
 popt 1.19-1
 portaudio 1:19.7.0-3
-postgresql 16.3-2
-postgresql-libs 16.3-2
+postgresql 16.3-3
+postgresql-libs 16.3-3
 power-profiles-daemon 0.21-1
 powertop 2.15-2
 procps-ng 4.0.4-3
@@ -512,9 +513,9 @@ sudo 1.9.15.p5-2
 svt-av1 2.1.0-1
 swww 0.9.5-2
 swww-debug 0.9.5-1
-systemd 256.2-1
-systemd-libs 256.2-1
-systemd-sysvcompat 256.2-1
+systemd 256.3-1
+systemd-libs 256.3-1
+systemd-sysvcompat 256.3-1
 tar 1.35-2
 tdb 1.4.10-3
 telegram-desktop 5.2.3-1
@@ -561,7 +562,7 @@ wireplumber 0.5.5-1
 wl-clipboard 1:2.2.1-2
 wlroots 0.18.0-1
 wlroots0.17 0.17.4-1
-wpa_supplicant 2:2.10-8
+wpa_supplicant 2:2.11-1
 x264 3:0.164.r3108.31e19f9-2
 x265 3.6-1
 xcb-proto 1.17.0-2
@@ -575,7 +576,7 @@ xcb-util-wm 0.4.2-2
 xcb-util-xrm 1.3-3
 xcur2png 0.7.1-8
 xdg-desktop-portal 1.18.4-1
-xdg-desktop-portal-hyprland 1.3.2-2
+xdg-desktop-portal-hyprland 1.3.3-1
 xdg-utils 1.2.1-1
 xf86-video-amdgpu 23.0.0-2
 xh 0.22.2-1
