@@ -41,7 +41,7 @@ btrfs-progs 6.9.2-1
 bzip2 1.0.8-6
 c-ares 1.29.0-1
 ca-certificates 20240618-1
-ca-certificates-mozilla 3.102-1
+ca-certificates-mozilla 3.102.1-1
 ca-certificates-utils 20240618-1
 cairo 1.18.0-2
 cairomm 1.14.5-1
@@ -52,7 +52,7 @@ cliphist 1:0.5.0-1
 containerd 1.7.20-1
 coreutils 9.5-1
 cryptsetup 2.7.3-1
-curl 8.8.0-1
+curl 8.9.0-1
 dav1d 1.4.3-1
 db5.3 5.3.28-5
 dbus 1.14.10-2
@@ -64,7 +64,7 @@ default-cursors 2-2
 desktop-file-utils 0.27-1
 device-mapper 2.03.25-2
 diffutils 3.10-1
-docker 1:27.0.3-1
+docker 1:27.1.1-1
 docker-compose 2.29.1-1
 double-conversion 3.3.0-2
 duktape 2.7.0-7
@@ -72,9 +72,9 @@ e2fsprogs 1.47.1-4
 efibootmgr 18-3
 efivar 39-1
 electron28 28.3.3-2
-electron30 30.3.0-1
+electron30 30.3.1-1
 expat 2.6.2-1
-eza 0.18.22-1
+eza 0.18.23-1
 fakeroot 1.35-1
 fd 10.1.0-1
 ffmpeg 2:7.0.1-2
@@ -82,7 +82,7 @@ fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
 findutils 4.10.0-1
-firefox 128.0.2-1
+firefox 128.0.3-1
 fish 3.7.1-2
 fisher 4.4.4-2
 flac 1.4.3-2
@@ -268,7 +268,7 @@ libnghttp2 1.62.1-1
 libnghttp3 1.4.0-1
 libnice 0.1.22-1
 libnl 3.10.0-1
-libnm 1.48.4-1
+libnm 1.48.6-1
 libnotify 0.8.3-1
 libnsl 2.0.1-1
 libogg 1.3.5-2
@@ -353,7 +353,7 @@ libxinerama 1.1.5-2
 libxkbcommon 1.7.0-2
 libxkbcommon-x11 1.7.0-2
 libxkbfile 1.1.3-1
-libxml2 2.13.2-2
+libxml2 2.13.3-1
 libxmu 1.2.1-1
 libxpresent 1.0.1-2
 libxrandr 1.5.4-1
@@ -372,8 +372,8 @@ lilv 0.24.24-2
 linux-api-headers 6.10-1
 linux-firmware 20240703.e94a2a3b-1
 linux-firmware-whence 20240703.e94a2a3b-1
-linux-lts 6.6.40-2
-linux-zen 6.10.zen1-2
+linux-lts 6.6.41-1
+linux-zen 6.10.1.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.32-1
@@ -405,12 +405,12 @@ mujs 1.3.5-1
 ncurses 6.5-3
 neovim 0.10.1-2
 nettle 3.10-1
-networkmanager 1.48.4-1
+networkmanager 1.48.6-1
 noto-fonts 1:24.7.1-1
 noto-fonts-emoji 1:2.042-1
 npth 1.7-1
 nspr 4.35-3
-nss 3.102-1
+nss 3.102.1-1
 nwg-look 0.2.7-1
 obsidian 1.6.7-1
 ocl-icd 2.3.2-2
@@ -430,7 +430,7 @@ pam 1.6.1-2
 pambase 20230918-1
 pango 1:1.54.0-1
 pangomm 2.46.4-1
-pangomm-2.48 2.52.0-1
+pangomm-2.48 2.54.0-1
 patch 2.7.6-10
 pavucontrol 1:6.0-1
 pciutils 3.13.0-1
@@ -513,12 +513,12 @@ sudo 1.9.15.p5-2
 svt-av1 2.1.0-1
 swww 0.9.5-2
 swww-debug 0.9.5-1
-systemd 256.3-1
-systemd-libs 256.3-1
-systemd-sysvcompat 256.3-1
+systemd 256.4-1
+systemd-libs 256.4-1
+systemd-sysvcompat 256.4-1
 tar 1.35-2
 tdb 1.4.10-3
-telegram-desktop 5.2.3-1
+telegram-desktop 5.2.3-2
 texinfo 7.1-2
 tmux 3.4-9
 tomlplusplus 3.4.0-1
@@ -561,8 +561,8 @@ which 2.21-6
 wireplumber 0.5.5-1
 wl-clipboard 1:2.2.1-2
 wlroots 0.18.0-1
-wlroots0.17 0.17.4-1
-wpa_supplicant 2:2.11-1
+wlroots0.17 0.17.4-3
+wpa_supplicant 2:2.11-2
 x264 3:0.164.r3108.31e19f9-2
 x265 3.6-1
 xcb-proto 1.17.0-2
@@ -576,7 +576,7 @@ xcb-util-wm 0.4.2-2
 xcb-util-xrm 1.3-3
 xcur2png 0.7.1-8
 xdg-desktop-portal 1.18.4-1
-xdg-desktop-portal-hyprland 1.3.3-1
+xdg-desktop-portal-hyprland 1.3.3-2
 xdg-utils 1.2.1-1
 xf86-video-amdgpu 23.0.0-2
 xh 0.22.2-1
@@ -599,7 +599,7 @@ yadm 3.2.2-2
 yay 12.3.5-1
 yay-debug 12.3.5-1
 yazi 0.2.5-2
-yt-dlp 2024.07.16-1
+yt-dlp 2024.07.25-1
 z 1.12-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
