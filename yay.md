@@ -1,5 +1,5 @@
-aylurs-gtk-shell 1.8.2-2
-aylurs-gtk-shell-debug 1.8.2-2
+aylurs-gtk-shell 1.8.2-3
+aylurs-gtk-shell-debug 1.8.2-3
 hyprpicker 0.3.0-1
 hyprpicker-debug 0.3.0-1
 rofi-lbonn-wayland-git 1.7.5.wayland3.r3.g47ae31eb-1

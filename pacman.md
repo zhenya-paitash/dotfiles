@@ -1,12 +1,13 @@
 abseil-cpp 20240116.2-2
 acl 2.3.2-1
+ada 2.9.0-2
 adobe-source-code-pro-fonts 2.042u+1.062i+1.026vf-2
 adwaita-cursors 46.2-1
 adwaita-icon-theme 46.2-1
 adwaita-icon-theme-legacy 46.2-1
-alsa-card-profiles 1:1.2.1-1
+alsa-card-profiles 1:1.2.2-1
 alsa-lib 1.2.12-1
-alsa-plugins 1:1.2.12-2
+alsa-plugins 1:1.2.12-3
 alsa-topology-conf 1.2.5.1-4
 alsa-ucm-conf 1.2.12-1
 alsa-utils 1.2.12-1
@@ -21,8 +22,8 @@ audit 4.0.1-3
 autoconf 2.72-1
 automake 1.17-1
 avahi 1:0.8+r194+g3f79789-2
-aylurs-gtk-shell 1.8.2-2
-aylurs-gtk-shell-debug 1.8.2-2
+aylurs-gtk-shell 1.8.2-3
+aylurs-gtk-shell-debug 1.8.2-3
 base 3-2
 base-devel 1-1
 bash 5.2.026-5
@@ -51,8 +52,8 @@ check 0.15.2-2
 cliphist 1:0.5.0-1
 containerd 1.7.20-1
 coreutils 9.5-1
-cryptsetup 2.7.3-1
-curl 8.9.0-1
+cryptsetup 2.7.4-1
+curl 8.9.1-1
 dav1d 1.4.3-1
 db5.3 5.3.28-5
 dbus 1.14.10-2
@@ -94,7 +95,7 @@ fribidi 1.0.15-1
 fuse-common 3.16.2-1
 fuse2 2.9.9-5
 fuse3 3.16.2-1
-fzf 0.54.0-1
+fzf 0.54.3-1
 gawk 5.3.0-1
 gc 8.2.6-1
 gcc 14.1.1+r309+gbb34b7eda1f-1
@@ -104,7 +105,7 @@ gdk-pixbuf2 2.42.12-1
 geoclue 2.7.1-3
 gettext 0.22.5-1
 giflib 5.2.2-1
-git 2.45.2-1
+git 2.46.0-1
 gjs 2:1.80.2-2
 glib-networking 1:2.80.0-3
 glib2 2.80.4-1
@@ -131,7 +132,7 @@ gsettings-desktop-schemas 46.1-2
 gsettings-system-schemas 46.1-2
 gsm 1.0.22-2
 gssdp 1.6.3-1
-gst-plugin-pipewire 1:1.2.1-1
+gst-plugin-pipewire 1:1.2.2-1
 gst-plugins-bad-libs 1.24.6-1
 gst-plugins-base-libs 1.24.6-1
 gstreamer 1.24.6-1
@@ -280,7 +281,7 @@ libpcap 1.10.4-1
 libpciaccess 0.18.1-2
 libpgm 5.3.128-3
 libpipeline 1.5.7-2
-libpipewire 1:1.2.1-1
+libpipewire 1:1.2.2-1
 libplacebo 7.349.0-1
 libplist 2.6.0-1
 libpng 1.6.43-1
@@ -383,7 +384,7 @@ lua51 5.1.5-12
 lua51-lpeg 1.1.0-2
 luajit 2.1.1720049189-1
 lv2 1.18.10-1
-lz4 1:1.9.4-3
+lz4 1:1.10.0-2
 lzo 2.10-5
 m4 1.4.19-3
 mailcap 2.1.54-2
@@ -391,7 +392,7 @@ make 4.4.1-2
 man-db 2.12.1-1
 mbedtls2 2.28.8-3
 md4c 0.5.2-1
-mesa 1:24.1.4-2
+mesa 1:24.1.5-1
 minizip 1:1.3.1-2
 mkinitcpio 39.2-2
 mkinitcpio-busybox 1.36.1-1
@@ -407,7 +408,7 @@ ncurses 6.5-3
 neovim 0.10.1-2
 nettle 3.10-1
 networkmanager 1.48.6-1
-noto-fonts 1:24.7.1-1
+noto-fonts 1:24.8.1-1
 noto-fonts-emoji 1:2.042-1
 npth 1.7-1
 nspr 4.35-3
@@ -419,6 +420,7 @@ oniguruma 6.9.9-1
 openal 1.23.1-2
 opencore-amr 0.1.6-2
 openexr 3.2.4-1
+openh264 2.4.1-1
 openjpeg2 2.5.2-1
 openssh 9.8p1-1
 openssl 3.3.1-1
@@ -443,11 +445,11 @@ perl-error 0.17029-6
 perl-mailtools 2.21-8
 perl-timedate 2.33-6
 pinentry 1.3.1-5
-pipewire 1:1.2.1-1
-pipewire-alsa 1:1.2.1-1
-pipewire-audio 1:1.2.1-1
-pipewire-jack 1:1.2.1-1
-pipewire-pulse 1:1.2.1-1
+pipewire 1:1.2.2-1
+pipewire-alsa 1:1.2.2-1
+pipewire-audio 1:1.2.2-1
+pipewire-jack 1:1.2.2-1
+pipewire-pulse 1:1.2.2-1
 pixman 0.43.4-1
 pkgconf 2.1.1-1
 polkit 124-2
@@ -488,7 +490,7 @@ rustup 1.27.1-1
 sassc 3.6.2-5
 sbc 2.0-2
 sdbus-cpp 1.5.0-3
-sdl2 2.30.5-2
+sdl2 2.30.6-1
 seatd 0.8.0-2
 sed 4.9-3
 serd 0.32.2-1
@@ -518,8 +520,8 @@ systemd 256.4-1
 systemd-libs 256.4-1
 systemd-sysvcompat 256.4-1
 tar 1.35-2
-tdb 1.4.10-3
-telegram-desktop 5.2.3-2
+tdb 1.4.11-1
+telegram-desktop 5.3.2-1
 texinfo 7.1-2
 tmux 3.4-10
 tomlplusplus 3.4.0-1
@@ -600,7 +602,7 @@ yadm 3.2.2-2
 yay 12.3.5-1
 yay-debug 12.3.5-1
 yazi 0.2.5-2
-yt-dlp 2024.07.25-1
+yt-dlp 2024.08.01-1
 z 1.12-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
