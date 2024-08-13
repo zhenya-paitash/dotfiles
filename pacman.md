@@ -214,15 +214,15 @@ libcolord 1.4.7-2
 libcups 2:2.4.10-1
 libdaemon 0.14-6
 libdatrie 0.2.13-4
-libdeflate 1.20-2
+libdeflate 1.21-1
 libdispatch 5.10-1
 libdisplay-info 0.2.0-1
-libdovi 3.3.0-2
+libdovi 3.3.1-1
 libdrm 2.4.122-1
 libdvdnav 6.1.1-2
 libdvdread 6.1.3-2
 libedit 20240517_3.1-1
-libei 1.2.1-1
+libei 1.3.0-1
 libelf 0.191-4
 libepoxy 1.5.10-3
 libevdev 1.13.2-1
@@ -270,7 +270,7 @@ libnghttp2 1.62.1-1
 libnghttp3 1.4.0-1
 libnice 0.1.22-1
 libnl 3.10.0-1
-libnm 1.48.6-1
+libnm 1.48.8-1
 libnotify 0.8.3-1
 libnsl 2.0.1-1
 libogg 1.3.5-2
@@ -305,7 +305,7 @@ libsndfile 1.2.2-2
 libsodium 1.0.20-1
 libsoup3 3.4.4-1
 libsoxr 0.1.3-4
-libssh 0.10.6-2
+libssh 0.11.0-1
 libssh2 1.11.0-1
 libstemmer 2.2.0-2
 libsysprof-capture 46.0-4
@@ -374,8 +374,8 @@ lilv 0.24.24-2
 linux-api-headers 6.10-1
 linux-firmware 20240703.e94a2a3b-1
 linux-firmware-whence 20240703.e94a2a3b-1
-linux-lts 6.6.44-3
-linux-zen 6.10.3.zen1-2
+linux-lts 6.6.45-1
+linux-zen 6.10.4.zen2-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.32-1
@@ -392,7 +392,7 @@ make 4.4.1-2
 man-db 2.12.1-1
 mbedtls2 2.28.8-3
 md4c 0.5.2-1
-mesa 1:24.1.5-1
+mesa 1:24.1.5-2
 minizip 1:1.3.1-2
 mkinitcpio 39.2-2
 mkinitcpio-busybox 1.36.1-1
@@ -407,7 +407,7 @@ mujs 1.3.5-1
 ncurses 6.5-3
 neovim 0.10.1-3
 nettle 3.10-1
-networkmanager 1.48.6-1
+networkmanager 1.48.8-1
 noto-fonts 1:24.8.1-1
 noto-fonts-emoji 1:2.042-1
 npth 1.7-1
@@ -452,7 +452,7 @@ pipewire-jack 1:1.2.2-1
 pipewire-pulse 1:1.2.2-1
 pixman 0.43.4-1
 pkgconf 2.1.1-1
-polkit 124-2
+polkit 125-1
 popt 1.19-1
 portaudio 1:19.7.0-3
 postgresql 16.3-3
