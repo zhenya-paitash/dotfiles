@@ -23,7 +23,7 @@ export function SectionCenter() {
     hpack: 'center',
     children: [
       WorkspaceWidget(),
-      // ClockWidget(),
+      ClockWidget(),
     ],
   });
 }
@@ -40,7 +40,7 @@ export function SectionRight() {
       BatteryWidget(),
       PowerWidget(),
 
-      ClockWidget(),
+      // ClockWidget(),
     ],
   });
 }
