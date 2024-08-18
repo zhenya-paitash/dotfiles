@@ -39,7 +39,7 @@ bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
 brotli 1.1.0-2
 btop 1.3.2-1
-btrfs-progs 6.10-1
+btrfs-progs 6.10.1-1
 bzip2 1.0.8-6
 c-ares 1.33.0-1
 ca-certificates 20240618-1
@@ -66,8 +66,8 @@ default-cursors 2-2
 desktop-file-utils 0.27-1
 device-mapper 2.03.25-2
 diffutils 3.10-1
-docker 1:27.1.1-1
-docker-compose 2.29.1-1
+docker 1:27.1.2-1
+docker-compose 2.29.2-1
 double-conversion 3.3.0-2
 duktape 2.7.0-7
 e2fsprogs 1.47.1-4
@@ -118,7 +118,7 @@ glslang 14.2.0-1
 glu 9.0.3-2
 gmp 6.3.0-2
 gnupg 2.4.5-4
-gnutls 3.8.6-1
+gnutls 3.8.7-1
 go 2:1.23.0-1
 gobject-introspection-runtime 1.80.1-3
 gperftools 2.15-1
@@ -139,9 +139,9 @@ gst-plugins-base-libs 1.24.6-1
 gstreamer 1.24.6-1
 gtest 1.15.2-1
 gtk-layer-shell 0.8.2-1
-gtk-update-icon-cache 1:4.14.4-2
+gtk-update-icon-cache 1:4.14.5-1
 gtk3 1:3.24.43-1
-gtk4 1:4.14.4-2
+gtk4 1:4.14.5-1
 gtkmm-4.0 4.14.0-1
 gtkmm3 3.24.9-1
 guile 3.0.10-1
@@ -292,7 +292,7 @@ libpsl 0.21.5-2
 libpulse 17.0-3
 libraqm 0.10.1-2
 libraw1394 2.1.2-4
-librsvg 2:2.58.2-1
+librsvg 2:2.58.3-1
 librsync 1:2.3.4-2
 libsamplerate 0.2.2-3
 libsasl 2.1.28-4
@@ -307,7 +307,7 @@ libsndfile 1.2.2-2
 libsodium 1.0.20-1
 libsoup3 3.4.4-1
 libsoxr 0.1.3-4
-libssh 0.11.0-1
+libssh 0.11.0-2
 libssh2 1.11.0-1
 libstemmer 2.2.0-2
 libsysprof-capture 46.0-4
@@ -377,14 +377,14 @@ linux-api-headers 6.10-1
 linux-firmware 20240809.59460076-1
 linux-firmware-whence 20240809.59460076-1
 linux-lts 6.6.46-1
-linux-zen 6.10.4.zen2-1
+linux-zen 6.10.5.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.32-1
 lua 5.4.7-1
 lua51 5.1.5-12
 lua51-lpeg 1.1.0-2
-luajit 2.1.1720049189-1
+luajit 2.1.1723675123-1
 lv2 1.18.10-1
 lz4 1:1.10.0-2
 lzo 2.10-5
@@ -605,7 +605,7 @@ xz 5.6.2-1
 yadm 3.2.2-2
 yay 12.3.5-1
 yay-debug 12.3.5-1
-yazi 0.3.0-2
+yazi 0.3.1-1
 yt-dlp 2024.08.06-1
 z 1.12-1
 zeromq 4.3.5-2
