@@ -13,7 +13,7 @@ alsa-ucm-conf 1.2.12-1
 alsa-utils 1.2.12-1
 amd-ucode 20240809.59460076-1
 aom 3.9.1-1
-aquamarine 0.3.1-1
+aquamarine 0.3.3-1
 archlinux-keyring 20240709-1
 argon2 20190702-6
 at-spi2-core 2.52.0-1
@@ -74,12 +74,12 @@ e2fsprogs 1.47.1-4
 efibootmgr 18-3
 efivar 39-1
 electron28 28.3.3-2
-electron30 30.3.1-1
+electron30 30.4.0-1
 expat 2.6.2-1
 eza 0.19.0-1
-fakeroot 1.35.1-1
+fakeroot 1.36-1
 fd 10.1.0-1
-ffmpeg 2:7.0.1-2
+ffmpeg 2:7.0.2-1
 fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
@@ -201,7 +201,7 @@ libassuan 3.0.0-1
 libasyncns 1:0.8+r3+g68cd5af-3
 libavc1394 0.5.4-6
 libb2 0.98.1-3
-libbluray 1.3.4-1
+libbluray 1.3.4-2
 libbpf 1.4.3-1
 libbs2b 3.1.0-9
 libcamera 0.3.1-2
@@ -245,7 +245,7 @@ libiec61883 1.2.0-8
 libimobiledevice 1.3.0-13
 libimobiledevice-glue 1.3.0-1
 libinih 58-1
-libinput 1.26.1-1
+libinput 1.26.2-1
 libisl 0.26-2
 libjpeg-turbo 3.0.3-1
 libjxl 0.10.3-1
@@ -279,7 +279,7 @@ libogg 1.3.5-2
 libomxil-bellagio 0.9.3-5
 libopenmpt 0.7.9-1
 libp11-kit 0.25.5-1
-libpcap 1.10.4-1
+libpcap 1.10.4-2
 libpciaccess 0.18.1-2
 libpgm 5.3.128-3
 libpipeline 1.5.7-2
@@ -376,7 +376,7 @@ lilv 0.24.24-2
 linux-api-headers 6.10-1
 linux-firmware 20240809.59460076-1
 linux-firmware-whence 20240809.59460076-1
-linux-lts 6.6.46-1
+linux-lts 6.6.47-1
 linux-zen 6.10.5.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
@@ -432,7 +432,7 @@ p11-kit 0.25.5-1
 pacman 6.1.0-3
 pacman-mirrorlist 20240717-1
 pam 1.6.1-2
-pambase 20230918-1
+pambase 20230918-2
 pango 1:1.54.0-1
 pangomm 2.46.4-1
 pangomm-2.48 2.54.0-1
@@ -519,9 +519,9 @@ sudo 1.9.15.p5-2
 svt-av1 2.1.2-1
 swww 0.9.5-2
 swww-debug 0.9.5-1
-systemd 256.4-1
-systemd-libs 256.4-1
-systemd-sysvcompat 256.4-1
+systemd 256.5-1
+systemd-libs 256.5-1
+systemd-sysvcompat 256.5-1
 tar 1.35-2
 tdb 1.4.12-1
 telegram-desktop 5.3.2-2
