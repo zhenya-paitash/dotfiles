@@ -84,7 +84,7 @@ fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
 findutils 4.10.0-1
-firefox 129.0.1-2
+firefox 129.0.2-1
 fish 3.7.1-2
 fisher 4.4.4-2
 flac 1.4.3-2
@@ -182,9 +182,9 @@ kbd 2.6.4-1
 kcoreaddons 6.5.0-1
 keyutils 1.6.3-3
 ki18n 6.5.0-1
-kitty 0.35.2-1
-kitty-shell-integration 0.35.2-1
-kitty-terminfo 0.35.2-1
+kitty 0.36.0-1
+kitty-shell-integration 0.36.0-1
+kitty-terminfo 0.36.0-1
 kmod 33-1
 kpipewire 6.1.4-1
 krb5 1.21.3-1
@@ -242,7 +242,7 @@ libgudev 238-1
 libice 1.1.1-3
 libidn2 2.3.7-1
 libiec61883 1.2.0-8
-libimobiledevice 1.3.0-13
+libimobiledevice 1.3.0-14
 libimobiledevice-glue 1.3.0-1
 libinih 58-1
 libinput 1.26.2-1
@@ -295,7 +295,7 @@ libraw1394 2.1.2-4
 librsvg 2:2.58.3-1
 librsync 1:2.3.4-2
 libsamplerate 0.2.2-3
-libsasl 2.1.28-4
+libsasl 2.1.28-5
 libsass 3.6.6-1
 libseccomp 2.5.5-3
 libsecret 0.21.4-1
@@ -377,7 +377,7 @@ linux-api-headers 6.10-1
 linux-firmware 20240809.59460076-1
 linux-firmware-whence 20240809.59460076-1
 linux-lts 6.6.47-1
-linux-zen 6.10.5.zen1-1
+linux-zen 6.10.6.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.32-1
@@ -462,7 +462,7 @@ postgresql-libs 16.3-3
 power-profiles-daemon 0.21-1
 powertop 2.15-2
 procps-ng 4.0.4-3
-protobuf 27.3-1
+protobuf 27.3-2
 psmisc 23.7-1
 pugixml 1.14-1
 python 3.12.4-1
@@ -524,7 +524,7 @@ systemd-libs 256.5-1
 systemd-sysvcompat 256.5-1
 tar 1.35-2
 tdb 1.4.12-1
-telegram-desktop 5.3.2-2
+telegram-desktop 5.4.1-1
 texinfo 7.1-2
 tmux 3.4-10
 tomlplusplus 3.4.0-1
