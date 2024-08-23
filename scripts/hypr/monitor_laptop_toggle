@@ -26,3 +26,4 @@ else
   notify-send -u normal -t 3000 "Laptop monitor" "enable"
 fi
 
+# $HOME/scripts/ags/ags_restart ;

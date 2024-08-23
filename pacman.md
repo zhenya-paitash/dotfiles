@@ -134,9 +134,9 @@ gsettings-system-schemas 46.1-2
 gsm 1.0.22-2
 gssdp 1.6.3-1
 gst-plugin-pipewire 1:1.2.2-2
-gst-plugins-bad-libs 1.24.6-1
-gst-plugins-base-libs 1.24.6-1
-gstreamer 1.24.6-1
+gst-plugins-bad-libs 1.24.7-1
+gst-plugins-base-libs 1.24.7-1
+gstreamer 1.24.7-1
 gtest 1.15.2-1
 gtk-layer-shell 0.8.2-1
 gtk-update-icon-cache 1:4.14.5-1
@@ -380,7 +380,7 @@ linux-lts 6.6.47-1
 linux-zen 6.10.6.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
-lmdb 0.9.32-1
+lmdb 0.9.33-1
 lua 5.4.7-1
 lua51 5.1.5-12
 lua51-lpeg 1.1.0-2
@@ -473,7 +473,7 @@ python-idna 3.7-1
 python-packaging 24.1-1
 python-requests 2.32.3-1
 python-urllib3 1.26.19-1
-qbittorrent 4.6.5-1
+qbittorrent 4.6.6-1
 qt6-base 6.7.2-1
 qt6-declarative 6.7.2-1
 qt6-imageformats 6.7.2-1
