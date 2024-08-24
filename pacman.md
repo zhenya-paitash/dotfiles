@@ -5,7 +5,7 @@ adobe-source-code-pro-fonts 2.042u+1.062i+1.026vf-2
 adwaita-cursors 46.2-1
 adwaita-icon-theme 46.2-1
 adwaita-icon-theme-legacy 46.2-1
-alsa-card-profiles 1:1.2.2-2
+alsa-card-profiles 1:1.2.3-1
 alsa-lib 1.2.12-1
 alsa-plugins 1:1.2.12-3
 alsa-topology-conf 1.2.5.1-4
@@ -133,7 +133,7 @@ gsettings-desktop-schemas 46.1-2
 gsettings-system-schemas 46.1-2
 gsm 1.0.22-2
 gssdp 1.6.3-1
-gst-plugin-pipewire 1:1.2.2-2
+gst-plugin-pipewire 1:1.2.3-1
 gst-plugins-bad-libs 1.24.7-1
 gst-plugins-base-libs 1.24.7-1
 gstreamer 1.24.7-1
@@ -182,9 +182,9 @@ kbd 2.6.4-1
 kcoreaddons 6.5.0-1
 keyutils 1.6.3-3
 ki18n 6.5.0-1
-kitty 0.36.0-1
-kitty-shell-integration 0.36.0-1
-kitty-terminfo 0.36.0-1
+kitty 0.36.1-1
+kitty-shell-integration 0.36.1-1
+kitty-terminfo 0.36.1-1
 kmod 33-1
 kpipewire 6.1.4-1
 krb5 1.21.3-1
@@ -283,7 +283,7 @@ libpcap 1.10.4-2
 libpciaccess 0.18.1-2
 libpgm 5.3.128-3
 libpipeline 1.5.7-2
-libpipewire 1:1.2.2-2
+libpipewire 1:1.2.3-1
 libplacebo 7.349.0-1
 libplist 2.6.0-1
 libpng 1.6.43-1
@@ -447,11 +447,11 @@ perl-error 0.17029-6
 perl-mailtools 2.21-8
 perl-timedate 2.33-6
 pinentry 1.3.1-5
-pipewire 1:1.2.2-2
-pipewire-alsa 1:1.2.2-2
-pipewire-audio 1:1.2.2-2
-pipewire-jack 1:1.2.2-2
-pipewire-pulse 1:1.2.2-2
+pipewire 1:1.2.3-1
+pipewire-alsa 1:1.2.3-1
+pipewire-audio 1:1.2.3-1
+pipewire-jack 1:1.2.3-1
+pipewire-pulse 1:1.2.3-1
 pixman 0.43.4-1
 pkgconf 2.1.1-1
 polkit 125-1
@@ -465,7 +465,7 @@ procps-ng 4.0.4-3
 protobuf 27.3-2
 psmisc 23.7-1
 pugixml 1.14-1
-python 3.12.4-1
+python 3.12.5-1
 python-certifi 2024.07.04-1
 python-charset-normalizer 3.3.2-2
 python-gobject 3.48.2-2
@@ -474,7 +474,7 @@ python-packaging 24.1-1
 python-requests 2.32.3-1
 python-urllib3 1.26.19-1
 qbittorrent 4.6.6-1
-qt6-base 6.7.2-1
+qt6-base 6.7.2-2
 qt6-declarative 6.7.2-1
 qt6-imageformats 6.7.2-1
 qt6-svg 6.7.2-1
@@ -553,7 +553,7 @@ unzip 6.0-21
 upower 1.90.4-1
 util-linux 2.40.2-1
 util-linux-libs 2.40.2-1
-v4l-utils 1.26.1-1
+v4l-utils 1.28.1-1
 vapoursynth R69-1
 vid.stab 1.1.1-2
 vmaf 3.0.0-1
