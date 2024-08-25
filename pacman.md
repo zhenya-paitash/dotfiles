@@ -78,7 +78,7 @@ electron30 30.4.0-1
 expat 2.6.2-1
 eza 0.19.0-1
 fakeroot 1.36-1
-fd 10.1.0-1
+fd 10.2.0-1
 ffmpeg 2:7.0.2-1
 fftw 3.3.10-7
 file 5.45-1
@@ -185,7 +185,7 @@ ki18n 6.5.0-1
 kitty 0.36.1-1
 kitty-shell-integration 0.36.1-1
 kitty-terminfo 0.36.1-1
-kmod 33-1
+kmod 33-2
 kpipewire 6.1.4-1
 krb5 1.21.3-1
 kstatusnotifieritem 6.5.0-1
