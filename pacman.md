@@ -41,7 +41,7 @@ brotli 1.1.0-2
 btop 1.3.2-1
 btrfs-progs 6.10.1-1
 bzip2 1.0.8-6
-c-ares 1.33.0-1
+c-ares 1.33.1-1
 ca-certificates 20240618-1
 ca-certificates-mozilla 3.103-1
 ca-certificates-utils 20240618-1
@@ -64,7 +64,7 @@ dconf 0.40.0-3
 debugedit 5.0-6
 default-cursors 2-2
 desktop-file-utils 0.27-1
-device-mapper 2.03.25-2
+device-mapper 2.03.26-1
 diffutils 3.10-1
 docker 1:27.1.2-1
 docker-compose 2.29.2-1
@@ -109,8 +109,8 @@ giflib 5.2.2-1
 git 2.46.0-1
 gjs 2:1.80.2-2
 glib-networking 1:2.80.0-3
-glib2 2.80.4-1
-glib2-devel 2.80.4-1
+glib2 2.80.5-1
+glib2-devel 2.80.5-1
 glibc 2.40+r16+gaa533d58ff-2
 glibmm 2.66.7-1
 glibmm-2.68 2.80.0-1
@@ -162,9 +162,9 @@ hyprpicker 0.3.0-1
 hyprpicker-debug 0.3.0-1
 hyprutils 0.2.1-1
 hyprwayland-scanner 0.4.0-1
-iana-etc 20240612-1
+iana-etc 20240814-1
 icu 75.1-1
-imagemagick 7.1.1.36-1
+imagemagick 7.1.1.37-1
 imath 3.1.11-2
 iproute2 6.10.0-2
 iptables 1:1.8.10-2
@@ -269,10 +269,10 @@ libnewt 0.52.24-2
 libnfnetlink 1.0.2-2
 libnftnl 1.2.7-1
 libnghttp2 1.62.1-1
-libnghttp3 1.4.0-1
+libnghttp3 1.5.0-1
 libnice 0.1.22-1
 libnl 3.10.0-1
-libnm 1.48.8-1
+libnm 1.48.10-1
 libnotify 0.8.3-1
 libnsl 2.0.1-1
 libogg 1.3.5-2
@@ -336,7 +336,7 @@ libvpl 2.12.0-1
 libvpx 1.14.1-1
 libvterm 0.3.3-2
 libwacom 2.12.2-1
-libwebp 1.4.0-1
+libwebp 1.4.0-2
 libwireplumber 0.5.5-1
 libx11 1.8.10-1
 libxau 1.0.11-3
@@ -409,7 +409,7 @@ mujs 1.3.5-1
 ncurses 6.5-3
 neovim 0.10.1-3
 nettle 3.10-1
-networkmanager 1.48.8-1
+networkmanager 1.48.10-1
 noto-fonts 1:24.8.1-1
 noto-fonts-emoji 1:2.042-1
 npth 1.7-1
@@ -530,12 +530,12 @@ tmux 3.4-10
 tomlplusplus 3.4.0-1
 tpm2-tss 4.0.1-1
 tracker3 3.7.3-2
-tree-sitter 0.22.6-1
+tree-sitter 0.23.0-1
 tree-sitter-bash 0.21.0-2
 tree-sitter-c 0.21.4-1
 tree-sitter-lua 0.1.0-2
 tree-sitter-markdown 0.2.3-2
-tree-sitter-python 0.21.0-2
+tree-sitter-python 0.23.0-1
 tree-sitter-query 0.4.0-1
 tree-sitter-vim 0.4.0-1
 tree-sitter-vimdoc 3.0.0-1
