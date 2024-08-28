@@ -51,7 +51,7 @@ cairomm-1.16 1.18.0-1
 cantarell-fonts 1:0.303.1-2
 check 0.15.2-2
 cliphist 1:0.5.0-1
-containerd 1.7.20-1
+containerd 1.7.21-1
 coreutils 9.5-1
 cryptsetup 2.7.4-1
 curl 8.9.1-2
@@ -113,7 +113,7 @@ glib2 2.80.5-1
 glib2-devel 2.80.5-1
 glibc 2.40+r16+gaa533d58ff-2
 glibmm 2.66.7-1
-glibmm-2.68 2.80.0-1
+glibmm-2.68 2.80.1-1
 glslang 14.2.0-1
 glu 9.0.3-2
 gmp 6.3.0-2
@@ -185,7 +185,7 @@ ki18n 6.5.0-1
 kitty 0.36.1-1
 kitty-shell-integration 0.36.1-1
 kitty-terminfo 0.36.1-1
-kmod 33-2
+kmod 33-3
 kpipewire 6.1.4-1
 krb5 1.21.3-1
 kstatusnotifieritem 6.5.0-1
