@@ -27,7 +27,7 @@ aylurs-gtk-shell 1.8.2-3
 aylurs-gtk-shell-debug 1.8.2-3
 base 3-2
 base-devel 1-1
-bash 5.2.032-1
+bash 5.2.032-2
 bat 0.24.0-2
 binutils 2.43+r4+g7999dae6961-1
 bison 3.8.2-6
@@ -39,7 +39,7 @@ bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
 brotli 1.1.0-2
 btop 1.3.2-1
-btrfs-progs 6.10.1-1
+btrfs-progs 6.10.1-2
 bzip2 1.0.8-6
 c-ares 1.33.1-1
 ca-certificates 20240618-1
@@ -60,6 +60,7 @@ db5.3 5.3.28-5
 dbus 1.14.10-2
 dbus-broker 36-4
 dbus-broker-units 36-4
+dbus-glib 0.112-4
 dconf 0.40.0-3
 debugedit 5.0-6
 default-cursors 2-2
@@ -76,14 +77,14 @@ efivar 39-1
 electron28 28.3.3-2
 electron30 30.4.0-1
 expat 2.6.2-1
-eza 0.19.0-1
+eza 0.19.1-1
 fakeroot 1.36-1
 fd 10.2.0-1
 ffmpeg 2:7.0.2-1
 fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
-findutils 4.10.0-1
+findutils 4.10.0-2
 firefox 129.0.2-1
 fish 3.7.1-2
 fisher 4.4.4-2
@@ -97,7 +98,7 @@ fuse-common 3.16.2-1
 fuse2 2.9.9-5
 fuse3 3.16.2-1
 fzf 0.54.3-1
-gawk 5.3.0-1
+gawk 5.3.0-2
 gc 8.2.6-1
 gcc 14.2.1+r32+geccf707e5ce-1
 gcc-libs 14.2.1+r32+geccf707e5ce-1
@@ -106,7 +107,7 @@ gdk-pixbuf2 2.42.12-1
 geoclue 2.7.1-3
 gettext 0.22.5-1
 giflib 5.2.2-1
-git 2.46.0-1
+git 2.46.0-2
 gjs 2:1.80.2-2
 glib-networking 1:2.80.0-3
 glib2 2.80.5-1
@@ -127,7 +128,7 @@ gpm 1.20.7.r38.ge82d1a6-6
 graphene 1.10.8-1
 graphite 1:1.3.14-4
 grep 3.11-1
-groff 1.23.0-6
+groff 1.23.0-7
 grub 2:2.12-2
 gsettings-desktop-schemas 46.1-2
 gsettings-system-schemas 46.1-2
@@ -178,7 +179,7 @@ jq 1.7.1-2
 js115 115.13.0-1
 json-c 0.17-2
 json-glib 1.8.0-2
-kbd 2.6.4-1
+kbd 2.6.4-2
 kcoreaddons 6.5.0-1
 keyutils 1.6.3-3
 ki18n 6.5.0-1
@@ -220,7 +221,7 @@ libdeflate 1.21-1
 libdispatch 5.10-1
 libdisplay-info 0.2.0-1
 libdovi 3.3.1-1
-libdrm 2.4.122-1
+libdrm 2.4.123-1
 libdvdnav 6.1.1-2
 libdvdread 6.1.3-2
 libedit 20240517_3.1-1
@@ -268,7 +269,7 @@ libnetfilter_conntrack 1.0.9-2
 libnewt 0.52.24-2
 libnfnetlink 1.0.2-2
 libnftnl 1.2.7-1
-libnghttp2 1.62.1-1
+libnghttp2 1.63.0-1
 libnghttp3 1.5.0-1
 libnice 0.1.22-1
 libnl 3.10.0-1
@@ -305,7 +306,7 @@ libsixel 1.10.3-6
 libsm 1.2.4-2
 libsndfile 1.2.2-2
 libsodium 1.0.20-1
-libsoup3 3.4.4-1
+libsoup3 3.6.0-1
 libsoxr 0.1.3-4
 libssh 0.11.0-2
 libssh2 1.11.0-1
@@ -394,7 +395,7 @@ make 4.4.1-2
 man-db 2.12.1-1
 mbedtls2 2.28.8-3
 md4c 0.5.2-1
-mesa 1:24.1.6-1
+mesa 1:24.2.1-1
 minizip 1:1.3.1-2
 mkinitcpio 39.2-2
 mkinitcpio-busybox 1.36.1-1
@@ -431,14 +432,14 @@ orc 0.4.39-1
 p11-kit 0.25.5-1
 pacman 6.1.0-3
 pacman-mirrorlist 20240717-1
-pam 1.6.1-2
+pam 1.6.1-3
 pambase 20230918-2
 pango 1:1.54.0-1
 pangomm 2.46.4-1
 pangomm-2.48 2.54.0-1
 patch 2.7.6-10
 pavucontrol 1:6.1-1
-pciutils 3.13.0-1
+pciutils 3.13.0-2
 pcre 8.45-4
 pcre2 10.44-1
 pcsclite 2.3.0-1
@@ -550,7 +551,7 @@ uchardet 0.0.8-3
 unibilium 2.1.1-2
 unrar 1:7.0.9-1
 unzip 6.0-21
-upower 1.90.4-1
+upower 1.90.5-1
 util-linux 2.40.2-1
 util-linux-libs 2.40.2-1
 v4l-utils 1.28.1-1
@@ -608,6 +609,7 @@ yay-debug 12.3.5-1
 yazi 0.3.1-1
 yt-dlp 2024.08.06-1
 z 1.12-1
+zen-browser-bin 1.0.0.a.32-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.4.2-2
