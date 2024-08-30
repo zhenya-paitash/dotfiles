@@ -67,7 +67,7 @@ default-cursors 2-2
 desktop-file-utils 0.27-1
 device-mapper 2.03.26-1
 diffutils 3.10-1
-docker 1:27.1.2-1
+docker 1:27.2.0-1
 docker-compose 2.29.2-1
 double-conversion 3.3.0-2
 duktape 2.7.0-7
@@ -178,7 +178,7 @@ jless 0.9.0-2
 jq 1.7.1-2
 js115 115.13.0-1
 json-c 0.17-2
-json-glib 1.8.0-2
+json-glib 1.10.0-1
 kbd 2.6.4-2
 kcoreaddons 6.5.0-1
 keyutils 1.6.3-3
@@ -255,7 +255,7 @@ liblc3 1.1.1-1
 libldac 2.0.2.3-2
 libldap 2.6.8-1
 libliftoff 0.5.0-1
-liblqr 0.4.2-4
+liblqr 0.4.3-1
 libluv 1.48.0_2-1
 libmm-glib 1.22.0-1
 libmng 2.0.3-4
@@ -283,7 +283,7 @@ libp11-kit 0.25.5-1
 libpcap 1.10.4-2
 libpciaccess 0.18.1-2
 libpgm 5.3.128-3
-libpipeline 1.5.7-2
+libpipeline 1.5.8-1
 libpipewire 1:1.2.3-1
 libplacebo 7.349.0-1
 libplist 2.6.0-1
@@ -308,7 +308,7 @@ libsndfile 1.2.2-2
 libsodium 1.0.20-1
 libsoup3 3.6.0-1
 libsoxr 0.1.3-4
-libssh 0.11.0-2
+libssh 0.11.1-1
 libssh2 1.11.0-1
 libstemmer 2.2.0-2
 libsysprof-capture 46.0-4
@@ -317,7 +317,7 @@ libteam 1.32-2
 libtermkey 0.22-3
 libthai 0.1.29-3
 libtheora 1.1.1-6
-libtiff 4.6.0-5
+libtiff 4.6.0-6
 libtirpc 1.3.5-1
 libtool 2.5.1-2
 libtorrent-rasterbar 1:2.0.10-2
@@ -377,8 +377,8 @@ lilv 0.24.24-2
 linux-api-headers 6.10-1
 linux-firmware 20240809.59460076-1
 linux-firmware-whence 20240809.59460076-1
-linux-lts 6.6.47-1
-linux-zen 6.10.6.zen1-1
+linux-lts 6.6.48-1
+linux-zen 6.10.7.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.33-1
@@ -392,7 +392,7 @@ lzo 2.10-5
 m4 1.4.19-3
 mailcap 2.1.54-2
 make 4.4.1-2
-man-db 2.12.1-1
+man-db 2.13.0-1
 mbedtls2 2.28.8-3
 md4c 0.5.2-1
 mesa 1:24.2.1-1
@@ -467,7 +467,7 @@ protobuf 27.3-2
 psmisc 23.7-1
 pugixml 1.14-1
 python 3.12.5-1
-python-certifi 2024.07.04-1
+python-certifi 2024.08.30-1
 python-charset-normalizer 3.3.2-2
 python-gobject 3.48.2-2
 python-idna 3.7-1
