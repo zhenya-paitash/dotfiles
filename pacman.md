@@ -13,7 +13,7 @@ alsa-ucm-conf 1.2.12-1
 alsa-utils 1.2.12-1
 amd-ucode 20240809.59460076-1
 aom 3.10.0-1
-aquamarine 0.4.0-1
+aquamarine 0.4.1-1
 archlinux-keyring 20240709-1
 argon2 20190702-6
 at-spi2-core 2.52.0-1
@@ -30,7 +30,7 @@ base-devel 1-2
 bash 5.2.032-2
 bat 0.24.0-2
 binutils 2.43+r4+g7999dae6961-1
-bison 3.8.2-6
+bison 3.8.2-7
 bluez 5.77-1
 bluez-libs 5.77-1
 bluez-utils 5.77-1
@@ -456,7 +456,7 @@ pipewire-pulse 1:1.2.3-1
 pixman 0.43.4-1
 pkgconf 2.1.1-1
 polkit 125-1
-popt 1.19-1
+popt 1.19-2
 portaudio 1:19.7.0-3
 postgresql 16.3-4
 postgresql-libs 16.3-4
@@ -525,8 +525,8 @@ systemd-libs 256.5-1
 systemd-sysvcompat 256.5-1
 tar 1.35-2
 tdb 1.4.12-1
-telegram-desktop 5.5.0-1
-texinfo 7.1-2
+telegram-desktop 5.5.1-1
+texinfo 7.1.1-1
 tmux 3.4-10
 tomlplusplus 3.4.0-1
 tpm2-tss 4.0.1-1
@@ -546,7 +546,7 @@ ttf-droid 20121017-11
 ttf-liberation 2.1.5-2
 ttf-nerd-fonts-symbols 3.2.1-1
 ttf-nerd-fonts-symbols-common 3.2.1-1
-tzdata 2024a-2
+tzdata 2024b-1
 uchardet 0.0.8-3
 unibilium 2.1.1-2
 unrar 1:7.0.9-1
@@ -558,9 +558,9 @@ v4l-utils 1.28.1-1
 vapoursynth R69-1
 vid.stab 1.1.1-2
 vmaf 3.0.0-1
-vulkan-headers 1:1.3.285-1
+vulkan-headers 1:1.3.295-1
 vulkan-icd-loader 1.3.285-1
-vulkan-validation-layers 1.3.275-1
+vulkan-validation-layers 1.3.290-2
 wayland 1.23.0-1
 wayland-protocols 1.37-1
 webrtc-audio-processing-1 1.3-3
