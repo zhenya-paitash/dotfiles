@@ -60,7 +60,6 @@ db5.3 5.3.28-5
 dbus 1.14.10-2
 dbus-broker 36-4
 dbus-broker-units 36-4
-dbus-glib 0.112-4
 dconf 0.40.0-3
 debugedit 5.0-6
 default-cursors 2-2
@@ -609,7 +608,6 @@ yay-debug 12.3.5-1
 yazi 0.3.3-1
 yt-dlp 2024.08.06-1
 z 1.12-1
-zen-browser-bin 1.0.0.a.39-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.4.2-2
