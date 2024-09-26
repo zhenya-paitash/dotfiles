@@ -1,0 +1,12 @@
+aylurs-gtk-shell 1.8.2-3
+aylurs-gtk-shell-debug 1.8.2-3
+brave-bin 1:1.70.119-1
+hyprpicker 0.3.0-1
+hyprpicker-debug 0.3.0-1
+rofi-lbonn-wayland-git 1.7.5.wayland3.r3.g47ae31eb-1
+rofi-lbonn-wayland-git-debug 1.7.5.wayland3.r3.g47ae31eb-1
+simple-mtpfs 0.4.0-1
+simple-mtpfs-debug 0.4.0-1
+swww-debug 0.9.5-1
+yay 12.4.2-1
+yay-debug 12.4.2-1

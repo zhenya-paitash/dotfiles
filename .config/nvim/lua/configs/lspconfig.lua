@@ -9,6 +9,7 @@ local servers = {
   "cssls",
   "bashls", -- bash-language-server
   -- "tsserver",  -- TODO: switch from this
+  "ts_ls",
   -- "clangd",
   -- "prismals",
   "tailwindcss",
@@ -26,11 +27,16 @@ for _, lsp in ipairs(servers) do
 end
 
 -- typescript
-lspconfig.tsserver.setup {
+lspconfig.ts_ls.setup {
   on_attach = on_attach,
   on_init = on_init,
   capabilities = capabilities,
 }
+-- lspconfig.tsserver.setup {
+--   on_attach = on_attach,
+--   on_init = on_init,
+--   capabilities = capabilities,
+-- }
 
 -- go
 lspconfig.gopls.setup {
