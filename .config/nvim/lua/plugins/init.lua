@@ -170,16 +170,16 @@ return {
   --   config = require("plugins.setup.nvim-highlight-colors").config,
   -- },
 
-  { -- HIGHLIGHT COLORS & COLOR PICKER
-    "uga-rosa/ccc.nvim",
-    event = "BufReadPost",
-    -- cmd = { "CccConvert", "CccPick" },
-    config = require("plugins.setup.ccc").config,
-    dependencies = {
-      -- INFO: disable NvChad colorize plugin
-      { "NvChad/nvim-colorizer.lua", enabled = false },
-    },
-  },
+  -- { -- HIGHLIGHT COLORS & COLOR PICKER
+  --   "uga-rosa/ccc.nvim",
+  --   event = "BufReadPost",
+  --   -- cmd = { "CccConvert", "CccPick" },
+  --   config = require("plugins.setup.ccc").config,
+  --   dependencies = {
+  --     -- INFO: disable NvChad colorize plugin
+  --     { "NvChad/nvim-colorizer.lua", enabled = false },
+  --   },
+  -- },
 
   { -- LSP CONTEXT: lua > plugins > init.lua > []return
     "utilyre/barbecue.nvim",
