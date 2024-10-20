@@ -35,7 +35,7 @@ bluez 5.78-1
 bluez-libs 5.78-1
 bluez-utils 5.78-1
 boost-libs 1.86.0-3
-brave-bin 1:1.70.126-1
+brave-bin 1:1.71.114-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
 brotli 1.1.0-2
@@ -111,8 +111,8 @@ giflib 5.2.2-1
 git 2.47.0-1
 gjs 2:1.82.0-1
 glib-networking 1:2.80.0-3
-glib2 2.82.1-2
-glib2-devel 2.82.1-2
+glib2 2.82.2-1
+glib2-devel 2.82.2-1
 glibc 2.40+r16+gaa533d58ff-2
 glibmm 2.66.7-1
 glibmm-2.68 2.82.0-1
@@ -321,7 +321,7 @@ libtermkey 0.22-3
 libthai 0.1.29-3
 libtheora 1.1.1-6
 libtiff 4.7.0-1
-libtirpc 1.3.5-1
+libtirpc 1.3.6-1
 libtool 2.5.3-1
 libtorrent-rasterbar 1:2.0.10-3
 libunibreak 6.1-1
@@ -331,7 +331,7 @@ libusb 1.0.27-1
 libusbmuxd 2.1.0-1
 libutempter 1.2.1-4
 libutf8proc 2.9.0-1
-libuv 1.49.1-1
+libuv 1.49.2-1
 libva 2.22.0-1
 libvdpau 1.5-3
 libverto 0.3.2-5
@@ -374,14 +374,14 @@ libxtst 1.2.5-1
 libxv 1.0.12-2
 libxxf86vm 1.1.5-2
 libyaml 0.2.5-3
-libzip 1.10.1-2
+libzip 1.11.1-1
 licenses 20240728-1
 lilv 0.24.24-2
 linux-api-headers 6.10-1
 linux-firmware 20241017.22a6c7dc-1
 linux-firmware-whence 20241017.22a6c7dc-1
 linux-lts 6.6.57-1
-linux-zen 6.11.3.zen1-1
+linux-zen 6.11.4.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.33-1
@@ -398,7 +398,7 @@ make 4.4.1-2
 man-db 2.13.0-1
 mbedtls2 2.28.9-1
 md4c 0.5.2-1
-mesa 1:24.2.4-1
+mesa 1:24.2.5-1
 minizip 1:1.3.1-2
 mkinitcpio 39.2-2
 mkinitcpio-busybox 1.36.1-1
@@ -517,7 +517,7 @@ spirv-tools 2024.2-1
 sqlite 3.46.1-1
 sratom 0.6.16-1
 srt 1.5.3-2
-starship 1.21.0-1
+starship 1.21.1-1
 startup-notification 0.12-8
 sudo 1.9.16-1
 svt-av1 2.2.1-1
