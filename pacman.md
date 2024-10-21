@@ -109,7 +109,7 @@ geoclue 2.7.2-1
 gettext 0.22.5-2
 giflib 5.2.2-1
 git 2.47.0-1
-gjs 2:1.82.0-1
+gjs 2:1.82.1-1
 glib-networking 1:2.80.0-3
 glib2 2.82.2-1
 glib2-devel 2.82.2-1
@@ -381,7 +381,7 @@ linux-api-headers 6.10-1
 linux-firmware 20241017.22a6c7dc-1
 linux-firmware-whence 20241017.22a6c7dc-1
 linux-lts 6.6.57-1
-linux-zen 6.11.4.zen1-1
+linux-zen 6.11.4.zen2-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.33-1
@@ -533,7 +533,7 @@ texinfo 7.1.1-1
 tinysparql 3.8.0-1
 tmux 3.5_a-1
 tomlplusplus 3.4.0-1
-tpm2-tss 4.0.1-1
+tpm2-tss 4.1.3-1
 tree-sitter 0.24.3-1
 tree-sitter-bash 0.23.1-1
 tree-sitter-c 0.23.1-1
