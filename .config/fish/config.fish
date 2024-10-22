@@ -6,8 +6,8 @@ if status is-interactive
 end
 
 # choose theme
-#fish_config theme choose fish\ default
-fish_config theme choose Catppuccin\ Latte
+fish_config theme choose fish\ default
+#fish_config theme choose Catppuccin\ Latte
 #fish_config theme choose ayu\ Light
 
 # List Directory

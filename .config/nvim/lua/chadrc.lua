@@ -4,20 +4,11 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.ui = {
-  theme = "wombat",
-  theme_toggle = { "wombat", "wombat" },
+M.base46 = {
+  theme = "everforest",
+  theme_toggle = { "everforest", "everforest" },
   transparency = false,
   lsp_semantic_tokens = true,
-  statusline = {
-    theme = "minimal",
-    separator_style = "round",
-  },
-  tabufline = {
-    -- enabled = false,
-    -- lazyload = true,
-  },
-
   hl_override = {
     Comment = { italic = true },
     ["@comment"] = { italic = true },
@@ -27,6 +18,18 @@ M.ui = {
     NvimTreeOpenedFolderName = { fg = "green", bold = true },
   },
 }
+
+M.ui = {
+  statusline = {
+    theme = "minimal",
+    separator_style = "round",
+  },
+  tabufline = {
+    -- enabled = false,
+    -- lazyload = true,
+  },
+}
+
 
 -- M.plugins = {
 --   options = {},
