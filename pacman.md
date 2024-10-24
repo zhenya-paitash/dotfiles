@@ -42,7 +42,7 @@ brotli 1.1.0-2
 btop 1.4.0-3
 btrfs-progs 6.11-1
 bzip2 1.0.8-6
-c-ares 1.33.1-1
+c-ares 1.34.2-1
 ca-certificates 20240618-1
 ca-certificates-mozilla 3.105-1
 ca-certificates-utils 20240618-1
@@ -55,7 +55,7 @@ cliphist 1:0.6.1-1
 containerd 1.7.23-1
 coreutils 9.5-2
 cryptsetup 2.7.5-1
-curl 8.10.1-1
+curl 8.10.1-2
 dav1d 1.4.3-1
 db5.3 5.3.28-5
 dbus 1.14.10-2
@@ -189,7 +189,7 @@ kitty 0.36.4-1
 kitty-shell-integration 0.36.4-1
 kitty-terminfo 0.36.4-1
 kmod 33-3
-kpipewire 6.2.1-1
+kpipewire 6.2.2-1
 krb5 1.21.3-1
 kstatusnotifieritem 6.7.0-1
 kwindowsystem 6.7.0-1
@@ -229,7 +229,7 @@ libdvdnav 6.1.1-2
 libdvdread 6.1.3-2
 libedit 20240517_3.1-1
 libei 1.3.0-1
-libelf 0.191-4
+libelf 0.192-1
 libepoxy 1.5.10-3
 libevdev 1.13.3-1
 libevent 2.1.12-4
@@ -272,7 +272,7 @@ libnetfilter_conntrack 1.0.9-2
 libnewt 0.52.24-2
 libnfnetlink 1.0.2-2
 libnftnl 1.2.8-1
-libnghttp2 1.63.0-1
+libnghttp2 1.64.0-1
 libnghttp3 1.6.0-1
 libnice 0.1.22-1
 libnl 3.10.0-1
@@ -380,8 +380,8 @@ lilv 0.24.24-2
 linux-api-headers 6.10-1
 linux-firmware 20241017.22a6c7dc-1
 linux-firmware-whence 20241017.22a6c7dc-1
-linux-lts 6.6.57-1
-linux-zen 6.11.4.zen2-1
+linux-lts 6.6.58-1
+linux-zen 6.11.5.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.33-1
@@ -417,7 +417,7 @@ networkmanager 1.50.0-1
 noto-fonts 1:24.9.1-1
 noto-fonts-emoji 1:2.047-1
 npth 1.7-1
-nspr 4.35-3
+nspr 4.36-1
 nss 3.105-1
 nwg-look 0.2.7-1
 obsidian 1.7.4-1
@@ -492,7 +492,7 @@ rofi-lbonn-wayland-git 1.7.5.wayland3.r3.g47ae31eb-1
 rofi-lbonn-wayland-git-debug 1.7.5.wayland3.r3.g47ae31eb-1
 rtkit 0.13-3
 rubberband 3.3.0-2
-runc 1.1.15-1
+runc 1.2.0-1
 rustup 1.27.1-1
 sassc 3.6.2-5
 sbc 2.0-2

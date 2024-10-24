@@ -280,7 +280,8 @@ return {
     -- init: `:Telescope load_extension fzf` OR go to `$HOME/.local/share/nvim/lazy/telescope-fzf-native.nvim` and run `make`
     "nvim-telescope/telescope-fzf-native.nvim",
     event = "VeryLazy",
-    run = "make",
+    -- run = "make",
+    build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
     config = function()
       require("telescope").load_extension "fzf"
     end,

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OBSIDIAN_PATH="/home/zh/obsidian"
+OBSIDIAN_PATH="/home/zh/obsidian/zhenyapaitash"
 
 cd "$OBSIDIAN_PATH" || exit
 

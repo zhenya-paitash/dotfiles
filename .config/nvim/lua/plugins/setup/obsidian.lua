@@ -33,7 +33,7 @@ return {
         -- TODO: check if `obsidian plugin run`
         require("obsidian")
         vim.cmd "tabnew"
-        vim.cmd "tcd ~/obsidian"
+        vim.cmd "tcd ~/obsidian/zhenyapaitash"
         require("nvim-tree.api").tree.open()
       end,
       mode = "n",
