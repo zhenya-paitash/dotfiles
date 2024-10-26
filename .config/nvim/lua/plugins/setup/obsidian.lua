@@ -58,7 +58,7 @@ return {
 
     require("obsidian").setup {
       workspaces = {
-        { name = "personal", path = "~/obsidian" },
+        { name = "personal", path = "~/obsidian/zhenyapaitash" },
       },
       completion = {
         nvim_cmp = true,

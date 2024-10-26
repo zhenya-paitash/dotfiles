@@ -5,7 +5,7 @@ adobe-source-code-pro-fonts 2.042u+1.062i+1.026vf-2
 adwaita-cursors 47.0-1
 adwaita-icon-theme 47.0-1
 adwaita-icon-theme-legacy 46.2-3
-alsa-card-profiles 1:1.2.5-1
+alsa-card-profiles 1:1.2.6-1
 alsa-lib 1.2.12-1
 alsa-plugins 1:1.2.12-3
 alsa-topology-conf 1.2.5.1-4
@@ -35,7 +35,7 @@ bluez 5.78-1
 bluez-libs 5.78-1
 bluez-utils 5.78-1
 boost-libs 1.86.0-3
-brave-bin 1:1.71.114-1
+brave-bin 1:1.71.118-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
 brotli 1.1.0-2
@@ -76,9 +76,9 @@ efibootmgr 18-3
 efivar 39-1
 electron28 28.3.3-3
 electron30 30.5.1-3
-electron31 31.7.1-1
+electron31 31.7.2-1
 expat 2.6.3-2
-eza 0.20.4-1
+eza 0.20.5-1
 fakeroot 1.36-1
 fd 10.2.0-1
 ffmpeg 2:7.0.2-3
@@ -119,7 +119,7 @@ glibmm-2.68 2.82.0-1
 glslang 14.3.0-1
 glu 9.0.3-2
 gmp 6.3.0-2
-gnupg 2.4.5-5
+gnupg 2.4.5-6
 gnutls 3.8.7-1
 go 2:1.23.2-1
 gobject-introspection-runtime 1.82.0-1
@@ -135,7 +135,7 @@ gsettings-desktop-schemas 47.1-1
 gsettings-system-schemas 47.1-1
 gsm 1.0.22-2
 gssdp 1.6.3-2
-gst-plugin-pipewire 1:1.2.5-1
+gst-plugin-pipewire 1:1.2.6-1
 gst-plugins-bad-libs 1.24.8-1
 gst-plugins-base-libs 1.24.8-1
 gstreamer 1.24.8-1
@@ -158,7 +158,7 @@ http-parser 2.9.4-2
 hunspell 1.7.2-2
 hwdata 0.388-1
 hyprcursor 0.1.10-1
-hyprland 0.44.1-1
+hyprland 0.44.1-2
 hyprlang 0.5.3-1
 hyprpicker 0.4.1-1
 hyprpicker-debug 0.3.0-1
@@ -239,7 +239,7 @@ libfontenc 1.1.8-1
 libfreeaptx 0.1.1-2
 libgcrypt 1.11.0-2
 libgirepository 1.82.0-1
-libgit2 1:1.8.1-1
+libgit2 1:1.8.2-1
 libglvnd 1.7.0-1
 libgpg-error 1.50-1
 libgudev 238-1
@@ -287,7 +287,7 @@ libpcap 1.10.5-2
 libpciaccess 0.18.1-2
 libpgm 5.3.128-3
 libpipeline 1.5.8-1
-libpipewire 1:1.2.5-1
+libpipewire 1:1.2.6-1
 libplacebo 7.349.0-2
 libplist 2.6.0-1
 libpng 1.6.44-1
@@ -428,8 +428,8 @@ opencore-amr 0.1.6-2
 openexr 3.2.4-1
 openh264 2.4.1-1
 openjpeg2 2.5.2-1
-openssh 9.9p1-1
-openssl 3.3.2-1
+openssh 9.9p1-2
+openssl 3.4.0-1
 opus 1.5.2-1
 orc 0.4.40-1
 p11-kit 0.25.5-1
@@ -451,11 +451,11 @@ perl-error 0.17029-7
 perl-mailtools 2.21-9
 perl-timedate 2.33-7
 pinentry 1.3.1-5
-pipewire 1:1.2.5-1
-pipewire-alsa 1:1.2.5-1
-pipewire-audio 1:1.2.5-1
-pipewire-jack 1:1.2.5-1
-pipewire-pulse 1:1.2.5-1
+pipewire 1:1.2.6-1
+pipewire-alsa 1:1.2.6-1
+pipewire-audio 1:1.2.6-1
+pipewire-jack 1:1.2.6-1
+pipewire-pulse 1:1.2.6-1
 pixman 0.43.4-1
 pkgconf 2.1.1-1
 polkit 125-1
@@ -496,7 +496,7 @@ runc 1.2.0-1
 rustup 1.27.1-1
 sassc 3.6.2-5
 sbc 2.0-2
-sdbus-cpp 1.5.0-3
+sdbus-cpp 2.0.0-1
 sdl2 2.30.8-1
 seatd 0.8.0-2
 sed 4.9-3
@@ -587,7 +587,7 @@ xcb-util-wm 0.4.2-2
 xcb-util-xrm 1.3-3
 xcur2png 0.7.1-8
 xdg-desktop-portal 1.18.4-1
-xdg-desktop-portal-hyprland 1.3.6-1
+xdg-desktop-portal-hyprland 1.3.7-1
 xdg-utils 1.2.1-1
 xf86-video-amdgpu 23.0.0-2
 xh 0.23.0-1
