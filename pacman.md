@@ -44,7 +44,7 @@ btrfs-progs 6.11-1
 bzip2 1.0.8-6
 c-ares 1.34.2-1
 ca-certificates 20240618-1
-ca-certificates-mozilla 3.105-1
+ca-certificates-mozilla 3.106-1
 ca-certificates-utils 20240618-1
 cairo 1.18.2-2
 cairomm 1.14.5-1
@@ -64,7 +64,7 @@ dbus-broker-units 36-4
 dconf 0.40.0-3
 debugedit 5.0-6
 default-cursors 3-1
-desktop-file-utils 0.27-1
+desktop-file-utils 0.28-1
 device-mapper 2.03.27-1
 diffutils 3.10-1
 docker 1:27.3.1-1
@@ -266,7 +266,7 @@ libmnl 1.0.5-2
 libmodplug 0.8.9.0-6
 libmpc 1.3.1-2
 libmtp 1.1.21-2
-libmysofa 1.3.2-1
+libmysofa 1.3.3-1
 libndp 1.9-1
 libnetfilter_conntrack 1.0.9-2
 libnewt 0.52.24-2
@@ -418,7 +418,7 @@ noto-fonts 1:24.9.1-1
 noto-fonts-emoji 1:2.047-1
 npth 1.7-1
 nspr 4.36-1
-nss 3.105-1
+nss 3.106-1
 nwg-look 0.2.7-1
 obsidian 1.7.4-1
 ocl-icd 2.3.2-2
@@ -479,7 +479,7 @@ python-requests 2.32.3-1
 python-urllib3 1.26.20-1
 qbittorrent 5.0.0-1
 qt6-base 6.8.0-1
-qt6-declarative 6.8.0-2
+qt6-declarative 6.8.0-4
 qt6-imageformats 6.8.0-1
 qt6-svg 6.8.0-1
 qt6-translations 6.8.0-1
@@ -587,7 +587,7 @@ xcb-util-wm 0.4.2-2
 xcb-util-xrm 1.3-3
 xcur2png 0.7.1-8
 xdg-desktop-portal 1.18.4-1
-xdg-desktop-portal-hyprland 1.3.7-1
+xdg-desktop-portal-hyprland 1.3.8-1
 xdg-utils 1.2.1-1
 xf86-video-amdgpu 23.0.0-2
 xh 0.23.0-1
