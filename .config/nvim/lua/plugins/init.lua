@@ -208,7 +208,7 @@ return {
   -- },
 
   -- { -- HTTP CLIENT
-  --   'mistweaverco/kulala.nvim',
+  --   "mistweaverco/kulala.nvim",
   --   config = require("plugins.setup.rest-kulala").config,
   -- },
 
@@ -337,6 +337,28 @@ return {
   --     "nvim-neotest/nvim-nio",
   --     "nvim-lua/plenary.nvim",
   --     -- "antoinemadec/FixCursorHold.nvim",  -- WARN:  This plugin is not needed after neovim/neovim#20198
+  --   },
+  -- },
+
+  { -- SHOW KEYS
+    "nvchad/showkeys",
+    cmd = "ShowkeysToggle",
+    opts = {
+      -- timeout = 1,
+      maxkeys = 5,
+      position = "top-right",
+      show_count = true,
+    },
+  },
+
+  -- { -- AUCTOCOMPLETE
+  --   "saghen/blink.cmp",
+  --   lazy = false,
+  --   version = "v0.*",
+  --   opts = require("plugins.setup.blink-cmp").opts,
+  --   dependencies = {
+  --     "rafamadriz/friendly-snippets",
+  --     { "hrsh7th/nvim-cmp", enabled = false }, -- disable default `nvim-cmp`
   --   },
   -- },
 }

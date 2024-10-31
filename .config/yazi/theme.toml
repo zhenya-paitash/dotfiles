@@ -8,6 +8,7 @@
 
 [flavor]
 use = ""
+# use = "everforest-medium"
 
 # : }}}
 

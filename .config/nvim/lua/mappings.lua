@@ -324,9 +324,9 @@ map(MODE.normal, "<leader>jq", ":%!jq '.'<CR>")
 ---------------------------------------
 -- REST.NVIM
 ---------------------------------------
-map(MODE.normal, "<leader>rr", "<cmd> Rest run <CR>", { desc = "run request under the cursor (Rest)" })
-map(MODE.normal, "<leader>rl", "<cmd> Rest run last <CR>", { desc = "run last request (Rest)" })
-map(MODE.normal, "<leader>re", "<cmd> Telescope rest select_env <CR>", { desc = "select env (Rest)" })
+-- map(MODE.normal, "<leader>rr", "<cmd> Rest run <CR>", { desc = "run request under the cursor (Rest)" })
+-- map(MODE.normal, "<leader>rl", "<cmd> Rest run last <CR>", { desc = "run last request (Rest)" })
+-- map(MODE.normal, "<leader>re", "<cmd> Telescope rest select_env <CR>", { desc = "select env (Rest)" })
 
 ---------------------------------------
 -- GRUG-FAR.NVIM
@@ -344,3 +344,8 @@ map(
 ---------------------------------------
 -- MODE: normal
 map(MODE.normal, "<leader>n", "<cmd> NoiceAll <CR>", { desc = "messages (Noice)" })
+
+---------------------------------------
+-- REST
+---------------------------------------
+map(MODE.normal, "<leader>rr", "<cmd>lua require('kulala').run()<cr>", { desc = "Execute current request" })

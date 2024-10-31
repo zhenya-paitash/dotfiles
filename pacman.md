@@ -35,7 +35,7 @@ bluez 5.78-1
 bluez-libs 5.78-1
 bluez-utils 5.78-1
 boost-libs 1.86.0-3
-brave-bin 1:1.71.118-1
+brave-bin 1:1.71.121-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
 brotli 1.1.0-2
@@ -68,7 +68,7 @@ desktop-file-utils 0.28-1
 device-mapper 2.03.27-1
 diffutils 3.10-1
 docker 1:27.3.1-1
-docker-compose 2.29.7-1
+docker-compose 2.30.1-1
 double-conversion 3.3.0-2
 duktape 2.7.0-7
 e2fsprogs 1.47.1-4
@@ -76,7 +76,7 @@ efibootmgr 18-3
 efivar 39-1
 electron28 28.3.3-3
 electron30 30.5.1-3
-electron31 31.7.2-1
+electron31 31.7.3-1
 expat 2.6.3-2
 eza 0.20.5-1
 fakeroot 1.36-1
@@ -86,7 +86,7 @@ fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
 findutils 4.10.0-2
-firefox 131.0.3-1
+firefox 132.0-1
 fish 3.7.1-2
 fisher 4.4.5-1
 flac 1.4.3-2
@@ -119,7 +119,7 @@ glibmm-2.68 2.82.0-1
 glslang 14.3.0-1
 glu 9.0.3-2
 gmp 6.3.0-2
-gnupg 2.4.5-6
+gnupg 2.4.5-7
 gnutls 3.8.7-1
 go 2:1.23.2-1
 gobject-introspection-runtime 1.82.0-1
@@ -177,17 +177,17 @@ jasper 4.2.4-2
 jbigkit 2.1-8
 jless 0.9.0-2
 jq 1.7.1-2
-js115 115.16.1-1
-js128 128.3.1-1
+js115 115.17.0-1
+js128 128.4.0-1
 json-c 0.18-1
 json-glib 1.10.0-1
 kbd 2.6.4-3
 kcoreaddons 6.7.0-1
 keyutils 1.6.3-3
 ki18n 6.7.0-1
-kitty 0.36.4-1
-kitty-shell-integration 0.36.4-1
-kitty-terminfo 0.36.4-1
+kitty 0.37.0-1
+kitty-shell-integration 0.37.0-1
+kitty-terminfo 0.37.0-1
 kmod 33-3
 kpipewire 6.2.2-1
 krb5 1.21.3-1
@@ -210,7 +210,7 @@ libbs2b 3.1.0-9
 libcamera 0.3.2-1
 libcamera-ipa 0.3.2-1
 libcanberra 1:0.30+r2+gc0620e4-4
-libcap 2.70-1
+libcap 2.71-1
 libcap-ng 0.8.5-2
 libcdio 2.1.0-4
 libcdio-paranoia 10.2+2.0.2-1
@@ -220,7 +220,7 @@ libcups 2:2.4.11-1
 libdaemon 0.14-6
 libdatrie 0.2.13-4
 libdecor 0.2.2-1
-libdeflate 1.21-1
+libdeflate 1.22-1
 libdispatch 5.10-1
 libdisplay-info 0.2.0-1
 libdovi 3.3.1-1
@@ -239,7 +239,7 @@ libfontenc 1.1.8-1
 libfreeaptx 0.1.1-2
 libgcrypt 1.11.0-2
 libgirepository 1.82.0-1
-libgit2 1:1.8.2-1
+libgit2 1:1.8.4-1
 libglvnd 1.7.0-1
 libgpg-error 1.50-1
 libgudev 238-1
@@ -281,7 +281,7 @@ libnotify 0.8.3-1
 libnsl 2.0.1-1
 libogg 1.3.5-2
 libomxil-bellagio 0.9.3-5
-libopenmpt 0.7.10-1
+libopenmpt 0.7.11-1
 libp11-kit 0.25.5-1
 libpcap 1.10.5-2
 libpciaccess 0.18.1-2
@@ -296,7 +296,7 @@ libpsl 0.21.5-2
 libpulse 17.0-3
 libraqm 0.10.2-1
 libraw1394 2.1.2-4
-librsvg 2:2.59.1-1
+librsvg 2:2.59.2-1
 librsync 1:2.3.4-2
 libsamplerate 0.2.2-3
 libsasl 2.1.28-5
@@ -405,7 +405,7 @@ mkinitcpio-busybox 1.36.1-1
 mobile-broadband-provider-info 20240407-1
 mpdecimal 4.0.0-2
 mpfr 4.2.1-4
-mpg123 1.32.7-1
+mpg123 1.32.8-1
 mpv 1:0.39.0-1
 msgpack-c 6.1.0-2
 mtdev 1.1.7-1
@@ -477,7 +477,7 @@ python-idna 3.8-1
 python-packaging 24.1-1
 python-requests 2.32.3-1
 python-urllib3 1.26.20-1
-qbittorrent 5.0.0-1
+qbittorrent 5.0.1-1
 qt6-base 6.8.0-1
 qt6-declarative 6.8.0-4
 qt6-imageformats 6.8.0-1
@@ -498,7 +498,7 @@ sassc 3.6.2-5
 sbc 2.0-2
 sdbus-cpp 2.0.0-1
 sdl2 2.30.8-1
-seatd 0.8.0-2
+seatd 0.9.0-1
 sed 4.9-3
 serd 0.32.2-1
 shaderc 2024.2-1
@@ -593,14 +593,14 @@ xf86-video-amdgpu 23.0.0-2
 xh 0.23.0-1
 xkeyboard-config 2.43-1
 xorg-fonts-encodings 1.1.0-1
-xorg-server-common 21.1.13-1
+xorg-server-common 21.1.14-1
 xorg-setxkbmap 1.3.4-2
 xorg-xinput 1.6.4-2
 xorg-xkbcomp 1.4.7-1
 xorg-xprop 1.2.7-1
 xorg-xrandr 1.5.2-2
 xorg-xset 1.2.5-2
-xorg-xwayland 24.1.3-1
+xorg-xwayland 24.1.4-1
 xorgproto 2024.1-2
 xvidcore 1.3.7-3
 xwaylandvideobridge 0.4.0-2
