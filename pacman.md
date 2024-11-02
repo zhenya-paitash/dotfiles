@@ -31,9 +31,9 @@ bash 5.2.037-1
 bat 0.24.0-2
 binutils 2.43+r4+g7999dae6961-1
 bison 3.8.2-8
-bluez 5.78-1
-bluez-libs 5.78-1
-bluez-utils 5.78-1
+bluez 5.79-1
+bluez-libs 5.79-1
+bluez-utils 5.79-1
 boost-libs 1.86.0-3
 brave-bin 1:1.71.121-1
 bridge-utils 1.7.1-2
@@ -62,7 +62,7 @@ dbus 1.14.10-2
 dbus-broker 36-4
 dbus-broker-units 36-4
 dconf 0.40.0-3
-debugedit 5.0-6
+debugedit 5.1-1
 default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.27-1
@@ -78,7 +78,7 @@ electron28 28.3.3-3
 electron30 30.5.1-3
 electron31 31.7.3-1
 expat 2.6.3-2
-eza 0.20.5-1
+eza 0.20.6-1
 fakeroot 1.36-1
 fd 10.2.0-1
 ffmpeg 2:7.0.2-3
@@ -123,6 +123,7 @@ gnupg 2.4.5-7
 gnutls 3.8.7-1
 go 2:1.23.2-1
 gobject-introspection-runtime 1.82.0-1
+google-chrome 130.0.6723.91-1
 gperftools 2.16-1
 gpgme 1.23.2-6
 gpm 1.20.7.r38.ge82d1a6-6
@@ -136,14 +137,14 @@ gsettings-system-schemas 47.1-1
 gsm 1.0.22-2
 gssdp 1.6.3-2
 gst-plugin-pipewire 1:1.2.6-1
-gst-plugins-bad-libs 1.24.8-1
-gst-plugins-base-libs 1.24.8-1
-gstreamer 1.24.8-1
+gst-plugins-bad-libs 1.24.9-1
+gst-plugins-base-libs 1.24.9-1
+gstreamer 1.24.9-1
 gtest 1.15.2-1
 gtk-layer-shell 0.9.0-1
-gtk-update-icon-cache 1:4.16.3-1
+gtk-update-icon-cache 1:4.16.5-1
 gtk3 1:3.24.43-4
-gtk4 1:4.16.3-1
+gtk4 1:4.16.5-1
 gtkmm-4.0 4.16.0-1
 gtkmm3 3.24.9-1
 guile 3.0.10-1
@@ -275,7 +276,7 @@ libnftnl 1.2.8-1
 libnghttp2 1.64.0-1
 libnghttp3 1.6.0-1
 libnice 0.1.22-1
-libnl 3.10.0-1
+libnl 3.11.0-1
 libnm 1.50.0-1
 libnotify 0.8.3-1
 libnsl 2.0.1-1
@@ -380,8 +381,8 @@ lilv 0.24.24-2
 linux-api-headers 6.10-1
 linux-firmware 20241017.22a6c7dc-1
 linux-firmware-whence 20241017.22a6c7dc-1
-linux-lts 6.6.58-1
-linux-zen 6.11.5.zen1-1
+linux-lts 6.6.59-1
+linux-zen 6.11.6.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.33-1
@@ -398,7 +399,7 @@ make 4.4.1-2
 man-db 2.13.0-1
 mbedtls2 2.28.9-1
 md4c 0.5.2-1
-mesa 1:24.2.5-1
+mesa 1:24.2.6-1
 minizip 1:1.3.1-2
 mkinitcpio 39.2-2
 mkinitcpio-busybox 1.36.1-1
@@ -414,7 +415,7 @@ ncurses 6.5-3
 neovim 0.10.2-2
 nettle 3.10-1
 networkmanager 1.50.0-1
-noto-fonts 1:24.9.1-1
+noto-fonts 1:2024.11.01-1
 noto-fonts-emoji 1:2.047-1
 npth 1.7-1
 nspr 4.36-1
@@ -492,7 +493,7 @@ rofi-lbonn-wayland-git 1.7.5.wayland3.r3.g47ae31eb-1
 rofi-lbonn-wayland-git-debug 1.7.5.wayland3.r3.g47ae31eb-1
 rtkit 0.13-3
 rubberband 3.3.0-2
-runc 1.2.0-1
+runc 1.2.1-1
 rustup 1.27.1-1
 sassc 3.6.2-5
 sbc 2.0-2

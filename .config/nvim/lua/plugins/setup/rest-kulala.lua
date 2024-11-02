@@ -1,7 +1,6 @@
 return {
   config = function()
     require("kulala").setup {
-      -- vim.filetype.add({ extension = { ['http'] = 'http' } })
 
       --   -- default_view, body or headers
       --   default_view = "body",
@@ -105,7 +104,8 @@ return {
       },
 
       -- enable winbar
-      winbar = false,
+      -- winbar = false,
+      winbar = true,
 
       -- Specify the panes to be displayed by default
       -- Current available pane contains { "body", "headers", "headers_body", "script_output", "stats" },
@@ -125,5 +125,7 @@ return {
       -- certificates
       certificates = {},
     }
+
+    vim.filetype.add { extension = { ["http"] = "http" } }
   end,
 }
