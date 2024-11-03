@@ -350,3 +350,8 @@ map(MODE.normal, "<leader>n", "<cmd> NoiceAll <CR>", { desc = "messages (Noice)"
 ---------------------------------------
 map(MODE.normal, "<leader>rr", "<cmd>lua require('kulala').run()<cr>", { desc = "Execute current request" })
 
+---------------------------------------
+-- OIL.NVIM
+---------------------------------------
+map(MODE.normal, "<leader>-", "<cmd>lua require('oil').toggle_float()<cr>", { desc = "buffer file explorer(Oil.nvim)" })
+

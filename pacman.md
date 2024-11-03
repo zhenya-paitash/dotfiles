@@ -61,6 +61,7 @@ db5.3 5.3.28-5
 dbus 1.14.10-2
 dbus-broker 36-4
 dbus-broker-units 36-4
+dbus-glib 0.112-4
 dconf 0.40.0-3
 debugedit 5.1-1
 default-cursors 3-1
@@ -406,7 +407,7 @@ mkinitcpio-busybox 1.36.1-1
 mobile-broadband-provider-info 20240407-1
 mpdecimal 4.0.0-2
 mpfr 4.2.1-4
-mpg123 1.32.8-1
+mpg123 1.32.9-1
 mpv 1:0.39.0-1
 msgpack-c 6.1.0-2
 mtdev 1.1.7-1
@@ -613,6 +614,7 @@ yay-debug 12.4.2-1
 yazi 0.3.3-1
 yt-dlp 2024.10.22-1
 z 1.12-1
+zen-browser-avx2-bin 1.0.1.a.17-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.4.2-2

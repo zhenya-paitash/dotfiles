@@ -361,4 +361,10 @@ return {
   --     { "hrsh7th/nvim-cmp", enabled = false }, -- disable default `nvim-cmp`
   --   },
   -- },
+
+  { -- BUFFER FILE EXPLORER
+    "stevearc/oil.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = require("plugins.setup.oil").opts,
+  },
 }
