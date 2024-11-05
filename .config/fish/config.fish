@@ -67,3 +67,6 @@ alias vf='nvim $(fzf)'
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
+
+# uv
+fish_add_path "/home/zh/.local/bin"

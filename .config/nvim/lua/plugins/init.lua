@@ -207,10 +207,21 @@ return {
   --   },
   -- },
 
-  { -- HTTP CLIENT
-    "mistweaverco/kulala.nvim",
-    config = require("plugins.setup.rest-kulala").config,
-  },
+  -- { -- HTTP CLIENT `kulala`
+  --   "mistweaverco/kulala.nvim",
+  --   ft = { "http" },
+  --   config = require("plugins.setup.rest-kulala").config,
+  --   init = function()
+  --     vim.filetype.add { extension = { ["http"] = "http" } }
+  --   end,
+  -- },
+
+  -- { -- HTTP CLIENT `atac`
+  --   "NachoNievaG/atac.nvim",
+  --   cmd = { "Atac" },
+  --   dependencies = { "akinsho/toggleterm.nvim" },
+  --   config = require("plugins.setup.atac").config,
+  -- },
 
   { -- ZEN MODE
     "folke/zen-mode.nvim",
@@ -366,5 +377,25 @@ return {
     "stevearc/oil.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = require("plugins.setup.oil").opts,
+  },
+
+  {
+    "yetone/avante.nvim",
+    event = "VeryLazy",
+    -- lazy = false,
+    version = false, -- set this if you want to always pull the latest change
+    opts = {
+      mappings = {
+        --- @class AvanteConflictMappings
+        submit = { insert = "<leader>s" },
+      },
+    },
+    build = "make", -- build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false" -- for windows (if you want to build from source then do `make BUILD_FROM_SOURCE=true`)
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "stevearc/dressing.nvim",
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+    },
   },
 }

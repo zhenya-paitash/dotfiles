@@ -14,3 +14,5 @@ PS1='[\u@\h \W]\$ '
 
 # node from nvm.fish
 export PATH=$PATH:$HOME/.local/share/nvm/v22.3.0/bin
+
+. "$HOME/.cargo/env"

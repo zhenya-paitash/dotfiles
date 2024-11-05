@@ -17,6 +17,7 @@ aquamarine 0.4.3-1
 archlinux-keyring 20241015-1
 argon2 20190702-6
 at-spi2-core 2.54.0-2
+atac 0.18.1-1
 atkmm 2.28.4-1
 attr 2.5.2-1
 audit 4.0.2-2
@@ -66,10 +67,10 @@ dconf 0.40.0-3
 debugedit 5.1-1
 default-cursors 3-1
 desktop-file-utils 0.28-1
-device-mapper 2.03.27-1
+device-mapper 2.03.28-1
 diffutils 3.10-1
 docker 1:27.3.1-1
-docker-compose 2.30.1-1
+docker-compose 2.30.2-1
 double-conversion 3.3.0-2
 duktape 2.7.0-7
 e2fsprogs 1.47.1-4
@@ -78,6 +79,7 @@ efivar 39-1
 electron28 28.3.3-3
 electron30 30.5.1-3
 electron31 31.7.3-1
+electron32 32.2.2-1
 expat 2.6.3-2
 eza 0.20.6-1
 fakeroot 1.36-1
@@ -120,7 +122,7 @@ glibmm-2.68 2.82.0-1
 glslang 14.3.0-1
 glu 9.0.3-2
 gmp 6.3.0-2
-gnupg 2.4.5-7
+gnupg 2.4.6-1
 gnutls 3.8.7-1
 go 2:1.23.2-1
 gobject-introspection-runtime 1.82.0-1
@@ -231,7 +233,7 @@ libdvdnav 6.1.1-2
 libdvdread 6.1.3-2
 libedit 20240517_3.1-1
 libei 1.3.0-1
-libelf 0.192-1
+libelf 0.192-2
 libepoxy 1.5.10-3
 libevdev 1.13.3-1
 libevent 2.1.12-4
@@ -422,7 +424,7 @@ npth 1.7-1
 nspr 4.36-1
 nss 3.106-1
 nwg-look 0.2.7-1
-obsidian 1.7.4-1
+obsidian 1.7.5-2
 ocl-icd 2.3.2-2
 oniguruma 6.9.9-1
 openal 1.23.1-2
@@ -475,7 +477,7 @@ python 3.12.7-1
 python-certifi 2024.08.30-1
 python-charset-normalizer 3.4.0-1
 python-gobject 3.50.0-1
-python-idna 3.8-1
+python-idna 3.10-1
 python-packaging 24.1-1
 python-requests 2.32.3-1
 python-urllib3 1.26.20-1
@@ -499,7 +501,7 @@ rustup 1.27.1-1
 sassc 3.6.2-5
 sbc 2.0-2
 sdbus-cpp 2.0.0-1
-sdl2 2.30.8-1
+sdl2 2.30.9-1
 seatd 0.9.0-1
 sed 4.9-3
 serd 0.32.2-1
@@ -530,7 +532,7 @@ systemd-libs 256.7-1
 systemd-sysvcompat 256.7-1
 tar 1.35-2
 tdb 1.4.12-1
-telegram-desktop 5.6.3-1
+telegram-desktop 5.7.1-1
 texinfo 7.1.1-1
 tinysparql 3.8.0-1
 tmux 3.5_a-1
@@ -612,7 +614,7 @@ yadm 3.2.2-2
 yay 12.4.2-1
 yay-debug 12.4.2-1
 yazi 0.3.3-1
-yt-dlp 2024.10.22-1
+yt-dlp 2024.11.04-1
 z 1.12-1
 zen-browser-avx2-bin 1.0.1.a.17-1
 zeromq 4.3.5-2

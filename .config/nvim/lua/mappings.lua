@@ -346,7 +346,7 @@ map(
 map(MODE.normal, "<leader>n", "<cmd> NoiceAll <CR>", { desc = "messages (Noice)" })
 
 ---------------------------------------
--- REST
+-- HTTP CLIENT `kulala`
 ---------------------------------------
 map(MODE.normal, "<leader>rr", "<cmd>lua require('kulala').run()<cr>", { desc = "Execute current request" })
 
