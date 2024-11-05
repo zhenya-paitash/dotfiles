@@ -1,6 +1,5 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export ANTHROPIC_API_KEY:sk\x2dant\x2dapi03\x2d6fLjmQhbH2lfBv4y5plB5i_zW6y6NK1lEYIZoE1VdYeSbLZ5tuUyXZLvxf6de1uNqs\x2d6He7Hx\x2d0tvPoPzgQhsQ\x2dHzJb5QAA
 SETUVAR --export ATAC_KEY_BINDINGS:/home/zh/\x2econfig/atac/key_bindings_templates/vim_key_bindings\x2etoml
 SETUVAR --export ATAC_MAIN_DIR:/home/zh/\x2econfig/atac/
 SETUVAR --export ATAC_THEME:/home/zh/\x2econfig/atac/themes/postman_theme\x2etoml
