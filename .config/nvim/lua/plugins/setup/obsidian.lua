@@ -31,7 +31,7 @@ return {
       "<leader>oe",
       function()
         -- TODO: check if `obsidian plugin run`
-        require("obsidian")
+        require "obsidian"
         vim.cmd "tabnew"
         vim.cmd "tcd ~/obsidian/zhenyapaitash"
         require("nvim-tree.api").tree.open()
@@ -308,6 +308,7 @@ return {
           -- ObsidianBlockID = { italic = true, fg = "#F9C767" },
           -- ObsidianHighlightText = { bg = "#D588F7" },
 
+          -- *my everforest theme*
           ObsidianTodo = { bold = true, fg = "#D095B1" },
           ObsidianDone = { bold = true, fg = "#7AB2AB" },
           ObsidianRightArrow = { bold = true, fg = "#D095B1" },

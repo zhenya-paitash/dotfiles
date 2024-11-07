@@ -379,23 +379,23 @@ return {
     opts = require("plugins.setup.oil").opts,
   },
 
-  {
-    "yetone/avante.nvim",
-    event = "VeryLazy",
-    -- lazy = false,
-    version = false, -- set this if you want to always pull the latest change
-    opts = {
-      mappings = {
-        --- @class AvanteConflictMappings
-        submit = { insert = "<leader>s" },
-      },
-    },
-    build = "make", -- build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false" -- for windows (if you want to build from source then do `make BUILD_FROM_SOURCE=true`)
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter",
-      "stevearc/dressing.nvim",
-      "nvim-lua/plenary.nvim",
-      "MunifTanjim/nui.nvim",
-    },
-  },
+  -- {
+  --   "yetone/avante.nvim",
+  --   event = "VeryLazy",
+  --   -- lazy = false,
+  --   version = false, -- set this if you want to always pull the latest change
+  --   opts = {
+  --     mappings = {
+  --       --- @class AvanteConflictMappings
+  --       submit = { insert = "<leader>s" },
+  --     },
+  --   },
+  --   build = "make", -- build = "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false" -- for windows (if you want to build from source then do `make BUILD_FROM_SOURCE=true`)
+  --   dependencies = {
+  --     "nvim-treesitter/nvim-treesitter",
+  --     "stevearc/dressing.nvim",
+  --     "nvim-lua/plenary.nvim",
+  --     "MunifTanjim/nui.nvim",
+  --   },
+  -- },
 }

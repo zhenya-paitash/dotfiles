@@ -36,7 +36,7 @@ bluez 5.79-1
 bluez-libs 5.79-1
 bluez-utils 5.79-1
 boost-libs 1.86.0-3
-brave-bin 1:1.71.121-1
+brave-bin 1:1.71.123-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
 brotli 1.1.0-2
@@ -56,7 +56,7 @@ cliphist 1:0.6.1-1
 containerd 1.7.23-1
 coreutils 9.5-2
 cryptsetup 2.7.5-1
-curl 8.10.1-2
+curl 8.11.0-1
 dav1d 1.4.3-1
 db5.3 5.3.28-5
 dbus 1.14.10-2
@@ -89,7 +89,7 @@ fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
 findutils 4.10.0-2
-firefox 132.0-1
+firefox 132.0.1-1
 fish 3.7.1-2
 fisher 4.4.5-1
 flac 1.4.3-2
@@ -123,12 +123,12 @@ glslang 14.3.0-1
 glu 9.0.3-2
 gmp 6.3.0-2
 gnupg 2.4.6-1
-gnutls 3.8.7-1
+gnutls 3.8.8-1
 go 2:1.23.2-1
 gobject-introspection-runtime 1.82.0-1
-google-chrome 130.0.6723.91-1
+google-chrome 130.0.6723.116-1
 gperftools 2.16-1
-gpgme 1.23.2-6
+gpgme 1.24.0-1
 gpm 1.20.7.r38.ge82d1a6-6
 graphene 1.10.8-2
 graphite 1:1.3.14-4
@@ -160,7 +160,7 @@ hidapi 0.14.0-3
 highway 1.2.0-1
 http-parser 2.9.4-2
 hunspell 1.7.2-2
-hwdata 0.388-1
+hwdata 0.389-1
 hyprcursor 0.1.10-1
 hyprland 0.44.1-2
 hyprlang 0.5.3-1
@@ -193,7 +193,7 @@ kitty 0.37.0-1
 kitty-shell-integration 0.37.0-1
 kitty-terminfo 0.37.0-1
 kmod 33-3
-kpipewire 6.2.2-1
+kpipewire 6.2.3-1
 krb5 1.21.3-1
 kstatusnotifieritem 6.7.0-1
 kwindowsystem 6.7.0-1
@@ -318,7 +318,7 @@ libsoxr 0.1.3-4
 libssh 0.11.1-1
 libssh2 1.11.0-1
 libstemmer 2.2.0-2
-libsysprof-capture 47.0-1
+libsysprof-capture 47.1-1
 libtasn1 4.19.0-2
 libteam 1.32-2
 libtermkey 0.22-3
@@ -351,7 +351,7 @@ libxau 1.0.11-3
 libxcb 1.17.0-1
 libxcomposite 0.4.6-2
 libxcrypt 4.4.36-2
-libxcursor 1.2.2-1
+libxcursor 1.2.3-1
 libxcvt 0.1.2-2
 libxdamage 1.1.6-2
 libxdg-basedir 1.2.3-2
@@ -460,7 +460,7 @@ pipewire-alsa 1:1.2.6-1
 pipewire-audio 1:1.2.6-1
 pipewire-jack 1:1.2.6-1
 pipewire-pulse 1:1.2.6-1
-pixman 0.43.4-1
+pixman 0.44.0-1
 pkgconf 2.1.1-1
 polkit 125-1
 popt 1.19-2
@@ -532,7 +532,7 @@ systemd-libs 256.7-1
 systemd-sysvcompat 256.7-1
 tar 1.35-2
 tdb 1.4.12-1
-telegram-desktop 5.7.1-1
+telegram-desktop 5.7.2-1
 texinfo 7.1.1-1
 tinysparql 3.8.0-1
 tmux 3.5_a-1
@@ -556,7 +556,7 @@ ttf-nerd-fonts-symbols-common 3.2.1-1
 tzdata 2024b-2
 uchardet 0.0.8-3
 unibilium 2.1.1-2
-unrar 1:7.0.9-1
+unrar 1:7.1.1-1
 unzip 6.0-21
 upower 1.90.6-1
 util-linux 2.40.2-1
