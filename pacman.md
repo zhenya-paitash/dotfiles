@@ -7,7 +7,7 @@ adwaita-icon-theme 47.0-1
 adwaita-icon-theme-legacy 46.2-3
 alsa-card-profiles 1:1.2.6-1
 alsa-lib 1.2.12-1
-alsa-plugins 1:1.2.12-3
+alsa-plugins 1:1.2.12-4
 alsa-topology-conf 1.2.5.1-4
 alsa-ucm-conf 1.2.12-1
 alsa-utils 1.2.12-1
@@ -40,7 +40,7 @@ brave-bin 1:1.71.123-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
 brotli 1.1.0-2
-btop 1.4.0-3
+btop 1.4.0-4
 btrfs-progs 6.11-1
 bzip2 1.0.8-6
 c-ares 1.34.2-1
@@ -56,7 +56,7 @@ cliphist 1:0.6.1-1
 containerd 1.7.23-1
 coreutils 9.5-2
 cryptsetup 2.7.5-1
-curl 8.11.0-1
+curl 8.11.0-3
 dav1d 1.4.3-1
 db5.3 5.3.28-5
 dbus 1.14.10-2
@@ -70,7 +70,7 @@ desktop-file-utils 0.28-1
 device-mapper 2.03.28-1
 diffutils 3.10-1
 docker 1:27.3.1-1
-docker-compose 2.30.2-1
+docker-compose 2.30.3-1
 double-conversion 3.3.0-2
 duktape 2.7.0-7
 e2fsprogs 1.47.1-4
@@ -81,10 +81,10 @@ electron30 30.5.1-3
 electron31 31.7.3-1
 electron32 32.2.2-1
 expat 2.6.3-2
-eza 0.20.6-1
+eza 0.20.7-1
 fakeroot 1.36-1
 fd 10.2.0-1
-ffmpeg 2:7.0.2-3
+ffmpeg 2:7.1-2
 fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
@@ -140,9 +140,9 @@ gsettings-system-schemas 47.1-1
 gsm 1.0.22-2
 gssdp 1.6.3-2
 gst-plugin-pipewire 1:1.2.6-1
-gst-plugins-bad-libs 1.24.9-1
-gst-plugins-base-libs 1.24.9-1
-gstreamer 1.24.9-1
+gst-plugins-bad-libs 1.24.9-2
+gst-plugins-base-libs 1.24.9-2
+gstreamer 1.24.9-2
 gtest 1.15.2-1
 gtk-layer-shell 0.9.0-1
 gtk-update-icon-cache 1:4.16.5-1
@@ -154,7 +154,7 @@ guile 3.0.10-1
 gupnp 1:1.6.7-1
 gupnp-igd 1.6.0-1
 gzip 1.13-4
-harfbuzz 10.0.1-1
+harfbuzz 10.1.0-1
 hicolor-icon-theme 0.18-1
 hidapi 0.14.0-3
 highway 1.2.0-1
@@ -193,7 +193,7 @@ kitty 0.37.0-1
 kitty-shell-integration 0.37.0-1
 kitty-terminfo 0.37.0-1
 kmod 33-3
-kpipewire 6.2.3-1
+kpipewire 6.2.3-2
 krb5 1.21.3-1
 kstatusnotifieritem 6.7.0-1
 kwindowsystem 6.7.0-1
@@ -410,7 +410,7 @@ mobile-broadband-provider-info 20240407-1
 mpdecimal 4.0.0-2
 mpfr 4.2.1-4
 mpg123 1.32.9-1
-mpv 1:0.39.0-1
+mpv 1:0.39.0-3
 msgpack-c 6.1.0-2
 mtdev 1.1.7-1
 mujs 1.3.5-1
@@ -427,7 +427,7 @@ nwg-look 0.2.7-1
 obsidian 1.7.5-2
 ocl-icd 2.3.2-2
 oniguruma 6.9.9-1
-openal 1.23.1-2
+openal 1.23.1-3
 opencore-amr 0.1.6-2
 openexr 3.2.4-1
 openh264 2.4.1-1
@@ -492,10 +492,10 @@ rav1e 0.7.1-1
 readline 8.2.013-1
 ripgrep 14.1.1-1
 rnnoise 1:0.2-1
-rofi-lbonn-wayland-git 1.7.5.wayland3.r3.g47ae31eb-1
-rofi-lbonn-wayland-git-debug 1.7.5.wayland3.r3.g47ae31eb-1
+rofi-lbonn-wayland-git 1.7.5.wayland3.r50.g2baa809d-1
+rofi-lbonn-wayland-git-debug 1.7.5.wayland3.r50.g2baa809d-1
 rtkit 0.13-3
-rubberband 3.3.0-2
+rubberband 4.0.0-1
 runc 1.2.1-1
 rustup 1.27.1-1
 sassc 3.6.2-5
@@ -532,7 +532,7 @@ systemd-libs 256.7-1
 systemd-sysvcompat 256.7-1
 tar 1.35-2
 tdb 1.4.12-1
-telegram-desktop 5.7.2-1
+telegram-desktop 5.7.2-2
 texinfo 7.1.1-1
 tinysparql 3.8.0-1
 tmux 3.5_a-1
@@ -579,7 +579,7 @@ wlroots 0.18.1-1
 wlroots0.17 0.17.4-3
 wpa_supplicant 2:2.11-2
 x264 3:0.164.r3108.31e19f9-2
-x265 3.6-1
+x265 4.0-1
 xcb-proto 1.17.0-2
 xcb-util 0.4.1-2
 xcb-util-cursor 0.1.5-1
@@ -602,7 +602,7 @@ xorg-setxkbmap 1.3.4-2
 xorg-xinput 1.6.4-2
 xorg-xkbcomp 1.4.7-1
 xorg-xprop 1.2.7-1
-xorg-xrandr 1.5.2-2
+xorg-xrandr 1.5.3-1
 xorg-xset 1.2.5-2
 xorg-xwayland 24.1.4-1
 xorgproto 2024.1-2
