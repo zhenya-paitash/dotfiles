@@ -10,4 +10,3 @@ simple-mtpfs-debug 0.4.0-1
 swww-debug 0.9.5-1
 yay 12.4.2-1
 yay-debug 12.4.2-1
-zen-browser-avx2-bin 1.0.1.a.17-1

@@ -54,6 +54,12 @@ map(MODE.normal, "<leader>tc", "<cmd> tabnew <CR>", { desc = "tab new", noremap 
 map(MODE.normal, "<leader>tx", "<cmd> tabclose <CR>", { desc = "tab close", noremap = true, silent = true })
 map(MODE.normal, "<leader>tn", "<cmd> tabn <CR>", { desc = "tab next", noremap = true, silent = true })
 map(MODE.normal, "<leader>tp", "<cmd> tabp <CR>", { desc = "tab prev", noremap = true, silent = true })
+-- return cursor position after `paste`
+map(MODE.normal, "<p>", function()
+  local row, col = table.unpack(vim.api.nvim_win_get_cursor(0))
+  vim.cmd "put"
+  vim.api.nvim_win_set_cursor(0, { row, col })
+end, { noremap = true, silent = true })
 
 -- MODE: visual
 map(MODE.visual, ">", ">gv", { desc = "indent left", noremap = true, silent = true })
@@ -354,4 +360,3 @@ map(MODE.normal, "<leader>rr", "<cmd>lua require('kulala').run()<cr>", { desc = 
 -- OIL.NVIM
 ---------------------------------------
 map(MODE.normal, "<leader>-", "<cmd>lua require('oil').toggle_float()<cr>", { desc = "buffer file explorer(Oil.nvim)" })
-
