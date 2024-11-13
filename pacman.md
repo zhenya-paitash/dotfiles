@@ -88,7 +88,7 @@ fftw 3.3.10-7
 file 5.45-1
 filesystem 2024.04.07-1
 findutils 4.10.0-2
-firefox 132.0.1-1
+firefox 132.0.2-1
 fish 3.7.1-2
 fisher 4.4.5-1
 flac 1.4.3-2
@@ -125,7 +125,7 @@ gnupg 2.4.6-1
 gnutls 3.8.8-1
 go 2:1.23.2-1
 gobject-introspection-runtime 1.82.0-1
-google-chrome 130.0.6723.116-1
+google-chrome 131.0.6778.69-1
 gperftools 2.16-1
 gpgme 1.24.0-1
 gpm 1.20.7.r38.ge82d1a6-6
@@ -139,9 +139,9 @@ gsettings-system-schemas 47.1-1
 gsm 1.0.22-2
 gssdp 1.6.3-2
 gst-plugin-pipewire 1:1.2.6-1
-gst-plugins-bad-libs 1.24.9-2
-gst-plugins-base-libs 1.24.9-2
-gstreamer 1.24.9-2
+gst-plugins-bad-libs 1.24.9-3
+gst-plugins-base-libs 1.24.9-3
+gstreamer 1.24.9-3
 gtest 1.15.2-1
 gtk-layer-shell 0.9.0-1
 gtk-update-icon-cache 1:4.16.5-1
@@ -165,11 +165,11 @@ hyprland 0.45.0-1
 hyprlang 0.5.3-1
 hyprpicker 0.4.1-1
 hyprpicker-debug 0.3.0-1
-hyprutils 0.2.4-1
+hyprutils 0.2.5-1
 hyprwayland-scanner 0.4.2-1
 iana-etc 20241016-1
 icu 75.1-1
-imagemagick 7.1.1.40-1
+imagemagick 7.1.1.40-2
 imath 3.1.12-1
 iproute2 6.11.0-1
 iptables 1:1.8.10-2
@@ -244,7 +244,7 @@ libgcrypt 1.11.0-2
 libgirepository 1.82.0-1
 libgit2 1:1.8.4-1
 libglvnd 1.7.0-1
-libgpg-error 1.50-1
+libgpg-error 1.51-1
 libgudev 238-1
 libice 1.1.1-3
 libidn2 2.3.7-1
@@ -255,7 +255,7 @@ libinih 58-1
 libinput 1.26.2-1
 libisl 0.27-1
 libjpeg-turbo 3.0.4-1
-libjxl 0.11.0-1
+libjxl 0.11.0-2
 libksba 1.6.7-1
 liblc3 1.1.1-1
 libldac 2.0.2.3-2
@@ -384,7 +384,7 @@ linux-api-headers 6.10-1
 linux-firmware 20241111.b5885ec5-1
 linux-firmware-whence 20241111.b5885ec5-1
 linux-lts 6.6.60-1
-linux-zen 6.11.6.zen1-1
+linux-zen 6.11.7.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.33-1
@@ -428,7 +428,7 @@ ocl-icd 2.3.2-2
 oniguruma 6.9.9-1
 openal 1.23.1-3
 opencore-amr 0.1.6-2
-openexr 3.2.4-1
+openexr 3.3.2-1
 openh264 2.4.1-1
 openjpeg2 2.5.2-1
 openssh 9.9p1-2
@@ -519,7 +519,7 @@ speexdsp 1.2.1-2
 spirv-tools 2024.2-1
 sqlite 3.46.1-1
 sratom 0.6.16-1
-srt 1.5.3-2
+srt 1.5.4-1
 starship 1.21.1-1
 startup-notification 0.12-8
 sudo 1.9.16-1
