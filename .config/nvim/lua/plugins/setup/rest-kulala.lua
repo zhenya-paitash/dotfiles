@@ -1,4 +1,8 @@
 return {
+  init = function()
+    vim.filetype.add { extension = { ["http"] = "http" } }
+  end,
+
   config = function()
     require("kulala").setup {
       -- https://kulala.mwco.app/docs/getting-started/configuration-options

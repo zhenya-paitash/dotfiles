@@ -198,23 +198,17 @@ return {
   -- { -- HTTP CLIENT
   --   "rest-nvim/rest.nvim",
   --   ft = { "http" },
-  --   config = require("plugins.setup.rest-nvim").config,
-  --   dependencies = {
-  --     "vhyrro/luarocks.nvim",
-  --     priority = 1000,
-  --     config = true,
-  --     opts = { rocks = { "lua-curl", "nvim-nio", "mimetypes", "xml2lua" } },
-  --   },
+  --   config = require("plugins.setup.rest-nvim-new").config,
+  --   -- dependencies = {},
+  --   -- build = "",
   -- },
 
-  -- { -- HTTP CLIENT `kulala`
-  --   "mistweaverco/kulala.nvim",
-  --   ft = { "http" },
-  --   config = require("plugins.setup.rest-kulala").config,
-  --   init = function()
-  --     vim.filetype.add { extension = { ["http"] = "http" } }
-  --   end,
-  -- },
+  { -- HTTP CLIENT `kulala`
+    "mistweaverco/kulala.nvim",
+    ft = { "http" },
+    init = require("plugins.setup.rest-kulala").init,
+    config = require("plugins.setup.rest-kulala").config,
+  },
 
   -- { -- HTTP CLIENT `atac`
   --   "NachoNievaG/atac.nvim",
