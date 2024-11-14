@@ -1,3 +1,5 @@
 return {
-  opts = {},
+  opts = {
+    float = { max_width = 120 },
+  },
 }

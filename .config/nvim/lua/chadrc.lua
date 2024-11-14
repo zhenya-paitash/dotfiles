@@ -5,8 +5,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "ayu_dark",
-  theme_toggle = { "ayu_dark", "ayu_dark" },
+  theme = "tokyodark",
+  theme_toggle = { "tokyodark", "tokyodark" },
   transparency = false,
   lsp_semantic_tokens = true,
   hl_override = {

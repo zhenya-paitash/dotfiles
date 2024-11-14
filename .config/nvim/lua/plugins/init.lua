@@ -203,12 +203,12 @@ return {
   --   -- build = "",
   -- },
 
-  { -- HTTP CLIENT `kulala`
-    "mistweaverco/kulala.nvim",
-    ft = { "http" },
-    init = require("plugins.setup.rest-kulala").init,
-    config = require("plugins.setup.rest-kulala").config,
-  },
+  -- { -- HTTP CLIENT `kulala`
+  --   "mistweaverco/kulala.nvim",
+  --   ft = { "http" },
+  --   init = require("plugins.setup.rest-kulala").init,
+  --   config = require("plugins.setup.rest-kulala").config,
+  -- },
 
   -- { -- HTTP CLIENT `atac`
   --   "NachoNievaG/atac.nvim",
