@@ -31,7 +31,8 @@ return {
       },
       { -- AUTOCLOSE & AUTORENAME HTML TAGS
         "windwp/nvim-ts-autotag",
-        config = require("plugins.setup.nvim-ts-autotag").config,
+        event = "BufReadPre",
+        init = require("plugins.setup.nvim-ts-autotag").init,
       },
       { -- HIGHLIGHT VARS UNDER CURSOR
         "RRethy/vim-illuminate",

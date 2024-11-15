@@ -130,7 +130,7 @@ glu 9.0.3-2
 gmp 6.3.0-2
 gnupg 2.4.6-1
 gnutls 3.8.8-1
-go 2:1.23.2-1
+go 2:1.23.3-1
 gobject-introspection 1.82.0-1
 gobject-introspection-runtime 1.82.0-1
 gperftools 2.16-1
@@ -406,7 +406,7 @@ linux-api-headers 6.10-1
 linux-firmware 20241111.b5885ec5-1
 linux-firmware-whence 20241111.b5885ec5-1
 linux-lts 6.6.61-1
-linux-zen 6.11.7.zen1-1
+linux-zen 6.11.8.zen1-2
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.33-1
@@ -571,9 +571,9 @@ sudo 1.9.16-1
 svt-av1 2.2.1-1
 swww 0.9.5-2
 swww-debug 0.9.5-1
-systemd 256.7-1
-systemd-libs 256.7-1
-systemd-sysvcompat 256.7-1
+systemd 256.8-1
+systemd-libs 256.8-1
+systemd-sysvcompat 256.8-1
 tar 1.35-2
 tdb 1.4.12-1
 telegram-desktop 5.7.2-3

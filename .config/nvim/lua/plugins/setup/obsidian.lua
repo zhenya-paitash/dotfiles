@@ -297,6 +297,7 @@ return {
         block_ids = { hl_group = "ObsidianBlockID" },
         hl_groups = {
           -- The options are passed directly to `vim.api.nvim_set_hl()`. See `:help nvim_set_hl`.
+          -- *DEFAULT THEME*
           -- ObsidianTodo = { bold = true, fg = "#D2C399" },
           -- ObsidianDone = { bold = true, fg = "#F9C767" },
           -- ObsidianRightArrow = { bold = true, fg = "#D2C399" },
@@ -308,17 +309,29 @@ return {
           -- ObsidianBlockID = { italic = true, fg = "#F9C767" },
           -- ObsidianHighlightText = { bg = "#D588F7" },
 
-          -- *my everforest theme*
-          ObsidianTodo = { bold = true, fg = "#D095B1" },
-          ObsidianDone = { bold = true, fg = "#7AB2AB" },
-          ObsidianRightArrow = { bold = true, fg = "#D095B1" },
-          ObsidianTilde = { bold = true, fg = "#CEB279" },
-          ObsidianBullet = { bold = true, fg = "#7AB2AB" },
-          ObsidianRefText = { underline = true, fg = "#7EB78C" },
-          ObsidianExtLinkIcon = { fg = "#7EB78C" },
-          ObsidianTag = { italic = true, fg = "#7AB2AB" },
-          ObsidianBlockID = { italic = true, fg = "#7AB2AB" },
-          ObsidianHighlightText = { bg = "#E0837E" },
+          -- -- *EVERFOREST THEME*
+          -- ObsidianTodo = { bold = true, fg = "#D095B1" },
+          -- ObsidianDone = { bold = true, fg = "#7AB2AB" },
+          -- ObsidianRightArrow = { bold = true, fg = "#D095B1" },
+          -- ObsidianTilde = { bold = true, fg = "#CEB279" },
+          -- ObsidianBullet = { bold = true, fg = "#7AB2AB" },
+          -- ObsidianRefText = { underline = true, fg = "#7EB78C" },
+          -- ObsidianExtLinkIcon = { fg = "#7EB78C" },
+          -- ObsidianTag = { italic = true, fg = "#7AB2AB" },
+          -- ObsidianBlockID = { italic = true, fg = "#7AB2AB" },
+          -- ObsidianHighlightText = { bg = "#E0837E" },
+
+          -- *YsDark THEME*
+          ObsidianTodo = { bold = true, fg = "#D2C399" },
+          ObsidianDone = { bold = true, fg = "#CBA1A9" },
+          ObsidianRightArrow = { bold = true, fg = "#D2C399" },
+          ObsidianTilde = { bold = true, fg = "#85B2EE" },
+          ObsidianBullet = { bold = true, fg = "#CBA1A9" },
+          ObsidianRefText = { underline = true, fg = "#85AAFC" },
+          ObsidianExtLinkIcon = { fg = "#85AAFC" },
+          ObsidianTag = { italic = true, fg = "#CBA1A9" },
+          ObsidianBlockID = { italic = true, fg = "#CBA1A9" },
+          ObsidianHighlightText = { bg = "#D588F7" },
         },
       },
 
