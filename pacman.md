@@ -81,8 +81,8 @@ efibootmgr 18-3
 efivar 39-1
 electron28 28.3.3-3
 electron30 30.5.1-3
-electron31 31.7.3-1
-electron32 32.2.4-1
+electron31 31.7.5-1
+electron32 32.2.5-1
 expat 2.6.4-1
 eza 0.20.8-1
 fakeroot 1.36-1
@@ -176,7 +176,7 @@ hyprland 0.45.0-1
 hyprlang 0.5.3-1
 hyprpicker 0.4.1-1
 hyprpicker-debug 0.3.0-1
-hyprutils 0.2.5-1
+hyprutils 0.2.6-1
 hyprwayland-scanner 0.4.2-1
 iana-etc 20241016-1
 icu 75.1-1
@@ -458,7 +458,7 @@ oniguruma 6.9.9-1
 openal 1.23.1-3
 opencore-amr 0.1.6-2
 openexr 3.3.2-1
-openh264 2.4.1-1
+openh264 2.5.0-1
 openjpeg2 2.5.2-1
 openssh 9.9p1-2
 openssl 3.4.0-1
@@ -540,7 +540,7 @@ rnnoise 1:0.2-1
 rofi-lbonn-wayland-git 1.7.5.wayland3.r50.g2baa809d-1
 rtkit 0.13-3
 rubberband 4.0.0-1
-runc 1.2.1-1
+runc 1.2.2-1
 rustup 1.27.1-1
 sassc 3.6.2-5
 sbc 2.0-2
