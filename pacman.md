@@ -13,7 +13,7 @@ alsa-ucm-conf 1.2.12-1
 alsa-utils 1.2.12-1
 amd-ucode 20241111.b5885ec5-1
 aom 3.10.0-1
-aquamarine 0.4.5-1
+aquamarine 0.5.0-1
 archlinux-keyring 20241015-1
 argon2 20190702-6
 at-spi2-core 2.54.0-2
@@ -104,7 +104,7 @@ fribidi 1.0.16-1
 fuse-common 3.16.2-1
 fuse2 2.9.9-5
 fuse3 3.16.2-1
-fzf 0.55.0-1
+fzf 0.56.3-1
 gawk 5.3.1-1
 gc 8.2.8-2
 gcc 14.2.1+r134+gab884fffe3fc-1
@@ -172,7 +172,7 @@ http-parser 2.9.4-2
 hunspell 1.7.2-2
 hwdata 0.389-1
 hyprcursor 0.1.10-1
-hyprland 0.45.0-1
+hyprland 0.45.0-2
 hyprlang 0.5.3-1
 hyprpicker 0.4.1-1
 hyprpicker-debug 0.3.0-1
@@ -181,7 +181,7 @@ hyprwayland-scanner 0.4.2-1
 iana-etc 20241016-1
 icu 75.1-1
 ijs 0.35-6
-imagemagick 7.1.1.40-2
+imagemagick 7.1.1.41-1
 imath 3.1.12-1
 iproute2 6.11.0-1
 iptables 1:1.8.10-2
@@ -517,14 +517,14 @@ python-mako 1.3.6-1
 python-markdown 3.7-1
 python-markupsafe 2.1.5-2
 python-more-itertools 10.3.0-1
-python-packaging 24.1-1
+python-packaging 24.2-1
 python-platformdirs 4.3.6-1
 python-pygments 2.18.0-1
 python-requests 2.32.3-1
 python-setuptools 1:75.2.0-2
 python-tqdm 4.67.0-1
-python-urllib3 1.26.20-1
-python-wheel 0.44.0-2
+python-urllib3 1.26.20-3
+python-wheel 0.45.0-1
 qbittorrent 5.0.1-1
 qt6-base 6.8.0-1
 qt6-declarative 6.8.0-6
@@ -567,7 +567,7 @@ sratom 0.6.16-1
 srt 1.5.4-1
 starship 1.21.1-1
 startup-notification 0.12-8
-sudo 1.9.16-1
+sudo 1.9.16.p1-1
 svt-av1 2.2.1-1
 swww 0.9.5-2
 swww-debug 0.9.5-1

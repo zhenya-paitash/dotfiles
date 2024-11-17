@@ -30,7 +30,6 @@ M.ui = {
   },
 }
 
-
 -- M.plugins = {
 --   options = {},
 --   ["nvim-telescope/telescope.nvim"] = function()
