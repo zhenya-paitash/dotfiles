@@ -12,7 +12,7 @@ alsa-topology-conf 1.2.5.1-4
 alsa-ucm-conf 1.2.12-1
 alsa-utils 1.2.12-1
 amd-ucode 20241111.b5885ec5-1
-aom 3.10.0-1
+aom 3.11.0-1
 aquamarine 0.5.0-1
 archlinux-keyring 20241015-1
 argon2 20190702-6
@@ -393,7 +393,7 @@ libxrender 0.9.11-2
 libxshmfence 1.3.2-2
 libxslt 1.1.42-1
 libxss 1.2.4-2
-libxt 1.3.0-2
+libxt 1.3.1-1
 libxtst 1.2.5-1
 libxv 1.0.12-2
 libxxf86vm 1.1.5-2
@@ -405,7 +405,7 @@ lilv 0.24.24-2
 linux-api-headers 6.10-1
 linux-firmware 20241111.b5885ec5-1
 linux-firmware-whence 20241111.b5885ec5-1
-linux-lts 6.6.61-1
+linux-lts 6.6.62-1
 linux-zen 6.11.8.zen1-2
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
@@ -455,7 +455,7 @@ nwg-look 0.2.7-1
 obsidian 1.7.6-1
 ocl-icd 2.3.2-2
 oniguruma 6.9.9-1
-openal 1.23.1-3
+openal 1.24.0-1
 opencore-amr 0.1.6-2
 openexr 3.3.2-1
 openh264 2.5.0-1
@@ -525,7 +525,7 @@ python-setuptools 1:75.2.0-2
 python-tqdm 4.67.0-1
 python-urllib3 1.26.20-3
 python-wheel 0.45.0-1
-qbittorrent 5.0.1-1
+qbittorrent 5.0.2-1
 qt6-base 6.8.0-1
 qt6-declarative 6.8.0-6
 qt6-imageformats 6.8.0-1
@@ -576,7 +576,7 @@ systemd-libs 256.8-1
 systemd-sysvcompat 256.8-1
 tar 1.35-2
 tdb 1.4.12-1
-telegram-desktop 5.7.2-3
+telegram-desktop 5.8.1-1
 texinfo 7.1.1-1
 tinysparql 3.8.0-1
 tmux 3.5_a-1

@@ -5,8 +5,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "tundra",
-  theme_toggle = { "tundra", "tundra" },
+  theme = "catppuccin",
+  theme_toggle = { "tundra", "catppuccin" },
   transparency = false,
   lsp_semantic_tokens = true,
   hl_override = {
