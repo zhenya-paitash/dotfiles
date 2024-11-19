@@ -392,4 +392,9 @@ return {
   --     "MunifTanjim/nui.nvim",
   --   },
   -- },
+
+  { -- POMODORO TIMER
+    "nvzone/timerly",
+    cmd = "TimerlyToggle",
+  },
 }

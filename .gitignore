@@ -28,6 +28,7 @@
 
 !.config/ags**
 .config/ags/src/styles/themes/_generated.scss
+!.config/bat**
 !.config/btop**
 .config/btop.log
 !.config/firefox**

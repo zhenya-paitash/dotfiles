@@ -5,9 +5,9 @@
 local M = {}
 
 M.base46 = {
-  theme = "catppuccin",
-  theme_toggle = { "tundra", "catppuccin" },
-  transparency = false,
+  theme = "everforest",
+  theme_toggle = { "tundra", "everforest" },
+  transparency = true,
   lsp_semantic_tokens = true,
   hl_override = {
     Comment = { italic = true },

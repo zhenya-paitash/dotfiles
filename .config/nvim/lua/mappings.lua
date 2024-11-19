@@ -359,4 +359,11 @@ map(MODE.normal, "<leader>rr", "<cmd>lua require('kulala').run()<cr>", { desc = 
 ---------------------------------------
 -- OIL.NVIM
 ---------------------------------------
-map(MODE.normal, "<leader>-", "<cmd>lua require('oil').toggle_float()<cr>", { desc = "buffer file explorer(Oil.nvim)" })
+map(MODE.normal, "<leader>-", "<cmd>lua require('oil').toggle_float()<cr>", { desc = "buffer file explorer (Oil.nvim)" })
+
+
+---------------------------------------
+-- TIMERLY
+---------------------------------------
+map(MODE.normal, "<leader>ti", "<cmd> TimerlyToggle <CR>", { desc = "timer toggle (Timerly)" })
+

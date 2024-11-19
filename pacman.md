@@ -172,7 +172,7 @@ http-parser 2.9.4-2
 hunspell 1.7.2-2
 hwdata 0.389-1
 hyprcursor 0.1.10-1
-hyprland 0.45.0-2
+hyprland 0.45.1-2
 hyprlang 0.5.3-1
 hyprpicker 0.4.1-1
 hyprpicker-debug 0.3.0-1
@@ -295,7 +295,7 @@ libnfnetlink 1.0.2-2
 libnftnl 1.2.8-1
 libnghttp2 1.64.0-1
 libnghttp3 1.6.0-1
-libngtcp2 1.8.1-1
+libngtcp2 1.9.0-1
 libnice 0.1.22-1
 libnl 3.11.0-1
 libnm 1.50.0-1
@@ -406,7 +406,7 @@ linux-api-headers 6.10-1
 linux-firmware 20241111.b5885ec5-1
 linux-firmware-whence 20241111.b5885ec5-1
 linux-lts 6.6.62-1
-linux-zen 6.11.8.zen1-2
+linux-zen 6.11.9.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.33-1
@@ -452,7 +452,7 @@ npth 1.7-1
 nspr 4.36-1
 nss 3.106-1
 nwg-look 0.2.7-1
-obsidian 1.7.6-1
+obsidian 1.7.7-1
 ocl-icd 2.3.2-2
 oniguruma 6.9.9-1
 openal 1.24.0-1
@@ -496,7 +496,7 @@ popt 1.19-2
 portaudio 1:19.7.0-3
 postgresql 16.3-4
 postgresql-libs 16.3-4
-power-profiles-daemon 0.23-1
+power-profiles-daemon 0.23-2
 powertop 2.15-2
 procps-ng 4.0.4-3
 protobuf 28.3-1
@@ -660,7 +660,7 @@ yadm 3.2.2-2
 yay 12.4.2-1
 yay-debug 12.4.2-1
 yazi 0.3.3-1
-yt-dlp 2024.11.04-1
+yt-dlp 2024.11.18-1
 z 1.12-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
