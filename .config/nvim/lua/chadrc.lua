@@ -12,7 +12,7 @@ M.base46 = {
   hl_override = {
     Comment = { italic = true },
     ["@comment"] = { italic = true },
-    CursorLineNr = { fg = "#789AE5" },
+    CursorLineNr = { fg = "#82BE91" },
   },
   hl_add = {
     NvimTreeOpenedFolderName = { fg = "green", bold = true },
@@ -21,7 +21,7 @@ M.base46 = {
 
 M.ui = {
   statusline = {
-    theme = "minimal",
+    -- theme = "minimal",
     separator_style = "round",
   },
   tabufline = {

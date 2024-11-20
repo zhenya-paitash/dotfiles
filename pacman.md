@@ -172,7 +172,7 @@ http-parser 2.9.4-2
 hunspell 1.7.2-2
 hwdata 0.389-1
 hyprcursor 0.1.10-1
-hyprland 0.45.1-2
+hyprland 0.45.2-1
 hyprlang 0.5.3-1
 hyprpicker 0.4.1-1
 hyprpicker-debug 0.3.0-1
@@ -183,7 +183,7 @@ icu 75.1-1
 ijs 0.35-6
 imagemagick 7.1.1.41-1
 imath 3.1.12-1
-iproute2 6.11.0-1
+iproute2 6.12.0-1
 iptables 1:1.8.10-2
 iputils 20240905-1
 iso-codes 4.17.0-1
@@ -262,7 +262,7 @@ libgit2 1:1.8.4-1
 libglvnd 1.7.0-1
 libgpg-error 1.51-1
 libgudev 238-1
-libheif 1.19.3-1
+libheif 1.19.5-1
 libice 1.1.1-3
 libidn 1.42-1
 libidn2 2.3.7-1
@@ -576,7 +576,7 @@ systemd-libs 256.8-1
 systemd-sysvcompat 256.8-1
 tar 1.35-2
 tdb 1.4.12-1
-telegram-desktop 5.8.1-1
+telegram-desktop 5.8.2-1
 texinfo 7.1.1-1
 tinysparql 3.8.0-1
 tmux 3.5_a-1

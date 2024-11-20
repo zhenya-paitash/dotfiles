@@ -7,16 +7,16 @@ return {
     -- local fg_symbols = "#FFEC9E"
 
     -- *EVERFOREST THEME*
-    -- local fg_left = "#87B7C1"
-    -- local fg_right = "#E46C8F"
-    -- local fg_icons = "#BC9EDB"
-    -- local fg_symbols = "#E46C8F"
+    local fg_left = "#D3C6AA"
+    local fg_right = "#D9BA7E"
+    local fg_icons = "#82BE91"
+    local fg_symbols = "#3C4841"
 
     -- *YsDark THEME*
-    local fg_left = "#6A97BD"
-    local fg_icons = "#789AE5"
-    local fg_right = "#C3A4B0"
-    local fg_symbols = "#C3A4B0"
+    -- local fg_left = "#6A97BD"
+    -- local fg_icons = "#789AE5"
+    -- local fg_right = "#C3A4B0"
+    -- local fg_symbols = "#C3A4B0"
 
     -- vim.cmd("hi CursorLineNr guifg=" .. fg_icons)
 

@@ -182,12 +182,12 @@ return {
   --   },
   -- },
 
-  { -- LSP CONTEXT: lua > plugins > init.lua > []return
-    "utilyre/barbecue.nvim",
-    event = "BufReadPost",
-    config = require("plugins.setup.barbecue").config,
-    dependencies = { "SmiteshP/nvim-navic" },
-  },
+  -- { -- WINBAR LSP CONTEXT: lua > plugins > init.lua > []return
+  --   "utilyre/barbecue.nvim",
+  --   event = "BufReadPost",
+  --   config = require("plugins.setup.barbecue").config,
+  --   dependencies = { "SmiteshP/nvim-navic" },
+  -- },
 
   { -- FOLDERS
     "kevinhwang91/nvim-ufo",
@@ -218,15 +218,15 @@ return {
   --   config = require("plugins.setup.atac").config,
   -- },
 
-  { -- ZEN MODE
-    "folke/zen-mode.nvim",
-    cmd = { "ZenMode" },
-    opts = require("plugins.setup.zen-mode").opts,
-    dependencies = { -- DIMMING INACTIVE CODE
-      "folke/twilight.nvim",
-      opts = require("plugins.setup.zen-mode").twilight_opts,
-    },
-  },
+  -- { -- ZEN MODE
+  --   "folke/zen-mode.nvim",
+  --   cmd = { "ZenMode" },
+  --   opts = require("plugins.setup.zen-mode").opts,
+  --   dependencies = { -- DIMMING INACTIVE CODE
+  --     "folke/twilight.nvim",
+  --     opts = require("plugins.setup.zen-mode").twilight_opts,
+  --   },
+  -- },
 
   { -- SCREENSHOTS
     "mistricky/codesnap.nvim",
@@ -238,14 +238,8 @@ return {
 
   { -- NOTES
     "epwalsh/obsidian.nvim",
-    -- event = {
-    --   "BufReadPre /home/zh/obsidian/**.md",
-    --   "BufNewFile /home/zh/obsidian/**.md",
-    -- },
-    -- ft = { "markdown" },
     keys = require("plugins.setup.obsidian").keys,
     config = require("plugins.setup.obsidian").config,
-    -- dependencies = { "nvim-lua/plenary.nvim" },
   },
 
   { -- UI

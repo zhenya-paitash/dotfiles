@@ -320,12 +320,12 @@ map(MODE.normal, "<leader>gc", "<cmd> DiffviewClose <CR>", { desc = "git close (
 -- end, { desc = ".md preview (Markdown Preview)" })
 -- map(MODE.normal, "<leader>mpc", "<cmd> MarkdownPreview <CR>", { desc = "create (Markdown Preview)" })
 -- map(MODE.normal, "<leader>mpx", "<cmd> MarkdownPreviewStop <CR>", { desc = "close (Markdown Preview)" })
-map(MODE.normal, "<leader>mp", "<cmd> Markview toggle <CR>", { desc = "md preview toggle (Markview)" })
+map(MODE.normal, "<leader>pm", "<cmd> Markview toggle <CR>", { desc = "markdown preview toggle (Markview)" })
 
 ---------------------------------------
 -- JSON
 ---------------------------------------
-map(MODE.normal, "<leader>jq", ":%!jq '.'<CR>")
+map(MODE.normal, "<leader>pj", ":%!jq '.'<CR>")
 
 ---------------------------------------
 -- REST.NVIM
@@ -359,11 +359,32 @@ map(MODE.normal, "<leader>rr", "<cmd>lua require('kulala').run()<cr>", { desc = 
 ---------------------------------------
 -- OIL.NVIM
 ---------------------------------------
-map(MODE.normal, "<leader>-", "<cmd>lua require('oil').toggle_float()<cr>", { desc = "buffer file explorer (Oil.nvim)" })
+map(
+  MODE.normal,
+  "<leader>-",
+  "<cmd>lua require('oil').toggle_float()<cr>",
+  { desc = "buffer file explorer (Oil.nvim)" }
+)
 
+---------------------------------------
+-- SHOWKEYS
+---------------------------------------
+map(MODE.normal, "<leader>pk", "<cmd> ShowkeysToggle <CR>", { desc = "show keys toggle (showkeys)" })
 
 ---------------------------------------
 -- TIMERLY
 ---------------------------------------
-map(MODE.normal, "<leader>ti", "<cmd> TimerlyToggle <CR>", { desc = "timer toggle (Timerly)" })
+map(MODE.normal, "<leader>pt", "<cmd> TimerlyToggle <CR>", { desc = "timer toggle (Timerly)" })
 
+---------------------------------------
+-- HARDTIME
+---------------------------------------
+map(MODE.normal, "<leader>pht", "<cmd> Hardtime toggle<cr>", { desc = "TOGGLE best practice (Hardtime)" })
+map(MODE.normal, "<leader>phe", "<cmd> Hardtime enable<cr>", { desc = "ON best practice (Hardtime)" })
+map(MODE.normal, "<leader>phd", "<cmd> Hardtime disable<cr>", { desc = "OFF best practice (Hardtime)" })
+map(MODE.normal, "<leader>phr", "<cmd> Hardtime report<cr>", { desc = "show report (Hardtime)" })
+
+---------------------------------------
+-- BARBECUE
+---------------------------------------
+map(MODE.normal, "<leader>pb", "<cmd> Barbecue toggle <CR>", { desc = "winbar toggle (Barbecue)" })
