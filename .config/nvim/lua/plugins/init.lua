@@ -1,4 +1,12 @@
 return {
+
+  ------------------------------------------------------------------------
+  --- LSP и Форматирование
+  ------------------------------------------------------------------------
+  -- `stevearc/conform.nvim`: Форматирование кода.
+  -- `neovim/nvim-lspconfig`: Конфигурация LSP.
+  -- `williamboman/mason.nvim`: Установщик LSP и других инструментов.
+
   { -- FORMATTERS
     "stevearc/conform.nvim",
     -- event = "BufWritePre", -- uncomment for format on save
@@ -19,6 +27,15 @@ return {
     "williamboman/mason.nvim",
     opts = require("plugins.setup.mason").opts,
   },
+
+  ------------------------------------------------------------------------
+  --- Работа с деревом и синтаксисом
+  ------------------------------------------------------------------------
+  -- `nvim-treesitter/nvim-treesitter`: Дерево синтаксиса и подсветка.
+  -- - `folke/ts-comments.nvim`: Контекстные комментарии.
+  -- - `windwp/nvim-ts-autotag`: Автозакрытие HTML-тегов.
+  -- - `RRethy/vim-illuminate`: Подсветка переменных под курсором.
+  -- - `nvim-treesitter/nvim-treesitter-textobjects`: Работа с текстовыми объектами.
 
   { -- TREESITTER
     "nvim-treesitter/nvim-treesitter",
@@ -51,15 +68,85 @@ return {
     },
   },
 
+  ------------------------------------------------------------------------
+  --- Файловая система
+  ------------------------------------------------------------------------
+  -- `nvim-tree/nvim-tree.lua`: Файловый менеджер.
+  -- `DreamMaoMao/yazi.nvim`: Альтернативный файловый менеджер.
+  -- `stevearc/oil.nvim`: Работа с буферами.
+
   { -- FILE EXPLORER
     "nvim-tree/nvim-tree.lua",
     opts = require("plugins.setup.nvim-tree").opts,
   },
 
+  { -- FILE MANAGER
+    "DreamMaoMao/yazi.nvim",
+    keys = { { "<leader>gy", "<cmd>Yazi<CR>", desc = "Toggle Yazi" } },
+  },
+
+  { -- BUFFER FILE EXPLORER
+    "stevearc/oil.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = require("plugins.setup.oil").opts,
+  },
+
+  ------------------------------------------------------------------------
+  --- Навигация
+  ------------------------------------------------------------------------
+  -- `folke/flash.nvim`: Улучшенная навигация.
+  -- `kylechui/nvim-surround`: Улучшенное редактирование окружений.
+  -- `mg979/vim-visual-multi`: Улучшенная многокурсорная навигация.
+  -- `nvim-telescope/telescope-fzf-native.nvim`: Улучшенный поиск в telescope с fzf.
+
   { -- NAVIGATION
     "folke/flash.nvim",
     opts = require("plugins.setup.flash").opts,
     keys = require("plugins.setup.flash").keys,
+  },
+
+  { -- PRO REDEFINITION
+    "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
+    config = require("plugins.setup.nvim-surround").config,
+  },
+
+  { -- MULTI-CURSOR
+    "mg979/vim-visual-multi",
+    -- event = "BufReadPost",
+    branch = "master",
+    keys = require("plugins.setup.vim-visual-multi").keys,
+    init = require("plugins.setup.vim-visual-multi").init,
+  },
+
+  { -- FZF
+    -- INFO: `:Telescope load_extension fzf` OR go to `$HOME/.local/share/nvim/lazy/telescope-fzf-native.nvim` and run `make`
+    "nvim-telescope/telescope-fzf-native.nvim",
+    event = "VeryLazy",
+    build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
+    config = function()
+      require("telescope").load_extension "fzf"
+    end,
+  },
+
+  ------------------------------------------------------------------------
+  --- Интерфейс
+  ------------------------------------------------------------------------
+  -- `folke/noice.nvim`: UI улучшения.
+  -- `folke/trouble.nvim`: Улучшенная работа с quickfix.
+  -- `folke/todo-comments.nvim`: TODO-комментарии.
+  -- `kevinhwang91/nvim-ufo`: Улучшенная работа с фолдерами.
+  -- `folke/persistence.nvim`: Сохранение/Восстановление состояния.
+
+  { -- UI
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    config = require("plugins.setup.ui").config,
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      -- "rcarriga/nvim-notify",
+    },
   },
 
   { -- BETTER QUICKFIX
@@ -75,19 +162,40 @@ return {
     opts = require("plugins.setup.todo-comments").opts,
   },
 
+  { -- FOLDERS
+    "kevinhwang91/nvim-ufo",
+    event = "BufReadPost",
+    config = require("plugins.setup.nvim-ufo").config,
+    dependencies = "kevinhwang91/promise-async",
+  },
+
+  { -- SESSIONS
+    "folke/persistence.nvim",
+    event = "BufReadPre",
+    opts = require("plugins.setup.presistence").opts,
+  },
+
+  ------------------------------------------------------------------------
+  --- Поиск и замена
+  ------------------------------------------------------------------------
+  -- `MagicDuck/grug-far.nvim`: Поиск и замена.
+
+  { -- SEARCH & REPLACE (NEW)
+    "MagicDuck/grug-far.nvim",
+    config = require("plugins.setup.grug-far").config,
+  },
+
+  ------------------------------------------------------------------------
+  --- Git и работа с версиями
+  ------------------------------------------------------------------------
+  -- `kdheepak/lazygit.nvim`: Интеграция с LazyGit.
+  -- `sindrets/diffview.nvim`: Просмотр изменений.
+
   { -- GIT
     "kdheepak/lazygit.nvim",
     cmd = { "LazyGit", "LazyGitConfig", "LazyGitCurrentFile", "LazyGitFilter", "LazyGitFilterCurrentFile" },
     config = require("plugins.setup.lazygit").config(),
     dependencies = { "nvim-lua/plenary.nvim" },
-  },
-
-  { -- MULTI-CURSOR
-    "mg979/vim-visual-multi",
-    -- event = "BufReadPost",
-    branch = "master",
-    keys = require("plugins.setup.vim-visual-multi").keys,
-    init = require("plugins.setup.vim-visual-multi").init,
   },
 
   { -- DIFF VIEW
@@ -102,29 +210,17 @@ return {
     },
   },
 
-  { -- SESSIONS
-    "folke/persistence.nvim",
-    event = "BufReadPre",
-    opts = require("plugins.setup.presistence").opts,
+  ------------------------------------------------------------------------
+  --- Заметки и работа с Markdown
+  ------------------------------------------------------------------------
+  -- `epwalsh/obsidian.nvim`: Работа с заметками Obsidian.
+  -- `OXY2DEV/markview.nvim`: Markdown предпросмотр.
+
+  { -- NOTES
+    "epwalsh/obsidian.nvim",
+    keys = require("plugins.setup.obsidian").keys,
+    config = require("plugins.setup.obsidian").config,
   },
-
-  -- { -- SEARCH & REPLACE
-  --   "nvim-pack/nvim-spectre",
-  --   cmd = { "Spectre" },
-  -- },
-
-  { -- SEARCH & REPLACE (NEW)
-    "MagicDuck/grug-far.nvim",
-    config = require("plugins.setup.grug-far").config,
-  },
-
-  -- { -- MARKDOWN PREVIEW
-  --   "iamcco/markdown-preview.nvim",
-  --   cmd = { "MarkdownPreview", "MarkdownPreviewStop", "MarkdownPreviewToggle" },
-  --   ft = { "markdown" },
-  --   build = require("plugins.setup.markdown-preview").build,
-  --   init = require("plugins.setup.markdown-preview").init,
-  -- },
 
   { -- MARKDOWN PREVIEW in neovim
     "OXY2DEV/markview.nvim",
@@ -132,12 +228,10 @@ return {
     -- setup = require("plugins.setup.markview").config,
   },
 
-  { -- PRO REDEFINITION
-    "kylechui/nvim-surround",
-    version = "*",
-    event = "VeryLazy",
-    config = require("plugins.setup.nvim-surround").config,
-  },
+  ------------------------------------------------------------------------
+  --- AI и интеллектуальные инструменты
+  ------------------------------------------------------------------------
+  -- `Exafunction/codeium.vim`: AI автозаполнение.
 
   { -- AI
     "Exafunction/codeium.vim",
@@ -145,9 +239,15 @@ return {
     config = require("plugins.setup.codeium").config,
     -- FIX(issue): https://github.com/Exafunction/codeium.vim/issues/376#issuecomment-2159643405
     -- FIX: the latest update breaks the plugin. Need revert to v1.8.37 289eb72
-    version = "1.8.37",
+    -- version = "1.8.37",
     -- commit = "289eb72",
   },
+
+  ------------------------------------------------------------------------
+  --- Дебаггинг
+  ------------------------------------------------------------------------
+  -- `mfussenegger/nvim-dap`: Поддержка DAP.
+  -- - `rcarriga/nvim-dap-ui`: UI для дебаггинга.
 
   { -- DEBUG
     "mfussenegger/nvim-dap",
@@ -159,10 +259,94 @@ return {
     },
   },
 
-  { -- FILE MANAGER
-    "DreamMaoMao/yazi.nvim",
-    keys = { { "<leader>gy", "<cmd>Yazi<CR>", desc = "Toggle Yazi" } },
+  ------------------------------------------------------------------------
+  --- Базы данных
+  ------------------------------------------------------------------------
+  -- `tpope/vim-dadbod`: Работа с базами данных.
+  -- - `kristijanhusak/vim-dadbod-ui`: UI для работы с базами данных.
+  -- - `kristijanhusak/vim-dadbod-completion`: Автозаполнение.
+
+  { -- DATABASE
+    "tpope/vim-dadbod",
+    cmd = {
+      "DB",
+      "DBUI",
+      "DBUIToggle",
+      "DBUIAddConnection",
+      "DBUIFindBuffer",
+    },
+    dependencies = {
+      { -- DATABASE UI
+        "kristijanhusak/vim-dadbod-ui",
+        init = require("plugins.setup.dadbod").UI.init,
+      },
+      { -- DATABASE AUTOCOMPLETION
+        "kristijanhusak/vim-dadbod-completion",
+        ft = { "sql", "mysql", "plsql" },
+      },
+    },
   },
+
+  ------------------------------------------------------------------------
+  --- Оптимизация навыков
+  ------------------------------------------------------------------------
+  -- `m4xshen/hardtime.nvim`: Плагины для улучшения навыков.
+  -- `kawre/leetcode.nvim`: Плагин для решения задач из Leetcode.
+
+  { -- BEST PRACTICE
+    "m4xshen/hardtime.nvim",
+    event = "VeryLazy",
+    opts = require("plugins.setup.hardtime").opts,
+  },
+
+  { -- LEETCODE
+    "kawre/leetcode.nvim",
+    lazy = "leetcode.nvim" ~= vim.fn.argv()[1],
+    -- opts = { arg = "leetcode.nvim" },
+    opts = require("plugins.setup.leetcode").opts,
+  },
+
+  ------------------------------------------------------------------------
+  --- Утилиты
+  ------------------------------------------------------------------------
+  -- `nvchad/nvim-showkeys`: Показывает нажатые комбинации клавиш.
+  -- `mistricky/codesnap.nvim`: Создание скриншотов кода.
+
+  { -- SHOW KEYS
+    "nvchad/showkeys",
+    cmd = "ShowkeysToggle",
+    opts = {
+      -- timeout = 1,
+      maxkeys = 5,
+      position = "top-right",
+      show_count = true,
+    },
+  },
+
+  { -- SCREENSHOTS
+    "mistricky/codesnap.nvim",
+    build = "make",
+    cmd = { "CodeSnap", "CodeSnapSave", "CodeSnapHighlight", "CodeSnapSaveHighlight" },
+    -- keys = require("plugins.setup.codesnap").keys,
+    opts = require("plugins.setup.codesnap").opts,
+  },
+
+  ------------------------------------------------------------------------
+  --- ARCHIVE PLUGINS
+  ------------------------------------------------------------------------
+
+  -- { -- SEARCH & REPLACE
+  --   "nvim-pack/nvim-spectre",
+  --   cmd = { "Spectre" },
+  -- },
+
+  -- { -- MARKDOWN PREVIEW
+  --   "iamcco/markdown-preview.nvim",
+  --   cmd = { "MarkdownPreview", "MarkdownPreviewStop", "MarkdownPreviewToggle" },
+  --   ft = { "markdown" },
+  --   build = require("plugins.setup.markdown-preview").build,
+  --   init = require("plugins.setup.markdown-preview").init,
+  -- },
 
   -- { -- HIGHLIGHT COLORS (support `tailwindcss` colors)
   --   "brenoprata10/nvim-highlight-colors",
@@ -188,13 +372,6 @@ return {
   --   config = require("plugins.setup.barbecue").config,
   --   dependencies = { "SmiteshP/nvim-navic" },
   -- },
-
-  { -- FOLDERS
-    "kevinhwang91/nvim-ufo",
-    event = "BufReadPost",
-    config = require("plugins.setup.nvim-ufo").config,
-    dependencies = "kevinhwang91/promise-async",
-  },
 
   -- { -- HTTP CLIENT
   --   "rest-nvim/rest.nvim",
@@ -228,36 +405,6 @@ return {
   --   },
   -- },
 
-  { -- SCREENSHOTS
-    "mistricky/codesnap.nvim",
-    build = "make",
-    cmd = { "CodeSnap", "CodeSnapSave", "CodeSnapHighlight", "CodeSnapSaveHighlight" },
-    -- keys = require("plugins.setup.codesnap").keys,
-    opts = require("plugins.setup.codesnap").opts,
-  },
-
-  { -- NOTES
-    "epwalsh/obsidian.nvim",
-    keys = require("plugins.setup.obsidian").keys,
-    config = require("plugins.setup.obsidian").config,
-  },
-
-  { -- UI
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    config = require("plugins.setup.ui").config,
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      -- "rcarriga/nvim-notify",
-    },
-  },
-
-  { -- BEST PRACTICE
-    "m4xshen/hardtime.nvim",
-    event = "VeryLazy",
-    opts = require("plugins.setup.hardtime").opts,
-  },
-
   -- { -- MARKS BETTER ?
   --   "ThePrimeagen/harpoon",
   --   event = "VeryLazy",
@@ -276,50 +423,12 @@ return {
   --   config = require("plugins.setup.duckytype").config,
   -- },
 
-  { -- FZF
-    -- INFO: `:Telescope load_extension fzf` OR go to `$HOME/.local/share/nvim/lazy/telescope-fzf-native.nvim` and run `make`
-    "nvim-telescope/telescope-fzf-native.nvim",
-    event = "VeryLazy",
-    build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
-    config = function()
-      require("telescope").load_extension "fzf"
-    end,
-  },
-
   -- { -- CODE ANNOTATION
   --   "danymat/neogen",
   --   version = "*", -- only `stable` version plugin
   --   keys = require("plugins.setup.neogen").keys,
   --   config = require("plugins.setup.neogen").config,
   -- },
-
-  { -- DATABASE
-    "tpope/vim-dadbod",
-    cmd = {
-      "DB",
-      "DBUI",
-      "DBUIToggle",
-      "DBUIAddConnection",
-      "DBUIFindBuffer",
-    },
-    dependencies = {
-      { -- DATABASE UI
-        "kristijanhusak/vim-dadbod-ui",
-        init = require("plugins.setup.dadbod").UI.init,
-      },
-      { -- DATABASE AUTOCOMPLETION
-        "kristijanhusak/vim-dadbod-completion",
-        ft = { "sql", "mysql", "plsql" },
-      },
-    },
-  },
-
-  { -- LEETCODE
-    "kawre/leetcode.nvim",
-    lazy = "leetcode.nvim" ~= vim.fn.argv()[1],
-    -- opts = { arg = "leetcode.nvim" },
-    opts = require("plugins.setup.leetcode").opts,
-  },
 
   -- { -- NOTE ALTERNATIVE
   --   "nvim-neorg/neorg",
@@ -339,17 +448,6 @@ return {
   --   },
   -- },
 
-  { -- SHOW KEYS
-    "nvchad/showkeys",
-    cmd = "ShowkeysToggle",
-    opts = {
-      -- timeout = 1,
-      maxkeys = 5,
-      position = "top-right",
-      show_count = true,
-    },
-  },
-
   -- { -- AUCTOCOMPLETE
   --   "saghen/blink.cmp",
   --   lazy = false,
@@ -360,12 +458,6 @@ return {
   --     { "hrsh7th/nvim-cmp", enabled = false }, -- disable default `nvim-cmp`
   --   },
   -- },
-
-  { -- BUFFER FILE EXPLORER
-    "stevearc/oil.nvim",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = require("plugins.setup.oil").opts,
-  },
 
   -- {
   --   "yetone/avante.nvim",
@@ -387,8 +479,8 @@ return {
   --   },
   -- },
 
-  { -- POMODORO TIMER
-    "nvzone/timerly",
-    cmd = "TimerlyToggle",
-  },
+  -- { -- POMODORO TIMER
+  --   "nvzone/timerly",
+  --   cmd = "TimerlyToggle",
+  -- },
 }

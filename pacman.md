@@ -36,7 +36,7 @@ bluez 5.79-1
 bluez-libs 5.79-1
 bluez-utils 5.79-1
 boost-libs 1.86.0-3
-brave-bin 1:1.73.89-1
+brave-bin 1:1.73.91-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
 brotli 1.1.0-2
@@ -84,7 +84,7 @@ electron30 30.5.1-3
 electron31 31.7.5-1
 electron32 32.2.5-1
 expat 2.6.4-1
-eza 0.20.8-1
+eza 0.20.9-1
 fakeroot 1.36-1
 fd 10.2.0-1
 ffmpeg 2:7.1-2
@@ -172,7 +172,7 @@ http-parser 2.9.4-2
 hunspell 1.7.2-2
 hwdata 0.389-1
 hyprcursor 0.1.10-1
-hyprland 0.45.2-1
+hyprland 0.45.2-3
 hyprlang 0.5.3-1
 hyprpicker 0.4.1-1
 hyprpicker-debug 0.3.0-1
@@ -270,7 +270,7 @@ libiec61883 1.2.0-8
 libimobiledevice 1.3.0-14
 libimobiledevice-glue 1.3.1-1
 libinih 58-1
-libinput 1.26.2-1
+libinput 1.27.0-1
 libisl 0.27-1
 libjpeg-turbo 3.0.4-1
 libjxl 0.11.0-2
@@ -286,7 +286,7 @@ libmng 2.0.3-4
 libmnl 1.0.5-2
 libmodplug 0.8.9.0-6
 libmpc 1.3.1-2
-libmtp 1.1.21-2
+libmtp 1.1.22-1
 libmysofa 1.3.3-1
 libndp 1.9-1
 libnetfilter_conntrack 1.0.9-2
@@ -544,7 +544,7 @@ runc 1.2.2-1
 rustup 1.27.1-1
 sassc 3.6.2-5
 sbc 2.0-2
-sdbus-cpp 2.0.0-1
+sdbus-cpp 2.1.0-2
 sdl2 2.30.9-1
 seatd 0.9.1-1
 sed 4.9-3
