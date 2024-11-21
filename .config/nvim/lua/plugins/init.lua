@@ -1,11 +1,15 @@
 return {
 
-  ------------------------------------------------------------------------
-  --- LSP и Форматирование
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- LSP и Форматирование
+  --
+  -- @directory [ configs/conform , configs/lspconfig , plugins/setup/lsp/* ]
+  --
+  -- @plugins
   -- `stevearc/conform.nvim`: Форматирование кода.
   -- `neovim/nvim-lspconfig`: Конфигурация LSP.
   -- `williamboman/mason.nvim`: Установщик LSP и других инструментов.
+  ------------------------------------------------------------------------------
 
   { -- FORMATTERS
     "stevearc/conform.nvim",
@@ -25,21 +29,26 @@ return {
 
   { -- LSP INSTALLER
     "williamboman/mason.nvim",
-    opts = require("plugins.setup.mason").opts,
+    opts = require("plugins.setup.lsp.mason").opts,
   },
 
-  ------------------------------------------------------------------------
-  --- Работа с деревом и синтаксисом
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- Работа с деревом и синтаксисом
+  --
+  -- @directory [ plugins/setup/treesitter/* ]
+  --
+  -- @plugins
   -- `nvim-treesitter/nvim-treesitter`: Дерево синтаксиса и подсветка.
   -- - `folke/ts-comments.nvim`: Контекстные комментарии.
   -- - `windwp/nvim-ts-autotag`: Автозакрытие HTML-тегов.
   -- - `RRethy/vim-illuminate`: Подсветка переменных под курсором.
   -- - `nvim-treesitter/nvim-treesitter-textobjects`: Работа с текстовыми объектами.
+  -- - - `echasnovski/mini.nvim`: Работа с текстовыми объектами.
+  ------------------------------------------------------------------------------
 
   { -- TREESITTER
     "nvim-treesitter/nvim-treesitter",
-    opts = require("plugins.setup.nvim-treesitter").opts,
+    opts = require("plugins.setup.treesitter.nvim-treesitter").opts,
     dependencies = {
       { -- CONTEXT COMMENT
         "folke/ts-comments.nvim",
@@ -49,35 +58,39 @@ return {
       { -- AUTOCLOSE & AUTORENAME HTML TAGS
         "windwp/nvim-ts-autotag",
         event = "BufReadPre",
-        init = require("plugins.setup.nvim-ts-autotag").init,
+        init = require("plugins.setup.treesitter.nvim-ts-autotag").init,
       },
       { -- HIGHLIGHT VARS UNDER CURSOR
         "RRethy/vim-illuminate",
-        config = require("plugins.setup.vim-illuminate").config,
+        config = require("plugins.setup.treesitter.vim-illuminate").config,
       },
       { -- TS TEXT-OBJECTS MANIPULATE
         "nvim-treesitter/nvim-treesitter-textobjects",
         event = "BufReadPost",
-        config = require("plugins.setup.nvim-ts-textobjects").config,
+        config = require("plugins.setup.treesitter.nvim-ts-textobjects").config,
         dependencies = { -- REGULAR MANIPULATE
           "echasnovski/mini.nvim",
           version = false,
-          config = require("plugins.setup.mini-nvim").config,
+          config = require("plugins.setup.treesitter.mini-nvim").config,
         },
       },
     },
   },
 
-  ------------------------------------------------------------------------
-  --- Файловая система
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- Файловая система
+  --
+  -- @directory [ plugins/setup/filesystem/* ]
+  --
+  -- @plugins
   -- `nvim-tree/nvim-tree.lua`: Файловый менеджер.
   -- `DreamMaoMao/yazi.nvim`: Альтернативный файловый менеджер.
   -- `stevearc/oil.nvim`: Работа с буферами.
+  ------------------------------------------------------------------------------
 
   { -- FILE EXPLORER
     "nvim-tree/nvim-tree.lua",
-    opts = require("plugins.setup.nvim-tree").opts,
+    opts = require("plugins.setup.filesystem.nvim-tree").opts,
   },
 
   { -- FILE MANAGER
@@ -88,36 +101,40 @@ return {
   { -- BUFFER FILE EXPLORER
     "stevearc/oil.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
-    opts = require("plugins.setup.oil").opts,
+    opts = require("plugins.setup.filesystem.oil").opts,
   },
 
-  ------------------------------------------------------------------------
-  --- Навигация
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- Навигация
+  --
+  -- @directory [ plugins/setup/navigation/* ]
+  --
+  -- @plugins
   -- `folke/flash.nvim`: Улучшенная навигация.
   -- `kylechui/nvim-surround`: Улучшенное редактирование окружений.
   -- `mg979/vim-visual-multi`: Улучшенная многокурсорная навигация.
   -- `nvim-telescope/telescope-fzf-native.nvim`: Улучшенный поиск в telescope с fzf.
+  ------------------------------------------------------------------------------
 
   { -- NAVIGATION
     "folke/flash.nvim",
-    opts = require("plugins.setup.flash").opts,
-    keys = require("plugins.setup.flash").keys,
+    opts = require("plugins.setup.navigation.flash").opts,
+    keys = require("plugins.setup.navigation.flash").keys,
   },
 
   { -- PRO REDEFINITION
     "kylechui/nvim-surround",
     version = "*",
     event = "VeryLazy",
-    config = require("plugins.setup.nvim-surround").config,
+    config = require("plugins.setup.navigation.nvim-surround").config,
   },
 
   { -- MULTI-CURSOR
     "mg979/vim-visual-multi",
     -- event = "BufReadPost",
     branch = "master",
-    keys = require("plugins.setup.vim-visual-multi").keys,
-    init = require("plugins.setup.vim-visual-multi").init,
+    keys = require("plugins.setup.navigation.vim-visual-multi").keys,
+    init = require("plugins.setup.navigation.vim-visual-multi").init,
   },
 
   { -- FZF
@@ -130,19 +147,23 @@ return {
     end,
   },
 
-  ------------------------------------------------------------------------
-  --- Интерфейс
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- Интерфейс
+  --
+  -- @directory [ plugins/setup/interface/* ]
+  --
+  -- @plugins
   -- `folke/noice.nvim`: UI улучшения.
   -- `folke/trouble.nvim`: Улучшенная работа с quickfix.
   -- `folke/todo-comments.nvim`: TODO-комментарии.
   -- `kevinhwang91/nvim-ufo`: Улучшенная работа с фолдерами.
   -- `folke/persistence.nvim`: Сохранение/Восстановление состояния.
+  ------------------------------------------------------------------------------
 
   { -- UI
     "folke/noice.nvim",
     event = "VeryLazy",
-    config = require("plugins.setup.ui").config,
+    config = require("plugins.setup.interface.ui").config,
     dependencies = {
       "MunifTanjim/nui.nvim",
       -- "rcarriga/nvim-notify",
@@ -152,49 +173,57 @@ return {
   { -- BETTER QUICKFIX
     "folke/trouble.nvim",
     cmd = "Trouble",
-    opts = require("plugins.setup.trouble").opts,
+    opts = require("plugins.setup.interface.trouble").opts,
   },
 
   { -- TODO
     "folke/todo-comments.nvim",
     cmd = { "TodoTrouble", "TodoTelescope" },
     event = "BufReadPost",
-    opts = require("plugins.setup.todo-comments").opts,
+    opts = require("plugins.setup.interface.todo-comments").opts,
   },
 
   { -- FOLDERS
     "kevinhwang91/nvim-ufo",
     event = "BufReadPost",
-    config = require("plugins.setup.nvim-ufo").config,
+    config = require("plugins.setup.interface.nvim-ufo").config,
     dependencies = "kevinhwang91/promise-async",
   },
 
   { -- SESSIONS
     "folke/persistence.nvim",
     event = "BufReadPre",
-    opts = require("plugins.setup.presistence").opts,
+    opts = require("plugins.setup.interface.presistence").opts,
   },
 
-  ------------------------------------------------------------------------
-  --- Поиск и замена
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- Поиск и замена
+  --
+  -- @directory [ plugins/setup/search/* ]
+  --
+  -- @plugins
   -- `MagicDuck/grug-far.nvim`: Поиск и замена.
+  ------------------------------------------------------------------------------
 
   { -- SEARCH & REPLACE (NEW)
     "MagicDuck/grug-far.nvim",
-    config = require("plugins.setup.grug-far").config,
+    config = require("plugins.setup.search.grug-far").config,
   },
 
-  ------------------------------------------------------------------------
-  --- Git и работа с версиями
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- Git и работа с версиями
+  --
+  -- @directory [ plugins/setup/git/* ]
+  --
+  -- @plugins
   -- `kdheepak/lazygit.nvim`: Интеграция с LazyGit.
   -- `sindrets/diffview.nvim`: Просмотр изменений.
+  ------------------------------------------------------------------------------
 
   { -- GIT
     "kdheepak/lazygit.nvim",
     cmd = { "LazyGit", "LazyGitConfig", "LazyGitCurrentFile", "LazyGitFilter", "LazyGitFilterCurrentFile" },
-    config = require("plugins.setup.lazygit").config(),
+    config = require("plugins.setup.git.lazygit").config(),
     dependencies = { "nvim-lua/plenary.nvim" },
   },
 
@@ -210,61 +239,77 @@ return {
     },
   },
 
-  ------------------------------------------------------------------------
-  --- Заметки и работа с Markdown
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- Заметки и работа с Markdown
+  --
+  -- @directory [ plugins/setup/notes/* ]
+  --
+  -- @plugins
   -- `epwalsh/obsidian.nvim`: Работа с заметками Obsidian.
   -- `OXY2DEV/markview.nvim`: Markdown предпросмотр.
+  ------------------------------------------------------------------------------
 
   { -- NOTES
     "epwalsh/obsidian.nvim",
-    keys = require("plugins.setup.obsidian").keys,
-    config = require("plugins.setup.obsidian").config,
+    keys = require("plugins.setup.notes.obsidian").keys,
+    config = require("plugins.setup.notes.obsidian").config,
   },
 
   { -- MARKDOWN PREVIEW in neovim
     "OXY2DEV/markview.nvim",
     ft = "markdown",
-    -- setup = require("plugins.setup.markview").config,
+    -- setup.notes = require("plugins.setup.notes.markview").config,
   },
 
-  ------------------------------------------------------------------------
-  --- AI и интеллектуальные инструменты
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- AI и интеллектуальные инструменты
+  --
+  -- @directory [ plugins/setup/ai/* ]
+  --
+  -- @plugins
   -- `Exafunction/codeium.vim`: AI автозаполнение.
+  ------------------------------------------------------------------------------
 
   { -- AI
     "Exafunction/codeium.vim",
     event = "BufEnter",
-    config = require("plugins.setup.codeium").config,
+    config = require("plugins.setup.ai.codeium").config,
     -- FIX(issue): https://github.com/Exafunction/codeium.vim/issues/376#issuecomment-2159643405
     -- FIX: the latest update breaks the plugin. Need revert to v1.8.37 289eb72
     -- version = "1.8.37",
     -- commit = "289eb72",
   },
 
-  ------------------------------------------------------------------------
-  --- Дебаггинг
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- Дебаггинг
+  --
+  -- @directory [ plugins/setup/debug/* ]
+  --
+  -- @plugins
   -- `mfussenegger/nvim-dap`: Поддержка DAP.
   -- - `rcarriga/nvim-dap-ui`: UI для дебаггинга.
+  ------------------------------------------------------------------------------
 
   { -- DEBUG
     "mfussenegger/nvim-dap",
-    config = require("plugins.setup.nvim-dap").config,
+    config = require("plugins.setup.debug.nvim-dap").config,
     dependencies = { -- DEBUG UI
       "rcarriga/nvim-dap-ui",
       dependencies = { "nvim-neotest/nvim-nio" },
-      config = require("plugins.setup.nvim-dap-ui").config,
+      config = require("plugins.setup.debug.nvim-dap-ui").config,
     },
   },
 
-  ------------------------------------------------------------------------
-  --- Базы данных
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- Базы данных
+  --
+  -- @directory [ plugins/setup/database/* ]
+  --
+  -- @plugins
   -- `tpope/vim-dadbod`: Работа с базами данных.
   -- - `kristijanhusak/vim-dadbod-ui`: UI для работы с базами данных.
   -- - `kristijanhusak/vim-dadbod-completion`: Автозаполнение.
+  ------------------------------------------------------------------------------
 
   { -- DATABASE
     "tpope/vim-dadbod",
@@ -278,7 +323,7 @@ return {
     dependencies = {
       { -- DATABASE UI
         "kristijanhusak/vim-dadbod-ui",
-        init = require("plugins.setup.dadbod").UI.init,
+        init = require("plugins.setup.database.dadbod").UI.init,
       },
       { -- DATABASE AUTOCOMPLETION
         "kristijanhusak/vim-dadbod-completion",
@@ -287,30 +332,38 @@ return {
     },
   },
 
-  ------------------------------------------------------------------------
-  --- Оптимизация навыков
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- Оптимизация навыков
+  --
+  -- @directory [ plugins/setup/skill/* ]
+  --
+  -- @plugins
   -- `m4xshen/hardtime.nvim`: Плагины для улучшения навыков.
   -- `kawre/leetcode.nvim`: Плагин для решения задач из Leetcode.
+  ------------------------------------------------------------------------------
 
   { -- BEST PRACTICE
     "m4xshen/hardtime.nvim",
     event = "VeryLazy",
-    opts = require("plugins.setup.hardtime").opts,
+    opts = require("plugins.setup.skill.hardtime").opts,
   },
 
   { -- LEETCODE
     "kawre/leetcode.nvim",
     lazy = "leetcode.nvim" ~= vim.fn.argv()[1],
     -- opts = { arg = "leetcode.nvim" },
-    opts = require("plugins.setup.leetcode").opts,
+    opts = require("plugins.setup.skill.leetcode").opts,
   },
 
-  ------------------------------------------------------------------------
-  --- Утилиты
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- Утилиты
+  --
+  -- @directory [ plugins/setup/utils/* ]
+  --
+  -- @plugins
   -- `nvchad/nvim-showkeys`: Показывает нажатые комбинации клавиш.
   -- `mistricky/codesnap.nvim`: Создание скриншотов кода.
+  ------------------------------------------------------------------------------
 
   { -- SHOW KEYS
     "nvchad/showkeys",
@@ -327,13 +380,15 @@ return {
     "mistricky/codesnap.nvim",
     build = "make",
     cmd = { "CodeSnap", "CodeSnapSave", "CodeSnapHighlight", "CodeSnapSaveHighlight" },
-    -- keys = require("plugins.setup.codesnap").keys,
-    opts = require("plugins.setup.codesnap").opts,
+    -- keys = require("plugins.setup.utils.codesnap").keys,
+    opts = require("plugins.setup.utils.codesnap").opts,
   },
 
-  ------------------------------------------------------------------------
-  --- ARCHIVE PLUGINS
-  ------------------------------------------------------------------------
+  ------------------------------------------------------------------------------
+  -- ARCHIVE PLUGINS
+  --
+  -- @directory [ plugins/setup/* ]
+  ------------------------------------------------------------------------------
 
   -- { -- SEARCH & REPLACE
   --   "nvim-pack/nvim-spectre",
