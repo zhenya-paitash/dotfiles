@@ -388,3 +388,18 @@ map(MODE.normal, "<leader>phr", "<cmd> Hardtime report<cr>", { desc = "show repo
 -- BARBECUE
 ---------------------------------------
 map(MODE.normal, "<leader>pb", "<cmd> Barbecue toggle <CR>", { desc = "winbar toggle (Barbecue)" })
+
+---------------------------------------
+-- HARPOON
+---------------------------------------
+-- map(
+--   MODE.normal,
+--   "<leader>hl",
+--   "<cmd> lua require('harpoon.ui').toggle_quick_menu() <CR>",
+--   { desc = "show list (Harpoon)" }
+-- )
+-- map(MODE.normal, "<leader>ha", "<cmd> lua require('harpoon.mark').add_file() <CR>", { desc = "ADD file (Harpoon)" })
+-- map(MODE.normal, "<leader>hn", "<cmd> lua require('harpoon.ui').nav_next() <CR>", { desc = "NEXT file (Harpoon)" })
+-- map(MODE.normal, "<leader>hp", "<cmd> lua require('harpoon.ui').nav_prev() <CR>", { desc = "PREV file (Harpoon)" })
+-- map(MODE.normal, "<leader>hf", "<cmd> Telescope harpoon marks <CR>", { desc = "find harpoon marks (Telescope | Harpoon)" })
+

@@ -154,9 +154,9 @@ gstreamer 1.24.9-3
 gtest 1.15.2-1
 gtk-doc 1.34.0-1
 gtk-layer-shell 0.9.0-1
-gtk-update-icon-cache 1:4.16.5-1
+gtk-update-icon-cache 1:4.16.6-1
 gtk3 1:3.24.43-4
-gtk4 1:4.16.5-1
+gtk4 1:4.16.6-1
 gtkmm-4.0 4.16.0-1
 gtkmm3 3.24.9-1
 gts 0.7.6.121130-3
@@ -413,7 +413,7 @@ lmdb 0.9.33-1
 lua 5.4.7-1
 lua51 5.1.5-12
 lua51-lpeg 1.1.0-3
-luajit 2.1.1727870382-1
+luajit 2.1.1731601260-1
 lv2 1.18.10-1
 lz4 1:1.10.0-2
 lzo 2.10-5
@@ -578,7 +578,7 @@ tar 1.35-2
 tdb 1.4.12-1
 telegram-desktop 5.8.2-1
 texinfo 7.1.1-1
-tinysparql 3.8.0-1
+tinysparql 3.8.1-1
 tmux 3.5_a-1
 tomlplusplus 3.4.0-1
 tpm2-tss 4.1.3-1

@@ -5,8 +5,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "everforest",
-  theme_toggle = { "tundra", "everforest" },
+  theme = "melange",
+  theme_toggle = { "tundra", "melange" },
   transparency = true,
   lsp_semantic_tokens = true,
   hl_override = {
@@ -21,7 +21,7 @@ M.base46 = {
 
 M.ui = {
   statusline = {
-    -- theme = "minimal",
+    theme = "minimal",
     separator_style = "round",
   },
   tabufline = {
