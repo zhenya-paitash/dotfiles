@@ -332,7 +332,7 @@ libsixel 1.10.3-6
 libsm 1.2.4-2
 libsndfile 1.2.2-2
 libsodium 1.0.20-1
-libsoup3 3.6.0-1
+libsoup3 3.6.1-1
 libsoxr 0.1.3-4
 libssh 0.11.1-1
 libssh2 1.11.0-1
@@ -531,7 +531,7 @@ qt6-declarative 6.8.0-6
 qt6-imageformats 6.8.0-1
 qt6-svg 6.8.0-1
 qt6-translations 6.8.0-1
-qt6-wayland 6.8.0-1
+qt6-wayland 6.8.0-2
 rav1e 0.7.1-1
 readline 8.2.013-1
 rhash 1.4.4-1

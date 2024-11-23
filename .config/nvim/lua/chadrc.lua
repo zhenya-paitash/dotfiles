@@ -12,7 +12,7 @@ M.base46 = {
   hl_override = {
     Comment = { italic = true },
     ["@comment"] = { italic = true },
-    CursorLineNr = { fg = "#82BE91" },
+    CursorLineNr = { fg = "#F0E9C2" },
   },
   hl_add = {
     NvimTreeOpenedFolderName = { fg = "green", bold = true },
