@@ -8,27 +8,52 @@ gui:
 
   # WARN: this theme dont work if you terminal have transparent. Work only in neovim without transparent background
   theme:
+    # THEME: 'catppuccin'
+    # activeBorderColor:
+    #   - '#a6e3a1'
+    #   - bold
+    # inactiveBorderColor:
+    #   - '#a6adc8'
+    # searchingActiveBorderColor:
+    #   - '#f9e2af'
+    # optionsTextColor:
+    #   - '#89b4fa'
+    # selectedLineBgColor:
+    #   - '#313244'
+    # selectedRangeBgColor:
+    #   - '#313244'
+    # cherryPickedCommitBgColor:
+    #   - '#45475a'
+    # cherryPickedCommitFgColor:
+    #   - '#a6e3a1'
+    # unstagedChangesColor:
+    #   - '#f38ba8'
+    # defaultFgColor:
+    #   - '#cdd6f4'
+
+    # THEME: 'everforest dark'
     activeBorderColor:
-      - '#a6e3a1'
+      - '#a7c080'
       - bold
     inactiveBorderColor:
-      - '#a6adc8'
+      - '#899c4040'
     searchingActiveBorderColor:
-      - '#f9e2af'
+      - '#d3c6aa'
     optionsTextColor:
-      - '#89b4fa'
+      - '#899c4040'
     selectedLineBgColor:
-      - '#313244'
+      - '#2d353b'
     selectedRangeBgColor:
-      - '#313244'
+      - '#3d484d90'
     cherryPickedCommitBgColor:
-      - '#45475a'
+      - '#475258c0'
     cherryPickedCommitFgColor:
-      - '#a6e3a1'
+      - '#a7c080'
     unstagedChangesColor:
-      - '#f38ba8'
+      - '#da6362'
     defaultFgColor:
-      - '#cdd6f4'
+      - '#d3c6aa'
+
 
 # # link: https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Pagers.md
 # git:

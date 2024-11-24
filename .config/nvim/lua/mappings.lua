@@ -20,6 +20,10 @@ local MODE = {
 map(MODE.normal, "<Tab>", "<C-i>", { noremap = true, silent = true })
 -- map(MODE.normal, "<S-Tab>", "<cmd> bnext <CR>", { noremap = true, silent = true })
 
+-- swap ` and ' for work with murks
+map(MODE.normal, "'", "`", { noremap = true, silent = true })
+map(MODE.normal, "`", "'", { noremap = true, silent = true })
+
 -- unbind <C-s> [reason: i'm using <C-s> as a leader for TMUX]
 map({ MODE.normal, MODE.insert, MODE.visual }, "<C-s>", "", {})
 
@@ -89,6 +93,8 @@ map(MODE.normal, "<leader>gb", "<cmd> Telescope git_branches <CR>", { desc = "gi
 map(MODE.normal, "<leader>*", "<cmd> Telescope grep_string <CR>", { desc = "grep string (Telescope)" })
 map(MODE.normal, "<leader>gr", "<cmd> Telescope lsp_references <CR>", { desc = "find references (Telescope)" })
 map(MODE.normal, "<leader>gd", "<cmd> Telescope lsp_definitions <CR>", { desc = "find definitions (Telescope)" })
+map(MODE.normal, '<leader>f"', "<cmd> Telescope registers <CR>", { desc = "find registers (Telescope)" })
+map(MODE.normal, "<leader>f'", "<cmd> Telescope marks <CR>", { desc = "find marks (Telescope)" })
 map(MODE.normal, "<leader><Tab>", function()
   local actions = require "telescope.actions"
 

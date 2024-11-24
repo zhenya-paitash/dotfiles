@@ -13,7 +13,7 @@ min_width = 4
 [opener]
 open = [
   { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
-	{ run = 'kitty .', desc = "Open Terminal here" },
+	{ run = 'kitty .', desc = "Open Terminal" },
   { run = 'tar -xf "$@" --one-top-level', desct = "Custom tar extract", for = "unix" },
   { run = 'swww img "$@" --transition-type center --transition-step 200 --transition-fps 60', desc = "Set wallpaper" },
   { run = '$HOME/scripts/ags/ags_get_colorscheme_from_image_custom "$@" & swww img "$@" --transition-type center --transition-step 200 --transition-fps 60', desc = "Set wallpaper with colorscheme custom" },
@@ -21,10 +21,15 @@ open = [
 ]
 edit = [
 	{ run = 'nvim "$@"', desc = "Neovim", block = true },
+  { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
+	{ run = 'kitty .', desc = "Open Terminal" },
 ]
 extract = [
-  { run = 'tar -xf "$@" --one-top-level', desct = "Custom tar extract", for = "unix" },
-	{ run = 'unar "$1"', desc = "Extract here", for = "unix" },
+	{ run = 'ya pub extract --list "$@"', desc = "Extract here", for = "unix" },
+  { run = 'tar -xf "$@" --one-top-level', desct = "tar -xf", for = "unix" },
+	{ run = 'unrar x "$@" "${1%.*}"/', desc = "unrar x", for = "unix" },
+  { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
+	{ run = 'kitty .', desc = "Open Terminal" },
 ]
 play = [
 	{ run = 'mpv "$@"', orphan = true, for = "unix" },

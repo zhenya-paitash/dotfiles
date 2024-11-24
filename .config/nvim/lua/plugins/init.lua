@@ -123,6 +123,7 @@ return {
 
   { -- NAVIGATION
     "folke/flash.nvim",
+    event = "VeryLazy",
     opts = require("plugins.setup.navigation.flash").opts,
     keys = require("plugins.setup.navigation.flash").keys,
   },

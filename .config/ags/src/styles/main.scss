@@ -6,7 +6,9 @@
 @import "./core.scss";
 
 /* WIDGETS */
-@import "./widgets/bar.scss";
+// @import "./widgets/bar.scss";
+@import "./widgets/bar.center.square.scss";
+// @import "./widgets/bar.center.circle.scss";
 @import "./widgets/notifications.scss";
 @import "./widgets/volume-overlay.scss";
 @import "./widgets/brightness-overlay.scss";

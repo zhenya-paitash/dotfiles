@@ -45,7 +45,7 @@ btrfs-progs 6.11-1
 bzip2 1.0.8-6
 c-ares 1.34.2-1
 ca-certificates 20240618-1
-ca-certificates-mozilla 3.106-1
+ca-certificates-mozilla 3.107-1
 ca-certificates-utils 20240618-1
 cairo 1.18.2-2
 cairomm 1.14.5-1
@@ -53,7 +53,7 @@ cairomm-1.16 1.18.0-1
 cantarell-fonts 1:0.303.1-2
 check 0.15.2-2
 cliphist 1:0.6.1-1
-cmake 3.31.0-1
+cmake 3.31.1-1
 containerd 2.0.0-2
 coreutils 9.5-2
 cppdap 1.58.0-2
@@ -154,9 +154,9 @@ gstreamer 1.24.9-3
 gtest 1.15.2-1
 gtk-doc 1.34.0-1
 gtk-layer-shell 0.9.0-1
-gtk-update-icon-cache 1:4.16.6-1
+gtk-update-icon-cache 1:4.16.7-1
 gtk3 1:3.24.43-4
-gtk4 1:4.16.6-1
+gtk4 1:4.16.7-1
 gtkmm-4.0 4.16.0-1
 gtkmm3 3.24.9-1
 gts 0.7.6.121130-3
@@ -405,8 +405,8 @@ lilv 0.24.24-2
 linux-api-headers 6.10-1
 linux-firmware 20241111.b5885ec5-1
 linux-firmware-whence 20241111.b5885ec5-1
-linux-lts 6.6.62-1
-linux-zen 6.11.9.zen1-1
+linux-lts 6.6.63-1
+linux-zen 6.12.1.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.33-1
@@ -450,7 +450,7 @@ noto-fonts-emoji 1:2.047-1
 npm 10.9.0-1
 npth 1.7-1
 nspr 4.36-1
-nss 3.106-1
+nss 3.107-1
 nwg-look 0.2.7-1
 obsidian 1.7.7-1
 ocl-icd 2.3.2-2
@@ -465,6 +465,7 @@ openssl 3.4.0-1
 opus 1.5.2-1
 orc 0.4.40-1
 p11-kit 0.25.5-1
+p7zip 1:17.05-2
 pacman 7.0.0.r3.g7736133-1
 pacman-mirrorlist 20240717-1
 pam 1.6.1-3
@@ -576,7 +577,7 @@ systemd-libs 256.8-1
 systemd-sysvcompat 256.8-1
 tar 1.35-2
 tdb 1.4.12-1
-telegram-desktop 5.8.2-1
+telegram-desktop 5.8.3-1
 texinfo 7.1.1-1
 tinysparql 3.8.1-1
 tmux 3.5_a-1
@@ -636,7 +637,7 @@ xcb-util-renderutil 0.3.10-2
 xcb-util-wm 0.4.2-2
 xcb-util-xrm 1.3-3
 xcur2png 0.7.1-8
-xdg-desktop-portal 1.18.4-1
+xdg-desktop-portal 1.18.4-2
 xdg-desktop-portal-hyprland 1.3.8-1
 xdg-utils 1.2.1-1
 xf86-video-amdgpu 23.0.0-2
