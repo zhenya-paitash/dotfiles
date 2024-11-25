@@ -297,6 +297,17 @@ return {
         block_ids = { hl_group = "ObsidianBlockID" },
         hl_groups = {
           -- The options are passed directly to `vim.api.nvim_set_hl()`. See `:help nvim_set_hl`.
+          ObsidianTodo = { bold = true, fg = COLORS.obsidian_secondary },
+          ObsidianDone = { bold = true, fg = COLORS.obsidian_done },
+          ObsidianRightArrow = { bold = true, fg = COLORS.obsidian_secondary },
+          ObsidianTilde = { bold = true, fg = COLORS.obsidian_highlight },
+          ObsidianBullet = { bold = true, fg = COLORS.obsidian_done },
+          ObsidianRefText = { underline = true, fg = COLORS.obsidian_primary },
+          ObsidianExtLinkIcon = { fg = COLORS.obsidian_primary },
+          ObsidianTag = { italic = true, fg = COLORS.obsidian_done },
+          ObsidianBlockID = { italic = true, fg = COLORS.obsidian_done },
+          ObsidianHighlightText = { bg = COLORS.obsidian_accent },
+
           -- *DEFAULT THEME*
           -- ObsidianTodo = { bold = true, fg = "#D2C399" },
           -- ObsidianDone = { bold = true, fg = "#F9C767" },
@@ -310,16 +321,16 @@ return {
           -- ObsidianHighlightText = { bg = "#D588F7" },
 
           -- -- *EVERFOREST THEME*
-          ObsidianTodo = { bold = true, fg = "#E47D7F" },
-          ObsidianDone = { bold = true, fg = "#82BE91" },
-          ObsidianRightArrow = { bold = true, fg = "#E47D7F" },
-          ObsidianTilde = { bold = true, fg = "#D9BA7E" },
-          ObsidianBullet = { bold = true, fg = "#82BE91" },
-          ObsidianRefText = { underline = true, fg = "#7EB78C" },
-          ObsidianExtLinkIcon = { fg = "#7EB78C" },
-          ObsidianTag = { italic = true, fg = "#82BE91" },
-          ObsidianBlockID = { italic = true, fg = "#82BE91" },
-          ObsidianHighlightText = { bg = "#E0837E" },
+          -- ObsidianTodo = { bold = true, fg = "#E47D7F" },
+          -- ObsidianDone = { bold = true, fg = "#82BE91" },
+          -- ObsidianRightArrow = { bold = true, fg = "#E47D7F" },
+          -- ObsidianTilde = { bold = true, fg = "#D9BA7E" },
+          -- ObsidianBullet = { bold = true, fg = "#82BE91" },
+          -- ObsidianRefText = { underline = true, fg = "#7EB78C" },
+          -- ObsidianExtLinkIcon = { fg = "#7EB78C" },
+          -- ObsidianTag = { italic = true, fg = "#82BE91" },
+          -- ObsidianBlockID = { italic = true, fg = "#82BE91" },
+          -- ObsidianHighlightText = { bg = "#E0837E" },
 
           -- *YsDark THEME*
           -- ObsidianTodo = { bold = true, fg = "#D2C399" },

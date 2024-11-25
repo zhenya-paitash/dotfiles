@@ -22,6 +22,7 @@ open = [
 edit = [
 	{ run = 'nvim "$@"', desc = "Neovim", block = true },
   { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
+  { run = 'browser "$@" --incognito', desc = "Open incognito", for = "linux" },
 	{ run = 'kitty .', desc = "Open Terminal" },
 ]
 extract = [

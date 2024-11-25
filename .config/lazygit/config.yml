@@ -1,7 +1,7 @@
 quitOnTopLevelReturn: false
 
 gui:
-  # sidePanelWidth: 0.3333 # number from 0 to 1
+  sidePanelWidth: 0.3333 # number from 0 to 1
 
   nerdFontsVersion: "3" # nerd fonts version to use ("2" or "3"); empty means don't show nerd font icons
   border: 'rounded' # one of 'single' | 'double' | 'rounded' | 'hidden'
@@ -55,16 +55,32 @@ gui:
       - '#d3c6aa'
 
 
-# # link: https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Pagers.md
-# git:
-#   paging:
-#     colorArg: never # 'always' | 'never'
-#     pager: python3 /home/mi/bin/ydiff/ydiff -p cat -s --wrap --width={{columnWidth}}
+# link: https://github.com/jesseduffield/lazygit/blob/master/docs/Custom_Pagers.md#delta
+git:
+  paging:
+    colorArg: always
+    pager: delta --side-by-side --dark --paging=never --line-numbers --syntax-theme "Everforest Dark"
 
-# git:
-#   paging:
-#     colorArg: always # 'always' | 'never'
-#     useConfig: true
-#     # pager: difftastic --color=always --display=inline --syntax-highlight=off
-#     # externalDiffCommand: difftastic --color=always --display=inline --syntax-highlight=off
-
+customCommands:
+  - key: '<C-n>'
+    context: 'localBranches'
+    prompts:
+      - type: 'menu'
+        title: 'What kind of branch is it?'
+        key: 'BranchType'
+        options:
+          - name: 'feature'
+            description: 'a feature branch'
+            value: 'feature'
+          - name: 'hotfix'
+            description: 'a hotfix branch'
+            value: 'hotfix'
+          - name: 'release'
+            description: 'a release branch'
+            value: 'release'
+      - type: 'input'
+        title: 'What is the new branch name?'
+        key: 'BranchName'
+        initialValue: ''
+    command: "git flow {{.Form.BranchType}} start {{.Form.BranchName}}"
+    loadingText: 'Creating branch'

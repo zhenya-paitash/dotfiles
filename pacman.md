@@ -116,7 +116,8 @@ geoclue 2.7.2-1
 gettext 0.22.5-2
 ghostscript 10.04.0-1
 giflib 5.2.2-1
-git 2.47.0-1
+git 2.47.1-1
+git-delta 0.18.2-1
 gjs 2:1.82.1-1
 glib-networking 1:2.80.0-3
 glib2 2.82.2-1
@@ -468,7 +469,7 @@ p11-kit 0.25.5-1
 p7zip 1:17.05-2
 pacman 7.0.0.r3.g7736133-1
 pacman-mirrorlist 20240717-1
-pam 1.6.1-3
+pam 1.7.0-1
 pambase 20230918-2
 pango 1:1.54.0-1
 pangomm 2.46.4-1

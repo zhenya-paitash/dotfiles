@@ -5,14 +5,14 @@
 local M = {}
 
 M.base46 = {
-  theme = "rosepine",
-  theme_toggle = { "tundra", "rosepine" },
+  theme = "tundra",
+  theme_toggle = { "tundra", "tundra" },
   transparency = true,
   lsp_semantic_tokens = true,
   hl_override = {
     Comment = { italic = true },
     ["@comment"] = { italic = true },
-    CursorLineNr = { fg = "#F0E9C2" },
+    CursorLineNr = { fg = COLORS.primary },
   },
   hl_add = {
     NvimTreeOpenedFolderName = { fg = "green", bold = true },

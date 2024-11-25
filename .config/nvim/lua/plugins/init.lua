@@ -1,3 +1,5 @@
+require "colors"
+
 return {
 
   ------------------------------------------------------------------------------
@@ -104,7 +106,6 @@ return {
 
   { -- BUFFER FILE EXPLORER
     "stevearc/oil.nvim",
-    -- dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = require("plugins.setup.filesystem.oil").opts,
   },
 
@@ -171,6 +172,8 @@ return {
   --             OFF `utilyre/barbecue.nvim`: Строка текущего положения курсора в синтаксическом древе.
   --             OFF `folke/zen-mode.nvim`: Полноэкранный режим с отключение всего UI.
   --             OFF     └─ `folke/twilight.nvim`: Затемняет неактивные части редактируемого кода.
+  --             ON  `sphamba/smear-cursor.nvim`: Добавляет анимацию для курсора в терминале.
+  --             OFF `karb94/neoscroll.nvim`: Иммулирует плавный скрол в терминале.
   ------------------------------------------------------------------------------
 
   { -- UI
@@ -226,6 +229,22 @@ return {
   --   },
   -- },
 
+  { -- SMOOTH CURSOR
+    "sphamba/smear-cursor.nvim",
+    opts = require("plugins.setup.interface.smear-cursor").opts,
+    init = function()
+      require("smear_cursor").cursor_color = COLORS.primary
+      require("smear_cursor").normal_bg = COLORS.primary_ghost
+    end,
+  },
+
+  -- { -- SMOOTH SCROLL
+  --   "karb94/neoscroll.nvim",
+  --   init = function()
+  --     require("neoscroll").setup {}
+  --   end,
+  -- },
+
   ------------------------------------------------------------------------------
   -- @category   Поиск и замена
   --
@@ -262,7 +281,6 @@ return {
     "kdheepak/lazygit.nvim",
     cmd = { "LazyGit", "LazyGitConfig", "LazyGitCurrentFile", "LazyGitFilter", "LazyGitFilterCurrentFile" },
     config = require("plugins.setup.git.lazygit").config(),
-    -- dependencies = { "nvim-lua/plenary.nvim" },
   },
 
   { -- DIFF VIEW
@@ -323,10 +341,6 @@ return {
     "Exafunction/codeium.vim",
     event = "BufEnter",
     config = require("plugins.setup.ai.codeium").config,
-    -- FIX(issue): https://github.com/Exafunction/codeium.vim/issues/376#issuecomment-2159643405
-    -- FIX: the latest update breaks the plugin. Need revert to v1.8.37 289eb72
-    -- version = "1.8.37",
-    -- commit = "289eb72",
   },
 
   ------------------------------------------------------------------------------
@@ -403,7 +417,6 @@ return {
   { -- LEETCODE
     "kawre/leetcode.nvim",
     lazy = "leetcode.nvim" ~= vim.fn.argv()[1],
-    -- opts = { arg = "leetcode.nvim" },
     opts = require("plugins.setup.skill.leetcode").opts,
   },
 

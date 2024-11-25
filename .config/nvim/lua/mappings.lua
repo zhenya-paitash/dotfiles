@@ -20,9 +20,7 @@ local MODE = {
 map(MODE.normal, "<Tab>", "<C-i>", { noremap = true, silent = true })
 -- map(MODE.normal, "<S-Tab>", "<cmd> bnext <CR>", { noremap = true, silent = true })
 
--- swap ` and ' for work with murks
-map(MODE.normal, "'", "`", { noremap = true, silent = true })
-map(MODE.normal, "`", "'", { noremap = true, silent = true })
+map(MODE.normal, "<leader>'", "`", { noremap = true, silent = true })
 
 -- unbind <C-s> [reason: i'm using <C-s> as a leader for TMUX]
 map({ MODE.normal, MODE.insert, MODE.visual }, "<C-s>", "", {})
