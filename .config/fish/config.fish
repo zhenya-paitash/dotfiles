@@ -44,6 +44,7 @@ alias ssh='kitten ssh'
 # fzf
 #alias fzf='fzf --preview "bat --color=always {}" --height 60% --inline-info --layout reverse --bind ctrl-u:preview-page-up,ctrl-d:preview-page-down,"ctrl-y:execute-silent(echo -n {+} | wl-copy)+abort"'
 alias fzf='fzf --preview "bat --color=always {}" --height 60% --inline-info --layout reverse --bind ctrl-u:preview-page-up,ctrl-d:preview-page-down,"ctrl-y:execute-silent(readlink -f {} | wl-copy -n)+abort"'
+alias fzfa='fzf --walker-skip="" --preview "bat --color=always {}" --height 60% --inline-info --layout reverse --bind ctrl-u:preview-page-up,ctrl-d:preview-page-down,"ctrl-y:execute-silent(readlink -f {} | wl-copy -n)+abort"'
 
 # tmux
 alias t='tmux'
@@ -62,6 +63,7 @@ alias viml='nvim leetcode.nvim'
 alias lg='lazygit'
 alias ld='lazydocker'
 alias vf='nvim $(fzf)'
+alias vfa='nvim $(fzfa)'
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"

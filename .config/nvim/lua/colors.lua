@@ -1,6 +1,8 @@
 _G.COLORS = {
-  primary = "#B189E8",
-  primary_ghost = "#8390E6",
+  -- shadotheme THEME
+  primary = "#B78EF1",
+  primary_ghost = "#8391EC",
+  secondary = "#EF91B2",
 
   -- obsidian *everforest dark* theme
   obsidian_primary = "#7EB78C",

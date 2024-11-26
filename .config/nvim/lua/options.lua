@@ -29,11 +29,13 @@ autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
   pattern = { "*" },
 })
 
--- highlight when yanking (copying) text
-vim.api.nvim_create_autocmd("TextYankPost", {
-  desc = "Highlight when yanking (copying) text",
-  group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-})
+-- highlight when yanking (copying) text 
+-- NOTE: don't need with plugin `gbprod/yanky.nvim`
+-- vim.api.nvim_create_autocmd("TextYankPost", {
+--   desc = "Highlight when yanking (copying) text",
+--   group = vim.api.nvim_create_augroup("highlight-yank", { clear = true }),
+--   callback = function()
+--     vim.highlight.on_yank()
+--   end,
+-- })
+

@@ -2,8 +2,11 @@
   font-size: 8px;
   font-family: "Noto Font";
 
-  // border-radius: 0 0 1rem 1rem;
-  border-radius: .5rem .5rem 0 0;
+  // for bottom
+  // border-radius: .5rem .5rem 0 0;
+  // for top
+  border-radius: 0 0 .5rem .5rem;
+
   // background-color: rgba($bg-color, 0.94);
   background-image: linear-gradient(rgba($bg-color, .75), rgba($bg-color, .9)), url("/home/zh/.config/ags/src/assets/texture/texture-noise-default-min.png");
 

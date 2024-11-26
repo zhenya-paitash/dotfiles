@@ -1,5 +1,9 @@
 return {
   config = function()
+    local fg_left = COLORS.primary
+    local fg_right = COLORS.primary_ghost
+    local fg_icons = COLORS.secondary
+    local fg_symbols = COLORS.secondary
     -- local fg_left = vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("Comment")), "fg")
     -- local fg_left = "#AF8260"
     -- local fg_right = "#AF8260"
@@ -7,10 +11,10 @@ return {
     -- local fg_symbols = "#FFEC9E"
 
     -- *EVERFOREST THEME*
-    local fg_left = "#D3C6AA"
-    local fg_right = "#D9BA7E"
-    local fg_icons = "#82BE91"
-    local fg_symbols = "#3C4841"
+    -- local fg_left = "#D3C6AA"
+    -- local fg_right = "#D9BA7E"
+    -- local fg_icons = "#82BE91"
+    -- local fg_symbols = "#3C4841"
 
     -- *YsDark THEME*
     -- local fg_left = "#6A97BD"

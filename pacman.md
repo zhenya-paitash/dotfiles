@@ -6,11 +6,11 @@ adwaita-cursors 47.0-1
 adwaita-icon-theme 47.0-1
 adwaita-icon-theme-legacy 46.2-3
 alsa-card-profiles 1:1.2.6-1
-alsa-lib 1.2.12-1
+alsa-lib 1.2.13-1
 alsa-plugins 1:1.2.12-4
 alsa-topology-conf 1.2.5.1-4
-alsa-ucm-conf 1.2.12-1
-alsa-utils 1.2.12-1
+alsa-ucm-conf 1.2.13-1
+alsa-utils 1.2.13-1
 amd-ucode 20241111.b5885ec5-1
 aom 3.11.0-1
 aquamarine 0.5.0-1
@@ -90,7 +90,7 @@ fd 10.2.0-1
 ffmpeg 2:7.1-2
 fftw 3.3.10-7
 file 5.45-1
-filesystem 2024.04.07-1
+filesystem 2024.11.21-1
 findutils 4.10.0-2
 firefox 132.0.2-1
 fish 3.7.1-2
@@ -524,7 +524,7 @@ python-platformdirs 4.3.6-1
 python-pygments 2.18.0-1
 python-requests 2.32.3-1
 python-setuptools 1:75.2.0-2
-python-tqdm 4.67.0-1
+python-tqdm 4.67.1-1
 python-urllib3 1.26.20-3
 python-wheel 0.45.0-1
 qbittorrent 5.0.2-1
@@ -552,7 +552,7 @@ seatd 0.9.1-1
 sed 4.9-3
 semver 7.6.3-1
 serd 0.32.2-1
-shaderc 2024.2-1
+shaderc 2024.3-1
 shadow 4.16.0-1
 shared-mime-info 2.4-1
 simple-mtpfs 0.4.0-1
@@ -573,9 +573,9 @@ sudo 1.9.16.p1-1
 svt-av1 2.2.1-1
 swww 0.9.5-2
 swww-debug 0.9.5-1
-systemd 256.8-1
-systemd-libs 256.8-1
-systemd-sysvcompat 256.8-1
+systemd 256.8-2
+systemd-libs 256.8-2
+systemd-sysvcompat 256.8-2
 tar 1.35-2
 tdb 1.4.12-1
 telegram-desktop 5.8.3-1

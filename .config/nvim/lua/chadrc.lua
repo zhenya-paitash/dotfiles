@@ -5,8 +5,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "tundra",
-  theme_toggle = { "tundra", "tundra" },
+  theme = "aquarium",
+  theme_toggle = { "aquarium", "aquarium" },
   transparency = true,
   lsp_semantic_tokens = true,
   hl_override = {
@@ -24,6 +24,9 @@ M.ui = {
     theme = "minimal",
     separator_style = "round",
   },
+  -- telescope = {
+  --   style = "bordered", -- borderless | bordered
+  -- },
   tabufline = {
     -- enabled = false,
     -- lazyload = true,

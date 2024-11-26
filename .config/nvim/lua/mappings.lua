@@ -93,6 +93,7 @@ map(MODE.normal, "<leader>gr", "<cmd> Telescope lsp_references <CR>", { desc = "
 map(MODE.normal, "<leader>gd", "<cmd> Telescope lsp_definitions <CR>", { desc = "find definitions (Telescope)" })
 map(MODE.normal, '<leader>f"', "<cmd> Telescope registers <CR>", { desc = "find registers (Telescope)" })
 map(MODE.normal, "<leader>f'", "<cmd> Telescope marks <CR>", { desc = "find marks (Telescope)" })
+map(MODE.normal, "<leader>fy", "<cmd> Telescope yank_history <CR>", { desc = "find yanks (Telescope | Yanky)" })
 map(MODE.normal, "<leader><Tab>", function()
   local actions = require "telescope.actions"
 
@@ -277,7 +278,7 @@ map(MODE.normal, "<leader>dc", "<cmd>lua require('dap').run_to_cursor()<CR>", { 
 -- DAP UI
 ---------------------------------------
 -- MODE: normal
-map(MODE.normal, "<leader>du", "<cmd> require('dapui').toggle() <CR>", { desc = "UI toggle (Dap UI)" })
+map(MODE.normal, "<leader>du", "<cmd>lua require('dapui').toggle() <CR>", { desc = "UI toggle (Dap UI)" })
 map(MODE.normal, "<leader>dk", function()
   vim.ui.input({ prompt = "Expression: " }, function(expr)
     if expr then
