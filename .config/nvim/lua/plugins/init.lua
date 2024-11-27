@@ -256,10 +256,10 @@ return {
   --   end,
   -- },
 
-  -- { -- CONTEXT DROPBAR
-  --   "Bekaboo/dropbar.nvim",
-  --   lazy = false,
-  -- },
+  { -- CONTEXT DROPBAR
+    "Bekaboo/dropbar.nvim",
+    event = "BufReadPost",
+  },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   Поиск и замена

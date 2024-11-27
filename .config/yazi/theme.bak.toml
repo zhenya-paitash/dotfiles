@@ -17,6 +17,9 @@
 [manager]
 cwd = { fg = "#f5e0dc" }
 
+# Highlighting
+syntect_theme = "~/.config/yazi/themes/catppuccin-mocha.tmTheme"
+
 # Hovered
 hovered         = { fg = "#1e1e2e", bg = "#82A9FC" }
 preview_hovered = { underline = true }
@@ -46,9 +49,6 @@ border_symbol = " "
 # border_symbol = ""
 # border_symbol = ""
 border_style  = { fg = "#82A9FC" }
-
-# Highlighting
-syntect_theme = "~/.config/yazi/themes/catppuccin-mocha.tmTheme"
 
 [status]
 # separator_open  = ""

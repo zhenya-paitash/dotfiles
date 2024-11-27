@@ -12,9 +12,10 @@ local MODE = {
   operator = "o",
 }
 
----------------------------------------
--- GENERAL
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   GENERAL
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ── normal ─────┐
 -- restore default <C-i> mapping
 -- map(MODE.normal, "<C-i>", "<C-i>", { noremap = true, silent = true })
 map(MODE.normal, "<Tab>", "<C-i>", { noremap = true, silent = true })
@@ -25,17 +26,11 @@ map(MODE.normal, "<leader>'", "`", { noremap = true, silent = true })
 -- unbind <C-s> [reason: i'm using <C-s> as a leader for TMUX]
 map({ MODE.normal, MODE.insert, MODE.visual }, "<C-s>", "", {})
 
--- MODE: normal
 map(MODE.normal, "<leader>a", "ggVGo", { desc = "select all", noremap = true, silent = true })
 -- map(MODE.normal, "<leader>z", "zfS", { desc = "create folder from ...", noremap = true, silent = true })
 map(MODE.normal, "n", "nzzzv", { desc = "next search", noremap = true, silent = true })
 map(MODE.normal, "N", "Nzzzv", { desc = "prev search", noremap = true, silent = true })
-map(
-  MODE.normal,
-  "<F1",
-  "<cmd>lua vim.lsp.buf.signature_help()<CR>",
-  { desc = "Show signature help", noremap = true, silent = true }
-)
+map(MODE.normal, "<F1>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { desc = "Show signature help" })
 map(MODE.normal, "<leader>w", "<cmd> w <CR>", { desc = "save current file", noremap = true, silent = true })
 -- RESIZE PANELS
 map(
@@ -69,21 +64,28 @@ map(MODE.visual, "<", "<gv", { desc = "indent right", noremap = true, silent = t
 map(MODE.visual, "<leader>y", '"+y', { desc = "copy system", noremap = true, silent = true })
 map(MODE.visual, "<C-c>", '"+y gv-gv', { desc = "copy system", noremap = true, silent = true })
 
--- MODE: insert
+--┌─ MODE ───────┐
+--│ insert       │
+--└──────────────┘
 -- map(MODE.insert, "<C-c>", '"+y', { desc = "Copy sys", noremap = true, silent = true })
 -- map(MODE.insert, "<C-j>", "<ESC> <cmd> m .+1 <CR> == gi", { desc = "Move line up", noremap = true, silent = true })
 -- map(MODE.insert, "<C-k>", "<ESC> <cmd> m .-2 <CR> == gi", { desc = "Move line down", noremap = true, silent = true })
 map(MODE.insert, "<F1>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { desc = "help signature" })
 
+--┌─ MODE ───────┐
+--│ visual_block │
+--└──────────────┘
 -- MODE: visual_block
 map(MODE.visual_block, "J", ":m '>+1 <CR> gv-gv", { desc = "block move down", noremap = true, silent = true })
 map(MODE.visual_block, "K", ":m '<-2 <cr> gv-gv", { desc = "block move up", noremap = true, silent = true })
 -- map(MODE.visual_block, "<C-c>", "'+y gv", { desc = "Copy sys", noremap = true, silent = true })
 
----------------------------------------
--- TELESCOPE
----------------------------------------
--- MODE: normal
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   TELESCOPE
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
 map(MODE.normal, "<leader><leader>", "<cmd> Telescope find_files <CR>", { desc = "find files (Telescope)" })
 map(MODE.normal, "<leader>fs", "<cmd> Telescope lsp_document_symbols <CR>", { desc = "document symbols (Telescope)" })
 map(MODE.normal, "<leader>fr", "<cmd> Telescope resume <CR>", { desc = "resume last search (Telescope)" })
@@ -114,12 +116,14 @@ map(MODE.normal, "<leader><Tab>", function()
   }
 end, { desc = "buffers (Telescope)" })
 
--- MODE: visual
+--┌─ MODE ───────┐
+--│ visual       │
+--└──────────────┘
 map(MODE.visual, "<leader>*", "<cmd> Telescope grep_string <CR>", { desc = "grep string (Telescope)" })
 
----------------------------------------
--- TROUBLE
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   TROUBLE
+--└───────────┴─────────────────────────────────────────────────────────────┘
 -- TELESCOPE + TROUBLE
 local trouble_open = require("trouble.sources.telescope").open
 require("telescope").setup {
@@ -131,7 +135,9 @@ require("telescope").setup {
   },
 }
 
--- -- MODE: normal
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
 map(
   MODE.normal,
   "]t",
@@ -174,10 +180,12 @@ map(
   { desc = "symbols (Trouble)" }
 )
 
----------------------------------------
--- TABUFLINE
----------------------------------------
--- MODE: normal
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   TABUFLINE
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
 map(MODE.normal, "<leader>X", function()
   require("nvchad.tabufline").closeAllBufs()
   vim.cmd "NvimTreeFocus"
@@ -227,10 +235,12 @@ end, { desc = "Close other buffers", noremap = true, silent = true })
 --   vim.cmd "NvimTreeFocus"
 -- end, { desc = "Close all buffers", noremap = true, silent = true })
 
----------------------------------------
--- FLASH
----------------------------------------
--- MODE: normal
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   FLASH
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
 -- INFO: this keybindings is here "./plugins/setup/flash.lua"
 -- map({ MODE.normal, MODE.visual_block, MODE.operator }, "<leader>s", function()
 --   require("flash").jump()
@@ -239,23 +249,29 @@ end, { desc = "Close other buffers", noremap = true, silent = true })
 --   require("flash").treesitter()
 -- end, { desc = "Flash Treesitter", noremap = true, silent = true })
 
----------------------------------------
--- TODOCOMMENTS
----------------------------------------
---MODE: normal
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   TODOCOMMENTS
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
 map(MODE.normal, "<leader>tt", "<cmd> TodoTrouble <CR>", { desc = "todo (Trouble)", noremap = true, silent = true })
 map(MODE.normal, "<leader>ft", "<cmd> TodoTelescope <CR>", { desc = "todo (Telescope)", noremap = true, silent = true })
 
----------------------------------------
--- LAZYGIT
----------------------------------------
---MODE: normal
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   LAZYGIT
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
 map(MODE.normal, "<leader>gl", "<cmd> LazyGit <CR>", { desc = "LazyGit" })
 
----------------------------------------
--- DAP
----------------------------------------
--- MODE: normal
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   DAP
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
 map(MODE.normal, "<leader>ds", "<cmd>lua require('dap').continue()<CR>", { desc = "start/continue (Dap)" })
 map(MODE.normal, "<leader>dr", "<cmd>lua require('dap').repl.toggle()<CR>", { desc = "repl toggle (Dap)" })
 map(MODE.normal, "<leader>dR", "<cmd>lua require('dap').restart_frame()<CR>", { desc = "restart (Dap)" })
@@ -274,10 +290,12 @@ map(MODE.normal, "<leader>dO", "<cmd>lua require('dap').step_out()<CR>", { desc 
 map(MODE.normal, "<leader>dp", "<cmd>lua require('dap').pause()<CR>", { desc = "pause (Dap)" })
 map(MODE.normal, "<leader>dc", "<cmd>lua require('dap').run_to_cursor()<CR>", { desc = "run to cursor (Dap)" })
 
----------------------------------------
--- DAP UI
----------------------------------------
--- MODE: normal
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   DAP UI
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
 map(MODE.normal, "<leader>du", "<cmd>lua require('dapui').toggle() <CR>", { desc = "UI toggle (Dap UI)" })
 map(MODE.normal, "<leader>dk", function()
   vim.ui.input({ prompt = "Expression: " }, function(expr)
@@ -288,13 +306,17 @@ map(MODE.normal, "<leader>dk", function()
 end, { desc = "evaluate input (Dap UI)", noremap = true, silent = true })
 -- maps.n["<leader>dh"] = { function() require("dap.ui.widgets").hover() end, desc = "Debugger Hover" }
 
--- MODE: visual
+--┌─ MODE ───────┐
+--│ visual       │
+--└──────────────┘
 map(MODE.visual, "<leader>dk", "<cmd>lua require('dapui').eval()<CR>", { desc = "evaluate input (Dau UI)" })
 
----------------------------------------
--- PERSISTENCE
----------------------------------------
--- MODE: normal
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   PERSISTENCE
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
 map(MODE.normal, "<leader>qs", function()
   require("persistence").load()
   vim.notify_once("  session loaded!", vim.log.levels.INFO, { title = "Persistence" })
@@ -308,17 +330,21 @@ map(MODE.normal, "<leader>qd", function()
   vim.notify_once("󱙄 session won't be saved!", vim.log.levels.WARN, { title = "Persistence" })
 end, { desc = "don't save (Persistence)" })
 
----------------------------------------
--- DIFFVIEW
----------------------------------------
--- MODE: normal
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   DIFFVIEW
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
 map(MODE.normal, "<leader>gd", "<cmd> DiffviewOpen <CR>", { desc = "git open (Diffview)" })
 map(MODE.normal, "<leader>gc", "<cmd> DiffviewClose <CR>", { desc = "git close (Diffview)" })
 
----------------------------------------
--- MARKDOWN PREVIEW
----------------------------------------
--- MODE: normal
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   MARKDOWN PREVIEW
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
 -- map(MODE.normal, "<leader>mp", function()
 --   vim.cmd "MarkdownPreviewToggle"
 --   print " markdown preview current file enabled!"
@@ -327,21 +353,21 @@ map(MODE.normal, "<leader>gc", "<cmd> DiffviewClose <CR>", { desc = "git close (
 -- map(MODE.normal, "<leader>mpx", "<cmd> MarkdownPreviewStop <CR>", { desc = "close (Markdown Preview)" })
 map(MODE.normal, "<leader>pm", "<cmd> Markview toggle <CR>", { desc = "markdown preview toggle (Markview)" })
 
----------------------------------------
--- JSON
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   JSON
+--└───────────┴─────────────────────────────────────────────────────────────┘
 map(MODE.normal, "<leader>pj", ":%!jq '.'<CR>")
 
----------------------------------------
--- REST.NVIM
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   REST.NVIM
+--└───────────┴─────────────────────────────────────────────────────────────┘
 -- map(MODE.normal, "<leader>rr", "<cmd> Rest run <CR>", { desc = "run request under the cursor (Rest)" })
 -- map(MODE.normal, "<leader>rl", "<cmd> Rest run last <CR>", { desc = "run last request (Rest)" })
 -- map(MODE.normal, "<leader>re", "<cmd> Telescope rest select_env <CR>", { desc = "select env (Rest)" })
 
----------------------------------------
--- GRUG-FAR.NVIM
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   GRUG-FAR.NVIM
+--└───────────┴─────────────────────────────────────────────────────────────┘
 map(MODE.normal, "<leader>fg", "<cmd> lua require('grug-far').grug_far() <CR>", { desc = "search & replace (Grug)" })
 map(
   MODE.normal,
@@ -350,20 +376,20 @@ map(
   { desc = "search & replace under cursor (Grug)" }
 )
 
----------------------------------------
--- UI
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   UI
+--└───────────┴─────────────────────────────────────────────────────────────┘
 -- MODE: normal
 map(MODE.normal, "<leader>n", "<cmd> NoiceAll <CR>", { desc = "messages (Noice)" })
 
----------------------------------------
--- HTTP CLIENT `kulala`
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   HTTP CLIENT `kulala`
+--└───────────┴─────────────────────────────────────────────────────────────┘
 map(MODE.normal, "<leader>rr", "<cmd>lua require('kulala').run()<cr>", { desc = "Execute current request" })
 
----------------------------------------
--- OIL.NVIM
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   OIL.NVIM
+--└───────────┴─────────────────────────────────────────────────────────────┘
 map(
   MODE.normal,
   "<leader>-",
@@ -371,34 +397,40 @@ map(
   { desc = "buffer file explorer (Oil.nvim)" }
 )
 
----------------------------------------
--- SHOWKEYS
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   SHOWKEYS
+--└───────────┴─────────────────────────────────────────────────────────────┘
 map(MODE.normal, "<leader>pk", "<cmd> ShowkeysToggle <CR>", { desc = "show keys toggle (showkeys)" })
 
----------------------------------------
--- TIMERLY
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   TIMERLY
+--└───────────┴─────────────────────────────────────────────────────────────┘
 map(MODE.normal, "<leader>pt", "<cmd> TimerlyToggle <CR>", { desc = "timer toggle (Timerly)" })
 
----------------------------------------
--- HARDTIME
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   HARDTIME
+--└───────────┴─────────────────────────────────────────────────────────────┘
+map(MODE.normal, "<leader>ph", "<cmd> Hardtime toggle<cr>", { desc = "ON/OFF best practice (Hardtime)" })
 map(MODE.normal, "<leader>pht", "<cmd> Hardtime toggle<cr>", { desc = "TOGGLE best practice (Hardtime)" })
 map(MODE.normal, "<leader>phe", "<cmd> Hardtime enable<cr>", { desc = "ON best practice (Hardtime)" })
 map(MODE.normal, "<leader>phd", "<cmd> Hardtime disable<cr>", { desc = "OFF best practice (Hardtime)" })
 map(MODE.normal, "<leader>phr", "<cmd> Hardtime report<cr>", { desc = "show report (Hardtime)" })
 
----------------------------------------
--- BARBECUE
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   BARBECUE
+--└───────────┴─────────────────────────────────────────────────────────────┘
 map(MODE.normal, "<leader>pb", "<cmd> Barbecue toggle <CR>", { desc = "winbar toggle (Barbecue)" })
 
----------------------------------------
--- HARPOON
----------------------------------------
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   HARPOON
+--└───────────┴─────────────────────────────────────────────────────────────┘
 -- map( MODE.normal, "<leader>hl", "<cmd> lua require('harpoon.ui').toggle_quick_menu() <CR>", { desc = "show list (Harpoon)" })
 -- map(MODE.normal, "<leader>ha", "<cmd> lua require('harpoon.mark').add_file() <CR>", { desc = "ADD file (Harpoon)" })
 -- map(MODE.normal, "<leader>hn", "<cmd> lua require('harpoon.ui').nav_next() <CR>", { desc = "NEXT file (Harpoon)" })
 -- map(MODE.normal, "<leader>hp", "<cmd> lua require('harpoon.ui').nav_prev() <CR>", { desc = "PREV file (Harpoon)" })
 -- map(MODE.normal, "<leader>hf", "<cmd> Telescope harpoon marks <CR>", { desc = "find harpoon marks (Telescope | Harpoon)" })
+
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   DROPBAR.NVIM
+--└───────────┴─────────────────────────────────────────────────────────────┘
+map(MODE.normal, "<leader>pd", "<cmd> lua require('dropbar.api').pick() <CR>", { desc = "pick dropbar (Dropbar)" })

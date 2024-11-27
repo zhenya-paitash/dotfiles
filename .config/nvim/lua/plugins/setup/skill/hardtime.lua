@@ -34,13 +34,15 @@ return {
     --   "query",
     --   "oil",
     --   "undotree",
+    --   "trouble",
     --   "Trouble",
     --   "fugitive",
     --
     --   -- CUSTOM
-    --   "VimBeGood",  -- DOESN'T WORK ???
-    --   "DB",
-    --   "DBUI",
+    --   --   "VimBeGood",  -- DOESN'T WORK ???
+    --   --   "DB",
+    --   --   "DBUI",
+    --   -- "dropbar.nvim",
     -- },
 
     -- CUSTOM OPTIONS

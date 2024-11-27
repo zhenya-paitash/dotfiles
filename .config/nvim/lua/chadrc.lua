@@ -20,6 +20,11 @@ M.base46 = {
 }
 
 M.ui = {
+  cmp = {
+    format_colors = {
+      tailwind = true,
+    },
+  },
   statusline = {
     theme = "minimal",
     separator_style = "round",
