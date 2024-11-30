@@ -434,3 +434,8 @@ map(MODE.normal, "<leader>pb", "<cmd> Barbecue toggle <CR>", { desc = "winbar to
 --├ @catecory   DROPBAR.NVIM
 --└───────────┴─────────────────────────────────────────────────────────────┘
 map(MODE.normal, "<leader>pd", "<cmd> lua require('dropbar.api').pick() <CR>", { desc = "pick dropbar (Dropbar)" })
+
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   FZF
+--└───────────┴─────────────────────────────────────────────────────────────┘
+map(MODE.normal, "<leader>fe", "<cmd> CustomFzf <CR>", { desc = "find all files (fzf)" })

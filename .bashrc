@@ -16,3 +16,6 @@ PS1='[\u@\h \W]\$ '
 export PATH=$PATH:$HOME/.local/share/nvm/v22.3.0/bin
 
 . "$HOME/.cargo/env"
+
+export PATH=$PATH:/usr/bin/fzf
+

@@ -67,22 +67,21 @@
 .workspace {
   padding: 2px;
   margin: 2px;
-  border-radius: .4rem;
   opacity: 0;
-  // background-color: $primary-color;
+  border-radius: .4rem;
+  background-color: $primary-color;
   transition: all .3s ease-in-out;
   transition-delay: 0.1s;
 
   button {
     min-width: 12px;
     min-height: 12px;
-    // margin: 2px 4px;
-    margin: 0 2px;
-    background-color: $secondary-color;
+    margin: 0;
+    // background-color: $primary-color;
 
     &.current {
       // min-width: 24px;
-      background-color: $primary-color;
+      background-color: $secondary-color;
     }
   }
 }

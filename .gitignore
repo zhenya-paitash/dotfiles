@@ -46,6 +46,8 @@
 !.config/lazydocker**
 !.config/lazygit**
 !.config/mpv**
+!.config/nushell**
+.config/nushell/history.txt
 !.config/nvim**
 !.config/nwg-look**
 !.config/tmux**

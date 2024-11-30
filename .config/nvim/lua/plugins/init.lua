@@ -1,4 +1,5 @@
 require "colors"
+require "plugins.setup._custom.fzf"
 
 return {
   --┌───────────┬─────────────────────────────────────────────────────────────┐
@@ -128,7 +129,8 @@ return {
   --│ @plugins    ON  `folke/flash.nvim`: Улучшенная навигация.
   --│             ON  `kylechui/nvim-surround`: Улучшенное редактирование окружений.
   --│             ON  `mg979/vim-visual-multi`: Улучшенная многокурсорная навигация.
-  --│             ON  `nvim-telescope/telescope-fzf-native.nvim`: Улучшенный поиск в telescope с fzf.
+  --│             OFF `nvim-telescope/telescope-fzf-native.nvim`: Улучшенный поиск в telescope с fzf.
+  --│             ON  `ibhagwan/fzf-lua`: Поиск посредством fzf установленного в системе (значительно быстрее).
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   { -- NAVIGATION
@@ -153,15 +155,15 @@ return {
     init = require("plugins.setup.navigation.vim-visual-multi").init,
   },
 
-  { -- FZF
-    -- INFO: `:Telescope load_extension fzf` OR go to `$HOME/.local/share/nvim/lazy/telescope-fzf-native.nvim` and run `make`
-    "nvim-telescope/telescope-fzf-native.nvim",
-    event = "VeryLazy",
-    build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
-    config = function()
-      require("telescope").load_extension "fzf"
-    end,
-  },
+  -- { -- FZF
+  --   -- INFO: `:Telescope load_extension fzf` OR go to `$HOME/.local/share/nvim/lazy/telescope-fzf-native.nvim` and run `make`
+  --   "nvim-telescope/telescope-fzf-native.nvim",
+  --   event = "VeryLazy",
+  --   -- build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
+  --   config = function()
+  --     require("telescope").load_extension "fzf"
+  --   end,
+  -- },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   Интерфейс
@@ -244,8 +246,10 @@ return {
     event = "VeryLazy",
     opts = require("plugins.setup.interface.smear-cursor").opts,
     init = function()
-      require("smear_cursor").cursor_color = COLORS.primary
-      require("smear_cursor").normal_bg = COLORS.primary_ghost
+      require("smear_cursor").setup {
+        cursor_color = COLORS.primary,
+        normal_bg = COLORS.primary_ghost,
+      }
     end,
   },
 

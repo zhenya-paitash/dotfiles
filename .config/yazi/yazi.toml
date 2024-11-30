@@ -21,16 +21,15 @@ open = [
 ]
 edit = [
 	{ run = 'nvim "$@"', desc = "Neovim", block = true },
-  { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
-  { run = 'browser "$@" --incognito', desc = "Open incognito", for = "linux" },
 	{ run = 'kitty .', desc = "Open Terminal" },
+  { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
 ]
 extract = [
 	{ run = 'ya pub extract --list "$@"', desc = "Extract here", for = "unix" },
   { run = 'tar -xf "$@" --one-top-level', desct = "tar -xf", for = "unix" },
 	{ run = 'unrar x "$@" "${1%.*}"/', desc = "unrar x", for = "unix" },
-  { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
 	{ run = 'kitty .', desc = "Open Terminal" },
+  { run = 'xdg-open "$@"', desc = "Open", for = "linux" },
 ]
 play = [
 	{ run = 'mpv "$@"', orphan = true, for = "unix" },
