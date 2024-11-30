@@ -1,0 +1,19 @@
+[user]
+	name = zhenya-paitash
+	email = zhenyapaitash@gmail.com
+
+[core]
+	editor = nvim
+  pager = delta
+
+[include]
+  path = ~/.config/delta/themes/catppuccin.gitconfig
+
+[delta]
+  features = catppuccin-mocha
+  ; syntax-theme = "Everforest Dark"
+  true-color = always
+  side-by-side = true
+  line-numbers = true
+  line-numbers-left-format = ""
+  line-numbers-right-format = "│ "

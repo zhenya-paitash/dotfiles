@@ -102,3 +102,7 @@ $env.NU_PLUGIN_DIRS = [
 
 # STARSHIP
 use ~/.cache/starship/init.nu
+
+# ZOXIDE
+zoxide init nushell | save -f ~/.zoxide.nu
+
