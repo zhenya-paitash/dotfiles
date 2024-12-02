@@ -131,6 +131,7 @@
 }
 
 .bluetooth.bluetooth-disabled .icon,
+.vpn.vpn-disabled .icon,
 .volume.volume-disabled .icon,
 .battery.battery-disabled .icon,
 .battery.battery-disabled label.battery-percent {
@@ -138,9 +139,15 @@
   transition: opacity .1s ease-in-out;
 }
 
+.vpn,
 .bluetooth {
   &:not(.bluetooth-disabled).sys-mng-active {
     color: $base;
     background-color: $blue;
   }
+  &:not(.vpn-disabled).sys-mng-active {
+    color: $base;
+    background-color: $blue;
+  }
 }
+

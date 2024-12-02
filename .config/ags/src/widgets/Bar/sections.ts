@@ -3,6 +3,7 @@ import { BluetoothWidget } from "./components/bluetooth";
 import { ClockWidget } from "./components/clock";
 import { MediaWidget } from "./components/media";
 import { NetworkWidget } from "./components/network";
+import { VpnWidget } from "./components/vpn";
 import { PowerWidget } from "./components/power";
 import { VolumeWidget } from "./components/volume";
 import { WorkspaceWidget } from "./components/workspace";
@@ -36,6 +37,7 @@ export function SectionRight() {
     // spacing: 8,
     children: [
       NetworkWidget(),
+      VpnWidget(),
       BluetoothWidget(),
       VolumeWidget(),
       BatteryWidget(),
