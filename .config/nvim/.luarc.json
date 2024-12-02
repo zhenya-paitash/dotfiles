@@ -1,0 +1,6 @@
+{
+    "diagnostics.globals": [
+        "vim",
+        "read_env_file"
+    ]
+}

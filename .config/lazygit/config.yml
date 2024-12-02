@@ -59,7 +59,10 @@ gui:
 git:
   paging:
     colorArg: always
-    pager: delta --side-by-side --dark --paging=never --line-numbers --syntax-theme "Everforest Dark"
+    pager: delta --side-by-side --paging=never --line-numbers --true-color=always
+    useConfig: false
+    externalDiffCommand: "" 
+
 
 customCommands:
   - key: '<C-n>'

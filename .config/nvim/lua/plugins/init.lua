@@ -1,4 +1,5 @@
 require "colors"
+require "plugins.setup._custom.load_env" -- for `avante.nvim` AI plugin
 require "plugins.setup._custom.fzf"
 
 return {
@@ -355,12 +356,53 @@ return {
   --│             └────────────────────┘
   --│
   --├ @plugins    ON  `Exafunction/codeium.vim`: AI автозаполнение.
+  --├             ON  `yetone/avante.nvim`: Отличный провайдер AI моделей.
+  --│             OFF     ├─ `stevearc/dressing.nvim`: Core UI inputs.
+  --│             ON      ├─ `nvim-lua/plenary.nvim`: Переиспользование написаных функций для lua.
+  --│             ON      └─ `MunifTanjim/nui.nvim: используется для правильного рендеринга и многократного просмотра.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
-  { -- AI
+  { -- SMALL AI COMPLETION
     "Exafunction/codeium.vim",
     event = "BufEnter",
     config = require("plugins.setup.ai.codeium").config,
+  },
+
+  { -- NEOVIM AI -> CURSOR
+    "yetone/avante.nvim",
+    event = "BufReadPost",
+    opts = require("plugins.setup.ai.avante").opts,
+    build = "make", -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
+    dependencies = {
+      -- "stevearc/dressing.nvim",
+      "nvim-lua/plenary.nvim",
+      "MunifTanjim/nui.nvim",
+
+      -- {
+      --   -- support for image pasting
+      --   "HakonHarnes/img-clip.nvim",
+      --   event = "VeryLazy",
+      --   opts = {
+      --     -- recommended settings
+      --     default = {
+      --       embed_image_as_base64 = false,
+      --       prompt_for_file_name = false,
+      --       drag_and_drop = {
+      --         insert_mode = true,
+      --       },
+      --       -- required for Windows users
+      --       use_absolute_path = true,
+      --     },
+      --   },
+      -- },
+      --
+      -- {
+      --   -- Make sure to set this up properly if you have lazy=true
+      --   "MeanderingProgrammer/render-markdown.nvim",
+      --   opts = { file_types = { "markdown", "Avante" } },
+      --   ft = { "markdown", "Avante" },
+      -- },
+    },
   },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐

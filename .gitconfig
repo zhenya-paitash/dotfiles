@@ -11,9 +11,9 @@
 
 [delta]
   features = catppuccin-mocha
-  ; syntax-theme = "Everforest Dark"
   true-color = always
   side-by-side = true
-  line-numbers = true
-  line-numbers-left-format = ""
-  line-numbers-right-format = "│ "
+  ; syntax-theme = "Everforest Dark"
+  ; line-numbers = true
+  ; line-numbers-left-format = ""
+  ; line-numbers-right-format = "│ "

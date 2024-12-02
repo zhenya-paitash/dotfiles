@@ -216,7 +216,7 @@ l-smash 2.14.5-4
 lame 3.100-5
 lazygit 0.44.1-1
 lcms2 2.16-1
-less 1:661-1
+less 1:668-1
 libarchive 3.7.7-1
 libass 0.17.3-1
 libassuan 3.0.0-1
@@ -225,7 +225,7 @@ libavc1394 0.5.4-6
 libavif 1.1.1-2
 libb2 0.98.1-3
 libbluray 1.3.4-2
-libbpf 1.4.3-1
+libbpf 1.5.0-1
 libbs2b 3.1.0-9
 libcamera 0.3.2-1
 libcamera-ipa 0.3.2-1
@@ -347,7 +347,7 @@ libthai 0.1.29-3
 libtheora 1.1.1-6
 libtiff 4.7.0-1
 libtirpc 1.3.6-1
-libtool 2.5.3-1
+libtool 2.5.4+r1+gbaa1fe41-1
 libtorrent-rasterbar 1:2.0.10-3
 libunibreak 6.1-1
 libunistring 1.2-1
@@ -358,6 +358,7 @@ libutempter 1.2.1-4
 libutf8proc 2.9.0-1
 libuv 1.49.2-1
 libva 2.22.0-1
+libva-utils 2.22.0-1
 libvdpau 1.5-3
 libverto 0.3.2-5
 libvorbis 1.3.7-3
@@ -447,7 +448,7 @@ ninja 1.12.1-1
 node-gyp 10.2.0-1
 nodejs 23.1.0-1
 nodejs-nopt 7.2.1-1
-noto-fonts 1:2024.11.01-1
+noto-fonts 1:2024.12.01-1
 noto-fonts-emoji 1:2.047-1
 npm 10.9.0-1
 npth 1.8-1
@@ -463,8 +464,10 @@ opencore-amr 0.1.6-2
 openexr 3.3.2-1
 openh264 2.5.0-1
 openjpeg2 2.5.2-1
+openresolv 3.13.2-2
 openssh 9.9p1-2
 openssl 3.4.0-1
+openvpn 2.6.12-1
 opus 1.5.2-1
 orc 0.4.40-1
 p11-kit 0.25.5-1
@@ -493,7 +496,8 @@ pipewire-audio 1:1.2.7-1
 pipewire-jack 1:1.2.7-1
 pipewire-pulse 1:1.2.7-1
 pixman 0.44.0-1
-pkgconf 2.1.1-1
+pkcs11-helper 1.30.0-1
+pkgconf 2.3.0-1
 polkit 125-1
 poppler-data 0.4.12-2
 popt 1.19-2
@@ -571,13 +575,13 @@ sratom 0.6.16-1
 srt 1.5.4-1
 starship 1.21.1-1
 startup-notification 0.12-8
-sudo 1.9.16.p1-1
+sudo 1.9.16.p2-1
 svt-av1 2.2.1-1
 swww 0.9.5-2
 swww-debug 0.9.5-1
-systemd 256.8-2
-systemd-libs 256.8-2
-systemd-sysvcompat 256.8-2
+systemd 256.9-1
+systemd-libs 256.9-1
+systemd-sysvcompat 256.9-1
 tar 1.35-2
 tdb 1.4.12-1
 telegram-desktop 5.8.3-1
@@ -623,6 +627,7 @@ wayland-protocols 1.38-1
 webrtc-audio-processing-1 1.3-3
 wget 1.25.0-1
 which 2.21-6
+wireguard-tools 1.0.20210914-2
 wireplumber 0.5.6-1
 wl-clipboard 1:2.2.1-2
 wlroots 0.18.1-1
