@@ -1,23 +1,19 @@
 return {
-  build = function()
-    vim.fn["mkdp#util#install"]()
-  end,
-
+  -- @link: https://github.com/iamcco/markdown-preview.nvim?tab=readme-ov-file#markdownpreview-config
   init = function()
-    -- " set to 1, the nvim will auto close current preview window when changing
-    -- " from Markdown buffer to another buffer
-    -- " default: 1
+    vim.g.mkdp_filetypes = { "markdown" }
+
     vim.g.mkdp_auto_close = 0
-
-    -- " default: 0
-    -- " if enable it will reuse previous opened preview window when you preview markdown file.
-    -- " ensure to set let g:mkdp_auto_close = 0 if you have enable this option
     vim.g.mkdp_combine_preview = 1
+    -- vim.g.mkdp_combine_preview_auto_refresh = 1
 
-    -- " auto refetch combine preview contents when change markdown buffer
-    -- " only when g:mkdp_combine_preview is 1
-    vim.g.mkdp_combine_preview_auto_refresh = 1
-
-    -- vim.g.mkdp_browserfunc = ":!firefox --new-window<CR>"
+    -- @desc: pass CLI options to the browser, like opening in a new window
+    -- @link: https://github.com/iamcco/markdown-preview.nvim?tab=readme-ov-file#how-can-i-pass-cli-options-to-the-browser-like-opening-in-a-new-window
+    vim.cmd [[
+      function! OpenMarkdownPreview(url)
+        execute 'silent ! brave --new-window ' . shellescape(a:url)
+      endfunction
+    ]]
+    vim.g.mkdp_browserfunc = "OpenMarkdownPreview"
   end,
 }

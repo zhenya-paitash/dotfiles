@@ -33,12 +33,7 @@ map(MODE.normal, "N", "Nzzzv", { desc = "prev search", noremap = true, silent = 
 map(MODE.normal, "<F1>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { desc = "Show signature help" })
 map(MODE.normal, "<leader>w", "<cmd> w <CR>", { desc = "save current file", noremap = true, silent = true })
 -- RESIZE PANELS
-map(
-  MODE.normal,
-  "<A-right>",
-  "<cmd> :vertical resize +10 <CR>",
-  { desc = "resize right", noremap = true, silent = true }
-)
+map(MODE.normal, "<A-right>", "<cmd> :vertical resize +10 <CR>", { desc = "resize right", noremap = true, silent = true })
 map(MODE.normal, "<A-left>", "<cmd> vertical resize -10 <CR>", { desc = "resize left", noremap = true, silent = true })
 map(MODE.normal, "<A-up>", "<cmd> resize +10% <CR>", { desc = "resize up", noremap = true, silent = true })
 map(MODE.normal, "<A-down>", "<cmd> resize -10% <CR>", { desc = "resize down", noremap = true, silent = true })
@@ -138,47 +133,17 @@ require("telescope").setup {
 --┌─ MODE ───────┐
 --│ normal       │
 --└──────────────┘
-map(
-  MODE.normal,
-  "]t",
-  "<cmd> lua require('trouble').next { skip_groups = true, jump = true } <CR>",
-  { desc = "go to next (Trouble)" }
-)
-map(
-  MODE.normal,
-  "[t",
-  "<cmd> lua require('trouble').prev { skip_groups = true, jump = true } <CR>",
-  { desc = "go to previous (Trouble)" }
-)
+map(MODE.normal, "]t", "<cmd> lua require('trouble').next { skip_groups = true, jump = true } <CR>", { desc = "go to next (Trouble)" })
+map(MODE.normal, "[t", "<cmd> lua require('trouble').prev { skip_groups = true, jump = true } <CR>", { desc = "go to previous (Trouble)" })
 -- map(MODE.normal, "<leader>t", "<cmd> Trouble <CR>", { desc = "Trouble" })
 map(MODE.normal, "<leader>td", "<cmd> Trouble diagnostics toggle <CR>", { desc = "diagnostics (Trouble)" })
-map(
-  MODE.normal,
-  "<leader>tD",
-  "<cmd> Trouble diagnostics toggle filter.buf=0 <CR>",
-  { desc = "diagnostics buffer (Trouble)" }
-)
+map(MODE.normal, "<leader>tD", "<cmd> Trouble diagnostics toggle filter.buf=0 <CR>", { desc = "diagnostics buffer (Trouble)" })
 map(MODE.normal, "<leader>tl", "<cmd> Trouble loclist toggle <CR>", { desc = "loclist (Trouble)" })
-map(
-  MODE.normal,
-  "<leader>tl",
-  "<cmd> Trouble lsp toggle focus=false win.position=right <CR>",
-  { desc = "lsp def/ref/... (Trouble)" }
-)
-map(
-  MODE.normal,
-  "<leader>ts",
-  "<cmd> Trouble lsp_document_symbols toggle focus=false win.position=right <CR>",
-  { desc = "lps symbols (Trouble)" }
-)
+map(MODE.normal, "<leader>tl", "<cmd> Trouble lsp toggle focus=false win.position=right <CR>", { desc = "lsp def/ref/... (Trouble)" })
+map(MODE.normal, "<leader>ts", "<cmd> Trouble lsp_document_symbols toggle focus=false win.position=right <CR>", { desc = "lps symbols (Trouble)" })
 map(MODE.normal, "<leader>tQ", "<cmd> Trouble qflist toggle <CR>", { desc = "qflist (Trouble)" })
 map(MODE.normal, "<leader>tq", "<cmd> Trouble quickfix toggle <CR>", { desc = "quickfix (Trouble)" })
-map(
-  MODE.normal,
-  "<leader>tS",
-  "<cmd> Trouble symbols toggle focus=false win.position=right <CR>",
-  { desc = "symbols (Trouble)" }
-)
+map(MODE.normal, "<leader>tS", "<cmd> Trouble symbols toggle focus=false win.position=right <CR>", { desc = "symbols (Trouble)" })
 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   TABUFLINE
@@ -272,23 +237,20 @@ map(MODE.normal, "<leader>gl", "<cmd> LazyGit <CR>", { desc = "LazyGit" })
 --┌─ MODE ───────┐
 --│ normal       │
 --└──────────────┘
-map(MODE.normal, "<leader>ds", "<cmd>lua require('dap').continue()<CR>", { desc = "start/continue (Dap)" })
-map(MODE.normal, "<leader>dr", "<cmd>lua require('dap').repl.toggle()<CR>", { desc = "repl toggle (Dap)" })
-map(MODE.normal, "<leader>dR", "<cmd>lua require('dap').restart_frame()<CR>", { desc = "restart (Dap)" })
-map(MODE.normal, "<leader>dq", "<cmd>lua require('dap').close()<CR>", { desc = "close (Dap)" })
-map(MODE.normal, "<leader>dQ", "<cmd>lua require('dap').terminate()<CR>", { desc = "terminate (Dap)" })
-map(MODE.normal, "<leader>db", "<cmd>lua require('dap').toggle_breakpoint()<CR>", { desc = "breakpoint toggle (Dap)" })
-map(
-  MODE.normal,
-  "<leader>dB",
-  "<cmd>lua require('dap').clear_breakpoints()<CR>",
-  { desc = "breakpoint clear all (Dap)" }
-)
-map(MODE.normal, "<leader>di", "<cmd>lua require('dap').step_into()<CR>", { desc = "step into (Dap)" })
-map(MODE.normal, "<leader>do", "<cmd>lua require('dap').step_over()<CR>", { desc = "step over (Dap)" })
-map(MODE.normal, "<leader>dO", "<cmd>lua require('dap').step_out()<CR>", { desc = "step out (Dap)" })
-map(MODE.normal, "<leader>dp", "<cmd>lua require('dap').pause()<CR>", { desc = "pause (Dap)" })
-map(MODE.normal, "<leader>dc", "<cmd>lua require('dap').run_to_cursor()<CR>", { desc = "run to cursor (Dap)" })
+map(MODE.normal, "<leader>db", "<cmd>lua require('dap').toggle_breakpoint()<CR>", { desc = "breakpoint (Debugger)" })
+map(MODE.normal, "<leader>dB", "<cmd>lua require('dap').clear_breakpoints()<CR>", { desc = "breakpoint clear all (Debugger)" })
+map(MODE.normal, "<leader>dt", "<cmd>lua require('dap').repl.toggle()<CR>", { desc = "terminal (Debugger)" })
+-- map(MODE.normal, "<leader>ds", "<cmd>lua require('dap').continue()<CR>", { desc = "start (Debugger)" })
+map(MODE.normal, "<leader>ds", "<cmd>lua require('plugins.setup._custom.debugger_telescope_selector').pick_debugger() <CR>", { desc = "start (Debugger)" })
+map(MODE.normal, "<leader>dp", "<cmd>lua require('plugins.setup._custom.debugger_telescope_selector').pick_process() <CR>", { desc = "start (Debugger)" })
+map(MODE.normal, "<leader>dS", "<cmd>lua require('dap').pause()<CR>", { desc = "pause (Debugger)" })
+map(MODE.normal, "<leader>dr", "<cmd>lua require('dap').restart_frame()<CR>", { desc = "restart (Debugger)" })
+map(MODE.normal, "<leader>dx", "<cmd>lua require('dap').close()<CR>", { desc = "close (Debugger)" })
+map(MODE.normal, "<leader>dX", "<cmd>lua require('dap').terminate()<CR>", { desc = "terminate (Debugger)" })
+map(MODE.normal, "<leader>d.", "<cmd>lua require('dap').step_into()<CR>", { desc = "step into (Debugger)" })
+map(MODE.normal, "<leader>d,", "<cmd>lua require('dap').step_over()<CR>", { desc = "step over (Debugger)" })
+map(MODE.normal, "<leader>dn", "<cmd>lua require('dap').step_out()<CR>", { desc = "step out (Debugger)" })
+map(MODE.normal, "<leader>dc", "<cmd>lua require('dap').run_to_cursor()<CR>", { desc = "run to cursor (Debugger)" })
 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   DAP UI
@@ -305,6 +267,7 @@ map(MODE.normal, "<leader>dk", function()
   end)
 end, { desc = "evaluate input (Dap UI)", noremap = true, silent = true })
 -- maps.n["<leader>dh"] = { function() require("dap.ui.widgets").hover() end, desc = "Debugger Hover" }
+map(MODE.normal, "<leader>dK", "<cmd>lua require('dap.ui.widgets').hover() <CR>", { desc = "hover (Dap UI)" })
 
 --┌─ MODE ───────┐
 --│ visual       │
@@ -345,10 +308,10 @@ map(MODE.normal, "<leader>gc", "<cmd> DiffviewClose <CR>", { desc = "git close (
 --┌─ MODE ───────┐
 --│ normal       │
 --└──────────────┘
--- map(MODE.normal, "<leader>mp", function()
---   vim.cmd "MarkdownPreviewToggle"
---   print " markdown preview current file enabled!"
--- end, { desc = ".md preview (Markdown Preview)" })
+map(MODE.normal, "<leader>po", function()
+  vim.cmd "MarkdownPreviewToggle"
+  print " markdown preview current file enabled!"
+end, { desc = ".md preview (Markdown Preview)" })
 -- map(MODE.normal, "<leader>mpc", "<cmd> MarkdownPreview <CR>", { desc = "create (Markdown Preview)" })
 -- map(MODE.normal, "<leader>mpx", "<cmd> MarkdownPreviewStop <CR>", { desc = "close (Markdown Preview)" })
 map(MODE.normal, "<leader>pm", "<cmd> Markview toggle <CR>", { desc = "markdown preview toggle (Markview)" })
@@ -390,12 +353,7 @@ map(MODE.normal, "<leader>rr", "<cmd>lua require('kulala').run()<cr>", { desc = 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   OIL.NVIM
 --└───────────┴─────────────────────────────────────────────────────────────┘
-map(
-  MODE.normal,
-  "<leader>-",
-  "<cmd>lua require('oil').toggle_float()<cr>",
-  { desc = "buffer file explorer (Oil.nvim)" }
-)
+map(MODE.normal, "<leader>-", "<cmd>lua require('oil').toggle_float()<cr>", { desc = "buffer file explorer (Oil.nvim)" })
 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   SHOWKEYS

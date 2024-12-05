@@ -249,7 +249,7 @@ return {
     init = function()
       require("smear_cursor").setup {
         cursor_color = COLORS.primary,
-        normal_bg = COLORS.primary_ghost,
+        -- normal_bg = COLORS.primary_ghost,
       }
     end,
   },
@@ -325,7 +325,8 @@ return {
   --│
   --├ @plugins    ON  `epwalsh/obsidian.nvim`: Работа с заметками Obsidian.
   --│             ON  `OXY2DEV/markview.nvim`: Улучшенное отображение Markdown файлов.
-  --│             OFF `iamcco/markdown-preview.nvim`: Markdown предпросмотр в браузере.
+  --│             ON  `iamcco/markdown-preview.nvim`: Markdown предпросмотр в браузере.
+  --│             ON  `3rd/image.nvim`: Просмотр изображений в терминале.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   { -- NOTES
@@ -334,18 +335,25 @@ return {
     config = require("plugins.setup.notes.obsidian").config,
   },
 
-  { -- MARKDOWN PREVIEW in neovim
+  { -- MARKDOWN PREVIEW (neovim)
     "OXY2DEV/markview.nvim",
     ft = "markdown",
     -- setup.notes = require("plugins.setup.notes.markview").config,
   },
 
-  -- { -- MARKDOWN PREVIEW in browser
-  --   "iamcco/markdown-preview.nvim",
-  --   cmd = { "MarkdownPreview", "MarkdownPreviewStop", "MarkdownPreviewToggle" },
-  --   ft = { "markdown" },
-  --   build = require("plugins.setup.notes..markdown-preview").build,
-  --   init = require("plugins.setup.notes.markdown-preview").init,
+  { -- MARKDOWN PREVIEW (browser)
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    ft = "markdown",
+    build = "cd app && npm install",
+    init = require("plugins.setup.notes.markdown-preview").init,
+  },
+
+  -- { -- IMAGE PREVIEW (neovim)
+  --   "3rd/image.nvim",
+  --   lazy = "VeryLazy",
+  --   ft = "markdown",
+  --   config = require("plugins.setup.notes.image-nvim").config,
   -- },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
@@ -370,7 +378,9 @@ return {
 
   { -- NEOVIM AI -> CURSOR
     "yetone/avante.nvim",
-    event = "BufReadPost",
+    -- event = "BufReadPost",
+    event = "VeryLazy",
+    lazy = false,
     opts = require("plugins.setup.ai.avante").opts,
     build = "make", -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
     dependencies = {
@@ -413,16 +423,20 @@ return {
   --│             └────────────────────┘
   --│
   --├ @plugins    ON  `mfussenegger/nvim-dap`: Поддержка DAP.
-  --│             ON      └─ `rcarriga/nvim-dap-ui`: UI для дебаггинга.
+  --│             OFF     └─ `theHamsta/nvim-dap-virtual-text`: подсказки сразу на линии остановки.
+  --│             OFF     └─ `rcarriga/nvim-dap-ui`: UI для дебаггинга.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   { -- DEBUG
     "mfussenegger/nvim-dap",
     config = require("plugins.setup.debug.nvim-dap").config,
     dependencies = { -- DEBUG UI
-      "rcarriga/nvim-dap-ui",
-      dependencies = { "nvim-neotest/nvim-nio" },
-      config = require("plugins.setup.debug.nvim-dap-ui").config,
+      -- { "theHamsta/nvim-dap-virtual-text", config = true },
+      {
+        "rcarriga/nvim-dap-ui",
+        dependencies = { "nvim-neotest/nvim-nio" },
+        config = require("plugins.setup.debug.nvim-dap-ui").config,
+      },
     },
   },
 

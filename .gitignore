@@ -55,6 +55,7 @@
 !.config/tmux**
 .config/tmux/plugins
 !.config/yazi**
+!.config/yt-dlp**
 !.config/qBittorrent/themes**
 
 !.config/starship.toml
