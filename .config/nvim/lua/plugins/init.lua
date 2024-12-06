@@ -3,6 +3,17 @@ require "plugins.setup._custom.load_env" -- for `avante.nvim` AI plugin
 require "plugins.setup._custom.fzf"
 
 return {
+  -- DISABLE DEFAULT `NvChad` PLUGINS
+  -- @see: https://github.com/NvChad/NvChad/blob/v2.5/lua/nvchad/plugins/init.lua
+  -- {
+  --   "nvim-tree/nvim-tree.lua",
+  --   enabled = false,
+  -- },
+  -- {
+  --   "hrsh7th/nvim-cmp",
+  --   enabled = false,
+  -- },
+
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @catecory   LSP и Форматирование
   --│
@@ -105,9 +116,11 @@ return {
   --│             ON  `stevearc/oil.nvim`: Работа с буферами.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
+  -- @default
   { -- FILE EXPLORER
     "nvim-tree/nvim-tree.lua",
     opts = require("plugins.setup.filesystem.nvim-tree").opts,
+    init = require("plugins.setup.filesystem.nvim-tree").init,
   },
 
   { -- FILE MANAGER
@@ -173,9 +186,11 @@ return {
   --│             │ interface         │
   --│             └────────────────────┘
   --│
-  --├ @plugins    ON  `folke/noice.nvim`: Улучшенный UI messages|cmdline|popupmenu.
+  --├ @plugins    ON  `folke/snacks.nvim`: Улучшенный UI.
+  --├             ON  `folke/noice.nvim`: Улучшенный UI messages|cmdline|popupmenu.
   --│             ON      ├─ `MunifTanjim/nui.nvim`: используется для правильного рендеринга и многократного просмотра.
   --│             OFF     └─ `rcarriga/nvim-notify`: Улучшенный просмотр уведомлений.
+  --│             OFF `rmagatti/goto-preview`: Улучшеное плавающее окно для быстрого просмотра.
   --│             ON  `folke/trouble.nvim`: Улучшенная работа с quickfix.
   --│             ON  `folke/todo-comments.nvim`: TODO-комментарии.
   --│             ON  `kevinhwang91/nvim-ufo`: Улучшенная работа с фолдерами.
@@ -190,14 +205,27 @@ return {
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   { -- UI
+    "folke/snacks.nvim",
+    priority = 1000,
+    lazy = false,
+    opts = require("plugins.setup.interface.snacks").opts,
+  },
+
+  { -- UI MESSAGEGS
     "folke/noice.nvim",
     event = "VeryLazy",
-    config = require("plugins.setup.interface.ui").config,
+    config = require("plugins.setup.interface.noice").config,
     dependencies = {
       "MunifTanjim/nui.nvim",
       -- "rcarriga/nvim-notify",
     },
   },
+
+  -- { -- PREVIEW FLOAT
+  --   "rmagatti/goto-preview",
+  --   event = "BufEnter",
+  --   config = true, -- necessary as per https://github.com/rmagatti/goto-preview/issues/88
+  -- },
 
   { -- BETTER QUICKFIX
     "folke/trouble.nvim",
@@ -294,15 +322,15 @@ return {
   --│             │ git               │
   --│             └────────────────────┘
   --│
-  --├ @plugins    ON  `kdheepak/lazygit.nvim`: Интеграция с LazyGit.
+  --├ @plugins    OFF `kdheepak/lazygit.nvim`: Интеграция с LazyGit. REASON: use lazygit in `folke/snacks.nvim`
   --│             ON  `sindrets/diffview.nvim`: Просмотр изменений.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
-  { -- GIT
-    "kdheepak/lazygit.nvim",
-    cmd = { "LazyGit", "LazyGitConfig", "LazyGitCurrentFile", "LazyGitFilter", "LazyGitFilterCurrentFile" },
-    config = require("plugins.setup.git.lazygit").config(),
-  },
+  -- { -- GIT
+  --   "kdheepak/lazygit.nvim",
+  --   cmd = { "LazyGit", "LazyGitConfig", "LazyGitCurrentFile", "LazyGitFilter", "LazyGitFilterCurrentFile" },
+  --   config = require("plugins.setup.git.lazygit").config(),
+  -- },
 
   { -- DIFF VIEW
     "sindrets/diffview.nvim",

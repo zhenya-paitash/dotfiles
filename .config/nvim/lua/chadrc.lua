@@ -5,8 +5,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "aquarium",
-  theme_toggle = { "aquarium", "aquarium" },
+  theme = "pastelbeans",
+  theme_toggle = { "pastelbeans", "pastelbeans" },
   transparency = true,
   lsp_semantic_tokens = true,
   hl_override = {
@@ -16,6 +16,9 @@ M.base46 = {
   },
   hl_add = {
     NvimTreeOpenedFolderName = { fg = "green", bold = true },
+  },
+  terminal = {
+    esc_termmode = { "jk" }, -- multiple mappings allowed
   },
 }
 

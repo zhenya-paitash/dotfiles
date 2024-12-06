@@ -15,8 +15,10 @@ M.adapter = {
   },
 }
 
--- TODO: настроить нормальный дебаг конфиг для приложений `next.js`
 M.adapterConfigs = {
+  --------------------------------------------------------------------------------------
+  --- OLD
+  --------------------------------------------------------------------------------------
   {
     type = "pwa-node",
     request = "launch",
@@ -194,6 +196,39 @@ M.adapterConfigs = {
     console = "integratedTerminal",
     attachSimplePort = 9229,
   },
+
+  --------------------------------------------------------------------------------------
+  --- NEW
+  --------------------------------------------------------------------------------------
+  -- Серверная часть (SSR)
+  {
+    name = "next(SSR): Debug Server (Node.js)",
+    type = "pwa-node",
+    request = "launch",
+    runtimeExecutable = "node",
+    runtimeArgs = { "--inspect" },
+    program = "${workspaceFolder}/node_modules/next/dist/bin/next",
+    args = { "dev" },
+    cwd = "${workspaceFolder}",
+    sourceMaps = true,
+    protocol = "inspector",
+    console = "integratedTerminal",
+  },
+  -- Подключение к уже запущенному серверу
+  {
+    name = "next(CSR): Attach to Running Server",
+    type = "pwa-node",
+    request = "attach",
+    port = 9229,
+    cwd = "${workspaceFolder}",
+    sourceMaps = true,
+    protocol = "inspector",
+    skipFiles = { "<node_internals>/**", "node_modules/**" },
+  },
+
+  --------------------------------------------------------------------------------------
+  --- NEW NEW
+  --------------------------------------------------------------------------------------
 }
 
 return M

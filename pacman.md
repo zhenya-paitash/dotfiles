@@ -53,7 +53,7 @@ cairomm-1.16 1.18.0-1
 cantarell-fonts 1:0.303.1-2
 check 0.15.2-2
 cliphist 1:0.6.1-1
-cmake 3.31.1-1
+cmake 3.31.2-1
 containerd 2.0.0-2
 coreutils 9.5-2
 cppdap 1.58.0-2
@@ -172,7 +172,7 @@ hidapi 0.14.0-3
 highway 1.2.0-1
 http-parser 2.9.4-2
 hunspell 1.7.2-2
-hwdata 0.389-1
+hwdata 0.390-1
 hyprcursor 0.1.10-1
 hyprland 0.45.2-3
 hyprlang 0.5.3-1
@@ -245,7 +245,7 @@ libdeflate 1.22-1
 libdispatch 5.10-1
 libdisplay-info 0.2.0-2
 libdovi 3.3.1-1
-libdrm 2.4.123-1
+libdrm 2.4.124-1
 libdvdnav 6.1.1-2
 libdvdread 6.1.3-2
 libedit 20240517_3.1-1
@@ -365,7 +365,7 @@ libvorbis 1.3.7-3
 libvpl 2.13.0-1
 libvpx 1.14.1-1
 libvterm 0.3.3-2
-libwacom 2.13.0-1
+libwacom 2.14.0-1
 libwebp 1.4.0-3
 libwireplumber 0.5.7-1
 libx11 1.8.10-1
@@ -427,7 +427,7 @@ make 4.4.1-2
 man-db 2.13.0-1
 mbedtls2 2.28.9-1
 md4c 0.5.2-1
-mesa 1:24.2.7-1
+mesa 1:24.3.1-1
 meson 1.6.0-1
 minizip 1:1.3.1-2
 mkinitcpio 39.2-2
@@ -451,7 +451,7 @@ nodejs 23.1.0-1
 nodejs-nopt 7.2.1-1
 noto-fonts 1:2024.12.01-1
 noto-fonts-emoji 1:2.047-1
-npm 10.9.0-1
+npm 10.9.2-1
 npth 1.8-1
 nspr 4.36-1
 nss 3.107-1
@@ -565,13 +565,13 @@ shared-mime-info 2.4-1
 simple-mtpfs 0.4.0-1
 slang 2.3.3-3
 snappy 1.2.1-2
-sof-firmware 2024.09.1-1
+sof-firmware 2024.09.2-1
 sord 0.16.16-1
 sound-theme-freedesktop 0.8-6
 speex 1.2.1-2
 speexdsp 1.2.1-2
 spirv-tools 2024.4.rc1-1
-sqlite 3.47.1-1
+sqlite 3.47.1-2
 sratom 0.6.16-1
 srt 1.5.4-1
 starship 1.21.1-1
