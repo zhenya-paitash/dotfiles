@@ -57,6 +57,7 @@
 !.config/yazi**
 !.config/yt-dlp**
 !.config/qBittorrent/themes**
+!.config/swappy**
 
 !.config/starship.toml
 !.config/electron-flags.conf

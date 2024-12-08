@@ -25,6 +25,7 @@ return {
   --├ @plugins    ON  `stevearc/conform.nvim`: Форматирование кода.
   --│             ON  `neovim/nvim-lspconfig`: Конфигурация LSP.
   --│             ON  `williamboman/mason.nvim`: Установщик LSP и других инструментов.
+  --│             OFF `smjonas/inc-rename.nvim`: Переименование.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   { -- FORMATTERS
@@ -41,12 +42,30 @@ return {
       require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
     end,
+    -- dependencies = { -- ALTERNATIVE AUTOCOMPLETION
+    --   "saghen/blink.cmp",
+    --   lazy = false,
+    --   version = "v0.*",
+    --   opts = require("plugins.setup.blink-cmp").opts,
+    --   dependencies = {
+    --     "rafamadriz/friendly-snippets",
+    --     { "hrsh7th/nvim-cmp", enabled = false }, -- disable default `nvim-cmp`
+    --   },
+    -- },
   },
 
   { -- LSP INSTALLER
     "williamboman/mason.nvim",
     opts = require("plugins.setup.lsp.mason").opts,
   },
+
+  -- { -- RENAME
+  --   "smjonas/inc-rename.nvim",
+  --   lazy = false,
+  --   config = function()
+  --     require("inc_rename").setup()
+  --   end,
+  -- },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   Работа с деревом и синтаксисом
@@ -373,7 +392,7 @@ return {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     ft = "markdown",
-    build = "cd app && npm install",
+    build = "cd app && git reset --hard && npm install",
     init = require("plugins.setup.notes.markdown-preview").init,
   },
 
@@ -602,17 +621,6 @@ return {
   --     "nvim-neotest/nvim-nio",
   --     "nvim-lua/plenary.nvim",
   --     -- "antoinemadec/FixCursorHold.nvim",  -- WARN:  This plugin is not needed after neovim/neovim#20198
-  --   },
-  -- },
-
-  -- { -- AUCTOCOMPLETE
-  --   "saghen/blink.cmp",
-  --   lazy = false,
-  --   version = "v0.*",
-  --   opts = require("plugins.setup.blink-cmp").opts,
-  --   dependencies = {
-  --     "rafamadriz/friendly-snippets",
-  --     { "hrsh7th/nvim-cmp", enabled = false }, -- disable default `nvim-cmp`
   --   },
   -- },
 }

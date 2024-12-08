@@ -22,7 +22,7 @@ function Content() {
           clock: Widget.Label()
             .bind('label', dateService, 'date', ({ hour, minute, weekday }) => `${weekday} ${hour}:${minute}`),
           date: Widget.Label()
-            .bind('label', dateService, 'date', ({ day, month_number, year }) => `${day}.${month_number},${year}`),
+            .bind('label', dateService, 'date', ({ day, month_number, year }) => `${day}.${month_number}.${year}`),
         },
         shown: MODE.bind(),
       }),

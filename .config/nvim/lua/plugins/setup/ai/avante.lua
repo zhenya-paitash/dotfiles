@@ -9,9 +9,23 @@ return {
     openai = {
       -- @provider: groq
       -- @models: https://console.groq.com/docs/models
+      api_key_name = "OPENAI_API_KEY", -- @api_key: OPENAI_API_KEY
       endpoint = "https://api.groq.com/openai/v1",
-      model = "llama-3.1-70b-versatile", -- @limit: 32,768 tokens
-      -- model = "gemma2-9b-it", -- @limit: - tokens
+      model = "llama-3.3-70b-versatile", -- @limit: 8.192 tokens
+    },
+    ---@type {[string]: AvanteProvider}
+    vendors = {
+      ---@type AvanteSupportedProvider
+      ["openai-mixtral"] = {
+        __inherited_from = "openai",
+        api_key_name = "ANTHROPIC_API_KEY", -- @api_key: ANTHROPIC_API_KEY
+        model = "mixtral-8x7b-32768",
+      },
+      ["openai-llama-3.1"] = {
+        __inherited_from = "openai",
+        api_key_name = "ANTHROPIC_API_KEY", -- @api_key: ANTHROPIC_API_KEY
+        model = "llama-3.1-70b-versatile", -- @limit: 32,768 tokens
+      },
     },
 
     mappings = {

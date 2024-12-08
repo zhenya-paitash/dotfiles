@@ -82,7 +82,7 @@ efibootmgr 18-3
 efivar 39-1
 electron28 28.3.3-3
 electron30 30.5.1-3
-electron31 31.7.5-1
+electron31 31.7.6-1
 electron32 32.2.7-1
 expat 2.6.4-1
 eza 0.20.11-1
@@ -90,7 +90,7 @@ fakeroot 1.36-1
 fd 10.2.0-1
 ffmpeg 2:7.1-3
 fftw 3.3.10-7
-file 5.46-1
+file 5.46-2
 filesystem 2024.11.21-1
 findutils 4.10.0-2
 firefox 133.0-1
@@ -142,6 +142,7 @@ graphene 1.10.8-2
 graphite 1:1.3.14-4
 graphviz 12.1.2-1
 grep 3.11-1
+grim 1.4.1-2
 groff 1.23.0-7
 grub 2:2.12-3
 gsettings-desktop-schemas 47.1-1
@@ -180,7 +181,7 @@ hyprpicker 0.4.1-1
 hyprpicker-debug 0.3.0-1
 hyprutils 0.2.6-1
 hyprwayland-scanner 0.4.2-1
-iana-etc 20241016-1
+iana-etc 20241206-1
 icu 75.1-1
 ijs 0.35-6
 imagemagick 7.1.1.41-1
@@ -318,7 +319,7 @@ libplist 2.6.0-1
 libpng 1.6.44-1
 libproxy 0.5.9-1
 libpsl 0.21.5-2
-libpulse 17.0-3
+libpulse 17.0+r43+g3e2bb8a1e-1
 libraqm 0.10.2-1
 libraw1394 2.1.2-4
 librsvg 2:2.59.2-1
@@ -409,7 +410,7 @@ linux-api-headers 6.10-1
 linux-firmware 20241111.b5885ec5-1
 linux-firmware-whence 20241111.b5885ec5-1
 linux-lts 6.6.63-1
-linux-zen 6.12.1.zen1-1
+linux-zen 6.12.3.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.33-1
@@ -427,7 +428,7 @@ make 4.4.1-2
 man-db 2.13.0-1
 mbedtls2 2.28.9-1
 md4c 0.5.2-1
-mesa 1:24.3.1-1
+mesa 1:24.3.1-2
 meson 1.6.0-1
 minizip 1:1.3.1-2
 mkinitcpio 39.2-2
@@ -447,7 +448,7 @@ nettle 3.10-1
 networkmanager 1.50.0-1
 ninja 1.12.1-1
 node-gyp 11.0.0-1
-nodejs 23.1.0-1
+nodejs 23.3.0-1
 nodejs-nopt 7.2.1-1
 noto-fonts 1:2024.12.01-1
 noto-fonts-emoji 1:2.047-1
@@ -554,7 +555,7 @@ rustup 1.27.1-1
 sassc 3.6.2-5
 sbc 2.0-2
 sdbus-cpp 2.1.0-2
-sdl2 2.30.9-1
+sdl2 2.30.10-1
 seatd 0.9.1-1
 sed 4.9-3
 semver 7.6.3-1
@@ -564,6 +565,7 @@ shadow 4.16.0-1
 shared-mime-info 2.4-1
 simple-mtpfs 0.4.0-1
 slang 2.3.3-3
+slurp 1.5.0-1
 snappy 1.2.1-2
 sof-firmware 2024.09.2-1
 sord 0.16.16-1
@@ -578,6 +580,7 @@ starship 1.21.1-1
 startup-notification 0.12-8
 sudo 1.9.16.p2-1
 svt-av1 2.2.1-1
+swappy 1.5.1-2
 swww 0.9.5-2
 swww-debug 0.9.5-1
 systemd 256.9-1
@@ -620,12 +623,13 @@ vala 0.56.17-1
 vapoursynth R70-1
 vid.stab 1.1.1-2
 vmaf 3.0.0-1
-vulkan-headers 1:1.3.295-1
-vulkan-icd-loader 1.3.295-1
-vulkan-validation-layers 1.3.290-2
+vulkan-headers 1:1.4.303-1
+vulkan-icd-loader 1.4.303-1
+vulkan-validation-layers 1.3.296.0-1
 wayland 1.23.1-1
 wayland-protocols 1.38-1
 webrtc-audio-processing-1 1.3-3
+wf-recorder 0.5.0-2
 wget 1.25.0-1
 which 2.21-6
 wireguard-tools 1.0.20210914-2
