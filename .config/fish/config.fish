@@ -56,14 +56,25 @@ alias tk='tmux kill-session -t'
 # docker
 alias lazydocker='~/go/bin/lazydocker'
 
+
 # neovim
 set -U EDITOR nvim
+function nvim
+    if test -n "$FISH_NVIM_CONFIG"
+        NVIM_APPNAME=$FISH_NVIM_CONFIG command nvim $argv
+    else
+        command nvim $argv
+    end
+end
 alias vim='nvim'
 alias viml='nvim leetcode.nvim'
-alias lg='lazygit'
-alias ld='lazydocker'
 alias vf='nvim $(fzf)'
 alias vfa='nvim $(fzfa)'
+alias vv="bash $HOME/scripts/nvim-selector"
+
+# lazygit and lazydocker
+alias lg='lazygit'
+alias ld='lazydocker'
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"

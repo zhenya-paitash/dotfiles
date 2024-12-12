@@ -1,0 +1,16 @@
+#!/bin/bash
+
+CONFIG_DIR="$HOME/.config"
+CONFIGS=$(find "$CONFIG_DIR" -maxdepth 1 -type d -name 'nvim*' -printf "%f\n")
+SELECTED=$(echo "$CONFIGS" | fzf --prompt="Select Neovim Config > " --height=30% --layout=reverse --border --exit-0)
+# if not selected
+if [ -z "$SELECTED" ]; then
+    echo "¯\_(ツ)_/¯ Aborted"
+    exit 0
+fi
+
+# save to fish variable FISH_NVIM_CONFIG
+CONFIG_NAME=$(basename "$SELECTED")
+echo "set -Ux FISH_NVIM_CONFIG $CONFIG_NAME" | fish
+
+echo "$CONFIG_NAME ദ്ദി˙ ᴗ ˙ ) selected!"

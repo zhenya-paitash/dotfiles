@@ -14,7 +14,7 @@ export function SectionLeft() {
     hpack: 'start',
     children: [
       // MediaWidget(),
-      ClockWidget(),
+      // ClockWidget(),
     ],
   });
 }
@@ -24,8 +24,8 @@ export function SectionCenter() {
     className: 'section section-center',
     hpack: 'center',
     children: [
-      WorkspaceWidget(),
       // ClockWidget(),
+      WorkspaceWidget(),
     ],
   });
 }
@@ -43,7 +43,7 @@ export function SectionRight() {
       BatteryWidget(),
       PowerWidget(),
 
-      // ClockWidget(),
+      ClockWidget(),
     ],
   });
 }

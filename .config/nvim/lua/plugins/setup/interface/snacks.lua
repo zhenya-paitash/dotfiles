@@ -9,21 +9,16 @@ return {
     quickfile = { enabled = true },
     statuscolumn = { enabled = true },
     words = { enabled = true },
-
-    debug = { enabled = false },
-    profiler = { enabled = false },
-    rename = { enabled = false },
-    terminal = { enabled = false },
-    togggle = { enabled = false },
-    dashboard = {
-      enabled = false,
-      --   sections = {
-      --     { section = "header" },
-      --     { icon = " ", title = "Keymaps", section = "keys", indent = 2, padding = 1 },
-      --     { icon = " ", title = "Recent Files", section = "recent_files", indent = 2, padding = 1 },
-      --     { icon = " ", title = "Projects", section = "projects", indent = 2, padding = 1 },
-      --     { section = "startup" },
-      --   },
+    scroll = {
+      animate = {
+        duration = { step = 5, total = 50 },
+        easing = "linear",
+      },
+      spamming = 10, -- threshold for spamming detection
+      -- what buffers to animate
+      filter = function(buf)
+        return vim.g.snacks_scroll ~= false and vim.b[buf].snacks_scroll ~= false and vim.bo[buf].buftype ~= "terminal"
+      end,
     },
   },
 }

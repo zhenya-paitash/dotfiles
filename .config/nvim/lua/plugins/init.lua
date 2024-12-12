@@ -3,17 +3,6 @@ require "plugins.setup._custom.load_env" -- for `avante.nvim` AI plugin
 require "plugins.setup._custom.fzf"
 
 return {
-  -- DISABLE DEFAULT `NvChad` PLUGINS
-  -- @see: https://github.com/NvChad/NvChad/blob/v2.5/lua/nvchad/plugins/init.lua
-  -- {
-  --   "nvim-tree/nvim-tree.lua",
-  --   enabled = false,
-  -- },
-  -- {
-  --   "hrsh7th/nvim-cmp",
-  --   enabled = false,
-  -- },
-
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @catecory   LSP и Форматирование
   --│
@@ -24,6 +13,7 @@ return {
   --│
   --├ @plugins    ON  `stevearc/conform.nvim`: Форматирование кода.
   --│             ON  `neovim/nvim-lspconfig`: Конфигурация LSP.
+  --│             OFF     └─ `saghen/blink.cmp`: Плагин завершения на RUST с поддержкой LSP и внешних источников. Производительнее чем `hrsh7th/nvim-cmp`. Использую для собственной конфигурации в будующем.
   --│             ON  `williamboman/mason.nvim`: Установщик LSP и других инструментов.
   --│             OFF `smjonas/inc-rename.nvim`: Переименование.
   --└───────────┴─────────────────────────────────────────────────────────────┘
@@ -46,7 +36,7 @@ return {
     --   "saghen/blink.cmp",
     --   lazy = false,
     --   version = "v0.*",
-    --   opts = require("plugins.setup.blink-cmp").opts,
+    --   opts = require("plugins.setup.lsp.blink-cmp").opts,
     --   dependencies = {
     --     "rafamadriz/friendly-snippets",
     --     { "hrsh7th/nvim-cmp", enabled = false }, -- disable default `nvim-cmp`
@@ -77,7 +67,8 @@ return {
   --├ @plugins    ON  `nvim-treesitter/nvim-treesitter`: Дерево синтаксиса и подсветка.
   --│             ON      ├─`folke/ts-comments.nvim`: Контекстные комментарии.
   --│             ON      ├─`windwp/nvim-ts-autotag`: Автозакрытие HTML-тегов.
-  --│             ON      ├─  `RRethy/vim-illuminate`: Подсветка переменных под курсором.
+  --│             OFF     ├─  `RRethy/vim-illuminate`: Подсветка переменных под курсором (treesitter).
+  --│             ON      ├─  `echasnovski/mini.cursorword`: Подсветка переменных под курсором (regularexp).
   --│             ON      └─ `nvim-treesitter/nvim-treesitter-textobjects`: Работа с текстовыми объектами.
   --│             ON          └─ `echasnovski/mini.nvim`: Работа с текстовыми объектами.
   --│             ON  `gbprod/yanky.nvim`: Улучшает работу с регистрами, изменяя поведение удаления/копирования/вставки.
@@ -98,8 +89,16 @@ return {
         init = require("plugins.setup.treesitter.nvim-ts-autotag").init,
       },
       { -- HIGHLIGHT VARS UNDER CURSOR
-        "RRethy/vim-illuminate",
-        config = require("plugins.setup.treesitter.vim-illuminate").config,
+        -- "RRethy/vim-illuminate",
+        -- config = require("plugins.setup.treesitter.vim-illuminate").config,
+
+        -- OR
+
+        "echasnovski/mini.cursorword",
+        version = "*", -- Stable version
+        config = function()
+          require("mini.cursorword").setup {}
+        end,
       },
       { -- TS TEXT-OBJECTS MANIPULATE
         "nvim-treesitter/nvim-treesitter-textobjects",
@@ -182,7 +181,6 @@ return {
 
   { -- MULTI-CURSOR
     "mg979/vim-visual-multi",
-    -- event = "BufReadPost",
     branch = "master",
     keys = require("plugins.setup.navigation.vim-visual-multi").keys,
     init = require("plugins.setup.navigation.vim-visual-multi").init,
@@ -296,7 +294,7 @@ return {
     init = function()
       require("smear_cursor").setup {
         cursor_color = COLORS.primary,
-        -- normal_bg = COLORS.primary_ghost,
+        normal_bg = COLORS.primary_ghost,
       }
     end,
   },
@@ -396,12 +394,12 @@ return {
     init = require("plugins.setup.notes.markdown-preview").init,
   },
 
-  -- { -- IMAGE PREVIEW (neovim)
-  --   "3rd/image.nvim",
-  --   lazy = "VeryLazy",
-  --   ft = "markdown",
-  --   config = require("plugins.setup.notes.image-nvim").config,
-  -- },
+  { -- IMAGE PREVIEW (neovim)
+    "3rd/image.nvim",
+    lazy = "BufReadPost",
+    ft = "markdown",
+    config = require("plugins.setup.notes.image-nvim").config,
+  },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   AI и интеллектуальные инструменты
