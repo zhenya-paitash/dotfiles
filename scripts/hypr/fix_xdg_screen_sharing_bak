@@ -7,32 +7,21 @@
 #               :_____:             .-. ::_____:                                   :_____:                                  .-. :
 #                                   `._.'                                                                                   `._.'
 
-# Завершение всех запущенных экземпляров порталов
-pkill -f xdg-desktop-portal-hyprland
-pkill -f xdg-desktop-portal-gnome
-pkill -f xdg-desktop-portal-kde
-pkill -f xdg-desktop-portal-lxqt
-pkill -f xdg-desktop-portal-wlr
-pkill -f xdg-desktop-portal-gtk
-pkill -f xdg-desktop-portal
+sleep 1
+# kill all possible running xdg-desktop-portals
+killall -e xdg-desktop-portal-hyprland
+killall -e xdg-desktop-portal-gnome
+killall -e xdg-desktop-portal-kde
+killall -e xdg-desktop-portal-lxqt
+killall -e xdg-desktop-portal-wlr
+killall -e xdg-desktop-portal-gtk
+killall xdg-desktop-portal
+sleep 1
 
-# Ожидание завершения процессов
-sleep 2
-
-# Убедиться, что процессы завершены
-for process in xdg-desktop-portal xdg-desktop-portal-hyprland; do
-    if pgrep -f "$process" > /dev/null; then
-        echo "Процесс $process не завершён, завершаю принудительно..."
-        pkill -9 -f "$process"
-    fi
-done
-
-# Установка переменной окружения (на случай конфликтов)
+# start xdg-desktop-portal-hyprland
 /usr/lib/xdg-desktop-portal-hyprland &
-export XDG_CURRENT_DESKTOP=Hyprland
 sleep 2
 
-# Перезапуск основного портала
+# start xdg-desktop-portal
 /usr/lib/xdg-desktop-portal &
-echo "Порталы успешно перезапущены."
-
+sleep 1

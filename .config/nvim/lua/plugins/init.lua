@@ -65,12 +65,13 @@ return {
   --│             └────────────────────┘
   --│
   --├ @plugins    ON  `nvim-treesitter/nvim-treesitter`: Дерево синтаксиса и подсветка.
-  --│             ON      ├─`folke/ts-comments.nvim`: Контекстные комментарии.
-  --│             ON      ├─`windwp/nvim-ts-autotag`: Автозакрытие HTML-тегов.
-  --│             OFF     ├─  `RRethy/vim-illuminate`: Подсветка переменных под курсором (treesitter).
-  --│             ON      ├─  `echasnovski/mini.cursorword`: Подсветка переменных под курсором (regularexp).
-  --│             ON      └─ `nvim-treesitter/nvim-treesitter-textobjects`: Работа с текстовыми объектами.
-  --│             ON          └─ `echasnovski/mini.nvim`: Работа с текстовыми объектами.
+  --│             ON      ├─ `folke/ts-comments.nvim`: Контекстные комментарии.
+  --│             ON      ├─ `windwp/nvim-ts-autotag`: Автозакрытие HTML-тегов.
+  --│             OFF     ├─ `RRethy/vim-illuminate`: Подсветка переменных под курсором (treesitter).
+  --│             ON      ├─ `nvim-treesitter/nvim-treesitter-textobjects`: Работа с текстовыми объектами.
+  --│             ON      ├─ `echasnovski/mini.ai`: Работа с текстовыми объектами.
+  --│             ON      ├─ `echasnovski/mini.cursorword`: Подсветка переменных под курсором (regularexp).
+  --│             ON      └─ `Treewalker.nvim`: Быстрое перемещение по синтаксическому дереву.
   --│             ON  `gbprod/yanky.nvim`: Улучшает работу с регистрами, изменяя поведение удаления/копирования/вставки.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
@@ -88,27 +89,31 @@ return {
         event = "BufReadPre",
         init = require("plugins.setup.treesitter.nvim-ts-autotag").init,
       },
-      { -- HIGHLIGHT VARS UNDER CURSOR
-        -- "RRethy/vim-illuminate",
-        -- config = require("plugins.setup.treesitter.vim-illuminate").config,
-
-        -- OR
-
-        "echasnovski/mini.cursorword",
-        version = "*", -- Stable version
-        config = function()
-          require("mini.cursorword").setup {}
-        end,
-      },
       { -- TS TEXT-OBJECTS MANIPULATE
         "nvim-treesitter/nvim-treesitter-textobjects",
         event = "BufReadPost",
         config = require("plugins.setup.treesitter.nvim-ts-textobjects").config,
-        dependencies = { -- REGULAR MANIPULATE
-          "echasnovski/mini.nvim",
-          version = false,
-          config = require("plugins.setup.treesitter.mini-nvim").config,
-        },
+      },
+      -- { -- COLLECTION LUA MODULES
+      --   "echasnovski/mini.nvim",
+      --   version = false,
+      --   config = require("plugins.setup.treesitter.mini-nvim").config,
+      -- },
+      { -- REGULAR MANIPULATE
+        "echasnovski/mini.ai",
+        init = function()
+          require("mini.ai").setup {}
+        end,
+      },
+      { -- HIGHLIGHT VARS UNDER CURSOR
+        "echasnovski/mini.cursorword",
+        init = function()
+          require("mini.cursorword").setup {}
+        end,
+      },
+      { -- TREE MOVER
+        "aaronik/treewalker.nvim",
+        opts = { highlight = true },
       },
     },
   },
@@ -217,7 +222,7 @@ return {
   --│             OFF `folke/zen-mode.nvim`: Полноэкранный режим с отключение всего UI.
   --│             OFF     └─ `folke/twilight.nvim`: Затемняет неактивные части редактируемого кода.
   --│             ON  `sphamba/smear-cursor.nvim`: Добавляет анимацию для курсора в терминале.
-  --│             OFF `karb94/neoscroll.nvim`: Иммулирует плавный скрол в терминале.
+  --│             OFF     └─ `danilamihailov/beacon.nvim`: Выделяет мерцанием курсор, когда он движется, меняет окна и многое другое.
   --│             OFF `Bekaboo/dropbar.nvim`: Полоска текущего положения курсора в контексе с кликабельным UI.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
@@ -297,14 +302,14 @@ return {
         normal_bg = COLORS.primary_ghost,
       }
     end,
-  },
 
-  -- { -- SMOOTH SCROLL
-  --   "karb94/neoscroll.nvim",
-  --   init = function()
-  --     require("neoscroll").setup {}
-  --   end,
-  -- },
+    -- dependencies = { -- CURSOR FLICK
+    --   "danilamihailov/beacon.nvim",
+    --   opts = {
+    --     highlight = { bg = COLORS.primary_ghost },
+    --   }
+    -- },
+  },
 
   { -- CONTEXT DROPBAR
     "Bekaboo/dropbar.nvim",
@@ -432,31 +437,6 @@ return {
       -- "stevearc/dressing.nvim",
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
-
-      -- {
-      --   -- support for image pasting
-      --   "HakonHarnes/img-clip.nvim",
-      --   event = "VeryLazy",
-      --   opts = {
-      --     -- recommended settings
-      --     default = {
-      --       embed_image_as_base64 = false,
-      --       prompt_for_file_name = false,
-      --       drag_and_drop = {
-      --         insert_mode = true,
-      --       },
-      --       -- required for Windows users
-      --       use_absolute_path = true,
-      --     },
-      --   },
-      -- },
-      --
-      -- {
-      --   -- Make sure to set this up properly if you have lazy=true
-      --   "MeanderingProgrammer/render-markdown.nvim",
-      --   opts = { file_types = { "markdown", "Avante" } },
-      --   ft = { "markdown", "Avante" },
-      -- },
     },
   },
 

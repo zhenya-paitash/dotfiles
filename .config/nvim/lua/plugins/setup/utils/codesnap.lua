@@ -10,7 +10,8 @@ return {
     save_path = "~/Downloads",
 
     bg_theme = "bamboo",
-    watermark = "github.com/zhenya-paitash",
+    -- watermark = "github.com/zhenya-paitash",
+    watermark = '',
     has_line_number = true,
     has_breadcrumbs = true,
     -- breadcrumbs_separator = " > ",

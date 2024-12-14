@@ -13,9 +13,25 @@ local MODE = {
 }
 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   CHANGE DEFAULT MAPPINGS
+--└───────────┴─────────────────────────────────────────────────────────────┘
+-- @ses: https://github.com/NvChad/NvChad/blob/v2.5/lua/nvchad/mappings.lua
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
+--┌─ MODE ───────┐
+--│ terminal     │
+--└──────────────┘
+map({ "n", "t" }, "<A-t>", function()
+  require("nvchad.term").toggle { pos = "sp", id = "htoggleTerm" }
+end, { desc = "terminal toggleable horizontal term" })
+
+--┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   GENERAL
 --└───────────┴─────────────────────────────────────────────────────────────┘
---┌─ MODE ── normal ─────┐
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
 -- restore default <C-i> mapping
 -- map(MODE.normal, "<C-i>", "<C-i>", { noremap = true, silent = true })
 map(MODE.normal, "<Tab>", "<C-i>", { noremap = true, silent = true })
@@ -90,6 +106,7 @@ map(MODE.normal, "<leader>gr", "<cmd> Telescope lsp_references <CR>", { desc = "
 map(MODE.normal, "<leader>gd", "<cmd> Telescope lsp_definitions <CR>", { desc = "find definitions (Telescope)" })
 map(MODE.normal, '<leader>f"', "<cmd> Telescope registers <CR>", { desc = "find registers (Telescope)" })
 map(MODE.normal, "<leader>f'", "<cmd> Telescope marks <CR>", { desc = "find marks (Telescope)" })
+map(MODE.normal, "<leader>fk", "<cmd> Telescope keymaps <CR>", { desc = "find keymaps (Telescope)" })
 map(MODE.normal, "<leader>fn", "<cmd> Telescope noice <CR>", { desc = "find noice (Telescope | Noice)" })
 map(MODE.normal, "<leader>fy", "<cmd> Telescope yank_history <CR>", { desc = "find yanks (Telescope | Yanky)" })
 map(MODE.normal, "<leader><Tab>", function()
@@ -402,19 +419,49 @@ map(MODE.normal, "<leader>fe", "<cmd> CustomFzf <CR>", { desc = "find all files 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   SNACKS
 --└───────────┴─────────────────────────────────────────────────────────────┘
-local Snacks = require("snacks")
+local Snacks = require "snacks"
 --┌─ MODE ───────┐
 --│ normal       │
 --└──────────────┘
-map(MODE.normal, "<leader>pu", function() Snacks.notifier.hide() end, { desc = "Clear notifications" })
-map(MODE.normal, "<leader>x", function() Snacks.bufdelete() end, { desc = "Close buffer" })
-map(MODE.normal, "<leader>X", function() Snacks.bufdelete.all() end, { desc = "Close all buffer" })
-map(MODE.normal, "<leader>gb", function() Snacks.git.blame_line() end, { desc = "Git Blame Line" })
-map(MODE.normal, "<leader>gB", function() Snacks.gitbrowse() end, { desc = "Git Browse" })
-map(MODE.normal, "<leader>[", function() Snacks.words.jump(vim.v.count1) end, { desc = "Next Reference" })
-map(MODE.normal, "<leader>]", function() Snacks.words.jump(-vim.v.count1) end, { desc = "Prev Reference" })
+map(MODE.normal, "<leader>pu", function()
+  Snacks.notifier.hide()
+end, { desc = "Clear notifications" })
+map(MODE.normal, "<leader>x", function()
+  Snacks.bufdelete()
+end, { desc = "Close buffer" })
+map(MODE.normal, "<leader>X", function()
+  Snacks.bufdelete.all()
+end, { desc = "Close all buffer" })
+map(MODE.normal, "<leader>gb", function()
+  Snacks.git.blame_line()
+end, { desc = "Git Blame Line" })
+map(MODE.normal, "<leader>gB", function()
+  Snacks.gitbrowse()
+end, { desc = "Git Browse" })
+map(MODE.normal, "<leader>[", function()
+  Snacks.words.jump(vim.v.count1)
+end, { desc = "Next Reference" })
+map(MODE.normal, "<leader>]", function()
+  Snacks.words.jump(-vim.v.count1)
+end, { desc = "Prev Reference" })
 -- map(MODE.normal, "<A-h>", function() Snacks.terminal() end, { desc = "Terminal" })
-map(MODE.normal, "<leader>lg", function() Snacks.lazygit() end, { desc = "Open Lazygit" })
-map(MODE.normal, "<leader>lf", function() Snacks.lazygit.log_file() end, { desc = "file history (Lazygit)" })
-map(MODE.normal, "<leader>ll", function() Snacks.lazygit.log() end, { desc = "log (Lazygit)" })
+map(MODE.normal, "<leader>lg", function()
+  Snacks.lazygit()
+end, { desc = "Open Lazygit" })
+map(MODE.normal, "<leader>lf", function()
+  Snacks.lazygit.log_file()
+end, { desc = "file history (Lazygit)" })
+map(MODE.normal, "<leader>ll", function()
+  Snacks.lazygit.log()
+end, { desc = "log (Lazygit)" })
 
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   TREE.WALKER
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
+map(MODE.normal, "<M-j>", "<cmd>Treewalker Down<CR>", { desc = "  down (Treewalker)" })
+map(MODE.normal, "<M-k>", "<cmd>Treewalker Up<CR>", { desc = "  up (Treewalker)" })
+map(MODE.normal, "<M-h>", "<cmd>Treewalker Left<CR>", { desc = "  left (Treewalker)" })
+map(MODE.normal, "<M-l>", "<cmd>Treewalker Right<CR>", { desc = "  right (Treewalker)" })
