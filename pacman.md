@@ -71,6 +71,7 @@ desktop-file-utils 0.28-1
 device-mapper 2.03.29-1
 diffutils 3.10-1
 discord-canary 0.0.546-1
+dkms 3.1.3-1
 docbook-xml 4.5-10
 docbook-xsl 1.79.2-9
 docker 1:27.3.1-1
@@ -175,8 +176,10 @@ http-parser 2.9.4-2
 hunspell 1.7.2-2
 hwdata 0.390-1
 hyprcursor 0.1.10-1
+hypridle 0.1.5-1
 hyprland 0.45.2-3
 hyprlang 0.6.0-1
+hyprlock 0.5.0-1
 hyprpicker 0.4.1-1
 hyprpicker-debug 0.3.0-1
 hyprutils 0.2.6-1
@@ -202,7 +205,7 @@ json-c 0.18-1
 json-glib 1.10.6-1
 jsoncpp 1.9.6-3
 kbd 2.7-1
-kcoreaddons 6.9.0-1
+kcoreaddons 6.9.0-2
 keyutils 1.6.3-3
 ki18n 6.9.0-1
 kitty 0.37.0-1
@@ -414,6 +417,7 @@ linux-firmware 20241210.b00a7f7e-1
 linux-firmware-whence 20241210.b00a7f7e-1
 linux-lts 6.6.65-1
 linux-zen 6.12.4.zen1-1
+linux-zen-headers 6.12.4.zen1-1
 llvm-libs 18.1.8-4
 lm_sensors 1:3.6.0.r41.g31d1f125-3
 lmdb 0.9.33-1
@@ -481,6 +485,7 @@ p11-kit 0.25.5-1
 p7zip 1:17.05-2
 pacman 7.0.0.r6.gc685ae6-1
 pacman-mirrorlist 20240717-1
+pahole 1:1.27-2
 pam 1.7.0-1
 pambase 20230918-2
 pango 1:1.54.0-1
@@ -626,6 +631,7 @@ uthash 2.3.0-2
 util-linux 2.40.2-1
 util-linux-libs 2.40.2-1
 v4l-utils 1.28.1-1
+v4l2loopback-dkms 0.13.2-1
 vala 0.56.17-1
 vapoursynth R70-1
 vid.stab 1.1.1-2
