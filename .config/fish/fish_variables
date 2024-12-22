@@ -4,8 +4,8 @@ SETUVAR --export ATAC_KEY_BINDINGS:/home/zh/\x2econfig/atac/key_bindings_templat
 SETUVAR --export ATAC_MAIN_DIR:/home/zh/\x2econfig/atac/
 SETUVAR --export ATAC_THEME:/home/zh/\x2econfig/atac/themes/postman_theme\x2etoml
 SETUVAR EDITOR:nvim
-SETUVAR --export FISH_NVIM_CONFIG:nvim
 SETUVAR --export FZF_DEFAULT_OPTS:\x20\x20\x2d\x2dcolor\x3dfg\x3a\x2d1\x2cfg\x2b\x3a\x23C8BCA3\x2cbg\x3a\x2d1\x2cbg\x2b\x3a\x2330393D\x20\x20\x20\x2d\x2dcolor\x3dhl\x3a\x2382BF91\x2chl\x2b\x3a\x23A7C081\x2cinfo\x3a\x23D9BA7E\x2cmarker\x3a\x23DABB7E\x20\x20\x20\x2d\x2dcolor\x3dprompt\x3a\x237EBAB2\x2cspinner\x3a\x2382BF91\x2cpointer\x3a\x23A6BE7F\x2cheader\x3a\x23414B50\x20\x20\x20\x2d\x2dcolor\x3dgutter\x3a\x232E383C\x2cborder\x3a\x233C4841\x2cseparator\x3a\x23E47D7F\x2cscrollbar\x3a\x23798377\x20\x20\x20\x2d\x2dcolor\x3dlabel\x3a\x23E67F81\x2cquery\x3a\x23A7C081\x2cdisabled\x3a\x23E47D7F
+SETUVAR --export NVIM_APPNAME:nvim
 SETUVAR --export SSH_ENV:/home/zh/\x2essh/environment
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z

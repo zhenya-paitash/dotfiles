@@ -60,8 +60,8 @@ alias lazydocker='~/go/bin/lazydocker'
 # neovim
 set -U EDITOR nvim
 function nvim
-    if test -n "$FISH_NVIM_CONFIG"
-        NVIM_APPNAME=$FISH_NVIM_CONFIG command nvim $argv
+    if test -n "$NVIM_APPNAME"
+        NVIM_APPNAME=$NVIM_APPNAME command nvim $argv
     else
         command nvim $argv
     end

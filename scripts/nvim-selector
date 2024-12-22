@@ -9,8 +9,8 @@ if [ -z "$SELECTED" ]; then
     exit 0
 fi
 
-# save to fish variable FISH_NVIM_CONFIG
+# save to fish variable NVIM_APPNAME
 CONFIG_NAME=$(basename "$SELECTED")
-echo "set -Ux FISH_NVIM_CONFIG $CONFIG_NAME" | fish
+echo "set -Ux NVIM_APPNAME $CONFIG_NAME" | fish
 
 echo "$CONFIG_NAME ദ്ദി˙ ᴗ ˙ ) selected!"
