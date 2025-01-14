@@ -66,7 +66,7 @@ return {
       },
       log_level = vim.log.levels.INFO,
       daily_notes = {
-        folder = "notes/daily",
+        folder = "daily/notes",
         date_format = "%Y-%m-%d",
         alias_format = "%B %-d, %Y",
         template = nil,

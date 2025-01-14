@@ -1,11 +1,12 @@
 aylurs-gtk-shell 1.8.2-2
-brave-bin 1:1.73.104-1
-discord-canary 0.0.556-1
+brave-bin 1:1.73.105-1
+discord-canary 0.0.560-1
 electron28 28.3.3-3
 hyprpicker-debug 0.3.0-1
 rofi-lbonn-wayland-git 1.7.5.wayland3.r50.g2baa809d-1
 simple-mtpfs 0.4.0-1
 swww-debug 0.9.5-1
+vial-appimage v0.7.1-2
 yay 12.4.2-1
 yay-debug 12.4.2-1
 zen-browser-avx2-bin 1.0.2.b.3-1
