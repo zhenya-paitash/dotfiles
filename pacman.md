@@ -12,7 +12,7 @@ alsa-plugins 1:1.2.12-4
 alsa-topology-conf 1.2.5.1-4
 alsa-ucm-conf 1.2.13-2
 alsa-utils 1.2.13-2
-amd-ucode 20241210.b00a7f7e-1
+amd-ucode 20250109.7673dffd-1
 aom 3.11.0-1
 aquamarine 0.7.1-1
 archlinux-keyring 20241203-1
@@ -21,7 +21,7 @@ at-spi2-core 2.54.1-1
 atac 0.18.1-1
 atkmm 2.28.4-1
 attr 2.5.2-1
-audit 4.0.2-3
+audit 4.0.3-1
 autoconf 2.72-1
 autoconf-archive 1:2024.10.16-2
 automake 1.17-1
@@ -37,7 +37,7 @@ bluez 5.79-1
 bluez-libs 5.79-1
 bluez-utils 5.79-1
 boost-libs 1.86.0-6
-brave-bin 1:1.73.105-1
+brave-bin 1:1.74.48-1
 breeze-icons 6.10.0-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
@@ -59,7 +59,7 @@ cmake 3.31.4-1
 containerd 2.0.2-1
 coreutils 9.5-2
 cppdap 1.58.0-2
-cryptsetup 2.7.5-1
+cryptsetup 2.7.5-2
 curl 8.11.1-3
 dav1d 1.5.0-1
 db5.3 5.3.28-5
@@ -71,14 +71,14 @@ dconf 0.40.0-3
 debugedit 5.1-1
 default-cursors 3-1
 desktop-file-utils 0.28-1
-device-mapper 2.03.29-1
+device-mapper 2.03.30-1
 diffutils 3.10-1
-discord-canary 0.0.560-1
+discord-canary 0.0.567-1
 dkms 3.1.4-1
 docbook-xml 4.5-10
 docbook-xsl 1.79.2-9
 docker 1:27.3.1-1
-docker-compose 2.32.2-1
+docker-compose 2.32.3-1
 double-conversion 3.3.0-2
 duktape 2.7.0-7
 e2fsprogs 1.47.2-1
@@ -120,7 +120,7 @@ geoclue 2.7.2-1
 gettext 0.23.1-2
 ghostscript 10.04.0-1
 giflib 5.2.2-1
-git 2.48.0-1
+git 2.48.1-1
 git-delta 0.18.2-3
 gjs 2:1.82.1-2
 glib-networking 1:2.80.1-1
@@ -376,7 +376,7 @@ libusb 1.0.27-1
 libusbmuxd 2.1.0-1
 libutempter 1.2.1-4
 libutf8proc 2.10.0-1
-libuv 1.49.2-1
+libuv 1.50.0-1
 libva 2.22.0-1
 libva-utils 2.22.0-1
 libvdpau 1.5-3
@@ -392,7 +392,7 @@ libx11 1.8.10-1
 libxau 1.0.12-1
 libxcb 1.17.0-1
 libxcomposite 0.4.6-2
-libxcrypt 4.4.37-1
+libxcrypt 4.4.38-1
 libxcursor 1.2.3-1
 libxcvt 0.1.3-1
 libxdamage 1.1.6-2
@@ -426,8 +426,8 @@ libzip 1.11.2-1
 licenses 20240728-1
 lilv 0.24.24-3
 linux-api-headers 6.10-1
-linux-firmware 20241210.b00a7f7e-1
-linux-firmware-whence 20241210.b00a7f7e-1
+linux-firmware 20250109.7673dffd-1
+linux-firmware-whence 20250109.7673dffd-1
 linux-lts 6.6.70-1
 linux-zen 6.12.9.zen1-1
 linux-zen-headers 6.12.9.zen1-1
@@ -491,7 +491,7 @@ openjpeg2 2.5.3-1
 openresolv 3.13.2-2
 openssh 9.9p1-2
 openssl 3.4.0-1
-openvpn 2.6.12-3
+openvpn 2.6.13-1
 opus 1.5.2-1
 orc 0.4.40-1
 p11-kit 0.25.5-1
@@ -522,7 +522,7 @@ pipewire-pulse 1:1.2.7-1
 pixman 0.44.2-1
 pkcs11-helper 1.30.0-1
 pkgconf 2.3.0-1
-polkit 125-1
+polkit 126-2
 poppler-data 0.4.12-2
 popt 1.19-2
 portaudio 1:19.7.0-3
@@ -609,9 +609,9 @@ svt-av1 2.3.0-1
 swappy 1.5.1-2
 swww 0.9.5-2
 swww-debug 0.9.5-1
-systemd 257.2-1
-systemd-libs 257.2-1
-systemd-sysvcompat 257.2-1
+systemd 257.2-2
+systemd-libs 257.2-2
+systemd-sysvcompat 257.2-2
 tar 1.35-2
 tdb 1.4.12-2
 telegram-desktop 5.10.3-1
@@ -620,7 +620,7 @@ tinysparql 3.8.2-2
 tmux 3.5_a-1
 tomlplusplus 3.4.0-1
 tpm2-tss 4.1.3-1
-tree-sitter 0.24.6-1
+tree-sitter 0.24.7-1
 tree-sitter-bash 0.23.3-1
 tree-sitter-c 0.23.4-1
 tree-sitter-lua 0.2.0-1
@@ -643,8 +643,8 @@ unrar 1:7.1.2-1
 unzip 6.0-21
 upower 1.90.7-1
 uthash 2.3.0-2
-util-linux 2.40.3-1
-util-linux-libs 2.40.3-1
+util-linux 2.40.4-1
+util-linux-libs 2.40.4-1
 v4l-utils 1.28.1-2
 v4l2loopback-dkms 0.13.2-1
 vala 0.56.17-1
@@ -703,7 +703,7 @@ yadm 3.3.0-1
 yay 12.4.2-1
 yay-debug 12.4.2-1
 yazi 0.4.2-2
-yt-dlp 2025.01.12-1
+yt-dlp 2025.01.15-1
 z 1.12-1
 zen-browser-avx2-bin 1.0.2.b.3-1
 zeromq 4.3.5-2
