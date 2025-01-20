@@ -1,6 +1,6 @@
 aylurs-gtk-shell 1.8.2-2
 brave-bin 1:1.74.48-1
-discord-canary 0.0.567-1
+discord-canary 0.0.571-1
 electron28 28.3.3-3
 hyprpicker-debug 0.3.0-1
 rofi-lbonn-wayland-git 1.7.5.wayland3.r50.g2baa809d-1
