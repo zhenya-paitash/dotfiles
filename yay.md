@@ -9,4 +9,4 @@ swww-debug 0.9.5-1
 vial-appimage v0.7.1-2
 yay 12.4.2-1
 yay-debug 12.4.2-1
-zen-browser-avx2-bin 1.0.2.b.3-1
+zen-browser-bin 1.7.1b-1

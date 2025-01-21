@@ -195,7 +195,7 @@ icu 75.1-2
 ijs 0.35-6
 imagemagick 7.1.1.43-1
 imath 3.1.12-2
-iproute2 6.12.0-1
+iproute2 6.13.0-1
 iptables 1:1.8.10-2
 iputils 20240905-1
 iso-codes 4.17.0-1
@@ -478,7 +478,7 @@ npth 1.8-1
 nspr 4.36-1
 nss 3.107-1
 nushell 0.101.0-1
-nwg-look 1.0.1-1
+nwg-look 1.0.2-1
 obs-studio 31.0.0-4
 obsidian 1.7.7-1
 ocl-icd 2.3.2-2
@@ -509,7 +509,7 @@ pciutils 3.13.0-2
 pcre 8.45-4
 pcre2 10.44-1
 pcsclite 2.3.1-1
-perl 5.40.0-1
+perl 5.40.1-1
 perl-error 0.17029-7
 perl-mailtools 2.22-1
 perl-timedate 2.33-7
@@ -705,7 +705,7 @@ yay-debug 12.4.2-1
 yazi 0.4.2-2
 yt-dlp 2025.01.15-1
 z 1.12-1
-zen-browser-avx2-bin 1.0.2.b.3-1
+zen-browser-bin 1.7.1b-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1
