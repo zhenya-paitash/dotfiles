@@ -507,6 +507,7 @@ return {
   --│
   --├ @plugins    ON  `m4xshen/hardtime.nvim`: Плагины для улучшения навыков.
   --│             ON  `kawre/leetcode.nvim`: Плагин для решения задач из Leetcode.
+  --│             ON  `nvzone/typr`: Практика навыков печати внутри neovim.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   { -- BEST PRACTICE
@@ -520,6 +521,13 @@ return {
     lazy = "leetcode.nvim" ~= vim.fn.argv()[1],
     opts = require("plugins.setup.skill.leetcode").opts,
   },
+
+  -- { -- TYPING PRACTICE
+  --   "nvzone/typr",
+  --   dependencies = "nvzone/volt",
+  --   opts = {},
+  --   cmd = { "Typr", "TyprStats" },
+  -- },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   HTTP REST клиенты
