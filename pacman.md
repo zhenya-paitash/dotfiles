@@ -88,6 +88,7 @@ electron28 28.3.3-3
 electron30 30.5.1-3
 electron31 31.7.7-1
 electron32 32.3.0-1
+electron33 33.3.2-1
 expat 2.6.4-1
 eza 0.20.19-1
 fakeroot 1.37-1
@@ -481,7 +482,7 @@ nss 3.107-1
 nushell 0.101.0-1
 nwg-look 1.0.2-1
 obs-studio 31.0.1-2
-obsidian 1.8.4-1
+obsidian 1.8.4-2
 ocl-icd 2.3.2-2
 oniguruma 6.9.10-1
 openal 1.24.2-1
