@@ -1,4 +1,4 @@
-export const WIREGUARD_CONNECTION_NAME: string = "wg-NL-FREE-150"
+export const WIREGUARD_CONNECTION_NAME: string = "wg-NL-FREE-81"
 
 const vpn_status = Variable(false, {
   // every 5 minutes
