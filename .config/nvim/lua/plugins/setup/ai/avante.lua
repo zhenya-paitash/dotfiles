@@ -4,18 +4,30 @@ return {
   opts = {
     ---@alias Provider "claude" | "openai" | "azure" | "gemini" | "vertex" | "cohere" | "copilot" | string
     provider = "openai",
-    auto_suggestions_provider = "openai",
-    ---@type AvanteSupportedProvider
+    auto_suggestions_provider = "groq",
+    cursor_applying_provider = "groq", -- In this example, use Groq for applying, but you can also use any provider you want.
+    behaviour = {
+      --- ... existing behaviours
+      enable_cursor_planning_mode = true, -- enable cursor planning mode!
+    },
     openai = {
       -- @provider: groq
       -- @models: https://console.groq.com/docs/models
       api_key_name = "OPENAI_API_KEY", -- @api_key: OPENAI_API_KEY
-      endpoint = "https://api.groq.com/openai/v1",
+      endpoint = "https://api.groq.com/openai/v1/",
       model = "llama-3.3-70b-versatile", -- @limit: 8.192 tokens
     },
+
     ---@type {[string]: AvanteProvider}
     vendors = {
       ---@type AvanteSupportedProvider
+      ["groq"] = {
+        __inherited_from = "openai",
+        api_key_name = "GROQ_API_KEY",
+        endpoint = "https://api.groq.com/openai/v1/",
+        model = "llama-3.3-70b-versatile",
+        max_tokens = 32768, -- remember to increase this value, otherwise it will stop generating halfway
+      },
       ["openai-mixtral"] = {
         __inherited_from = "openai",
         api_key_name = "ANTHROPIC_API_KEY", -- @api_key: ANTHROPIC_API_KEY

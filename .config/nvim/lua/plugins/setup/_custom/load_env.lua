@@ -9,5 +9,6 @@ local function read_env_file(path)
   end
 end
 
+vim.env.GROQ_API_KEY = read_env_file(vim.fn.expand "~/private/GROQ_API_KEY")
 vim.env.OPENAI_API_KEY = read_env_file(vim.fn.expand "~/private/OPENAI_API_KEY")
 vim.env.ANTHROPIC_API_KEY = read_env_file(vim.fn.expand "~/private/ANTHROPIC_API_KEY")
