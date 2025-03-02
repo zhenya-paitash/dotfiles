@@ -71,7 +71,7 @@ dconf 0.40.0-3
 debugedit 5.1-1
 default-cursors 3-1
 desktop-file-utils 0.28-1
-device-mapper 2.03.30-1
+device-mapper 2.03.31-1
 diffutils 3.11-1
 discord-canary 0.0.601-1
 dkms 3.1.5-1
@@ -189,7 +189,7 @@ hyprpicker 0.4.2-3
 hyprpicker-debug 0.3.0-1
 hyprutils 0.5.1-1
 hyprwayland-scanner 0.4.4-1
-iana-etc 20241206-1
+iana-etc 20250213-1
 icu 76.1-1
 ijs 0.35-6
 imagemagick 7.1.1.44-1
@@ -319,7 +319,7 @@ libnghttp3 1.8.0-1
 libngtcp2 1.11.0-1
 libnice 0.1.22-1
 libnl 3.11.0-1
-libnm 1.50.3-1
+libnm 1.52.0-1
 libnotify 0.8.4-1
 libnsl 2.0.1-1
 libogg 1.3.5-2
@@ -468,7 +468,7 @@ ncurses 6.5-3
 neovim 0.10.4-2
 netpbm 10.86.44-1
 nettle 3.10.1-1
-networkmanager 1.50.3-1
+networkmanager 1.52.0-1
 ninja 1.12.1-2
 node-gyp 11.1.0-3
 nodejs 23.9.0-1
