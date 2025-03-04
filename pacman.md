@@ -47,7 +47,7 @@ btrfs-progs 6.13-1
 bzip2 1.0.8-6
 c-ares 1.34.4-1
 ca-certificates 20240618-1
-ca-certificates-mozilla 3.108-1
+ca-certificates-mozilla 3.109-1
 ca-certificates-utils 20240618-1
 cairo 1.18.2-2
 cairomm 1.14.5-1
@@ -63,7 +63,7 @@ cryptsetup 2.7.5-2
 curl 8.12.1-1
 dav1d 1.5.1-1
 db5.3 5.3.28-5
-dbus 1.16.0-1
+dbus 1.16.2-1
 dbus-broker 36-4
 dbus-broker-units 36-4
 dbus-glib 0.112-4
@@ -73,7 +73,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.31-1
 diffutils 3.11-1
-discord-canary 0.0.601-1
+discord-canary 0.0.602-1
 dkms 3.1.5-1
 docbook-xml 4.5-10
 docbook-xsl 1.79.2-9
@@ -282,7 +282,7 @@ libgit2 1:1.9.0-2
 libglvnd 1.7.0-1
 libgpg-error 1.51-1
 libgudev 238-1
-libheif 1.19.5-1
+libheif 1.19.7-1
 libice 1.1.2-1
 libidn 1.42-1
 libidn2 2.3.7-1
@@ -314,7 +314,7 @@ libnetfilter_conntrack 1.0.9-2
 libnewt 0.52.24-3
 libnfnetlink 1.0.2-2
 libnftnl 1.2.8-1
-libnghttp2 1.64.0-1
+libnghttp2 1.65.0-1
 libnghttp3 1.8.0-1
 libngtcp2 1.11.0-1
 libnice 0.1.22-1
@@ -478,7 +478,7 @@ noto-fonts-emoji 1:2.047-1
 npm 11.1.0-2
 npth 1.8-1
 nspr 4.36-1
-nss 3.108-1
+nss 3.109-1
 nushell 0.102.0-1
 nwg-look 1.0.2-1
 obs-studio 31.0.1-2
@@ -584,8 +584,8 @@ rustup 1.27.1-1
 sassc 3.6.2-5
 sbc 2.0-2
 sdbus-cpp 2.1.0-2
-sdl2-compat 2.32.50-2
-sdl3 3.2.4-2
+sdl2-compat 2.32.52-1
+sdl3 3.2.6-1
 seatd 0.9.1-1
 sed 4.9-3
 semver 7.7.1-1
@@ -620,7 +620,7 @@ systemd-libs 257.3-1
 systemd-sysvcompat 257.3-1
 tar 1.35-2
 tdb 1.4.13-1
-telegram-desktop 5.11.1-2
+telegram-desktop 5.11.1-3
 texinfo 7.2-1
 tinysparql 3.8.2-3
 tmux 3.5_a-1
@@ -653,14 +653,14 @@ util-linux 2.40.4-1
 util-linux-libs 2.40.4-1
 v4l-utils 1.28.1-2
 v4l2loopback-dkms 0.13.2-1
-vala 0.56.17-1
+vala 0.56.18-1
 vapoursynth R70-2
 vial-appimage v0.7.1-2
 vid.stab 1.1.1-2
 vmaf 3.0.0-1
 vulkan-headers 1:1.4.304.1-2
 vulkan-icd-loader 1.4.304.1-1
-vulkan-validation-layers 1.4.304.1-1
+vulkan-validation-layers 1.4.304.1-2
 wayland 1.23.1-1
 wayland-protocols 1.41-1
 webrtc-audio-processing-1 1.3-4
