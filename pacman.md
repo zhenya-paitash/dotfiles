@@ -42,7 +42,7 @@ breeze-icons 6.11.0-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
 brotli 1.1.0-3
-btop 1.4.0-4
+btop 1.4.0-5
 btrfs-progs 6.13-1
 bzip2 1.0.8-6
 c-ares 1.34.4-1
@@ -73,7 +73,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.31-1
 diffutils 3.11-1
-discord-canary 0.0.602-1
+discord-canary 0.0.605-1
 dkms 3.1.5-1
 docbook-xml 4.5-10
 docbook-xsl 1.79.2-9
@@ -580,7 +580,7 @@ rsync 3.4.1-2
 rtkit 0.13-3
 rubberband 4.0.0-1
 runc 1.2.5-1
-rustup 1.27.1-1
+rustup 1.28.0-1
 sassc 3.6.2-5
 sbc 2.0-2
 sdbus-cpp 2.1.0-2

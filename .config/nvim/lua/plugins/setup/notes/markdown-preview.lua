@@ -11,7 +11,8 @@ return {
     -- @link: https://github.com/iamcco/markdown-preview.nvim?tab=readme-ov-file#how-can-i-pass-cli-options-to-the-browser-like-opening-in-a-new-window
     vim.cmd [[
       function! OpenMarkdownPreview(url)
-        execute 'silent ! brave --new-window ' . shellescape(a:url)
+        " execute 'silent ! brave --new-window ' . shellescape(a:url)
+        execute 'silent ! zen-browser -private-window ' . shellescape(a:url)
       endfunction
     ]]
     vim.g.mkdp_browserfunc = "OpenMarkdownPreview"
