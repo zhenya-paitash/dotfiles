@@ -57,7 +57,7 @@ check 0.15.2-2
 cliphist 1:0.6.1-1
 cmake 3.31.6-1
 containerd 2.0.3-1
-coreutils 9.6-3
+coreutils 9.6-4
 cppdap 1.58.0-2
 cryptsetup 2.7.5-2
 curl 8.12.1-1
@@ -72,7 +72,7 @@ debugedit 5.1-1
 default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.31-1
-diffutils 3.11-1
+diffutils 3.11-2
 discord-canary 0.0.605-1
 dkms 3.1.5-1
 docbook-xml 4.5-10
@@ -109,7 +109,7 @@ fuse-common 3.16.2-1
 fuse2 2.9.9-5
 fuse3 3.16.2-1
 fzf 0.60.3-1
-gawk 5.3.1-1
+gawk 5.3.1-2
 gc 8.2.8-2
 gcc 14.2.1+r753+g1cd744a6828f-1
 gcc-libs 14.2.1+r753+g1cd744a6828f-1

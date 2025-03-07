@@ -395,7 +395,8 @@ return {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     ft = "markdown",
-    build = "cd app && git reset --hard && npm install",
+    commit = "a923f5f",
+    -- build = "cd app && git reset --hard && npm install",
     init = require("plugins.setup.notes.markdown-preview").init,
   },
 
