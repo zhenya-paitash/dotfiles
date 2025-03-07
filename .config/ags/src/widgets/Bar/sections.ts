@@ -13,7 +13,7 @@ export function SectionLeft() {
     className: 'section section-left',
     hpack: 'start',
     children: [
-      // MediaWidget(),
+      MediaWidget(),
       // ClockWidget(),
     ],
   });

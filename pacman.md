@@ -37,7 +37,7 @@ bluez 5.79-1
 bluez-libs 5.79-1
 bluez-utils 5.79-1
 boost-libs 1.87.0-3
-brave-bin 1:1.75.181-1
+brave-bin 1:1.76.73-1
 breeze-icons 6.11.0-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
@@ -77,7 +77,7 @@ discord-canary 0.0.605-1
 dkms 3.1.5-1
 docbook-xml 4.5-10
 docbook-xsl 1.79.2-9
-docker 1:28.0.0-1
+docker 1:28.0.1-1
 docker-compose 2.33.1-1
 double-conversion 3.3.1-1
 duktape 2.7.0-7
@@ -87,6 +87,7 @@ efivar 39-1
 electron31 31.7.7-3
 electron32 32.3.1-3
 electron33 33.4.2-1
+electron34 34.3.0-1
 expat 2.6.4-1
 eza 0.20.23-1
 fakeroot 1.37-1
@@ -107,7 +108,7 @@ fribidi 1.0.16-1
 fuse-common 3.16.2-1
 fuse2 2.9.9-5
 fuse3 3.16.2-1
-fzf 0.60.2-1
+fzf 0.60.3-1
 gawk 5.3.1-1
 gc 8.2.8-2
 gcc 14.2.1+r753+g1cd744a6828f-1
@@ -135,7 +136,7 @@ gmp 6.3.0-2
 gnulib-l10n 20241231-1
 gnupg 2.4.7-1
 gnutls 3.8.9-1
-go 2:1.24.0-1
+go 2:1.24.1-1
 gobject-introspection 1.82.0-3
 gobject-introspection-runtime 1.82.0-3
 gperftools 2.16-1
@@ -176,7 +177,7 @@ hidapi 0.14.0-3
 highway 1.2.0-1
 http-parser 2.9.4-2
 hunspell 1.7.2-2
-hwdata 0.392-1
+hwdata 0.393-1
 hyprcursor 0.1.11-3
 hyprgraphics 0.1.2-1
 hypridle 0.1.5-4
@@ -204,8 +205,8 @@ jbig2dec 0.20-1
 jbigkit 2.1-8
 jless 0.9.0-2
 jq 1.7.1-2
-js115 115.20.0-1
-js128 128.7.0-1
+js115 115.21.0-1
+js128 128.8.0-1
 json-c 0.18-1
 json-glib 1.10.6-1
 jsoncpp 1.9.6-3
@@ -222,7 +223,7 @@ kirigami 6.11.0-1
 kitty 0.39.1-1
 kitty-shell-integration 0.39.1-1
 kitty-terminfo 0.39.1-1
-kmod 34-1
+kmod 34.1-1
 kpipewire 6.3.2-1
 krb5 1.21.3-1
 kstatusnotifieritem 6.11.0-1
@@ -482,7 +483,7 @@ nss 3.109-1
 nushell 0.102.0-1
 nwg-look 1.0.2-1
 obs-studio 31.0.1-2
-obsidian 1.8.7-1
+obsidian 1.8.9-2
 ocl-icd 2.3.2-2
 oniguruma 6.9.10-1
 openal 1.24.2-1
@@ -580,12 +581,12 @@ rsync 3.4.1-2
 rtkit 0.13-3
 rubberband 4.0.0-1
 runc 1.2.5-1
-rustup 1.28.0-1
+rustup 1.28.1-1
 sassc 3.6.2-5
 sbc 2.0-2
 sdbus-cpp 2.1.0-2
 sdl2-compat 2.32.52-1
-sdl3 3.2.6-1
+sdl3 3.2.8-1
 seatd 0.9.1-1
 sed 4.9-3
 semver 7.7.1-1
@@ -615,9 +616,9 @@ svt-av1 2.3.0-1
 swappy 1.5.1-2
 swww 0.9.5-2
 swww-debug 0.9.5-1
-systemd 257.3-1
-systemd-libs 257.3-1
-systemd-sysvcompat 257.3-1
+systemd 257.4-1
+systemd-libs 257.4-1
+systemd-sysvcompat 257.4-1
 tar 1.35-2
 tdb 1.4.13-1
 telegram-desktop 5.11.1-3
@@ -626,7 +627,7 @@ tinysparql 3.8.2-3
 tmux 3.5_a-1
 tomlplusplus 3.4.0-1
 tpm2-tss 4.1.3-1
-tree-sitter 0.25.2-1
+tree-sitter 0.25.3-1
 tree-sitter-bash 0.23.3-1
 tree-sitter-c 0.23.5-1
 tree-sitter-lua 0.2.0-1
@@ -652,7 +653,7 @@ uthash 2.3.0-2
 util-linux 2.40.4-1
 util-linux-libs 2.40.4-1
 v4l-utils 1.28.1-2
-v4l2loopback-dkms 0.13.2-1
+v4l2loopback-dkms 0.14.0-1
 vala 0.56.18-1
 vapoursynth R70-2
 vial-appimage v0.7.1-2
@@ -708,7 +709,7 @@ xz 5.6.4-1
 yadm 3.4.0-1
 yay 12.4.2-1
 yay-debug 12.4.2-1
-yazi 25.2.26-1
+yazi 25.3.2-1
 yt-dlp 2025.02.19-1
 z 1.12-1
 zen-browser-bin 1.8.2b-1
