@@ -1,0 +1,6 @@
+theme: catppuccin-mocha
+layout: horizontal
+
+editor: nvim
+# pager: jless
+# pager_json: jq
