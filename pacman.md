@@ -1,5 +1,5 @@
 7zip 24.09-3
-abseil-cpp 20250127.0-1
+abseil-cpp 20250127.0-2
 acl 2.3.2-1
 ada 2.9.2-1
 adobe-source-code-pro-fonts 2.042u+1.062i+1.026vf-2
@@ -37,7 +37,7 @@ bluez 5.79-1
 bluez-libs 5.79-1
 bluez-utils 5.79-1
 boost-libs 1.87.0-3
-brave-bin 1:1.76.73-1
+brave-bin 1:1.76.74-1
 breeze-icons 6.11.0-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
@@ -159,7 +159,7 @@ gst-plugin-pipewire 1:1.4.0-2
 gst-plugins-bad-libs 1.24.12-4
 gst-plugins-base-libs 1.24.12-4
 gstreamer 1.24.12-4
-gtest 1.15.2-1
+gtest 1.16.0-1
 gtk-doc 1.34.0-3
 gtk-layer-shell 0.9.0-1
 gtk-update-icon-cache 1:4.16.12-1
@@ -225,7 +225,7 @@ kitty 0.39.1-1
 kitty-shell-integration 0.39.1-1
 kitty-terminfo 0.39.1-1
 kmod 34.1-1
-kpipewire 6.3.2-1
+kpipewire 6.3.3-1
 krb5 1.21.3-1
 kstatusnotifieritem 6.11.0-1
 kwidgetsaddons 6.11.0-1
@@ -236,7 +236,7 @@ lazygit 0.48.0-1
 lcms2 2.17-1
 leancrypto 1.2.0-2
 less 1:668-1
-libarchive 3.7.7-1
+libarchive 3.7.7-2
 libass 0.17.3-1
 libassuan 3.0.0-1
 libasyncns 1:0.8+r3+g68cd5af-3
@@ -246,10 +246,10 @@ libb2 0.98.1-3
 libbluray 1.3.4-2
 libbpf 1.5.0-1
 libbs2b 3.1.0-9
-libcamera 0.3.2-2
-libcamera-ipa 0.3.2-2
+libcamera 0.3.2-3
+libcamera-ipa 0.3.2-3
 libcanberra 1:0.30+r2+gc0620e4-4
-libcap 2.71-1
+libcap 2.75-1
 libcap-ng 0.8.5-3
 libcdio 2.2.0-1
 libcdio-paranoia 10.2+2.0.2-1
@@ -505,7 +505,7 @@ pacman-mirrorlist 20250101-1
 pahole 1:1.29-1
 pam 1.7.0-2
 pambase 20230918-2
-pango 1:1.56.1-1
+pango 1:1.56.2-1
 pangomm 2.46.4-1
 pangomm-2.48 2.56.1-1
 patch 2.7.6-10
