@@ -12,7 +12,7 @@ alsa-plugins 1:1.2.12-4
 alsa-topology-conf 1.2.5.1-4
 alsa-ucm-conf 1.2.13-2
 alsa-utils 1.2.13-2
-amd-ucode 20250210.5bc5868b-1
+amd-ucode 20250311.b69d4b74-2
 aom 3.12.0-1
 aquamarine 0.7.2-1
 archlinux-keyring 20250123-1
@@ -29,7 +29,7 @@ avahi 1:0.8+r194+g3f79789-3
 aylurs-gtk-shell 1.8.2-2
 base 3-2
 base-devel 1-2
-bash 5.2.037-1
+bash 5.2.037-2
 bat 0.25.0-4
 binutils 2.44-1
 bison 3.8.2-8
@@ -73,8 +73,8 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.31-1
 diffutils 3.11-2
-discord-canary 0.0.606-1
-dkms 3.1.5-1
+discord-canary 0.0.607-1
+dkms 3.1.6-1
 docbook-xml 4.5-10
 docbook-xsl 1.79.2-9
 docker 1:28.0.1-1
@@ -89,7 +89,7 @@ electron32 32.3.1-3
 electron33 33.4.3-1
 electron34 34.3.2-1
 expat 2.6.4-1
-eza 0.20.23-1
+eza 0.20.24-1
 fakeroot 1.37-1
 fd 10.2.0-1
 ffmpeg 2:7.1-7
@@ -97,7 +97,7 @@ fftw 3.3.10-7
 file 5.46-3
 filesystem 2024.11.21-1
 findutils 4.10.0-2
-fish 4.0.0-2
+fish 4.0.1-1
 fisher 4.4.5-1
 flac 1.5.0-1
 flex 2.6.4-5
@@ -118,7 +118,7 @@ gdbm 1.24-2
 gdk-pixbuf2 2.42.12-2
 geoclue 2.7.2-1
 gettext 0.24-1
-ghostscript 10.04.0-1
+ghostscript 10.05.0-1
 giflib 5.2.2-1
 git 2.48.1-2
 git-delta 0.18.2-4
@@ -430,8 +430,8 @@ libzip 1.11.2-1
 licenses 20240728-1
 lilv 0.24.26-1
 linux-api-headers 6.13-1
-linux-firmware 20250210.5bc5868b-1
-linux-firmware-whence 20250210.5bc5868b-1
+linux-firmware 20250311.b69d4b74-2
+linux-firmware-whence 20250311.b69d4b74-2
 linux-lts 6.12.18-1
 linux-zen 6.13.6.zen1-1
 linux-zen-headers 6.13.6.zen1-1
@@ -463,7 +463,7 @@ mobile-broadband-provider-info 20240407-1
 mpdecimal 4.0.0-2
 mpfr 4.2.1-6
 mpg123 1.32.10-1
-mpv 1:0.39.0-4
+mpv 1:0.39.0-5
 msgpack-c 6.1.0-2
 mtdev 1.1.7-1
 mujs 1.3.6-1
@@ -501,7 +501,7 @@ opus 1.5.2-1
 orc 0.4.41-1
 p11-kit 0.25.5-1
 pacman 7.0.0.r6.gc685ae6-2
-pacman-mirrorlist 20250101-1
+pacman-mirrorlist 20250311-1
 pahole 1:1.29-1
 pam 1.7.0-2
 pambase 20230918-2
@@ -714,7 +714,7 @@ yay-debug 12.4.2-1
 yazi 25.3.2-1
 yt-dlp 2025.02.19-1
 z 1.12-1
-zen-browser-bin 1.9b-1
+zen-browser-bin 1.9.1b-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1

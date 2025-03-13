@@ -179,7 +179,7 @@ return {
 
   { -- PRO REDEFINITION
     "kylechui/nvim-surround",
-    version = "*",
+    version = "^3.0.0",
     event = "VeryLazy",
     config = require("plugins.setup.navigation.nvim-surround").config,
   },
@@ -376,7 +376,7 @@ return {
   --├ @plugins    ON  `epwalsh/obsidian.nvim`: Работа с заметками Obsidian.
   --│             ON  `OXY2DEV/markview.nvim`: Улучшенное отображение Markdown файлов.
   --│             ON  `iamcco/markdown-preview.nvim`: Markdown предпросмотр в браузере.
-  --│             ON  `3rd/image.nvim`: Просмотр изображений в терминале.
+  --│             OFF `3rd/image.nvim`: Просмотр изображений в терминале.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   { -- NOTES
@@ -397,15 +397,16 @@ return {
     ft = "markdown",
     commit = "a923f5f",
     -- build = "cd app && git reset --hard && npm install",
+    build = "cd app && npm install",
     init = require("plugins.setup.notes.markdown-preview").init,
   },
 
-  { -- IMAGE PREVIEW (neovim)
-    "3rd/image.nvim",
-    lazy = "BufReadPost",
-    ft = "markdown",
-    config = require("plugins.setup.notes.image-nvim").config,
-  },
+  -- { -- IMAGE PREVIEW (neovim)
+  --   "3rd/image.nvim",
+  --   lazy = "BufReadPost",
+  --   ft = "markdown",
+  --   config = require("plugins.setup.notes.image-nvim").config,
+  -- },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   AI и интеллектуальные инструменты
