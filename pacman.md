@@ -17,7 +17,7 @@ aom 3.12.0-1
 aquamarine 0.7.2-1
 archlinux-keyring 20250123-1
 argon2 20190702-6
-at-spi2-core 2.54.1-1
+at-spi2-core 2.56.0-1
 atac 0.18.2-1
 atkmm 2.28.4-1
 attr 2.5.2-1
@@ -137,8 +137,8 @@ gnulib-l10n 20241231-1
 gnupg 2.4.7-1
 gnutls 3.8.9-1
 go 2:1.24.1-1
-gobject-introspection 1.82.0-3
-gobject-introspection-runtime 1.82.0-3
+gobject-introspection 1.84.0-1
+gobject-introspection-runtime 1.84.0-1
 gperftools 2.16-1
 gpgme 1.24.2-1
 gpm 1.20.7.r38.ge82d1a6-6
@@ -154,11 +154,11 @@ gsettings-system-schemas 47.1-1
 gsfonts 20200910-4
 gsm 1.0.22-2
 gssdp 1.6.3-2
-gst-libav 1.24.12-4
+gst-libav 1.26.0-1
 gst-plugin-pipewire 1:1.4.1-1
-gst-plugins-bad-libs 1.24.12-4
-gst-plugins-base-libs 1.24.12-4
-gstreamer 1.24.12-4
+gst-plugins-bad-libs 1.26.0-1
+gst-plugins-base-libs 1.26.0-1
+gstreamer 1.26.0-1
 gtest 1.16.0-2
 gtk-doc 1.34.0-3
 gtk-layer-shell 0.9.0-1
@@ -221,9 +221,9 @@ kguiaddons 6.12.0-1
 ki18n 6.12.0-1
 kiconthemes 6.12.0-1
 kirigami 6.12.0-1
-kitty 0.39.1-1
-kitty-shell-integration 0.39.1-1
-kitty-terminfo 0.39.1-1
+kitty 0.40.0-1
+kitty-shell-integration 0.40.0-1
+kitty-terminfo 0.40.0-1
 kmod 34.1-1
 kpipewire 6.3.3-1
 krb5 1.21.3-1
@@ -280,7 +280,7 @@ libffi 3.4.7-1
 libfontenc 1.1.8-1
 libfreeaptx 0.2.2-1
 libgcrypt 1.11.0-3
-libgirepository 1.82.0-3
+libgirepository 1.84.0-1
 libgit2 1:1.9.0-2
 libglvnd 1.7.0-1
 libgpg-error 1.51-1
@@ -505,7 +505,7 @@ pacman-mirrorlist 20250311-1
 pahole 1:1.29-1
 pam 1.7.0-2
 pambase 20230918-2
-pango 1:1.56.2-1
+pango 1:1.56.3-1
 pangomm 2.46.4-1
 pangomm-2.48 2.56.1-1
 patch 2.7.6-10
