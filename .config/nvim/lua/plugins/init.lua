@@ -582,7 +582,7 @@ return {
     opts = {
       -- timeout = 1,
       maxkeys = 5,
-      position = "top-right",
+      position = "bottom-right",
       show_count = true,
     },
   },

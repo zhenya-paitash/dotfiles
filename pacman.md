@@ -33,9 +33,9 @@ bash 5.2.037-2
 bat 0.25.0-4
 binutils 2.44-1
 bison 3.8.2-8
-bluez 5.79-1
-bluez-libs 5.79-1
-bluez-utils 5.79-1
+bluez 5.80-1
+bluez-libs 5.80-1
+bluez-utils 5.80-1
 boost-libs 1.87.0-3
 brave-bin 1:1.76.74-1
 breeze-icons 6.12.0-1
@@ -56,7 +56,7 @@ cantarell-fonts 1:0.303.1-2
 check 0.15.2-2
 cliphist 1:0.6.1-1
 cmake 3.31.6-1
-containerd 2.0.3-1
+containerd 2.0.4-1
 coreutils 9.6-4
 cppdap 1.58.0-2
 cryptsetup 2.7.5-2
@@ -179,7 +179,7 @@ highway 1.2.0-1
 http-parser 2.9.4-2
 hunspell 1.7.2-2
 hwdata 0.393-1
-hyprcursor 0.1.11-3
+hyprcursor 0.1.12-1
 hyprgraphics 0.1.2-1
 hypridle 0.1.5-4
 hyprland 0.47.2-2
@@ -241,7 +241,7 @@ libass 0.17.3-1
 libassuan 3.0.0-1
 libasyncns 1:0.8+r3+g68cd5af-3
 libavc1394 0.5.4-6
-libavif 1.2.0-2
+libavif 1.2.1-1
 libb2 0.98.1-3
 libbluray 1.3.4-2
 libbpf 1.5.0-1
@@ -297,7 +297,7 @@ libinput 1.27.1-1
 libisl 0.27-1
 libjpeg-turbo 3.1.0-1
 libjuice 1.5.2-1
-libjxl 0.11.1-1
+libjxl 0.11.1-2
 libksba 1.6.7-1
 liblc3 1.1.3-1
 libldac 2.0.2.3-2
@@ -359,7 +359,7 @@ libsodium 1.0.20-1
 libsoup3 3.6.4-1
 libsoxr 0.1.3-4
 libspng 0.7.4-2
-libsrtp 1:2.6.0-1
+libsrtp 1:2.7.0-1
 libssh 0.11.1-1
 libssh2 1.11.1-1
 libstemmer 2.2.0-2
@@ -426,7 +426,7 @@ libxv 1.0.13-1
 libxxf86vm 1.1.6-1
 libyaml 0.2.5-3
 libyuv r2426+464c51a03-1
-libzip 1.11.2-1
+libzip 1.11.3-1
 licenses 20240728-1
 lilv 0.24.26-1
 linux-api-headers 6.13-1
@@ -483,7 +483,7 @@ npth 1.8-1
 nspr 4.36-1
 nss 3.109-1
 nushell 0.102.0-1
-nwg-look 1.0.3-1
+nwg-look 1.0.4-1
 obs-studio 31.0.1-2
 obsidian 1.8.9-2
 ocl-icd 2.3.2-2
@@ -582,7 +582,7 @@ rofi-lbonn-wayland-git 1.7.5.wayland3.r50.g2baa809d-1
 rsync 3.4.1-2
 rtkit 0.13-3
 rubberband 4.0.0-1
-runc 1.2.5-1
+runc 1.2.6-1
 rustup 1.28.1-1
 sassc 3.6.2-5
 sbc 2.0-2
