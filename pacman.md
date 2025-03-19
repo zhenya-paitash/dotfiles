@@ -12,7 +12,7 @@ alsa-plugins 1:1.2.12-4
 alsa-topology-conf 1.2.5.1-4
 alsa-ucm-conf 1.2.13-2
 alsa-utils 1.2.13-2
-amd-ucode 20250311.b69d4b74-2
+amd-ucode 20250311.b69d4b74-3
 aom 3.12.0-1
 aquamarine 0.7.2-1
 archlinux-keyring 20250123-1
@@ -73,7 +73,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.31-1
 diffutils 3.11-2
-discord-canary 0.0.608-1
+discord-canary 0.0.610-1
 dkms 3.1.6-1
 docbook-xml 4.5-10
 docbook-xsl 1.79.2-9
@@ -97,7 +97,7 @@ fftw 3.3.10-7
 file 5.46-3
 filesystem 2024.11.21-1
 findutils 4.10.0-2
-fish 4.0.1-1
+fish 4.0.1-2
 fisher 4.4.5-1
 flac 1.5.0-1
 flex 2.6.4-5
@@ -194,7 +194,7 @@ hyprwayland-scanner 0.4.4-1
 iana-etc 20250213-1
 icu 76.1-1
 ijs 0.35-6
-imagemagick 7.1.1.45-1
+imagemagick 7.1.1.46-1
 imath 3.1.12-3
 iproute2 6.13.0-1
 iptables 1:1.8.10-2
@@ -297,7 +297,7 @@ libinput 1.27.1-1
 libisl 0.27-1
 libjpeg-turbo 3.1.0-1
 libjuice 1.5.2-1
-libjxl 0.11.1-2
+libjxl 0.11.1-3
 libksba 1.6.7-1
 liblc3 1.1.3-1
 libldac 2.0.2.3-2
@@ -430,8 +430,8 @@ libzip 1.11.3-1
 licenses 20240728-1
 lilv 0.24.26-1
 linux-api-headers 6.13-1
-linux-firmware 20250311.b69d4b74-2
-linux-firmware-whence 20250311.b69d4b74-2
+linux-firmware 20250311.b69d4b74-3
+linux-firmware-whence 20250311.b69d4b74-3
 linux-lts 6.12.19-1
 linux-zen 6.13.7.zen1-1
 linux-zen-headers 6.13.7.zen1-1
@@ -538,7 +538,7 @@ powertop 2.15-2
 procps-ng 4.0.5-2
 protobuf 30.0-3
 psmisc 23.7-1
-pugixml 1.15-1
+pugixml 1.15-2
 python 3.13.2-1
 python-autocommand 2.2.2-7
 python-certifi 2025.01.31-1
@@ -714,7 +714,7 @@ yay-debug 12.4.2-1
 yazi 25.3.2-1
 yt-dlp 2025.02.19-1
 z 1.12-1
-zen-browser-bin 1.9.1b-1
+zen-browser-bin 1.10b-2
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1
