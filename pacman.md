@@ -1,7 +1,7 @@
 7zip 24.09-3
 abseil-cpp 20250127.0-2
 acl 2.3.2-1
-ada 2.9.2-1
+ada 3.2.1-1
 adobe-source-code-pro-fonts 2.042u+1.062i+1.026vf-2
 adwaita-cursors 47.0-1
 adwaita-icon-theme 47.0-1
@@ -14,7 +14,7 @@ alsa-ucm-conf 1.2.13-2
 alsa-utils 1.2.13-2
 amd-ucode 20250311.b69d4b74-3
 aom 3.12.0-1
-aquamarine 0.7.2-1
+aquamarine 0.8.0-1
 archlinux-keyring 20250123-1
 argon2 20190702-6
 at-spi2-core 2.56.0-1
@@ -37,7 +37,7 @@ bluez 5.80-1
 bluez-libs 5.80-1
 bluez-utils 5.80-1
 boost-libs 1.87.0-3
-brave-bin 1:1.76.74-1
+brave-bin 1:1.76.80-1
 breeze-icons 6.12.0-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
@@ -73,7 +73,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.31-1
 diffutils 3.11-2
-discord-canary 0.0.610-1
+discord-canary 0.0.616-1
 dkms 3.1.6-1
 docbook-xml 4.5-10
 docbook-xsl 1.79.2-9
@@ -90,7 +90,7 @@ electron33 33.4.3-1
 electron34 34.3.2-1
 expat 2.7.0-1
 eza 0.20.24-1
-fakeroot 1.37-1
+fakeroot 1.37.1-1
 fd 10.2.0-1
 ffmpeg 2:7.1-7
 fftw 3.3.10-7
@@ -182,14 +182,14 @@ hwdata 0.393-1
 hyprcursor 0.1.12-1
 hyprgraphics 0.1.2-1
 hypridle 0.1.5-4
-hyprland 0.47.2-2
+hyprland 0.47.2-4
 hyprland-qt-support 0.1.0-4
 hyprland-qtutils 0.1.3-4
 hyprlang 0.6.0-5
 hyprlock 0.7.0-1
 hyprpicker 0.4.2-3
 hyprpicker-debug 0.3.0-1
-hyprutils 0.5.1-1
+hyprutils 0.5.2-1
 hyprwayland-scanner 0.4.4-1
 iana-etc 20250213-1
 icu 76.1-1
@@ -197,7 +197,7 @@ ijs 0.35-6
 imagemagick 7.1.1.46-1
 imath 3.1.12-3
 iproute2 6.13.0-1
-iptables 1:1.8.10-2
+iptables 1:1.8.11-1
 iputils 20240905-1
 iso-codes 4.17.0-1
 jansson 2.14-4
@@ -376,7 +376,7 @@ libtorrent-rasterbar 1:2.0.11-3
 libunibreak 6.1-1
 libunistring 1.3-1
 libunwind 1.8.1-3
-libusb 1.0.27-1
+libusb 1.0.28-1
 libusbmuxd 2.1.0-1
 libutempter 1.2.3-1
 libutf8proc 2.10.0-1
@@ -482,7 +482,7 @@ npm 11.2.0-1
 npth 1.8-1
 nspr 4.36-1
 nss 3.109-1
-nushell 0.102.0-1
+nushell 0.103.0-1
 nwg-look 1.0.4-1
 obs-studio 31.0.1-2
 obsidian 1.8.9-2
@@ -526,7 +526,7 @@ pipewire-jack 1:1.4.1-1
 pipewire-pulse 1:1.4.1-1
 pixman 0.44.2-1
 pkcs11-helper 1.30.0-1
-pkgconf 2.3.0-1
+pkgconf 2.4.3-1
 polkit 126-2
 poppler-data 0.4.12-2
 popt 1.19-2
@@ -594,7 +594,7 @@ sed 4.9-3
 semver 7.7.1-1
 serd 0.32.4-1
 shaderc 2025.1-1
-shadow 4.17.3-1
+shadow 4.17.4-1
 shared-mime-info 2.4-1
 simdjson 1:3.12.2-1
 simple-mtpfs 0.4.0-1
@@ -623,7 +623,7 @@ systemd-libs 257.4-1
 systemd-sysvcompat 257.4-1
 tar 1.35-2
 tdb 1.4.13-1
-telegram-desktop 5.12.3-2
+telegram-desktop 5.12.3-4
 texinfo 7.2-1
 tinysparql 3.8.2-3
 tmux 3.5_a-1
@@ -652,8 +652,8 @@ unrar 1:7.1.5-1
 unzip 6.0-22
 upower 1.90.7-1
 uthash 2.3.0-2
-util-linux 2.40.4-1
-util-linux-libs 2.40.4-1
+util-linux 2.41-2
+util-linux-libs 2.41-2
 v4l-utils 1.28.1-2
 v4l2loopback-dkms 0.14.0-1
 vala 0.56.18-1
