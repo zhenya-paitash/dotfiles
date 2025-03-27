@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# UNMOUNT
+# fusermount -u ~/rclone/yadisk
+
+# MOUNT
+rclone mount yadisk: ~/rclone/yadisk \
+  --vfs-cache-mode writes \
+  --allow-other \
+  --dir-cache-time 60m \
+  --poll-interval 1m \
+  --timeout 1h \
+  --log-level DEBUG \
+  --log-file ~/rclone/yadisk.log
+

@@ -44,16 +44,14 @@ map({ MODE.normal, MODE.insert, MODE.visual }, "<C-s>", "", {})
 
 map(MODE.normal, "<leader>a", "ggVGo", { desc = "select all", noremap = true, silent = true })
 -- map(MODE.normal, "<leader>z", "zfS", { desc = "create folder from ...", noremap = true, silent = true })
--- map(MODE.normal, "N", "Nzzzv", { desc = "prev search", noremap = true, silent = true })
--- map(MODE.normal, "n", "nzzzv", { desc = "next search", noremap = true, silent = true })
-map(MODE.normal, "n", function()
-  vim.cmd "normal! n"
-  vim.cmd "normal! zz"
-end, { desc = "prev search", noremap = true, silent = true })
-map(MODE.normal, "N", function()
-  vim.cmd "normal! N"
-  vim.cmd "normal! zz"
-end, { desc = "next search", noremap = true, silent = true })
+-- map(MODE.normal, "n", function()
+--   vim.cmd "normal! n"
+--   vim.cmd "normal! zz"
+-- end, { desc = "prev search", noremap = true, silent = true })
+-- map(MODE.normal, "N", function()
+--   vim.cmd "normal! N"
+--   vim.cmd "normal! zz"
+-- end, { desc = "next search", noremap = true, silent = true })
 map(MODE.normal, "<F1>", "<cmd>lua vim.lsp.buf.signature_help()<CR>", { desc = "Show signature help" })
 map(MODE.normal, "<leader>w", "<cmd> w <CR>", { desc = "save current file", noremap = true, silent = true })
 -- RESIZE PANELS

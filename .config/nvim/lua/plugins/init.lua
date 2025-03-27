@@ -224,6 +224,7 @@ return {
   --│             ON  `sphamba/smear-cursor.nvim`: Добавляет анимацию для курсора в терминале.
   --│             OFF     └─ `danilamihailov/beacon.nvim`: Выделяет мерцанием курсор, когда он движется, меняет окна и многое другое.
   --│             OFF `Bekaboo/dropbar.nvim`: Полоска текущего положения курсора в контексе с кликабельным UI.
+  --│             OFF `y3owk1n/undo-glow.nvim`: Подсветка с анимацией undo/redo.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   { -- UI
@@ -315,6 +316,14 @@ return {
     "Bekaboo/dropbar.nvim",
     event = "BufReadPost",
   },
+
+  -- { -- HIGHLIGHT UNDO
+  --   "y3owk1n/undo-glow.nvim",
+  --   event = { "VeryLazy" },
+  --   opts = require("plugins.setup.interface.undo-glow").opts,
+  --   keys = require("plugins.setup.interface.undo-glow").keys,
+  --   init = require("plugins.setup.interface.undo-glow").init,
+  -- },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   Поиск и замена
