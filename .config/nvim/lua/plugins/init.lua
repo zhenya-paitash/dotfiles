@@ -325,6 +325,12 @@ return {
   --   init = require("plugins.setup.interface.undo-glow").init,
   -- },
 
+  { -- TODO MANAGER
+    "atiladefreitas/dooing",
+    cmd = { "Dooing" },
+    config = require("plugins.setup.interface.dooing").config,
+  },
+
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   Поиск и замена
   --│

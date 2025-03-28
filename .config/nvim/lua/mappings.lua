@@ -387,7 +387,7 @@ map(MODE.normal, "<leader>pk", "<cmd> ShowkeysToggle <CR>", { desc = "show keys 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   TIMERLY
 --└───────────┴─────────────────────────────────────────────────────────────┘
-map(MODE.normal, "<leader>pt", "<cmd> TimerlyToggle <CR>", { desc = "timer toggle (Timerly)" })
+-- map(MODE.normal, "<leader>pt", "<cmd> TimerlyToggle <CR>", { desc = "timer toggle (Timerly)" })
 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   HARDTIME
@@ -471,3 +471,11 @@ map(MODE.normal, "<M-j>", "<cmd>Treewalker Down<CR>", { desc = "  down (Treew
 map(MODE.normal, "<M-k>", "<cmd>Treewalker Up<CR>", { desc = "  up (Treewalker)" })
 map(MODE.normal, "<M-h>", "<cmd>Treewalker Left<CR>", { desc = "  left (Treewalker)" })
 map(MODE.normal, "<M-l>", "<cmd>Treewalker Right<CR>", { desc = "  right (Treewalker)" })
+
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   DOOING
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
+map(MODE.normal, "<leader>pt", '<cmd> Dooing <CR>', { desc = "todo open (Dooing)" })
