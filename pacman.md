@@ -18,7 +18,7 @@ aom 3.12.0-1
 aquamarine 0.8.0-1
 archlinux-keyring 20250123-1
 argon2 20190702-6
-at-spi2-core 2.56.0-1
+at-spi2-core 2.56.1-1
 atac 0.19.0-1
 atkmm 2.28.4-1
 attr 2.5.2-1
@@ -183,7 +183,7 @@ hwdata 0.393-1
 hyprcursor 0.1.12-1
 hyprgraphics 0.1.2-1
 hypridle 0.1.5-4
-hyprland 0.48.0-1
+hyprland 0.48.1-1
 hyprland-qt-support 0.1.0-4
 hyprland-qtutils 0.1.3-4
 hyprlang 0.6.0-5
@@ -324,7 +324,7 @@ libngtcp2 1.11.0-1
 libnice 0.1.22-1
 libnl 3.11.0-1
 libnm 1.52.0-1
-libnotify 0.8.4-1
+libnotify 0.8.6-1
 libnsl 2.0.1-1
 libogg 1.3.5-2
 libomxil-bellagio 0.9.3-5
