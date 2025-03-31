@@ -355,11 +355,11 @@ map(MODE.normal, "<leader>pj", ":%!jq '.'<CR>")
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   GRUG-FAR.NVIM
 --└───────────┴─────────────────────────────────────────────────────────────┘
-map(MODE.normal, "<leader>fg", "<cmd> lua require('grug-far').grug_far() <CR>", { desc = "search & replace (Grug)" })
+map(MODE.normal, "<leader>fg", "<cmd> lua require('grug-far').open() <CR>", { desc = "search & replace (Grug)" })
 map(
   MODE.normal,
   "<leader>f*",
-  "<cmd> lua require('grug-far').grug_far({ prefills = { search = vim.fn.expand('<cword>') } }) <CR>",
+  "<cmd> lua require('grug-far').open({ prefills = { search = vim.fn.expand('<cword>') } }) <CR>",
   { desc = "search & replace under cursor (Grug)" }
 )
 
@@ -478,4 +478,4 @@ map(MODE.normal, "<M-l>", "<cmd>Treewalker Right<CR>", { desc = "  right (Tre
 --┌─ MODE ───────┐
 --│ normal       │
 --└──────────────┘
-map(MODE.normal, "<leader>pt", '<cmd> Dooing <CR>', { desc = "todo open (Dooing)" })
+map(MODE.normal, "<leader>pt", "<cmd> Dooing <CR>", { desc = "todo open (Dooing)" })

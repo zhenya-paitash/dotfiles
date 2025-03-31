@@ -225,6 +225,7 @@ return {
   --│             OFF     └─ `danilamihailov/beacon.nvim`: Выделяет мерцанием курсор, когда он движется, меняет окна и многое другое.
   --│             OFF `Bekaboo/dropbar.nvim`: Полоска текущего положения курсора в контексе с кликабельным UI.
   --│             OFF `y3owk1n/undo-glow.nvim`: Подсветка с анимацией undo/redo.
+  --│             OFF `atiladefreitas/dooing`: TODO список.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   { -- UI
@@ -325,11 +326,11 @@ return {
   --   init = require("plugins.setup.interface.undo-glow").init,
   -- },
 
-  { -- TODO MANAGER
-    "atiladefreitas/dooing",
-    cmd = { "Dooing" },
-    config = require("plugins.setup.interface.dooing").config,
-  },
+  -- { -- TODO MANAGER
+  --   "atiladefreitas/dooing",
+  --   cmd = { "Dooing" },
+  --   config = require("plugins.setup.interface.dooing").config,
+  -- },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   Поиск и замена

@@ -8,7 +8,7 @@ M.base46 = {
   theme = "wombat",
   theme_toggle = { "wombat", "wombat" },
   transparency = false,
-  lsp_semantic_tokens = true,
+  -- lsp_semantic_tokens = true,
   hl_override = {
     Comment = { italic = true },
     ["@comment"] = { italic = true },
