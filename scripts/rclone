@@ -1,9 +1,19 @@
 #!/bin/bash
 
+# --┌───────────┬─────────────────────────────────────────────────────────────┐
+# --├ @remote     yadisk
+# --├ @service    Yandex Disk
+# --├ @logs       ~/rclone/yadisk.log
+# --│
+# --├ @directory  ┌ ~/rclone/ ──┐
+# --│             │ yadisk     │
+# --│             └─────────────┘
+# --└───────────┴─────────────────────────────────────────────────────────────┘
+
 # UNMOUNT
 # fusermount -u ~/rclone/yadisk
 
-# MOUNT
+# MOUNT 
 rclone mount yadisk: ~/rclone/yadisk \
   --vfs-cache-mode writes \
   --allow-other \
@@ -11,5 +21,32 @@ rclone mount yadisk: ~/rclone/yadisk \
   --poll-interval 1m \
   --timeout 1h \
   --log-level DEBUG \
-  --log-file ~/rclone/yadisk.log
+  --log-file ~/rclone/yadisk.log &
+
+
+# --┌───────────┬─────────────────────────────────────────────────────────────┐
+# --├ @remote     googledrive-zhenyapaitash
+# --├ @service    Google Drive
+# --├ @account    zhenyapaitash
+# --├ @logs       ~/rclone/googledrive-zhenyapaitash.log
+# --│
+# --├ @directory  ┌ ~/rclone/googledrive/ ─┐
+# --│             │ zhenyapaitash         │
+# --│             └────────────────────────┘
+# --└───────────┴─────────────────────────────────────────────────────────────┘
+
+# UNMOUNT
+# fusermount -u ~/rclone/googledrive/zhenyapaitash
+
+# MOUNT 
+# rclone mount googledrive-zhenyapaitash: ~/rclone/googledrive/zhenyapaitash/ \
+#     --vfs-cache-mode full \
+#     --vfs-cache-max-age 24h \
+#     --vfs-read-chunk-size 256M \
+#     --vfs-read-chunk-size-limit off \
+#     --dir-cache-time 60m \
+#     --poll-interval 1m \
+#     --timeout 1h \
+#     --log-level DEBUG \
+#     --log-file ~/rclone/googledrive-zhenyapaitash.log &
 

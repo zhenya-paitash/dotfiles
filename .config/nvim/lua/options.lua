@@ -23,6 +23,7 @@ o.spelllang = "en,ru"
 -- colors
 -- cmd "highlight link CurSearch IncSearch"
 -- cmd "hi CursorLineNr guifg=#ED9455"
+vim.api.nvim_set_hl(0, "MiniCursorword", { link = "LspReferenceText" })
 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   Custom Functions
