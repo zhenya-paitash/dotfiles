@@ -13,8 +13,8 @@ export function Bar(monitor: number = 0) {
     margins: [2, 10, 0, 10],
 
     // center: for `bar.center.*` style
-    // anchor: ['top', 'left', 'right'],
-    // margins: [0, 700, 0, 700],
+    // anchor: ['bottom', 'left', 'right'],
+    // margins: [0, 900, 0, 900],
     className: 'bar',
     exclusivity: 'exclusive',
     layer: 'top',

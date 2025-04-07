@@ -479,3 +479,15 @@ map(MODE.normal, "<M-l>", "<cmd>Treewalker Right<CR>", { desc = "  right (Tre
 --│ normal       │
 --└──────────────┘
 map(MODE.normal, "<leader>pt", "<cmd> Dooing <CR>", { desc = "todo open (Dooing)" })
+
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   AUGMENT
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
+map(MODE.normal, "<leader>au", "<cmd>:Augment chat <CR>", { desc = "ai chat (Augment)" })
+map(MODE.normal, "<leader>aut", "<cmd>:Augment chat-toggle <CR>", { desc = "ai chat toggle (Augment)" })
+map(MODE.normal, "<leader>aus", "<cmd>:Augment status <CR>", { desc = "ai status (Augment)" })
+map(MODE.normal, "<leader>aua", "<cmd>:Augment signin <CR>", { desc = "ai login (Augment)" })
+map(MODE.normal, "<leader>aul", "<cmd>:Augment log <CR>", { desc = "ai logs (Augment)" })

@@ -22,14 +22,14 @@ M.adapterConfigs = {
   {
     type = "pwa-node",
     request = "launch",
-    name = "Launch current file",
+    name = "OLD: Launch current file",
     program = "${file}",
     cwd = "${workspaceFolder}",
   },
   {
     type = "pwa-node",
     request = "launch",
-    name = "launch file with NODE",
+    name = "OLD: launch file with NODE",
     runtimeExecutable = "node",
     runtimeArgs = { "--inspect" },
     program = function()
@@ -43,7 +43,7 @@ M.adapterConfigs = {
   {
     type = "pwa-node",
     request = "launch",
-    name = "launch file with BUN",
+    name = "OLD: launch file with BUN",
     runtimeExecutable = "bun",
     runtimeArgs = { "--inspect-wait" },
     program = function()
@@ -58,7 +58,7 @@ M.adapterConfigs = {
   {
     type = "pwa-node",
     request = "launch",
-    name = "Launch bun",
+    name = "OLD: Launch bun",
     cwd = "${workspaceFolder}",
     runtimeArgs = { "--inspect-brk" },
     program = "${file}",
@@ -71,7 +71,7 @@ M.adapterConfigs = {
   {
     type = "pwa-node",
     request = "launch",
-    name = "CUSTOM: for next.js npm run dev",
+    name = "OLD: CUSTOM: for next.js npm run dev",
     cwd = vim.fn.getcwd(),
     -- skipFiles = { "<node_internals>/**", "node_modules/**" },
     sourceMaps = true,
@@ -87,7 +87,7 @@ M.adapterConfigs = {
   {
     type = "pwa-node",
     request = "launch",
-    name = "Launch Bun (Dev Server)",
+    name = "OLD: Launch Bun (Dev Server)",
     cwd = "${workspaceFolder}",
     runtimeExecutable = "bun",
     runtimeArgs = { "--inspect-wait", "run", "dev" },
@@ -99,7 +99,7 @@ M.adapterConfigs = {
   {
     type = "pwa-node",
     request = "launch",
-    name = "TEST",
+    name = "OLD: TEST",
     cwd = vim.fn.getcwd(),
     sourceMaps = true,
     protocol = "inspector",
@@ -113,7 +113,7 @@ M.adapterConfigs = {
   {
     type = "pwa-node",
     request = "launch",
-    name = "Launch Next.js (WORK)",
+    name = "OLD: Launch Next.js (WORK)",
     program = "${workspaceFolder}/node_modules/next/dist/bin/next",
     args = { "dev" },
     cwd = "${workspaceFolder}",
@@ -127,7 +127,7 @@ M.adapterConfigs = {
   {
     type = "pwa-node",
     request = "launch",
-    name = "Launch Next.js v2",
+    name = "OLD: Launch Next.js v2",
     program = "${workspaceFolder}",
     args = { "dev" },
     cwd = "${workspaceFolder}",
@@ -141,7 +141,7 @@ M.adapterConfigs = {
 
   -- @link: https://stackoverflow.com/questions/78455585/correct-setup-for-debugging-nextjs-app-inside-neovim-with-dap
   {
-    name = "Next.js: debug server-side",
+    name = "OLD: Next.js: debug server-side",
     type = "pwa-node",
     request = "attach",
     port = 9231,
@@ -149,7 +149,7 @@ M.adapterConfigs = {
     cwd = "${workspaceFolder}",
   },
   {
-    name = "Next.js: debug client-side",
+    name = "OLD: Next.js: debug client-side",
     type = "chrome",
     request = "launch",
     url = "http://localhost:3000",
@@ -162,20 +162,20 @@ M.adapterConfigs = {
   {
     type = "pwa-node",
     request = "attach",
-    name = "Attach process",
+    name = "OLD: Attach process",
     processId = require("dap.utils").pick_process,
     cwd = "${workspaceFolder}",
   },
   {
     type = "pwa-node",
     request = "attach",
-    name = "Auto Attach",
+    name = "OLD: Auto Attach",
     cwd = vim.fn.getcwd(),
   },
   {
     type = "pwa-node",
     request = "attach",
-    name = "Attach process by ID",
+    name = "OLD: Attach process by ID",
     processId = function()
       vim.fn.input "Enter process ID: "
     end,
@@ -188,7 +188,7 @@ M.adapterConfigs = {
   {
     type = "pwa-node",
     request = "launch",
-    name = "CUSTOM: Launch with BUN",
+    name = "OLD: CUSTOM: Launch with BUN",
     cwd = vim.fn.getcwd(),
     runtimeArgs = { "--inspect-brk", "--allow-all", "dev" },
     runtimeExecutable = "bun",
@@ -202,7 +202,7 @@ M.adapterConfigs = {
   --------------------------------------------------------------------------------------
   -- Серверная часть (SSR)
   {
-    name = "next(SSR): Debug Server (Node.js)",
+    name = "OLD: next(SSR): Debug Server (Node.js)",
     type = "pwa-node",
     request = "launch",
     runtimeExecutable = "node",
@@ -216,7 +216,7 @@ M.adapterConfigs = {
   },
   -- Подключение к уже запущенному серверу
   {
-    name = "next(CSR): Attach to Running Server",
+    name = "OLD: next(CSR): Attach to Running Server",
     type = "pwa-node",
     request = "attach",
     port = 9229,
@@ -229,6 +229,28 @@ M.adapterConfigs = {
   --------------------------------------------------------------------------------------
   --- NEW NEW
   --------------------------------------------------------------------------------------
+  {
+    type = "pwa-node",
+    request = "launch",
+    name = "NEW: Launch TS file with ts-node (ESM loader)",
+    program = "${file}",
+    cwd = "${workspaceFolder}",
+    runtimeExecutable = "node",
+    runtimeArgs = {
+      "--loader",
+      "ts-node/esm",
+      "--no-warnings",
+    },
+    sourceMaps = true,
+    protocol = "inspector",
+    console = "integratedTerminal",
+    internalConsoleOptions = "neverOpen",
+    skipFiles = { "<node_internals>/**" },
+    resolveSourceMapLocations = {
+      "${workspaceFolder}/**",
+      "!**/node_modules/**",
+    },
+  },
 }
 
 return M

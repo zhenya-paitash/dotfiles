@@ -33,7 +33,8 @@ return {
         -- TODO: check if `obsidian plugin run`
         require "obsidian"
         vim.cmd "tabnew"
-        vim.cmd "tcd ~/obsidian/zhenyapaitash"
+        -- vim.cmd "tcd ~/obsidian/zhenyapaitash"
+        vim.cmd "tcd ~/rclone/yadisk/obsidian/zhenyapaitash"
         require("nvim-tree.api").tree.open()
       end,
       mode = "n",
@@ -58,7 +59,8 @@ return {
 
     require("obsidian").setup {
       workspaces = {
-        { name = "personal", path = "~/obsidian/zhenyapaitash" },
+        -- { name = "personal", path = "~/obsidian/zhenyapaitash" },
+        { name = "personal", path = "~/rclone/yadisk/obsidian/zhenyapaitash" },
       },
       completion = {
         nvim_cmp = true,

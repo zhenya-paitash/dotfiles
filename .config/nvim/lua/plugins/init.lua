@@ -411,9 +411,7 @@ return {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
     ft = "markdown",
-    commit = "a923f5f",
-    -- build = "cd app && git reset --hard && npm install",
-    build = "cd app && npm install",
+    build = "cd app && npm install --frozen-lockfile",
     init = require("plugins.setup.notes.markdown-preview").init,
   },
 
@@ -431,18 +429,19 @@ return {
   --│             │ ai                │
   --│             └────────────────────┘
   --│
-  --├ @plugins    ON  `Exafunction/codeium.vim`: AI автозаполнение.
+  --├ @plugins    OFF `Exafunction/codeium.vim`: AI автозаполнение.
   --├             ON  `yetone/avante.nvim`: Отличный провайдер AI моделей.
   --│             OFF     ├─ `stevearc/dressing.nvim`: Core UI inputs.
   --│             ON      ├─ `nvim-lua/plenary.nvim`: Переиспользование написаных функций для lua.
   --│             ON      └─ `MunifTanjim/nui.nvim: используется для правильного рендеринга и многократного просмотра.
+  --├             ON  `augmentcode/augment.vim`: обеспечивает завершение встроенного кода и многошобразные разговоры в чате, адаптированные к кодовой базе
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
-  { -- SMALL AI COMPLETION
-    "Exafunction/codeium.vim",
-    event = "BufEnter",
-    config = require("plugins.setup.ai.codeium").config,
-  },
+  -- { -- SMALL AI COMPLETION
+  --   "Exafunction/codeium.vim",
+  --   event = "BufEnter",
+  --   config = require("plugins.setup.ai.codeium").config,
+  -- },
 
   { -- NEOVIM AI -> CURSOR
     "yetone/avante.nvim",
@@ -456,6 +455,20 @@ return {
       "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
     },
+  },
+
+  { -- Augment Code
+    "augmentcode/augment.vim",
+    event = "VeryLazy",
+    -- cmd = { "Augment" },
+    init = function()
+      -- augment `workspace` folders
+      vim.g.augment_workspace_folders = { "~/work/github.com/zhenya-paitash/app-organify" }
+      vim.g.augment_disable_tab_mapping = true
+      -- vim.g.augment_disable_completions = true
+      -- Use Ctrl-Y to accept a suggestion
+      vim.keymap.set("i", "<C-f>", "<cmd>call augment#Accept()<CR>", { silent = true })
+    end,
   },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
@@ -473,13 +486,20 @@ return {
   { -- DEBUG
     "mfussenegger/nvim-dap",
     config = require("plugins.setup.debug.nvim-dap").config,
-    dependencies = { -- DEBUG UI
+    dependencies = {
       -- { "theHamsta/nvim-dap-virtual-text", config = true },
-      {
+
+      { -- DEBUG UI
         "rcarriga/nvim-dap-ui",
         dependencies = { "nvim-neotest/nvim-nio" },
         config = require("plugins.setup.debug.nvim-dap-ui").config,
       },
+
+      -- { -- NEW DEBUG UI
+      --   "miroshQa/debugmaster.nvim",
+      --   cmd = "DebugMaster",
+      --   config = require("plugins.setup.debug.debugmaster").config,
+      -- },
     },
   },
 
