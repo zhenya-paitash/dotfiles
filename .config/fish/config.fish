@@ -56,7 +56,6 @@ alias tk='tmux kill-session -t'
 # docker
 alias lazydocker='~/go/bin/lazydocker'
 
-
 # neovim
 set -U EDITOR nvim
 function nvim
@@ -76,10 +75,12 @@ alias vv="bash $HOME/scripts/nvim-selector"
 alias lg='lazygit'
 alias ld='lazydocker'
 
+# custom
+alias lofi="hyprctl dispatch exec \"mpv --no-border --no-terminal \"https://youtu.be/jfKfPfyJRdk\"\" & disown & exit"
+
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
-
 
 # uv
 fish_add_path "/home/zh/.local/bin"

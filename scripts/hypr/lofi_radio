@@ -1,0 +1,4 @@
+#!/bin/bash
+
+hyprctl dispatch exec 'mpv --no-border --no-terminal "https://youtu.be/jfKfPfyJRdk"'
+
