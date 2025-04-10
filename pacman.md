@@ -38,7 +38,7 @@ bluez 5.82-1
 bluez-libs 5.82-1
 bluez-utils 5.82-1
 boost-libs 1.87.0-3
-brave-bin 1:1.77.95-1
+brave-bin 1:1.77.97-1
 breeze-icons 6.12.0-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
@@ -74,7 +74,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.31-1
 diffutils 3.11-2
-discord-canary 0.0.627-1
+discord-canary 0.0.633-1
 dkms 3.1.7-2
 docbook-xml 4.5-10
 docbook-xsl 1.79.2-9
@@ -550,7 +550,7 @@ python-jaraco.collections 5.1.0-1
 python-jaraco.context 6.0.1-1
 python-jaraco.functools 4.1.0-1
 python-jaraco.text 4.0.0-2
-python-lxml 5.3.1-1
+python-lxml 5.3.2-1
 python-mako 1.3.9-1
 python-markdown 3.7-2
 python-markupsafe 2.1.5-3
