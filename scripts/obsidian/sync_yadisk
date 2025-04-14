@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+# Configuration
+REMOTE="yadisk:/obsidian"
+LOCAL_DIR="$HOME/obsidian/yadisk"
+RCLONE_LOG="$HOME/rclone/yadisk_sync.log"
+
+# Colors
+green() { echo -e "\033[1;32m$1\033[0m"; }
+red() { echo -e "\033[1;31m$1\033[0m"; }
+
+# Check if rclone is installed
+if ! command -v rclone &>/dev/null; then
+  red "❌ rclone not found. Please install it first."
+  exit 1
+fi
+
+# -----------------------------------------------------
+case "$1" in
+  pull)
+    green "⬇️  Download from Yandex Disk → $LOCAL_DIR"
+    rclone sync "$REMOTE" "$LOCAL_DIR" --progress --log-file="$RCLONE_LOG" --log-level INFO
+    green "✅ Completed."
+    ;;
+  push)
+    green "⬆️  Upload to Yandex Disk ← $LOCAL_DIR"
+    rclone sync "$LOCAL_DIR" "$REMOTE" --progress --log-file="$RCLONE_LOG" --log-level INFO
+    green "✅ Completed."
+    ;;
+  *)
+    echo "Usage: yadisk [pull|push]"
+    exit 1
+    ;;
+esac
+
