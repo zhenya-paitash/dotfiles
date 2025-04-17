@@ -435,6 +435,7 @@ return {
   --│             ON      ├─ `nvim-lua/plenary.nvim`: Переиспользование написаных функций для lua.
   --│             ON      └─ `MunifTanjim/nui.nvim: используется для правильного рендеринга и многократного просмотра.
   --├             ON  `augmentcode/augment.vim`: обеспечивает завершение встроенного кода и многошобразные разговоры в чате, адаптированные к кодовой базе
+  --├             OFF `olimorris/codecompanion.nvim`: попробую этот новый плагин
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   -- { -- SMALL AI COMPLETION
@@ -470,6 +471,17 @@ return {
       vim.keymap.set("i", "<C-f>", "<cmd>call augment#Accept()<CR>", { silent = true })
     end,
   },
+
+  -- { -- Code Companion
+  --   "olimorris/codecompanion.nvim",
+  --   event = "VeryLazy",
+  --   opts = {},
+  --   config = require("plugins.setup.ai.codecompanion").config,
+  --   dependencies = {
+  --     "nvim-lua/plenary.nvim",
+  --     "nvim-treesitter/nvim-treesitter",
+  --   },
+  -- },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   Дебаггинг

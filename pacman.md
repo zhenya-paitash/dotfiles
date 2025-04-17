@@ -38,7 +38,7 @@ bluez 5.82-1
 bluez-libs 5.82-1
 bluez-utils 5.82-1
 boost-libs 1.87.0-3
-brave-bin 1:1.77.97-1
+brave-bin 1:1.77.100-1
 breeze-icons 6.12.0-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
@@ -73,8 +73,8 @@ debugedit 5.1-1
 default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.31-1
-diffutils 3.11-2
-discord-canary 0.0.642-1
+diffutils 3.12-1
+discord-canary 0.0.643-1
 dkms 3.1.8-1
 docbook-xml 4.5-10
 docbook-xsl 1.79.2-9
@@ -109,7 +109,7 @@ fribidi 1.0.16-1
 fuse-common 3.17.1-1
 fuse2 2.9.9-5
 fuse3 3.17.1-1
-fzf 0.60.3-1
+fzf 0.61.1-1
 gawk 5.3.2-1
 gc 8.2.8-2
 gcc 14.2.1+r753+g1cd744a6828f-1
@@ -146,7 +146,7 @@ gpm 1.20.7.r38.ge82d1a6-6
 graphene 1.10.8-2
 graphite 1:1.3.14-4
 graphviz 12.2.1-1
-grep 3.11-1
+grep 3.12-1
 grim 1.4.1-3
 groff 1.23.0-7
 grub 2:2.12.r260.gaae2ea61-1
@@ -286,12 +286,12 @@ libgit2 1:1.9.0-2
 libglvnd 1.7.0-1
 libgpg-error 1.53-1
 libgudev 238-1
-libheif 1.19.7-2
+libheif 1.19.7-3
 libice 1.1.2-1
 libidn 1.43-1
 libidn2 2.3.7-1
 libiec61883 1.2.0-8
-libimobiledevice 1.3.0-15
+libimobiledevice 1.3.0-16
 libimobiledevice-glue 1.3.1-1
 libinih 58-1
 libinput 1.28.1-1
@@ -320,7 +320,7 @@ libnfnetlink 1.0.2-2
 libnftnl 1.2.9-1
 libnghttp2 1.65.0-1
 libnghttp3 1.8.0-1
-libngtcp2 1.11.0-1
+libngtcp2 1.12.0-1
 libnice 0.1.22-1
 libnl 3.11.0-1
 libnm 1.52.0-1
@@ -509,7 +509,7 @@ pambase 20230918-2
 pango 1:1.56.3-1
 pangomm 2.46.4-1
 pangomm-2.48 2.56.1-1
-patch 2.7.6-10
+patch 2.8-1
 pavucontrol 1:6.1-1
 pciutils 3.13.0-2
 pcre 8.45-4
@@ -570,7 +570,7 @@ qt6-declarative 6.9.0-2
 qt6-imageformats 6.9.0-1
 qt6-svg 6.9.0-1
 qt6-translations 6.9.0-1
-qt6-wayland 6.9.0-1
+qt6-wayland 6.9.0-2
 rav1e 0.7.1-1
 rclone 1.69.1-1
 re2 1:20240702-4
@@ -674,7 +674,7 @@ which 2.23-1
 wireguard-tools 1.0.20210914-2
 wireplumber 0.5.8-1
 wl-clipboard 1:2.2.1-2
-wlroots 0.18.2-1
+wlroots 0.18.2-2
 wlroots0.17 0.17.4-3
 wpa_supplicant 2:2.11-3
 x264 3:0.164.r3108.31e19f9-2
