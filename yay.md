@@ -1,6 +1,6 @@
 aylurs-gtk-shell 1.8.2-2
 brave-bin 1:1.77.100-1
-discord-canary 0.0.643-1
+discord-canary 0.0.649-1
 hyprpicker-debug 0.3.0-1
 rofi-lbonn-wayland-git 1.7.5.wayland3.r50.g2baa809d-1
 simple-mtpfs 0.4.0-1
@@ -9,4 +9,4 @@ vial-appimage v0.7.1-2
 xwaylandvideobridge 0.4.0-2
 yay 12.4.2-1
 yay-debug 12.4.2-1
-zen-browser-bin 1.11.3b-1
+zen-browser-bin 1.11.4b-1

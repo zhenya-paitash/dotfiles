@@ -57,7 +57,7 @@ cantarell-fonts 1:0.303.1-2
 check 0.15.2-2
 cliphist 1:0.6.1-1
 cmake 4.0.1-1
-containerd 2.0.4-1
+containerd 2.0.5-1
 coreutils 9.7-1
 cppdap 1.58.0-2
 cryptsetup 2.7.5-2
@@ -74,12 +74,12 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.31-1
 diffutils 3.12-1
-discord-canary 0.0.643-1
+discord-canary 0.0.649-1
 dkms 3.1.8-1
 docbook-xml 4.5-10
 docbook-xsl 1.79.2-9
 docker 1:28.0.4-2
-docker-compose 2.35.0-1
+docker-compose 2.35.1-1
 double-conversion 3.3.1-1
 duktape 2.7.0-7
 e2fsprogs 1.47.2-2
@@ -90,7 +90,7 @@ electron32 32.3.1-3
 electron33 33.4.8-2
 electron34 34.5.0-2
 expat 2.7.1-1
-eza 0.21.0-1
+eza 0.21.1-1
 fakeroot 1.37.1.1-1
 fd 10.2.0-1
 ffmpeg 2:7.1-9
@@ -187,7 +187,7 @@ hyprland 0.48.1-4
 hyprland-qt-support 0.1.0-5
 hyprland-qtutils 0.1.3-6
 hyprlang 0.6.1-1
-hyprlock 0.8.0-1
+hyprlock 0.8.1-1
 hyprpicker 0.4.4-1
 hyprpicker-debug 0.3.0-1
 hyprutils 0.6.0-1
@@ -387,7 +387,7 @@ libva-utils 2.22.0-1
 libvdpau 1.5-3
 libverto 0.3.2-5
 libvorbis 1.3.7-4
-libvpl 2.14.0-1
+libvpl 2.15.0-1
 libvpx 1.15.0-1
 libvterm 0.3.3-2
 libwacom 2.15.0-1
@@ -540,7 +540,7 @@ procps-ng 4.0.5-3
 protobuf 30.1-1
 psmisc 23.7-1
 pugixml 1.15-2
-python 3.13.2-1
+python 3.13.3-1
 python-autocommand 2.2.2-7
 python-certifi 2025.01.31-1
 python-charset-normalizer 3.4.1-1
@@ -551,7 +551,7 @@ python-jaraco.context 6.0.1-1
 python-jaraco.functools 4.1.0-1
 python-jaraco.text 4.0.0-2
 python-lxml 5.3.2-1
-python-mako 1.3.9-1
+python-mako 1.3.10-1
 python-markdown 3.7-2
 python-markupsafe 2.1.5-3
 python-more-itertools 10.6.0-1
@@ -559,9 +559,9 @@ python-packaging 24.2-3
 python-platformdirs 4.3.6-2
 python-pygments 2.19.1-1
 python-requests 2.32.3-4
-python-setuptools 1:75.8.0-1
+python-setuptools 1:78.1.0-1
 python-tqdm 4.67.1-2
-python-urllib3 2.3.0-1
+python-urllib3 2.4.0-1
 python-wheel 0.45.1-1
 qbittorrent 5.0.4-3
 qqc2-desktop-style 6.12.0-1
@@ -626,7 +626,7 @@ tar 1.35-2
 tdb 1.4.13-1
 telegram-desktop 5.13.1-3
 texinfo 7.2-1
-tinysparql 3.9.1-1
+tinysparql 3.9.2-1
 tmux 3.5_a-1
 tomlplusplus 3.4.0-1
 tpm2-tss 4.1.3-1
@@ -717,7 +717,7 @@ yay-debug 12.4.2-1
 yazi 25.4.8-1
 yt-dlp 2025.03.31-1
 z 1.12-1
-zen-browser-bin 1.11.3b-1
+zen-browser-bin 1.11.4b-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1
