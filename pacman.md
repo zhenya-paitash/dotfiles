@@ -38,7 +38,6 @@ bluez 5.82-1
 bluez-libs 5.82-1
 bluez-utils 5.82-1
 boost-libs 1.87.0-3
-brave-bin 1:1.77.100-1
 breeze-icons 6.12.0-1
 bridge-utils 1.7.1-2
 brightnessctl 0.5.1-3
@@ -149,7 +148,7 @@ graphviz 12.2.1-1
 grep 3.12-1
 grim 1.4.1-3
 groff 1.23.0-7
-grub 2:2.12.r260.gaae2ea61-1
+grub 2:2.12.r283.ga4da71da-1
 gsettings-desktop-schemas 48.0-1
 gsettings-system-schemas 48.0-1
 gsfonts 20200910-4
@@ -559,11 +558,11 @@ python-packaging 24.2-3
 python-platformdirs 4.3.6-2
 python-pygments 2.19.1-1
 python-requests 2.32.3-4
-python-setuptools 1:78.1.0-1
+python-setuptools 1:78.1.0-2
 python-tqdm 4.67.1-2
 python-urllib3 2.4.0-1
 python-wheel 0.45.1-1
-qbittorrent 5.0.4-3
+qbittorrent 5.0.5-1
 qqc2-desktop-style 6.12.0-1
 qt6-base 6.9.0-1
 qt6-declarative 6.9.0-2
@@ -619,9 +618,9 @@ svt-av1 3.0.2-1
 swappy 1.5.1-2
 swww 0.9.5-2
 swww-debug 0.9.5-1
-systemd 257.5-1
-systemd-libs 257.5-1
-systemd-sysvcompat 257.5-1
+systemd 257.5-2
+systemd-libs 257.5-2
+systemd-sysvcompat 257.5-2
 tar 1.35-2
 tdb 1.4.13-1
 telegram-desktop 5.13.1-3
@@ -659,7 +658,7 @@ v4l-utils 1.28.1-2
 v4l2loopback-dkms 0.14.0-1
 vala 0.56.18-2
 vapoursynth R70-2
-vial-appimage v0.7.1-2
+vial-appimage v0.7.3-1
 vid.stab 1.1.1-2
 vmaf 3.0.0-1
 vulkan-headers 1:1.4.309.0-1
@@ -717,7 +716,7 @@ yay-debug 12.4.2-1
 yazi 25.4.8-1
 yt-dlp 2025.03.31-1
 z 1.12-1
-zen-browser-bin 1.11.4b-1
+zen-browser-bin 1.11.5b-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1
