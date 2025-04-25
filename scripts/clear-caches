@@ -1,0 +1,5 @@
+#!/bin/bash
+
+yes | sudo pacman -Scc 
+yes | yay -Scc
+
