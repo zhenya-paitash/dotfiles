@@ -16,7 +16,7 @@ amd-ucode 20250408.c1a774f3-1
 aom 3.12.1-1
 aquamarine 0.8.0-3
 archlinux-keyring 20250123-1
-at-spi2-core 2.56.1-1
+at-spi2-core 2.56.2-1
 atac 0.19.0-1
 atkmm 2.28.4-1
 attr 2.5.2-1
@@ -37,7 +37,7 @@ bluez-utils 5.82-1
 boost-libs 1.87.0-3
 brightnessctl 0.5.1-3
 brotli 1.1.0-3
-btop 1.4.0-5
+btop 1.4.1-1
 btrfs-progs 6.14-1
 bzip2 1.0.8-6
 c-ares 1.34.5-1
@@ -67,8 +67,8 @@ debugedit 5.1-1
 default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.31-1
-diffutils 3.12-1
-discord-canary 0.0.660-1
+diffutils 3.12-2
+discord-canary 0.0.666-1
 dkms 3.1.8-1
 docker 1:28.1.1-1
 docker-compose 2.35.1-1
@@ -98,7 +98,7 @@ fribidi 1.0.16-1
 fuse-common 3.17.1-1
 fuse2 2.9.9-5
 fuse3 3.17.1-1
-fzf 0.61.2-1
+fzf 0.61.3-1
 gawk 5.3.2-1
 gc 8.2.8-2
 gcc 14.2.1+r753+g1cd744a6828f-1
@@ -123,6 +123,7 @@ gmp 6.3.0-2
 gnulib-l10n 20241231-1
 gnupg 2.4.7-1
 gnutls 3.8.9-1
+go 2:1.24.2-1
 gobject-introspection-runtime 1.84.0-1
 gparted 1.7.0-1
 gperftools 2.16-1
@@ -153,8 +154,8 @@ gtkmm3 3.24.10-1
 guile 3.0.10-1
 gupnp 1:1.6.8-1
 gupnp-igd 1.6.0-1
-gzip 1.14-1
-harfbuzz 11.1.0-1
+gzip 1.14-2
+harfbuzz 11.2.0-1
 hicolor-icon-theme 0.18-1
 hidapi 0.14.0-3
 highway 1.2.0-1
@@ -445,8 +446,8 @@ linux-api-headers 6.14-1
 linux-firmware 20250408.c1a774f3-1
 linux-firmware-whence 20250408.c1a774f3-1
 linux-lts 6.12.25-1
-linux-zen 6.14.3.zen1-1
-linux-zen-headers 6.14.3.zen1-1
+linux-zen 6.14.4.zen1-1
+linux-zen-headers 6.14.4.zen1-1
 llhttp 9.2.1-2
 llvm-libs 19.1.7-1
 lm_sensors 1:3.6.0.r41.g31d1f125-3
@@ -465,7 +466,7 @@ man-db 2.13.0-1
 mbedtls 3.6.3-1
 md4c 0.5.2-1
 mesa 1:25.0.4-1
-meson 1.7.2-1
+meson 1.8.0-1
 minizip 1:1.3.1-2
 mkinitcpio 39.2-3
 mkinitcpio-busybox 1.36.1-1
@@ -478,7 +479,7 @@ msgpack-c 6.1.0-2
 mtdev 1.1.7-1
 mujs 1.3.6-1
 ncurses 6.5-3
-neovim 0.11.0-2
+neovim 0.11.1-2
 nettle 3.10.1-1
 networkmanager 1.52.0-1
 ninja 1.12.1-2
@@ -491,8 +492,8 @@ npm 11.3.0-1
 npth 1.8-1
 nspr 4.36-1
 nss 3.110-1
-ntfs-3g 2022.10.3-1
-nushell 0.103.0-1
+ntfs-3g 2022.10.3-2
+nushell 0.104.0-1
 nwg-look 1.0.4-1
 obs-studio 31.0.3-1
 obsidian 1.8.10-1
@@ -512,7 +513,7 @@ orc 0.4.41-1
 p11-kit 0.25.5-1
 pacman 7.0.0.r6.gc685ae6-2
 pacman-mirrorlist 20250311-1
-pahole 1:1.29-1
+pahole 1:1.30-1
 pam 1.7.0-2
 pambase 20230918-2
 pango 1:1.56.3-1
@@ -546,11 +547,11 @@ postgresql-libs 17.4-1
 power-profiles-daemon 0.30-1
 powertop 2.15-2
 procps-ng 4.0.5-3
-protobuf 30.1-1
+protobuf 30.1-4
 psmisc 23.7-1
 pugixml 1.15-2
 python 3.13.3-1
-python-certifi 2025.01.31-1
+python-certifi 2025.04.26-1
 python-charset-normalizer 3.4.1-1
 python-gobject 3.52.3-3
 python-idna 3.10-2
@@ -558,7 +559,7 @@ python-packaging 25.0-1
 python-requests 2.32.3-4
 python-tqdm 4.67.1-2
 python-urllib3 2.4.0-1
-qbittorrent 5.0.5-1
+qbittorrent 5.1.0-1
 qt6-base 6.9.0-1
 qt6-declarative 6.9.0-2
 qt6-imageformats 6.9.0-1
@@ -577,7 +578,7 @@ rofi-lbonn-wayland-git 1.7.5.wayland3.r50.g2baa809d-1
 rsync 3.4.1-2
 rtkit 0.13-3
 rubberband 4.0.0-1
-runc 1.2.6-1
+runc 1.3.0-1
 rustup 1.28.1-1
 sassc 3.6.2-5
 sbc 2.0-2
@@ -605,7 +606,7 @@ spirv-tools 1:1.4.309.0-1
 sqlite 3.49.1-1
 sratom 0.6.18-1
 srt 1.5.4-1
-starship 1.22.1-1
+starship 1.23.0-1
 startup-notification 0.12-8
 sudo 1.9.16.p2-2
 svt-av1 3.0.2-1
@@ -653,7 +654,7 @@ vmaf 3.0.0-1
 vulkan-icd-loader 1.4.309.0-1
 vulkan-radeon 1:25.0.4-1
 wayland 1.23.1-1
-wayland-protocols 1.43-1
+wayland-protocols 1.44-1
 webrtc-audio-processing-1 1.3-4
 wf-recorder 0.5.0-2
 wget 1.25.0-2

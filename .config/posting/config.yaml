@@ -1,4 +1,5 @@
-theme: catppuccin-mocha
+theme: sunset
+# theme: catppuccin-mocha
 layout: horizontal
 
 editor: nvim
