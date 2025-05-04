@@ -560,11 +560,11 @@ return {
   --│             ON  `nvzone/typr`: Практика навыков печати внутри neovim.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
-  { -- BEST PRACTICE
-    "m4xshen/hardtime.nvim",
-    event = "VeryLazy",
-    opts = require("plugins.setup.skill.hardtime").opts,
-  },
+  -- { -- BEST PRACTICE
+  --   "m4xshen/hardtime.nvim",
+  --   event = "VeryLazy",
+  --   opts = require("plugins.setup.skill.hardtime").opts,
+  -- },
 
   { -- LEETCODE
     "kawre/leetcode.nvim",
