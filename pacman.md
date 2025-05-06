@@ -27,7 +27,7 @@ avahi 1:0.8+r194+g3f79789-3
 aylurs-gtk-shell 1.8.2-2
 base 3-2
 base-devel 1-2
-bash 5.2.037-2
+bash 5.2.037-3
 bat 0.25.0-4
 binutils 2.44+r94+gfe459e33c676-1
 bison 3.8.2-8
@@ -68,7 +68,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.31-1
 diffutils 3.12-2
-discord-canary 0.0.668-1
+discord-canary 0.0.669-1
 dkms 3.1.8-1
 docker 1:28.1.1-1
 docker-compose 2.35.1-1
@@ -106,7 +106,7 @@ gcc-libs 15.1.1+r7+gf36ec88aa85a-1
 gdbm 1.25-1
 gdk-pixbuf2 2.42.12-2
 geoclue 2.7.2-1
-gettext 0.24-3
+gettext 0.24.1-1
 giflib 5.2.2-2
 git 2.49.0-1
 git-delta 0.18.2-4
@@ -512,7 +512,7 @@ opus 1.5.2-1
 orc 0.4.41-1
 p11-kit 0.25.5-1
 pacman 7.0.0.r6.gc685ae6-2
-pacman-mirrorlist 20250311-1
+pacman-mirrorlist 20250503-1
 pahole 1:1.30-1
 pam 1.7.0-2
 pambase 20230918-2
@@ -579,12 +579,12 @@ rsync 3.4.1-2
 rtkit 0.13-3
 rubberband 4.0.0-1
 runc 1.3.0-1
-rustup 1.28.1-1
+rustup 1.28.2-1
 sassc 3.6.2-5
 sbc 2.0-2
 sdbus-cpp 2.1.0-2
-sdl2-compat 2.32.54-2
-sdl3 3.2.10-1
+sdl2-compat 2.32.56-1
+sdl3 3.2.12-1
 seatd 0.9.1-1
 sed 4.9-3
 semver 7.7.1-1
@@ -701,7 +701,7 @@ yay 12.5.0-1
 yazi 25.4.8-1
 yt-dlp 2025.04.30-1
 z 1.12-1
-zen-browser-bin 1.12b-1
+zen-browser-bin 1.12.1b-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1
