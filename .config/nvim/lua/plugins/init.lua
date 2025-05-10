@@ -32,16 +32,40 @@ return {
       require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
     end,
-    -- dependencies = { -- ALTERNATIVE AUTOCOMPLETION
-    --   "saghen/blink.cmp",
-    --   lazy = false,
-    --   version = "v0.*",
-    --   opts = require("plugins.setup.lsp.blink-cmp").opts,
-    --   dependencies = {
-    --     "rafamadriz/friendly-snippets",
-    --     { "hrsh7th/nvim-cmp", enabled = false }, -- disable default `nvim-cmp`
-    --   },
-    -- },
+    dependencies = { -- ALTERNATIVE AUTOCOMPLETION
+      --   "saghen/blink.cmp",
+      --   lazy = false,
+      --   version = "v0.*",
+      --   opts = require("plugins.setup.lsp.blink-cmp").opts,
+      --   dependencies = {
+      --     "rafamadriz/friendly-snippets",
+      --     { "hrsh7th/nvim-cmp", enabled = false }, -- disable default `nvim-cmp`
+      --   },
+
+      -- { import = "nvchad.blink.lazyspec" },
+      -- { -- WARN: TEST `Saghen/blink.cmp` plugin to NvChad
+      --   -- see: https://github.com/NvChad/NvChad/discussions/3244
+      --   "hrsh7th/nvim-cmp",
+      --   opts = function()
+      --     -- return require "configs.cmp"
+      --     local config = require "nvchad.configs.cmp"
+      --     local cmp = require "cmp"
+      --
+      --     config.mapping["<CR>"] = cmp.mapping.confirm {
+      --       behavior = cmp.ConfirmBehavior.Insert,
+      --       select = false,
+      --     }
+      --
+      --     config.completion = {
+      --       completeopt = "menu,menuone,noselect,popup",
+      --     }
+      --
+      --     config.preselect = cmp.PreselectMode.None
+      --
+      --     return config
+      --   end,
+      -- },
+    },
   },
 
   { -- LSP INSTALLER
