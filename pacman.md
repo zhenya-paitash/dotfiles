@@ -1,5 +1,5 @@
 7zip 24.09-3
-abseil-cpp 20250127.1-1
+abseil-cpp 20250127.1-2
 acl 2.3.2-1
 ada 3.2.1-1
 adwaita-cursors 48.0-1
@@ -37,7 +37,7 @@ bluez-utils 5.82-1
 boost-libs 1.88.0-2
 brightnessctl 0.5.1-3
 brotli 1.1.0-3
-btop 1.4.3-1
+btop 1.4.3-2
 btrfs-progs 6.14-1
 bzip2 1.0.8-6
 c-ares 1.34.5-1
@@ -68,7 +68,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.32-1
 diffutils 3.12-2
-discord-canary 0.0.674-1
+discord-canary 0.0.677-1
 dkms 3.2.1-1
 docker 1:28.1.1-1
 docker-compose 2.36.0-1
@@ -77,7 +77,7 @@ duktape 2.7.0-7
 e2fsprogs 1.47.2-2
 efibootmgr 18-3
 efivar 39-1
-electron34 34.5.5-1
+electron34 34.5.6-1
 expat 2.7.1-1
 eza 0.21.3-1
 fakeroot 1.37.1.2-1
@@ -153,7 +153,7 @@ gtkmm-4.0 4.18.0-2
 gtkmm3 3.24.10-1
 guile 3.0.10-1
 gupnp 1:1.6.8-2
-gupnp-igd 1.6.0-1
+gupnp-igd 1.6.0-2
 gzip 1.14-2
 harfbuzz 11.2.1-1
 hicolor-icon-theme 0.18-1
@@ -186,7 +186,7 @@ jbigkit 2.1-8
 jless 0.9.0-2
 jq 1.7.1-2
 js128 128.10.0-1
-json-c 0.18-1
+json-c 0.18-2
 json-glib 1.10.6-1
 jsoncpp 1.9.6-3
 kbd 2.7.1-2
@@ -216,7 +216,7 @@ lib32-expat 2.7.1-1
 lib32-gcc-libs 15.1.1+r7+gf36ec88aa85a-1
 lib32-glibc 2.41+r48+g5cb575ca9a3d-1
 lib32-icu 76.1-1
-lib32-json-c 0.18-1
+lib32-json-c 0.18-2
 lib32-keyutils 1.6.3-2
 lib32-krb5 1.21.3-1
 lib32-libcap 2.76-1
@@ -278,7 +278,7 @@ libcups 2:2.4.12-1
 libdaemon 0.14-6
 libdatachannel 0.22.6-1
 libdatrie 0.2.13-4
-libdecor 0.2.2-1
+libdecor 0.2.3-1
 libdeflate 1.23-1
 libdispatch 6.1-1
 libdisplay-info 0.2.0-2
@@ -302,7 +302,7 @@ libgirepository 1.84.0-1
 libgit2 1:1.9.0-2
 libglvnd 1.7.0-1
 libgpg-error 1.55-1
-libgudev 238-1
+libgudev 238-3
 libhandy 1.8.3-2
 libice 1.1.2-1
 libidn2 2.3.7-1
@@ -337,7 +337,7 @@ libnftnl 1.2.9-1
 libnghttp2 1.65.0-1
 libnghttp3 1.9.0-1
 libngtcp2 1.12.0-1
-libnice 0.1.22-1
+libnice 0.1.22-2
 libnl 3.11.0-1
 libnm 1.52.0-1
 libnotify 0.8.6-1
@@ -484,7 +484,7 @@ nettle 3.10.1-1
 networkmanager 1.52.0-1
 ninja 1.12.1-2
 node-gyp 11.2.0-1
-nodejs 23.9.0-1
+nodejs 23.11.1-1
 nodejs-nopt 7.2.1-1
 noto-fonts 1:2025.05.01-1
 noto-fonts-emoji 1:2.047-1
@@ -584,7 +584,7 @@ sassc 3.6.2-5
 sbc 2.0-2
 sdbus-cpp 2.1.0-2
 sdl2-compat 2.32.56-1
-sdl3 3.2.12-1
+sdl3 3.2.14-1
 seatd 0.9.1-1
 sed 4.9-3
 semver 7.7.1-1
@@ -677,7 +677,7 @@ xcb-util-wm 0.4.2-2
 xcb-util-xrm 1.3-3
 xclip 0.13-6
 xcur2png 0.7.1-8
-xdg-desktop-portal 1.20.0-2
+xdg-desktop-portal 1.20.1-1
 xdg-desktop-portal-hyprland 1.3.9-9
 xdg-utils 1.2.1-1
 xf86-video-amdgpu 23.0.0-2
@@ -701,7 +701,7 @@ yay 12.5.0-1
 yazi 25.4.8-1
 yt-dlp 2025.04.30-1
 z 1.12-1
-zen-browser-bin 1.12.3b-1
+zen-browser-bin 1.12.5b-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1
