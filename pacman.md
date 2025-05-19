@@ -68,7 +68,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.32-1
 diffutils 3.12-2
-discord-canary 0.0.677-1
+discord-canary 0.0.678-1
 dkms 3.2.1-1
 docker 1:28.1.1-1
 docker-compose 2.36.0-1
@@ -121,7 +121,7 @@ glslang 1:1.4.313.0-1
 glu 9.0.3-2
 gmp 6.3.0-2
 gnulib-l10n 20241231-1
-gnupg 2.4.7-1
+gnupg 2.4.7-2
 gnutls 3.8.9-1
 go 2:1.24.3-1
 gobject-introspection-runtime 1.84.0-1
@@ -185,7 +185,7 @@ jasper 4.2.5-1
 jbigkit 2.1-8
 jless 0.9.0-2
 jq 1.7.1-2
-js128 128.10.0-1
+js128 128.10.1-1
 json-c 0.18-2
 json-glib 1.10.6-1
 jsoncpp 1.9.6-3
@@ -223,7 +223,7 @@ lib32-libcap 2.76-1
 lib32-libdrm 2.4.124-1
 lib32-libelf 0.193-1
 lib32-libffi 3.4.8-1
-lib32-libgcrypt 1.11.0-1
+lib32-libgcrypt 1.11.1-1
 lib32-libgpg-error 1.51-1
 lib32-libidn2 2.3.7-1
 lib32-libldap 2.6.9-1
@@ -403,7 +403,7 @@ libvorbis 1.3.7-4
 libvpl 2.15.0-1
 libvpx 1.15.0-1
 libvterm 0.3.3-2
-libwacom 2.15.0-1
+libwacom 2.15.0-2
 libwebp 1.5.0-1
 libwireplumber 0.5.8-1
 libx11 1.8.12-1
@@ -445,7 +445,7 @@ lilv 0.24.26-1
 linux-api-headers 6.14-1
 linux-firmware 20250508.788aadc8-1
 linux-firmware-whence 20250508.788aadc8-1
-linux-lts 6.12.28-1
+linux-lts 6.12.29-1
 linux-zen 6.14.6.zen1-1
 linux-zen-headers 6.14.6.zen1-1
 llhttp 9.2.1-2
@@ -488,7 +488,7 @@ nodejs 23.11.1-1
 nodejs-nopt 7.2.1-1
 noto-fonts 1:2025.05.01-1
 noto-fonts-emoji 1:2.047-1
-npm 11.3.0-1
+npm 11.4.0-1
 npth 1.8-1
 nspr 4.36-1
 nss 3.111-1
@@ -504,7 +504,7 @@ opencore-amr 0.1.6-2
 openexr 3.3.3-1
 openh264 2.6.0-1
 openjpeg2 2.5.3-1
-openresolv 3.16.4-1
+openresolv 3.16.5-1
 openssh 10.0p1-3
 openssl 3.5.0-1
 openvpn 2.6.14-1
@@ -587,7 +587,7 @@ sdl2-compat 2.32.56-1
 sdl3 3.2.14-1
 seatd 0.9.1-1
 sed 4.9-3
-semver 7.7.1-1
+semver 7.7.2-1
 serd 0.32.4-1
 shaderc 2025.2-2
 shadow 4.17.4-1
@@ -645,7 +645,7 @@ upower 1.90.9-1
 uthash 2.3.0-2
 util-linux 2.41-4
 util-linux-libs 2.41-4
-v4l-utils 1.28.1-2
+v4l-utils 1.30.1-1
 v4l2loopback-dkms 0.14.0-1
 vapoursynth R70-2
 vial-appimage v0.7.3-1
@@ -701,7 +701,7 @@ yay 12.5.0-1
 yazi 25.4.8-1
 yt-dlp 2025.04.30-1
 z 1.12-1
-zen-browser-bin 1.12.5b-1
+zen-browser-bin 1.12.5b-2
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1

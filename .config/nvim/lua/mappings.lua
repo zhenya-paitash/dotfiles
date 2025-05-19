@@ -471,6 +471,13 @@ map(MODE.normal, "<M-j>", "<cmd>Treewalker Down<CR>", { desc = "  down (Treew
 map(MODE.normal, "<M-k>", "<cmd>Treewalker Up<CR>", { desc = "  up (Treewalker)" })
 map(MODE.normal, "<M-h>", "<cmd>Treewalker Left<CR>", { desc = "  left (Treewalker)" })
 map(MODE.normal, "<M-l>", "<cmd>Treewalker Right<CR>", { desc = "  right (Treewalker)" })
+--┌─ MODE ───────┐
+--│ visual       │
+--└──────────────┘
+map(MODE.visual, "<M-j>", "<cmd>Treewalker Down<CR>", { desc = "  down (Treewalker)" })
+map(MODE.visual, "<M-k>", "<cmd>Treewalker Up<CR>", { desc = "  up (Treewalker)" })
+map(MODE.visual, "<M-h>", "<cmd>Treewalker Left<CR>", { desc = "  left (Treewalker)" })
+map(MODE.visual, "<M-l>", "<cmd>Treewalker Right<CR>", { desc = "  right (Treewalker)" })
 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   DOOING
@@ -478,7 +485,7 @@ map(MODE.normal, "<M-l>", "<cmd>Treewalker Right<CR>", { desc = "  right (Tre
 --┌─ MODE ───────┐
 --│ normal       │
 --└──────────────┘
-map(MODE.normal, "<leader>pt", "<cmd> Dooing <CR>", { desc = "todo open (Dooing)" })
+-- map(MODE.normal, "<leader>pt", "<cmd> Dooing <CR>", { desc = "todo open (Dooing)" })
 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   AUGMENT

@@ -15,22 +15,38 @@
 # fusermount -u ~/rclone/yadisk
 
 # MOUNT 
-  # --cache-dir ~/.cache/rclone/yadisk \  # desc: дублирует кэш который уже лежит в ~/.cache/rclone
+# --cache-dir ~/.cache/rclone/yadisk \  # desc: дублирует кэш который уже лежит в ~/.cache/rclone
+# rclone mount yadisk: ~/rclone/yadisk \
+#   --vfs-cache-mode full \
+#   --vfs-cache-max-age 336h \
+#   --vfs-cache-max-size 10G \
+#   --vfs-cache-poll-interval 5m \
+#   --vfs-read-ahead 64M \
+#   --vfs-read-chunk-size 64M \
+#   --vfs-read-chunk-size-limit 512M \
+#   --dir-cache-time 72h \
+#   --poll-interval 1m \
+#   --attr-timeout 1s \
+#   --buffer-size 32M \
+#   --timeout 1h \
+#   --allow-other \
+#   --log-level DEBUG \
+#   --log-file ~/rclone/yadisk.log &
+
 rclone mount yadisk: ~/rclone/yadisk \
   --vfs-cache-mode full \
-  --vfs-cache-max-age 336h \
-  --vfs-cache-max-size 10G \
-  --vfs-cache-poll-interval 5m \
-  --vfs-read-ahead 64M \
-  --vfs-read-chunk-size 64M \
-  --vfs-read-chunk-size-limit 512M \
-  --dir-cache-time 72h \
-  --poll-interval 1m \
-  --attr-timeout 1s \
-  --buffer-size 32M \
-  --timeout 1h \
+  --vfs-cache-max-age 24h \
+  --vfs-cache-max-size 5G \
+  --vfs-cache-poll-interval 3m \
+  --dir-cache-time 5m \
+  --poll-interval 3m \
+  --attr-timeout 5m \
+  --vfs-read-ahead 32M \
+  --vfs-read-chunk-size 16M \
+  --buffer-size 16M \
+  --timeout 30s \
   --allow-other \
-  --log-level DEBUG \
+  --log-level INFO \
   --log-file ~/rclone/yadisk.log &
 
 # READ TO .CACHE
