@@ -71,7 +71,7 @@ diffutils 3.12-2
 discord-canary 0.0.678-1
 dkms 3.2.1-1
 docker 1:28.1.1-1
-docker-compose 2.36.0-1
+docker-compose 2.36.1-1
 double-conversion 3.3.1-1
 duktape 2.7.0-7
 e2fsprogs 1.47.2-2
@@ -617,7 +617,7 @@ systemd-libs 257.5-3
 systemd-sysvcompat 257.5-3
 tar 1.35-2
 tdb 1.4.13-1
-telegram-desktop 5.13.1-4
+telegram-desktop 5.14.3-1
 texinfo 7.2-1
 tinysparql 3.9.2-2
 tmux 3.5_a-1
@@ -677,7 +677,7 @@ xcb-util-wm 0.4.2-2
 xcb-util-xrm 1.3-3
 xclip 0.13-6
 xcur2png 0.7.1-8
-xdg-desktop-portal 1.20.1-1
+xdg-desktop-portal 1.20.2-1
 xdg-desktop-portal-hyprland 1.3.9-9
 xdg-utils 1.2.1-1
 xf86-video-amdgpu 23.0.0-2
