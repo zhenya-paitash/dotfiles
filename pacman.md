@@ -68,7 +68,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.32-1
 diffutils 3.12-2
-discord-canary 0.0.678-1
+discord-canary 0.0.679-1
 dkms 3.2.1-1
 docker 1:28.1.1-1
 docker-compose 2.36.1-1
@@ -127,7 +127,7 @@ go 2:1.24.3-1
 gobject-introspection-runtime 1.84.0-1
 gparted 1.7.0-1
 gperftools 2.16-1
-gpgme 1.24.2-1
+gpgme 1.24.3-2
 gpm 1.20.7.r38.ge82d1a6-6
 graphene 1.10.8-2
 graphite 1:1.3.14-4
@@ -677,7 +677,7 @@ xcb-util-wm 0.4.2-2
 xcb-util-xrm 1.3-3
 xclip 0.13-6
 xcur2png 0.7.1-8
-xdg-desktop-portal 1.20.2-1
+xdg-desktop-portal 1.20.3-1
 xdg-desktop-portal-hyprland 1.3.9-9
 xdg-utils 1.2.1-1
 xf86-video-amdgpu 23.0.0-2
@@ -701,7 +701,7 @@ yay 12.5.0-1
 yazi 25.4.8-1
 yt-dlp 2025.04.30-1
 z 1.12-1
-zen-browser-bin 1.12.5b-2
+zen-browser-bin 1.12.6b-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1

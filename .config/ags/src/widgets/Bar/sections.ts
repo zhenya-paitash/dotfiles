@@ -36,6 +36,8 @@ export function SectionRight() {
     hpack: 'end',
     // spacing: 8,
     children: [
+      WorkspaceWidget(),
+
       NetworkWidget(),
       VpnWidget(),
       BluetoothWidget(),

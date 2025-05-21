@@ -453,12 +453,12 @@ return {
   --│             │ ai                │
   --│             └────────────────────┘
   --│
-  --├ @plugins    OFF `Exafunction/codeium.vim`: AI автозаполнение.
+  --├ @plugins    ON  `Exafunction/codeium.vim`: AI автозаполнение.
   --├             ON  `yetone/avante.nvim`: Отличный провайдер AI моделей.
   --│             OFF     ├─ `stevearc/dressing.nvim`: Core UI inputs.
   --│             ON      ├─ `nvim-lua/plenary.nvim`: Переиспользование написаных функций для lua.
   --│             ON      └─ `MunifTanjim/nui.nvim: используется для правильного рендеринга и многократного просмотра.
-  --├             ON  `augmentcode/augment.vim`: обеспечивает завершение встроенного кода и многошобразные разговоры в чате, адаптированные к кодовой базе
+  --├             OFF `augmentcode/augment.vim`: обеспечивает завершение встроенного кода и многошобразные разговоры в чате, адаптированные к кодовой базе
   --├             OFF `olimorris/codecompanion.nvim`: попробую этот новый плагин
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
@@ -482,7 +482,8 @@ return {
     },
   },
 
-  { -- Augment Code
+  {
+    -- WARN: free plan include only 50 messeges per month. Out of tokens on free plan. Next plan: `Developer plan` include 600 messages and cost $50/month.
     "augmentcode/augment.vim",
     event = "VeryLazy",
     -- cmd = { "Augment" },
