@@ -82,5 +82,8 @@ alias lofi="hyprctl dispatch exec \"mpv --no-border --no-terminal \"https://yout
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
+# opencode
+alias opencode='/home/zh/go/bin/opencode'
+
 # uv
 fish_add_path "/home/zh/.local/bin"

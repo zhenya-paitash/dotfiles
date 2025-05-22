@@ -51,7 +51,7 @@ cantarell-fonts 1:0.303.1-2
 check 0.15.2-3
 cliphist 1:0.6.1-1
 cmake 4.0.2-1
-containerd 2.1.0-1
+containerd 2.1.1-1
 coreutils 9.7-1
 cppdap 1.58.0-2
 cryptsetup 2.7.5-2
@@ -68,7 +68,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.32-1
 diffutils 3.12-2
-discord-canary 0.0.679-1
+discord-canary 0.0.680-1
 dkms 3.2.1-1
 docker 1:28.1.1-1
 docker-compose 2.36.1-1
@@ -82,7 +82,7 @@ expat 2.7.1-1
 eza 0.21.3-1
 fakeroot 1.37.1.2-1
 fd 10.2.0-1
-ffmpeg 2:7.1.1-2
+ffmpeg 2:7.1.1-3
 fftw 3.3.10-7
 file 5.46-4
 filesystem 2025.05.03-1
@@ -112,8 +112,8 @@ git 2.49.0-2
 git-delta 0.18.2-4
 gjs 2:1.84.2-1
 glib-networking 1:2.80.1-1
-glib2 2.84.1-1
-glib2-devel 2.84.1-1
+glib2 2.84.2-1
+glib2-devel 2.84.2-1
 glibc 2.41+r48+g5cb575ca9a3d-1
 glibmm 2.66.8-1
 glibmm-2.68 2.84.0-1
@@ -145,7 +145,7 @@ gst-plugins-bad-libs 1.26.1-1
 gst-plugins-base-libs 1.26.1-1
 gstreamer 1.26.1-1
 gtest 1.17.0-1
-gtk-layer-shell 0.9.1-1
+gtk-layer-shell 0.9.2-1
 gtk-update-icon-cache 1:4.18.5-2
 gtk3 1:3.24.49-2
 gtk4 1:4.18.5-2
@@ -157,7 +157,7 @@ gupnp-igd 1.6.0-2
 gzip 1.14-2
 harfbuzz 11.2.1-1
 hicolor-icon-theme 0.18-1
-hidapi 0.14.0-3
+hidapi 0.15.0-1
 highway 1.2.0-1
 hunspell 1.7.2-2
 hwdata 0.395-1
@@ -250,13 +250,13 @@ lib32-spirv-tools 1:1.4.313.0-1
 lib32-systemd 257.5-1
 lib32-util-linux 2.41-1
 lib32-vulkan-icd-loader 1.4.313.0-1
-lib32-vulkan-radeon 1:25.0.5-1
+lib32-vulkan-radeon 1:25.1.1-1
 lib32-wayland 1.23.1-1
 lib32-xcb-util-keysyms 0.4.1-2
 lib32-xz 5.8.1-1
 lib32-zlib 1.3.1-2
 lib32-zstd 1.5.7-2
-libarchive 3.7.9-2
+libarchive 3.8.0-1
 libass 0.17.3-1
 libassuan 3.0.0-1
 libasyncns 1:0.8+r3+g68cd5af-3
@@ -350,7 +350,7 @@ libpciaccess 0.18.1-2
 libpgm 5.3.128-3
 libpipeline 1.5.8-1
 libpipewire 1:1.4.2-1
-libplacebo 7.349.0-7
+libplacebo 7.351.0-1
 libplist 2.6.0-2
 libpng 1.6.48-1
 libproxy 0.5.9-1
@@ -384,7 +384,7 @@ libteam 1.32-2
 libthai 0.1.29-3
 libtheora 1.2.0-1
 libtiff 4.7.0-1
-libtirpc 1.3.6-1
+libtirpc 1.3.6-2
 libtool 2.5.4+r23+g5b582aed-1
 libtorrent-rasterbar 1:2.0.11-4
 libunibreak 6.1-1
@@ -405,7 +405,7 @@ libvpx 1.15.0-1
 libvterm 0.3.3-2
 libwacom 2.15.0-2
 libwebp 1.5.0-1
-libwireplumber 0.5.8-1
+libwireplumber 0.5.10-1
 libx11 1.8.12-1
 libxau 1.0.12-1
 libxcb 1.17.0-1
@@ -465,7 +465,7 @@ make 4.4.1-2
 man-db 2.13.1-1
 mbedtls 3.6.3-1
 md4c 0.5.2-1
-mesa 1:25.0.5-1
+mesa 1:25.1.1-1
 meson 1.8.0-1
 minizip 1:1.3.1-2
 mkinitcpio 39.2-3
@@ -474,7 +474,7 @@ mobile-broadband-provider-info 20240407-1
 mpdecimal 4.0.1-1
 mpfr 4.2.2-1
 mpg123 1.32.10-1
-mpv 1:0.40.0-2
+mpv 1:0.40.0-3
 msgpack-c 6.1.0-2
 mtdev 1.1.7-1
 mujs 1.3.6-1
@@ -537,7 +537,7 @@ pipewire-audio 1:1.4.2-1
 pipewire-jack 1:1.4.2-1
 pipewire-pulse 1:1.4.2-1
 pixman 0.46.0-1
-pkcs11-helper 1.30.0-1
+pkcs11-helper 1.30.0-2
 pkgconf 2.4.3-1
 polkit 126-2
 popt 1.19-2
@@ -652,15 +652,15 @@ vial-appimage v0.7.3-1
 vid.stab 1.1.1-2
 vmaf 3.0.0-1
 vulkan-icd-loader 1.4.313.0-1
-vulkan-radeon 1:25.0.5-1
+vulkan-radeon 1:25.1.1-1
 wayland 1.23.1-2
 wayland-protocols 1.44-1
 webrtc-audio-processing-1 1.3-4
 wf-recorder 0.5.0-2
 wget 1.25.0-2
 which 2.23-1
-wireguard-tools 1.0.20210914-2
-wireplumber 0.5.8-1
+wireguard-tools 1.0.20250521-1
+wireplumber 0.5.10-1
 wl-clipboard 1:2.2.1-2
 wlroots 0.18.2-2
 wpa_supplicant 2:2.11-3
@@ -699,9 +699,9 @@ xz 5.8.1-1
 yadm 3.4.0-1
 yay 12.5.0-1
 yazi 25.4.8-1
-yt-dlp 2025.04.30-1
+yt-dlp 2025.05.22-1
 z 1.12-1
-zen-browser-bin 1.12.6b-1
+zen-browser-bin 1.12.7b-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1
