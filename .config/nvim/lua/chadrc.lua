@@ -5,8 +5,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "wombat",
-  theme_toggle = { "wombat", "wombat" },
+  theme = "rosepine",
+  theme_toggle = { "rosepine", "rosepine" },
   transparency = false,
   -- lsp_semantic_tokens = true,
   hl_override = {
