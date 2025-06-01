@@ -487,7 +487,7 @@ ninja 1.12.1-2
 node-gyp 11.2.0-1
 nodejs 23.11.1-1
 nodejs-nopt 7.2.1-1
-noto-fonts 1:2025.05.01-1
+noto-fonts 1:2025.06.01-1
 noto-fonts-emoji 1:2.047-1
 npm 11.4.1-1
 npth 1.8-1
@@ -561,7 +561,7 @@ python-requests 2.32.3-4
 python-tqdm 4.67.1-2
 python-urllib3 2.4.0-1
 qbittorrent 5.1.0-1
-qt6-base 6.9.0-1
+qt6-base 6.9.0-2
 qt6-declarative 6.9.0-2
 qt6-imageformats 6.9.0-1
 qt6-svg 6.9.0-1
@@ -664,7 +664,7 @@ windsurf 1.9.2-1
 wireguard-tools 1.0.20250521-1
 wireplumber 0.5.10-1
 wl-clipboard 1:2.2.1-2
-wlroots 0.18.2-2
+wlroots0.18 0.18.2-1
 wpa_supplicant 2:2.11-3
 x264 3:0.164.r3108.31e19f9-2
 x265 4.0-1
@@ -700,10 +700,10 @@ xxhash 0.8.3-1
 xz 5.8.1-1
 yadm 3.4.0-1
 yay 12.5.0-1
-yazi 25.4.8-1
+yazi 25.5.31-1
 yt-dlp 2025.05.22-1
 z 1.12-1
-zen-browser-bin 1.12.8b-1
+zen-browser-bin 1.12.9b-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1

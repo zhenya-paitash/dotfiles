@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo iptables -t mangle -A POSTROUTING -j TTL --ttl-set 65
+
+# сброс правил
+# sudo iptables -t mangle -F POSTROUTING
