@@ -31,9 +31,9 @@ bash 5.2.037-5
 bat 0.25.0-4
 binutils 2.44+r94+gfe459e33c676-1
 bison 3.8.2-8
-bluez 5.82-1
-bluez-libs 5.82-1
-bluez-utils 5.82-1
+bluez 5.83-1
+bluez-libs 5.83-1
+bluez-utils 5.83-1
 boost-libs 1.88.0-3
 brightnessctl 0.5.1-3
 brotli 1.1.0-3
@@ -71,7 +71,7 @@ device-mapper 2.03.32-1
 diffutils 3.12-2
 discord-canary 0.0.687-1
 dkms 3.2.1-1
-docker 1:28.1.1-1
+docker 1:28.2.0-1
 docker-compose 2.36.2-1
 double-conversion 3.3.1-1
 duktape 2.7.0-7
@@ -185,12 +185,12 @@ jansson 2.14.1-1
 jasper 4.2.5-1
 jbigkit 2.1-8
 jless 0.9.0-2
-jq 1.7.1-2
+jq 1.8.0-1
 js128 128.11.0-1
 json-c 0.18-2
 json-glib 1.10.6-1
 jsoncpp 1.9.6-3
-kbd 2.7.1-2
+kbd 2.8.0-1
 kcoreaddons 6.14.0-1
 keyutils 1.6.3-3
 ki18n 6.14.0-1
@@ -257,7 +257,7 @@ lib32-xcb-util-keysyms 0.4.1-2
 lib32-xz 5.8.1-1
 lib32-zlib 1.3.1-2
 lib32-zstd 1.5.7-2
-libarchive 3.8.0-1
+libarchive 3.8.1-1
 libass 0.17.3-1
 libassuan 3.0.0-1
 libasyncns 1:0.8+r3+g68cd5af-3
@@ -456,7 +456,7 @@ lmdb 0.9.33-1
 lsof 4.99.4-1
 lua 5.4.7-1
 lua51-lpeg 1.1.0-3
-luajit 2.1.1741730670-1
+luajit 2.1.1748459687-1
 lv2 1.18.10-1
 lz4 1:1.10.0-2
 lzo 2.10-5
@@ -580,7 +580,7 @@ rsync 3.4.1-2
 rtkit 0.13-3
 rubberband 4.0.0-1
 runc 1.3.0-1
-rustup 1.28.2-1
+rustup 1.28.2-2
 sassc 3.6.2-5
 sbc 2.0-2
 sdbus-cpp 2.1.0-2
@@ -612,7 +612,7 @@ startup-notification 0.12-8
 sudo 1.9.16.p2-2
 svt-av1 3.0.2-1
 swappy 1.5.1-2
-swww 0.9.5-2
+swww 0.10.1-1
 systemd 257.6-1
 systemd-libs 257.6-1
 systemd-sysvcompat 257.6-1
@@ -700,10 +700,10 @@ xxhash 0.8.3-1
 xz 5.8.1-1
 yadm 3.4.0-1
 yay 12.5.0-1
-yazi 25.5.31-1
+yazi 25.4.8-1
 yt-dlp 2025.05.22-1
 z 1.12-1
-zen-browser-bin 1.12.9b-1
+zen-browser-bin 1.12.10b-2
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1
