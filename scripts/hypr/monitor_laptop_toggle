@@ -1,29 +1,68 @@
 #!/bin/bash
 
-# if hyprctl monitors -j | jq '.[] | select(.name=="eDP-1")' | grep -q '.';then
-#   hyprctl keyword monitor "eDP-1 , disable"
-#   notify-send -u normal -t 3000 "Laptop monitor" "OFF"
-# else
+# # if hyprctl monitors -j | jq '.[] | select(.name=="eDP-1")' | grep -q '.';then
+# #   hyprctl keyword monitor "eDP-1 , disable"
+# #   notify-send -u normal -t 3000 "Laptop monitor" "OFF"
+# # else
+# #   hyprctl keyword monitor "eDP-1 , 1920x1200@120.00 , 0x0 , 1"
+# #   notify-send -u normal -t 3000 "Laptop monitor" "enable"
+# # fi
+#
+# string=$(hyprctl -j monitors | jq --raw-output '.[] | .name')
+#
+# if echo $string | grep -q "eDP-1"; then
+#   arr=($string)
+#   length=${#arr[@]}
+#
+#   if (( length > 1 )); then
+#     hyprctl keyword monitor "eDP-1 , disable"
+#     notify-send -u normal -t 3000 "Laptop monitor" "OFF"
+#   else
+#     notify-send -u critical -t 3000 "Laptop monitor" "Operation is blocked! You don't have another monitors!"
+#   fi
+# else 
+#   # hyprctl keyword monitor "eDP-1 , 2560x1600@120.00 , 0x0 , 1.67"
 #   hyprctl keyword monitor "eDP-1 , 1920x1200@120.00 , 0x0 , 1"
 #   notify-send -u normal -t 3000 "Laptop monitor" "enable"
 # fi
 
-string=$(hyprctl -j monitors | jq --raw-output '.[] | .name')
+# $HOME/scripts/ags/ags_restart ;
 
-if echo $string | grep -q "eDP-1"; then
-  arr=($string)
-  length=${#arr[@]}
+# Настройки монитора
+MONITOR_NAME="eDP-1"
+RESOLUTION="1920x1200@120.00"
+POSITION="0x0"
+SCALE="1"
 
-  if (( length > 1 )); then
-    hyprctl keyword monitor "eDP-1 , disable"
-    notify-send -u normal -t 3000 "Laptop monitor" "OFF"
-  else
-    notify-send -u critical -t 3000 "Laptop monitor" "Operation is blocked! You don't have another monitors!"
-  fi
-else 
-  # hyprctl keyword monitor "eDP-1 , 2560x1600@120.00 , 0x0 , 1.67"
-  hyprctl keyword monitor "eDP-1 , 1920x1200@120.00 , 0x0 , 1"
-  notify-send -u normal -t 3000 "Laptop monitor" "enable"
+# Получаем список активных мониторов
+active_monitors=($(hyprctl -j monitors | jq -r '.[].name'))
+
+# Проверяем, активен ли eDP-1
+is_edp_active=false
+for mon in "${active_monitors[@]}"; do
+    if [[ "$mon" == "$MONITOR_NAME" ]]; then
+        is_edp_active=true
+        break
+    fi
+done
+
+# Логика
+if $is_edp_active; then
+    # Если больше 1 монитора — можно отключить eDP
+    if (( ${#active_monitors[@]} > 1 )); then
+        hyprctl keyword monitor "$MONITOR_NAME, disable"
+        notify-send -u normal -t 3000 "Laptop monitor" "OFF"
+    else
+        notify-send -u critical -t 3000 "Laptop monitor" "Blocked! No other monitors!"
+    fi
+else
+    # Включаем eDP и перезапускаем layout
+    hyprctl keyword monitor "$MONITOR_NAME, $RESOLUTION, $POSITION, $SCALE"
+    sleep 0.5  # дать время примениться
+    hyprctl reload  # или hyprctl dispatch dpms on
+    notify-send -u normal -t 3000 "Laptop monitor" "ON"
 fi
 
-# $HOME/scripts/ags/ags_restart ;
+# Logging
+echo "Active monitors: ${active_monitors[@]}" >> /tmp/monitor_toggle.log
+

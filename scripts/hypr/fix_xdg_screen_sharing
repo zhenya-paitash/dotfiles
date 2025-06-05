@@ -7,32 +7,19 @@
 #               :_____:             .-. ::_____:                                   :_____:                                  .-. :
 #                                   `._.'                                                                                   `._.'
 
-# Завершение всех запущенных экземпляров порталов
-pkill -f xdg-desktop-portal-hyprland
-pkill -f xdg-desktop-portal-gnome
-pkill -f xdg-desktop-portal-kde
-pkill -f xdg-desktop-portal-lxqt
-pkill -f xdg-desktop-portal-wlr
-pkill -f xdg-desktop-portal-gtk
+# Убиваем все конфликтующие порталы
 pkill -f xdg-desktop-portal
+pkill -f xdg-desktop-portal-.*
 
-# Ожидание завершения процессов
-sleep 2
+# Запускаем нужный портал (Hyprland или wlr)
+if command -v /usr/lib/xdg-desktop-portal-hyprland &>/dev/null; then
+    /usr/lib/xdg-desktop-portal-hyprland &
+    export XDG_CURRENT_DESKTOP=Hyprland
+else
+    /usr/lib/xdg-desktop-portal-wlr &
+    export XDG_CURRENT_DESKTOP=sway
+fi
 
-# Убедиться, что процессы завершены
-for process in xdg-desktop-portal xdg-desktop-portal-hyprland; do
-    if pgrep -f "$process" > /dev/null; then
-        echo "Процесс $process не завершён, завершаю принудительно..."
-        pkill -9 -f "$process"
-    fi
-done
-
-# Установка переменной окружения (на случай конфликтов)
-/usr/lib/xdg-desktop-portal-hyprland &
-export XDG_CURRENT_DESKTOP=Hyprland
-sleep 2
-
-# Перезапуск основного портала
+# Основной портал
 /usr/lib/xdg-desktop-portal &
-echo "Порталы успешно перезапущены."
-
+echo "Wayland порталы перезапущены."

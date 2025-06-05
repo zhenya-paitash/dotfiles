@@ -1,18 +1,18 @@
 return {
   opts = {
-    -- provider = "claude", -- In this example, use Claude for planning, but you can also use any provider you want.
-    provider = "groq", -- In this example, use Claude for planning, but you can also use any provider you want.
-    cursor_applying_provider = "groq", -- In this example, use Groq for applying, but you can also use any provider you want.
-    behaviour = {
-      enable_cursor_planning_mode = true, -- enable cursor planning mode!
-    },
-    vendors = {
+    -- cursor_applying_provider = "groq", -- In this example, use Groq for applying, but you can also use any provider you want.
+    -- auto_suggestions_provider = "groq",
+    -- behaviour = {
+    --   enable_cursor_planning_mode = true, -- enable cursor planning mode!
+    -- },
+    provider = "groq",
+    providers = {
       groq = { -- define groq provider
         __inherited_from = "openai",
         api_key_name = "GROQ_API_KEY",
         endpoint = "https://api.groq.com/openai/v1/",
-        model = "llama-3.3-70b-versatile",
-        max_completion_tokens = 32768, -- remember to increase this value, otherwise it will stop generating halfway
+        -- model = "llama-3.3-70b-versatile",
+        model = "llama-3.1-8b-instant",
       },
     },
     mappings = {
