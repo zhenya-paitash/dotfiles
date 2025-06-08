@@ -1,6 +1,6 @@
 aylurs-gtk-shell 1.8.2-2
-cursor-bin 1.0.0-1
-discord-canary 0.0.688-1
+cursor-bin 1.0.1-2
+discord-canary 0.0.692-1
 rofi-lbonn-wayland-git 1.7.5.wayland3.r50.g2baa809d-1
 simple-mtpfs 0.4.0-1
 vial-appimage v0.7.3-1
