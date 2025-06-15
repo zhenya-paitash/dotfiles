@@ -16,6 +16,11 @@ return {
 
     require("ufo").setup {
       provider_selector = function(bufnr, filetype, buftype)
+        -- disable `ufo` for `DBUI`
+        if filetype == "dbui" then
+          return ""
+        end
+
         return { "treesitter", "indent" }
         -- return { "lsp", "indent" }
       end,
