@@ -53,9 +53,6 @@ alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tk='tmux kill-session -t'
 
-# docker
-alias lazydocker='~/go/bin/lazydocker'
-
 # neovim
 set -U EDITOR nvim
 function nvim
@@ -73,7 +70,8 @@ alias vv="bash $HOME/scripts/nvim-selector"
 
 # lazygit and lazydocker
 alias lg='lazygit'
-alias ld='lazydocker'
+alias ld='~/go/bin/lazydocker'
+alias usql='~/go/bin/usql'
 
 # custom
 alias lofi="hyprctl dispatch exec \"mpv --no-border --no-terminal \"https://youtu.be/jfKfPfyJRdk\"\" & disown & exit"

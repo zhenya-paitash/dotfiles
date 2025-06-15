@@ -2,7 +2,7 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
-[manager]
+[mgr]
 keymap = [
   ###########################
   # START CUSTOM CONFIG
@@ -13,6 +13,7 @@ keymap = [
 
 	# { on = [ "<S-W>" ], run = "shell --confirm 'swww img \"$@\" --transition-type grow --transition-step 200 --transition-fps 60' --transition-angle 30 --transition-duration 1", desc = "Set current file as wallpaper" },
 	{ on = [ "<S-W>" ], run = "shell --confirm '$HOME/scripts/ags/ags_get_colorscheme_from_image_custom \"$@\" & swww img \"$@\" --transition-type center --transition-step 200 --transition-fps 60' --transition-angle 30 --transition-duration 1", desc = "Set current file as wallpaper" },
+  # { on = [ "<C-q>" ], run = "cd --${YAZI_CWD} && exit", desc = "Go to current directory and quit" },
   ###########################
   # END CUSTOM CONFIG
   ###########################

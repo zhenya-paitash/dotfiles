@@ -1,0 +1,21 @@
+CREATE TABLE users (
+	id SERIAL PRIMARY KEY,
+  username VARCHAR(64) NOT NULL UNIQUE,
+  email VARCHAR(124) NOT NULL UNIQUE,
+  password_hash TEXT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+INSERT INTO users (username, email, password_hash) 
+VALUES
+	('user_1', 'user_1@gmail.com', 'user_1_password'),
+  ('user_2', 'user_2@gmail.com', 'user_2_password'),
+  ('user_3', 'user_3@gmail.com', 'user_3_password');
+
+SELECT * FROM users;
+
+SELECT * FROM users
+WHERE created_at >= NOW() - INTERVAL '1 day';
+
+
+

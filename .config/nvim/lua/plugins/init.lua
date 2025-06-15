@@ -553,8 +553,8 @@ return {
   --│             ON      └─ `kristijanhusak/vim-dadbod-completion`: Автозаполнение.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
-  { -- DATABASE
-    "tpope/vim-dadbod",
+  { -- DATABASE UI
+    "kristijanhusak/vim-dadbod-ui",
     cmd = {
       "DB",
       "DBUI",
@@ -562,14 +562,16 @@ return {
       "DBUIAddConnection",
       "DBUIFindBuffer",
     },
+    init = require("plugins.setup.database.dadbod").UI.init,
     dependencies = {
-      { -- DATABASE UI
-        "kristijanhusak/vim-dadbod-ui",
-        init = require("plugins.setup.database.dadbod").UI.init,
+      { -- DATABASE
+        "tpope/vim-dadbod",
+        lazy = true,
       },
       { -- DATABASE AUTOCOMPLETION
         "kristijanhusak/vim-dadbod-completion",
         ft = { "sql", "mysql", "plsql" },
+        lazy = true,
       },
     },
   },

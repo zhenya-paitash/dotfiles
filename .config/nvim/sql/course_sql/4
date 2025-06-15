@@ -1,0 +1,41 @@
+-- 1
+CREATE TABLE paymants (
+  id SERIAL PRIMARY KEY,
+  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,
+  amount NUMERIC(10,2) NOT NULL CHECK(amount > 0),
+  currency VARCHAR(3) NOT NULL DEFAULT 'USD'
+    CHECK (currency = UPPER(currency) AND currency ~ '^[A-Z]{3}$'),
+  status VARCHAR(20) NOT NULL CHECK(status IN ('pending', 'completed', 'failed')),
+  description TEXT,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  external_id VARCHAR(100)
+);
+
+
+-- 2. **Вставить** 3–4 платежа с разными статусами и суммами.  
+INSERT INTO paymants (user_id, amount, currency, status, description, external_id)
+VALUES 
+  (1, 100.00, 'USD', 'completed', 'Mounthly subscription'),
+  (2, 100.00, 'USD', 'completed', 'Mounthly subscription'),
+  (1, 100.00, 'USD', 'completed', 'Mounthly subscription'),
+  (1, 100.00, 'USD', 'completed', 'Mounthly subscription');
+
+-- 3. **Выбрать** все успешные (`completed`) платежи пользователей.  
+SELECT * FROM test;
+
+-- 4. **Создать** таблицу `subscriptions`:  
+--    - `id SERIAL`, `user_id`, `plan_name VARCHAR`, `status`, `started_at`, `ended_at`  
+
+-- 5. **Вставить** подписки: активную, отменённую, приостановленную.  
+
+-- 6. **Создать** таблицу `invoices` и связать с `payments` (опционально):  
+--    - `id`, `user_id`, `payment_id`, `total NUMERIC`, `issued_at`, `paid_at`, `description`  
+
+-- 7. **Выбрать** счета, которые не оплачены (`paid_at IS NULL`).  
+
+-- 8. **Посчитать** общую сумму всех счетов по каждому пользователю (`GROUP BY user_id`).  
+
+-- 9. **Создать представление (VIEW)** `paid_invoices_view` — объединённые данные об оплаченных счетах и платежах.  
+
+-- 10. **Вывести** из него топ-3 пользователя по общей сумме оплат.
+

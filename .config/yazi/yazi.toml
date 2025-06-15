@@ -9,6 +9,9 @@ show_hidden    = true
 
 [preview]
 min_width = 4
+# max_width = 5000
+# max_height = 5000
+
 
 [opener]
 open = [
