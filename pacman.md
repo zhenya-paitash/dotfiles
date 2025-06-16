@@ -113,8 +113,8 @@ git 2.49.0-2
 git-delta 0.18.2-4
 gjs 2:1.84.2-1
 glib-networking 1:2.80.1-1
-glib2 2.84.2-1
-glib2-devel 2.84.2-1
+glib2 2.84.3-1
+glib2-devel 2.84.3-1
 glibc 2.41+r48+g5cb575ca9a3d-1
 glibmm 2.66.8-1
 glibmm-2.68 2.84.0-1
@@ -356,7 +356,7 @@ libpipeline 1.5.8-1
 libpipewire 1:1.4.5-1
 libplacebo 7.351.0-1
 libplist 2.7.0-1
-libpng 1.6.48-1
+libpng 1.6.49-1
 libproxy 0.5.9-1
 libpsl 0.21.5-2
 libpulse 17.0+r43+g3e2bb8a1e-1
@@ -407,7 +407,7 @@ libvorbis 1.3.7-4
 libvpl 2.15.0-1
 libvpx 1.15.0-1
 libvterm 0.3.3-2
-libwacom 2.16.0-1
+libwacom 2.16.0-2
 libwebp 1.5.0-1
 libwireplumber 0.5.10-1
 libx11 1.8.12-1

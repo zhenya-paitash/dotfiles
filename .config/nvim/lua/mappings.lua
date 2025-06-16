@@ -80,6 +80,7 @@ map(MODE.visual, ">", ">gv", { desc = "indent left", noremap = true, silent = tr
 map(MODE.visual, "<", "<gv", { desc = "indent right", noremap = true, silent = true })
 map(MODE.visual, "<leader>y", '"+y', { desc = "copy system", noremap = true, silent = true })
 map(MODE.visual, "<C-c>", '"+y gv-gv', { desc = "copy system", noremap = true, silent = true })
+map(MODE.visual, 'y', 'ygv<esc>', { noremap = true, silent = true })
 
 --┌─ MODE ───────┐
 --│ insert       │

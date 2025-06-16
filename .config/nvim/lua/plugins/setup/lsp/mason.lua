@@ -28,6 +28,7 @@ return {
       -- "prettier",
       -- "prettierd",
       -- "eslint_d",
+      "biome",
     },
   },
 }

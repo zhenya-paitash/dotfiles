@@ -1,9 +1,9 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    -- css = { "prettier" },
-    -- html = { "prettier" },
     go = { "gofmt", "goimports" },
+    typescript = { "biome-check" },
+    typescriptreact = { "biome-check" },
   },
 
   -- format_on_save = {
