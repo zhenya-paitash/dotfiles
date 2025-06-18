@@ -80,7 +80,7 @@ map(MODE.visual, ">", ">gv", { desc = "indent left", noremap = true, silent = tr
 map(MODE.visual, "<", "<gv", { desc = "indent right", noremap = true, silent = true })
 map(MODE.visual, "<leader>y", '"+y', { desc = "copy system", noremap = true, silent = true })
 map(MODE.visual, "<C-c>", '"+y gv-gv', { desc = "copy system", noremap = true, silent = true })
-map(MODE.visual, 'y', 'ygv<esc>', { noremap = true, silent = true })
+map(MODE.visual, "y", "ygv<esc>", { noremap = true, silent = true })
 
 --┌─ MODE ───────┐
 --│ insert       │
@@ -499,3 +499,11 @@ map(MODE.normal, "<leader>aut", "<cmd>:Augment chat-toggle <CR>", { desc = "ai c
 map(MODE.normal, "<leader>aus", "<cmd>:Augment status <CR>", { desc = "ai status (Augment)" })
 map(MODE.normal, "<leader>aua", "<cmd>:Augment signin <CR>", { desc = "ai login (Augment)" })
 map(MODE.normal, "<leader>aul", "<cmd>:Augment log <CR>", { desc = "ai logs (Augment)" })
+
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   DADBOD
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
+map(MODE.normal, "<leader>dq", "vap:DB<CR>", { desc = "run current query (Dadbod)", noremap = true, silent = true })

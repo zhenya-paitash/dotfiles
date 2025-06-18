@@ -51,6 +51,7 @@
 !.config/nushell**
 .config/nushell/history.txt
 !.config/nvim**
+.config/nvim/sql**
 !.config/nwg-look**
 !.config/tmux**
 .config/tmux/plugins

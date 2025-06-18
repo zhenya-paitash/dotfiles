@@ -2,9 +2,9 @@ return {
   opts = {
     -- cursor_applying_provider = "groq", -- In this example, use Groq for applying, but you can also use any provider you want.
     -- auto_suggestions_provider = "groq",
-    -- behaviour = {
-    --   enable_cursor_planning_mode = true, -- enable cursor planning mode!
-    -- },
+    behaviour = {
+      enable_cursor_planning_mode = true, -- enable cursor planning mode!
+    },
     provider = "groq",
     providers = {
       groq = { -- define groq provider

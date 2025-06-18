@@ -69,7 +69,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.32-1
 diffutils 3.12-2
-discord-canary 0.0.697-1
+discord-canary 0.0.701-1
 dkms 3.2.1-1
 docker 1:28.2.2-1
 docker-compose 2.37.1-1
@@ -109,7 +109,7 @@ gdk-pixbuf2 2.42.12-2
 geoclue 2.7.2-1
 gettext 0.25-1
 giflib 5.2.2-2
-git 2.49.0-2
+git 2.50.0-1
 git-delta 0.18.2-4
 gjs 2:1.84.2-1
 glib-networking 1:2.80.1-1
@@ -407,7 +407,7 @@ libvorbis 1.3.7-4
 libvpl 2.15.0-1
 libvpx 1.15.0-1
 libvterm 0.3.3-2
-libwacom 2.16.0-2
+libwacom 2.16.1-1
 libwebp 1.5.0-1
 libwireplumber 0.5.10-1
 libx11 1.8.12-1
@@ -571,7 +571,7 @@ qt6-svg 6.9.1-1
 qt6-translations 6.9.1-1
 qt6-wayland 6.9.1-1
 rav1e 0.7.1-1
-rclone 1.69.3-1
+rclone 1.70.0-1
 re2 1:20240702-5
 readline 8.2.013-2
 reflector 2023-3
@@ -632,7 +632,7 @@ tree-sitter 0.25.6-1
 tree-sitter-c 0.24.1-1
 tree-sitter-lua 0.4.0-1
 tree-sitter-markdown 0.5.0-1
-tree-sitter-query 0.6.1-1
+tree-sitter-query 0.6.2-1
 tree-sitter-vim 0.6.0-1
 tree-sitter-vimdoc 4.0.0-1
 tslib 1.23-1
@@ -690,12 +690,12 @@ xf86-video-amdgpu 23.0.0-2
 xh 0.24.1-1
 xkeyboard-config 2.45-1
 xorg-fonts-encodings 1.1.0-1
-xorg-server-common 21.1.16-1
+xorg-server-common 21.1.17-1
 xorg-setxkbmap 1.3.4-2
 xorg-xkbcomp 1.4.7-1
 xorg-xprop 1.2.8-1
 xorg-xset 1.2.5-2
-xorg-xwayland 24.1.6-1
+xorg-xwayland 24.1.7-1
 xorgproto 2024.1-2
 xsel 1.2.1-2
 xvidcore 1.3.7-3
@@ -707,7 +707,7 @@ yay 12.5.0-1
 yazi 25.4.8-1
 yt-dlp 2025.06.09-1
 z 1.12-1
-zen-browser-bin 1.13b-1
+zen-browser-bin 1.13.2b-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1

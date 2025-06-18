@@ -250,6 +250,7 @@ return {
   --│             OFF `Bekaboo/dropbar.nvim`: Полоска текущего положения курсора в контексе с кликабельным UI.
   --│             OFF `y3owk1n/undo-glow.nvim`: Подсветка с анимацией undo/redo.
   --│             OFF `atiladefreitas/dooing`: TODO список.
+  --│             ON  `hat0uma/csvview.nvim`: Приятное оформление CSV таблиц.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   { -- UI
@@ -356,6 +357,14 @@ return {
   --   cmd = { "Dooing" },
   --   config = require("plugins.setup.interface.dooing").config,
   -- },
+
+  { -- CSV VIEW
+    "hat0uma/csvview.nvim",
+    ft = "csv",
+    cmd = { "CsvViewEnable", "CsvViewDisable", "CsvViewToggle" },
+    opts = require("plugins.setup.interface.csvview").opts,
+    config = require("plugins.setup.interface.csvview").config,
+  },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   Поиск и замена
