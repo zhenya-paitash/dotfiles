@@ -31,6 +31,7 @@ bash 5.2.037-5
 bat 0.25.0-4
 binutils 2.44+r94+gfe459e33c676-1
 bison 3.8.2-8
+blueman 2.4.4-1
 bluez 5.83-1
 bluez-libs 5.83-1
 bluez-utils 5.83-1
@@ -56,12 +57,12 @@ coreutils 9.7-1
 cppdap 1.58.0-2
 cryptsetup 2.7.5-2
 curl 8.14.1-1
-cursor-bin 1.1.3-1
+cursor-bin 1.1.4-1
 dav1d 1.5.1-1
 db5.3 5.3.28-5
 dbus 1.16.2-1
-dbus-broker 36-4
-dbus-broker-units 36-4
+dbus-broker 37-2
+dbus-broker-units 37-2
 dbus-glib 0.114-1
 dconf 0.40.0-3
 debugedit 5.1-1
@@ -69,7 +70,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.32-1
 diffutils 3.12-2
-discord-canary 0.0.701-1
+discord-canary 0.0.702-1
 dkms 3.2.1-1
 docker 1:28.2.2-1
 docker-compose 2.37.1-1
@@ -228,7 +229,7 @@ lib32-libgcrypt 1.11.1-1
 lib32-libgpg-error 1.51-1
 lib32-libidn2 2.3.7-1
 lib32-libldap 2.6.10-1
-lib32-libnghttp2 1.65.0-1
+lib32-libnghttp2 1.66.0-1
 lib32-libnghttp3 1.10.1-1
 lib32-libnsl 2.0.1-1
 lib32-libpciaccess 0.18.1-1
@@ -241,7 +242,7 @@ lib32-libxau 1.0.11-2
 lib32-libxcb 1.17.0-1
 lib32-libxcrypt 4.4.38-1
 lib32-libxdmcp 1.1.5-1
-lib32-libxml2 2.14.3-1
+lib32-libxml2 2.14.4-1
 lib32-libxshmfence 1.3.3-1
 lib32-llvm-libs 1:20.1.6-1
 lib32-ncurses 6.5-2
@@ -338,7 +339,7 @@ libnetfilter_conntrack 1.0.9-2
 libnewt 0.52.25-1
 libnfnetlink 1.0.2-2
 libnftnl 1.2.9-1
-libnghttp2 1.65.0-1
+libnghttp2 1.66.0-1
 libnghttp3 1.10.1-1
 libngtcp2 1.13.0-1
 libnice 0.1.22-2
@@ -429,7 +430,7 @@ libxinerama 1.1.5-2
 libxkbcommon 1.10.0-1
 libxkbcommon-x11 1.10.0-1
 libxkbfile 1.1.3-1
-libxml2 2.14.3-1
+libxml2 2.14.4-1
 libxmu 1.2.1-1
 libxpresent 1.0.1-2
 libxrandr 1.5.4-1
@@ -470,7 +471,7 @@ man-db 2.13.1-1
 mbedtls 3.6.3-1
 md4c 0.5.2-1
 mesa 1:25.1.3-3
-meson 1.8.2-1
+meson 1.8.2-2
 minizip 1:1.3.1-2
 mkinitcpio 39.2-3
 mkinitcpio-busybox 1.36.1-1
@@ -555,7 +556,8 @@ protobuf 31.1-1
 psmisc 23.7-1
 pugixml 1.15-2
 python 3.13.3-1
-python-certifi 2025.04.26-1
+python-cairo 1.28.0-1
+python-certifi 2025.06.15-1
 python-charset-normalizer 3.4.2-1
 python-gobject 3.52.3-3
 python-idna 3.10-2
@@ -664,7 +666,7 @@ webrtc-audio-processing-1 1.3-5
 wf-recorder 0.5.0-2
 wget 1.25.0-2
 which 2.23-1
-windsurf 1.10.3-1
+windsurf 1.10.5-1
 wireguard-tools 1.0.20250521-1
 wireplumber 0.5.10-1
 wl-clipboard 1:2.2.1-2
@@ -690,12 +692,12 @@ xf86-video-amdgpu 23.0.0-2
 xh 0.24.1-1
 xkeyboard-config 2.45-1
 xorg-fonts-encodings 1.1.0-1
-xorg-server-common 21.1.17-1
+xorg-server-common 21.1.18-1
 xorg-setxkbmap 1.3.4-2
 xorg-xkbcomp 1.4.7-1
 xorg-xprop 1.2.8-1
 xorg-xset 1.2.5-2
-xorg-xwayland 24.1.7-1
+xorg-xwayland 24.1.8-1
 xorgproto 2024.1-2
 xsel 1.2.1-2
 xvidcore 1.3.7-3
@@ -707,7 +709,7 @@ yay 12.5.0-1
 yazi 25.4.8-1
 yt-dlp 2025.06.09-1
 z 1.12-1
-zen-browser-bin 1.13.2b-1
+zen-browser-bin 1.13.2b-2
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1

@@ -14,5 +14,6 @@ export const BLUETOOTH_POWER_TOGGLE = () => {
 
 export const BLUETOOTH_POWER_OPEN = () => {
   // RUN: open terminal with bluetooth util
-  Utils.execAsync(`kitty bluetoothctl`);
+  // Utils.execAsync(`kitty bluetoothctl`);
+  Utils.execAsync(`blueman-manager`);
 }
