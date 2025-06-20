@@ -1,5 +1,5 @@
 7zip 24.09-3
-abseil-cpp 20250512.0-1
+abseil-cpp 20250512.1-1
 acl 2.3.2-1
 ada 3.2.1-1
 adwaita-cursors 48.1-1
@@ -81,7 +81,7 @@ efibootmgr 18-3
 efivar 39-1
 electron34 34.5.8-1
 expat 2.7.1-1
-eza 0.21.4-1
+eza 0.21.5-1
 fakeroot 1.37.1.2-1
 fd 10.2.0-1
 ffmpeg 2:7.1.1-4
@@ -199,7 +199,7 @@ kitty 0.42.1-1
 kitty-shell-integration 0.42.1-1
 kitty-terminfo 0.42.1-1
 kmod 34.2-1
-kpipewire 6.3.5-1
+kpipewire 6.4.0-1
 krb5 1.21.3-1
 kstatusnotifieritem 6.15.0-1
 kwindowsystem 6.15.0-1
@@ -252,7 +252,7 @@ lib32-spirv-tools 1:1.4.313.0-1
 lib32-systemd 257.6-1
 lib32-util-linux 2.41-1
 lib32-vulkan-icd-loader 1.4.313.0-1
-lib32-vulkan-radeon 1:25.1.3-3
+lib32-vulkan-radeon 1:25.1.4-1
 lib32-wayland 1.23.1-1
 lib32-xcb-util-keysyms 0.4.1-2
 lib32-xz 5.8.1-1
@@ -450,7 +450,7 @@ lilv 0.24.26-1
 linux-api-headers 6.15-1
 linux-firmware 20250508.788aadc8-2
 linux-firmware-whence 20250508.788aadc8-2
-linux-lts 6.12.33-1
+linux-lts 6.12.34-1
 linux-zen 6.15.2.zen1-1
 linux-zen-headers 6.15.2.zen1-1
 llhttp 9.2.1-2
@@ -470,7 +470,7 @@ make 4.4.1-2
 man-db 2.13.1-1
 mbedtls 3.6.3-1
 md4c 0.5.2-1
-mesa 1:25.1.3-3
+mesa 1:25.1.4-1
 meson 1.8.2-2
 minizip 1:1.3.1-2
 mkinitcpio 39.2-3
@@ -573,7 +573,7 @@ qt6-svg 6.9.1-1
 qt6-translations 6.9.1-1
 qt6-wayland 6.9.1-1
 rav1e 0.7.1-1
-rclone 1.70.0-1
+rclone 1.70.1-1
 re2 1:20240702-5
 readline 8.2.013-2
 reflector 2023-3
@@ -659,7 +659,7 @@ vial-appimage v0.7.3-1
 vid.stab 1.1.1-2
 vmaf 3.0.0-1
 vulkan-icd-loader 1.4.313.0-1
-vulkan-radeon 1:25.1.3-3
+vulkan-radeon 1:25.1.4-1
 wayland 1.23.1-2
 wayland-protocols 1.45-1
 webrtc-audio-processing-1 1.3-5
@@ -709,7 +709,7 @@ yay 12.5.0-1
 yazi 25.4.8-1
 yt-dlp 2025.06.09-1
 z 1.12-1
-zen-browser-bin 1.13.2b-2
+zen-browser-bin 1.13.2b-3
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1
