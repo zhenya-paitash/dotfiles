@@ -52,7 +52,7 @@ cantarell-fonts 1:0.303.1-2
 check 0.15.2-3
 cliphist 1:0.6.1-1
 cmake 4.0.3-1
-containerd 2.1.2-1
+containerd 2.1.3-1
 coreutils 9.7-1
 cppdap 1.58.0-2
 cryptsetup 2.7.5-2
@@ -174,7 +174,7 @@ hyprlock 0.8.2-1
 hyprpicker 0.4.5-2
 hyprutils 0.7.1-1
 hyprwayland-scanner 0.4.4-1
-iana-etc 20250502-1
+iana-etc 20250612-1
 icu 76.1-1
 imagemagick 7.1.1.47-2
 imath 3.1.12-4
@@ -222,11 +222,11 @@ lib32-json-c 0.18-2
 lib32-keyutils 1.6.3-2
 lib32-krb5 1.21.3-1
 lib32-libcap 2.76-1
-lib32-libdrm 2.4.124-1
+lib32-libdrm 2.4.125-1
 lib32-libelf 0.193-1
 lib32-libffi 3.5.0-1
 lib32-libgcrypt 1.11.1-1
-lib32-libgpg-error 1.51-1
+lib32-libgpg-error 1.55-1
 lib32-libidn2 2.3.7-1
 lib32-libldap 2.6.10-1
 lib32-libnghttp2 1.66.0-1
@@ -499,7 +499,7 @@ nspr 4.36-1
 nss 3.112-1
 ntfs-3g 2022.10.3-2
 nushell 0.105.1-1
-nwg-look 1.0.5-1
+nwg-look 1.0.6-1
 obs-studio 31.0.3-2
 obsidian 1.8.10-1
 ocl-icd 2.3.3-1
@@ -519,7 +519,7 @@ p11-kit 0.25.5-1
 pacman 7.0.0.r6.gc685ae6-6
 pacman-mirrorlist 20250522-1
 pahole 1:1.30-2
-pam 1.7.0-2
+pam 1.7.1-1
 pambase 20230918-2
 pango 1:1.56.3-1
 pangomm 2.46.4-1
@@ -543,7 +543,7 @@ pipewire-jack 1:1.4.5-1
 pipewire-pulse 1:1.4.5-1
 pixman 0.46.2-1
 pkcs11-helper 1.30.0-2
-pkgconf 2.4.3-1
+pkgconf 2.5.0-1
 polkit 126-2
 popt 1.19-2
 portaudio 1:19.7.0-3
@@ -564,7 +564,7 @@ python-idna 3.10-2
 python-packaging 25.0-1
 python-requests 2.32.4-1
 python-tqdm 4.67.1-2
-python-urllib3 2.4.0-1
+python-urllib3 2.5.0-1
 qbittorrent 5.1.0-1
 qt6-base 6.9.1-1
 qt6-declarative 6.9.1-1
