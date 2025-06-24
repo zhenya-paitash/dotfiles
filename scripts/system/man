@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Проверяем, установлен ли bat
+if ! command -v bat &> /dev/null; then
+    echo "Ошибка: 'bat' не установлен. Установите его:"
+    echo "sudo pacman -S bat"
+    exit 1
+fi
+
+# Если аргументов нет, выводим справку
+if [ $# -eq 0 ]; then
+    echo "Использование: batman [команда]"
+    echo "Пример: batman ls"
+    exit 1
+fi
+
+# Получаем man-страницу, чистим от лишних символов и передаем в bat
+man -P cat "$@" | col -bx | bat --language=man --plain --paging=always

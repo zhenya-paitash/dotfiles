@@ -24,6 +24,9 @@ alias llt2="lls --tree --level=2"
 alias lt3="ls --tree --level=3"
 alias llt3="lls --tree --level=3"
 
+# man
+alias ruman="LANG=ru_RU.UTF-8 man"
+
 # kitty
 abbr icat 'kitty +kitten icat '
 
