@@ -33,8 +33,8 @@ return {
         -- TODO: check if `obsidian plugin run`
         require "obsidian"
         vim.cmd "tabnew"
-        -- vim.cmd "tcd ~/obsidian/zhenyapaitash"
-        vim.cmd "tcd ~/rclone/yadisk/obsidian/zhenyapaitash"
+        vim.cmd "tcd ~/obsidian/vault_zhenyapaitash"
+        -- vim.cmd "tcd ~/rclone/yadisk/obsidian/zhenyapaitash"
         require("nvim-tree.api").tree.open()
       end,
       mode = "n",
@@ -44,12 +44,12 @@ return {
     { -- sync obsidian with github repository
       "<leader>ogs",
       function()
-        local script_path = "$HOME/scripts/obsidian/sync_github"
+        local script_path = "$HOME/scripts/obsidian/sync_obsidian syncasync"
         local cmd = "!bash " .. script_path
         vim.api.nvim_command(cmd)
       end,
       mode = "n",
-      desc = "Obsidian Github Sync",
+      desc = "Obsidian Yadisk Sync",
     },
   },
 
@@ -59,8 +59,8 @@ return {
 
     require("obsidian").setup {
       workspaces = {
-        -- { name = "personal", path = "~/obsidian/zhenyapaitash" },
-        { name = "personal", path = "~/rclone/yadisk/obsidian/zhenyapaitash" },
+        { name = "personal", path = "~/obsidian/vault_zhenyapaitash" },
+        -- { name = "personal", path = "~/rclone/yadisk/obsidian/zhenyapaitash" },
       },
       completion = {
         nvim_cmp = true,

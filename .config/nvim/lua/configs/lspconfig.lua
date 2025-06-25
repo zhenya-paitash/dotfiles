@@ -8,7 +8,7 @@ local lspconfig = require "lspconfig"
 local servers = {
   "html",
   "cssls",
-  "bashls", -- bash-language-server
+  -- "bashls", -- bash-language-server
   -- "tsserver",  -- TODO: switch from this
   "ts_ls",
   -- "clangd",

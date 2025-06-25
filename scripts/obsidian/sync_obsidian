@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+
+# Only one process 
+LOCKFILE="/tmp/sync_obsidian.lock"
+# Попытка получить блокировку, иначе выйти
+exec 9>"$LOCKFILE"
+if ! flock -n 9; then
+  notify-send -u low -t 5000 "⏳ Sync already running" "Another sync_obsidian is still in progress."
+  exit 1
+fi
+
+# Параметры
+LOCAL_DIR="$HOME/obsidian/vault_zhenyapaitash"
+REMOTE_NAME="yadisk"
+REMOTE_DIR="obsidian/vault_zhenyapaitash"
+LOG_FILE="$HOME/.cache/rclone/yadisk_sync.log"
+MODE="$1"
+
+if [[ -z "$MODE" ]]; then
+  echo "Usage: sync_yadisk {sync|copy|check|bisync|syncasync}"
+  exit 1
+fi
+
+run_sync() {
+  START_TIME=$(date '+%Y-%m-%d %H:%M:%S')
+  echo "[$START_TIME] Starting rclone $1..." >> "$LOG_FILE"
+
+  case "$1" in
+    sync)
+      rclone sync "$LOCAL_DIR" "$REMOTE_NAME:$REMOTE_DIR" \
+        --log-file "$LOG_FILE" --log-level INFO --progress \
+        --size-only --fast-list
+      ;;
+    copy)
+      rclone copy "$LOCAL_DIR" "$REMOTE_NAME:$REMOTE_DIR" \
+        --log-file "$LOG_FILE" --log-level INFO --progress
+      ;;
+    check)
+      rclone check "$LOCAL_DIR" "$REMOTE_NAME:$REMOTE_DIR" \
+        --one-way --log-file "$LOG_FILE" --log-level INFO
+      ;;
+    bisync)
+      rclone bisync "$LOCAL_DIR" "$REMOTE_NAME:$REMOTE_DIR" \
+        --log-file "$LOG_FILE" --log-level INFO
+      ;;
+    *)
+      echo "Unknown mode: $1"
+      return 1
+      ;;
+  esac
+
+  STATUS=$?
+  END_TIME=$(date '+%Y-%m-%d %H:%M:%S')
+
+  if [ $STATUS -eq 0 ]; then
+    echo "[$END_TIME] ✅ rclone $1 completed successfully." >> "$LOG_FILE"
+    notify-send -t 60000 "🟢 Obsidian $1 (async)" "✅ Completed at $END_TIME"
+  else
+    echo "[$END_TIME] ❌ rclone $1 failed with code $STATUS." >> "$LOG_FILE"
+    notify-send -u critical -t 0 "🔴 Obsidian $1 FAILED" "❌ Exit code: $STATUS\n$END_TIME"
+  fi
+
+  return $STATUS
+}
+
+case "$MODE" in
+  sync|copy|check|bisync)
+    run_sync "$MODE"
+    ;;
+  syncasync)
+    (
+      run_sync "sync"
+    ) >/dev/null 2>&1 &
+    disown
+    echo "Started async sync in background"
+    ;;
+  *)
+    echo "Unknown mode: $MODE"
+    echo "Usage: sync_yadisk {sync|copy|check|bisync|syncasync}"
+    exit 1
+    ;;
+esac
+

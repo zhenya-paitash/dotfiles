@@ -296,6 +296,20 @@ return {
     dependencies = "kevinhwang91/promise-async",
   },
 
+  -- { -- FOLDER experiment
+  --   "nicolas-martin/region-folding.nvim",
+  --   event = { "BufReadPost", "BufNewFile" },
+  --   opts = {},
+  --   init = function()
+  --     -- Enable treesitter folding (required for function folding)
+  --     vim.opt.foldmethod = "expr"
+  --     vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+  --     vim.opt.foldenable = true
+  --     vim.opt.foldlevel = 99
+  --     vim.opt.foldlevelstart = 99
+  --   end,
+  -- },
+
   { -- SESSIONS
     "folke/persistence.nvim",
     event = "BufReadPre",
@@ -427,6 +441,7 @@ return {
   --│             ON  `OXY2DEV/markview.nvim`: Улучшенное отображение Markdown файлов.
   --│             ON  `iamcco/markdown-preview.nvim`: Markdown предпросмотр в браузере.
   --│             OFF `3rd/image.nvim`: Просмотр изображений в терминале.
+  --│             OFF `timantipov/md-table-tidy.nvim`: Простое редактирование таблиц в Markdown. Конфликтит с `OXY2DEV/markview.nvim`.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   { -- NOTES
@@ -454,6 +469,16 @@ return {
   --   lazy = "BufReadPost",
   --   ft = "markdown",
   --   config = require("plugins.setup.notes.image-nvim").config,
+  -- },
+
+  -- { -- MD TABLES
+  --   "timantipov/md-table-tidy.nvim",
+  --   ft = "markdown",
+  --   cmd = { "TableTidy" },
+  --   opts = {
+  --     padding = 1, -- number of spaces for cell padding
+  --     key = "<leader>tt", -- key for command :TableTidy<CR>
+  --   },
   -- },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
@@ -679,6 +704,17 @@ return {
     -- keys = require("plugins.setup.utils.codesnap").keys,
     opts = require("plugins.setup.utils.codesnap").opts,
   },
+
+  --┌───────────┬─────────────────────────────────────────────────────────────┐
+  --├ @category   JUST FOR FUN
+  --│
+  --├ @plugins    ON  `seandewar/actually-doom.nvim`: DOOM game in neovim.
+  --└───────────┴─────────────────────────────────────────────────────────────┘
+
+  -- { -- DOOM
+  --   "seandewar/actually-doom.nvim",
+  --   cmd = "Doom",
+  -- },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   ARCHIVE PLUGINS
