@@ -497,40 +497,40 @@ return {
   --├             OFF `olimorris/codecompanion.nvim`: попробую этот новый плагин
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
-  -- { -- SMALL AI COMPLETION
-  --   "Exafunction/codeium.vim",
-  --   event = "BufEnter",
-  --   config = require("plugins.setup.ai.codeium").config,
+  { -- SMALL AI COMPLETION
+    "Exafunction/codeium.vim",
+    event = "BufEnter",
+    config = require("plugins.setup.ai.codeium").config,
+  },
+
+  -- { -- NEOVIM AI -> CURSOR
+  --   "yetone/avante.nvim",
+  --   -- event = "BufReadPost",
+  --   event = "VeryLazy",
+  --   lazy = false,
+  --   opts = require("plugins.setup.ai.avante").opts,
+  --   build = "make", -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
+  --   dependencies = {
+  --     -- "stevearc/dressing.nvim",
+  --     "nvim-lua/plenary.nvim",
+  --     "MunifTanjim/nui.nvim",
+  --   },
   -- },
 
-  { -- NEOVIM AI -> CURSOR
-    "yetone/avante.nvim",
-    -- event = "BufReadPost",
-    event = "VeryLazy",
-    lazy = false,
-    opts = require("plugins.setup.ai.avante").opts,
-    build = "make", -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
-    dependencies = {
-      -- "stevearc/dressing.nvim",
-      "nvim-lua/plenary.nvim",
-      "MunifTanjim/nui.nvim",
-    },
-  },
-
-  {
-    -- WARN: free plan include only 50 messeges per month. Out of tokens on free plan. Next plan: `Developer plan` include 600 messages and cost $50/month.
-    "augmentcode/augment.vim",
-    event = "VeryLazy",
-    -- cmd = { "Augment" },
-    init = function()
-      -- augment `workspace` folders
-      vim.g.augment_workspace_folders = { "~/work/github.com/zhenya-paitash/app-organify" }
-      vim.g.augment_disable_tab_mapping = true
-      -- vim.g.augment_disable_completions = true
-      -- Use Ctrl-Y to accept a suggestion
-      vim.keymap.set("i", "<C-f>", "<cmd>call augment#Accept()<CR>", { silent = true })
-    end,
-  },
+  -- {
+  --   -- WARN: free plan include only 50 messeges per month. Out of tokens on free plan. Next plan: `Developer plan` include 600 messages and cost $50/month.
+  --   "augmentcode/augment.vim",
+  --   event = "VeryLazy",
+  --   -- cmd = { "Augment" },
+  --   init = function()
+  --     -- augment `workspace` folders
+  --     vim.g.augment_workspace_folders = { "~/work/github.com/zhenya-paitash/app-organify" }
+  --     vim.g.augment_disable_tab_mapping = true
+  --     -- vim.g.augment_disable_completions = true
+  --     -- Use Ctrl-Y to accept a suggestion
+  --     vim.keymap.set("i", "<C-f>", "<cmd>call augment#Accept()<CR>", { silent = true })
+  --   end,
+  -- },
 
   -- { -- Code Companion
   --   "olimorris/codecompanion.nvim",

@@ -56,7 +56,7 @@ cmake 4.0.3-1
 containerd 2.1.3-1
 coreutils 9.7-1
 cppdap 1.58.0-2
-cryptsetup 2.7.5-2
+cryptsetup 2.8.0-1
 curl 8.14.1-1
 cursor-bin 1.1.6-1
 dav1d 1.5.1-1
@@ -250,8 +250,8 @@ lib32-ncurses 6.5-2
 lib32-openssl 1:3.5.0-1
 lib32-pam 1.7.0-1
 lib32-spirv-tools 1:1.4.313.0-1
-lib32-systemd 257.6-1
-lib32-util-linux 2.41-1
+lib32-systemd 257.7-1
+lib32-util-linux 2.41.1-1
 lib32-vulkan-icd-loader 1.4.313.0-1
 lib32-vulkan-radeon 1:25.1.4-1
 lib32-wayland 1.23.1-1
@@ -636,9 +636,9 @@ sudo 1.9.16.p2-2
 svt-av1 3.0.2-1
 swappy 1.5.1-2
 swww 0.10.3-1
-systemd 257.6-1
-systemd-libs 257.6-1
-systemd-sysvcompat 257.6-1
+systemd 257.7-1
+systemd-libs 257.7-1
+systemd-sysvcompat 257.7-1
 tar 1.35-2
 tdb 1.4.13-1
 telegram-desktop 5.15.4-2
@@ -663,12 +663,12 @@ ttf-nerd-fonts-symbols-common 3.4.0-1
 tzdata 2025b-1
 uchardet 0.0.8-3
 unibilium 2.1.2-1
-unrar 1:7.1.7-1
+unrar 1:7.1.8-1
 unzip 6.0-22
 upower 1.90.9-1
 uthash 2.3.0-2
-util-linux 2.41-4
-util-linux-libs 2.41-4
+util-linux 2.41.1-1
+util-linux-libs 2.41.1-1
 v4l-utils 1.30.1-1
 v4l2loopback-dkms 0.15.0-1
 vapoursynth R70-2
@@ -725,7 +725,7 @@ xz 5.8.1-1
 yadm 3.4.0-1
 yay 12.5.0-1
 yazi 25.4.8-1
-yt-dlp 2025.06.09-1
+yt-dlp 2025.06.25-1
 z 1.12-1
 zen-browser-bin 1.13.2b-3
 zeromq 4.3.5-2
