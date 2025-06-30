@@ -18,7 +18,11 @@ export function Bar(monitor: number = 0) {
     // margins: [0, 900, 0, 900],
 
     // default: for `bar` style
-    anchor: ['bottom', 'left', 'right'],
+    // anchor: ['bottom', 'left', 'right'],
+    // margins: [2, 10, 0, 10],
+
+    // default: for `bar` style
+    anchor: ['top', 'left', 'right'],
     margins: [2, 10, 0, 10],
 
     className: 'bar',

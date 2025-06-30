@@ -23,6 +23,7 @@ const options: Opts = {
       `${_STYLES_DIR}/core.scss`,
       `${_STYLES_DIR}/themes/_generated.scss`,
       `${_STYLES_DIR}/widgets/notifications.scss`,
+      `${_STYLES_DIR}/widgets/notifications.2.scss`,
       `${_STYLES_DIR}/widgets/brightness-overlay.scss`,
       `${_STYLES_DIR}/widgets/volume-overlay.scss`,
       `${_STYLES_DIR}/widgets/app-launcher.scss`,

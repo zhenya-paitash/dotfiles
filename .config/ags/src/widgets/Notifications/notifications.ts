@@ -34,11 +34,11 @@ export function Notifications(monitor: number = 0) {
     // anchor: ['top'],
     // margins: [0, 0, 0, 0],
 
-    // anchor: ['top', 'right'],
-    // margins: [0, 8, 0, 0],
-
-    anchor: ['bottom', 'right'],
+    anchor: ['top', 'right'],
     margins: [0, 8, 0, 0],
+
+    // anchor: ['bottom', 'right'],
+    // margins: [0, 8, 0, 0],
 
     layer: 'overlay',
 

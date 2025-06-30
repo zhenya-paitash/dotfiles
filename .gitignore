@@ -29,8 +29,6 @@
 
 !.config/ags**
 .config/ags/src/styles/themes/_generated.scss
-!.config/atac**
-.config/atac/atac.log
 !.config/bat**
 !.config/btop**
 .config/btop.log
