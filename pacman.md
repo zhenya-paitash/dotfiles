@@ -17,7 +17,6 @@ aom 3.12.1-1
 aquamarine 0.8.0-5
 archlinux-keyring 20250430.1-1
 at-spi2-core 2.56.3-1
-atac 0.20.2-1
 atkmm 2.28.4-1
 attr 2.5.2-1
 audit 4.0.5-1
@@ -74,7 +73,7 @@ diffutils 3.12-2
 discord-canary 0.0.706-1
 dkms 3.2.1-1
 docker 1:28.3.0-1
-docker-compose 2.37.3-1
+docker-compose 2.38.0-1
 double-conversion 3.3.1-1
 duktape 2.7.0-7
 e2fsprogs 1.47.2-2
