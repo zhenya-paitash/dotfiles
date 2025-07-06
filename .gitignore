@@ -57,6 +57,7 @@
 !.config/yt-dlp**
 !.config/qBittorrent/themes**
 !.config/swappy**
+!.config/swayimg**
 !.config/posting**
 
 !.config/starship.toml

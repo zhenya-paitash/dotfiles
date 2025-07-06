@@ -361,8 +361,25 @@ return {
         ---@param path obsidian.Path the absolute path to the image file
         ---@return string
         img_text_func = function(client, path)
-          path = client:vault_relative_path(path) or path
-          return string.format("![%s](%s)", path.name, path)
+          -- path = client:vault_relative_path(path) or path
+          -- return string.format("![%s](%s)", path.name, path)
+
+          local base = os.date "%Y-%m-%d-%H-%M-%S"
+          local png = path:parent() / (base .. ".png")
+          local webp = path:parent() / (base .. ".webp")
+
+          -- Переименовываем файл как .png
+          path:rename(png)
+
+          -- Асинхронно конвертируем в webp и удаляем png
+          vim.defer_fn(function()
+            os.execute(string.format('mogrify -format webp "%s"', tostring(png)))
+            os.remove(tostring(png))
+          end, 10)
+
+          -- Возвращаем ссылку как Markdown (название = имя файла, путь = относительный путь)
+          local rel_path = client:vault_relative_path(webp) or tostring(webp)
+          return string.format("![%s](%s)", base .. ".webp", rel_path)
         end,
       },
     }

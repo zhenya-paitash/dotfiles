@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# pacman
 yes | sudo pacman -Scc 
+
+# yay
 yes | yay -Scc
+
+# bun
+rm -rf ~/.bun/install/cache/
 

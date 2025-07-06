@@ -1,0 +1,29 @@
+#!/bin/bash
+
+faces=("F" "B" "R" "L" "U" "D")
+suffixes=("" "'" "2")
+last_face_index=-1
+
+for ((i=0; i<25; i++)); do
+    # Выбираем грань, отличную от предыдущей
+    while :; do
+        face_index=$((RANDOM % 6))
+        [[ $face_index -ne $last_face_index ]] && break
+    done
+    last_face_index=$face_index
+    
+    # Выбираем случайный суффикс
+    suffix_index=$((RANDOM % 3))
+    
+    # Формируем ход
+    move="${faces[$face_index]}${suffixes[$suffix_index]}"
+    
+    # Добавляем в массив
+    scramble+=("$move")
+done
+
+# Выводим с разбивкой по 5 ходов в строку
+echo "WCA скрамбл (25 ходов):"
+for ((i=0; i<25; i+=5)); do
+    echo "${scramble[@]:$i:5}"
+done

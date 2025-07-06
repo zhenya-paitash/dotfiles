@@ -1,35 +1,54 @@
 #!/bin/bash
 
-# 1. `find . -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -print0`:
-# 	* `find` is a command that searches for files based on various criteria.
-# 	* `.` refers to the current working directory.
-# 	* `-maxdepth 1` limits the search to only the current directory (i.e., it doesn't recurse into subdirectories).
-# 	* `-type f` specifies that only files (not directories) should be considered.
-# 	* `-iname` specifies a case-insensitive search for files with the specified extensions.
-# 	* `\( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \)` is a group of conditions that match files with `.jpg`, `.png`, or `.jpeg` extensions.
-# 	* `-print0` prints the names of the matching files, separated by null characters (`\0`) instead of newlines.
+depth=1
+
+# A simple command-line argument parser
+if [ "$1" == "--depth" ]; then
+    # Check if a value is provided for --depth
+    if [ -n "$2" ]; then
+        # Check if the value is a positive integer
+        if [[ "$2" =~ ^[1-9][0-9]*$ ]]; then
+            depth=$2
+        else
+            echo "Error: --depth value must be a positive integer."
+            exit 1
+        fi
+    else
+        echo "Error: --depth requires a value."
+        exit 1
+    fi
+fi
+
+# 1. `find . -maxdepth "$depth" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -print0`:
+# * `find` is a command that searches for files based on various criteria.
+# * `.` refers to the current working directory.
+# * `-maxdepth N` limits the search to N levels deep (default is 1).
+# * `-type f` specifies that only files (not directories) should be considered.
+# * `-iname` specifies a case-insensitive search for files with the specified extensions.
+# * `\( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \)` is a group of conditions that match files with `.jpg`, `.png`, or `.jpeg` extensions.
+# * `-print0` prints the names of the matching files, separated by null characters (`\0`) instead of newlines.
 # 2. `xargs -0 mogrify -format webp`:
-# 	* `xargs` is a command that takes input from standard input (in this case, the output of the `find` command) and uses it as arguments for a command (in this case, `mogrify`).
-# 	* `-0` tells `xargs` to expect input items to be separated by null characters (`\0`) instead of newlines.
-# 	* `mogrify` is a command that converts images to a specified format.
-# 	* `-format webp` specifies that the images should be converted to WebP format.
-# 3. `find . -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -delete`:
-# 	* This is another `find` command that searches for files with the same criteria as before (`.jpg`, `.png`, or `.jpeg` extensions).
-# 	* `-delete` specifies that the matching files should be deleted.
+# * `xargs` is a command that takes input from standard input (in this case, the output of the `find` command) and uses it as arguments for a command (in this case, `mogrify`).
+# * `-0` tells `xargs` to expect input items to be separated by null characters (`\0`) instead of newlines.
+# * `mogrify` is a command that converts images to a specified format.
+# * `-format webp` specifies that the images should be converted to WebP format.
+# 3. `find . -maxdepth "$depth" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -delete`:
+# * This is another `find` command that searches for files with the same criteria as before (`.jpg`, `.png`, or `.jpeg` extensions).
+# * `-delete` specifies that the matching files should be deleted.
 # 4. `notify-send -t 60000 "Mogrify completed!" "$(date)"`:
-# 	* `notify-send` is a command that sends a desktop notification.
-# 	* `-t 60000` specifies that the notification should be displayed for 60 seconds (60000 milliseconds).
-# 	* `"Mogrify completed!"` is the title of the notification.
-# 	* `$(date)` is a command substitution that inserts the current date and time into the notification message.
+# * `notify-send` is a command that sends a desktop notification.
+# * `-t 60000` specifies that the notification should be displayed for 60 seconds (60000 milliseconds).
+# * `"Mogrify completed!"` is the title of the notification.
+# * `$(date)` is a command substitution that inserts the current date and time into the notification message.
 # 5. `exit`:
-# 	* This simply exits the script.
+# * This simply exits the script.
 
 # 1. Find all `.jpg`, `.png`, and `.jpeg` files in the current directory.
 # 2. Convert each of these files to WebP format using `mogrify`.
 # 3. Delete the original `.jpg`, `.png`, and `.jpeg` files.
 # 4. Send a desktop notification indicating that the conversion is complete, along with the current date and time.
 # 5. Exit the script.
-find . -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -print0 | xargs -0 mogrify -format webp
-    find . -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -delete
-    notify-send -t 60000 "Mogrify completed!" "$(date)"; exit
-
+find . -maxdepth "$depth" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -print0 | xargs -0 mogrify -format webp
+find . -maxdepth "$depth" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -delete
+notify-send -t 60000 "Mogrify completed!" "$(date)"
+exit

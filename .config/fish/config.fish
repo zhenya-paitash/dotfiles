@@ -83,8 +83,21 @@ alias lofi="hyprctl dispatch exec \"mpv --no-border --no-terminal \"https://yout
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
+# =============
+#      AI
+# =============
 # opencode
 alias opencode='/home/zh/go/bin/opencode'
+
+# gemini
+function gemini
+    set -lx GOOGLE_CLOUD_PROJECT (cat ~/private/GOOGLE_CLOUD_PROJECT)
+    set -lx GEMINI_API_KEY (cat ~/private/GEMINI_API_KEY)
+    command gemini $argv
+end
+
+# swayimg
+alias swayimg="swayimg -C $HOME/.config/swayimg/swayimgrc"
 
 # uv
 fish_add_path "/home/zh/.local/bin"

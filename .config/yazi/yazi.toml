@@ -21,6 +21,7 @@ open = [
   { run = 'swww img "$@" --transition-type center --transition-step 200 --transition-fps 60', desc = "Set wallpaper" },
   { run = '$HOME/scripts/ags/ags_get_colorscheme_from_image_custom "$@" & swww img "$@" --transition-type center --transition-step 200 --transition-fps 60', desc = "Set wallpaper with colorscheme custom" },
   { run = '$HOME/scripts/ags/ags_get_colorscheme_from_image_matugen "$@" & swww img "$@" --transition-type center --transition-step 200 --transition-fps 60', desc = "Set wallpaper with colorscheme matugen" },
+  { run = 'swayimg -C $HOME/.config/swayimg/swayimgrc -g -f *', desc = "Gallery", for = "linux" },
 ]
 edit = [
 	{ run = 'nvim "$@"', desc = "Neovim", block = true },
