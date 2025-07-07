@@ -38,7 +38,7 @@ bluez-utils 5.83-1
 boost-libs 1.88.0-3
 brightnessctl 0.5.1-3
 brotli 1.1.0-3
-btop 1.4.3-3
+btop 1.4.4-1
 btrfs-progs 6.15-1
 bzip2 1.0.8-6
 c-ares 1.34.5-1
@@ -205,7 +205,7 @@ kstatusnotifieritem 6.15.0-1
 kwindowsystem 6.15.0-1
 l-smash 2.14.5-4
 lame 3.100-5
-lazygit 0.52.0-1
+lazygit 0.53.0-1
 lcms2 2.17-1
 leancrypto 1.5.0-1
 less 1:668-1
@@ -466,9 +466,9 @@ linux-firmware-other 20250627-1
 linux-firmware-radeon 20250627-1
 linux-firmware-realtek 20250627-1
 linux-firmware-whence 20250627-1
-linux-lts 6.12.35-1
-linux-zen 6.15.4.zen2-1
-linux-zen-headers 6.15.4.zen2-1
+linux-lts 6.12.36-1
+linux-zen 6.15.5.zen1-1
+linux-zen-headers 6.15.5.zen1-1
 llhttp 9.2.1-2
 llvm-libs 20.1.7-1
 lm_sensors 1:3.6.2-1

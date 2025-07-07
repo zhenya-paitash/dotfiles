@@ -125,7 +125,7 @@ all = no
 fsmon = yes
 
 # CUSTOM
-fsmon = no
+# fsmon = no
 
 ################################################################################
 # Font configuration
