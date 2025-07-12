@@ -335,7 +335,7 @@ return {
 
   { -- SMOOTH CURSOR
     "sphamba/smear-cursor.nvim",
-    enabled = false,
+    -- enabled = false,
     event = "VeryLazy",
     opts = require("plugins.setup.interface.smear-cursor").opts,
     init = function()
