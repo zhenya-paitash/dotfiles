@@ -49,6 +49,7 @@ alias ssh='kitten ssh'
 # alias fzf='fzf --preview "bat --color=always {}" --height 60% --inline-info --layout reverse --bind ctrl-u:preview-page-up,ctrl-d:preview-page-down,"ctrl-y:execute-silent(echo -n {+} | wl-copy)+abort"'
 alias fzf='fzf --preview "bat --color=always {}" --height 60% --inline-info --layout reverse --bind ctrl-u:preview-page-up,ctrl-d:preview-page-down,"ctrl-y:execute-silent(readlink -f {} | wl-copy -n)+abort"'
 alias fzfa='fzf --walker-skip="" --preview "bat --color=always {}" --height 60% --inline-info --layout reverse --bind ctrl-u:preview-page-up,ctrl-d:preview-page-down,"ctrl-y:execute-silent(readlink -f {} | wl-copy -n)+abort"'
+alias rgf='fzf --ansi --disabled --query "$argv" --height 100% --inline-info --delimiter ":" --preview "bat --color=always --style=numbers --highlight-line {2} {1}" --preview-window "right:60%:wrap:+{2}-5" --layout reverse --bind ctrl-u:preview-page-up,ctrl-d:preview-page-down,"ctrl-y:execute-silent(readlink -f {1} | wl-copy -n)+abort" --bind "change:reload:rg --vimgrep {q} || true" --prompt "rg> " --bind "enter:accept"'
 
 # tmux
 alias t='tmux'

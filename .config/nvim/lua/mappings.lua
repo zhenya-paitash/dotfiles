@@ -422,6 +422,7 @@ map(MODE.normal, "<leader>pd", "<cmd> lua require('dropbar.api').pick() <CR>", {
 --├ @catecory   FZF
 --└───────────┴─────────────────────────────────────────────────────────────┘
 map(MODE.normal, "<leader>fe", "<cmd> CustomFzf <CR>", { desc = "find all files (fzf)" })
+map(MODE.normal, "<leader>fr", "<cmd> CustomFzfLiveGrep <CR>", { desc = "live grep (fzf)" })
 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   SNACKS

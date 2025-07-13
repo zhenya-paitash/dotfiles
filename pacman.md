@@ -27,7 +27,7 @@ ayatana-ido 0.10.4-1
 aylurs-gtk-shell 1.8.2-2
 base 3-2
 base-devel 1-2
-bash 5.2.037-5
+bash 5.3.0-1
 bat 0.25.0-4
 binutils 2.44+r94+gfe459e33c676-1
 bison 3.8.2-8
@@ -81,7 +81,7 @@ efibootmgr 18-3
 efivar 39-1
 electron34 34.5.8-1
 expat 2.7.1-1
-eza 0.22.0-1
+eza 0.22.1-1
 fakeroot 1.37.1.2-1
 fd 10.2.0-1
 ffmpeg 2:7.1.1-4
@@ -415,7 +415,7 @@ libvpl 2.15.0-1
 libvpx 1.15.0-1
 libvterm 0.3.3-2
 libwacom 2.16.1-1
-libwebp 1.5.0-1
+libwebp 1.6.0-1
 libwireplumber 0.5.10-1
 libx11 1.8.12-1
 libxau 1.0.12-1
@@ -503,7 +503,7 @@ mtdev 1.1.7-1
 mujs 1.3.7-1
 ncdu 2.8.2-3
 ncurses 6.5-4
-neovim 0.11.2-3
+neovim 0.11.3-1
 nettle 3.10.2-1
 networkmanager 1.52.1-1
 ninja 1.12.1-2
@@ -594,7 +594,7 @@ qt6-wayland 6.9.1-1
 rav1e 0.7.1-1
 rclone 1.70.3-1
 re2 1:20240702-5
-readline 8.2.013-2
+readline 8.3.0-3
 reflector 2023-3
 rhash 1.4.4-1
 ripgrep 14.1.1-1
@@ -650,12 +650,12 @@ tinysparql 3.9.2-2
 tmux 3.5_a-1
 tomlplusplus 3.4.0-1
 tpm2-tss 4.1.3-1
-tree-sitter 0.25.6-1
+tree-sitter 0.25.7-1
 tree-sitter-c 0.24.1-1
 tree-sitter-lua 0.4.0-1
 tree-sitter-markdown 0.5.0-1
 tree-sitter-query 0.6.2-1
-tree-sitter-vim 0.6.0-1
+tree-sitter-vim 0.7.0-1
 tree-sitter-vimdoc 4.0.0-1
 tslib 1.23-1
 ttf-dejavu 2.37+18+g9b5d1b2f-7
