@@ -21,7 +21,7 @@ atkmm 2.28.4-1
 attr 2.5.2-1
 audit 4.0.5-1
 autoconf 2.72-1
-automake 1.18-1
+automake 1.18.1-1
 avahi 1:0.8+r194+g3f79789-3
 ayatana-ido 0.10.4-1
 aylurs-gtk-shell 1.8.2-2
@@ -110,7 +110,7 @@ gdk-pixbuf2 2.42.12-2
 geoclue 2.7.2-1
 gettext 0.25.1-1
 giflib 5.2.2-2
-git 2.50.1-1
+git 2.50.1-3
 git-delta 0.18.2-4
 gjs 2:1.84.2-1
 glib-networking 1:2.80.1-1
@@ -176,7 +176,7 @@ hyprutils 0.8.1-1
 hyprwayland-scanner 0.4.5-1
 iana-etc 20250612-1
 icu 76.1-1
-imagemagick 7.1.1.47-2
+imagemagick 7.1.2.0-1
 imath 3.1.12-4
 iproute2 6.15.0-1
 iptables 1:1.8.11-2
@@ -207,7 +207,7 @@ l-smash 2.14.5-4
 lame 3.100-5
 lazygit 0.53.0-1
 lcms2 2.17-1
-leancrypto 1.5.0-1
+leancrypto 1.5.1-1
 less 1:668-1
 lib32-audit 4.0.5-1
 lib32-brotli 1.1.0-1
@@ -259,7 +259,7 @@ lib32-xz 5.8.1-1
 lib32-zlib 1.3.1-2
 lib32-zstd 1.5.7-2
 libarchive 3.8.1-1
-libass 0.17.3-1
+libass 0.17.4-1
 libassuan 3.0.0-1
 libasyncns 1:0.8+r3+g68cd5af-3
 libavc1394 0.5.4-6
@@ -352,7 +352,7 @@ libnl 3.11.0-1
 libnm 1.52.1-1
 libnotify 0.8.6-1
 libnsl 2.0.1-1
-libogg 1.3.5-2
+libogg 1.3.6-1
 libopenmpt 0.8.1-1
 libp11-kit 0.25.5-1
 libpcap 1.10.5-3
@@ -466,7 +466,7 @@ linux-firmware-other 20250708-1
 linux-firmware-radeon 20250708-1
 linux-firmware-realtek 20250708-1
 linux-firmware-whence 20250708-1
-linux-lts 6.12.37-1
+linux-lts 6.12.38-1
 linux-zen 6.15.6.zen1-1
 linux-zen-headers 6.15.6.zen1-1
 llhttp 9.2.1-2
@@ -497,7 +497,7 @@ mobile-broadband-provider-info 20250613-1
 mpdecimal 4.0.1-1
 mpfr 4.2.2-1
 mpg123 1.33.0-1
-mpv 1:0.40.0-3
+mpv 1:0.40.0-4
 msgpack-c 6.1.0-2
 mtdev 1.1.7-1
 mujs 1.3.7-1
@@ -594,7 +594,7 @@ qt6-wayland 6.9.1-1
 rav1e 0.7.1-1
 rclone 1.70.3-1
 re2 1:20240702-5
-readline 8.3.0-3
+readline 8.3.001-1
 reflector 2023-3
 rhash 1.4.4-1
 ripgrep 14.1.1-1
@@ -609,7 +609,7 @@ sassc 3.6.2-5
 sbc 2.0-2
 sdbus-cpp 2.1.0-2
 sdl2-compat 2.32.56-2
-sdl3 3.2.16-1
+sdl3 3.2.18-1
 seatd 0.9.1-1
 sed 4.9-3
 semver 7.7.2-1
@@ -644,13 +644,13 @@ systemd-libs 257.7-1
 systemd-sysvcompat 257.7-1
 tar 1.35-2
 tdb 1.4.13-1
-telegram-desktop 5.16.3-1
+telegram-desktop 5.16.4-1
 texinfo 7.2-1
 tinysparql 3.9.2-2
 tmux 3.5_a-1
 tomlplusplus 3.4.0-1
 tpm2-tss 4.1.3-1
-tree-sitter 0.25.7-1
+tree-sitter 0.25.8-1
 tree-sitter-c 0.24.1-1
 tree-sitter-lua 0.4.0-1
 tree-sitter-markdown 0.5.0-1
@@ -730,7 +730,7 @@ yay 12.5.0-1
 yazi 25.4.8-1
 yt-dlp 2025.06.30-1
 z 1.12-1
-zen-browser-bin 1.14.4b-1
+zen-browser-bin 1.14.5b-1
 zeromq 4.3.5-2
 zimg 3.0.5-1
 zix 0.6.2-1

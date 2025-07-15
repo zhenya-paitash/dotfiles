@@ -251,6 +251,7 @@ return {
   --│             OFF `y3owk1n/undo-glow.nvim`: Подсветка с анимацией undo/redo.
   --│             OFF `atiladefreitas/dooing`: TODO список.
   --│             ON  `hat0uma/csvview.nvim`: Приятное оформление CSV таблиц.
+  --│             OFF `nvzone/floaterm`: Плавающий терминал.
   --└───────────┴─────────────────────────────────────────────────────────────┘
 
   { -- UI
@@ -379,6 +380,20 @@ return {
     opts = require("plugins.setup.interface.csvview").opts,
     config = require("plugins.setup.interface.csvview").config,
   },
+
+  -- { -- FLOATING TERMINAL
+  --   "nvzone/floaterm",
+  --   dependencies = "nvzone/volt",
+  --   opts = {},
+  --   cmd = "FloatermToggle",
+  --   mappings = {
+  --     term = function(buf)
+  --       vim.keymap.set({ "n", "t" }, "<C-p>", function()
+  --         require("floaterm.api").cycle_term_bufs "prev"
+  --       end, { buffer = buf })
+  --     end,
+  --   },
+  -- },
 
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   Поиск и замена

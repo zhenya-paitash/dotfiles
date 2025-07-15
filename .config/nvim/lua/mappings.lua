@@ -421,8 +421,8 @@ map(MODE.normal, "<leader>pd", "<cmd> lua require('dropbar.api').pick() <CR>", {
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   FZF
 --└───────────┴─────────────────────────────────────────────────────────────┘
-map(MODE.normal, "<leader>fe", "<cmd> CustomFzf <CR>", { desc = "find all files (fzf)" })
-map(MODE.normal, "<leader>fr", "<cmd> CustomFzfLiveGrep <CR>", { desc = "live grep (fzf)" })
+map(MODE.normal, "<leader>fee", "<cmd> CustomFzf <CR>", { desc = "find all files (fzf)" })
+map(MODE.normal, "<leader>fer", "<cmd> CustomFzfLiveGrep <CR>", { desc = "live grep (fzf)" })
 
 --┌───────────┬─────────────────────────────────────────────────────────────┐
 --├ @catecory   SNACKS
@@ -508,3 +508,11 @@ map(MODE.normal, "<leader>aul", "<cmd>:Augment log <CR>", { desc = "ai logs (Aug
 --│ normal       │
 --└──────────────┘
 map(MODE.normal, "<leader>dq", "vap:DB<CR>", { desc = "run current query (Dadbod)", noremap = true, silent = true })
+
+--┌───────────┬─────────────────────────────────────────────────────────────┐
+--├ @catecory   FLOATERM
+--└───────────┴─────────────────────────────────────────────────────────────┘
+--┌─ MODE ───────┐
+--│ normal       │
+--└──────────────┘
+map(MODE.normal, "<leader>tt", "<cmd> FloatermToggle <CR>", { desc = "toggle floating terminal (Floaterm)", noremap = true, silent = true })

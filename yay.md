@@ -8,4 +8,4 @@ vial-appimage v0.7.3-1
 windsurf 1.10.7-1
 xwaylandvideobridge 0.4.0-2
 yay 12.5.0-1
-zen-browser-bin 1.14.4b-1
+zen-browser-bin 1.14.5b-1
