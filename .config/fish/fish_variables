@@ -1,10 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export ATAC_KEY_BINDINGS:/home/zh/\x2econfig/atac/key_bindings_templates/vim_key_bindings\x2etoml
-SETUVAR --export ATAC_MAIN_DIR:/home/zh/\x2econfig/atac/
-SETUVAR --export ATAC_THEME:/home/zh/\x2econfig/atac/themes/postman_theme\x2etoml
 SETUVAR EDITOR:nvim
-SETUVAR --export FZF_DEFAULT_OPTS:\x0a\x2d\x2dcolor\x3dfg\x3a\x23908caa\x2cbg\x3a\x23191724\x2chl\x3a\x23ebbcba\x0a\x2d\x2dcolor\x3dfg\x2b\x3a\x23e0def4\x2cbg\x2b\x3a\x2326233a\x2chl\x2b\x3a\x23ebbcba\x0a\x2d\x2dcolor\x3dborder\x3a\x23403d52\x2cheader\x3a\x2331748f\x2cgutter\x3a\x23191724\x0a\x2d\x2dcolor\x3dspinner\x3a\x23f6c177\x2cinfo\x3a\x239ccfd8\x0a\x2d\x2dcolor\x3dpointer\x3a\x23c4a7e7\x2cmarker\x3a\x23eb6f92\x2cprompt\x3a\x23908caa
+SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dcolor\x3dbg\x2b\x3a\x23363A4F\x2cbg\x3a\x2324273A\x2cspinner\x3a\x23F4DBD6\x2chl\x3a\x23ED8796\x20\x2d\x2dcolor\x3dfg\x3a\x23CAD3F5\x2cheader\x3a\x23ED8796\x2cinfo\x3a\x23C6A0F6\x2cpointer\x3a\x23F4DBD6\x20\x2d\x2dcolor\x3dmarker\x3a\x23B7BDF8\x2cfg\x2b\x3a\x23CAD3F5\x2cprompt\x3a\x23C6A0F6\x2chl\x2b\x3a\x23ED8796\x20\x2d\x2dcolor\x3dselected\x2dbg\x3a\x23494D64\x20\x2d\x2dcolor\x3dborder\x3a\x23363A4F\x2clabel\x3a\x23CAD3F5
 SETUVAR --export NVIM_APPNAME:nvim
 SETUVAR --export SSH_ENV:/home/zh/\x2essh/environment
 SETUVAR ZO_CMD:zo

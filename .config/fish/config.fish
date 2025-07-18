@@ -6,8 +6,8 @@ if status is-interactive
 end
 
 # choose theme
-fish_config theme choose fish\ default
-#fish_config theme choose Catppuccin\ Latte
+# fish_config theme choose fish\ default
+fish_config theme choose Catppuccin\ Macchiato
 #fish_config theme choose ayu\ Light
 
 # List Directory
@@ -78,12 +78,15 @@ alias lg='lazygit'
 alias ld='~/go/bin/lazydocker'
 alias usql='~/go/bin/usql'
 
-# custom
-alias lofi="hyprctl dispatch exec \"mpv --no-border --no-terminal \"https://youtu.be/jfKfPfyJRdk\"\" & disown & exit"
-
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# swayimg
+alias swayimg="swayimg -C $HOME/.config/swayimg/swayimgrc"
+
+# custom
+alias lofi="hyprctl dispatch exec \"mpv --no-border --no-terminal \"https://youtu.be/jfKfPfyJRdk\"\" & disown & exit"
 
 # =============
 #      AI
@@ -97,9 +100,6 @@ function gemini
     set -lx GEMINI_API_KEY (cat ~/private/GEMINI_API_KEY)
     command gemini $argv
 end
-
-# swayimg
-alias swayimg="swayimg -C $HOME/.config/swayimg/swayimgrc"
 
 # uv
 fish_add_path "/home/zh/.local/bin"
