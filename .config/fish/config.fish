@@ -24,6 +24,30 @@ alias llt2="lls --tree --level=2"
 alias lt3="ls --tree --level=3"
 alias llt3="lls --tree --level=3"
 
+# package manager
+# pacman
+abbr -a pacs 'sudo pacman -S'         # Установка пакета
+abbr -a pacss 'sudo pacman -Ss'       # Поиск в репозиториях
+abbr -a pacu 'sudo pacman -Syu'       # Обновить систему
+abbr -a pacr 'sudo pacman -Rns'       # Удалить пакет (+ зависимости + конфиги)
+abbr -a pacq 'pacman -Q'              # Показать установленные пакеты
+abbr -a pacqi 'pacman -Qi'            # Информация об установленном пакете
+abbr -a pacql 'pacman -Ql'            # Список файлов пакета
+abbr -a pacf 'pacman -F'              # Поиск файлов в пакетах
+# Очистка кэша
+abbr -a pacc 'sudo pacman -Sc'        # Очистить кэш (старые версии)
+abbr -a paccc 'sudo pacman -Scc'      # Полная очистка кэша (опасно!)
+# Поиск зависимостей
+abbr -a pacwh 'pacman -Qo'            # Какой пакет владеет файлом?
+# yay
+abbr -a yays 'yay -S'                 # Установка пакета (AUR + репозитории)
+abbr -a yayss 'yay -Ss'               # Поиск (AUR + репозитории)
+abbr -a yayu 'yay -Syu'               # Полное обновление (AUR + репозитории)
+abbr -a yayr 'yay -Rns'               # Удалить пакет (+ зависимости + конфиги)
+abbr -a yayq 'yay -Q'                 # Показать установленные пакеты
+abbr -a yayqi 'yay -Qi'               # Информация об установленном пакете
+abbr -a yayql 'yay -Ql'               # Список файлов пакета
+
 # man
 alias ruman="LANG=ru_RU.UTF-8 man"
 
@@ -85,12 +109,6 @@ set --export PATH $BUN_INSTALL/bin $PATH
 # swayimg
 alias swayimg="swayimg -C $HOME/.config/swayimg/swayimgrc"
 
-# custom
-alias lofi="hyprctl dispatch exec \"mpv --no-border --no-terminal \"https://youtu.be/jfKfPfyJRdk\"\" & disown & exit"
-
-# =============
-#      AI
-# =============
 # opencode
 alias opencode='/home/zh/go/bin/opencode'
 
@@ -103,3 +121,10 @@ end
 
 # uv
 fish_add_path "/home/zh/.local/bin"
+
+# custom
+alias lofi="hyprctl dispatch exec \"mpv --no-border --no-terminal \"https://youtu.be/jfKfPfyJRdk\"\" & disown & exit"
+# alias spotify="$HOME/Apps/Spotify-1.2.63.394.g126b0d89-x86_64.AppImage & disown && exit"
+
+
+fish_add_path /home/zh/.spicetify

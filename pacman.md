@@ -70,7 +70,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.33-1
 diffutils 3.12-2
-discord-canary 0.0.722-1
+discord-canary 0.0.723-1
 dkms 3.2.1-1
 docker 1:28.3.2-1
 docker-compose 2.38.2-1
@@ -81,7 +81,7 @@ efibootmgr 18-3
 efivar 39-1
 electron34 34.5.8-1
 expat 2.7.1-1
-eza 0.22.1-1
+eza 0.23.0-1
 fakeroot 1.37.1.2-1
 fd 10.2.0-1
 ffmpeg 2:7.1.1-5
@@ -166,7 +166,7 @@ hwdata 0.397-1
 hyprcursor 0.1.12-4
 hyprgraphics 0.1.5-1
 hypridle 0.1.6-6
-hyprland 0.50.0-1
+hyprland 0.50.1-1
 hyprland-qt-support 0.1.0-7
 hyprland-qtutils 0.1.4-3
 hyprlang 0.6.3-2
@@ -280,6 +280,7 @@ libcdio-paranoia 10.2+2.0.2-1
 libcloudproviders 0.3.6-2
 libcolord 1.4.8-1
 libcups 2:2.4.12-2
+libcurl-gnutls 8.15.0-1
 libdaemon 0.14-6
 libdatachannel 0.22.6-1
 libdatrie 0.2.13-4
@@ -467,8 +468,8 @@ linux-firmware-radeon 20250708-1
 linux-firmware-realtek 20250708-1
 linux-firmware-whence 20250708-1
 linux-lts 6.12.39-1
-linux-zen 6.15.6.zen1-1
-linux-zen-headers 6.15.6.zen1-1
+linux-zen 6.15.7.zen1-1
+linux-zen-headers 6.15.7.zen1-1
 llhttp 9.2.1-2
 llvm-libs 20.1.8-1
 lm_sensors 1:3.6.2-1
@@ -626,10 +627,10 @@ snappy 1.2.2-2
 sof-firmware 2025.05-1
 sord 0.16.18-1
 sound-theme-freedesktop 0.8-6
-spacedrive-bin-debug 1:0.4.3-1
 speex 1.2.1-2
 speexdsp 1.2.1-2
 spirv-tools 1:1.4.321.0-1
+spotify 1:1.2.63.394-1
 sqlite 3.50.3-1
 sratom 0.6.18-1
 srt 1.5.4-1
