@@ -43,7 +43,7 @@ btrfs-progs 6.15-1
 bzip2 1.0.8-6
 c-ares 1.34.5-1
 ca-certificates 20240618-1
-ca-certificates-mozilla 3.113.1-1
+ca-certificates-mozilla 3.114-1
 ca-certificates-utils 20240618-1
 cairo 1.18.4-1
 cairomm 1.14.5-1
@@ -80,6 +80,7 @@ e2fsprogs 1.47.3-1
 efibootmgr 18-3
 efivar 39-1
 electron34 34.5.8-1
+electron35 35.7.2-1
 expat 2.7.1-1
 eza 0.23.0-1
 fakeroot 1.37.1.2-1
@@ -105,6 +106,7 @@ gawk 5.3.2-1
 gc 8.2.8-2
 gcc 15.1.1+r7+gf36ec88aa85a-1
 gcc-libs 15.1.1+r7+gf36ec88aa85a-1
+gcr-4 4.4.0.1-1
 gdbm 1.25-1
 gdk-pixbuf2 2.42.12-2
 geoclue 2.7.2-1
@@ -258,6 +260,7 @@ lib32-xcb-util-keysyms 0.4.1-2
 lib32-xz 5.8.1-1
 lib32-zlib 1.3.1-2
 lib32-zstd 1.5.7-2
+libappindicator-gtk3 12.10.0.r298-4
 libarchive 3.8.1-1
 libass 0.17.4-1
 libassuan 3.0.0-1
@@ -351,6 +354,8 @@ libngtcp2 1.13.0-2
 libnice 0.1.22-2
 libnl 3.11.0-1
 libnm 1.52.1-1
+libnma 1.10.6-3
+libnma-common 1.10.6-3
 libnotify 0.8.6-1
 libnsl 2.0.1-1
 libogg 1.3.6-1
@@ -423,6 +428,7 @@ libxau 1.0.12-1
 libxcb 1.17.0-1
 libxcomposite 0.4.6-2
 libxcrypt 4.4.38-1
+libxcrypt-compat 4.4.38-1
 libxcursor 1.2.3-1
 libxcvt 0.1.3-1
 libxdamage 1.1.6-2
@@ -487,6 +493,7 @@ mailcap 2.1.54-2
 make 4.4.1-2
 man-db 2.13.1-1
 man-pages-ru 4.26.0-1
+mattermost-desktop 5.12.1-1
 mbedtls 3.6.3-1
 md4c 0.5.2-1
 mesa 1:25.1.6-1
@@ -506,8 +513,11 @@ ncdu 2.8.2-3
 ncurses 6.5-4
 neovim 0.11.3-1
 nettle 3.10.2-1
+network-manager-applet 1.36.0-1
 networkmanager 1.52.1-1
+networkmanager-openvpn 1.12.0-1
 ninja 1.12.1-2
+nm-connection-editor 1.36.0-1
 node-gyp 11.2.0-1
 nodejs 24.4.1-1
 nodejs-nopt 7.2.1-1
@@ -515,8 +525,8 @@ noto-fonts 1:2025.07.01-1
 noto-fonts-emoji 1:2.048-1
 npm 11.4.2-1
 npth 1.8-1
-nspr 4.36-1
-nss 3.113.1-1
+nspr 4.37-1
+nss 3.114-1
 ntfs-3g 2022.10.3-2
 nushell 0.105.1-1
 nwg-look 1.0.6-1
@@ -561,7 +571,7 @@ pipewire-alsa 1:1.4.6-1
 pipewire-audio 1:1.4.6-1
 pipewire-jack 1:1.4.6-1
 pipewire-pulse 1:1.4.6-1
-pixman 0.46.2-1
+pixman 0.46.4-1
 pkcs11-helper 1.30.0-2
 pkgconf 2.5.1-1
 polkit 126-2
@@ -586,6 +596,10 @@ python-requests 2.32.4-1
 python-tqdm 4.67.1-2
 python-urllib3 2.5.0-1
 qbittorrent 5.1.2-1
+qt5-base 5.15.17+kde+r123-1
+qt5-declarative 5.15.17+kde+r21-1
+qt5-translations 5.15.17-1
+qt5-wayland 5.15.17+kde+r57-1
 qt6-base 6.9.1-4
 qt6-declarative 6.9.1-1
 qt6-imageformats 6.9.1-1
