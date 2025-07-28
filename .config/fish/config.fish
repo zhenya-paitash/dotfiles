@@ -6,9 +6,14 @@ if status is-interactive
 end
 
 # choose theme
-# fish_config theme choose fish\ default
-fish_config theme choose Catppuccin\ Macchiato
-#fish_config theme choose ayu\ Light
+fish_config theme choose fish\ default
+# fish_config theme choose Catppuccin\ Macchiato
+# fish_config theme choose ayu\ Light
+# export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+#   --color=fg:-1,fg+:#83C092,bg:-1,bg+:#262626
+#   --color=hl:#A7C080,hl+:#E67E80,info:#afaf87,marker:#6F8578
+#   --color=prompt:#E69875,spinner:#83C092,pointer:#E67E80,header:#E67E80
+#   --color=border:#262626,label:#aeaeae,query:#d9d9d9'
 
 # List Directory
 alias ls="eza --color=always --icons=always --long"
@@ -119,12 +124,12 @@ function gemini
     command gemini $argv
 end
 
-# uv
-fish_add_path "/home/zh/.local/bin"
-
 # custom
 alias lofi="hyprctl dispatch exec \"mpv --no-border --no-terminal \"https://youtu.be/jfKfPfyJRdk\"\" & disown & exit"
 # alias spotify="$HOME/Apps/Spotify-1.2.63.394.g126b0d89-x86_64.AppImage & disown && exit"
 
+# uv
+fish_add_path "/home/zh/.local/bin"
 
+# spicetify
 fish_add_path /home/zh/.spicetify
