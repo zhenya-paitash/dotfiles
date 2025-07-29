@@ -1,7 +1,7 @@
 aylurs-gtk-shell 1.8.2-2
 brave-bin 1:1.80.124-1
 cursor-bin 1.3.3-1
-discord-canary 0.0.727-1
+discord-canary 0.0.728-1
 gdbuspp 3-1
 gdbuspp-debug 3-1
 google-breakpad v2024.02.16-1

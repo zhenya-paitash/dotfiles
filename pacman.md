@@ -74,7 +74,7 @@ default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.33-1
 diffutils 3.12-2
-discord-canary 0.0.727-1
+discord-canary 0.0.728-1
 dkms 3.2.1-1
 docker 1:28.3.2-1
 docker-buildx 0.26.1-1
@@ -106,7 +106,7 @@ fribidi 1.0.16-2
 fuse-common 3.17.1-1
 fuse2 2.9.9-5
 fuse3 3.17.1-1
-fzf 0.64.0-1
+fzf 0.65.0-1
 gawk 5.3.2-1
 gc 8.2.8-2
 gcc 15.1.1+r7+gf36ec88aa85a-1
@@ -189,7 +189,7 @@ iana-etc 20250612-1
 icu 76.1-1
 imagemagick 7.1.2.0-2
 imath 3.1.12-4
-iproute2 6.15.0-1
+iproute2 6.16.0-1
 iptables 1:1.8.11-2
 iputils 20250605-1
 iso-codes 4.18.0-1
@@ -514,7 +514,7 @@ mkinitcpio-busybox 1.36.1-1
 mobile-broadband-provider-info 20250613-1
 mpdecimal 4.0.1-1
 mpfr 4.2.2-1
-mpg123 1.33.0-1
+mpg123 1.33.1-1
 mpv 1:0.40.0-4
 msgpack-c 6.1.0-2
 mtdev 1.1.7-1
