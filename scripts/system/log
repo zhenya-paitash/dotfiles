@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+LOGDIR="$HOME/private/logs"
+mkdir -p "$LOGDIR"
+TS=$(date '+%Y-%m-%d-%H-%M-%S')
+RAW="$LOGDIR/$TS-session.json"
+
+# Запускаем fish «под крылышком» tlog-rec
+tlog-rec -o "$RAW" fish
+

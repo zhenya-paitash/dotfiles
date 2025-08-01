@@ -42,7 +42,7 @@ map(MODE.normal, "<leader>'", "`", { noremap = true, silent = true })
 -- unbind <C-s> [reason: i'm using <C-s> as a leader for TMUX]
 map({ MODE.normal, MODE.insert, MODE.visual }, "<C-s>", "", {})
 
-map(MODE.normal, "<leader>a", "ggVGo", { desc = "select all", noremap = true, silent = true })
+map(MODE.normal, "<leader>a", ":normal ggVGo <CR>", { desc = "select all", noremap = true, silent = true })
 -- map(MODE.normal, "<leader>z", "zfS", { desc = "create folder from ...", noremap = true, silent = true })
 -- map(MODE.normal, "n", function()
 --   vim.cmd "normal! n"

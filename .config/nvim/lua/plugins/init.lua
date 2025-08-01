@@ -151,6 +151,25 @@ return {
     -- end,
   },
 
+  {
+    "b0o/schemastore.nvim",
+    lazy = false,
+  },
+  -- {
+  --   "ramilito/kubectl.nvim",
+  --   -- use a release tag to download pre-built binaries
+  --   version = "2.*",
+  --   -- AND/OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust
+  --   -- build = 'cargo build --release',
+  --   dependencies = "saghen/blink.download",
+  --   keys = {
+  --     { "<leader>k", "<cmd>lua require('kubectl').toggle()<cr>", mode = "n", desc = "toggle kube (Kubectl)" },
+  --   },
+  --   config = function()
+  --     require("kubectl").setup()
+  --   end,
+  -- },
+
   --┌───────────┬─────────────────────────────────────────────────────────────┐
   --├ @category   Файловая система
   --│

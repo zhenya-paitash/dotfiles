@@ -44,6 +44,8 @@ abbr -a pacc 'sudo pacman -Sc'        # Очистить кэш (старые в
 abbr -a paccc 'sudo pacman -Scc'      # Полная очистка кэша (опасно!)
 # Поиск зависимостей
 abbr -a pacwh 'pacman -Qo'            # Какой пакет владеет файлом?
+# Вывести зависимости 
+abbr -a pacsp 'pacman -Sp --print-format "%n"'
 # yay
 abbr -a yays 'yay -S'                 # Установка пакета (AUR + репозитории)
 abbr -a yayss 'yay -Ss'               # Поиск (AUR + репозитории)
@@ -119,9 +121,15 @@ alias opencode='/home/zh/go/bin/opencode'
 
 # gemini
 function gemini
-    set -lx GOOGLE_CLOUD_PROJECT (cat ~/private/GOOGLE_CLOUD_PROJECT)
-    set -lx GEMINI_API_KEY (cat ~/private/GEMINI_API_KEY)
+    set -lx GOOGLE_CLOUD_PROJECT $(cat ~/private/GOOGLE_CLOUD_PROJECT)
+    set -lx GEMINI_API_KEY $(cat ~/private/GEMINI_API_KEY)
     command gemini $argv
+end
+
+# goose
+function goose
+  set -lx OPENROUTER_API_KEY $(cat ~/private/OPENROUTER_API_KEY)
+  command goose $argv
 end
 
 # custom
@@ -133,3 +141,28 @@ fish_add_path "/home/zh/.local/bin"
 
 # spicetify
 fish_add_path /home/zh/.spicetify
+
+# fish log
+function fish_log
+    # Создаём папку для логов
+    mkdir -p ~/obsidian/vault_zhenyapaitash/_logs
+
+    # Глобальная переменная (видна в дочерних функциях)
+    set -g log_file ~/obsidian/vault_zhenyapaitash/_logs/(date "+%Y-%m-%d-%H-%M-%S")-(string replace -a " " "-" "$argv").log
+
+    # Функция для логирования
+    function log_command --on-event fish_postexec
+        echo (date "+%Y-%m-%d %H:%M:%S") "|" $argv >> $log_file
+    end
+
+    echo "🔹 Запись логов начата: $log_file"
+
+    # Остановка при выходе
+    function stop_logging --on-event fish_exit
+        functions --erase log_command
+        functions --erase stop_logging
+        set --erase log_file
+        echo "🔹 Запись логов остановлена: $log_file"
+    end
+end
+

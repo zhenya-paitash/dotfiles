@@ -8,14 +8,18 @@ local lspconfig = require "lspconfig"
 local servers = {
   "html",
   "cssls",
+  "lua_ls",
   -- "bashls", -- bash-language-server
   -- "tsserver",  -- TODO: switch from this
-  "ts_ls",
   -- "clangd",
   -- "prismals",
-  "tailwindcss",
+
+  -- ВРУЧНУЮ
+  "ts_ls",
   "gopls",
+  "tailwindcss",
   "templ",
+  "yamlls",
 }
 
 -- lsps with default config
@@ -33,11 +37,6 @@ lspconfig.ts_ls.setup {
   on_init = on_init,
   capabilities = capabilities,
 }
--- lspconfig.tsserver.setup {
---   on_attach = on_attach,
---   on_init = on_init,
---   capabilities = capabilities,
--- }
 
 -- go
 lspconfig.gopls.setup {
@@ -81,4 +80,39 @@ lspconfig.templ.setup {
   filetypes = { "templ" },
   root_dir = require("lspconfig/util").root_pattern("go.mod", ".git"),
   settings = {},
+}
+
+lspconfig.yamlls.setup {
+  filetypes = { "yaml", "yml" },
+  settings = {
+    yaml = {
+      schemaStore = {
+        enable = false,
+        url = "",
+      },
+      schemas = require("schemastore").yaml.schemas(),
+
+      -- redhat = { telemetry = { enabled = false } },
+      -- schemas = {
+      --   ["https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.29.0-standalone-strict/all.json"] = {
+      --     "*.yaml",
+      --     "*.yml",
+      --     "deployment.yaml",
+      --     "deployment.yml",
+      --     "*.k8s.yaml",
+      --     "*.k8s.yml",
+      --     "**/k8s/*.yaml",
+      --     "**/k8s/*.yml",
+      --   },
+      -- },
+
+      validate = true,
+      hover = true,
+      completion = true,
+      format = {
+        enable = true,
+      },
+      keyOrdering = false,
+    },
+  },
 }

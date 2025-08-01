@@ -1,7 +1,7 @@
 aylurs-gtk-shell 1.8.2-2
-brave-bin 1:1.80.124-1
-cursor-bin 1.3.3-1
-discord-canary 0.0.728-1
+brave-bin 1:1.80.125-1
+cursor-bin 1.3.8-1
+discord-canary 0.0.730-1
 gdbuspp 3-1
 gdbuspp-debug 3-1
 google-breakpad v2024.02.16-1
@@ -13,7 +13,7 @@ rofi-lbonn-wayland-git 1.7.5.wayland3.r50.g2baa809d-1
 simple-mtpfs 0.4.0-1
 spotify 1:1.2.63.394-1
 vial-appimage 0.7.4-2
-windsurf 1.11.1-1
+windsurf 1.11.2-1
 xwaylandvideobridge 0.4.0-2
 yay 12.5.0-1
-zen-browser-bin 1.14.9b-1
+zen-browser-bin 1.14.9b-2
